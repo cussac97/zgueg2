@@ -1,0 +1,1074 @@
+{%- liquid
+  assign s = section.settings
+  assign uid = section.id
+
+  assign heading_align = s.heading_alignment | default: 'left'
+  assign star_color = s.star_color | default: '#1a1a1a'
+  assign star_empty_color = s.star_empty_color | default: '#c9c9c9'
+
+  comment
+    Collect unique products referenced by review blocks to build the Product filter.
+    Each token = "handle::Title".
+  endcomment
+  assign prod_values = ''
+  for block in section.blocks
+    if block.type == 'review' and block.settings.product != blank
+      assign p_handle = block.settings.product.handle
+      unless prod_values contains p_handle
+        assign prod_values = prod_values | append: p_handle | append: '::' | append: block.settings.product.title | append: '|||'
+      endunless
+    endif
+  endfor
+  assign prod_list = prod_values | split: '|||'
+-%}
+
+{%- capture star_full -%}<svg class="cr-star cr-star--full" viewBox="0 0 20 20" aria-hidden="true" focusable="false" width="14" height="14"><path d="M10 1.5l2.47 5.01 5.53.8-4 3.9.94 5.49L10 14.1 4.06 16.7l.94-5.49-4-3.9 5.53-.8z"/></svg>{%- endcapture -%}
+{%- capture star_empty -%}<svg class="cr-star cr-star--empty" viewBox="0 0 20 20" aria-hidden="true" focusable="false" width="14" height="14"><path d="M10 1.5l2.47 5.01 5.53.8-4 3.9.94 5.49L10 14.1 4.06 16.7l.94-5.49-4-3.9 5.53-.8z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>{%- endcapture -%}
+
+{% style %}
+  #cr-{{ uid }} {
+    --cr-text: {{ s.text_color | default: '#1a1a1a' }};
+    --cr-muted: {{ s.muted_color | default: '#6b6b6b' }};
+    --cr-divider: {{ s.divider_color | default: '#e6e6e6' }};
+    --cr-star: {{ star_color }};
+    --cr-star-empty: {{ star_empty_color }};
+    --cr-field-bg: {{ s.field_bg | default: '#ffffff' }};
+    --cr-field-border: {{ s.field_border | default: '#d9d9d9' }};
+    --cr-field-radius: {{ s.field_radius | default: 8 }}px;
+    --cr-reply-bg: {{ s.reply_avatar_bg | default: '#1f49ff' }};
+    color: var(--cr-text);
+    background-color: {{ s.section_bg | default: 'rgba(0,0,0,0)' }};
+    padding-top: {{ s.padding_top | default: 60 }}px;
+    padding-bottom: {{ s.padding_bottom | default: 60 }}px;
+  }
+  #cr-{{ uid }} .cr-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: {{ s.column_gap | default: 48 }}px;
+    align-items: start;
+  }
+  #cr-{{ uid }} .cr-heading {
+    font-family: var(--font-stack-headings-primary);
+    font-weight: {{ s.heading_weight | default: 500 }};
+    font-size: {{ s.heading_size_mobile | default: 34 }}px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-align: {{ heading_align }};
+    margin: 0 0 18px;
+    color: var(--cr-text);
+  }
+  #cr-{{ uid }} .cr-summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: {% if heading_align == 'center' %}center{% elsif heading_align == 'right' %}flex-end{% else %}flex-start{% endif %};
+    font-size: {{ s.summary_text_size | default: 13 }}px;
+    color: var(--cr-muted);
+    font-family: var(--font-stack-body-secondary, monospace);
+  }
+  #cr-{{ uid }} .cr-summary .cr-stars { gap: 3px; }
+  #cr-{{ uid }} .cr-stars { display: inline-flex; align-items: center; gap: 2px; line-height: 0; }
+  #cr-{{ uid }} .cr-star--full { fill: var(--cr-star); }
+  #cr-{{ uid }} .cr-star--empty { color: var(--cr-star-empty); }
+
+  #cr-{{ uid }} .cr-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  #cr-{{ uid }} .cr-dropdown { position: relative; flex: 1 1 200px; }
+  #cr-{{ uid }} .cr-dropdown__btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: var(--cr-field-bg);
+    border: 1px solid var(--cr-field-border);
+    border-radius: var(--cr-field-radius);
+    padding: 16px 18px;
+    font-size: 15px;
+    color: var(--cr-text);
+    cursor: pointer;
+    font-family: var(--font-stack-body-primary);
+    transition: border-color .15s ease;
+  }
+  #cr-{{ uid }} .cr-dropdown__btn:hover { border-color: var(--cr-text); }
+  #cr-{{ uid }} .cr-dropdown__btn svg { transition: transform .2s ease; flex: 0 0 auto; }
+  #cr-{{ uid }} .cr-dropdown.is-open .cr-dropdown__btn svg { transform: rotate(180deg); }
+  #cr-{{ uid }} .cr-dropdown__menu {
+    position: absolute;
+    z-index: 5;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: var(--cr-field-bg);
+    border: 1px solid var(--cr-field-border);
+    border-radius: var(--cr-field-radius);
+    box-shadow: 0 8px 24px rgba(0,0,0,.10);
+    padding: 6px;
+    display: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  #cr-{{ uid }} .cr-dropdown.is-open .cr-dropdown__menu { display: block; }
+  #cr-{{ uid }} .cr-dropdown__opt {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: 0;
+    padding: 10px 12px;
+    border-radius: calc(var(--cr-field-radius) - 2px);
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--cr-text);
+    font-family: var(--font-stack-body-primary);
+  }
+  #cr-{{ uid }} .cr-dropdown__opt:hover,
+  #cr-{{ uid }} .cr-dropdown__opt[aria-selected="true"] { background: rgba(0,0,0,.06); }
+
+  #cr-{{ uid }} .cr-list { margin: 0; }
+  #cr-{{ uid }} .cr-review {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px 32px;
+    padding: {{ s.review_spacing | default: 28 }}px 0;
+    border-top: 1px solid var(--cr-divider);
+  }
+  #cr-{{ uid }} .cr-review:first-child { border-top: 0; }
+  #cr-{{ uid }} .cr-review.is-hidden { display: none; }
+  #cr-{{ uid }} .cr-review__meta { }
+  #cr-{{ uid }} .cr-review__name {
+    font-weight: var(--font-weight-body-primary-bold, 700);
+    font-size: 15px;
+    margin: 0 0 4px;
+  }
+  #cr-{{ uid }} .cr-verified {
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--cr-muted);
+    margin: 0 0 12px;
+  }
+  #cr-{{ uid }} .cr-review__meta .cr-stars { margin-bottom: 10px; }
+  #cr-{{ uid }} .cr-review__date { font-size: 13px; color: var(--cr-muted); }
+  #cr-{{ uid }} .cr-review__body { }
+  #cr-{{ uid }} .cr-review__text {
+    font-size: 15px;
+    line-height: 1.55;
+    margin: 0;
+  }
+  #cr-{{ uid }} .cr-review__text.is-clamped {
+    display: -webkit-box;
+    -webkit-line-clamp: {{ s.clamp_lines | default: 4 }};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  #cr-{{ uid }} .cr-readmore {
+    background: none; border: 0; padding: 0;
+    font: inherit; cursor: pointer;
+    text-decoration: underline; color: var(--cr-text);
+    margin-top: 4px;
+  }
+  #cr-{{ uid }} .cr-helpful {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+  #cr-{{ uid }} .cr-helpful__label { font-size: 13px; color: var(--cr-muted); }
+  #cr-{{ uid }} .cr-votes { display: flex; gap: 18px; }
+  #cr-{{ uid }} .cr-vote {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: none; border: 0; cursor: pointer;
+    font-size: 13px; color: var(--cr-muted);
+    font-family: var(--font-stack-body-primary);
+  }
+  #cr-{{ uid }} .cr-vote svg { width: 15px; height: 15px; }
+  #cr-{{ uid }} .cr-vote.is-active { color: var(--cr-text); }
+
+  #cr-{{ uid }} .cr-reply {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  #cr-{{ uid }} .cr-reply__icon {
+    flex: 0 0 auto;
+    width: 18px; height: 18px;
+    margin-top: 9px;
+    color: var(--cr-muted);
+  }
+  #cr-{{ uid }} .cr-reply__avatar {
+    flex: 0 0 36px;
+    width: 36px; height: 36px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--cr-reply-bg); color: #fff;
+    font-weight: 700; font-size: 15px; overflow: hidden;
+  }
+  #cr-{{ uid }} .cr-reply__avatar img { width: 100%; height: 100%; object-fit: cover; }
+  #cr-{{ uid }} .cr-reply__main { flex: 1 1 auto; min-width: 0; }
+  #cr-{{ uid }} .cr-reply__head { display: flex; align-items: baseline; gap: 10px; }
+  #cr-{{ uid }} .cr-reply__name { font-weight: var(--font-weight-body-primary-bold, 700); font-size: 14px; }
+  #cr-{{ uid }} .cr-reply__date { font-size: 12px; color: var(--cr-muted); }
+  #cr-{{ uid }} .cr-reply__text { font-size: 14px; line-height: 1.55; margin: 4px 0 0; }
+
+  #cr-{{ uid }} .cr-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--cr-divider);
+  }
+  #cr-{{ uid }} .cr-page {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: var(--cr-field-radius);
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--cr-muted);
+    font-family: var(--font-stack-body-primary);
+    transition: border-color .15s ease, color .15s ease;
+  }
+  #cr-{{ uid }} .cr-page:hover:not([disabled]) { color: var(--cr-text); border-color: var(--cr-field-border); }
+  #cr-{{ uid }} .cr-page.is-active {
+    color: var(--cr-text);
+    border-color: var(--cr-text);
+    font-weight: var(--font-weight-body-primary-bold, 700);
+  }
+  #cr-{{ uid }} .cr-page[disabled] { opacity: .35; cursor: not-allowed; }
+  #cr-{{ uid }} .cr-page--nav { color: var(--cr-text); }
+
+  @media screen and (min-width: 750px) {
+    #cr-{{ uid }} .cr-heading { font-size: {{ s.heading_size | default: 56 }}px; }
+    {% if s.two_columns %}
+      #cr-{{ uid }} .cr-wrap { grid-template-columns: {{ s.left_width | default: 38 }}% 1fr; }
+      {% if s.sticky_heading %}
+        #cr-{{ uid }} .cr-left { position: sticky; top: {{ s.sticky_offset | default: 100 }}px; }
+      {% endif %}
+    {% endif %}
+    #cr-{{ uid }} .cr-review {
+      grid-template-columns: {{ s.meta_width | default: 28 }}% 1fr;
+    }
+    #cr-{{ uid }} .cr-reply { grid-column: 2; }
+  }
+{% endstyle %}
+
+<div id="cr-{{ uid }}" class="cr-section" {{ section.shopify_attributes }}>
+  <div class="container--{{ s.container_width | default: 'large' }} cr-wrap" data-cr-root>
+
+    <div class="cr-left">
+      {%- if s.heading != blank -%}
+        <h2 class="cr-heading">{{ s.heading }}</h2>
+      {%- endif -%}
+      {%- if s.show_summary -%}
+        <div class="cr-summary">
+          <span class="cr-stars" aria-label="{{ s.summary_rating }}/5">
+            {%- assign sr = s.summary_rating | round -%}
+            {%- for i in (1..5) -%}
+              {%- if i <= sr -%}{{ star_full }}{%- else -%}{{ star_empty }}{%- endif -%}
+            {%- endfor -%}
+          </span>
+          <span class="cr-summary__text">{{ s.summary_rating }}/5 {{ s.summary_caption | default: 'based on' }} {{ s.summary_count }} {{ s.summary_reviews_word | default: 'reviews' }}</span>
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="cr-right">
+      {%- if s.show_rating_filter or s.show_product_filter -%}
+        <div class="cr-filters" data-cr-filters>
+          {%- if s.show_rating_filter -%}
+            <div class="cr-dropdown" data-cr-dropdown data-cr-filter="rating">
+              <button type="button" class="cr-dropdown__btn" aria-haspopup="listbox" aria-expanded="false">
+                <span data-cr-label>{{ s.rating_filter_label | default: 'Rating' }}</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              </button>
+              <div class="cr-dropdown__menu" role="listbox">
+                <button type="button" class="cr-dropdown__opt" data-cr-value="" aria-selected="true">{{ s.rating_filter_all | default: 'All ratings' }}</button>
+                {%- for n in (1..5) reversed -%}
+                  <button type="button" class="cr-dropdown__opt" data-cr-value="{{ n }}">{{ n }} {{ s.stars_word | default: 'stars' }}</button>
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if s.show_product_filter and prod_list.size > 0 -%}
+            <div class="cr-dropdown" data-cr-dropdown data-cr-filter="product">
+              <button type="button" class="cr-dropdown__btn" aria-haspopup="listbox" aria-expanded="false">
+                <span data-cr-label>{{ s.product_filter_label | default: 'Product' }}</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              </button>
+              <div class="cr-dropdown__menu" role="listbox">
+                <button type="button" class="cr-dropdown__opt" data-cr-value="" aria-selected="true">{{ s.product_filter_all | default: 'All products' }}</button>
+                {%- for item in prod_list -%}
+                  {%- assign parts = item | split: '::' -%}
+                  <button type="button" class="cr-dropdown__opt" data-cr-value="{{ parts[0] | escape }}">{{ parts[1] }}</button>
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      <div class="cr-list" data-cr-list>
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'review' -%}
+            {%- assign b = block.settings -%}
+            <article class="cr-review" data-cr-item data-rating="{{ b.rating }}" data-product="{{ b.product.handle }}" {{ block.shopify_attributes }}>
+              <div class="cr-review__meta">
+                <p class="cr-review__name">{{ b.author | default: 'Anonymous' }}</p>
+                {%- if b.verified -%}
+                  <p class="cr-verified">{{ b.verified_label | default: 'Verified Buyer' }}</p>
+                {%- endif -%}
+                <span class="cr-stars" aria-label="{{ b.rating }}/5">
+                  {%- for i in (1..5) -%}
+                    {%- if i <= b.rating -%}{{ star_full }}{%- else -%}{{ star_empty }}{%- endif -%}
+                  {%- endfor -%}
+                </span>
+                {%- if s.show_date and b.date != blank -%}<div class="cr-review__date">{{ b.date }}</div>{%- endif -%}
+              </div>
+
+              <div class="cr-review__body">
+                {%- if b.text != blank -%}
+                  <p class="cr-review__text is-clamped" data-cr-text>{{ b.text }}</p>
+                  <button type="button" class="cr-readmore" data-cr-readmore hidden>{{ s.read_more_label | default: 'Read More' }}</button>
+                {%- endif -%}
+
+                {%- if s.show_helpful -%}
+                  <div class="cr-helpful">
+                    <span class="cr-helpful__label">{{ s.helpful_label | default: 'Was This Review Helpful?' }}</span>
+                    <div class="cr-votes">
+                      <button type="button" class="cr-vote" data-cr-vote="up">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 10v11M7 10l3.5-7a2 2 0 0 1 2 1.2L11 9h6a2 2 0 0 1 2 2.3l-1.2 7A2 2 0 0 1 15.8 20H7"/></svg>
+                        <span data-cr-count>{{ b.helpful_up | default: 0 }}</span>
+                      </button>
+                      <button type="button" class="cr-vote" data-cr-vote="down">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M17 14V3M17 14l-3.5 7a2 2 0 0 1-2-1.2L13 15H7a2 2 0 0 1-2-2.3l1.2-7A2 2 0 0 1 8.2 4H17"/></svg>
+                        <span data-cr-count>{{ b.helpful_down | default: 0 }}</span>
+                      </button>
+                    </div>
+                  </div>
+                {%- endif -%}
+
+                {%- if b.reply_enable and b.reply_text != blank -%}
+                  <div class="cr-reply">
+                    <svg class="cr-reply__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 10 20 15 15 20"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg>
+                    <div class="cr-reply__avatar"{% if b.reply_avatar_bg != blank %} style="background:{{ b.reply_avatar_bg }};"{% endif %}>
+                      {%- if b.reply_avatar != blank -%}
+                        <img src="{{ b.reply_avatar | image_url: width: 72 }}" width="36" height="36" loading="lazy" alt="{{ b.reply_author | escape }}">
+                      {%- else -%}
+                        {{ b.reply_author | default: 'C' | slice: 0 | upcase }}
+                      {%- endif -%}
+                    </div>
+                    <div class="cr-reply__main">
+                      <div class="cr-reply__head">
+                        <span class="cr-reply__name">{{ b.reply_author | default: 'Team' }}</span>
+                        {%- if s.show_reply_date and b.reply_date != blank -%}<span class="cr-reply__date">{{ b.reply_date }}</span>{%- endif -%}
+                      </div>
+                      <p class="cr-reply__text">{{ b.reply_text }}</p>
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+            </article>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <p class="cr-empty" data-cr-empty hidden style="color:var(--cr-muted);padding:28px 0;">{{ s.empty_text | default: 'No reviews match your filters.' }}</p>
+
+      {%- if s.show_pagination -%}
+        <nav class="cr-pagination" data-cr-pagination hidden aria-label="{{ s.pagination_label | default: 'Reviews pages' }}"></nav>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('cr-{{ uid }}');
+    if (!root || root.dataset.crInit) return;
+    root.dataset.crInit = '1';
+
+    // Read More clamp toggle
+    root.querySelectorAll('[data-cr-item]').forEach(function (item) {
+      var text = item.querySelector('[data-cr-text]');
+      var btn = item.querySelector('[data-cr-readmore]');
+      if (text && btn) {
+        if (text.scrollHeight - text.clientHeight > 2) {
+          btn.hidden = false;
+        }
+        btn.addEventListener('click', function () {
+          var clamped = text.classList.toggle('is-clamped');
+          btn.textContent = clamped ? {{ s.read_more_label | default: 'Read More' | json }} : {{ s.read_less_label | default: 'Read Less' | json }};
+        });
+      }
+      // Helpful votes (session-only)
+      item.querySelectorAll('[data-cr-vote]').forEach(function (vote) {
+        vote.addEventListener('click', function () {
+          var count = vote.querySelector('[data-cr-count]');
+          if (vote.classList.toggle('is-active')) {
+            count.textContent = parseInt(count.textContent, 10) + 1;
+          } else {
+            count.textContent = Math.max(0, parseInt(count.textContent, 10) - 1);
+          }
+        });
+      });
+    });
+
+    // Filters + pagination
+    var filters = { rating: '', product: '' };
+    var dropdowns = root.querySelectorAll('[data-cr-dropdown]');
+    var perPage = {{ s.per_page | default: 5 }};
+    var pagEnabled = {% if s.show_pagination %}true{% else %}false{% endif %};
+    var pag = root.querySelector('[data-cr-pagination]');
+    var list = root.querySelector('[data-cr-list]');
+    var currentPage = 1;
+
+    function matches(item) {
+      var okRating = !filters.rating || item.dataset.rating === filters.rating;
+      var okProduct = !filters.product || item.dataset.product === filters.product;
+      return okRating && okProduct;
+    }
+
+    function render() {
+      var items = Array.prototype.slice.call(root.querySelectorAll('[data-cr-item]'));
+      var matched = items.filter(matches);
+      var total = matched.length;
+      var pages = (pagEnabled && perPage > 0) ? Math.max(1, Math.ceil(total / perPage)) : 1;
+      if (currentPage > pages) currentPage = pages;
+      if (currentPage < 1) currentPage = 1;
+
+      var start = pagEnabled ? (currentPage - 1) * perPage : 0;
+      var end = pagEnabled ? start + perPage : total;
+
+      items.forEach(function (item) { item.classList.add('is-hidden'); });
+      matched.slice(start, end).forEach(function (item) { item.classList.remove('is-hidden'); });
+
+      var empty = root.querySelector('[data-cr-empty]');
+      if (empty) empty.hidden = total !== 0;
+
+      renderPagination(pages);
+    }
+
+    function renderPagination(pages) {
+      if (!pag) return;
+      if (!pagEnabled || pages <= 1) { pag.hidden = true; pag.innerHTML = ''; return; }
+      pag.hidden = false;
+      var html = '';
+      html += '<button type="button" class="cr-page cr-page--nav" data-cr-page="prev"' + (currentPage === 1 ? ' disabled' : '') + ' aria-label="Précédent">' +
+        '<svg width="13" height="13" viewBox="0 0 14 14" aria-hidden="true"><path d="M9 2L4 7l5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>';
+      for (var i = 1; i <= pages; i++) {
+        html += '<button type="button" class="cr-page' + (i === currentPage ? ' is-active' : '') + '" data-cr-page="' + i + '"' + (i === currentPage ? ' aria-current="page"' : '') + '>' + i + '</button>';
+      }
+      html += '<button type="button" class="cr-page cr-page--nav" data-cr-page="next"' + (currentPage === pages ? ' disabled' : '') + ' aria-label="Suivant">' +
+        '<svg width="13" height="13" viewBox="0 0 14 14" aria-hidden="true"><path d="M5 2l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>';
+      pag.innerHTML = html;
+    }
+
+    if (pag) {
+      pag.addEventListener('click', function (e) {
+        var b = e.target.closest('[data-cr-page]');
+        if (!b || b.disabled) return;
+        var v = b.dataset.crPage;
+        var items = Array.prototype.slice.call(root.querySelectorAll('[data-cr-item]')).filter(matches);
+        var pages = Math.max(1, Math.ceil(items.length / perPage));
+        if (v === 'prev') currentPage = Math.max(1, currentPage - 1);
+        else if (v === 'next') currentPage = Math.min(pages, currentPage + 1);
+        else currentPage = parseInt(v, 10);
+        render();
+        if (list) list.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
+    dropdowns.forEach(function (dd) {
+      var btn = dd.querySelector('.cr-dropdown__btn');
+      var label = dd.querySelector('[data-cr-label]');
+      var defaultLabel = label.textContent;
+      var key = dd.dataset.crFilter;
+
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = dd.classList.contains('is-open');
+        dropdowns.forEach(function (d) { d.classList.remove('is-open'); d.querySelector('.cr-dropdown__btn').setAttribute('aria-expanded', 'false'); });
+        if (!open) { dd.classList.add('is-open'); btn.setAttribute('aria-expanded', 'true'); }
+      });
+
+      dd.querySelectorAll('[data-cr-value]').forEach(function (opt) {
+        opt.addEventListener('click', function () {
+          filters[key] = opt.dataset.crValue;
+          label.textContent = opt.dataset.crValue ? opt.textContent : defaultLabel;
+          dd.querySelectorAll('[data-cr-value]').forEach(function (o) { o.setAttribute('aria-selected', o === opt ? 'true' : 'false'); });
+          dd.classList.remove('is-open');
+          btn.setAttribute('aria-expanded', 'false');
+          currentPage = 1;
+          render();
+        });
+      });
+    });
+
+    render();
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('#cr-{{ uid }} [data-cr-dropdown]')) {
+        dropdowns.forEach(function (d) { d.classList.remove('is-open'); });
+      }
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Customer Reviews",
+  "tag": "section",
+  "class": "section-customer-reviews",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Mise en page"
+    },
+    {
+      "type": "select",
+      "id": "container_width",
+      "label": "Largeur du conteneur",
+      "options": [
+        { "value": "small", "label": "Étroit" },
+        { "value": "regular", "label": "Moyen" },
+        { "value": "large", "label": "Large" },
+        { "value": "fullwidth", "label": "Pleine largeur" }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pagination",
+      "label": "Activer la pagination",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "per_page",
+      "label": "Avis par page",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "two_columns",
+      "label": "Disposition en deux colonnes (desktop)",
+      "info": "Titre + résumé à gauche, avis à droite.",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "left_width",
+      "label": "Largeur de la colonne de gauche",
+      "min": 25,
+      "max": 50,
+      "step": 1,
+      "unit": "%",
+      "default": 38
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "label": "Espace entre les colonnes",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky_heading",
+      "label": "Titre collant au défilement (desktop)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "sticky_offset",
+      "label": "Décalage du titre collant",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "meta_width",
+      "label": "Largeur colonne auteur (desktop)",
+      "min": 15,
+      "max": 40,
+      "step": 1,
+      "unit": "%",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "review_spacing",
+      "label": "Espacement vertical des avis",
+      "min": 8,
+      "max": 64,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Marge en haut",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Marge en bas",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+
+    {
+      "type": "header",
+      "content": "Titre"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "What do parents think?"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Alignement du titre",
+      "options": [
+        { "value": "left", "label": "Gauche" },
+        { "value": "center", "label": "Centre" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Taille du titre (desktop)",
+      "min": 24,
+      "max": 96,
+      "step": 1,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Taille du titre (mobile)",
+      "min": 18,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 34
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Graisse du titre",
+      "options": [
+        { "value": "300", "label": "Fine" },
+        { "value": "400", "label": "Normale" },
+        { "value": "500", "label": "Moyenne" },
+        { "value": "600", "label": "Semi-grasse" },
+        { "value": "700", "label": "Grasse" }
+      ],
+      "default": "500"
+    },
+
+    {
+      "type": "header",
+      "content": "Résumé des notes"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_summary",
+      "label": "Afficher le résumé (étoiles + total)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "summary_rating",
+      "label": "Note moyenne",
+      "min": 0,
+      "max": 5,
+      "step": 0.1,
+      "default": 4.2
+    },
+    {
+      "type": "text",
+      "id": "summary_count",
+      "label": "Nombre d'avis",
+      "default": "1762"
+    },
+    {
+      "type": "text",
+      "id": "summary_caption",
+      "label": "Texte « based on »",
+      "default": "based on"
+    },
+    {
+      "type": "text",
+      "id": "summary_reviews_word",
+      "label": "Mot « reviews »",
+      "default": "reviews"
+    },
+    {
+      "type": "range",
+      "id": "summary_text_size",
+      "label": "Taille du texte de résumé",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+
+    {
+      "type": "header",
+      "content": "Filtres"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating_filter",
+      "label": "Afficher le filtre par note",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "rating_filter_label",
+      "label": "Libellé du filtre note",
+      "default": "Rating"
+    },
+    {
+      "type": "text",
+      "id": "rating_filter_all",
+      "label": "Option « toutes les notes »",
+      "default": "All ratings"
+    },
+    {
+      "type": "text",
+      "id": "stars_word",
+      "label": "Mot « stars »",
+      "default": "stars"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_filter",
+      "label": "Afficher le filtre par produit",
+      "info": "Les options proviennent du produit lié à chaque avis.",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "product_filter_label",
+      "label": "Libellé du filtre produit",
+      "default": "Product"
+    },
+    {
+      "type": "text",
+      "id": "product_filter_all",
+      "label": "Option « tous les produits »",
+      "default": "All products"
+    },
+    {
+      "type": "text",
+      "id": "empty_text",
+      "label": "Texte si aucun avis ne correspond",
+      "default": "No reviews match your filters."
+    },
+
+    {
+      "type": "header",
+      "content": "Contenu des avis"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Afficher la date de l'avis",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_reply_date",
+      "label": "Afficher la date de la réponse",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "clamp_lines",
+      "label": "Nombre de lignes avant « Read More »",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "text",
+      "id": "read_more_label",
+      "label": "Libellé « Read More »",
+      "default": "Read More"
+    },
+    {
+      "type": "text",
+      "id": "read_less_label",
+      "label": "Libellé « Read Less »",
+      "default": "Read Less"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_helpful",
+      "label": "Afficher « Was this review helpful »",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "helpful_label",
+      "label": "Libellé « helpful »",
+      "default": "Was This Review Helpful?"
+    },
+
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Fond de la section",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Texte principal",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "label": "Texte secondaire",
+      "default": "#6b6b6b"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Lignes de séparation",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Étoiles (pleines)",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "star_empty_color",
+      "label": "Étoiles (vides)",
+      "default": "#c9c9c9"
+    },
+
+    {
+      "type": "header",
+      "content": "Filtres — apparence"
+    },
+    {
+      "type": "color",
+      "id": "field_bg",
+      "label": "Fond des menus déroulants",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "field_border",
+      "label": "Bordure des menus déroulants",
+      "default": "#d9d9d9"
+    },
+    {
+      "type": "range",
+      "id": "field_radius",
+      "label": "Arrondi des menus déroulants",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 8
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Avis",
+      "settings": [
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Nom de l'auteur",
+          "default": "Mary H."
+        },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "label": "Acheteur vérifié",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "verified_label",
+          "label": "Libellé « acheteur vérifié »",
+          "default": "Verified Buyer"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Note (étoiles)",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date",
+          "default": "May 22, 2026"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Produit acheté",
+          "info": "Lie l'avis à un produit. Utilisé par le filtre Produit."
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Texte de l'avis",
+          "default": "Love all the products, but this one didn't do as well. We struggled a bit at first, but once we got the hang of it, things were great."
+        },
+        {
+          "type": "header",
+          "content": "Votes « utile »"
+        },
+        {
+          "type": "number",
+          "id": "helpful_up",
+          "label": "Pouces vers le haut",
+          "default": 0
+        },
+        {
+          "type": "number",
+          "id": "helpful_down",
+          "label": "Pouces vers le bas",
+          "default": 0
+        },
+        {
+          "type": "header",
+          "content": "Réponse de la marque"
+        },
+        {
+          "type": "checkbox",
+          "id": "reply_enable",
+          "label": "Afficher une réponse",
+          "default": false
+        },
+        {
+          "type": "image_picker",
+          "id": "reply_avatar",
+          "label": "Avatar (sinon initiale)"
+        },
+        {
+          "type": "color",
+          "id": "reply_avatar_bg",
+          "label": "Fond de l'avatar (initiale)",
+          "default": "#1f49ff"
+        },
+        {
+          "type": "text",
+          "id": "reply_author",
+          "label": "Nom (réponse)",
+          "default": "Chloe"
+        },
+        {
+          "type": "text",
+          "id": "reply_date",
+          "label": "Date (réponse)",
+          "default": "May 21, 2026"
+        },
+        {
+          "type": "textarea",
+          "id": "reply_text",
+          "label": "Texte de la réponse"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Reviews",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "author": "Mary H.",
+            "rating": 4,
+            "date": "May 22, 2026",
+            "text": "Love all the products, but this one didn't do as well. I think the 5 pant is bigger than the 5 diaper, IMO. We struggled with some leakage, but once I got them on my daughter right they were fine. My biggest issue was through the night. They are not nearly as absorbent as the diapers. Many mornings we woke up to accidents. I switched back to the originals."
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "author": "Chandana M.",
+            "rating": 3,
+            "date": "May 22, 2026",
+            "text": "Like the product but the stick is too fragile. It comes off when I'm taking it off the package. I would have liked the sticking part design to be better."
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "author": "Erin H.",
+            "rating": 5,
+            "date": "May 21, 2026",
+            "text": "We have been loving it. It is so easy to change with the tabs on the side yet gives our 21 month old the practice she needs pulling them up and down for potty training.",
+            "reply_enable": true,
+            "reply_author": "Chloe",
+            "reply_date": "May 21, 2026",
+            "reply_text": "Thanks, Erin H.! We're thrilled the side tabs are making potty training smoother and giving her confident pull-up practice. Our mission is to make parents' lives easier."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
