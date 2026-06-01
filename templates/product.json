@@ -125,7 +125,7 @@
           "settings": {
             "button_font": "theme",
             "show_quantity_selector": true,
-            "show_preorder": false,
+            "show_preorder": true,
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false,
             "show_price": false,
