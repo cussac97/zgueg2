@@ -17,7 +17,7 @@
         "95532ce8-d90b-4117-9996-ae0c49cd02eb": {
           "type": "content",
           "settings": {
-            "text": "-40% sur votre 1ère commande en cliquant ici !",
+            "text": "Viral : +10.000 bouteilles vendues en 3 semaines, merci !",
             "link": "",
             "open_newsletter": true,
             "target": true
@@ -32,7 +32,7 @@
         "show_locale_selector": false,
         "show_country_selector": true,
         "show_social_icons": true,
-        "bar_bgcolor": "#0000c9",
+        "bar_bgcolor": "#ec018c",
         "bar_txtcolor": "#ffffff",
         "border_color": "rgba(0,0,0,0)"
       }
