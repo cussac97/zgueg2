@@ -15,7 +15,6 @@
         "media_badge_HMcaAm": {
           "type": "media_badge",
           "settings": {
-            "badge_image": "shopify://shop_images/cleanlabel.png",
             "badge_text": "",
             "badge_link": "",
             "badge_position": "top left",
@@ -58,7 +57,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_font": "stefan",
+            "title_font": "theme",
             "title_font_size": 0,
             "title_font_weight": "inherit",
             "title_text_transform": "none",
@@ -142,13 +141,9 @@
             "layout": "horizontal",
             "margin_top": 20,
             "margin_bottom": 34,
-            "icon_1_image": "shopify://shop_images/b61f64479226187079c502eaccf16154.svg",
             "icon_1_label": "Sans sucre",
-            "icon_2_image": "shopify://shop_images/6e00ed64804d5907ae0c6283cf2d2ec4.svg",
             "icon_2_label": "Goût délicieux",
-            "icon_3_image": "shopify://shop_images/b9ff07c306b934bf71040cc42c98383a.svg",
             "icon_3_label": "60 gummies",
-            "icon_4_image": "shopify://shop_images/67529951813fb6b9b433dc38bfc94ecf.svg",
             "icon_4_label": "Produit en France",
             "icon_5_label": "",
             "icon_6_label": "",
@@ -278,7 +273,6 @@
         "image_emEfTD": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/f32de44a3d918b7cb2ede0732d0f86ab.svg",
             "image_height": 58
           }
         },
@@ -305,7 +299,6 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
-        "image": "shopify://shop_images/enfantpascontent.png",
         "video_controls": false,
         "image_position": "right",
         "height": "large",
@@ -329,7 +322,6 @@
         "image_kbTPya": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/5d48f7b710d1bb5605308f98bbe12d4a.svg",
             "image_height": 58
           }
         },
@@ -356,7 +348,6 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
-        "image": "shopify://shop_images/blue2.png",
         "video_controls": false,
         "image_position": "left",
         "height": "large",
@@ -380,7 +371,6 @@
         "certification_Giz7h8": {
           "type": "certification",
           "settings": {
-            "icon": "shopify://shop_images/d288a0c7424e592393f3bc92b6370bb5.svg",
             "label": "Réduit le temps d'endormissement\n\nLa L-théanine et le GABA agissent en synergie pour calmer l'activité mentale et aider l'enfant à glisser naturellement vers le sommeil.",
             "link": ""
           }
@@ -388,7 +378,6 @@
         "certification_8XX37L": {
           "type": "certification",
           "settings": {
-            "icon": "shopify://shop_images/a612f50e764696c9f68c892ca745ec8f.svg",
             "label": "Soutient la restauration cérébrale nocturne\n\nLa vitamine B6 joue un rôle clé dans la synthèse des neurotransmetteurs — le sommeil devient un vrai moment de récupération pour le cerveau en développement.",
             "link": ""
           }
@@ -396,7 +385,6 @@
         "certification_w6cwby": {
           "type": "certification",
           "settings": {
-            "icon": "shopify://shop_images/c49cfe09c72e980a89f74f17eeac628b.svg",
             "label": "Apaise l'agitation en fin de journée\n\nLe magnésium et la camomille aident à relâcher les tensions accumulées dans la journée — moins d'énervement, moins de résistance au coucher.",
             "link": ""
           }
@@ -404,7 +392,6 @@
         "certification_XAFn7c": {
           "type": "certification",
           "settings": {
-            "icon": "shopify://shop_images/3e70d015ace93e7a61adef1e482e56d2.svg",
             "label": "Favorise un réveil naturellement reposé\n\nFormulé sans mélatonine pour ne pas perturber le rythme circadien de l'enfant — le corps s'endort et se réveille selon son cycle naturel.",
             "link": ""
           }
@@ -473,7 +460,6 @@
         "photo_hDeBQk": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mai_2026_06_44_09.png",
             "ratio": "1:1",
             "username": "michaelow",
             "link": "",
@@ -484,7 +470,6 @@
         "photo_hGXnx6": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mai_2026_06_59_25.png",
             "ratio": "natural",
             "username": "labrunette",
             "link": "",
@@ -495,7 +480,6 @@
         "photo_i8qhkr": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mai_2026_06_53_31.png",
             "ratio": "natural",
             "username": "marielou7",
             "link": "",
@@ -506,7 +490,6 @@
         "photo_r4iQFa": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mai_2026_07_05_02.png",
             "ratio": "natural",
             "username": "Lhistoiredeanne",
             "link": "",
@@ -554,7 +537,6 @@
             "helpful_up": 14,
             "helpful_down": 0,
             "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/favikon-super.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "21 mai 2026",
@@ -593,7 +575,6 @@
             "helpful_up": 3,
             "helpful_down": 1,
             "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/favikon-super.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "18 mai 2026",
@@ -632,7 +613,6 @@
             "helpful_up": 2,
             "helpful_down": 2,
             "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/favikon-super.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "13 mai 2026",
@@ -690,7 +670,6 @@
             "helpful_up": 12,
             "helpful_down": 0,
             "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/favikon-super.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "22 mai 2026",
@@ -729,7 +708,6 @@
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/favikon-super.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "16 mai 2026",
@@ -806,7 +784,6 @@
             "helpful_up": 11,
             "helpful_down": 0,
             "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/favikon-super.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "23 mai 2026",
@@ -845,7 +822,6 @@
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/favikon-super.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "17 mai 2026",
@@ -884,7 +860,6 @@
             "helpful_up": 4,
             "helpful_down": 1,
             "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/favikon-super.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "11 mai 2026",

@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "headings_font_primary": "sans-serif",
+    "headings_font_primary": "inter_n7",
     "headings_use_comerie": true,
     "headings_primary_size": 60,
     "body_font_primary": "sans-serif",
