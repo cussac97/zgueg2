@@ -123,7 +123,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "button_font": "stefan",
+            "button_font": "theme",
             "show_quantity_selector": true,
             "show_preorder": false,
             "show_dynamic_checkout": false,
