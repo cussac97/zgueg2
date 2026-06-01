@@ -32,7 +32,7 @@
         "show_locale_selector": false,
         "show_country_selector": true,
         "show_social_icons": true,
-        "bar_bgcolor": "#ec018c",
+        "bar_bgcolor": "#0000c9",
         "bar_txtcolor": "#ffffff",
         "border_color": "rgba(0,0,0,0)"
       }
@@ -59,8 +59,8 @@
         "logo_src": "shopify://shop_images/zguegblack.svg",
         "logo_height": 30,
         "logo_mobile_height": 30,
-        "style": "two-rows",
-        "menu_type": "classic",
+        "style": "one-row",
+        "menu_type": "minimal",
         "alignment": "left",
         "label_style": "none",
         "sticky_header": true,
