@@ -59,8 +59,7 @@
 {%- endcapture -%}
 
 <div
-  class="enriched-hero-wrap{% if section.settings.width == 'page' %} container--large{% endif %}"
-  style="margin-top:{{ section.settings.margin_top }}px;margin-bottom:{{ section.settings.margin_bottom }}px;"
+  class="enriched-hero-wrap{% if section.settings.width == 'page' %} container--large{% endif %}{% unless section.settings.remove_spacing %} container--vertical-space{% endunless %}"
 >
   <div
     class="enriched-hero{% if section.settings.width == 'page' and section.settings.rounded %} enriched-hero--rounded{% endif %}{% if section.settings.default_text_color != 'rgba(0,0,0,0)' %} enriched-hero--has-text-color{% endif %}"
@@ -608,24 +607,11 @@
       "visible_if": "{{ section.settings.width == 'page' and section.settings.rounded == true }}"
     },
     {
-      "type": "range",
-      "id": "margin_top",
-      "label": "Marge au-dessus",
-      "min": 0,
-      "max": 120,
-      "step": 2,
-      "default": 0,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "id": "margin_bottom",
-      "label": "Marge en dessous",
-      "min": 0,
-      "max": 120,
-      "step": 2,
-      "default": 0,
-      "unit": "px"
+      "type": "checkbox",
+      "id": "remove_spacing",
+      "label": "Supprimer l'espace au-dessus",
+      "info": "Par défaut, la section ajoute le même espacement vertical que les autres sections du thème.",
+      "default": false
     }
   ],
   "blocks": [
