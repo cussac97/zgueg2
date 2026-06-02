@@ -185,7 +185,7 @@
         "image_crop": true,
         "overlay_image_width": 320,
         "overlay_image_width_mobile": 100,
-        "is_fullwidth": false,
+        "is_fullwidth": true,
         "text_alignment": "horizontal-center",
         "content_layout": "stacked",
         "spacing": 24,
@@ -193,7 +193,7 @@
         "color_text_main": "rgba(0,0,0,0)",
         "color_borders_main": "#d9d9d9",
         "border_radius": 0,
-        "color_hide_borders": false,
+        "color_hide_borders": true,
         "gutter_decrease": false,
         "remove_margin": false,
         "remove_bottom_margin": false
@@ -387,7 +387,7 @@
         "image_crop": true,
         "overlay_image_width": 160,
         "overlay_image_width_mobile": 100,
-        "is_fullwidth": false,
+        "is_fullwidth": true,
         "text_alignment": "horizontal-center",
         "content_layout": "stacked",
         "spacing": 24,
@@ -395,7 +395,7 @@
         "color_text_main": "rgba(0,0,0,0)",
         "color_borders_main": "#d9d9d9",
         "border_radius": 0,
-        "color_hide_borders": false,
+        "color_hide_borders": true,
         "gutter_decrease": false,
         "remove_margin": true,
         "remove_bottom_margin": false
@@ -571,9 +571,9 @@
         "color_text_main": "#0000c9",
         "color_borders_main": "rgba(0,0,0,0)",
         "border_radius": 0,
-        "color_hide_borders": false,
+        "color_hide_borders": true,
         "gutter_decrease": false,
-        "remove_margin": false,
+        "remove_margin": true,
         "remove_bottom_margin": true
       }
     }
