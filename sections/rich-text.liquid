@@ -83,6 +83,31 @@
             window.KrownAssetLoader.loadScript('{{ "component-video.js" | asset_url }}');
           </script>
         {%- endunless -%}
+
+        {%- if section.settings.overlay_image != blank -%}
+          {%- liquid
+            assign ov = section.settings.overlay_image
+            assign ov_w = section.settings.overlay_image_width
+            assign ov_h = ov_w | divided_by: ov.aspect_ratio | round
+            assign ov_w2 = ov_w | times: 2
+          -%}
+          <div
+            class="rich-text__overlay-image"
+            style="--rt-overlay-w:{{ ov_w }}px;--rt-overlay-w-m:{{ section.settings.overlay_image_width_mobile }}px;"
+            aria-hidden="true"
+          >
+            <img
+              class="rich-text__overlay-img"
+              src="{{ ov | image_url: width: ov_w }}"
+              srcset="{{ ov | image_url: width: ov_w }} {{ ov_w }}w, {{ ov | image_url: width: ov_w2 }} {{ ov_w2 }}w"
+              sizes="{{ ov_w }}px"
+              width="{{ ov_w }}"
+              height="{{ ov_h }}"
+              alt="{{ ov.alt | escape }}"
+              loading="lazy"
+            >
+          </div>
+        {%- endif -%}
       </div>
 
       <div
@@ -108,10 +133,24 @@
                 </div>
 
               {%- when 'title' -%}
+                {%- liquid
+                  assign t_style = 'margin-bottom:0;'
+                  if block.settings.title_weight != blank and block.settings.title_weight != 'inherit'
+                    assign t_style = t_style | append: 'font-weight:' | append: block.settings.title_weight | append: ';'
+                  endif
+                  assign t_class = block.settings.title_size
+                  if block.settings.title_size_custom > 0
+                    assign t_class = t_class | append: ' rich-text__title--custom-size'
+                    assign t_style = t_style | append: '--rt-title-fs:' | append: block.settings.title_size_custom | append: 'px;'
+                    if block.settings.title_size_custom_mobile > 0
+                      assign t_style = t_style | append: '--rt-title-fs-m:' | append: block.settings.title_size_custom_mobile | append: 'px;'
+                    endif
+                  endif
+                -%}
                 <div>
                   <{{ block.settings.seo_h_tag }}
-                    style="margin-bottom: 0"
-                    class="{{ block.settings.title_size }}"
+                    style="{{ t_style }}"
+                    class="{{ t_class }}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.title | escape }}
@@ -318,6 +357,38 @@
       "default": true
     },
     {
+      "type": "header",
+      "content": "Image en superposition"
+    },
+    {
+      "type": "image_picker",
+      "id": "overlay_image",
+      "label": "Image superposée (centrée)",
+      "info": "Affichée par-dessus l'image principale, centrée."
+    },
+    {
+      "type": "range",
+      "id": "overlay_image_width",
+      "label": "Largeur (ordinateur)",
+      "min": 20,
+      "max": 400,
+      "step": 4,
+      "default": 160,
+      "unit": "px",
+      "visible_if": "{{ section.settings.overlay_image != blank }}"
+    },
+    {
+      "type": "range",
+      "id": "overlay_image_width_mobile",
+      "label": "Largeur (mobile)",
+      "min": 40,
+      "max": 240,
+      "step": 2,
+      "default": 100,
+      "unit": "px",
+      "visible_if": "{{ section.settings.overlay_image != blank }}"
+    },
+    {
       "type": "checkbox",
       "id": "is_fullwidth",
       "label": "t:sections.local-extra-words.sections.rich-text.settings.fullwidth.label",
@@ -456,6 +527,44 @@
             }
           ],
           "default": "heading-size--regular"
+        },
+        {
+          "type": "select",
+          "id": "title_weight",
+          "label": "Épaisseur",
+          "options": [
+            { "value": "inherit", "label": "Par défaut" },
+            { "value": "300", "label": "Light (300)" },
+            { "value": "400", "label": "Regular (400)" },
+            { "value": "500", "label": "Medium (500)" },
+            { "value": "600", "label": "Semibold (600)" },
+            { "value": "700", "label": "Bold (700)" },
+            { "value": "800", "label": "Extrabold (800)" }
+          ],
+          "default": "inherit"
+        },
+        {
+          "type": "range",
+          "id": "title_size_custom",
+          "label": "Taille personnalisée (ordinateur)",
+          "info": "0 = utilise la taille prédéfinie ci-dessus.",
+          "min": 0,
+          "max": 120,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "title_size_custom_mobile",
+          "label": "Taille personnalisée (mobile)",
+          "info": "0 = identique à l'ordinateur.",
+          "min": 0,
+          "max": 90,
+          "step": 2,
+          "default": 0,
+          "unit": "px",
+          "visible_if": "{{ block.settings.title_size_custom > 0 }}"
         },
         {
           "type": "header",

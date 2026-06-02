@@ -104,3 +104,35 @@
     padding: var(--gutter-large) !important;
   }
 }
+
+/* Image en superposition (centrée par-dessus l'image principale) */
+.rich-text__overlay-image {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2;
+}
+.rich-text__overlay-img {
+  width: var(--rt-overlay-w, 160px);
+  max-width: 80%;
+  height: auto;
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .rich-text__overlay-img {
+    width: var(--rt-overlay-w-m, var(--rt-overlay-w, 120px));
+  }
+}
+
+/* Titre du bloc en-tête : taille personnalisée */
+.rich-text__title--custom-size {
+  font-size: var(--rt-title-fs);
+}
+@media screen and (max-width: 767px) {
+  .rich-text__title--custom-size {
+    font-size: var(--rt-title-fs-m, var(--rt-title-fs));
+  }
+}
