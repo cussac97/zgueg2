@@ -15,7 +15,7 @@
         "heading_yHJyNM": {
           "type": "heading",
           "settings": {
-            "text": "Des ingrédients propres et éprouvés, puis on monte d'un cran avec des actifs premium rarement vus à ce prix.",
+            "text": "On garde votre zgueg frais pendant 16 heures. Garanti 0 bullshit.",
             "font_size": 44,
             "font_size_mobile": 26,
             "font_weight": "400",
@@ -117,9 +117,7 @@
         "overlay_opacity": 30,
         "default_text_color": "#ffffff",
         "rounded": false,
-        "border_radius": 16,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "border_radius": 16
       }
     },
     "flex_slideshow_GQ8jEx": {
