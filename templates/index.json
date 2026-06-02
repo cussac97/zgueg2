@@ -76,7 +76,7 @@
             "heading_49aKXe": {
               "type": "heading",
               "settings": {
-                "heading": "Soyez tout le temps prêt.",
+                "heading": "Vous allez adorer votre zgueg",
                 "title_size": "h1",
                 "line_height": "default",
                 "text_color": "#ffffff",
@@ -660,25 +660,31 @@
         "template--17238267691326__0e767bd4-7304-489f-b3eb-581a0c76b1a4-1677661598d015c78a-0": {
           "type": "text",
           "settings": {
-            "marquee_text": "Fabriqué en France "
+            "marquee_text": "Sans perturbateur endocrinien"
           }
         },
         "text_pkf9Vn": {
           "type": "text",
           "settings": {
-            "marquee_text": "Sans allergènes 😉"
+            "marquee_text": "Sans phtalates"
           }
         },
         "text_n6hDxw": {
           "type": "text",
           "settings": {
-            "marquee_text": "Sans OGM 💩"
+            "marquee_text": "Sans parabènes"
           }
         },
         "text_9ixaUz": {
           "type": "text",
           "settings": {
-            "marquee_text": "Sans sucres 🦷"
+            "marquee_text": "Sans phénoxyéthanol"
+          }
+        },
+        "text_Cz6V8g": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "Noté 93/100 sur Yuka"
           }
         }
       },
@@ -686,15 +692,16 @@
         "template--17238267691326__0e767bd4-7304-489f-b3eb-581a0c76b1a4-1677661598d015c78a-0",
         "text_pkf9Vn",
         "text_n6hDxw",
-        "text_9ixaUz"
+        "text_9ixaUz",
+        "text_Cz6V8g"
       ],
       "settings": {
         "scroll_direction": "ltr",
         "speed": 100,
         "pause_on_hover": false,
         "horizontal_space": "large-x-2",
-        "text_size": "text-size--large",
-        "use_stefan_font": true,
+        "text_size": "text-size--xlarge",
+        "use_stefan_font": false,
         "color_background_main": "#0000c9",
         "color_text_main": "#ffffff",
         "remove_top_margin": true,
