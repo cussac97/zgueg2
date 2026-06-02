@@ -346,63 +346,6 @@
         "remove_bottom_margin": false
       }
     },
-    "b33e6547-ef63-4a5b-9c3d-3ca5fb11b80f": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17238267691326__b33e6547-ef63-4a5b-9c3d-3ca5fb11b80f-167593892035c33970-0": {
-          "type": "title",
-          "settings": {
-            "title": "Home accessories, mouth-blown vases, patterned glasses & carafes and something more.",
-            "title_size": "heading-size--regular",
-            "title_weight": "inherit",
-            "title_size_custom": 0,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        },
-        "template--17238267691326__b33e6547-ef63-4a5b-9c3d-3ca5fb11b80f-167593892035c33970-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Add warmth and character to your space with carefully curated home accessories that blend style and function effortlessly.</p>",
-            "text_size": "large"
-          }
-        },
-        "template--17238267691326__b33e6547-ef63-4a5b-9c3d-3ca5fb11b80f-167593892035c33970-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Learn more",
-            "link": "#",
-            "open_in_new_window": false,
-            "button_style": "solid"
-          }
-        }
-      },
-      "block_order": [
-        "template--17238267691326__b33e6547-ef63-4a5b-9c3d-3ca5fb11b80f-167593892035c33970-0",
-        "template--17238267691326__b33e6547-ef63-4a5b-9c3d-3ca5fb11b80f-167593892035c33970-1",
-        "template--17238267691326__b33e6547-ef63-4a5b-9c3d-3ca5fb11b80f-167593892035c33970-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "video_controls": false,
-        "image_position": "right",
-        "height": "regular",
-        "image_crop": true,
-        "overlay_image_width": 160,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
-        "text_alignment": "horizontal-left",
-        "spacing": 32,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "#f1f1f1",
-        "color_borders_main": "rgba(0,0,0,0)",
-        "border_radius": 5,
-        "color_hide_borders": false,
-        "gutter_decrease": false,
-        "remove_margin": false,
-        "remove_bottom_margin": true
-      }
-    },
     "customer_reviews_c89ViU": {
       "type": "customer-reviews",
       "blocks": {
@@ -469,6 +412,7 @@
         "review_dPmihX",
         "review_WhmgKB"
       ],
+      "disabled": true,
       "name": "Customer Reviews",
       "settings": {
         "container_width": "large",
@@ -526,7 +470,6 @@
     "certifications_DDdq8b",
     "rich_text_9XNcQB",
     "rich_text_3E9aKj",
-    "b33e6547-ef63-4a5b-9c3d-3ca5fb11b80f",
     "customer_reviews_c89ViU"
   ]
 }
