@@ -85,13 +85,29 @@
             "hide_desktop": false,
             "hide_mobile": false
           }
+        },
+        "button_YhzCgM": {
+          "type": "button",
+          "settings": {
+            "label": "Découvrir",
+            "link": "shopify://collections/frontpage",
+            "open_in_new_window": false,
+            "button_style": "outline",
+            "pos": "bottom right",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
         }
       },
       "block_order": [
         "heading_yHJyNM",
         "image_9mUziw",
         "divider_Fc93Rz",
-        "text_zJRC4R"
+        "text_zJRC4R",
+        "button_YhzCgM"
       ],
       "name": "Enriched hero",
       "settings": {
