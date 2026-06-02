@@ -1283,54 +1283,6 @@ html[dir=ltr] .align-content--horizontal-right {
 .align-content--vertical-bottom {
   align-items: flex-end;
 }
-.align-content--responsive {
-  justify-content: var(--align-h-desk);
-  align-items: var(--align-v-desk);
-  text-align: var(--text-h-desk);
-}
-.align-content--responsive .card__text {
-  --horizontal-alignment: var(--text-h-desk);
-}
-@media screen and (max-width: 767px) {
-  .align-content--responsive {
-    justify-content: var(--align-h-mob);
-    align-items: var(--align-v-mob);
-    text-align: var(--text-h-mob);
-  }
-  .align-content--responsive .card__text {
-    --horizontal-alignment: var(--text-h-mob);
-  }
-}
-
-/* Disposition libre : positionnement par sous-bloc dans une diapositive */
-.card__text--free {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.card__text--free > .slide-pos {
-  position: absolute;
-  top: var(--sp-top, auto);
-  right: var(--sp-right, auto);
-  bottom: var(--sp-bottom, auto);
-  left: var(--sp-left, auto);
-  margin: 0;
-  max-width: min(90%, 640px);
-  transform: translate(calc(var(--sp-tx, 0%) + var(--sp-ox, 0px)), calc(var(--sp-ty, 0%) + var(--sp-oy, 0px)));
-}
-.card__text--free > .slide-pos.divider {
-  max-width: none;
-}
-@media screen and (max-width: 767px) {
-  .card__text--free > .slide-pos {
-    top: var(--sp-top-m, var(--sp-top, auto));
-    right: var(--sp-right-m, var(--sp-right, auto));
-    bottom: var(--sp-bottom-m, var(--sp-bottom, auto));
-    left: var(--sp-left-m, var(--sp-left, auto));
-    transform: translate(calc(var(--sp-tx-m, var(--sp-tx, 0%)) + var(--sp-ox-m, var(--sp-ox, 0px))), calc(var(--sp-ty-m, var(--sp-ty, 0%)) + var(--sp-oy-m, var(--sp-oy, 0px))));
-  }
-}
 
 .element--opacity-30 {
   opacity: 0.3;

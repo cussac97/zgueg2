@@ -1,0 +1,85 @@
+{%- comment -%}
+  Enriched hero — positionnement d'un bloc dans le canvas.
+  Émet une liste de custom properties CSS (--eh-*) à injecter dans l'attribut style du bloc,
+  consommées par .enriched-hero__item (voir le {% stylesheet %} de sections/enriched-hero.liquid).
+
+  Paramètres :
+    pos        : ancrage ordinateur, ex. "top left", "middle center", "bottom right"
+    pos_mobile : ancrage mobile, "inherit" pour reprendre l'ordinateur
+    ox / oy    : décalage horizontal / vertical en px (marge depuis le bord ancré, vers l'intérieur)
+{%- endcomment -%}
+{%- liquid
+  assign ox = ox | default: 0
+  assign oy = oy | default: 0
+
+  assign v = pos | split: ' ' | first
+  assign h = pos | split: ' ' | last
+
+  assign top = 'auto'
+  assign bottom = 'auto'
+  assign ty = '0%'
+  assign oys = oy
+  case v
+    when 'top'
+      assign top = '0'
+    when 'middle'
+      assign top = '50%'
+      assign ty = '-50%'
+    else
+      assign bottom = '0'
+      assign oys = 0 | minus: oy
+  endcase
+
+  assign left = 'auto'
+  assign right = 'auto'
+  assign tx = '0%'
+  assign oxs = ox
+  case h
+    when 'left'
+      assign left = '0'
+    when 'center'
+      assign left = '50%'
+      assign tx = '-50%'
+    else
+      assign right = '0'
+      assign oxs = 0 | minus: ox
+  endcase
+-%}
+--eh-top:{{ top }};--eh-right:{{ right }};--eh-bottom:{{ bottom }};--eh-left:{{ left }};--eh-tx:{{ tx }};--eh-ty:{{ ty }};--eh-ox:{{ oxs }}px;--eh-oy:{{ oys }}px;
+{%- liquid
+  if pos_mobile != blank and pos_mobile != 'inherit'
+    assign vm = pos_mobile | split: ' ' | first
+    assign hm = pos_mobile | split: ' ' | last
+
+    assign topm = 'auto'
+    assign bottomm = 'auto'
+    assign tym = '0%'
+    assign oysm = oy
+    case vm
+      when 'top'
+        assign topm = '0'
+      when 'middle'
+        assign topm = '50%'
+        assign tym = '-50%'
+      else
+        assign bottomm = '0'
+        assign oysm = 0 | minus: oy
+    endcase
+
+    assign leftm = 'auto'
+    assign rightm = 'auto'
+    assign txm = '0%'
+    assign oxsm = ox
+    case hm
+      when 'left'
+        assign leftm = '0'
+      when 'center'
+        assign leftm = '50%'
+        assign txm = '-50%'
+      else
+        assign rightm = '0'
+        assign oxsm = 0 | minus: ox
+    endcase
+    echo '--eh-top-m:' | append: topm | append: ';--eh-right-m:' | append: rightm | append: ';--eh-bottom-m:' | append: bottomm | append: ';--eh-left-m:' | append: leftm | append: ';--eh-tx-m:' | append: txm | append: ';--eh-ty-m:' | append: tym | append: ';--eh-ox-m:' | append: oxsm | append: 'px;--eh-oy-m:' | append: oysm | append: 'px;'
+  endif
+-%}

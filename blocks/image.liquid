@@ -1,5 +1,4 @@
-{%- capture slide_pos_style -%}{%- render 'slide-position', block: block, free_layout: section.settings.free_layout -%}{%- endcapture -%}
-<div class="block-image{% if slide_pos_style != blank %} slide-pos{% endif %}" style="--image-height: {{ block.settings.image_height }}px;{{ slide_pos_style }}" {{ block.shopify_attributes }}>
+<div class="block-image" style="--image-height: {{ block.settings.image_height }}px;" {{ block.shopify_attributes }}>
   {%- if block.settings.link -%}
     <a
       href="{{ block.settings.link }}"
@@ -75,74 +74,6 @@
       "visible_if": "{{ block.settings.link != blank }}",
       "label": "t:sections.local-extra-words.sections.announcement-bar.blocks.content.settings.target",
       "default": false
-    },
-    {
-      "type": "header",
-      "content": "Position dans la diapositive",
-      "info": "Actif uniquement quand « Disposition libre » est coché sur le diaporama flexible.",
-      "visible_if": "{{ section.settings.free_layout }}"
-    },
-    {
-      "type": "select",
-      "id": "slide_pos",
-      "label": "Position (ordinateur)",
-      "visible_if": "{{ section.settings.free_layout }}",
-      "options": [
-        { "value": "flow", "label": "Flux normal" },
-        { "value": "top left", "label": "Haut gauche", "group": "Haut" },
-        { "value": "top center", "label": "Haut centre", "group": "Haut" },
-        { "value": "top right", "label": "Haut droite", "group": "Haut" },
-        { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
-        { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
-        { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
-        { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
-        { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
-        { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
-      ],
-      "default": "flow"
-    },
-    {
-      "type": "range",
-      "id": "slide_offset_x",
-      "label": "Décalage horizontal",
-      "info": "Marge depuis le bord ancré, vers l'intérieur.",
-      "min": -200,
-      "max": 200,
-      "step": 2,
-      "default": 0,
-      "unit": "px",
-      "visible_if": "{{ section.settings.free_layout and block.settings.slide_pos != 'flow' }}"
-    },
-    {
-      "type": "range",
-      "id": "slide_offset_y",
-      "label": "Décalage vertical",
-      "info": "Marge depuis le bord ancré, vers l'intérieur.",
-      "min": -200,
-      "max": 200,
-      "step": 2,
-      "default": 0,
-      "unit": "px",
-      "visible_if": "{{ section.settings.free_layout and block.settings.slide_pos != 'flow' }}"
-    },
-    {
-      "type": "select",
-      "id": "slide_pos_mobile",
-      "label": "Position (mobile)",
-      "visible_if": "{{ section.settings.free_layout and block.settings.slide_pos != 'flow' }}",
-      "options": [
-        { "value": "inherit", "label": "Comme l'ordinateur" },
-        { "value": "top left", "label": "Haut gauche", "group": "Haut" },
-        { "value": "top center", "label": "Haut centre", "group": "Haut" },
-        { "value": "top right", "label": "Haut droite", "group": "Haut" },
-        { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
-        { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
-        { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
-        { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
-        { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
-        { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
-      ],
-      "default": "inherit"
     }
   ],
   "presets": [
