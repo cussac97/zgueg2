@@ -565,7 +565,7 @@
         "overlay_image_width_mobile": 100,
         "is_fullwidth": true,
         "text_alignment": "horizontal-left",
-        "content_layout": "stacked",
+        "content_layout": "split",
         "spacing": 32,
         "color_background_main": "#f7f3ec",
         "color_text_main": "#0000c9",
