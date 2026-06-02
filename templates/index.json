@@ -111,15 +111,15 @@
       ],
       "name": "Enriched hero",
       "settings": {
-        "width": "page",
+        "width": "full",
         "content_full_width": true,
         "content_max_width": 1400,
         "content_align": "center",
         "content_padding_x_desktop": 64,
-        "content_padding_y_desktop": 56,
+        "content_padding_y_desktop": 132,
         "content_padding_x_mobile": 24,
         "content_padding_y_mobile": 28,
-        "desktop_height": "70vh",
+        "desktop_height": "60vh",
         "desktop_height_px": 640,
         "mobile_height": "80vh",
         "mobile_height_px": 520,
@@ -134,7 +134,7 @@
         "default_text_color": "#ffffff",
         "rounded": false,
         "border_radius": 16,
-        "remove_spacing": false
+        "remove_spacing": true
       }
     },
     "rich_text_EcNqNq": {

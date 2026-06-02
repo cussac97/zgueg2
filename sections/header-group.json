@@ -139,6 +139,7 @@
           "type": "logo",
           "settings": {
             "logo": "shopify://shop_images/zguegblack.svg",
+            "second_logo": "shopify://shop_images/zguegblanc.svg",
             "logo_width": 80,
             "logo_width_mobile": 160,
             "name_custom": false,
@@ -224,7 +225,7 @@
       "name": "SS - Header #9",
       "settings": {
         "show_type": "scroll_up",
-        "transparent_bg": "none",
+        "transparent_bg": "home",
         "layout_padding_horizontal": 30,
         "layout_padding_vertical": 22,
         "layout_gap_mobile": 10,
