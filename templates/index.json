@@ -54,7 +54,7 @@
           "type": "divider",
           "settings": {
             "length": 100,
-            "thickness": 2,
+            "thickness": 1,
             "color": "#ffffff",
             "opacity": 100,
             "pos": "bottom left",
