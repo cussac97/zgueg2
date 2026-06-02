@@ -156,7 +156,7 @@
           "type": "menu_item",
           "settings": {
             "text": "refreshed.®",
-            "url": "shopify://products/la-nuit-pleine",
+            "url": "shopify://products/spray-reequilibrant-intime-pour-homme",
             "products": []
           }
         },
@@ -164,7 +164,7 @@
           "type": "menu_item",
           "settings": {
             "text": "cleaned.®",
-            "url": "shopify://products/le-multivitamines",
+            "url": "shopify://products/cleaned-®-gel-mousse-nettoyant-quotidien",
             "products": []
           }
         },
