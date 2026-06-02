@@ -54,12 +54,12 @@
           "type": "divider",
           "settings": {
             "length": 100,
-            "thickness": 3,
+            "thickness": 2,
             "color": "#ffffff",
             "opacity": 100,
             "pos": "bottom left",
             "offset_x": 0,
-            "offset_y": 70,
+            "offset_y": 100,
             "pos_mobile": "inherit",
             "hide_desktop": false,
             "hide_mobile": false
