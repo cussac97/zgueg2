@@ -294,9 +294,9 @@
         "title_ih9K6A": {
           "type": "title",
           "settings": {
-            "title": "Le gel moussant quotidien",
+            "title": "Le spray rééquilibrant",
             "title_size": "heading-size--small",
-            "title_weight": "inherit",
+            "title_weight": "500",
             "title_size_custom": 0,
             "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
@@ -305,14 +305,14 @@
         "text_pzzdk3": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.</p>",
+            "text": "<p>Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® règle le problème — il ne le cache pas derrière un parfum.</p>",
             "text_size": "regular"
           }
         },
         "button_FpdwFg": {
           "type": "button",
           "settings": {
-            "button_label": "Show more",
+            "button_label": "Je shoppe refreshed®",
             "link": "",
             "open_in_new_window": false,
             "button_style": "outline"
