@@ -66,17 +66,23 @@
     class="enriched-hero{% if section.settings.width == 'page' and section.settings.rounded %} enriched-hero--rounded{% endif %}{% if section.settings.default_text_color != 'rgba(0,0,0,0)' %} enriched-hero--has-text-color{% endif %}"
     style="{{ hero_vars | strip_newlines }}"
   >
-    <div class="enriched-hero__media">
+    {%- liquid
+      assign bg_url = ''
+      assign bg_url_m = ''
+      if img != blank
+        assign bg_url = img | image_url: width: 3000
+      endif
+      if img_m != blank
+        assign bg_url_m = img_m | image_url: width: 1400
+      endif
+    -%}
+    <div
+      class="enriched-hero__media"
+      style="{% if bg_url != blank %}--eh-bg-img:url('{{ bg_url }}');{% endif %}{% if bg_url_m != blank %}--eh-bg-img-m:url('{{ bg_url_m }}');{% endif %}"
+    >
       {%- if vid != blank -%}
-        {{ vid | video_tag: image_size: '1600x', loop: true, autoplay: true, muted: true, controls: false, preload: 'auto' }}
-      {%- elsif img != blank -%}
-        {%- if img_m != blank -%}
-          {{ img | image_tag: class: 'eh-hide-mob', sizes: '100vw', widths: '600, 900, 1200, 1600, 2000, 2600, 3000', loading: 'eager', fetchpriority: 'high' }}
-          {{ img_m | image_tag: class: 'eh-hide-desk', sizes: '100vw', widths: '400, 600, 800, 1000, 1400', loading: 'eager', fetchpriority: 'high' }}
-        {%- else -%}
-          {{ img | image_tag: sizes: '100vw', widths: '600, 900, 1200, 1600, 2000, 2600, 3000', loading: 'eager', fetchpriority: 'high' }}
-        {%- endif -%}
-      {%- else -%}
+        {{ vid | video_tag: image_size: '1600x', loop: true, autoplay: true, muted: true, controls: false }}
+      {%- elsif img == blank -%}
         {{ 'lifestyle-1' | placeholder_svg_tag: 'enriched-hero__placeholder' }}
       {%- endif -%}
     </div>
@@ -200,6 +206,15 @@
   position: absolute;
   inset: 0;
   z-index: 0;
+  background-image: var(--eh-bg-img, none);
+  background-size: cover;
+  background-position: var(--eh-obj, center);
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .enriched-hero__media {
+    background-image: var(--eh-bg-img-m, var(--eh-bg-img, none));
+  }
 }
 .enriched-hero__media img,
 .enriched-hero__media video,
