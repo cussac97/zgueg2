@@ -146,7 +146,7 @@
     min-width: 0;
   }
   .rich-text__split-col--left {
-    flex: 0 0 var(--rt-split-left, 50%);
+    flex: 0 0 calc(var(--rt-split-left, 50%) - (var(--gutter-large, 50px) / 2));
   }
   .rich-text__split-col--right {
     flex: 1 1 0;
