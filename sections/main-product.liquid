@@ -4,6 +4,18 @@
   {% style %}
     #shopify-section-{{ section.id }} {
       background-color: {{ section.settings.section_background_color }};
+      padding-top: clamp(2.5rem, var(--container-vertical-space), 4.375rem);
+      padding-bottom: clamp(2.5rem, var(--container-vertical-space), 4.375rem);
+    }
+    #shopify-section-{{ section.id }} > .container--vertical-space-small {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    @media screen and (max-width: 767px) {
+      #shopify-section-{{ section.id }} {
+        padding-top: clamp(1.25rem, calc(var(--container-vertical-space) * 0.5), 2.5rem);
+        padding-bottom: clamp(1.25rem, calc(var(--container-vertical-space) * 0.5), 2.5rem);
+      }
     }
   {% endstyle %}
 {%- endif -%}
