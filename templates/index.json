@@ -37,6 +37,7 @@
         "image_9mUziw": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
             "link": "",
             "width": 140,
             "width_mobile": 90,
@@ -54,7 +55,7 @@
           "settings": {
             "length": 100,
             "thickness": 1,
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "opacity": 60,
             "pos": "bottom left",
             "offset_x": 0,
@@ -114,7 +115,7 @@
         "overlay_style": "none",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
-        "default_text_color": "#FFFFFF",
+        "default_text_color": "#ffffff",
         "rounded": false,
         "border_radius": 16,
         "margin_top": 0,
