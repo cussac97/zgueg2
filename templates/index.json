@@ -108,6 +108,7 @@
         "mobile_height_px": 520,
         "min_height": 420,
         "background_image": "shopify://shop_images/why-us-bg.webp",
+        "background_image_mobile": "shopify://shop_images/why-us-bg.webp",
         "image_position": "center",
         "background_color": "rgba(0,0,0,0)",
         "overlay_style": "none",
