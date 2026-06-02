@@ -126,7 +126,7 @@
       <div
         class="
           rich-text__text
-          align-content align-content--{{ section.settings.text_alignment }} align-content--vertical-middle
+          align-content align-content--{{ section.settings.text_alignment }} align-content--vertical-{{ section.settings.content_vertical_position | default: 'middle' }}
           {% unless section.settings.is_fullwidth %} gutter--xlarge {% endunless %}
           {% if section.settings.is_fullwidth %} container--large gutter-top--xlarge gutter-bottom--xlarge {% endif %}
         "
@@ -243,6 +243,18 @@
         }
       ],
       "default": "regular"
+    },
+    {
+      "type": "select",
+      "id": "content_vertical_position",
+      "label": "Position verticale du contenu",
+      "info": "Avec une grande hauteur, « Haut » colle le contenu en haut et supprime l'espace au-dessus du titre.",
+      "options": [
+        { "value": "top", "label": "Haut" },
+        { "value": "middle", "label": "Centré" },
+        { "value": "bottom", "label": "Bas" }
+      ],
+      "default": "middle"
     },
     {
       "type": "checkbox",
