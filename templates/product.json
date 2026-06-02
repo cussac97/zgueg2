@@ -353,6 +353,7 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
+        "image": "shopify://shop_images/OFFCOURT_SOAPIMAGE3_750x_00f81d69-a949-4fc1-943e-1ba9b83a8521.webp",
         "video_controls": false,
         "image_position": "left",
         "height": "large",
@@ -376,6 +377,7 @@
         "certification_Giz7h8": {
           "type": "certification",
           "settings": {
+            "icon": "shopify://shop_images/dc521dd1226282e6980822beae896c56c080640d-100x100.svg",
             "label": "Réduit le temps d'endormissement\n\nLa L-théanine et le GABA agissent en synergie pour calmer l'activité mentale et aider l'enfant à glisser naturellement vers le sommeil.",
             "link": ""
           }
@@ -383,6 +385,7 @@
         "certification_8XX37L": {
           "type": "certification",
           "settings": {
+            "icon": "shopify://shop_images/0ca09a37960790c44e2abb9f64f31c09318dec63-100x100.svg",
             "label": "Soutient la restauration cérébrale nocturne\n\nLa vitamine B6 joue un rôle clé dans la synthèse des neurotransmetteurs — le sommeil devient un vrai moment de récupération pour le cerveau en développement.",
             "link": ""
           }
@@ -390,6 +393,7 @@
         "certification_w6cwby": {
           "type": "certification",
           "settings": {
+            "icon": "shopify://shop_images/6dbe15adf31d8d258a458ae0dfc1a973a45dacf6-100x100.svg",
             "label": "Apaise l'agitation en fin de journée\n\nLe magnésium et la camomille aident à relâcher les tensions accumulées dans la journée — moins d'énervement, moins de résistance au coucher.",
             "link": ""
           }
@@ -397,6 +401,7 @@
         "certification_XAFn7c": {
           "type": "certification",
           "settings": {
+            "icon": "shopify://shop_images/a8fde2b9bdfe4f20f408ce7079fffaa052238b0d-100x100.svg",
             "label": "Favorise un réveil naturellement reposé\n\nFormulé sans mélatonine pour ne pas perturber le rythme circadien de l'enfant — le corps s'endort et se réveille selon son cycle naturel.",
             "link": ""
           }
