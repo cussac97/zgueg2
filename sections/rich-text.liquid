@@ -14,6 +14,14 @@
   {% endstyle %}
 {%- endif -%}
 
+{%- if section.settings.image_object_position != blank and section.settings.image_object_position != 'auto' -%}
+  {% style %}
+    #element-{{ section.id }} .rich-text__image .lazy-image img {
+      object-position: {{ section.settings.image_object_position }};
+    }
+  {% endstyle %}
+{%- endif -%}
+
 <div class="{% unless section.settings.is_fullwidth %} container--large {% else %} container--fullwidth {% endunless %} {% unless section.settings.remove_margin %} container--vertical-space{% if section.settings.gutter_decrease %}-small{% endif %} {% endunless %} {% if section.settings.remove_bottom_margin %} container--negative-margin {% endif %}">
   <div
     id="element-{{ section.id }}"
@@ -38,6 +46,11 @@
         else
           assign preload = false
         endif
+
+        assign img_align = true
+        if section.settings.image_object_position != blank and section.settings.image_object_position != 'auto'
+          assign img_align = false
+        endif
       -%}
 
       <div
@@ -51,7 +64,7 @@
         {%- unless section.settings.video != blank -%}
           {%- liquid
             unless section.settings.image == blank
-              render 'lazy-image', image: section.settings.image, type: '', alt: section.settings.title, image_alignment: true, id: section.id, class: 'lazy-image--to-reveal', preload: preload
+              render 'lazy-image', image: section.settings.image, type: '', alt: section.settings.title, image_alignment: img_align, id: section.id, class: 'lazy-image--to-reveal', preload: preload
             else
               echo 'image' | placeholder_svg_tag
             endunless
@@ -237,6 +250,22 @@
       "label": "t:sections.local-extra-words.sections.rich-text.settings.crop.label",
       "info": "t:sections.local-extra-words.sections.rich-text.settings.crop.info",
       "default": true
+    },
+    {
+      "type": "select",
+      "id": "image_object_position",
+      "label": "Position de l'image (recadrage)",
+      "info": "Quand l'image remplit la zone et qu'elle est recadrée, choisit quelle partie reste visible.",
+      "options": [
+        { "value": "auto", "label": "Auto (point focal de l'image)" },
+        { "value": "top", "label": "Coller en haut" },
+        { "value": "center", "label": "Centrer" },
+        { "value": "bottom", "label": "Coller en bas" },
+        { "value": "left", "label": "Coller à gauche" },
+        { "value": "right", "label": "Coller à droite" }
+      ],
+      "default": "auto",
+      "visible_if": "{{ section.settings.image_crop }}"
     },
     {
       "type": "header",
