@@ -460,9 +460,10 @@
         "image_6et9pd": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Render_Mockup_3000_4000_2026-06-02_3.png",
             "link": "",
-            "offset_width": 15,
-            "offset_x": 35,
+            "offset_width": 40,
+            "offset_x": 30,
             "offset_x_end": 10,
             "offset_y": 125,
             "hide_on_desk": false,
@@ -470,7 +471,7 @@
             "offset_width_mobile": 35,
             "offset_x_mobile": 15,
             "offset_y_mobile": 90,
-            "scroll_speed": 4,
+            "scroll_speed": 1,
             "rotation_start": -5,
             "rotation_end": -35
           }
@@ -478,8 +479,9 @@
         "image_PwCYnk": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Render_Mockup_3000_4000_2026-06-02_4.png",
             "link": "",
-            "offset_width": 10,
+            "offset_width": 40,
             "offset_x": 45,
             "offset_x_end": 60,
             "offset_y": 110,
@@ -488,13 +490,14 @@
             "offset_width_mobile": 35,
             "offset_x_mobile": 15,
             "offset_y_mobile": 90,
-            "scroll_speed": 1,
+            "scroll_speed": 7,
             "rotation_start": 0,
             "rotation_end": 20
           }
         },
         "image_BAtmjh": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "link": "",
             "offset_width": 20,
@@ -520,7 +523,7 @@
       "name": "t:sections.bundle-extra-words.sections.slider.name",
       "settings": {
         "caption": "",
-        "title": "<p>Voici les bonbons supervitaminés</p>",
+        "title": "<p>Pour une confiance en soi décuplée</p>",
         "button_label": "",
         "button_link": "",
         "open_in_new_window": false,
@@ -740,6 +743,7 @@
         "text_mXx6iz",
         "button_8Y9RzN"
       ],
+      "disabled": true,
       "settings": {
         "video_controls": false,
         "image_position": "left",
@@ -800,6 +804,7 @@
         "166245749775e9bb81-1",
         "166245749775e9bb81-2"
       ],
+      "disabled": true,
       "settings": {
         "video_controls": false,
         "image_position": "right",
@@ -1302,6 +1307,7 @@
         "photo_Xty3Dr",
         "photo_YiKVAe"
       ],
+      "disabled": true,
       "name": "Instagram shots",
       "settings": {
         "heading": "Les Superbonbons sur Instagram",
