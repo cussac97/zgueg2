@@ -238,6 +238,9 @@
           "settings": {
             "title": "Le gel moussant quotidien",
             "title_size": "heading-size--small",
+            "title_weight": "inherit",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
           }
         },
@@ -270,6 +273,9 @@
         "image_position": "right",
         "height": "regular",
         "image_crop": true,
+        "overlay_image": "shopify://shop_images/Render_Mockup_3000_4000_2026-06-02_3.png",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
         "is_fullwidth": false,
         "text_alignment": "horizontal-center",
         "spacing": 24,
@@ -291,6 +297,9 @@
           "settings": {
             "title": "Le gel moussant quotidien",
             "title_size": "heading-size--small",
+            "title_weight": "inherit",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
           }
         },
@@ -323,6 +332,8 @@
         "image_position": "left",
         "height": "regular",
         "image_crop": true,
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
         "is_fullwidth": false,
         "text_alignment": "horizontal-center",
         "spacing": 24,
@@ -344,6 +355,9 @@
           "settings": {
             "title": "Home accessories, mouth-blown vases, patterned glasses & carafes and something more.",
             "title_size": "heading-size--regular",
+            "title_weight": "inherit",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
           }
         },
@@ -375,6 +389,8 @@
         "image_position": "right",
         "height": "regular",
         "image_crop": true,
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
         "is_fullwidth": true,
         "text_alignment": "horizontal-left",
         "spacing": 32,
