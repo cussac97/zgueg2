@@ -276,6 +276,7 @@
       "blocks": {
         "image_emEfTD": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_height": 58
           }
@@ -326,6 +327,7 @@
       "blocks": {
         "image_kbTPya": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_height": 58
           }
