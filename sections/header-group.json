@@ -225,7 +225,7 @@
       "name": "SS - Header #9",
       "settings": {
         "show_type": "scroll_up",
-        "transparent_bg": "home",
+        "transparent_bg": "all",
         "layout_padding_horizontal": 30,
         "layout_padding_vertical": 22,
         "layout_gap_mobile": 10,
