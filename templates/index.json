@@ -181,7 +181,7 @@
         "image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_14_45_16.png",
         "video_controls": false,
         "image_position": "right",
-        "height": "regular",
+        "height": "large",
         "image_crop": true,
         "overlay_image_width": 320,
         "overlay_image_width_mobile": 100,
@@ -197,6 +197,66 @@
         "color_hide_borders": true,
         "gutter_decrease": false,
         "remove_margin": false,
+        "remove_bottom_margin": false
+      }
+    },
+    "rich_text_3E9aKj": {
+      "type": "rich-text",
+      "blocks": {
+        "title_ih9K6A": {
+          "type": "title",
+          "settings": {
+            "title": "Le spray rééquilibrant",
+            "title_size": "heading-size--small",
+            "title_weight": "400",
+            "title_size_custom": 44,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_pzzdk3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® règle le problème — il ne le cache pas derrière un parfum.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_FpdwFg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Je shoppe refreshed®",
+            "link": "",
+            "open_in_new_window": false,
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "title_ih9K6A",
+        "text_pzzdk3",
+        "button_FpdwFg"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_02_12_27.png",
+        "video_controls": false,
+        "image_position": "left",
+        "height": "large",
+        "image_crop": true,
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-left",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": true,
         "remove_bottom_margin": false
       }
     },
@@ -250,7 +310,7 @@
         "column_gap": 48,
         "padding_top": 70,
         "padding_bottom": 70,
-        "section_bg": "#ffffff",
+        "section_bg": "#f7f3ec",
         "heading": "2 formules précisément pensées",
         "text_color": "#1a1a1a",
         "heading_size": 44,
@@ -335,66 +395,6 @@
         "split_left_width": 50,
         "spacing": 24,
         "color_background_main": "#f7f3ec",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "#d9d9d9",
-        "border_radius": 0,
-        "color_hide_borders": true,
-        "gutter_decrease": false,
-        "remove_margin": true,
-        "remove_bottom_margin": false
-      }
-    },
-    "rich_text_3E9aKj": {
-      "type": "rich-text",
-      "blocks": {
-        "title_ih9K6A": {
-          "type": "title",
-          "settings": {
-            "title": "Le spray rééquilibrant",
-            "title_size": "heading-size--small",
-            "title_weight": "400",
-            "title_size_custom": 44,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        },
-        "text_pzzdk3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® règle le problème — il ne le cache pas derrière un parfum.</p>",
-            "text_size": "regular"
-          }
-        },
-        "button_FpdwFg": {
-          "type": "button",
-          "settings": {
-            "button_label": "Je shoppe refreshed®",
-            "link": "",
-            "open_in_new_window": false,
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "title_ih9K6A",
-        "text_pzzdk3",
-        "button_FpdwFg"
-      ],
-      "name": "t:sections-categories.presets.rich_text_with_image",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_02_12_27.png",
-        "video_controls": false,
-        "image_position": "left",
-        "height": "regular",
-        "image_crop": true,
-        "overlay_image_width": 160,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
-        "text_alignment": "horizontal-left",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 24,
-        "color_background_main": "rgba(0,0,0,0)",
         "color_text_main": "rgba(0,0,0,0)",
         "color_borders_main": "#d9d9d9",
         "border_radius": 0,
@@ -576,9 +576,9 @@
   "order": [
     "enriched_hero_e4bhR9",
     "rich_text_EcNqNq",
+    "rich_text_3E9aKj",
     "certifications_DDdq8b",
     "rich_text_9XNcQB",
-    "rich_text_3E9aKj",
     "customer_reviews_c89ViU",
     "rich_text_Qyw3GK"
   ]
