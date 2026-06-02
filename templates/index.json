@@ -200,6 +200,99 @@
         "remove_bottom_margin": false
       }
     },
+    "certifications_DDdq8b": {
+      "type": "certifications",
+      "blocks": {
+        "certification_AmP3Wg": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.29.png",
+            "label": "Zinc PCA antibactérien\n\nNeutralise les bactéries responsables des odeurs à la source. Pas un masque — une solution.",
+            "link": ""
+          }
+        },
+        "certification_MXBLkR": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.35.png",
+            "label": "Ferments probiotiques\n\nRééquilibrent la flore intime pour une protection qui dure dans le temps, pas jusqu'à la prochaine transpiration.",
+            "link": ""
+          }
+        },
+        "certification_YJRYkt": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.43.png",
+            "label": "Sans rinçage\n\nSpray. Absorbe. Oublie. Conçu pour s'utiliser partout, n'importe quand — pas uniquement sous ta douche.",
+            "link": ""
+          }
+        },
+        "certification_GtJLgp": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.56.png",
+            "label": "Ultra clean\n\nSans alcool · Sans parabènes · Sans perturbateurs endocriniens · Sans sulfates",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "certification_AmP3Wg",
+        "certification_MXBLkR",
+        "certification_YJRYkt",
+        "certification_GtJLgp"
+      ],
+      "name": "Certifications",
+      "settings": {
+        "container_width": "large",
+        "two_columns": true,
+        "left_width": 47,
+        "column_gap": 48,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "section_bg": "#ffffff",
+        "heading": "Notre engagement pour la qualité",
+        "text_color": "#1a1a1a",
+        "heading_size": 44,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_alignment": "left",
+        "heading_alignment_mobile": "left",
+        "body": "<p>Zgueg a été créé par des hommes, pour les hommes. Car on sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt pour finir un rendez-vous comme il se doit. C'est pour cela que nous avons réfléchit pendant 2 ans au produit ultime, pour votre hygiène intime.</p>",
+        "body_color": "#1a1a1a",
+        "body_size": 19,
+        "body_max_width": 640,
+        "body_alignment": "left",
+        "body_alignment_mobile": "left",
+        "icons_per_row": 4,
+        "icons_per_row_mobile": 2,
+        "icon_size": 56,
+        "icon_gap": 24,
+        "row_gap": 28,
+        "label_gap": 14,
+        "icons_margin_top": 40,
+        "icon_recolor": false,
+        "icon_color": "#0000c9",
+        "label_color": "#1a1a1a",
+        "label_size": 13,
+        "label_weight": "400",
+        "label_transform": "none",
+        "show_button": true,
+        "button_label": "Lire nos analyses",
+        "button_link": "",
+        "button_bg": "#0000c9",
+        "button_text_color": "#ffffff",
+        "button_radius": 40,
+        "button_padding_v": 15,
+        "button_padding_h": 40,
+        "button_font_size": 15,
+        "button_weight": "700",
+        "button_transform": "none",
+        "button_alignment": "center",
+        "button_alignment_mobile": "center",
+        "button_full_width_mobile": false
+      }
+    },
     "rich_text_3E9aKj": {
       "type": "rich-text",
       "blocks": {
@@ -260,97 +353,63 @@
         "remove_bottom_margin": false
       }
     },
-    "certifications_DDdq8b": {
-      "type": "certifications",
+    "rich_text_UKfy6N": {
+      "type": "rich-text",
       "blocks": {
-        "certification_AmP3Wg": {
-          "type": "certification",
+        "text_R6G8f3": {
+          "type": "text",
           "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.29.png",
-            "label": "Zinc PCA antibactérien\n\nNeutralise les bactéries responsables des odeurs à la source. Pas un masque — une solution.",
-            "link": ""
+            "text": "<p>INTRODUCING</p>",
+            "text_size": "regular"
           }
         },
-        "certification_MXBLkR": {
-          "type": "certification",
+        "title_Uhdr6e": {
+          "type": "title",
           "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.35.png",
-            "label": "Ferments probiotiques\n\nRééquilibrent la flore intime pour une protection qui dure dans le temps, pas jusqu'à la prochaine transpiration.",
-            "link": ""
+            "title": "Your brand, your story, your way",
+            "title_size": "heading-size--regular",
+            "title_weight": "inherit",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
           }
         },
-        "certification_YJRYkt": {
-          "type": "certification",
+        "button_EdHaij": {
+          "type": "button",
           "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.43.png",
-            "label": "Sans rinçage\n\nSpray. Absorbe. Oublie. Conçu pour s'utiliser partout, n'importe quand — pas uniquement sous ta douche.",
-            "link": ""
-          }
-        },
-        "certification_GtJLgp": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.56.png",
-            "label": "Ultra clean\n\nSans alcool · Sans parabènes · Sans perturbateurs endocriniens · Sans sulfates",
-            "link": ""
+            "button_label": "EXPLORE",
+            "link": "",
+            "open_in_new_window": false,
+            "button_style": "outline"
           }
         }
       },
       "block_order": [
-        "certification_AmP3Wg",
-        "certification_MXBLkR",
-        "certification_YJRYkt",
-        "certification_GtJLgp"
+        "text_R6G8f3",
+        "title_Uhdr6e",
+        "button_EdHaij"
       ],
-      "name": "Certifications",
+      "name": "t:sections-categories.presets.heading_text",
       "settings": {
-        "container_width": "large",
-        "two_columns": true,
-        "left_width": 47,
-        "column_gap": 48,
-        "padding_top": 70,
-        "padding_bottom": 70,
-        "section_bg": "#ffffff",
-        "heading": "2 formules précisément pensées",
-        "text_color": "#1a1a1a",
-        "heading_size": 44,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "heading_alignment": "left",
-        "heading_alignment_mobile": "left",
-        "body": "<p>Zgueg a été créé par des hommes, pour les hommes. Car on sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt pour finir un rendez-vous comme il se doit. C'est pour cela que nous avons réfléchit pendant 2 ans au produit ultime, pour votre hygiène intime.</p>",
-        "body_color": "#1a1a1a",
-        "body_size": 19,
-        "body_max_width": 640,
-        "body_alignment": "left",
-        "body_alignment_mobile": "left",
-        "icons_per_row": 4,
-        "icons_per_row_mobile": 2,
-        "icon_size": 56,
-        "icon_gap": 24,
-        "row_gap": 28,
-        "label_gap": 14,
-        "icons_margin_top": 40,
-        "icon_recolor": false,
-        "icon_color": "#0000c9",
-        "label_color": "#1a1a1a",
-        "label_size": 13,
-        "label_weight": "400",
-        "label_transform": "none",
-        "show_button": true,
-        "button_label": "Lire nos analyses",
-        "button_link": "",
-        "button_bg": "#0000c9",
-        "button_text_color": "#ffffff",
-        "button_radius": 40,
-        "button_padding_v": 15,
-        "button_padding_h": 40,
-        "button_font_size": 15,
-        "button_weight": "700",
-        "button_transform": "none",
-        "button_alignment": "center",
-        "button_alignment_mobile": "center",
-        "button_full_width_mobile": false
+        "video_controls": false,
+        "image_position": "top no-image",
+        "height": "small",
+        "image_crop": true,
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 36,
+        "color_background_main": "#f7f3ec",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 14,
+        "color_hide_borders": true,
+        "gutter_decrease": true,
+        "remove_margin": true,
+        "remove_bottom_margin": false
       }
     },
     "rich_text_9XNcQB": {
@@ -379,7 +438,6 @@
         "title_x7jGrL",
         "text_UYMML3"
       ],
-      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/Sans_titre-2.png",
@@ -389,7 +447,7 @@
         "image_crop": true,
         "overlay_image_width": 320,
         "overlay_image_width_mobile": 100,
-        "is_fullwidth": false,
+        "is_fullwidth": true,
         "text_alignment": "horizontal-center",
         "content_layout": "stacked",
         "split_left_width": 50,
@@ -576,8 +634,9 @@
   "order": [
     "enriched_hero_e4bhR9",
     "rich_text_EcNqNq",
-    "rich_text_3E9aKj",
     "certifications_DDdq8b",
+    "rich_text_3E9aKj",
+    "rich_text_UKfy6N",
     "rich_text_9XNcQB",
     "customer_reviews_c89ViU",
     "rich_text_Qyw3GK"
