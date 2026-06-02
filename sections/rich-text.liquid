@@ -118,153 +118,35 @@
           {% if section.settings.is_fullwidth %} container--large gutter-top--xlarge gutter-bottom--xlarge {% endif %}
         "
       >
+        {%- liquid
+          assign rt_split = false
+          if section.settings.content_layout == 'split'
+            assign rt_split = true
+          endif
+        -%}
         <div
           class="
-            card__text
-            spacing--custom remove-empty-space
+            card__text remove-empty-space
+            {% if rt_split %} rich-text__split {% else %} spacing--custom {% endif %}
           "
           style="--spacing:{{ section.settings.spacing }}px; --horizontal-alignment:{{ section.settings.text_alignment | replace: 'horizontal-', '' }};"
         >
-          {%- for block in section.blocks -%}
-            {%- case block.type %}
-              {%- when 'custom_liquid' -%}
-                <div {{ block.shopify_attributes }}>
-                  {{ block.settings.custom_liquid }}
-                </div>
-
-              {%- when 'title' -%}
-                {%- liquid
-                  assign t_style = 'margin-bottom:0;'
-                  if block.settings.title_weight != blank and block.settings.title_weight != 'inherit'
-                    assign t_style = t_style | append: 'font-weight:' | append: block.settings.title_weight | append: ';'
-                  endif
-                  assign t_class = block.settings.title_size
-                  if block.settings.title_size_custom > 0
-                    assign t_class = t_class | append: ' rich-text__title--custom-size'
-                    assign t_style = t_style | append: '--rt-title-fs:' | append: block.settings.title_size_custom | append: 'px;'
-                    if block.settings.title_size_custom_mobile > 0
-                      assign t_style = t_style | append: '--rt-title-fs-m:' | append: block.settings.title_size_custom_mobile | append: 'px;'
-                    endif
-                  endif
-                -%}
-                <div>
-                  <{{ block.settings.seo_h_tag }}
-                    style="{{ t_style }}"
-                    class="{{ t_class }}"
-                    {{ block.shopify_attributes }}
-                  >
-                    {{ block.settings.title | escape }}
-                  </{{ block.settings.seo_h_tag }}>
-                </div>
-
-              {%- when 'text' -%}
-                <div
-                  class="rte text-size--{{ block.settings.text_size }}"
-                  {{ block.shopify_attributes }}
-                >
-                  {{ block.settings.text }}
-                </div>
-
-              {%- when 'button' -%}
-                <div
-                  {{ block.shopify_attributes }}
-                >
-                  <a
-                    href="{{ block.settings.link }}"
-                    class="button button--{{ block.settings.button_style }} button--icon"
-                    {% unless block.settings.open_in_new_window == false %}
-                      target="_blank"
-                    {% endunless %}
-                  >
-                    <span aria-hidden="true" class="button__icon">
-                      {%- render 'theme-symbols', icon: 'arrow-right' -%}
-                    </span>
-                    <span>{{ block.settings.button_label | escape }}</span>
-                  </a>
-                </div>
-
-              {%- when 'empty_space' -%}
-                <div
-                  class="empty-space"
-                  style="height:{{ block.settings.height }};"
-                  aria-hidden="true"
-                  {{ block.shopify_attributes }}
-                >
-                  &nbsp;
-                </div>
-
-              {%- when 'image' -%}
-                <div
-                  class="block-image"
-                  style="--image-height: {{ block.settings.image_height }}px;"
-                  {{ block.shopify_attributes }}
-                >
-                  {%- liquid
-                    assign height = block.settings.image_height
-                    assign height_x2 = height | times: 2
-                    assign height_x3 = height | times: 3
-                    assign aspect_ratio = block.settings.image.aspect_ratio
-                    assign width = height | times: aspect_ratio | round
-                  -%}
-                  <figure class="block-image__figure">
-                    {%- if block.settings.image != blank -%}
-                      <img
-                        src="{{ block.settings.image | image_url: height: height }}"
-                        srcset="
-                          {{ block.settings.image | image_url: height: height }} {{ width }}w,
-                          {{ block.settings.image | image_url: height: height_x2 }} {{ width | times: 2 }}w,
-                          {{ block.settings.image | image_url: height: height_x3 }} {{ width | times: 3 }}w
-                        "
-                        sizes="(max-width: 467px) {{ width | times: 0.5 }}px, (max-width: 767px) {{ width | times: 0.75 }}px, {{ width }}px"
-                        alt="{{ block.settings.image.alt | escape }}"
-                        height="{{ height }}"
-                        width="{{ width }}"
-                        loading="lazy"
-                        onload="this.parentNode.classList.add('lazyloaded')"
-                      >
-                    {%- else -%}
-                      <span class="onboarding-svg" style="background:white">
-                        {{ 'image' | placeholder_svg_tag }}
-                      </span>
-                    {%- endif -%}
-                  </figure>
-                </div>
-
-              {%- when 'star_rating' -%}
-                <div
-                  id="star-rating-{{ block.id }}"
-                  class="star-rating star-rating--block"
-                  {{ block.shopify_attributes }}
-                >
-                  <span class="visually-hidden">
-                    {% assign a11y_rating = block.settings.active_stars_shown | times: 5 | divided_by: 100 | round: 1 %}
-                    {{ a11y_rating }} out of {{ 5 }} stars
-                  </span>
-                  {%- liquid
-                    assign stars_width = 5 | times: 20
-                  -%}
-                  <span class="star-rating__stars" style="width:{{ stars_width }}px" aria-hidden="true">
-                    <span
-                      class="star-rating__stars-active"
-                      style="width:{{ block.settings.active_stars_shown | times: stars_width | divided_by: 100 }}px"
-                    ></span>
-                  </span>
-                  {%- unless block.settings.caption == blank -%}
-                    <span class="star-rating__caption text-size--small">
-                      {{ block.settings.caption | escape }}
-                    </span>
-                  {%- endunless -%}
-                  {%- style -%}
-                    #star-rating-{{ block.id }} .star-rating__stars {
-                      background-image: url('data:image/svg+xml;utf8,<svg width="20" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m7 0 1.572 4.837h5.085l-4.114 2.99 1.572 4.836L7 9.673l-4.114 2.99 1.571-4.837-4.114-2.99h5.085L7 0Z" stroke="{{ block.settings.star_color | url_encode }}" stroke-width="1"/></svg>');
-                    }
-                    #star-rating-{{ block.id }} .star-rating__stars-active {
-                      background-image: url('data:image/svg+xml;utf8,<svg width="20" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m7 0 1.572 4.837h5.085l-4.114 2.99 1.572 4.836L7 9.673l-4.114 2.99 1.571-4.837-4.114-2.99h5.085L7 0Z" fill="{{ block.settings.star_color | url_encode }}" stroke-width="0"/></svg>');
-                    }
-                  {%- endstyle -%}
-                </div>
-            {%- endcase %}
-          {%- endfor -%}
+          {%- if rt_split -%}
+            <div class="rich-text__split-col rich-text__split-col--left spacing--custom">
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'title' -%}{%- render 'rich-text-block', block: block -%}{%- endif -%}
+              {%- endfor -%}
+            </div>
+            <div class="rich-text__split-col rich-text__split-col--right spacing--custom">
+              {%- for block in section.blocks -%}
+                {%- unless block.type == 'title' -%}{%- render 'rich-text-block', block: block -%}{%- endunless -%}
+              {%- endfor -%}
+            </div>
+          {%- else -%}
+            {%- for block in section.blocks -%}
+              {%- render 'rich-text-block', block: block -%}
+            {%- endfor -%}
+          {%- endif -%}
         </div>
       </div>
 
@@ -414,6 +296,17 @@
         }
       ],
       "default": "horizontal-center"
+    },
+    {
+      "type": "select",
+      "id": "content_layout",
+      "label": "Disposition du contenu",
+      "info": "« Côte à côte » place les blocs En-tête à gauche et le reste (texte, bouton…) à droite. Idéal pour la bannière texte pleine largeur.",
+      "options": [
+        { "value": "stacked", "label": "Empilé (vertical)" },
+        { "value": "split", "label": "Côte à côte (titre à gauche / texte à droite)" }
+      ],
+      "default": "stacked"
     },
     {
       "type": "range",

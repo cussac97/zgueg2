@@ -127,6 +127,27 @@
   }
 }
 
+/* Disposition « côte à côte » : titre à gauche, texte à droite */
+.rich-text__split {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-large, 40px);
+  width: 100%;
+}
+.rich-text__split-col {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .rich-text__split {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .rich-text__split-col {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
 /* Titre du bloc en-tête : taille personnalisée */
 .rich-text__title--custom-size {
   font-size: var(--rt-title-fs);
