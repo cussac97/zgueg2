@@ -133,7 +133,8 @@
         "overlay_opacity": 30,
         "default_text_color": "#ffffff",
         "rounded": false,
-        "border_radius": 16
+        "border_radius": 16,
+        "remove_spacing": false
       }
     },
     "certifications_DDdq8b": {
@@ -227,6 +228,112 @@
         "button_alignment": "center",
         "button_alignment_mobile": "center",
         "button_full_width_mobile": false
+      }
+    },
+    "rich_text_9XNcQB": {
+      "type": "rich-text",
+      "blocks": {
+        "title_x7jGrL": {
+          "type": "title",
+          "settings": {
+            "title": "Le gel moussant quotidien",
+            "title_size": "heading-size--small",
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_UYMML3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_EhGp8h": {
+          "type": "button",
+          "settings": {
+            "button_label": "Show more",
+            "link": "",
+            "open_in_new_window": false,
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "title_x7jGrL",
+        "text_UYMML3",
+        "button_EhGp8h"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/OFFCOURT_SOAPIMAGE3_750x_00f81d69-a949-4fc1-943e-1ba9b83a8521.webp",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "regular",
+        "image_crop": true,
+        "is_fullwidth": false,
+        "text_alignment": "horizontal-center",
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": false,
+        "gutter_decrease": false,
+        "remove_margin": false,
+        "remove_bottom_margin": false
+      }
+    },
+    "rich_text_3E9aKj": {
+      "type": "rich-text",
+      "blocks": {
+        "title_ih9K6A": {
+          "type": "title",
+          "settings": {
+            "title": "Le gel moussant quotidien",
+            "title_size": "heading-size--small",
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_pzzdk3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_FpdwFg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Show more",
+            "link": "",
+            "open_in_new_window": false,
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "title_ih9K6A",
+        "text_pzzdk3",
+        "button_FpdwFg"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/OFFCOURT_SOAPIMAGE3_750x_00f81d69-a949-4fc1-943e-1ba9b83a8521.webp",
+        "video_controls": false,
+        "image_position": "left",
+        "height": "regular",
+        "image_crop": true,
+        "is_fullwidth": false,
+        "text_alignment": "horizontal-center",
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": false,
+        "gutter_decrease": false,
+        "remove_margin": false,
+        "remove_bottom_margin": false
       }
     },
     "slider_kKbMnp": {
@@ -363,19 +470,20 @@
         "66b08189-b941-4f66-8a0c-b3f48e68738d",
         "8902409e-7176-4e2f-bffc-48e983cd73b6"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Leur nom est dans toutes les bouches",
         "subheading": "",
         "section_heading_size": "text-size--large",
         "section_heading_layout": "section-heading--center section-heading--two-rows",
         "show_view_all": false,
-        "layout": "grid-3 grid-lap-2",
+        "layout": "grid-2 grid-lap-2",
         "layout_mobile": "grid-palm-1",
         "card_alignment": "center",
         "style": "slider",
         "products_number": 3,
         "collection": "frontpage",
-        "section_background_color": "#f5f5f5",
+        "section_background_color": "#f9f4ec",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
         "gutter_decrease": true,
@@ -471,6 +579,7 @@
         "text_9ixaUz",
         "text_Cz6V8g"
       ],
+      "disabled": true,
       "settings": {
         "scroll_direction": "ltr",
         "speed": 100,
@@ -1040,6 +1149,123 @@
         "remove_bottom_margin": true
       }
     },
+    "customer_reviews_c89ViU": {
+      "type": "customer-reviews",
+      "blocks": {
+        "review_JnBAQ3": {
+          "type": "review",
+          "settings": {
+            "author": "Mary H.",
+            "verified": true,
+            "verified_label": "Verified Buyer",
+            "rating": 4,
+            "date": "May 22, 2026",
+            "product": "",
+            "text": "Love all the products, but this one didn't do as well. I think the 5 pant is bigger than the 5 diaper, IMO. We struggled with some leakage, but once I got them on my daughter right they were fine. My biggest issue was through the night. They are not nearly as absorbent as the diapers. Many mornings we woke up to accidents. I switched back to the originals.",
+            "helpful_up": 0,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloe",
+            "reply_date": "May 21, 2026",
+            "reply_text": ""
+          }
+        },
+        "review_dPmihX": {
+          "type": "review",
+          "settings": {
+            "author": "Chandana M.",
+            "verified": true,
+            "verified_label": "Verified Buyer",
+            "rating": 3,
+            "date": "May 22, 2026",
+            "product": "",
+            "text": "Like the product but the stick is too fragile. It comes off when I'm taking it off the package. I would have liked the sticking part design to be better.",
+            "helpful_up": 0,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloe",
+            "reply_date": "May 21, 2026",
+            "reply_text": ""
+          }
+        },
+        "review_WhmgKB": {
+          "type": "review",
+          "settings": {
+            "author": "Erin H.",
+            "verified": true,
+            "verified_label": "Verified Buyer",
+            "rating": 5,
+            "date": "May 21, 2026",
+            "product": "",
+            "text": "We have been loving it. It is so easy to change with the tabs on the side yet gives our 21 month old the practice she needs pulling them up and down for potty training.",
+            "helpful_up": 0,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloe",
+            "reply_date": "May 21, 2026",
+            "reply_text": "Thanks, Erin H.! We're thrilled the side tabs are making potty training smoother and giving her confident pull-up practice. Our mission is to make parents' lives easier."
+          }
+        }
+      },
+      "block_order": [
+        "review_JnBAQ3",
+        "review_dPmihX",
+        "review_WhmgKB"
+      ],
+      "name": "Customer Reviews",
+      "settings": {
+        "container_width": "large",
+        "show_pagination": true,
+        "per_page": 5,
+        "two_columns": true,
+        "left_width": 38,
+        "column_gap": 48,
+        "sticky_heading": true,
+        "sticky_offset": 100,
+        "meta_width": 28,
+        "review_spacing": 28,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading": "Notre bande de zguegs en parlent. (ils adorent)",
+        "heading_alignment": "left",
+        "heading_size": 56,
+        "heading_size_mobile": 34,
+        "heading_weight": "500",
+        "show_summary": true,
+        "summary_rating": 4.2,
+        "summary_count": "1762",
+        "summary_caption": "based on",
+        "summary_reviews_word": "reviews",
+        "summary_text_size": 13,
+        "show_rating_filter": true,
+        "rating_filter_label": "Rating",
+        "rating_filter_all": "All ratings",
+        "stars_word": "stars",
+        "show_product_filter": true,
+        "product_filter_label": "Product",
+        "product_filter_all": "All products",
+        "empty_text": "No reviews match your filters.",
+        "show_date": true,
+        "show_reply_date": true,
+        "clamp_lines": 4,
+        "read_more_label": "Read More",
+        "read_less_label": "Read Less",
+        "show_helpful": true,
+        "helpful_label": "Was This Review Helpful?",
+        "section_bg": "#ffffff",
+        "text_color": "#1a1a1a",
+        "muted_color": "#6b6b6b",
+        "divider_color": "#e6e6e6",
+        "star_color": "#1a1a1a",
+        "star_empty_color": "#c9c9c9",
+        "field_bg": "#ffffff",
+        "field_border": "#d9d9d9",
+        "field_radius": 8
+      }
+    },
     "instagram_shots_gUFNPX": {
       "type": "instagram-shots",
       "blocks": {
@@ -1112,6 +1338,8 @@
   "order": [
     "enriched_hero_e4bhR9",
     "certifications_DDdq8b",
+    "rich_text_9XNcQB",
+    "rich_text_3E9aKj",
     "slider_kKbMnp",
     "16624574747e3c27ed",
     "627a9841-5ef4-4a4b-8ba7-aacbfbb91f3f",
@@ -1121,6 +1349,7 @@
     "flex_grid_rRyzJK",
     "image_AGLnin",
     "b33e6547-ef63-4a5b-9c3d-3ca5fb11b80f",
+    "customer_reviews_c89ViU",
     "instagram_shots_gUFNPX"
   ]
 }
