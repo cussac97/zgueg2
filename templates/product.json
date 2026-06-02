@@ -303,6 +303,7 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_02_12_27.png",
         "video_controls": false,
         "image_position": "right",
         "height": "large",
@@ -316,7 +317,7 @@
         "border_radius": 0,
         "color_hide_borders": true,
         "gutter_decrease": false,
-        "remove_margin": true,
+        "remove_margin": false,
         "remove_bottom_margin": false
       }
     },
