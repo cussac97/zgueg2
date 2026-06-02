@@ -91,7 +91,7 @@
     style="--align-h-desk:{{ desk_jc }};--align-v-desk:{{ desk_ai }};--text-h-desk:{{ desk_h }};--align-h-mob:{{ mob_jc }};--align-v-mob:{{ mob_ai }};--text-h-mob:{{ mob_h }};"
   >
     <div
-      class="card__text {% unless section.settings.is_fullwidth %} gutter--xlarge {% endunless %} spacing--custom remove-empty-space"
+      class="card__text {% unless section.settings.is_fullwidth %} gutter--xlarge {% endunless %} spacing--custom remove-empty-space{% if section.settings.free_layout %} card__text--free{% endif %}"
       style="--spacing:{{ section.settings.spacing }}px; mix-blend-mode: {{ section.settings.text_blend_mode }}"
     >
       {% content_for 'blocks' %}
