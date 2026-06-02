@@ -138,7 +138,7 @@
               >
                 {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}" class="enriched-hero__image-link">{%- endif -%}
                 {%- if block.settings.image != blank -%}
-                  {{ block.settings.image | image_tag: class: 'enriched-hero__img', widths: '120, 240, 360, 480, 600, 800', sizes: '(max-width: 767px) 50vw, 25vw' }}
+                  {{ block.settings.image | image_url: width: 800 | image_tag: class: 'enriched-hero__img', widths: '120, 240, 360, 480, 600, 800', sizes: '(max-width: 767px) 50vw, 25vw' }}
                 {%- else -%}
                   {{ 'image' | placeholder_svg_tag: 'enriched-hero__img placeholder-svg' }}
                 {%- endif -%}
