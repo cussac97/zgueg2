@@ -148,8 +148,8 @@
           "settings": {
             "title": "Le gel moussant quotidien",
             "title_size": "heading-size--small",
-            "title_weight": "500",
-            "title_size_custom": 0,
+            "title_weight": "400",
+            "title_size_custom": 44,
             "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
           }
@@ -253,7 +253,7 @@
         "section_bg": "#ffffff",
         "heading": "2 formules précisément pensées",
         "text_color": "#1a1a1a",
-        "heading_size": 52,
+        "heading_size": 44,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "heading_alignment": "left",
@@ -352,8 +352,8 @@
           "settings": {
             "title": "Le spray rééquilibrant",
             "title_size": "heading-size--small",
-            "title_weight": "500",
-            "title_size_custom": 0,
+            "title_weight": "400",
+            "title_size_custom": 44,
             "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
           }
@@ -390,7 +390,7 @@
         "overlay_image_width": 160,
         "overlay_image_width_mobile": 100,
         "is_fullwidth": true,
-        "text_alignment": "horizontal-center",
+        "text_alignment": "horizontal-left",
         "content_layout": "stacked",
         "split_left_width": 50,
         "spacing": 24,
