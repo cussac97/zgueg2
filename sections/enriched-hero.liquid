@@ -42,6 +42,14 @@
   assign vid = section.settings.background_video
 -%}
 
+{%- liquid
+  assign pad_top_d = section.settings.content_padding_y_desktop
+  assign pad_top_m = section.settings.content_padding_y_mobile
+  if section.settings.content_padding_top_enable
+    assign pad_top_d = section.settings.content_padding_top_desktop
+    assign pad_top_m = section.settings.content_padding_top_mobile
+  endif
+-%}
 {%- capture hero_vars -%}
   --eh-h-d:{{ h_d }};
   --eh-h-m:{{ h_m }};
@@ -51,8 +59,10 @@
   --eh-obj:{{ section.settings.image_position }};
   --eh-pad-x-d:{{ section.settings.content_padding_x_desktop }}px;
   --eh-pad-y-d:{{ section.settings.content_padding_y_desktop }}px;
+  --eh-pad-top-d:{{ pad_top_d }}px;
   --eh-pad-x-m:{{ section.settings.content_padding_x_mobile }}px;
   --eh-pad-y-m:{{ section.settings.content_padding_y_mobile }}px;
+  --eh-pad-top-m:{{ pad_top_m }}px;
   {%- if section.settings.default_text_color != 'rgba(0,0,0,0)' -%}--eh-text:{{ section.settings.default_text_color }};{%- endif -%}
   {%- if section.settings.background_color != 'rgba(0,0,0,0)' -%}--eh-bg:{{ section.settings.background_color }};{%- endif -%}
   {%- if section.settings.rounded -%}--eh-radius:{{ section.settings.border_radius }}px;{%- endif -%}
@@ -231,7 +241,7 @@
   z-index: 2;
   display: flex;
   justify-content: var(--eh-cjust, center);
-  padding: var(--eh-pad-y-d, 48px) var(--eh-pad-x-d, 48px);
+  padding: var(--eh-pad-top-d, var(--eh-pad-y-d, 48px)) var(--eh-pad-x-d, 48px) var(--eh-pad-y-d, 48px);
 }
 .enriched-hero__canvas {
   position: relative;
@@ -315,7 +325,7 @@
     height: var(--eh-h-m, 80vh);
   }
   .enriched-hero__inner {
-    padding: var(--eh-pad-y-m, 24px) var(--eh-pad-x-m, 24px);
+    padding: var(--eh-pad-top-m, var(--eh-pad-y-m, 24px)) var(--eh-pad-x-m, 24px) var(--eh-pad-y-m, 24px);
   }
   .enriched-hero__item {
     top: var(--eh-top-m, var(--eh-top, auto));
@@ -438,6 +448,35 @@
       "step": 2,
       "default": 28,
       "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "content_padding_top_enable",
+      "label": "Marge intérieure haute distincte",
+      "info": "Définit une marge intérieure en haut différente de la marge verticale (le bas garde la marge verticale).",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "content_padding_top_desktop",
+      "label": "Marge intérieure haute (ordinateur)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 56,
+      "unit": "px",
+      "visible_if": "{{ section.settings.content_padding_top_enable }}"
+    },
+    {
+      "type": "range",
+      "id": "content_padding_top_mobile",
+      "label": "Marge intérieure haute (mobile)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 28,
+      "unit": "px",
+      "visible_if": "{{ section.settings.content_padding_top_enable }}"
     },
     {
       "type": "header",
