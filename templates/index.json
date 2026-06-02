@@ -236,7 +236,7 @@
         "title_x7jGrL": {
           "type": "title",
           "settings": {
-            "title": "Le gel moussant quotidien",
+            "title": "L'histoire du Zgueg",
             "title_size": "heading-size--small",
             "title_weight": "500",
             "title_size_custom": 0,
@@ -247,11 +247,59 @@
         "text_UYMML3": {
           "type": "text",
           "settings": {
+            "text": "<p>Nous, c'est Ben et Julien. On a créé Zgueg car on sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt pour finir un rendez-vous comme il se doit. C'est pour cela que nous avons réfléchit pendant 2 ans au produit ultime, pour votre hygiène intime.</p>",
+            "text_size": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "title_x7jGrL",
+        "text_UYMML3"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/Sans_titre-2.png",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "regular",
+        "image_crop": true,
+        "overlay_image_width": 320,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": false,
+        "text_alignment": "horizontal-center",
+        "spacing": 24,
+        "color_background_main": "#f7f3ec",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "rich_text_EcNqNq": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9yxCzV": {
+          "type": "title",
+          "settings": {
+            "title": "Le gel moussant quotidien",
+            "title_size": "heading-size--small",
+            "title_weight": "500",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_Vz8W6y": {
+          "type": "text",
+          "settings": {
             "text": "<p>cleaned® nettoie en profondeur avec des tensioactifs d'origine végétale, sans détruire le microbiome naturel qui protège ta zone intime. Les ferments probiotiques font le reste. Un gel douche classique n'a aucune idée de ce qu'il fait là en bas. cleaned® si.</p>",
             "text_size": "regular"
           }
         },
-        "button_EhGp8h": {
+        "button_dXzPWN": {
           "type": "button",
           "settings": {
             "button_label": "Je shoppe cleaned®",
@@ -262,9 +310,9 @@
         }
       },
       "block_order": [
-        "title_x7jGrL",
-        "text_UYMML3",
-        "button_EhGp8h"
+        "title_9yxCzV",
+        "text_Vz8W6y",
+        "button_dXzPWN"
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
@@ -469,6 +517,7 @@
     "enriched_hero_e4bhR9",
     "certifications_DDdq8b",
     "rich_text_9XNcQB",
+    "rich_text_EcNqNq",
     "rich_text_3E9aKj",
     "customer_reviews_c89ViU"
   ]
