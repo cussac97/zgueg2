@@ -527,7 +527,7 @@
           "settings": {
             "title": "Ici pour ce que les autres n'osent pas faire.",
             "title_size": "heading-size--small",
-            "title_weight": "inherit",
+            "title_weight": "500",
             "title_size_custom": 0,
             "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
@@ -539,27 +539,17 @@
             "text": "<p>Si tu es là, il y a probablement quelque chose dans ta vie qui t'a fait réaliser que ton gel douche habituel ne suffisait pas. Ce moment-là arrive pour tout le monde — on veut juste le rendre plus simple, avec des soins intimes masculins formulés sérieusement, pour que tu n'aies plus jamais à t'inquiéter de rien.</p>",
             "text_size": "regular"
           }
-        },
-        "button_chfeLd": {
-          "type": "button",
-          "settings": {
-            "button_label": "Learn more",
-            "link": "#",
-            "open_in_new_window": false,
-            "button_style": "outline"
-          }
         }
       },
       "block_order": [
         "title_CjDrDf",
-        "text_M9Kafq",
-        "button_chfeLd"
+        "text_M9Kafq"
       ],
       "name": "t:sections-categories.presets.fullwidth_text_banner",
       "settings": {
         "video_controls": false,
         "image_position": "top no-image",
-        "height": "regular",
+        "height": "small",
         "image_crop": true,
         "overlay_image_width": 160,
         "overlay_image_width_mobile": 100,
