@@ -14,10 +14,85 @@
     ></a>
   {%- endif -%}
 
-  <div class="{% if section.settings.is_fullwidth %} container--large gutter-top--xlarge gutter-bottom--xlarge container--large-with-mobile-padding {% endif %} align-content align-content--{{ section.settings.alignment }} card__text-parent">
+  {%- liquid
+    # --- Disposition du contenu : réglage section par défaut, surchargeable par diapositive, et responsive ---
+    assign sec_align = section.settings.alignment
+    if sec_align contains 'horizontal-center'
+      assign sec_h = 'center'
+    elsif sec_align contains 'horizontal-right'
+      assign sec_h = 'right'
+    else
+      assign sec_h = 'left'
+    endif
+    if sec_align contains 'vertical-top'
+      assign sec_v = 'top'
+    elsif sec_align contains 'vertical-middle'
+      assign sec_v = 'middle'
+    else
+      assign sec_v = 'bottom'
+    endif
+
+    assign desk = block.settings.content_alignment_desktop
+    if desk == blank or desk == 'inherit'
+      assign desk_h = sec_h
+      assign desk_v = sec_v
+    else
+      assign desk_h = desk | split: ' ' | first
+      assign desk_v = desk | split: ' ' | last
+    endif
+
+    assign mob = block.settings.content_alignment_mobile
+    if mob == blank or mob == 'inherit'
+      assign mob_h = desk_h
+      assign mob_v = desk_v
+    else
+      assign mob_h = mob | split: ' ' | first
+      assign mob_v = mob | split: ' ' | last
+    endif
+
+    # horizontal -> justify-content du conteneur
+    case desk_h
+      when 'center'
+        assign desk_jc = 'center'
+      when 'right'
+        assign desk_jc = 'flex-end'
+      else
+        assign desk_jc = 'flex-start'
+    endcase
+    case mob_h
+      when 'center'
+        assign mob_jc = 'center'
+      when 'right'
+        assign mob_jc = 'flex-end'
+      else
+        assign mob_jc = 'flex-start'
+    endcase
+    # vertical -> align-items du conteneur
+    case desk_v
+      when 'top'
+        assign desk_ai = 'flex-start'
+      when 'middle'
+        assign desk_ai = 'center'
+      else
+        assign desk_ai = 'flex-end'
+    endcase
+    case mob_v
+      when 'top'
+        assign mob_ai = 'flex-start'
+      when 'middle'
+        assign mob_ai = 'center'
+      else
+        assign mob_ai = 'flex-end'
+    endcase
+  -%}
+
+  <div
+    class="{% if section.settings.is_fullwidth %} container--large gutter-top--xlarge gutter-bottom--xlarge container--large-with-mobile-padding {% endif %} align-content align-content--responsive card__text-parent"
+    style="--align-h-desk:{{ desk_jc }};--align-v-desk:{{ desk_ai }};--text-h-desk:{{ desk_h }};--align-h-mob:{{ mob_jc }};--align-v-mob:{{ mob_ai }};--text-h-mob:{{ mob_h }};"
+  >
     <div
       class="card__text {% unless section.settings.is_fullwidth %} gutter--xlarge {% endunless %} spacing--custom remove-empty-space"
-      style="--horizontal-alignment:{{ section.settings.alignment | split: ' ' | first | replace: 'horizontal-', '' }}; --spacing:{{ section.settings.spacing }}px; mix-blend-mode: {{ section.settings.text_blend_mode }}"
+      style="--spacing:{{ section.settings.spacing }}px; mix-blend-mode: {{ section.settings.text_blend_mode }}"
     >
       {% content_for 'blocks' %}
     </div>
@@ -116,6 +191,48 @@
       "visible_if": "{{ block.settings.link != blank }}",
       "label": "t:sections.local-extra-words.sections.announcement-bar.blocks.content.settings.target",
       "default": false
+    },
+    {
+      "type": "header",
+      "content": "Disposition du contenu"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment_desktop",
+      "label": "Position (ordinateur)",
+      "info": "Position du texte et des boutons sur cette diapositive. « Hériter de la section » utilise le réglage global de la section.",
+      "options": [
+        { "value": "inherit", "label": "Hériter de la section" },
+        { "value": "left top", "label": "Haut gauche", "group": "Haut" },
+        { "value": "center top", "label": "Haut centre", "group": "Haut" },
+        { "value": "right top", "label": "Haut droite", "group": "Haut" },
+        { "value": "left middle", "label": "Milieu gauche", "group": "Milieu" },
+        { "value": "center middle", "label": "Milieu centre", "group": "Milieu" },
+        { "value": "right middle", "label": "Milieu droite", "group": "Milieu" },
+        { "value": "left bottom", "label": "Bas gauche", "group": "Bas" },
+        { "value": "center bottom", "label": "Bas centre", "group": "Bas" },
+        { "value": "right bottom", "label": "Bas droite", "group": "Bas" }
+      ],
+      "default": "inherit"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment_mobile",
+      "label": "Position (mobile)",
+      "info": "Position du contenu sur mobile. « Comme l'ordinateur » reprend le réglage ci-dessus.",
+      "options": [
+        { "value": "inherit", "label": "Comme l'ordinateur" },
+        { "value": "left top", "label": "Haut gauche", "group": "Haut" },
+        { "value": "center top", "label": "Haut centre", "group": "Haut" },
+        { "value": "right top", "label": "Haut droite", "group": "Haut" },
+        { "value": "left middle", "label": "Milieu gauche", "group": "Milieu" },
+        { "value": "center middle", "label": "Milieu centre", "group": "Milieu" },
+        { "value": "right middle", "label": "Milieu droite", "group": "Milieu" },
+        { "value": "left bottom", "label": "Bas gauche", "group": "Bas" },
+        { "value": "center bottom", "label": "Bas centre", "group": "Bas" },
+        { "value": "right bottom", "label": "Bas droite", "group": "Bas" }
+      ],
+      "default": "inherit"
     },
     {
       "type": "header",

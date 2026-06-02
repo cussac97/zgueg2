@@ -1283,6 +1283,24 @@ html[dir=ltr] .align-content--horizontal-right {
 .align-content--vertical-bottom {
   align-items: flex-end;
 }
+.align-content--responsive {
+  justify-content: var(--align-h-desk);
+  align-items: var(--align-v-desk);
+  text-align: var(--text-h-desk);
+}
+.align-content--responsive .card__text {
+  --horizontal-alignment: var(--text-h-desk);
+}
+@media screen and (max-width: 767px) {
+  .align-content--responsive {
+    justify-content: var(--align-h-mob);
+    align-items: var(--align-v-mob);
+    text-align: var(--text-h-mob);
+  }
+  .align-content--responsive .card__text {
+    --horizontal-alignment: var(--text-h-mob);
+  }
+}
 
 .element--opacity-30 {
   opacity: 0.3;
