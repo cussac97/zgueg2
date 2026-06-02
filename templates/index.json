@@ -356,38 +356,20 @@
     "rich_text_UKfy6N": {
       "type": "rich-text",
       "blocks": {
-        "text_R6G8f3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>INTRODUCING</p>",
-            "text_size": "regular"
-          }
-        },
         "title_Uhdr6e": {
           "type": "title",
           "settings": {
-            "title": "Your brand, your story, your way",
-            "title_size": "heading-size--regular",
-            "title_weight": "inherit",
-            "title_size_custom": 0,
+            "title": "L'histoire de 2 zguegs, qui ont créé Zgueg®",
+            "title_size": "heading-size--small",
+            "title_weight": "400",
+            "title_size_custom": 44,
             "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
-          }
-        },
-        "button_EdHaij": {
-          "type": "button",
-          "settings": {
-            "button_label": "EXPLORE",
-            "link": "",
-            "open_in_new_window": false,
-            "button_style": "outline"
           }
         }
       },
       "block_order": [
-        "text_R6G8f3",
-        "title_Uhdr6e",
-        "button_EdHaij"
+        "title_Uhdr6e"
       ],
       "name": "t:sections-categories.presets.heading_text",
       "settings": {
@@ -409,7 +391,7 @@
         "color_hide_borders": true,
         "gutter_decrease": true,
         "remove_margin": true,
-        "remove_bottom_margin": false
+        "remove_bottom_margin": true
       }
     },
     "rich_text_9XNcQB": {
@@ -579,56 +561,6 @@
         "field_border": "#d9d9d9",
         "field_radius": 8
       }
-    },
-    "rich_text_Qyw3GK": {
-      "type": "rich-text",
-      "blocks": {
-        "title_CjDrDf": {
-          "type": "title",
-          "settings": {
-            "title": "Ici pour ce que les autres n'osent pas faire.",
-            "title_size": "heading-size--small",
-            "title_weight": "500",
-            "title_size_custom": 0,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        },
-        "text_M9Kafq": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Si tu es là, il y a probablement quelque chose dans ta vie qui t'a fait réaliser que ton gel douche habituel ne suffisait pas. Ce moment-là arrive pour tout le monde — on veut juste le rendre plus simple, avec des soins intimes masculins formulés sérieusement, pour que tu n'aies plus jamais à t'inquiéter de rien.</p>",
-            "text_size": "regular"
-          }
-        }
-      },
-      "block_order": [
-        "title_CjDrDf",
-        "text_M9Kafq"
-      ],
-      "disabled": true,
-      "name": "t:sections-categories.presets.fullwidth_text_banner",
-      "settings": {
-        "video_controls": false,
-        "image_position": "top no-image",
-        "height": "small",
-        "image_crop": true,
-        "overlay_image_width": 160,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
-        "text_alignment": "horizontal-left",
-        "content_layout": "split",
-        "split_left_width": 50,
-        "spacing": 32,
-        "color_background_main": "#f7f3ec",
-        "color_text_main": "#0000c9",
-        "color_borders_main": "rgba(0,0,0,0)",
-        "border_radius": 0,
-        "color_hide_borders": true,
-        "gutter_decrease": false,
-        "remove_margin": true,
-        "remove_bottom_margin": true
-      }
     }
   },
   "order": [
@@ -638,7 +570,6 @@
     "rich_text_3E9aKj",
     "rich_text_UKfy6N",
     "rich_text_9XNcQB",
-    "customer_reviews_c89ViU",
-    "rich_text_Qyw3GK"
+    "customer_reviews_c89ViU"
   ]
 }
