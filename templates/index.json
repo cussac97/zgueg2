@@ -741,6 +741,7 @@
         "image_PwCYnk",
         "image_BAtmjh"
       ],
+      "disabled": true,
       "name": "t:sections.bundle-extra-words.sections.slider.name",
       "settings": {
         "caption": "",
