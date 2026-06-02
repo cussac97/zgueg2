@@ -9,6 +9,117 @@
  */
 {
   "sections": {
+    "enriched_hero_e4bhR9": {
+      "type": "enriched-hero",
+      "blocks": {
+        "heading_yHJyNM": {
+          "type": "heading",
+          "settings": {
+            "text": "Des ingrédients propres et éprouvés, puis on monte d'un cran avec des actifs premium rarement vus à ce prix.",
+            "font_size": 44,
+            "font_size_mobile": 26,
+            "font_weight": "400",
+            "line_height": 120,
+            "letter_spacing": 0,
+            "text_transform": "none",
+            "text_align": "left",
+            "color": "rgba(0,0,0,0)",
+            "pos": "top left",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "max_width": 55,
+            "max_width_mobile": 90,
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "image_9mUziw": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": 140,
+            "width_mobile": 90,
+            "opacity": 100,
+            "pos": "top right",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "divider_Fc93Rz": {
+          "type": "divider",
+          "settings": {
+            "length": 100,
+            "thickness": 1,
+            "color": "#FFFFFF",
+            "opacity": 60,
+            "pos": "bottom left",
+            "offset_x": 0,
+            "offset_y": 70,
+            "pos_mobile": "inherit",
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "text_zJRC4R": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Le résultat : un soin de la peau et du corps simple et efficace.</p>",
+            "font_size": 16,
+            "font_size_mobile": 14,
+            "font_weight": "400",
+            "line_height": 150,
+            "opacity": 100,
+            "text_align": "left",
+            "color": "rgba(0,0,0,0)",
+            "pos": "bottom left",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "max_width": 40,
+            "max_width_mobile": 90,
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yHJyNM",
+        "image_9mUziw",
+        "divider_Fc93Rz",
+        "text_zJRC4R"
+      ],
+      "name": "Enriched hero",
+      "settings": {
+        "width": "page",
+        "content_full_width": true,
+        "content_max_width": 1400,
+        "content_align": "center",
+        "content_padding_x_desktop": 64,
+        "content_padding_y_desktop": 56,
+        "content_padding_x_mobile": 24,
+        "content_padding_y_mobile": 28,
+        "desktop_height": "70vh",
+        "desktop_height_px": 640,
+        "mobile_height": "80vh",
+        "mobile_height_px": 520,
+        "min_height": 420,
+        "background_image": "shopify://shop_images/why-us-bg.webp",
+        "image_position": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "overlay_style": "none",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "default_text_color": "#FFFFFF",
+        "rounded": false,
+        "border_radius": 16,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
     "flex_slideshow_GQ8jEx": {
       "type": "flex-slideshow",
       "blocks": {
@@ -1334,6 +1445,7 @@
     }
   },
   "order": [
+    "enriched_hero_e4bhR9",
     "flex_slideshow_GQ8jEx",
     "flex_cards_36adtC",
     "slider_kKbMnp",
