@@ -1,5 +1,13 @@
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 
+{%- if section.settings.section_background_color != 'rgba(0,0,0,0)' -%}
+  {% style %}
+    #shopify-section-{{ section.id }} {
+      background-color: {{ section.settings.section_background_color }};
+    }
+  {% endstyle %}
+{%- endif -%}
+
 {%- render 'breadcrumb',
   container: 'large',
   vertical_space: 'vertical-space-xsmall',
@@ -4164,6 +4172,13 @@
       "step": 1,
       "default": 0,
       "unit": "%"
+    },
+    {
+      "type": "color",
+      "id": "section_background_color",
+      "label": "Couleur de fond de la section (entière)",
+      "info": "Applique une couleur de fond à toute la bande de la section page produit.",
+      "default": "rgba(0,0,0,0)"
     },
     {
       "type": "color",
