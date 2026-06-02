@@ -55,7 +55,6 @@
         "7a8bb2ae-b8e1-45b2-80c7-2ee0aefb76cc",
         "32834525-9b40-4301-ad3b-ccce0cacb12b"
       ],
-      "disabled": true,
       "settings": {
         "logo_src": "shopify://shop_images/zguegblack.svg",
         "logo_height": 30,
@@ -221,6 +220,7 @@
         "search_n4W3CU",
         "cart_gjhzet"
       ],
+      "disabled": true,
       "name": "SS - Header #9",
       "settings": {
         "show_type": "scroll_up",
