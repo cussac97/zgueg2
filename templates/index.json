@@ -238,7 +238,7 @@
           "settings": {
             "title": "Le gel moussant quotidien",
             "title_size": "heading-size--small",
-            "title_weight": "inherit",
+            "title_weight": "500",
             "title_size_custom": 0,
             "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
@@ -247,14 +247,14 @@
         "text_UYMML3": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.</p>",
+            "text": "<p>cleaned® nettoie en profondeur avec des tensioactifs d'origine végétale, sans détruire le microbiome naturel qui protège ta zone intime. Les ferments probiotiques font le reste. Un gel douche classique n'a aucune idée de ce qu'il fait là en bas. cleaned® si.</p>",
             "text_size": "regular"
           }
         },
         "button_EhGp8h": {
           "type": "button",
           "settings": {
-            "button_label": "Show more",
+            "button_label": "Je shoppe cleaned®",
             "link": "",
             "open_in_new_window": false,
             "button_style": "outline"
@@ -268,13 +268,12 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
-        "image": "shopify://shop_images/OFFCOURT_SOAPIMAGE3_750x_00f81d69-a949-4fc1-943e-1ba9b83a8521.webp",
+        "image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_14_45_16.png",
         "video_controls": false,
         "image_position": "right",
         "height": "regular",
         "image_crop": true,
-        "overlay_image": "shopify://shop_images/Render_Mockup_3000_4000_2026-06-02_3.png",
-        "overlay_image_width": 160,
+        "overlay_image_width": 320,
         "overlay_image_width_mobile": 100,
         "is_fullwidth": false,
         "text_alignment": "horizontal-center",
