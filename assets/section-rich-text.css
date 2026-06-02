@@ -143,8 +143,13 @@
     align-items: flex-start;
   }
   .rich-text__split-col {
-    flex: 1 1 0;
     min-width: 0;
+  }
+  .rich-text__split-col--left {
+    flex: 0 0 var(--rt-split-left, 50%);
+  }
+  .rich-text__split-col--right {
+    flex: 1 1 0;
   }
 }
 

@@ -129,7 +129,7 @@
             card__text remove-empty-space
             {% if rt_split %} rich-text__split {% else %} spacing--custom {% endif %}
           "
-          style="--spacing:{{ section.settings.spacing }}px; --horizontal-alignment:{{ section.settings.text_alignment | replace: 'horizontal-', '' }};"
+          style="--spacing:{{ section.settings.spacing }}px; --horizontal-alignment:{{ section.settings.text_alignment | replace: 'horizontal-', '' }};{% if rt_split %} --rt-split-left:{{ section.settings.split_left_width }}%;{% endif %}"
         >
           {%- if rt_split -%}
             <div class="rich-text__split-col rich-text__split-col--left spacing--custom">
@@ -307,6 +307,18 @@
         { "value": "split", "label": "Côte à côte (titre à gauche / texte à droite)" }
       ],
       "default": "stacked"
+    },
+    {
+      "type": "range",
+      "id": "split_left_width",
+      "label": "Largeur colonne gauche",
+      "info": "En disposition côte à côte : largeur de la colonne de gauche (titre). La droite prend le reste. Sur ordinateur uniquement.",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "default": 50,
+      "unit": "%",
+      "visible_if": "{{ section.settings.content_layout == 'split' }}"
     },
     {
       "type": "range",
