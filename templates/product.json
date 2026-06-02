@@ -212,7 +212,7 @@
         "gallery_desktop_width": "one-half",
         "gallery_mobile_width": 100,
         "gallery_mobile_margin": false,
-        "gallery_aspect_ratio": "0.83333",
+        "gallery_aspect_ratio": "1",
         "gallery_fit": false,
         "gallery_padding": 0,
         "section_background_color": "#f7f3ec",
