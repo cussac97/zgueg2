@@ -39,7 +39,7 @@
           "settings": {
             "image": "shopify://shop_images/zguegstroke.svg",
             "link": "",
-            "width": 140,
+            "width": 180,
             "width_mobile": 90,
             "opacity": 100,
             "pos": "top right",
@@ -54,9 +54,9 @@
           "type": "divider",
           "settings": {
             "length": 100,
-            "thickness": 1,
+            "thickness": 3,
             "color": "#ffffff",
-            "opacity": 60,
+            "opacity": 100,
             "pos": "bottom left",
             "offset_x": 0,
             "offset_y": 70,
@@ -260,6 +260,7 @@
         "slide_video_rkfCVJ",
         "slide_image_CTCmLb"
       ],
+      "disabled": true,
       "name": "t:theme_blocks.sections.flex-slideshow.name",
       "settings": {
         "desktop_height": "60vh",
