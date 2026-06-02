@@ -307,7 +307,6 @@
         "title_UDcVcH",
         "text_GKafAp"
       ],
-      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_02_12_27.png",
@@ -330,7 +329,7 @@
         "border_radius": 0,
         "color_hide_borders": true,
         "gutter_decrease": false,
-        "remove_margin": false,
+        "remove_margin": true,
         "remove_bottom_margin": false
       }
     },
@@ -368,7 +367,6 @@
         "title_aj3KDD",
         "text_fqVCan"
       ],
-      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/OFFCOURT_SOAPIMAGE3_750x_00f81d69-a949-4fc1-943e-1ba9b83a8521.webp",
@@ -1011,196 +1009,6 @@
         "field_border": "#d9d9d9",
         "field_radius": 8
       }
-    },
-    "ss_video_grid_socials_3_mTKgUe": {
-      "type": "ss-video-grid-socials-3",
-      "blocks": {
-        "heading_MwkiKV": {
-          "type": "heading",
-          "settings": {
-            "heading": "<h2>Video from <strong>social #3</strong></h2>",
-            "heading_custom": false,
-            "heading_font": "josefin_sans_n4",
-            "heading_size": 52,
-            "heading_size_mobile": 40,
-            "heading_advanced": false,
-            "heading_height": 130,
-            "heading_mt": 0,
-            "heading_mt_mobile": 0,
-            "heading_color": "#121212",
-            "heading_accent_color": "#afafaf"
-          }
-        },
-        "text_RjKMpG": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Tell your story</p>",
-            "text_custom": false,
-            "text_font": "josefin_sans_n4",
-            "text_size": 18,
-            "text_size_mobile": 16,
-            "text_advanced": false,
-            "text_height": 150,
-            "text_mt": 18,
-            "text_mt_mobile": 16,
-            "text_max_width": 60,
-            "text_max_width_mobile": 100,
-            "text_color": "#121212"
-          }
-        },
-        "video_89ntUz": {
-          "type": "video",
-          "settings": {
-            "source": "uploaded",
-            "video_url": "",
-            "info": "Tell your story",
-            "url": ""
-          }
-        },
-        "video_TWztGH": {
-          "type": "video",
-          "settings": {
-            "source": "uploaded",
-            "video_url": "",
-            "info": "Tell your story",
-            "url": ""
-          }
-        },
-        "video_Pgdgbi": {
-          "type": "video",
-          "settings": {
-            "source": "uploaded",
-            "video_url": "",
-            "info": "Tell your story",
-            "url": ""
-          }
-        },
-        "video_kEXpeR": {
-          "type": "video",
-          "settings": {
-            "source": "uploaded",
-            "video_url": "",
-            "info": "Tell your story",
-            "url": ""
-          }
-        },
-        "video_THYbK9": {
-          "type": "video",
-          "settings": {
-            "source": "uploaded",
-            "video_url": "",
-            "info": "Tell your story",
-            "url": ""
-          }
-        },
-        "video_dBbfAi": {
-          "type": "video",
-          "settings": {
-            "source": "uploaded",
-            "video_url": "",
-            "info": "Tell your story",
-            "url": ""
-          }
-        },
-        "video_pxtbnr": {
-          "type": "video",
-          "settings": {
-            "source": "uploaded",
-            "video_url": "",
-            "info": "Tell your story",
-            "url": ""
-          }
-        },
-        "video_LwcQjD": {
-          "type": "video",
-          "settings": {
-            "source": "uploaded",
-            "video_url": "",
-            "info": "Tell your story",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_MwkiKV",
-        "text_RjKMpG",
-        "video_89ntUz",
-        "video_TWztGH",
-        "video_Pgdgbi",
-        "video_kEXpeR",
-        "video_THYbK9",
-        "video_dBbfAi",
-        "video_pxtbnr",
-        "video_LwcQjD"
-      ],
-      "name": "SS - Video grid (social media) #3",
-      "settings": {
-        "content_align": "center",
-        "content_align_mobile": "center",
-        "slider_view": 5,
-        "slider_view_mobile": 1.3,
-        "slider_advanced": false,
-        "slider_gap": 20,
-        "slider_gap_mobile": 20,
-        "slider_mt": 24,
-        "slider_mt_mobile": 36,
-        "card_radius": 0,
-        "card_border_thickness": 0,
-        "video_ratio": "portrait",
-        "video_ratio_mobile": "portrait",
-        "info_custom": false,
-        "info_font": "josefin_sans_n4",
-        "info_size": 15,
-        "info_size_mobile": 18,
-        "info_height": 150,
-        "info_align": "left",
-        "info_align_mobile": "left",
-        "arrow_show_desktop": true,
-        "arrow_show_mobile": false,
-        "arrow_size": 48,
-        "arrow_size_mobile": 48,
-        "arrow_icon_size": 8,
-        "arrow_icon_size_mobile": 8,
-        "arrow_radius": 100,
-        "arrow_border_thickness": 0,
-        "arrow_hover_effect": "color",
-        "action_size": 48,
-        "action_size_mobile": 48,
-        "action_icon_size": 28,
-        "action_icon_size_mobile": 28,
-        "action_border_thickness": 0,
-        "info_color": "#ffffff",
-        "card_border_color": "#121212",
-        "arrow_color": "#121212",
-        "arrow_hover_color": "#ffffff",
-        "arrow_bg_color": "#ffffff",
-        "arrow_bg_hover_color": "#121212",
-        "arrow_border_color": "#121212",
-        "arrow_border_hover_color": "#121212",
-        "action_color": "#ffffff",
-        "action_hover_color": "#ffffff",
-        "action_bg_color": "#ffffff",
-        "action_bg_hover_color": "#ffffff",
-        "action_border_color": "#ffffff",
-        "action_border_hover_color": "#ffffff",
-        "background_style": "solid",
-        "background_color": "#ffffff",
-        "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
-        "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "width": "page",
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
-      }
     }
   },
   "order": [
@@ -1210,7 +1018,6 @@
     "rich_text_LRtXGt",
     "certifications_Tniktg",
     "instagram_shots_943TFC",
-    "customer_reviews_QkecMN",
-    "ss_video_grid_socials_3_mTKgUe"
+    "customer_reviews_QkecMN"
   ]
 }
