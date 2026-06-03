@@ -140,48 +140,6 @@
         "remove_spacing": true
       }
     },
-    "rich_text_UKfy6N": {
-      "type": "rich-text",
-      "blocks": {
-        "title_Uhdr6e": {
-          "type": "title",
-          "settings": {
-            "title": "L'histoire de 2 zguegs, qui ont créé Zgueg®",
-            "title_size": "heading-size--small",
-            "title_weight": "400",
-            "title_size_custom": 44,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "title_Uhdr6e"
-      ],
-      "name": "t:sections-categories.presets.heading_text",
-      "settings": {
-        "video_controls": false,
-        "image_position": "top no-image",
-        "height": "small",
-        "image_crop": true,
-        "image_object_position": "auto",
-        "overlay_image_width": 160,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
-        "text_alignment": "horizontal-center",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 36,
-        "color_background_main": "#f7f3ec",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "rgba(0,0,0,0)",
-        "border_radius": 14,
-        "color_hide_borders": true,
-        "gutter_decrease": true,
-        "remove_margin": true,
-        "remove_bottom_margin": true
-      }
-    },
     "rich_text_EcNqNq": {
       "type": "rich-text",
       "blocks": {
@@ -224,6 +182,7 @@
         "video_controls": false,
         "image_position": "right",
         "height": "large",
+        "content_vertical_position": "middle",
         "image_crop": true,
         "image_object_position": "auto",
         "overlay_image_width": 320,
@@ -378,6 +337,7 @@
         "video_controls": false,
         "image_position": "left",
         "height": "large",
+        "content_vertical_position": "middle",
         "image_crop": true,
         "image_object_position": "auto",
         "overlay_image_width": 160,
@@ -395,6 +355,49 @@
         "gutter_decrease": false,
         "remove_margin": true,
         "remove_bottom_margin": false
+      }
+    },
+    "rich_text_UKfy6N": {
+      "type": "rich-text",
+      "blocks": {
+        "title_Uhdr6e": {
+          "type": "title",
+          "settings": {
+            "title": "L'histoire de deux 🍆 qui ont créé Zgueg®",
+            "title_size": "heading-size--small",
+            "title_weight": "400",
+            "title_size_custom": 44,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "title_Uhdr6e"
+      ],
+      "name": "t:sections-categories.presets.heading_text",
+      "settings": {
+        "video_controls": false,
+        "image_position": "top no-image",
+        "height": "small",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 36,
+        "color_background_main": "#f7f3ec",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 14,
+        "color_hide_borders": true,
+        "gutter_decrease": true,
+        "remove_margin": true,
+        "remove_bottom_margin": true
       }
     },
     "rich_text_9XNcQB": {
@@ -415,7 +418,7 @@
         "text_UYMML3": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Nous, c’est Ben et Julien.</strong></p><p>Deux amis de longue date, capables de parler de tout — même de ce dont les hommes parlent rarement.</p><p>Un soir, autour d’un verre, on s’est demandé comment arriver à un date avec cette vraie confiance d’être frais, propre, irréprochable jusque dans l’intime.</p><p>On s’est partagé nos astuces. Puis on a compris qu’aucune solution n’était vraiment pensée pour nous.</p><p>Alors pendant plus de deux ans, avec des pharmaciens et cosmétologues, on a travaillé sur une formule sérieuse, clean et efficace.</p><p>Parce que l’intime masculin méritait enfin mieux qu’un tabou.</p><p><strong>Zgueg est né comme ça : d’une amitié, d’une conversation honnête, et de l’envie de créer le produit qu’on aurait aimé avoir.</strong></p>",
+            "text": "<p><strong>Nous, c’est Ben et Julien </strong>👋</p><p>Deux amis de longue date, capables de parler de tout — même de ce dont les hommes parlent rarement.</p><p>Un soir, autour d’un verre, on s’est demandé comment arriver à un date avec cette vraie confiance d’être frais, propre, irréprochable jusque dans l’intime.</p><p>On s’est partagé nos astuces. Puis on a compris qu’aucune solution n’était vraiment pensée pour nous.</p><p>Alors pendant plus de deux ans, avec des pharmaciens et cosmétologues, on a travaillé sur une formule sérieuse, clean et efficace.</p><p>Parce que l’intime masculin méritait enfin mieux qu’un tabou.</p><p><strong>Zgueg est né comme ça : d’une amitié, d’une conversation honnête, et de l’envie de créer le produit qu’on aurait aimé avoir.</strong></p>",
             "text_size": "regular"
           }
         }
@@ -430,6 +433,7 @@
         "video_controls": false,
         "image_position": "right",
         "height": "regular",
+        "content_vertical_position": "middle",
         "image_crop": true,
         "image_object_position": "top",
         "overlay_image_width": 320,
