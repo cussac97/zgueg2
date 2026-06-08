@@ -55,7 +55,7 @@
           "settings": {
             "length": 100,
             "thickness": 1,
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "opacity": 100,
             "pos": "bottom left",
             "offset_x": 0,
@@ -117,7 +117,7 @@
         "overlay_style": "none",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
-        "default_text_color": "#FFFFFF",
+        "default_text_color": "#ffffff",
         "rounded": false,
         "border_radius": 16,
         "remove_spacing": true
@@ -240,7 +240,7 @@
           "settings": {
             "button_font": "theme",
             "show_quantity_selector": true,
-            "show_preorder": true,
+            "show_preorder": false,
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false,
             "show_price": false,
