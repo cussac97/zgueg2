@@ -93,6 +93,7 @@
         "divider_JyyNj6",
         "text_p3xzR6"
       ],
+      "disabled": true,
       "name": "Enriched hero",
       "settings": {
         "width": "full",
@@ -329,7 +330,7 @@
         "gallery_aspect_ratio": "1",
         "gallery_fit": false,
         "gallery_padding": 0,
-        "section_background_color": "#f7f3ec",
+        "section_background_color": "#ffffff",
         "gallery_background": "#ededed",
         "gallery_border": "rgba(0,0,0,0)",
         "border_radius": 9,
