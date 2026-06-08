@@ -1761,6 +1761,73 @@
               {%- endif -%}
             </div>
 
+          {%- when 'reassort' -%}
+            {%- liquid
+              assign rea_show = true
+              if block.settings.display_condition == 'sold_out_only' and product.available
+                assign rea_show = false
+              endif
+              assign rea_percent = block.settings.reserved_percent
+              if rea_percent < block.settings.min_percent
+                assign rea_percent = block.settings.min_percent
+              endif
+              if rea_percent > block.settings.max_percent
+                assign rea_percent = block.settings.max_percent
+              endif
+              assign rea_days = block.settings.ship_in_days
+              assign rea_heading = block.settings.heading | replace: '{days}', rea_days | replace: '{percent}', rea_percent
+              assign rea_subtext = block.settings.subtext | replace: '{percent}', rea_percent | replace: '{days}', rea_days
+              assign rea_disclaimer = block.settings.disclaimer | replace: '{percent}', rea_percent | replace: '{days}', rea_days
+              assign rea_font = ''
+              if block.settings.heading_font == 'stefan'
+                assign rea_font = "'ABCStefan', sans-serif"
+              elsif block.settings.heading_font == 'comerie'
+                assign rea_font = "'Comerie', sans-serif"
+              endif
+            -%}
+            {%- if rea_show -%}
+              <div
+                class="reassort{% if block.settings.show_card %} reassort--card{% endif %} reassort--align-{{ block.settings.text_alignment }}{% if block.settings.animate_bar %} reassort--animate{% endif %}"
+                {{ block.shopify_attributes }}
+                style="--rea-accent:{{ block.settings.accent_color }};--rea-track:{{ block.settings.track_color }};--rea-text:{{ block.settings.text_color }};--rea-muted:{{ block.settings.muted_color }};--rea-card-bg:{{ block.settings.card_background }};--rea-card-border:{{ block.settings.card_border_color }};--rea-card-border-width:{{ block.settings.card_border_width }}px;--rea-card-radius:{{ block.settings.card_radius }}px;--rea-card-padding:{{ block.settings.card_padding }}px;--rea-bar-height:{{ block.settings.bar_height }}px;--rea-bar-radius:{{ block.settings.bar_radius }}px;--rea-heading-size:{{ block.settings.heading_size }}px;--rea-percent:{{ rea_percent }}%;"
+              >
+                {%- if rea_heading != blank -%}
+                  <div class="reassort__head">
+                    {%- case block.settings.icon -%}
+                      {%- when 'truck' -%}<span class="reassort__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5h10.5v9H3zM13.5 9.5H18l3 3v3h-7.5"/><circle cx="6.5" cy="17" r="1.6"/><circle cx="17" cy="17" r="1.6"/></svg></span>
+                      {%- when 'package' -%}<span class="reassort__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zM4 7.5l8 4.5 8-4.5M12 12v9"/></svg></span>
+                      {%- when 'clock' -%}<span class="reassort__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+                      {%- when 'bolt' -%}<span class="reassort__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></svg></span>
+                    {%- endcase -%}
+                    <p class="reassort__heading"{% if rea_font != '' %} style="font-family:{{ rea_font }};"{% endif %}>{{ rea_heading }}</p>
+                  </div>
+                {%- endif -%}
+                {%- if rea_subtext != blank -%}
+                  <p class="reassort__subtext">{{ rea_subtext }}</p>
+                {%- endif -%}
+                {%- if block.settings.show_progress_bar -%}
+                  <div class="reassort__bar-row">
+                    <span
+                      class="reassort__bar"
+                      role="progressbar"
+                      aria-valuenow="{{ rea_percent }}"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      {% if rea_subtext != blank %}aria-label="{{ rea_subtext | strip_html | escape }}"{% endif %}
+                    >
+                      <span class="reassort__bar-fill"></span>
+                    </span>
+                    {%- if block.settings.show_percent_label -%}
+                      <span class="reassort__bar-pct">{{ rea_percent }}%</span>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.show_disclaimer and rea_disclaimer != blank -%}
+                  <p class="reassort__disclaimer">{{ rea_disclaimer }}</p>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+
           {%- when 'collapsible_tab' -%}
             {%- liquid
               assign show_block = true
@@ -3434,6 +3501,272 @@
           "id": "show_progress_bar",
           "label": "t:sections.bundle-extra-words.sections.main-product-page.settings.inventory.settings.show_progress_bar",
           "default": true
+        }
+      ]
+    },
+    {
+      "type": "reassort",
+      "name": "Réassort feature",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Card minimaliste qui rassure pendant un réassort ou une précommande : délai d'expédition mis en avant + part du réassort déjà réservée avec barre de progression. Utilisez {days} et {percent} dans les textes."
+        },
+        {
+          "type": "header",
+          "content": "Affichage"
+        },
+        {
+          "type": "select",
+          "id": "display_condition",
+          "label": "Quand afficher la card",
+          "options": [
+            { "value": "always", "label": "Toujours" },
+            { "value": "sold_out_only", "label": "Uniquement si le produit est épuisé" }
+          ],
+          "default": "always"
+        },
+        {
+          "type": "header",
+          "content": "Message principal"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icône",
+          "options": [
+            { "value": "none", "label": "Aucune" },
+            { "value": "truck", "label": "Camion" },
+            { "value": "package", "label": "Colis" },
+            { "value": "clock", "label": "Horloge" },
+            { "value": "bolt", "label": "Éclair" }
+          ],
+          "default": "truck"
+        },
+        {
+          "type": "range",
+          "id": "ship_in_days",
+          "label": "Expédition sous (jours)",
+          "min": 1,
+          "max": 90,
+          "step": 1,
+          "unit": "j",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Titre (mis en avant)",
+          "info": "Variables : {days}, {percent}",
+          "default": "Expédition sous {days} jours"
+        },
+        {
+          "type": "range",
+          "id": "heading_size",
+          "label": "Taille du titre",
+          "min": 14,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "default": 20
+        },
+        {
+          "type": "select",
+          "id": "heading_font",
+          "label": "Police du titre",
+          "options": [
+            { "value": "theme", "label": "Police du thème (par défaut)" },
+            { "value": "stefan", "label": "ABC Stefan" },
+            { "value": "comerie", "label": "Comerie" }
+          ],
+          "default": "theme"
+        },
+        {
+          "type": "header",
+          "content": "Réservation & barre de progression"
+        },
+        {
+          "type": "range",
+          "id": "reserved_percent",
+          "label": "% du réassort déjà réservé",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 77
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Texte secondaire",
+          "info": "Variables : {percent}, {days}",
+          "default": "{percent} % du réassort est déjà réservé"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_progress_bar",
+          "label": "Afficher la barre de progression",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_percent_label",
+          "label": "Afficher le % à côté de la barre",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "bar_height",
+          "label": "Hauteur de la barre",
+          "min": 4,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "default": 8
+        },
+        {
+          "type": "range",
+          "id": "bar_radius",
+          "label": "Arrondi de la barre",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 50
+        },
+        {
+          "type": "checkbox",
+          "id": "animate_bar",
+          "label": "Animer le remplissage à l'apparition",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "min_percent",
+          "label": "% minimum affiché",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "max_percent",
+          "label": "% maximum affiché",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 95
+        },
+        {
+          "type": "header",
+          "content": "Mention (optionnel)"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_disclaimer",
+          "label": "Afficher une mention",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "disclaimer",
+          "label": "Mention",
+          "info": "Conseillé pour rester transparent. Variables : {percent}, {days}",
+          "default": "Stock limité à cette série de production."
+        },
+        {
+          "type": "header",
+          "content": "Apparence"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Alignement",
+          "options": [
+            { "value": "left", "label": "Gauche" },
+            { "value": "center", "label": "Centre" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "color",
+          "id": "accent_color",
+          "label": "Couleur d'accent (barre, icône)",
+          "default": "#1a1a1a"
+        },
+        {
+          "type": "color",
+          "id": "track_color",
+          "label": "Fond de la barre",
+          "default": "#ececec"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Couleur du titre",
+          "default": "#1a1a1a"
+        },
+        {
+          "type": "color",
+          "id": "muted_color",
+          "label": "Couleur du texte secondaire",
+          "default": "#6b6b6b"
+        },
+        {
+          "type": "header",
+          "content": "Card"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_card",
+          "label": "Afficher le cadre de la card",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "card_background",
+          "label": "Fond de la card",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "card_border_color",
+          "label": "Couleur de la bordure",
+          "default": "#ececec"
+        },
+        {
+          "type": "range",
+          "id": "card_border_width",
+          "label": "Épaisseur de la bordure",
+          "min": 0,
+          "max": 4,
+          "step": 1,
+          "unit": "px",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "card_radius",
+          "label": "Arrondi de la card",
+          "min": 0,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "default": 12
+        },
+        {
+          "type": "range",
+          "id": "card_padding",
+          "label": "Marge intérieure",
+          "min": 8,
+          "max": 32,
+          "step": 1,
+          "unit": "px",
+          "default": 16
         }
       ]
     },

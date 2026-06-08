@@ -965,6 +965,109 @@ html[dir=ltr] .zoom__exit {
   pointer-events: none;
 }
 
+/* Réassort feature block */
+.reassort {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--rea-text, #1a1a1a);
+}
+.reassort--card {
+  background-color: var(--rea-card-bg, #ffffff);
+  border: var(--rea-card-border-width, 1px) solid var(--rea-card-border, #ececec);
+  border-radius: var(--rea-card-radius, 12px);
+  padding: var(--rea-card-padding, 16px);
+}
+.reassort--align-center {
+  text-align: center;
+}
+.reassort__head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.reassort--align-center .reassort__head {
+  justify-content: center;
+}
+.reassort__icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  color: var(--rea-accent, #1a1a1a);
+}
+.reassort__icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+}
+.reassort__heading {
+  margin: 0;
+  font-size: var(--rea-heading-size, 20px);
+  font-weight: var(--font-weight-body-primary-bold, 700);
+  line-height: 1.2;
+  color: var(--rea-text, #1a1a1a);
+}
+.reassort__subtext {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.35;
+  color: var(--rea-muted, #6b6b6b);
+}
+.reassort__bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 0.125rem;
+}
+.reassort__bar {
+  position: relative;
+  display: block;
+  flex: 1 1 auto;
+  height: var(--rea-bar-height, 8px);
+  background-color: var(--rea-track, #ececec);
+  border-radius: var(--rea-bar-radius, 50px);
+  overflow: hidden;
+}
+.reassort__bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--rea-percent, 0%);
+  background-color: var(--rea-accent, #1a1a1a);
+  border-radius: inherit;
+}
+.reassort--animate .reassort__bar-fill {
+  width: 0;
+  animation: reassort-fill 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.15s;
+}
+@keyframes reassort-fill {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--rea-percent, 0%);
+  }
+}
+.reassort__bar-pct {
+  flex: 0 0 auto;
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-body-primary-bold, 700);
+  color: var(--rea-text, #1a1a1a);
+  font-variant-numeric: tabular-nums;
+}
+.reassort__disclaimer {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  color: var(--rea-muted, #6b6b6b);
+  opacity: 0.85;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reassort--animate .reassort__bar-fill {
+    animation: none;
+    width: var(--rea-percent, 0%);
+  }
+}
+
 .product-sharing .site-sharing {
   margin-bottom: -1.25rem;
 }
