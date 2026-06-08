@@ -29,7 +29,7 @@
             "offset_y": 0,
             "pos_mobile": "inherit",
             "max_width": 55,
-            "max_width_mobile": 90,
+            "max_width_mobile": 60,
             "hide_desktop": false,
             "hide_mobile": false
           }
@@ -40,7 +40,7 @@
             "image": "shopify://shop_images/zguegstroke.svg",
             "link": "",
             "width": 140,
-            "width_mobile": 90,
+            "width_mobile": 110,
             "opacity": 100,
             "pos": "top right",
             "offset_x": 0,
@@ -108,7 +108,7 @@
         "content_padding_top_mobile": 28,
         "desktop_height": "70vh",
         "desktop_height_px": 640,
-        "mobile_height": "80vh",
+        "mobile_height": "60vh",
         "mobile_height_px": 520,
         "min_height": 420,
         "background_image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_14_45_16.png",
