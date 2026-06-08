@@ -183,6 +183,7 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "content_alignment": "center",
             "badge_text": "",
@@ -204,7 +205,6 @@
         },
         "variant_bundler_6mBmkR": {
           "type": "variant_bundler",
-          "disabled": true,
           "settings": {
             "heading": "Choisissez votre pack",
             "heading_font": "theme",
@@ -212,18 +212,18 @@
             "style": "minimal",
             "variant_labels": false,
             "cards_per_row": 2,
-            "card_layout": "image-top",
+            "card_layout": "image-left",
             "show_variant_image": true,
             "show_price": true,
-            "image_ratio": "portrait",
-            "image_size": 70,
+            "image_ratio": "natural",
+            "image_size": 55,
             "card_padding": 18,
             "card_inner_gap": 11,
             "card_bg_color": "rgba(0,0,0,0)",
             "card_border_color": "#dddddd",
             "card_border_width": 1,
             "card_radius": 12,
-            "selected_border_color": "#000000",
+            "selected_border_color": "#0000c9",
             "badge_text": "10€ de remise immédiate",
             "badge_card": 2,
             "badge_bg_color": "#0000c9",
