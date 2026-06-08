@@ -880,13 +880,24 @@ html[dir=ltr] .zoom__exit {
   flex-direction: row;
   align-items: center;
   text-align: left;
+  gap: 0.875rem;
 }
 .vb-layout--image-left .vb-card__media {
-  flex: 0 0 40%;
+  flex: 0 0 4rem;
+}
+.vb-layout--image-left .vb-card__label {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 .vb-layout--image-left .vb-card__price {
-  justify-content: flex-start;
-  text-align: left;
+  flex: 0 0 auto;
+  width: auto;
+  margin-left: auto;
+  padding-left: 0.5rem;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  text-align: right;
+  white-space: nowrap;
 }
 .vb-card__input:checked + .vb-card__inner {
   border-color: var(--vb-selected-color, #1a1a1a);
