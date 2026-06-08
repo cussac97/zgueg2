@@ -9,120 +9,6 @@
  */
 {
   "sections": {
-    "enriched_hero_tq8Pwr": {
-      "type": "enriched-hero",
-      "blocks": {
-        "heading_eFJXnL": {
-          "type": "heading",
-          "settings": {
-            "text": "Pour des parties intimes propres, qui sentent bon, en toute circonstance.",
-            "font_size": 44,
-            "font_size_mobile": 26,
-            "font_weight": "400",
-            "line_height": 120,
-            "letter_spacing": 0,
-            "text_transform": "none",
-            "text_align": "left",
-            "color": "rgba(0,0,0,0)",
-            "pos": "top left",
-            "offset_x": 0,
-            "offset_y": 0,
-            "pos_mobile": "inherit",
-            "max_width": 55,
-            "max_width_mobile": 60,
-            "hide_desktop": false,
-            "hide_mobile": false
-          }
-        },
-        "image_CE67bF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/zguegstroke.svg",
-            "link": "",
-            "width": 140,
-            "width_mobile": 110,
-            "opacity": 100,
-            "pos": "top right",
-            "offset_x": 0,
-            "offset_y": 0,
-            "pos_mobile": "inherit",
-            "hide_desktop": false,
-            "hide_mobile": false
-          }
-        },
-        "divider_JyyNj6": {
-          "type": "divider",
-          "settings": {
-            "length": 100,
-            "thickness": 1,
-            "color": "#ffffff",
-            "opacity": 100,
-            "pos": "bottom left",
-            "offset_x": 0,
-            "offset_y": 70,
-            "pos_mobile": "inherit",
-            "hide_desktop": false,
-            "hide_mobile": false
-          }
-        },
-        "text_p3xzR6": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Avec des actifs controlés et un pH bas, il nettoie efficacement vos parties sans détruire la flore intime.</p>",
-            "font_size": 16,
-            "font_size_mobile": 14,
-            "font_weight": "400",
-            "line_height": 150,
-            "opacity": 100,
-            "text_align": "left",
-            "color": "rgba(0,0,0,0)",
-            "pos": "bottom left",
-            "offset_x": 0,
-            "offset_y": 0,
-            "pos_mobile": "inherit",
-            "max_width": 40,
-            "max_width_mobile": 90,
-            "hide_desktop": false,
-            "hide_mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_eFJXnL",
-        "image_CE67bF",
-        "divider_JyyNj6",
-        "text_p3xzR6"
-      ],
-      "name": "Enriched hero",
-      "settings": {
-        "width": "full",
-        "content_full_width": true,
-        "content_max_width": 1400,
-        "content_align": "center",
-        "content_padding_x_desktop": 64,
-        "content_padding_y_desktop": 56,
-        "content_padding_x_mobile": 24,
-        "content_padding_y_mobile": 28,
-        "content_padding_top_enable": false,
-        "content_padding_top_desktop": 56,
-        "content_padding_top_mobile": 28,
-        "desktop_height": "70vh",
-        "desktop_height_px": 640,
-        "mobile_height": "60vh",
-        "mobile_height_px": 520,
-        "min_height": 420,
-        "background_image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_14_45_16.png",
-        "image_position": "center",
-        "background_color": "rgba(0,0,0,0)",
-        "overlay_style": "none",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30,
-        "default_text_color": "#ffffff",
-        "rounded": false,
-        "border_radius": 16,
-        "remove_spacing": true
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -345,6 +231,120 @@
         "sticky_atc_style": "floating",
         "sticky_bar_bgcolor": "#0000c9",
         "sticky_bar_txtcolor": "#ffffff"
+      }
+    },
+    "enriched_hero_tq8Pwr": {
+      "type": "enriched-hero",
+      "blocks": {
+        "heading_eFJXnL": {
+          "type": "heading",
+          "settings": {
+            "text": "Pour des parties intimes propres, qui sentent bon, en toute circonstance.",
+            "font_size": 44,
+            "font_size_mobile": 26,
+            "font_weight": "400",
+            "line_height": 120,
+            "letter_spacing": 0,
+            "text_transform": "none",
+            "text_align": "left",
+            "color": "rgba(0,0,0,0)",
+            "pos": "top left",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "max_width": 55,
+            "max_width_mobile": 60,
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "image_CE67bF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "link": "",
+            "width": 140,
+            "width_mobile": 110,
+            "opacity": 100,
+            "pos": "top right",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "divider_JyyNj6": {
+          "type": "divider",
+          "settings": {
+            "length": 100,
+            "thickness": 1,
+            "color": "#ffffff",
+            "opacity": 100,
+            "pos": "bottom left",
+            "offset_x": 0,
+            "offset_y": 70,
+            "pos_mobile": "inherit",
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "text_p3xzR6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Avec des actifs controlés et un pH bas, il nettoie efficacement vos parties sans détruire la flore intime.</p>",
+            "font_size": 16,
+            "font_size_mobile": 14,
+            "font_weight": "400",
+            "line_height": 150,
+            "opacity": 100,
+            "text_align": "left",
+            "color": "rgba(0,0,0,0)",
+            "pos": "bottom left",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "max_width": 40,
+            "max_width_mobile": 90,
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_eFJXnL",
+        "image_CE67bF",
+        "divider_JyyNj6",
+        "text_p3xzR6"
+      ],
+      "name": "Enriched hero",
+      "settings": {
+        "width": "full",
+        "content_full_width": true,
+        "content_max_width": 1400,
+        "content_align": "center",
+        "content_padding_x_desktop": 64,
+        "content_padding_y_desktop": 56,
+        "content_padding_x_mobile": 24,
+        "content_padding_y_mobile": 28,
+        "content_padding_top_enable": false,
+        "content_padding_top_desktop": 56,
+        "content_padding_top_mobile": 28,
+        "desktop_height": "70vh",
+        "desktop_height_px": 640,
+        "mobile_height": "60vh",
+        "mobile_height_px": 520,
+        "min_height": 420,
+        "background_image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_14_45_16.png",
+        "image_position": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "overlay_style": "none",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "default_text_color": "#ffffff",
+        "rounded": false,
+        "border_radius": 16,
+        "remove_spacing": true
       }
     },
     "product-recommendations": {
@@ -650,6 +650,7 @@
         "photo_i8qhkr",
         "photo_r4iQFa"
       ],
+      "disabled": true,
       "name": "Instagram shots",
       "settings": {
         "heading": "On vous explique tout",
