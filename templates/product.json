@@ -93,7 +93,6 @@
         "divider_JyyNj6",
         "text_p3xzR6"
       ],
-      "disabled": true,
       "name": "Enriched hero",
       "settings": {
         "width": "full",
@@ -1128,8 +1127,8 @@
     }
   },
   "order": [
-    "enriched_hero_tq8Pwr",
     "main",
+    "enriched_hero_tq8Pwr",
     "product-recommendations",
     "rich_text_FmJFM4",
     "rich_text_LRtXGt",
