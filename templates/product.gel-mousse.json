@@ -650,6 +650,7 @@
         "photo_i8qhkr",
         "photo_r4iQFa"
       ],
+      "disabled": true,
       "name": "Instagram shots",
       "settings": {
         "heading": "On t'explique tout",
@@ -722,6 +723,7 @@
             "helpful_up": 3,
             "helpful_down": 1,
             "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "18 mai 2026",
