@@ -217,7 +217,7 @@
         "label_size": 13,
         "label_weight": "400",
         "label_transform": "none",
-        "show_button": true,
+        "show_button": false,
         "button_label": "Lire nos analyses",
         "button_link": "",
         "button_bg": "#0000c9",
@@ -333,7 +333,7 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_02_12_27.png",
+        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_35_35.png",
         "video_controls": false,
         "image_position": "left",
         "height": "large",
