@@ -93,6 +93,7 @@
         "divider_JyyNj6",
         "text_p3xzR6"
       ],
+      "disabled": true,
       "name": "Enriched hero",
       "settings": {
         "width": "full",
@@ -154,8 +155,8 @@
         "badges_6Ax9rj": {
           "type": "badges",
           "settings": {
-            "tag_bg_color": "#f7f3ec",
-            "tag_text_color": "#d4ac66",
+            "tag_bg_color": "#d1e3fb",
+            "tag_text_color": "#0000c9",
             "tag_border_color": "#0000c9",
             "tag_radius": 6,
             "tag_border_width": 0,
@@ -163,7 +164,7 @@
             "tag_padding_horizontal": 10,
             "tag_gap": 8,
             "tag_font_size": 13,
-            "tag_font_weight": "700",
+            "tag_font_weight": "500",
             "tag_text_transform": "none",
             "tag_alignment": "center"
           }
@@ -329,7 +330,7 @@
         "gallery_aspect_ratio": "1",
         "gallery_fit": false,
         "gallery_padding": 0,
-        "section_background_color": "#f7f3ec",
+        "section_background_color": "#ffffff",
         "gallery_background": "#ededed",
         "gallery_border": "rgba(0,0,0,0)",
         "border_radius": 9,
