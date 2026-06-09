@@ -387,6 +387,99 @@
         "remove_bottom_margin": false
       }
     },
+    "certifications_Tniktg": {
+      "type": "certifications",
+      "blocks": {
+        "certification_Giz7h8": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.29.png",
+            "label": "Nettoie sans agresser\n\nLes tensioactifs végétaux (coco, glucoside) délogent sueur, smegma et résidus tout en respectant le pH et les muqueuses de la zone intime.",
+            "link": ""
+          }
+        },
+        "certification_8XX37L": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.35.png",
+            "label": "Rééquilibre la flore\n\nLes ferments probiotiques Lactobacillus et Bifida soutiennent la flore intime à chaque lavage, pour limiter le retour des odeurs.",
+            "link": ""
+          }
+        },
+        "certification_w6cwby": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.43.png",
+            "label": "Apaise les irritations\n\nCentella asiatica, armoise et Houttuynia cordata calment les rougeurs et l'inconfort des zones sensibles.",
+            "link": ""
+          }
+        },
+        "certification_XAFn7c": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.56.png",
+            "label": "Assainit en douceur\n\nLe thé vert et les actifs purifiants aident à garder une sensation de fraîcheur durable, sans dessécher la peau.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "certification_Giz7h8",
+        "certification_8XX37L",
+        "certification_w6cwby",
+        "certification_XAFn7c"
+      ],
+      "name": "Certifications",
+      "settings": {
+        "container_width": "large",
+        "two_columns": true,
+        "left_width": 47,
+        "column_gap": 48,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "section_bg": "#ffffff",
+        "heading": "Ce que chaque ingrédient fait concrètement",
+        "text_color": "#1a1a1a",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_alignment": "left",
+        "heading_alignment_mobile": "left",
+        "body": "<p>Le gel moussant zgueg combine des actifs sélectionnés pour nettoyer la zone intime masculine en profondeur, sans casser son équilibre. Tensioactifs végétaux, ferments probiotiques et apaisants botaniques : chacun a un rôle précis — ensemble, ils nettoient, rééquilibrent et apaisent à chaque douche.</p>",
+        "body_color": "#1a1a1a",
+        "body_size": 19,
+        "body_max_width": 640,
+        "body_alignment": "left",
+        "body_alignment_mobile": "left",
+        "icons_per_row": 4,
+        "icons_per_row_mobile": 2,
+        "icon_size": 56,
+        "icon_gap": 24,
+        "row_gap": 28,
+        "label_gap": 14,
+        "icons_margin_top": 40,
+        "icon_recolor": false,
+        "icon_color": "#0000c9",
+        "label_color": "#1a1a1a",
+        "label_size": 13,
+        "label_weight": "400",
+        "label_transform": "none",
+        "show_button": true,
+        "button_label": "Lire la composition",
+        "button_link": "",
+        "button_bg": "#0000c9",
+        "button_text_color": "#ffffff",
+        "button_radius": 40,
+        "button_padding_v": 15,
+        "button_padding_h": 40,
+        "button_font_size": 15,
+        "button_weight": "700",
+        "button_transform": "none",
+        "button_alignment": "center",
+        "button_alignment_mobile": "center",
+        "button_full_width_mobile": false
+      }
+    },
     "rich_text_FmJFM4": {
       "type": "rich-text",
       "blocks": {
@@ -505,99 +598,6 @@
         "gutter_decrease": false,
         "remove_margin": true,
         "remove_bottom_margin": false
-      }
-    },
-    "certifications_Tniktg": {
-      "type": "certifications",
-      "blocks": {
-        "certification_Giz7h8": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.29.png",
-            "label": "Nettoie sans agresser\n\nLes tensioactifs végétaux (coco, glucoside) délogent sueur, smegma et résidus tout en respectant le pH et les muqueuses de la zone intime.",
-            "link": ""
-          }
-        },
-        "certification_8XX37L": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.35.png",
-            "label": "Rééquilibre la flore\n\nLes ferments probiotiques Lactobacillus et Bifida soutiennent la flore intime à chaque lavage, pour limiter le retour des odeurs.",
-            "link": ""
-          }
-        },
-        "certification_w6cwby": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.43.png",
-            "label": "Apaise les irritations\n\nCentella asiatica, armoise et Houttuynia cordata calment les rougeurs et l'inconfort des zones sensibles.",
-            "link": ""
-          }
-        },
-        "certification_XAFn7c": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.56.png",
-            "label": "Assainit en douceur\n\nLe thé vert et les actifs purifiants aident à garder une sensation de fraîcheur durable, sans dessécher la peau.",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "certification_Giz7h8",
-        "certification_8XX37L",
-        "certification_w6cwby",
-        "certification_XAFn7c"
-      ],
-      "name": "Certifications",
-      "settings": {
-        "container_width": "large",
-        "two_columns": true,
-        "left_width": 47,
-        "column_gap": 48,
-        "padding_top": 70,
-        "padding_bottom": 70,
-        "section_bg": "#ffffff",
-        "heading": "Ce que chaque ingrédient fait concrètement",
-        "text_color": "#1a1a1a",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "heading_alignment": "left",
-        "heading_alignment_mobile": "left",
-        "body": "<p>Le gel moussant zgueg combine des actifs sélectionnés pour nettoyer la zone intime masculine en profondeur, sans casser son équilibre. Tensioactifs végétaux, ferments probiotiques et apaisants botaniques : chacun a un rôle précis — ensemble, ils nettoient, rééquilibrent et apaisent à chaque douche.</p>",
-        "body_color": "#1a1a1a",
-        "body_size": 19,
-        "body_max_width": 640,
-        "body_alignment": "left",
-        "body_alignment_mobile": "left",
-        "icons_per_row": 4,
-        "icons_per_row_mobile": 2,
-        "icon_size": 56,
-        "icon_gap": 24,
-        "row_gap": 28,
-        "label_gap": 14,
-        "icons_margin_top": 40,
-        "icon_recolor": false,
-        "icon_color": "#0000c9",
-        "label_color": "#1a1a1a",
-        "label_size": 13,
-        "label_weight": "400",
-        "label_transform": "none",
-        "show_button": true,
-        "button_label": "Lire la composition",
-        "button_link": "",
-        "button_bg": "#0000c9",
-        "button_text_color": "#ffffff",
-        "button_radius": 40,
-        "button_padding_v": 15,
-        "button_padding_h": 40,
-        "button_font_size": 15,
-        "button_weight": "700",
-        "button_transform": "none",
-        "button_alignment": "center",
-        "button_alignment_mobile": "center",
-        "button_full_width_mobile": false
       }
     },
     "instagram_shots_943TFC": {
@@ -1138,9 +1138,9 @@
     "enriched_hero_tq8Pwr",
     "main",
     "product-recommendations",
+    "certifications_Tniktg",
     "rich_text_FmJFM4",
     "rich_text_LRtXGt",
-    "certifications_Tniktg",
     "instagram_shots_943TFC",
     "customer_reviews_QkecMN"
   ]
