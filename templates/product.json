@@ -709,13 +709,13 @@
         "review_r01": {
           "type": "review",
           "settings": {
-            "author": "Antoine M.",
+            "author": "Kevin R.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "21 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Je l'utilise après chaque séance de sport. Un coup de spray et c'est réglé pour le reste de la journée, sans repasser par la douche. La fraîcheur tient vraiment.",
+            "text": "Le réflexe après la muscu maintenant. Deux pressions et c'est réglé pour la journée, pas besoin de repasser sous la douche. La fraîcheur tient vraiment, même tard le soir.",
             "helpful_up": 14,
             "helpful_down": 0,
             "reply_enable": true,
@@ -723,19 +723,19 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Zgueg",
             "reply_date": "21 mai 2026",
-            "reply_text": "Merci Antoine ! C'est exactement l'usage idéal : le geste post-sport qui change tout. Une question ? contact@zgueg.fr 💨"
+            "reply_text": "Salut Kevin ! Le geste post-séance, c'est exactement l'usage idéal 💪 Si tu veux nettoyer à fond le soir, le gel complète. contact@zgueg.fr"
           }
         },
         "review_r02": {
           "type": "review",
           "settings": {
-            "author": "Thomas B.",
+            "author": "Mehdi 06",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "20 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Discret, efficace, et ça ne colle pas. Je le garde dans mon sac de boulot, parfait pour les longues journées. Plus aucune gêne en fin d'après-midi.",
+            "text": "Pratique, discret, efficace. Toujours dans mon sac.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -748,32 +748,33 @@
         "review_r03": {
           "type": "review",
           "settings": {
-            "author": "Sophie D.",
+            "author": "Camille (pour mon homme)",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "18 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Acheté pour mon compagnon, il ne s'en passe plus. Il l'emporte partout, surtout en déplacement pro. Et clairement, ça sent bien meilleur le soir.",
+            "text": "Pris pour mon copain qui transpire énormément. Honnêtement ça a changé nos soirées, je vous laisse imaginer 😏 Il l'emporte partout maintenant.",
             "helpful_up": 3,
             "helpful_down": 1,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "18 mai 2026",
-            "reply_text": "Merci Sophie ! Le format nomade est fait pour ça. Belle découverte à vous deux 😎 contact@zgueg.fr"
+            "reply_text": "Merci Camille 😄 Ravis que ça fasse l'unanimité à la maison. Le format tient bien dans une poche pour les déplacements. contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r04": {
           "type": "review",
           "settings": {
-            "author": "Karim A.",
+            "author": "Greg",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "15 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Le Zinc PCA fait vraiment le job, ce n'est pas juste du parfum qui masque. Les odeurs ne reviennent pas, même après une grosse journée.",
+            "text": "Ce que j'aime c'est que ça masque pas juste avec du parfum, ça agit vraiment sur l'odeur. Même après une grosse journée y'a rien. Le jour et la nuit comparé à un déo classique.",
             "helpful_up": 9,
             "helpful_down": 0,
             "reply_enable": false,
@@ -786,32 +787,33 @@
         "review_r05": {
           "type": "review",
           "settings": {
-            "author": "Julien P.",
+            "author": "JB.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "12 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Sceptique sur un spray sans rinçage, mais c'est bluffant. Fraîcheur immédiate et qui dure, sans sensation de mouillé. Je ne pars plus sans.",
+            "text": "franchement un spray sans rinçage pour ça j'y croyais pas du tout, je pensais que ça allait laisser un truc collant ou mouillé mais non ça sèche direct et c'est frais immédiat, du coup maintenant j'en ai un au boulot un dans la voiture un à la maison, bref conquis",
             "helpful_up": 2,
             "helpful_down": 2,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "13 mai 2026",
-            "reply_text": "Merci Julien ! Sans eau et sans compromis, c'est tout l'intérêt. On reste dispo : contact@zgueg.fr"
+            "reply_text": "Merci JB ! Sans flotte et sans compromis, c'était tout le pari 😉 Un dans chaque sac et t'es paré. contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r06": {
           "type": "review",
           "settings": {
-            "author": "Maxime C.",
+            "author": "Thomas L.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "9 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Parfait avant un rendez-vous. Un geste rapide et je suis tranquille toute la soirée. Format discret, personne ne voit rien.",
+            "text": "Parfait avant un rdv. Un coup vite fait et t'es tranquille toute la soirée, l'esprit léger. Discret en plus, ça se voit pas dans la poche.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -824,13 +826,13 @@
         "review_r07": {
           "type": "review",
           "settings": {
-            "author": "Léa M.",
+            "author": "didier",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "6 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Très bon produit, mon copain l'adore. J'aurais juste aimé un format encore plus petit pour le glisser dans une poche, mais il marche super bien.",
+            "text": "Efficace, ça tient bien la journée. Je mets 4 parce que perso j'aurais préféré une version sans parfum, mais l'effet anti-odeur est là, c'est le principal.",
             "helpful_up": 4,
             "helpful_down": 0,
             "reply_enable": false,
@@ -843,32 +845,33 @@
         "review_r08": {
           "type": "review",
           "settings": {
-            "author": "Nicolas V.",
+            "author": "Sofiane",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "22 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Je transpire énormément et c'est le seul truc qui tient la journée sans repasser à la douche. La fraîcheur est immédiate et longue durée.",
+            "text": "Je transpire vraiment beaucoup et c'est le seul truc qui tient sans que je doive repasser à la douche le midi. Fraîcheur immédiate et longue durée, validé.",
             "helpful_up": 12,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "22 mai 2026",
-            "reply_text": "Merci Nicolas ! Pour les grosses journées, un geste en milieu d'après-midi prolonge l'effet. contact@zgueg.fr pour tout conseil 💨"
+            "reply_text": "Merci Sofiane ! Pour les grosses journées, un petit coup en milieu d'aprèm et c'est reparti. contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r09": {
           "type": "review",
           "settings": {
-            "author": "Hugo D.",
+            "author": "Marc",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "19 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Efficace et pratique, je l'utilise tous les jours. La diffusion pourrait être un poil plus fine, mais le résultat est vraiment là.",
+            "text": "Bien efficace et pratique, je l'utilise tous les jours. La diffusion du spray pourrait être un chouïa plus fine, ça fait parfois des grosses gouttes. Sinon rien à redire.",
             "helpful_up": 5,
             "helpful_down": 0,
             "reply_enable": false,
@@ -881,32 +884,33 @@
         "review_r10": {
           "type": "review",
           "settings": {
-            "author": "Aurélien F.",
+            "author": "Yanis",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "16 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Game changer pour les déplacements. Avion, train, hôtel… je reste frais sans dépendre d'une douche. Et la flore n'est pas agressée en plus.",
+            "text": "Game changer pour les voyages. Avion, train, hôtel, je reste frais sans dépendre d'une douche. Et ça agresse pas la peau comme les déos classiques.",
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "16 mai 2026",
-            "reply_text": "Merci Aurélien ! C'est précisément pour ces moments-là qu'on l'a créé. Bon voyage ! contact@zgueg.fr"
+            "reply_text": "Merci Yanis ! Pensé exactement pour la vie nomade ✈️ Bon voyage, et à dispo : contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r11": {
           "type": "review",
           "settings": {
-            "author": "Mathis G.",
+            "author": "Pierre-Yves",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "13 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Après la salle, c'est devenu un réflexe. Aucune odeur, aucune irritation, et ça sèche tout de suite. Top.",
+            "text": "Après la salle c'est devenu automatique. Aucune odeur, aucune gêne, et ça sèche tout de suite. Top.",
             "helpful_up": 8,
             "helpful_down": 0,
             "reply_enable": false,
@@ -919,13 +923,13 @@
         "review_r12": {
           "type": "review",
           "settings": {
-            "author": "Patrick N.",
+            "author": "le_breton29",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "10 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Simple et redoutablement efficace. Quelques pressions suffisent, donc le flacon dure. Je le recommande à tous mes potes.",
+            "text": "j'avais toujours ce moment de stress en fin de journée surtout l'été quand tu sais que ça sent pas top et que t'as pas le temps de rentrer te doucher, là deux pressions le midi et le problème est réglé, je sais même pas comment je faisais avant honnêtement",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -938,13 +942,13 @@
         "review_r13": {
           "type": "review",
           "settings": {
-            "author": "Sandrine T.",
+            "author": "Anonyme",
             "verified": true,
             "verified_label": "Client vérifié",
-            "rating": 4,
+            "rating": 3,
             "date": "7 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Mon mari est conquis, il l'utilise avant le travail tous les matins. Je retire une étoile car j'aurais aimé une version sans parfum, mais l'efficacité est top.",
+            "text": "Ça fait le job sur le moment, fraîcheur immédiate ok. Par contre chez moi la tenue est plus proche de la demi-journée que de la journée complète, faut que j'en remette. Correct sans plus.",
             "helpful_up": 4,
             "helpful_down": 0,
             "reply_enable": false,
@@ -957,32 +961,33 @@
         "review_r14": {
           "type": "review",
           "settings": {
-            "author": "Lucas H.",
+            "author": "Romain",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "23 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Peau sensible ici, et aucun picotement contrairement aux déos classiques. Frais, propre, et la flore reste équilibrée. Parfait entre deux douches.",
+            "text": "Peau sensible, et contrairement aux déos en stick zéro picotement. Frais, propre, et ça irrite pas. Parfait entre deux douches.",
             "helpful_up": 11,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "23 mai 2026",
-            "reply_text": "Merci Lucas ! Centella et armoise sont là pour ça. Ravis que ça te convienne 🙌 contact@zgueg.fr"
+            "reply_text": "Merci Romain ! Centella et armoise calment justement les zones sensibles. Content que ça te convienne 🙌 contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r15": {
           "type": "review",
           "settings": {
-            "author": "Inès B.",
+            "author": "Lucie (pour mon copain)",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "20 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Offert à mon copain, gros succès. Il l'utilise après le sport et avant de sortir. La maison sent meilleur, et lui se sent plus sûr de lui.",
+            "text": "Offert à mon copain, gros succès. Il l'utilise après le sport et avant de sortir. Disons que ça profite à tout le monde 😅",
             "helpful_up": 5,
             "helpful_down": 0,
             "reply_enable": false,
@@ -995,32 +1000,33 @@
         "review_r16": {
           "type": "review",
           "settings": {
-            "author": "Olivier C.",
+            "author": "Karim",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "17 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Odeur discrète, effet immédiat, zéro résidu collant. Exactement ce que j'attendais d'un spray intime. Adopté pour de bon.",
+            "text": "Je l'utilise en combo avec le gel, l'un nettoie le matin l'autre dépanne dans la journée. Le duo parfait, frais H24.",
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "17 mai 2026",
-            "reply_text": "Merci Olivier ! Discret et net, c'est le cahier des charges 😉 À dispo : contact@zgueg.fr"
+            "reply_text": "Merci Karim ! Le gel à la source + le spray en renfort, c'est exactement la routine idéale 🙌 contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r17": {
           "type": "review",
           "settings": {
-            "author": "Fanny R.",
+            "author": "fab",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "14 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Mon compagnon l'utilise en complément du gel, et la combinaison est imbattable. Frais toute la journée, même quand il enchaîne les réunions.",
+            "text": "Efficace immédiat. Adopté.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1033,32 +1039,33 @@
         "review_r18": {
           "type": "review",
           "settings": {
-            "author": "David M.",
+            "author": "Sébastien M.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "11 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Vraiment efficace, je l'emporte partout. 4 étoiles car le prix pique un peu, mais vu le temps que dure le flacon, ça reste correct.",
+            "text": "Très efficace, je l'emmène partout. Un peu cher à l'achat mais quelques pressions suffisent donc le flacon dure un bon moment, au final ça s'équilibre.",
             "helpful_up": 4,
             "helpful_down": 1,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "11 mai 2026",
-            "reply_text": "Merci David ! Quelques pressions suffisent, le flacon tient longtemps. Regarde les packs, plus avantageux. contact@zgueg.fr"
+            "reply_text": "Merci Sébastien ! Quelques pressions par jour, le flacon tient longtemps — et les packs allègent la facture 😉 contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r19": {
           "type": "review",
           "settings": {
-            "author": "Clément J.",
+            "author": "Greg77",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "8 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Idéal pour les journées qui n'en finissent pas. Un coup de spray et je repars frais, sans repasser chez moi. Devenu indispensable.",
+            "text": "Idéal pour les journées qui n'en finissent pas. Un coup de spray et je repars frais sans repasser chez moi. Indispensable maintenant.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1071,13 +1078,13 @@
         "review_r20": {
           "type": "review",
           "settings": {
-            "author": "Hugo P.",
+            "author": "Nono",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "5 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Très bon spray, fraîcheur immédiate et efficace contre les odeurs. J'aurais aimé un capuchon un peu plus sécurisé pour le sac, mais sinon rien à redire.",
+            "text": "Très bon spray, fraîcheur immédiate et ça tient bien. J'aurais aimé un bouchon qui se clipse mieux pour le sac, j'ai un peu peur que ça s'ouvre tout seul. Mais le produit est top.",
             "helpful_up": 2,
             "helpful_down": 0,
             "reply_enable": false,

@@ -674,13 +674,13 @@
         "review_r01": {
           "type": "review",
           "settings": {
-            "author": "Antoine M.",
+            "author": "Kevin R.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "21 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Je l'utilise tous les matins sous la douche depuis un mois. La sensation de propreté est nette, et surtout les odeurs ne reviennent plus dans la journée. La mousse est douce, aucune irritation alors que j'ai la peau sensible.",
+            "text": "Franchement sceptique au début, un gel spécial pour ça je trouvais ça un peu marketing. Bah j'avais tort. En fin de journée au boulot c'est plus du tout la même chose qu'avec mon gel douche normal, fini l'odeur de transpi et les démangeaisons. La mousse est douce, ça pique pas. Je rachète.",
             "helpful_up": 14,
             "helpful_down": 0,
             "reply_enable": true,
@@ -688,19 +688,19 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Zgueg",
             "reply_date": "21 mai 2026",
-            "reply_text": "Merci Antoine ! C'est exactement l'effet recherché : un vrai nettoyage sans agresser. Une question sur la routine ? Écris-nous à contact@zgueg.fr 💧"
+            "reply_text": "Salut Kevin, content que t'aies tenté le coup malgré tout 😉 C'est exactement pour ça qu'on l'a fait. Si t'as des galères de transpi en journée, le spray complète bien. contact@zgueg.fr"
           }
         },
         "review_r02": {
           "type": "review",
           "settings": {
-            "author": "Thomas B.",
+            "author": "Mehdi 06",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "20 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Enfin un produit pensé pour cette zone-là. Le gel douche classique me laissait toujours une sensation d'inconfort, là c'est propre et apaisé. Je recommande les yeux fermés.",
+            "text": "Nickel. Propre, ça gratte plus, ça sent rien d'agressif. Rien à dire.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -713,13 +713,13 @@
         "review_r03": {
           "type": "review",
           "settings": {
-            "author": "Sébastien R.",
+            "author": "Antoine",
             "verified": true,
             "verified_label": "Client vérifié",
-            "rating": 5,
+            "rating": 4,
             "date": "18 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Fini les démangeaisons après le sport. Je fais mousser, je rince, et c'est réglé pour la journée. La flore a vraiment l'air plus équilibrée depuis que je l'utilise.",
+            "text": "Très bon produit, la peau est apaisée et y'a plus cette odeur en fin de journée. Seul truc, le flacon part vite quand tu l'utilises tous les jours, j'aurais aimé un format plus gros. Sinon top.",
             "helpful_up": 3,
             "helpful_down": 1,
             "reply_enable": true,
@@ -727,19 +727,19 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "18 mai 2026",
-            "reply_text": "Merci Sébastien ! Les ferments font le job sur la durée. Continue comme ça, et n'hésite pas si tu veux des conseils : contact@zgueg.fr"
+            "reply_text": "Merci Antoine ! Une petite noisette suffit largement, normalement ça dure un bon moment — mais on note pour un grand format 💪 contact@zgueg.fr"
           }
         },
         "review_r04": {
           "type": "review",
           "settings": {
-            "author": "Karim A.",
+            "author": "Greg",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "15 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Texture agréable, ça mousse bien sans être décapant. Aucune odeur de parfum chimique, juste une vraie sensation de propre. Adopté.",
+            "text": "Je fais du crossfit 4 fois par semaine et niveau macération en bas c'était un peu la cata. Depuis que je me lave avec ça après chaque séance plus aucun souci, même le soir. Adopté.",
             "helpful_up": 9,
             "helpful_down": 0,
             "reply_enable": false,
@@ -752,32 +752,33 @@
         "review_r05": {
           "type": "review",
           "settings": {
-            "author": "Julien P.",
+            "author": "JB.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "12 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Sceptique au début, mais après trois semaines la différence est réelle : plus de mauvaises odeurs en fin de journée et zéro irritation. Totalement convaincu.",
+            "text": "alors au départ ma copine m'a un peu forcé la main parce que bon disons que c'était pas toujours très frais quand je rentrais du taf, et franchement je m'attendais pas à grand chose mais au final c'est elle qui me le rachète maintenant donc voilà je crois que ça dit tout, la mousse est agréable ça sent propre sans sentir le parfum chimique, que du positif",
             "helpful_up": 2,
             "helpful_down": 2,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "13 mai 2026",
-            "reply_text": "Merci Julien ! On adore les sceptiques convaincus 😎 La flore met quelques semaines à se rééquilibrer, tu as eu le bon réflexe de continuer. contact@zgueg.fr si besoin."
+            "reply_text": "Merci JB (et merci à ta copine 😄). Ravis que ça change l'ambiance à la maison. Pour les jours de grosse chaleur, garde le spray dans le sac. contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r06": {
           "type": "review",
           "settings": {
-            "author": "Maxime C.",
+            "author": "Thomas L.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "9 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Doux, efficace, sans chichi. Je l'emmène même en week-end. Ma copine a remarqué la différence avant moi, c'est dire.",
+            "text": "Découvert un peu par hasard et je regrette pas. Sensation de propre qui dure, et la peau tire pas après la douche contrairement aux savons classiques.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -790,13 +791,13 @@
         "review_r07": {
           "type": "review",
           "settings": {
-            "author": "Léo M.",
+            "author": "didier",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "6 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Très bon produit, la peau est apaisée et c'est vraiment propre. J'aurais juste aimé un flacon un peu plus grand, je l'utilise tellement que je le finis vite.",
+            "text": "Bon produit, efficace contre les odeurs et doux pour la peau qui devient fragile à mon âge. Je mets 4 parce que le parfum est vraiment très discret, presque rien, j'aurais aimé un poil plus. Mais ça fait le job.",
             "helpful_up": 4,
             "helpful_down": 0,
             "reply_enable": false,
@@ -809,32 +810,33 @@
         "review_r08": {
           "type": "review",
           "settings": {
-            "author": "Nicolas V.",
+            "author": "Sofiane",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "22 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Je transpire beaucoup et j'avais des soucis d'odeurs intimes. Depuis que je l'utilise le matin, c'est réglé, avec une sensation de fraîcheur qui tient.",
+            "text": "Testé pendant la canicule, l'épreuve du feu. Bah écoute au sec et frais toute la journée alors que d'habitude l'été c'est effet sauna direct. Bluffé.",
             "helpful_up": 12,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "22 mai 2026",
-            "reply_text": "Merci Nicolas ! Pour les journées chargées, garde le spray sous la main entre deux douches. Des questions ? contact@zgueg.fr 💧"
+            "reply_text": "Merci Sofiane ! La canicule c'est le vrai test, content que ça ait tenu 🔥 Le spray en renfort l'après-midi et t'es peinard. contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r09": {
           "type": "review",
           "settings": {
-            "author": "Hugo D.",
+            "author": "Marc",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "19 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "La mousse est légère et le rinçage est net, aucun film gras. Peau nickel, aucune sécheresse. Parfait pour un usage quotidien.",
+            "text": "Que du bonheur. Propre, frais, zéro irritation. Je recommande.",
             "helpful_up": 5,
             "helpful_down": 0,
             "reply_enable": false,
@@ -847,32 +849,33 @@
         "review_r10": {
           "type": "review",
           "settings": {
-            "author": "Aurélien F.",
+            "author": "Yanis",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "16 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Ça fait des années que je cherchais ça. Nettoyage efficace mais doux, et la flore reste équilibrée. Je ne reviendrai pas en arrière.",
+            "text": "Bon disons les choses clairement : avant, les bijoux de famille sentaient pas la rose en fin de journée. Là c'est réglé, et madame valide grave. Merci 🙏",
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "16 mai 2026",
-            "reply_text": "Merci Aurélien ! Ravis que tu aies trouvé ta routine. On reste dispo : contact@zgueg.fr 💧"
+            "reply_text": "Haha merci Yanis, on adore les retours cash 😄 Ravis que madame valide. À dispo si besoin : contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r11": {
           "type": "review",
           "settings": {
-            "author": "Mathis G.",
+            "author": "Pierre-Yves",
             "verified": true,
             "verified_label": "Client vérifié",
-            "rating": 5,
+            "rating": 4,
             "date": "13 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Parfait après la salle de sport. Plus de gêne, plus d'odeurs. La peau ne tire pas du tout après le rinçage, ce qui n'était pas le cas avec mon ancien gel.",
+            "text": "Efficace et doux, rien à redire sur le produit en lui-même. Par contre la pompe pousse un peu trop de matière d'un coup, faut faire gaffe au gaspillage. Détail, mais bon.",
             "helpful_up": 8,
             "helpful_down": 0,
             "reply_enable": false,
@@ -885,13 +888,13 @@
         "review_r12": {
           "type": "review",
           "settings": {
-            "author": "Patrick N.",
+            "author": "le_breton29",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "10 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Simple et efficace. Une noisette suffit, donc le flacon dure bien plus longtemps que prévu. Bonne surprise sur tous les plans.",
+            "text": "ça fait des années que je cherchais un truc pour cette zone parce que le gel douche normal ça me desséchait et ça réglait pas le problème d'odeur, et là enfin un produit qui fait ce qu'il dit, peau apaisée plus de démangeaisons et ça sent propre, si j'avais su j'aurais commencé bien avant",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -904,13 +907,13 @@
         "review_r13": {
           "type": "review",
           "settings": {
-            "author": "Sami T.",
+            "author": "Anonyme",
             "verified": true,
             "verified_label": "Client vérifié",
-            "rating": 4,
+            "rating": 3,
             "date": "7 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Vraiment propre et apaisé, je suis content. Petit bémol sur la pompe qui pousse parfois un peu trop de produit, mais le résultat est là.",
+            "text": "Le produit est correct, la mousse est agréable et ça nettoie bien. Honnêtement sur les odeurs j'ai vu une petite différence mais pas le miracle annoncé non plus. Après ça dépend peut-être des peaux. Ni déçu ni convaincu à 100%.",
             "helpful_up": 4,
             "helpful_down": 0,
             "reply_enable": false,
@@ -923,32 +926,33 @@
         "review_r14": {
           "type": "review",
           "settings": {
-            "author": "Lucas H.",
+            "author": "Romain",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "23 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "J'ai la peau réactive et beaucoup de produits m'irritent. Celui-là, rien à signaler : doux, propre, apaisant. Un vrai soulagement au quotidien.",
+            "text": "J'ai la peau hyper réactive, la plupart des savons me font des rougeurs en bas. Celui-là rien, nada, et en plus ça apaise. Premier produit que je garde.",
             "helpful_up": 11,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "23 mai 2026",
-            "reply_text": "Merci Lucas ! Centella et armoise sont là précisément pour les peaux réactives. Profite bien ! contact@zgueg.fr"
+            "reply_text": "Merci Romain ! La centella et l'armoise sont là exactement pour ça. Ravis que ta peau dise enfin merci 🙌 contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r15": {
           "type": "review",
           "settings": {
-            "author": "Inès B.",
+            "author": "Lucie (pour mon copain)",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "20 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Acheté pour mon copain qui n'osait pas trop en parler. Il l'utilise tous les jours maintenant et se sent beaucoup plus à l'aise. Validé à la maison.",
+            "text": "Acheté pour mon mec qui osait pas trop aborder le sujet. Résultat il l'utilise tous les jours et c'est plus agréable pour tout le monde si vous voyez ce que je veux dire 😅 Validé.",
             "helpful_up": 5,
             "helpful_down": 0,
             "reply_enable": false,
@@ -961,32 +965,33 @@
         "review_r16": {
           "type": "review",
           "settings": {
-            "author": "Olivier C.",
+            "author": "Karim",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "17 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Texture agréable, odeur neutre et discrète, résultat impeccable. Exactement ce que je cherchais pour le quotidien.",
+            "text": "Fini les boules qui collent l'été. Voilà, tout est dit. Top.",
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "17 mai 2026",
-            "reply_text": "Merci Olivier ! Le neutre et discret, c'est un parti pris assumé 😉 À dispo : contact@zgueg.fr"
+            "reply_text": "Merci Karim, droit au but 😄 Exactement l'effet recherché. Le spray pour les coups de chaud en journée si jamais. contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r17": {
           "type": "review",
           "settings": {
-            "author": "Fabien R.",
+            "author": "fab",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "14 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Je l'utilise matin et soir les jours de grosse chaleur. Aucune irritation malgré l'usage rapproché, la peau reste confortable.",
+            "text": "Simple et efficace. Je rachète direct.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -999,32 +1004,33 @@
         "review_r18": {
           "type": "review",
           "settings": {
-            "author": "David M.",
+            "author": "Sébastien M.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "11 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Très bon produit, efficace et doux. Je mets 4 étoiles seulement parce que le prix est un peu élevé, mais le flacon dure longtemps donc ça se justifie.",
+            "text": "Vraiment bon produit, doux et efficace, aucune irritation. Le seul bémol c'est le prix, un peu cher quand même. Après vu que ça dure et que ça marche, je vais sûrement reprendre.",
             "helpful_up": 4,
             "helpful_down": 1,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "11 mai 2026",
-            "reply_text": "Merci David pour ton retour ! Une noisette suffit, donc au final le flacon tient un bon moment. Jette un œil aux packs, plus avantageux. contact@zgueg.fr"
+            "reply_text": "Merci Sébastien ! Une noisette suffit donc ramené à l'utilisation ça reste raisonnable, et les packs font baisser la note 😉 contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
           }
         },
         "review_r19": {
           "type": "review",
           "settings": {
-            "author": "Clément J.",
+            "author": "Greg77",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "8 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Adopté par toute la coloc. Nettoyage efficace, sensation de fraîcheur qui dure et zéro odeur chimique. On en rachète déjà.",
+            "text": "Emmené en déplacement pro toute la semaine. Frais et propre du lundi au vendredi, même après les journées à rallonge. Devenu un indispensable de la trousse.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1037,13 +1043,13 @@
         "review_r20": {
           "type": "review",
           "settings": {
-            "author": "Romain D.",
+            "author": "Nono",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "5 mai 2026",
             "product": "gel-moussant-intime-pour-homme",
-            "text": "Bonne mousse, peau propre et apaisée. J'aurais aimé un format voyage en plus du grand flacon, mais sinon rien à redire.",
+            "text": "Top au quotidien, peau nickel et plus d'odeurs. J'aurais juste aimé un petit format pour la salle de sport, le grand flacon c'est pas pratique à trimballer.",
             "helpful_up": 2,
             "helpful_down": 0,
             "reply_enable": false,
