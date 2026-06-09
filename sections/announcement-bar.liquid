@@ -120,6 +120,18 @@
         border-bottom: solid 1px {{ section.settings.border_color }};
       }
     {%- endif -%}
+    {%- if section.settings.use_custom_font -%}
+      {%- assign ab_font = section.settings.announcement_font -%}
+      {{ ab_font | font_face: font_display: 'swap' }}
+      #announcement-{{ section.id }} .announcement-bar,
+      #announcement-{{ section.id }} .announcement,
+      #announcement-{{ section.id }} a,
+      #announcement-{{ section.id }} .localization-form__item-text {
+        font-family: {{ ab_font.family }}, {{ ab_font.fallback_families }};
+        font-weight: {{ ab_font.weight }};
+        font-style: {{ ab_font.style }};
+      }
+    {%- endif -%}
   {% endstyle %}
 {%- endif -%}
 
@@ -206,6 +218,23 @@
       "id": "border_color",
       "label": "t:sections.local-extra-words.settings_schema.colors.settings.borders",
       "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "header",
+      "content": "Typographie"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_custom_font",
+      "label": "Police personnalisée pour la barre d'annonce",
+      "info": "Désactivé, la barre utilise la police du thème.",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "announcement_font",
+      "label": "Police de la barre d'annonce",
+      "default": "assistant_n4"
     }
   ],
   "blocks": [
