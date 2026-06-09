@@ -105,82 +105,149 @@
 
     <div class="enriched-hero__inner">
       <div class="enriched-hero__canvas">
+        {%- comment -%}
+          Les blocs sont regroupés par ancrage (pos). Chaque zone est positionnée une seule fois
+          dans le canvas ; les blocs qui la composent s'empilent ensuite dans le flux normal.
+          Ainsi un séparateur placé au même ancrage qu'un texte reste relatif à ce contenu
+          (et le suit quand il grandit), au lieu d'être figé à une coordonnée absolue.
+        {%- endcomment -%}
+        {%- assign eh_anchors = '' -%}
         {%- for block in section.blocks -%}
-          {%- capture pos_style -%}{%- render 'enriched-hero-position', pos: block.settings.pos, pos_mobile: block.settings.pos_mobile, ox: block.settings.offset_x, oy: block.settings.offset_y -%}{%- endcapture -%}
+          {%- assign eh_a = block.settings.pos | default: 'top left' -%}
+          {%- unless eh_anchors contains eh_a -%}
+            {%- assign eh_anchors = eh_anchors | append: eh_a | append: '~' -%}
+          {%- endunless -%}
+        {%- endfor -%}
+        {%- assign eh_anchor_list = eh_anchors | split: '~' -%}
 
-          {%- capture item_class -%}enriched-hero__item enriched-hero__item--{{ block.type }}{% if block.settings.hide_desktop %} eh-hide-desk{% endif %}{% if block.settings.hide_mobile %} eh-hide-mob{% endif %}{%- endcapture -%}
+        {%- for anchor in eh_anchor_list -%}
+          {%- liquid
+            assign v = anchor | split: ' ' | first
+            assign h = anchor | split: ' ' | last
+            assign zcount = 0
+            assign first_ox = 0
+            assign edge_oy = 0
+            assign zmw = 0
+            assign zmw_m = 0
+            for block in section.blocks
+              assign ba = block.settings.pos | default: 'top left'
+              if ba == anchor
+                assign zcount = zcount | plus: 1
+                if zcount == 1
+                  assign first_ox = block.settings.offset_x | default: 0
+                endif
+                if v == 'bottom'
+                  assign edge_oy = block.settings.offset_y | default: 0
+                elsif zcount == 1
+                  assign edge_oy = block.settings.offset_y | default: 0
+                endif
+                assign bmw = block.settings.max_width | default: 0
+                if bmw > zmw
+                  assign zmw = bmw
+                endif
+                assign bmwm = block.settings.max_width_mobile | default: 0
+                if bmwm > zmw_m
+                  assign zmw_m = bmwm
+                endif
+              endif
+            endfor
+          -%}
+          {%- capture zpos -%}{%- render 'enriched-hero-position', pos: anchor, pos_mobile: 'inherit', ox: first_ox, oy: edge_oy -%}{%- endcapture -%}
+          <div
+            class="enriched-hero__zone eh-v--{{ v }} eh-h--{{ h }}"
+            style="{{ zpos }}{% if zmw > 0 %}--eh-zmw:{{ zmw }}%;{% endif %}{% if zmw_m > 0 %}--eh-zmw-m:{{ zmw_m }}%;{% endif %}"
+          >
+            {%- assign jdx = 0 -%}
+            {%- for block in section.blocks -%}
+              {%- assign ba = block.settings.pos | default: 'top left' -%}
+              {%- unless ba == anchor -%}{%- continue -%}{%- endunless -%}
+              {%- assign jdx = jdx | plus: 1 -%}
+              {%- liquid
+                assign sp = block.settings.offset_y | default: 0
+                assign space_style = ''
+                if v == 'bottom'
+                  if jdx < zcount
+                    assign space_style = 'margin-bottom:' | append: sp | append: 'px;'
+                  endif
+                elsif jdx > 1
+                  assign space_style = 'margin-top:' | append: sp | append: 'px;'
+                endif
+              -%}
+              {%- capture item_class -%}enriched-hero__item enriched-hero__item--{{ block.type }}{% if block.settings.hide_desktop %} eh-hide-desk{% endif %}{% if block.settings.hide_mobile %} eh-hide-mob{% endif %}{%- endcapture -%}
 
-          {%- case block.type -%}
-            {%- when 'heading' -%}
-              <div
-                class="{{ item_class }}"
-                style="{{ pos_style }}--eh-mw:{{ block.settings.max_width }}%;--eh-mw-m:{{ block.settings.max_width_mobile }}%;text-align:{{ block.settings.text_align }};"
-                {{ block.shopify_attributes }}
-              >
-                <div
-                  class="enriched-hero__heading"
-                  style="--eh-fs-d:{{ block.settings.font_size }}px;--eh-fs-m:{{ block.settings.font_size_mobile }}px;--eh-fw:{{ block.settings.font_weight }};--eh-lh:{{ block.settings.line_height | divided_by: 100.0 }};--eh-ls:{{ block.settings.letter_spacing }}px;text-transform:{{ block.settings.text_transform }};{% if block.settings.color != 'rgba(0,0,0,0)' %}--eh-color:{{ block.settings.color }};{% endif %}"
-                >
-                  {{ block.settings.text }}
-                </div>
-              </div>
+              {%- case block.type -%}
+                {%- when 'heading' -%}
+                  <div
+                    class="{{ item_class }}"
+                    style="{{ space_style }}--eh-mw:{{ block.settings.max_width }}%;--eh-mw-m:{{ block.settings.max_width_mobile }}%;text-align:{{ block.settings.text_align }};"
+                    {{ block.shopify_attributes }}
+                  >
+                    <div
+                      class="enriched-hero__heading"
+                      style="--eh-fs-d:{{ block.settings.font_size }}px;--eh-fs-m:{{ block.settings.font_size_mobile }}px;--eh-fw:{{ block.settings.font_weight }};--eh-lh:{{ block.settings.line_height | divided_by: 100.0 }};--eh-ls:{{ block.settings.letter_spacing }}px;text-transform:{{ block.settings.text_transform }};{% if block.settings.color != 'rgba(0,0,0,0)' %}--eh-color:{{ block.settings.color }};{% endif %}"
+                    >
+                      {{ block.settings.text }}
+                    </div>
+                  </div>
 
-            {%- when 'text' -%}
-              <div
-                class="{{ item_class }}"
-                style="{{ pos_style }}--eh-mw:{{ block.settings.max_width }}%;--eh-mw-m:{{ block.settings.max_width_mobile }}%;text-align:{{ block.settings.text_align }};"
-                {{ block.shopify_attributes }}
-              >
-                <div
-                  class="enriched-hero__text"
-                  style="--eh-fs-d:{{ block.settings.font_size }}px;--eh-fs-m:{{ block.settings.font_size_mobile }}px;--eh-fw:{{ block.settings.font_weight }};--eh-lh:{{ block.settings.line_height | divided_by: 100.0 }};opacity:{{ block.settings.opacity | times: 1.0 | divided_by: 100.0 }};{% if block.settings.color != 'rgba(0,0,0,0)' %}--eh-color:{{ block.settings.color }};{% endif %}"
-                >
-                  {{ block.settings.text }}
-                </div>
-              </div>
+                {%- when 'text' -%}
+                  <div
+                    class="{{ item_class }}"
+                    style="{{ space_style }}--eh-mw:{{ block.settings.max_width }}%;--eh-mw-m:{{ block.settings.max_width_mobile }}%;text-align:{{ block.settings.text_align }};"
+                    {{ block.shopify_attributes }}
+                  >
+                    <div
+                      class="enriched-hero__text"
+                      style="--eh-fs-d:{{ block.settings.font_size }}px;--eh-fs-m:{{ block.settings.font_size_mobile }}px;--eh-fw:{{ block.settings.font_weight }};--eh-lh:{{ block.settings.line_height | divided_by: 100.0 }};opacity:{{ block.settings.opacity | times: 1.0 | divided_by: 100.0 }};{% if block.settings.color != 'rgba(0,0,0,0)' %}--eh-color:{{ block.settings.color }};{% endif %}"
+                    >
+                      {{ block.settings.text }}
+                    </div>
+                  </div>
 
-            {%- when 'image' -%}
-              <div
-                class="{{ item_class }}"
-                style="{{ pos_style }}--eh-iw-d:{{ block.settings.width }}px;--eh-iw-m:{{ block.settings.width_mobile }}px;opacity:{{ block.settings.opacity | times: 1.0 | divided_by: 100.0 }};"
-                {{ block.shopify_attributes }}
-              >
-                {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}" class="enriched-hero__image-link">{%- endif -%}
-                {%- if block.settings.image != blank -%}
-                  {{ block.settings.image | image_url: width: 800 | image_tag: class: 'enriched-hero__img', widths: '120, 240, 360, 480, 600, 800', sizes: '(max-width: 767px) 50vw, 25vw' }}
-                {%- else -%}
-                  {{ 'image' | placeholder_svg_tag: 'enriched-hero__img placeholder-svg' }}
-                {%- endif -%}
-                {%- if block.settings.link != blank -%}</a>{%- endif -%}
-              </div>
+                {%- when 'image' -%}
+                  <div
+                    class="{{ item_class }}"
+                    style="{{ space_style }}--eh-iw-d:{{ block.settings.width }}px;--eh-iw-m:{{ block.settings.width_mobile }}px;opacity:{{ block.settings.opacity | times: 1.0 | divided_by: 100.0 }};"
+                    {{ block.shopify_attributes }}
+                  >
+                    {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}" class="enriched-hero__image-link">{%- endif -%}
+                    {%- if block.settings.image != blank -%}
+                      {{ block.settings.image | image_url: width: 800 | image_tag: class: 'enriched-hero__img', widths: '120, 240, 360, 480, 600, 800', sizes: '(max-width: 767px) 50vw, 25vw' }}
+                    {%- else -%}
+                      {{ 'image' | placeholder_svg_tag: 'enriched-hero__img placeholder-svg' }}
+                    {%- endif -%}
+                    {%- if block.settings.link != blank -%}</a>{%- endif -%}
+                  </div>
 
-            {%- when 'divider' -%}
-              <div
-                class="{{ item_class }}"
-                style="{{ pos_style }}--eh-len:{{ block.settings.length }}%;--eh-thick:{{ block.settings.thickness }}px;"
-                {{ block.shopify_attributes }}
-              >
-                <span
-                  class="enriched-hero__divider"
-                  style="background:{{ block.settings.color }};opacity:{{ block.settings.opacity | times: 1.0 | divided_by: 100.0 }};"
-                ></span>
-              </div>
+                {%- when 'divider' -%}
+                  <div
+                    class="{{ item_class }}"
+                    style="{{ space_style }}--eh-len:{{ block.settings.length }}%;--eh-thick:{{ block.settings.thickness }}px;"
+                    {{ block.shopify_attributes }}
+                  >
+                    <span
+                      class="enriched-hero__divider"
+                      style="background:{{ block.settings.color }};opacity:{{ block.settings.opacity | times: 1.0 | divided_by: 100.0 }};"
+                    ></span>
+                  </div>
 
-            {%- when 'button' -%}
-              <div
-                class="{{ item_class }}"
-                style="{{ pos_style }}"
-                {{ block.shopify_attributes }}
-              >
-                {%- if block.settings.label != blank -%}
-                  <a
-                    href="{{ block.settings.link | default: '#' }}"
-                    class="button button--{{ block.settings.button_style }}"
-                    {% if block.settings.open_in_new_window %}target="_blank" rel="noopener"{% endif %}
-                  >{{ block.settings.label }}</a>
-                {%- endif -%}
-              </div>
-          {%- endcase -%}
+                {%- when 'button' -%}
+                  <div
+                    class="{{ item_class }}"
+                    style="{{ space_style }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {%- if block.settings.label != blank -%}
+                      <a
+                        href="{{ block.settings.link | default: '#' }}"
+                        class="button button--{{ block.settings.button_style }}"
+                        {% if block.settings.open_in_new_window %}target="_blank" rel="noopener"{% endif %}
+                      >{{ block.settings.label }}</a>
+                    {%- endif -%}
+                  </div>
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
         {%- endfor -%}
       </div>
     </div>
@@ -249,15 +316,23 @@
   max-width: var(--eh-cmw, 1400px);
   height: 100%;
 }
-.enriched-hero__item {
+.enriched-hero__zone {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   margin: 0;
-  max-width: var(--eh-mw, 100%);
+  width: var(--eh-zmw, auto);
+  max-width: 100%;
   top: var(--eh-top, auto);
   right: var(--eh-right, auto);
   bottom: var(--eh-bottom, auto);
   left: var(--eh-left, auto);
   transform: translate(calc(var(--eh-tx, 0%) + var(--eh-ox, 0px)), calc(var(--eh-ty, 0%) + var(--eh-oy, 0px)));
+}
+.enriched-hero__item {
+  margin: 0;
+  max-width: var(--eh-mw, 100%);
 }
 .enriched-hero__heading {
   margin: 0;
@@ -327,13 +402,16 @@
   .enriched-hero__inner {
     padding: var(--eh-pad-top-m, var(--eh-pad-y-m, 24px)) var(--eh-pad-x-m, 24px) var(--eh-pad-y-m, 24px);
   }
-  .enriched-hero__item {
+  .enriched-hero__zone {
     top: var(--eh-top-m, var(--eh-top, auto));
     right: var(--eh-right-m, var(--eh-right, auto));
     bottom: var(--eh-bottom-m, var(--eh-bottom, auto));
     left: var(--eh-left-m, var(--eh-left, auto));
-    max-width: var(--eh-mw-m, var(--eh-mw, 100%));
+    width: var(--eh-zmw-m, var(--eh-zmw, auto));
     transform: translate(calc(var(--eh-tx-m, var(--eh-tx, 0%)) + var(--eh-ox-m, var(--eh-ox, 0px))), calc(var(--eh-ty-m, var(--eh-ty, 0%)) + var(--eh-oy-m, var(--eh-oy, 0px))));
+  }
+  .enriched-hero__item {
+    max-width: var(--eh-mw-m, var(--eh-mw, 100%));
   }
   .enriched-hero__heading {
     font-size: var(--eh-fs-m, var(--eh-fs-d, 28px));
