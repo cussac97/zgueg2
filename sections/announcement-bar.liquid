@@ -132,6 +132,18 @@
         font-style: {{ ab_font.style }};
       }
     {%- endif -%}
+    {%- if section.settings.use_custom_font_size -%}
+      #announcement-{{ section.id }} .announcement,
+      #announcement-{{ section.id }} .announcement-bar__content .announcement {
+        font-size: {{ section.settings.font_size }}px;
+      }
+      @media screen and (max-width: 767px) {
+        #announcement-{{ section.id }} .announcement,
+        #announcement-{{ section.id }} .announcement-bar__content .announcement {
+          font-size: {{ section.settings.font_size_mobile }}px;
+        }
+      }
+    {%- endif -%}
   {% endstyle %}
 {%- endif -%}
 
@@ -235,6 +247,33 @@
       "id": "announcement_font",
       "label": "Police de la barre d'annonce",
       "default": "assistant_n4"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_custom_font_size",
+      "label": "Taille de texte personnalisée",
+      "info": "Désactivé, la barre utilise la taille par défaut (~14px).",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Taille du texte (ordinateur)",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "label": "Taille du texte (mobile)",
+      "min": 10,
+      "max": 26,
+      "step": 1,
+      "unit": "px",
+      "default": 13
     }
   ],
   "blocks": [
