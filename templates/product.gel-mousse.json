@@ -329,7 +329,7 @@
         "gallery_mobile_margin": false,
         "gallery_aspect_ratio": "1",
         "gallery_fit": false,
-        "gallery_padding": 0,
+        "gallery_padding": 5,
         "section_background_color": "#ffffff",
         "gallery_background": "#ededed",
         "gallery_border": "rgba(0,0,0,0)",
