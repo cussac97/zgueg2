@@ -140,68 +140,6 @@
         "remove_spacing": true
       }
     },
-    "rich_text_EcNqNq": {
-      "type": "rich-text",
-      "blocks": {
-        "title_9yxCzV": {
-          "type": "title",
-          "settings": {
-            "title": "Le gel moussant quotidien",
-            "title_size": "heading-size--small",
-            "title_weight": "400",
-            "title_size_custom": 44,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        },
-        "text_Vz8W6y": {
-          "type": "text",
-          "settings": {
-            "text": "<p>cleaned® nettoie en profondeur avec des tensioactifs d'origine végétale, sans détruire le microbiome naturel qui protège ta zone intime. Les ferments probiotiques font le reste. Un gel douche classique n'a aucune idée de ce qu'il fait là en bas. cleaned® si.</p>",
-            "text_size": "regular"
-          }
-        },
-        "button_dXzPWN": {
-          "type": "button",
-          "settings": {
-            "button_label": "Je shoppe cleaned®",
-            "link": "",
-            "open_in_new_window": false,
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "title_9yxCzV",
-        "text_Vz8W6y",
-        "button_dXzPWN"
-      ],
-      "name": "t:sections-categories.presets.rich_text_with_image",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_17_03.png",
-        "video_controls": false,
-        "image_position": "right",
-        "height": "large",
-        "content_vertical_position": "middle",
-        "image_crop": true,
-        "image_object_position": "auto",
-        "overlay_image_width": 320,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
-        "text_alignment": "horizontal-left",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 24,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "#d9d9d9",
-        "border_radius": 0,
-        "color_hide_borders": true,
-        "gutter_decrease": false,
-        "remove_margin": false,
-        "remove_bottom_margin": false
-      }
-    },
     "certifications_DDdq8b": {
       "type": "certifications",
       "blocks": {
@@ -262,7 +200,7 @@
         "heading_alignment_mobile": "left",
         "body": "<p>Zgueg a été créé par des hommes, pour les hommes. Car on sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt pour finir un rendez-vous comme il se doit. C'est pour cela que nous avons réfléchit pendant 2 ans au produit ultime, pour votre hygiène intime.</p>",
         "body_color": "#1a1a1a",
-        "body_size": 19,
+        "body_size": 16,
         "body_max_width": 640,
         "body_alignment": "left",
         "body_alignment_mobile": "left",
@@ -293,6 +231,68 @@
         "button_alignment": "center",
         "button_alignment_mobile": "center",
         "button_full_width_mobile": false
+      }
+    },
+    "rich_text_EcNqNq": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9yxCzV": {
+          "type": "title",
+          "settings": {
+            "title": "Le gel moussant quotidien",
+            "title_size": "heading-size--small",
+            "title_weight": "400",
+            "title_size_custom": 44,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_Vz8W6y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>cleaned® nettoie en profondeur avec des tensioactifs d'origine végétale, sans détruire le microbiome naturel qui protège ta zone intime. Les ferments probiotiques font le reste. Un gel douche classique n'a aucune idée de ce qu'il fait là en bas. cleaned® si.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_dXzPWN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Je shoppe cleaned®",
+            "link": "",
+            "open_in_new_window": false,
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "title_9yxCzV",
+        "text_Vz8W6y",
+        "button_dXzPWN"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_17_03.png",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "large",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 320,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-left",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": false,
+        "remove_bottom_margin": false
       }
     },
     "rich_text_3E9aKj": {
