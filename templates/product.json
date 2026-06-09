@@ -157,6 +157,7 @@
         },
         "reassort_DNpYLw": {
           "type": "reassort",
+          "disabled": true,
           "settings": {
             "display_condition": "always",
             "icon": "truck",
