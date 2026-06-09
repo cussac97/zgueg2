@@ -17,7 +17,7 @@
         "95532ce8-d90b-4117-9996-ae0c49cd02eb": {
           "type": "content",
           "settings": {
-            "text": "Viral sur Tiktok : +10.000 sprays et gels mousse vendus en 3 semaines",
+            "text": "Viral sur Tiktok : Plus de 3 millions de vues !",
             "link": "",
             "open_newsletter": true,
             "target": true
@@ -36,7 +36,10 @@
         "bar_txtcolor": "#ffffff",
         "border_color": "rgba(0,0,0,0)",
         "use_custom_font": true,
-        "announcement_font": "mono"
+        "announcement_font": "geist_mono_n4",
+        "use_custom_font_size": true,
+        "font_size": 13,
+        "font_size_mobile": 13
       }
     },
     "header": {
