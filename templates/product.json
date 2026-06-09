@@ -327,7 +327,7 @@
         "text_p3xzR6": {
           "type": "text",
           "settings": {
-            "text": "<p>Sans eau, sans rinçage : le spray agit directement sur les bactéries responsables des odeurs grâce au Zinc PCA, pendant que ses ferments maintiennent l'équilibre de ta flore intime. Un geste, et tu repars serein.</p>",
+            "text": "<p>Sans eau, sans rinçage : deux pressions et le Zinc PCA neutralise les bactéries responsables des odeurs — il agit, il ne masque pas. Ça sèche tout de suite, sans coller, pendant que ses ferments maintiennent l'équilibre de ta flore. Après le sport ou en plein milieu de journée, tu repars frais sans repasser sous la douche.</p>",
             "font_size": 16,
             "font_size_mobile": 14,
             "font_weight": "400",
@@ -446,7 +446,7 @@
         "text_GKafAp": {
           "type": "text",
           "settings": {
-            "text": "<p>Après le sport, en pleine journée de boulot, avant un rendez-vous… impossible de filer sous la douche à chaque fois. La transpiration s'accumule, les bactéries prolifèrent et l'inconfort s'installe, sans solution pratique sous la main. Les déodorants classiques ne sont pas pensés pour cette zone, et l'eau seule ne suffit pas.</p>",
+            "text": "<p>Après la séance, au milieu d'une journée de boulot, avant un rendez-vous… tu n'as pas toujours le temps de repasser sous la douche. La transpiration s'accumule, ça colle, et l'odeur s'installe — sans solution sous la main. Les déodorants pour aisselles ne sont pas pensés pour cette zone (et picotent souvent), et l'eau seule ne suffit pas.</p>",
             "text_size": "regular"
           }
         }
@@ -506,7 +506,7 @@
         "text_fqVCan": {
           "type": "text",
           "settings": {
-            "text": "<p>Le spray rééquilibrant zgueg agit sans eau ni rinçage : le Zinc PCA neutralise les bactéries responsables des odeurs, pendant que les ferments (Lactobacillus, Saccharomyces) maintiennent l'équilibre de ta flore sur la durée. Un geste discret après le sport ou avant un rendez-vous, et tu repars frais et serein. Le gel nettoie à la source une fois par jour ; le spray protège entre les douches, quand la vie continue.</p>",
+            "text": "<p>Le spray rééquilibrant zgueg agit sans eau ni rinçage : deux pressions, le Zinc PCA neutralise les bactéries responsables des odeurs et la fraîcheur tient toute la journée — encore là le soir. Ça sèche tout de suite, sans coller ni picoter, même sur peau sensible, pendant que les ferments (Lactobacillus, Saccharomyces) maintiennent l'équilibre de ta flore. Salle de sport, bureau, déplacement ou avant un rdv : tu le glisses dans la poche et tu repars serein. Le gel nettoie à la source le matin ; le spray prend le relais entre les douches.</p>",
             "text_size": "regular"
           }
         }
@@ -565,7 +565,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/6dbe15adf31d8d258a458ae0dfc1a973a45dacf6-100x100.svg",
-            "label": "Apaise et protège la peau\n\nCentella asiatica et armoise calment les zones sensibles et préviennent les irritations liées à la transpiration.",
+            "label": "Apaise, même sur peau sensible\n\nCentella asiatica et armoise calment les zones sensibles et préviennent les irritations liées à la transpiration — zéro picotement, contrairement aux déos en stick.",
             "link": ""
           }
         },
@@ -573,7 +573,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/a8fde2b9bdfe4f20f408ce7079fffaa052238b0d-100x100.svg",
-            "label": "Agit sans eau ni rinçage\n\nUne formule pensée pour être nomade : un geste discret après le sport ou en déplacement, sans contrainte.",
+            "label": "Agit sans eau ni rinçage\n\nÇa sèche tout de suite, sans coller : un geste discret après le sport, au bureau ou en déplacement. Il se glisse dans la poche.",
             "link": ""
           }
         }
@@ -600,7 +600,7 @@
         "heading_weight": "400",
         "heading_alignment": "left",
         "heading_alignment_mobile": "left",
-        "body": "<p>Le spray rééquilibrant zgueg ne masque pas les odeurs : il agit dessus. Zinc PCA anti-bactérien, ferments probiotiques et apaisants botaniques — chaque actif a un rôle précis pour te garder frais entre deux douches, sans casser l'équilibre de ta flore.</p>",
+        "body": "<p>Le spray rééquilibrant zgueg ne masque pas les odeurs : il agit dessus. Zinc PCA anti-bactérien, ferments probiotiques et apaisants botaniques — chaque actif a un rôle précis pour te garder frais toute la journée, sans coller ni picoter, et sans casser l'équilibre de ta flore.</p>",
         "body_color": "#1a1a1a",
         "body_size": 19,
         "body_max_width": 640,
