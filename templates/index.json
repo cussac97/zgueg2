@@ -140,6 +140,45 @@
         "remove_spacing": true
       }
     },
+    "products_bundle_fjBq6T": {
+      "type": "products-bundle",
+      "blocks": {
+        "price_VrreQ3": {
+          "type": "price",
+          "settings": {}
+        },
+        "title_xyQDnw": {
+          "type": "title",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "price_VrreQ3",
+        "title_xyQDnw"
+      ],
+      "name": "t:sections.bundle-extra-words.sections.products_bundle.name",
+      "settings": {
+        "heading": "Products bundle",
+        "subheading": "Share your <strong>best</strong> offers",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "select_collection": "frontpage",
+        "collection_limit": 3,
+        "select_products": [],
+        "limit_bundles": true,
+        "layout_mobile": "grid-palm-1",
+        "discount_title": "Add 2 items to get a discount",
+        "discount_items": 2,
+        "limit_maximum": false,
+        "panel_bg_color": "#3E3E3E",
+        "panel_text_color": "#F5F5F5",
+        "discount_opened": true,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
+      }
+    },
     "rich_text_EcNqNq": {
       "type": "rich-text",
       "blocks": {
@@ -574,6 +613,7 @@
   },
   "order": [
     "enriched_hero_e4bhR9",
+    "products_bundle_fjBq6T",
     "rich_text_EcNqNq",
     "certifications_DDdq8b",
     "rich_text_3E9aKj",
