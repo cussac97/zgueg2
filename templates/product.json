@@ -193,7 +193,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Bénéfices",
-            "content": "<ul><li>Brain Health*</li><li>Drug-Free Sleep Support*</li><li>Relaxation & Stress*</li><li>Focus and Calm*</li><li>Restores*</li><li>Non-Habit Forming</li><li>Melatonin-Free</li></ul>",
+            "content": "<ul><li>Neutralise les odeurs à la source</li><li>Agit sans eau ni rinçage</li><li>Zinc PCA anti-odeurs</li><li>Maintient l'équilibre de la flore intime</li><li>Sensation de fraîcheur immédiate</li><li>Format nomade et discret</li></ul>",
             "page": "",
             "hide_block_if": false
           }
@@ -202,7 +202,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Ingrédients",
-            "content": "<ul><li>Vitamin B6</li><li>Calcium</li><li>Magnesium</li><li>L-theanine</li><li>GABA</li><li>Chamomile Flower Extract</li></ul>",
+            "content": "<ul><li>Zinc PCA (anti-odeurs)</li><li>Saccharomyces Ferment Filtrate</li><li>Ferments probiotiques (Lactobacillus)</li><li>Eau d'armoise (Artemisia)</li><li>Centella asiatica</li><li>Glycérine végétale</li><li>Propanediol</li></ul>",
             "page": "",
             "hide_block_if": false
           }
@@ -210,8 +210,8 @@
         "collapsible_tab_RKezaD": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Âge conseillé",
-            "content": "<p>Formulated for ages 2 to 12.</p>",
+            "heading": "Pour qui ?",
+            "content": "<p>Pensé pour l'hygiène intime masculine, en complément de la douche. Usage externe, à tout moment de la journée.</p>",
             "page": "",
             "hide_block_if": false
           }
@@ -219,8 +219,8 @@
         "collapsible_tab_YyQ3H7": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Comment le consommer ?",
-            "content": "<p>Kid's Bedtime Essentials is best taken 30 minutes to 1 hour before bed as part of your nightly bedtime routine, to help the body calm for a restful winddown. Stack it with an activity your family already does, like taking it before brushing teeth, or while reading a bedtime story. Great for kids ages 2+. For morning support, pair with Kids Daily Multivitamin or Kids Daily Greens + Superfoods.</p>",
+            "heading": "Comment l'utiliser ?",
+            "content": "<p>Vaporise à 10-15 cm sur les parties intimes externes, sans rincer. À utiliser après le sport, avant un rendez-vous ou en déplacement, autant de fois que nécessaire. Pour le nettoyage en profondeur, utilise le gel moussant sous la douche.</p>",
             "page": "",
             "hide_block_if": false
           }
@@ -274,7 +274,7 @@
         "heading_eFJXnL": {
           "type": "heading",
           "settings": {
-            "text": "Pour des parties intimes propres, qui sentent bon, en toute circonstance.",
+            "text": "Frais et propre entre deux douches, où que tu sois.",
             "font_size": 44,
             "font_size_mobile": 26,
             "font_weight": "400",
@@ -327,7 +327,7 @@
         "text_p3xzR6": {
           "type": "text",
           "settings": {
-            "text": "<p>Avec des actifs controlés et un pH bas, il nettoie efficacement vos parties sans détruire la flore intime.</p>",
+            "text": "<p>Sans eau, sans rinçage : le spray agit directement sur les bactéries responsables des odeurs grâce au Zinc PCA, pendant que ses ferments maintiennent l'équilibre de ta flore intime. Un geste, et tu repars serein.</p>",
             "font_size": 16,
             "font_size_mobile": 14,
             "font_weight": "400",
@@ -408,7 +408,7 @@
       "disabled": true,
       "settings": {
         "heading": "Recommended",
-        "subheading": "You may also <strong>like</strong> these products",
+        "subheading": "Complète ta <strong>routine</strong>",
         "section_heading_size": "text-size--regular",
         "section_heading_layout": "section-heading--left section-heading--one-row",
         "layout_desktop": "four-columns",
@@ -435,7 +435,7 @@
         "title_UDcVcH": {
           "type": "title",
           "settings": {
-            "title": "Le soir, l'endormissement devient un combat",
+            "title": "Entre deux douches, les odeurs reviennent",
             "title_size": "heading-size--small",
             "title_weight": "inherit",
             "title_size_custom": 0,
@@ -446,7 +446,7 @@
         "text_GKafAp": {
           "type": "text",
           "settings": {
-            "text": "<p>Trop de stimulation, d'écrans, d'énergie non dépensée… beaucoup d'enfants ont du mal à \"décrocher\" le soir. Le rituel du coucher tourne à l'épreuve de force — pour eux comme pour les parents. Résultat : des nuits trop courtes, un réveil difficile, et une fatigue qui s'accumule. Les aides au sommeil classiques contiennent souvent de la mélatonine ou du sucre ajouté, deux choses que vous préférez éviter pour votre enfant.</p>",
+            "text": "<p>Après le sport, en pleine journée de boulot, avant un rendez-vous… impossible de filer sous la douche à chaque fois. La transpiration s'accumule, les bactéries prolifèrent et l'inconfort s'installe, sans solution pratique sous la main. Les déodorants classiques ne sont pas pensés pour cette zone, et l'eau seule ne suffit pas.</p>",
             "text_size": "regular"
           }
         }
@@ -495,7 +495,7 @@
         "title_aj3KDD": {
           "type": "title",
           "settings": {
-            "title": "Un rituel du soir qui aide vraiment à décompresser",
+            "title": "La fraîcheur, à la demande, partout",
             "title_size": "heading-size--small",
             "title_weight": "inherit",
             "title_size_custom": 0,
@@ -506,7 +506,7 @@
         "text_fqVCan": {
           "type": "text",
           "settings": {
-            "text": "<p>Notre complément \"L'apaisant\" combine des actifs naturels — magnésium, L-théanine, vitamine B6, extrait de camomille — pour aider votre enfant à se calmer naturellement avant de dormir. Sans mélatonine, sans sucre, sans accoutumance. Chaque ingrédient a été sélectionné pour soutenir la détente, la santé cérébrale et un sommeil réparateur. Un seul bonbon délicieux à croquer le soir, et le rituel du coucher redevient un moment apaisé.</p>",
+            "text": "<p>Le spray rééquilibrant zgueg agit sans eau ni rinçage : le Zinc PCA neutralise les bactéries responsables des odeurs, pendant que les ferments (Lactobacillus, Saccharomyces) maintiennent l'équilibre de ta flore sur la durée. Un geste discret après le sport ou avant un rendez-vous, et tu repars frais et serein. Le gel nettoie à la source une fois par jour ; le spray protège entre les douches, quand la vie continue.</p>",
             "text_size": "regular"
           }
         }
@@ -549,7 +549,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/dc521dd1226282e6980822beae896c56c080640d-100x100.svg",
-            "label": "Réduit le temps d'endormissement\n\nLa L-théanine et le GABA agissent en synergie pour calmer l'activité mentale et aider l'enfant à glisser naturellement vers le sommeil.",
+            "label": "Neutralise les odeurs à la source\n\nLe Zinc PCA cible les bactéries responsables des mauvaises odeurs au lieu de simplement les masquer — une fraîcheur qui tient vraiment.",
             "link": ""
           }
         },
@@ -557,7 +557,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/0ca09a37960790c44e2abb9f64f31c09318dec63-100x100.svg",
-            "label": "Soutient la restauration cérébrale nocturne\n\nLa vitamine B6 joue un rôle clé dans la synthèse des neurotransmetteurs — le sommeil devient un vrai moment de récupération pour le cerveau en développement.",
+            "label": "Maintient l'équilibre de la flore\n\nLes ferments Lactobacillus et Saccharomyces soutiennent la flore intime dans la durée, même entre deux douches.",
             "link": ""
           }
         },
@@ -565,7 +565,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/6dbe15adf31d8d258a458ae0dfc1a973a45dacf6-100x100.svg",
-            "label": "Apaise l'agitation en fin de journée\n\nLe magnésium et la camomille aident à relâcher les tensions accumulées dans la journée — moins d'énervement, moins de résistance au coucher.",
+            "label": "Apaise et protège la peau\n\nCentella asiatica et armoise calment les zones sensibles et préviennent les irritations liées à la transpiration.",
             "link": ""
           }
         },
@@ -573,7 +573,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/a8fde2b9bdfe4f20f408ce7079fffaa052238b0d-100x100.svg",
-            "label": "Favorise un réveil naturellement reposé\n\nFormulé sans mélatonine pour ne pas perturber le rythme circadien de l'enfant — le corps s'endort et se réveille selon son cycle naturel.",
+            "label": "Agit sans eau ni rinçage\n\nUne formule pensée pour être nomade : un geste discret après le sport ou en déplacement, sans contrainte.",
             "link": ""
           }
         }
@@ -600,7 +600,7 @@
         "heading_weight": "400",
         "heading_alignment": "left",
         "heading_alignment_mobile": "left",
-        "body": "<p>Notre complément bonne nuit combine 7 actifs naturels sélectionnés pour leurs effets documentés sur le sommeil de l'enfant. Sans mélatonine, sans sucre, sans accoutumance. Chaque ingrédient a un rôle précis — et ensemble, ils préparent le corps et le cerveau de votre enfant à une vraie nuit récupératrice.</p>",
+        "body": "<p>Le spray rééquilibrant zgueg ne masque pas les odeurs : il agit dessus. Zinc PCA anti-bactérien, ferments probiotiques et apaisants botaniques — chaque actif a un rôle précis pour te garder frais entre deux douches, sans casser l'équilibre de ta flore.</p>",
         "body_color": "#1a1a1a",
         "body_size": 19,
         "body_max_width": 640,
@@ -620,7 +620,7 @@
         "label_weight": "400",
         "label_transform": "none",
         "show_button": true,
-        "button_label": "Lire nos analyses",
+        "button_label": "Lire la composition",
         "button_link": "",
         "button_bg": "#0000c9",
         "button_text_color": "#ffffff",
@@ -688,7 +688,7 @@
       "disabled": true,
       "name": "Instagram shots",
       "settings": {
-        "heading": "On vous explique tout",
+        "heading": "On t'explique tout",
         "heading_color": "#1a1a1a",
         "background_color": "#f7f3ec",
         "padding_top": 160,
@@ -709,13 +709,13 @@
         "review_r01": {
           "type": "review",
           "settings": {
-            "author": "Marie L.",
+            "author": "Antoine M.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "21 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Depuis que ma fille de 5 ans prend son gummy chaque matin, fini les maux de ventre après les repas ! Elle qui se plaignait souvent est beaucoup plus à l'aise, et je la trouve plus en forme : elle attrape nettement moins de rhumes à l'école. En plus elle adore le goût kiwi et le réclame toute seule.",
+            "text": "Je l'utilise après chaque séance de sport. Un coup de spray et c'est réglé pour le reste de la journée, sans repasser par la douche. La fraîcheur tient vraiment.",
             "helpful_up": 14,
             "helpful_down": 0,
             "reply_enable": true,
@@ -723,7 +723,7 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Zgueg",
             "reply_date": "21 mai 2026",
-            "reply_text": "Merci Marie ! Quel bonheur de lire que votre fille va mieux et qu'elle réclame son gummy toute seule. C'est exactement notre mission. La moindre question sur la cure ? Écrivez-nous à contact@super-bonbon.com 💚"
+            "reply_text": "Merci Antoine ! C'est exactement l'usage idéal : le geste post-sport qui change tout. Une question ? contact@zgueg.fr 💨"
           }
         },
         "review_r02": {
@@ -734,8 +734,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "20 mai 2026",
-            "product": "le-probiotique",
-            "text": "Mon fils a un transit beaucoup plus régulier depuis sa cure. Moins de ballonnements, il est plus à l'aise au quotidien et clairement de meilleure humeur. Un vrai changement pour lui.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Discret, efficace, et ça ne colle pas. Je le garde dans mon sac de boulot, parfait pour les longues journées. Plus aucune gêne en fin d'après-midi.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -753,27 +753,27 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "18 mai 2026",
-            "product": "le-probiotique",
-            "text": "Mes deux enfants étaient souvent malades cet hiver. Après un mois de probiotique, beaucoup moins d'absences à l'école et des digestions enfin apaisées. Eux croient prendre un bonbon, moi je suis rassurée sur leur santé.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Acheté pour mon compagnon, il ne s'en passe plus. Il l'emporte partout, surtout en déplacement pro. Et clairement, ça sent bien meilleur le soir.",
             "helpful_up": 3,
             "helpful_down": 1,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "18 mai 2026",
-            "reply_text": "Merci Sophie ! Savoir vos enfants moins malades cet hiver, c'est notre plus belle récompense. Pour une famille, notre abonnement revient moins cher au pot — on vous explique tout à contact@super-bonbon.com."
+            "reply_text": "Merci Sophie ! Le format nomade est fait pour ça. Belle découverte à vous deux 😎 contact@zgueg.fr"
           }
         },
         "review_r04": {
           "type": "review",
           "settings": {
-            "author": "Nadia K.",
+            "author": "Karim A.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "15 mai 2026",
-            "product": "le-probiotique",
-            "text": "Ma fille a retrouvé un confort intestinal incroyable. Elle qui avait le ventre gonflé et douloureux après chaque repas se sent enfin bien et joue sans se plaindre. Toute la famille a adopté.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Le Zinc PCA fait vraiment le job, ce n'est pas juste du parfum qui masque. Les odeurs ne reviennent pas, même après une grosse journée.",
             "helpful_up": 9,
             "helpful_down": 0,
             "reply_enable": false,
@@ -791,27 +791,27 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "12 mai 2026",
-            "product": "le-probiotique",
-            "text": "Sceptique au début, mais après six semaines la différence est nette sur mon petit : presque plus de maux de ventre, plus d'énergie pour jouer et il tombe beaucoup moins souvent malade. Totalement convaincu !",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Sceptique sur un spray sans rinçage, mais c'est bluffant. Fraîcheur immédiate et qui dure, sans sensation de mouillé. Je ne pars plus sans.",
             "helpful_up": 2,
             "helpful_down": 2,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "13 mai 2026",
-            "reply_text": "Merci Julien ! On adore les sceptiques convaincus 😊 Le microbiote a besoin de 6 à 8 semaines pour se rééquilibrer, vous avez eu le bon réflexe de poursuivre. Besoin de conseils ? contact@super-bonbon.com."
+            "reply_text": "Merci Julien ! Sans eau et sans compromis, c'est tout l'intérêt. On reste dispo : contact@zgueg.fr"
           }
         },
         "review_r06": {
           "type": "review",
           "settings": {
-            "author": "Camille R.",
+            "author": "Maxime C.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "9 mai 2026",
-            "product": "le-probiotique",
-            "text": "Le 3-en-1 a vraiment rééquilibré le système de ma fille. Sa digestion est au top, je la trouve plus tonique et de bien meilleure humeur tout au long de la journée.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Parfait avant un rendez-vous. Un geste rapide et je suis tranquille toute la soirée. Format discret, personne ne voit rien.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -829,8 +829,8 @@
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "6 mai 2026",
-            "product": "le-probiotique",
-            "text": "Très bon produit, mes enfants adorent le goût kiwi et le prennent sans rechigner. J'aurais aimé un pot un peu plus grand, mais les effets sur leur digestion et leur entrain sont bien là.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Très bon produit, mon copain l'adore. J'aurais juste aimé un format encore plus petit pour le glisser dans une poche, mais il marche super bien.",
             "helpful_up": 4,
             "helpful_down": 0,
             "reply_enable": false,
@@ -843,32 +843,32 @@
         "review_r08": {
           "type": "review",
           "settings": {
-            "author": "Émilie V.",
+            "author": "Nicolas V.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "22 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Ma fille de 7 ans mettait une heure à s'endormir. Depuis L'apaisant, elle s'endort en quelques minutes et dort toute la nuit. Au réveil elle est fraîche et de bonne humeur, plus du tout patraque. Et sans mélatonine, ça me rassure énormément.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Je transpire énormément et c'est le seul truc qui tient la journée sans repasser à la douche. La fraîcheur est immédiate et longue durée.",
             "helpful_up": 12,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "22 mai 2026",
-            "reply_text": "Merci Émilie ! Un endormissement rapide et des nuits complètes sans mélatonine, c'est précisément pourquoi nous avons créé L'apaisant. De belles nuits à votre fille ! (contact@super-bonbon.com pour toute question)"
+            "reply_text": "Merci Nicolas ! Pour les grosses journées, un geste en milieu d'après-midi prolonge l'effet. contact@zgueg.fr pour tout conseil 💨"
           }
         },
         "review_r09": {
           "type": "review",
           "settings": {
-            "author": "Karim A.",
+            "author": "Hugo D.",
             "verified": true,
             "verified_label": "Client vérifié",
-            "rating": 5,
+            "rating": 4,
             "date": "19 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Mon fils était très agité le soir. Le magnésium l'aide vraiment à se détendre : les couchers sont devenus paisibles et il s'endort serein. Un vrai soulagement pour toute la maison.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Efficace et pratique, je l'utilise tous les jours. La diffusion pourrait être un poil plus fine, mais le résultat est vraiment là.",
             "helpful_up": 5,
             "helpful_down": 0,
             "reply_enable": false,
@@ -881,32 +881,32 @@
         "review_r10": {
           "type": "review",
           "settings": {
-            "author": "Aurélie F.",
+            "author": "Aurélien F.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "16 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Ma petite se réveillait plusieurs fois par nuit. Après quelques semaines, ses nuits sont enfin continues et réparatrices, et elle est beaucoup moins grognon au réveil. Le matin est tellement plus doux.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Game changer pour les déplacements. Avion, train, hôtel… je reste frais sans dépendre d'une douche. Et la flore n'est pas agressée en plus.",
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "16 mai 2026",
-            "reply_text": "Merci Aurélie ! Pour espacer encore les réveils, une prise environ 45 min avant le coucher dans une routine calme aide beaucoup. On reste dispo à contact@super-bonbon.com 💤"
+            "reply_text": "Merci Aurélien ! C'est précisément pour ces moments-là qu'on l'a créé. Bon voyage ! contact@zgueg.fr"
           }
         },
         "review_r11": {
           "type": "review",
           "settings": {
-            "author": "Mathilde G.",
+            "author": "Mathis G.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "13 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Fini les réveils nocturnes pour mon fils. Il dort d'une traite et se lève de bonne humeur, prêt pour l'école. Le goût fraise est un vrai plus, il le prend comme une gourmandise.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Après la salle, c'est devenu un réflexe. Aucune odeur, aucune irritation, et ça sèche tout de suite. Top.",
             "helpful_up": 8,
             "helpful_down": 0,
             "reply_enable": false,
@@ -924,8 +924,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "10 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Mon ado était très stressé par les contrôles et dormait mal. Depuis sa cure, il s'endort plus sereinement et aborde ses journées bien plus reposé. Sans accoutumance, c'est exactement ce que je cherchais pour lui.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Simple et redoutablement efficace. Quelques pressions suffisent, donc le flacon dure. Je le recommande à tous mes potes.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -943,8 +943,8 @@
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "7 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Ma fille se détend beaucoup mieux le soir et s'endort plus vite. Il reste quelques réveils occasionnels, mais l'amélioration est nette et elle adore le goût fraise.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Mon mari est conquis, il l'utilise avant le travail tous les matins. Je retire une étoile car j'aurais aimé une version sans parfum, mais l'efficacité est top.",
             "helpful_up": 4,
             "helpful_down": 0,
             "reply_enable": false,
@@ -962,15 +962,15 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "23 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Mon fils est très difficile et ne mange aucun légume. Avec Le multi, je suis enfin tranquille sur ses apports : il a plus d'énergie, est plus concentré à l'école et tombe moins souvent malade. Un vrai soulagement de parent.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Peau sensible ici, et aucun picotement contrairement aux déos classiques. Frais, propre, et la flore reste équilibrée. Parfait entre deux douches.",
             "helpful_up": 11,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "23 mai 2026",
-            "reply_text": "Merci Lucas ! Couvrir les apports d'un enfant qui boude les légumes, c'est tout l'intérêt du multi. Ravis qu'il soit plus en forme à l'école ! Une question sur le dosage enfant ? contact@super-bonbon.com."
+            "reply_text": "Merci Lucas ! Centella et armoise sont là pour ça. Ravis que ça te convienne 🙌 contact@zgueg.fr"
           }
         },
         "review_r15": {
@@ -981,8 +981,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "20 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Mes enfants refusent obstinément les légumes verts, et ces gummies comblent enfin les manques. Ils croient croquer un bonbon acidulé alors qu'ils font le plein de superaliments ! Je les trouve plus toniques le matin et en bien meilleure forme générale.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Offert à mon copain, gros succès. Il l'utilise après le sport et avant de sortir. La maison sent meilleur, et lui se sent plus sûr de lui.",
             "helpful_up": 5,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1000,15 +1000,15 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "17 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Mes enfants réclament leurs gummies Le multi chaque matin tellement le goût acidulé leur plaît. Résultat : ils sont plus en forme et bien plus rarement malades, et la composition 100% bio me rassure totalement.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Odeur discrète, effet immédiat, zéro résidu collant. Exactement ce que j'attendais d'un spray intime. Adopté pour de bon.",
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "17 mai 2026",
-            "reply_text": "Merci Olivier ! Des enfants qui réclament leurs superaliments, c'est notre plus belle réussite 😊 Contents que la compo bio vous rassure autant que nous. À votre dispo : contact@super-bonbon.com 🌱"
+            "reply_text": "Merci Olivier ! Discret et net, c'est le cahier des charges 😉 À dispo : contact@zgueg.fr"
           }
         },
         "review_r17": {
@@ -1019,8 +1019,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "14 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Ma fille a meilleure mine et beaucoup plus de vitalité depuis sa cure. Elle qui était souvent fatiguée tient bien mieux ses longues journées d'école.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Mon compagnon l'utilise en complément du gel, et la combinaison est imbattable. Frais toute la journée, même quand il enchaîne les réunions.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1038,27 +1038,27 @@
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "11 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Mes enfants adorent le goût acidulé de ces gummies et les prennent sans jamais rechigner. Niveau résultats, ils ont clairement plus d'énergie et une meilleure immunité cet hiver. Je mets 4 étoiles seulement car j'aurais aimé un pot avec un peu plus de gummies.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Vraiment efficace, je l'emporte partout. 4 étoiles car le prix pique un peu, mais vu le temps que dure le flacon, ça reste correct.",
             "helpful_up": 4,
             "helpful_down": 1,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "11 mai 2026",
-            "reply_text": "Merci David pour ce retour ! Ravis que vos enfants se régalent et profitent des bienfaits. On note bien votre remarque sur la quantité — jetez un œil à notre format abonnement, plus avantageux. contact@super-bonbon.com si besoin."
+            "reply_text": "Merci David ! Quelques pressions suffisent, le flacon tient longtemps. Regarde les packs, plus avantageux. contact@zgueg.fr"
           }
         },
         "review_r19": {
           "type": "review",
           "settings": {
-            "author": "Claire J.",
+            "author": "Clément J.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "8 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Un seul produit pour couvrir les apports de mes enfants difficiles à table. Leur peau et leur énergie s'en ressentent vraiment, je le recommande à tous les parents inquiets de l'alimentation de leurs petits.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Idéal pour les journées qui n'en finissent pas. Un coup de spray et je repars frais, sans repasser chez moi. Devenu indispensable.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1071,13 +1071,13 @@
         "review_r20": {
           "type": "review",
           "settings": {
-            "author": "Hugo D.",
+            "author": "Hugo P.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "5 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Parfait pour compléter l'alimentation de mon fils qui boude les légumes : il croque ses gummies avec plaisir grâce au goût acidulé, et je le sens nettement plus en forme depuis. Juste un format un peu petit à mon goût.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Très bon spray, fraîcheur immédiate et efficace contre les odeurs. J'aurais aimé un capuchon un peu plus sécurisé pour le sac, mais sinon rien à redire.",
             "helpful_up": 2,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1140,8 +1140,8 @@
         "rating_filter_all": "Toutes les notes",
         "stars_word": "étoiles",
         "show_product_filter": true,
-        "product_filter_label": "Type de complément",
-        "product_filter_all": "Tous les compléments",
+        "product_filter_label": "Type de produit",
+        "product_filter_all": "Tous les produits",
         "empty_text": "Aucune note pour les filtres sélectionnés",
         "show_date": true,
         "show_reply_date": true,

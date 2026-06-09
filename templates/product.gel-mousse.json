@@ -15,7 +15,7 @@
         "heading_eFJXnL": {
           "type": "heading",
           "settings": {
-            "text": "Pour des parties intimes propres, qui sentent bon, en toute circonstance.",
+            "text": "Ton nettoyant intime quotidien, sous la douche.",
             "font_size": 44,
             "font_size_mobile": 26,
             "font_weight": "400",
@@ -68,7 +68,7 @@
         "text_p3xzR6": {
           "type": "text",
           "settings": {
-            "text": "<p>Avec des actifs controlés et un pH bas, il nettoie efficacement vos parties sans détruire la flore intime.</p>",
+            "text": "<p>Tensioactifs 100 % végétaux et pH bas : il élimine en douceur sueur, smegma et résidus de la journée, pendant que ses ferments probiotiques rééquilibrent ta flore intime. Tu rinces, c'est propre, c'est reparti.</p>",
             "font_size": 16,
             "font_size_mobile": 14,
             "font_weight": "400",
@@ -273,7 +273,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Bénéfices",
-            "content": "<ul><li>Brain Health*</li><li>Drug-Free Sleep Support*</li><li>Relaxation & Stress*</li><li>Focus and Calm*</li><li>Restores*</li><li>Non-Habit Forming</li><li>Melatonin-Free</li></ul>",
+            "content": "<ul><li>Nettoie en profondeur sans agresser</li><li>Élimine sueur, smegma et odeurs à la source</li><li>Rééquilibre la flore intime à chaque lavage</li><li>Tensioactifs 100 % végétaux</li><li>pH bas, respecte les muqueuses</li><li>Sans savon, sans parfum agressif</li></ul>",
             "page": "",
             "hide_block_if": false
           }
@@ -282,7 +282,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Ingrédients",
-            "content": "<ul><li>Vitamin B6</li><li>Calcium</li><li>Magnesium</li><li>L-theanine</li><li>GABA</li><li>Chamomile Flower Extract</li></ul>",
+            "content": "<ul><li>Tensioactifs végétaux doux (coco)</li><li>Ferments probiotiques (Lactobacillus, Bifida)</li><li>Eau d'armoise (Artemisia)</li><li>Centella asiatica</li><li>Houttuynia cordata</li><li>Thé vert (Camellia sinensis)</li><li>Glycérine végétale</li></ul>",
             "page": "",
             "hide_block_if": false
           }
@@ -290,8 +290,8 @@
         "collapsible_tab_RKezaD": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Âge conseillé",
-            "content": "<p>Formulated for ages 2 to 12.</p>",
+            "heading": "Pour qui ?",
+            "content": "<p>Conçu pour l'hygiène intime masculine au quotidien. Convient à tous les types de peau. Usage externe uniquement.</p>",
             "page": "",
             "hide_block_if": false
           }
@@ -299,8 +299,8 @@
         "collapsible_tab_YyQ3H7": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Comment le consommer ?",
-            "content": "<p>Kid's Bedtime Essentials is best taken 30 minutes to 1 hour before bed as part of your nightly bedtime routine, to help the body calm for a restful winddown. Stack it with an activity your family already does, like taking it before brushing teeth, or while reading a bedtime story. Great for kids ages 2+. For morning support, pair with Kids Daily Multivitamin or Kids Daily Greens + Superfoods.</p>",
+            "heading": "Comment l'utiliser ?",
+            "content": "<p>Sous la douche, applique une noisette de gel moussant sur les parties intimes externes, fais mousser quelques secondes puis rince abondamment. Une fois par jour suffit. Pour rester frais entre deux douches, enchaîne avec le spray rééquilibrant.</p>",
             "page": "",
             "hide_block_if": false
           }
@@ -373,7 +373,7 @@
       "disabled": true,
       "settings": {
         "heading": "Recommended",
-        "subheading": "You may also <strong>like</strong> these products",
+        "subheading": "Complète ta <strong>routine</strong>",
         "section_heading_size": "text-size--regular",
         "section_heading_layout": "section-heading--left section-heading--one-row",
         "layout_desktop": "four-columns",
@@ -400,7 +400,7 @@
         "title_UDcVcH": {
           "type": "title",
           "settings": {
-            "title": "Le soir, l'endormissement devient un combat",
+            "title": "Se laver au gel douche classique, c'est agresser une zone fragile",
             "title_size": "heading-size--small",
             "title_weight": "inherit",
             "title_size_custom": 0,
@@ -411,7 +411,7 @@
         "text_GKafAp": {
           "type": "text",
           "settings": {
-            "text": "<p>Trop de stimulation, d'écrans, d'énergie non dépensée… beaucoup d'enfants ont du mal à \"décrocher\" le soir. Le rituel du coucher tourne à l'épreuve de force — pour eux comme pour les parents. Résultat : des nuits trop courtes, un réveil difficile, et une fatigue qui s'accumule. Les aides au sommeil classiques contiennent souvent de la mélatonine ou du sucre ajouté, deux choses que vous préférez éviter pour votre enfant.</p>",
+            "text": "<p>Les gels douche classiques sont trop décapants pour les parties intimes : pH trop élevé, parfums agressifs, tensioactifs qui déshydratent. Résultat, la flore se déséquilibre, les odeurs reviennent vite et les irritations s'installent. La zone intime masculine a besoin d'un nettoyage efficace mais respectueux — pas d'un produit pensé pour les aisselles.</p>",
             "text_size": "regular"
           }
         }
@@ -460,7 +460,7 @@
         "title_aj3KDD": {
           "type": "title",
           "settings": {
-            "title": "Un rituel du soir qui aide vraiment à décompresser",
+            "title": "Un nettoyage intime qui respecte ta flore",
             "title_size": "heading-size--small",
             "title_weight": "inherit",
             "title_size_custom": 0,
@@ -471,7 +471,7 @@
         "text_fqVCan": {
           "type": "text",
           "settings": {
-            "text": "<p>Notre complément \"L'apaisant\" combine des actifs naturels — magnésium, L-théanine, vitamine B6, extrait de camomille — pour aider votre enfant à se calmer naturellement avant de dormir. Sans mélatonine, sans sucre, sans accoutumance. Chaque ingrédient a été sélectionné pour soutenir la détente, la santé cérébrale et un sommeil réparateur. Un seul bonbon délicieux à croquer le soir, et le rituel du coucher redevient un moment apaisé.</p>",
+            "text": "<p>Le gel moussant zgueg associe des tensioactifs 100 % végétaux à un pH bas pour éliminer sueur, smegma et résidus bactériens sans détruire ta flore. Ses ferments probiotiques (Lactobacillus, Bifida) la rééquilibrent à chaque lavage, pendant que l'armoise, la centella et le thé vert apaisent la peau. Tu te laves vraiment, sans agresser. On rince, c'est propre, c'est reparti.</p>",
             "text_size": "regular"
           }
         }
@@ -514,7 +514,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/dc521dd1226282e6980822beae896c56c080640d-100x100.svg",
-            "label": "Réduit le temps d'endormissement\n\nLa L-théanine et le GABA agissent en synergie pour calmer l'activité mentale et aider l'enfant à glisser naturellement vers le sommeil.",
+            "label": "Nettoie sans agresser\n\nLes tensioactifs végétaux (coco, glucoside) délogent sueur, smegma et résidus tout en respectant le pH et les muqueuses de la zone intime.",
             "link": ""
           }
         },
@@ -522,7 +522,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/0ca09a37960790c44e2abb9f64f31c09318dec63-100x100.svg",
-            "label": "Soutient la restauration cérébrale nocturne\n\nLa vitamine B6 joue un rôle clé dans la synthèse des neurotransmetteurs — le sommeil devient un vrai moment de récupération pour le cerveau en développement.",
+            "label": "Rééquilibre la flore\n\nLes ferments probiotiques Lactobacillus et Bifida soutiennent la flore intime à chaque lavage, pour limiter le retour des odeurs.",
             "link": ""
           }
         },
@@ -530,7 +530,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/6dbe15adf31d8d258a458ae0dfc1a973a45dacf6-100x100.svg",
-            "label": "Apaise l'agitation en fin de journée\n\nLe magnésium et la camomille aident à relâcher les tensions accumulées dans la journée — moins d'énervement, moins de résistance au coucher.",
+            "label": "Apaise les irritations\n\nCentella asiatica, armoise et Houttuynia cordata calment les rougeurs et l'inconfort des zones sensibles.",
             "link": ""
           }
         },
@@ -538,7 +538,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/a8fde2b9bdfe4f20f408ce7079fffaa052238b0d-100x100.svg",
-            "label": "Favorise un réveil naturellement reposé\n\nFormulé sans mélatonine pour ne pas perturber le rythme circadien de l'enfant — le corps s'endort et se réveille selon son cycle naturel.",
+            "label": "Assainit en douceur\n\nLe thé vert et les actifs purifiants aident à garder une sensation de fraîcheur durable, sans dessécher la peau.",
             "link": ""
           }
         }
@@ -565,7 +565,7 @@
         "heading_weight": "400",
         "heading_alignment": "left",
         "heading_alignment_mobile": "left",
-        "body": "<p>Notre complément bonne nuit combine 7 actifs naturels sélectionnés pour leurs effets documentés sur le sommeil de l'enfant. Sans mélatonine, sans sucre, sans accoutumance. Chaque ingrédient a un rôle précis — et ensemble, ils préparent le corps et le cerveau de votre enfant à une vraie nuit récupératrice.</p>",
+        "body": "<p>Le gel moussant zgueg combine des actifs sélectionnés pour nettoyer la zone intime masculine en profondeur, sans casser son équilibre. Tensioactifs végétaux, ferments probiotiques et apaisants botaniques : chacun a un rôle précis — ensemble, ils nettoient, rééquilibrent et apaisent à chaque douche.</p>",
         "body_color": "#1a1a1a",
         "body_size": 19,
         "body_max_width": 640,
@@ -585,7 +585,7 @@
         "label_weight": "400",
         "label_transform": "none",
         "show_button": true,
-        "button_label": "Lire nos analyses",
+        "button_label": "Lire la composition",
         "button_link": "",
         "button_bg": "#0000c9",
         "button_text_color": "#ffffff",
@@ -652,7 +652,7 @@
       ],
       "name": "Instagram shots",
       "settings": {
-        "heading": "On vous explique tout",
+        "heading": "On t'explique tout",
         "heading_color": "#1a1a1a",
         "background_color": "#f7f3ec",
         "padding_top": 160,
@@ -673,13 +673,13 @@
         "review_r01": {
           "type": "review",
           "settings": {
-            "author": "Marie L.",
+            "author": "Antoine M.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "21 mai 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Depuis que ma fille de 5 ans prend son gummy chaque matin, fini les maux de ventre après les repas ! Elle qui se plaignait souvent est beaucoup plus à l'aise, et je la trouve plus en forme : elle attrape nettement moins de rhumes à l'école. En plus elle adore le goût kiwi et le réclame toute seule.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Je l'utilise tous les matins sous la douche depuis un mois. La sensation de propreté est nette, et surtout les odeurs ne reviennent plus dans la journée. La mousse est douce, aucune irritation alors que j'ai la peau sensible.",
             "helpful_up": 14,
             "helpful_down": 0,
             "reply_enable": true,
@@ -687,7 +687,7 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Zgueg",
             "reply_date": "21 mai 2026",
-            "reply_text": "Merci Marie ! Quel bonheur de lire que votre fille va mieux et qu'elle réclame son gummy toute seule. C'est exactement notre mission. La moindre question sur la cure ? Écrivez-nous à contact@super-bonbon.com 💚"
+            "reply_text": "Merci Antoine ! C'est exactement l'effet recherché : un vrai nettoyage sans agresser. Une question sur la routine ? Écris-nous à contact@zgueg.fr 💧"
           }
         },
         "review_r02": {
@@ -698,8 +698,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "20 mai 2026",
-            "product": "le-probiotique",
-            "text": "Mon fils a un transit beaucoup plus régulier depuis sa cure. Moins de ballonnements, il est plus à l'aise au quotidien et clairement de meilleure humeur. Un vrai changement pour lui.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Enfin un produit pensé pour cette zone-là. Le gel douche classique me laissait toujours une sensation d'inconfort, là c'est propre et apaisé. Je recommande les yeux fermés.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -712,32 +712,32 @@
         "review_r03": {
           "type": "review",
           "settings": {
-            "author": "Sophie D.",
+            "author": "Sébastien R.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "18 mai 2026",
-            "product": "le-probiotique",
-            "text": "Mes deux enfants étaient souvent malades cet hiver. Après un mois de probiotique, beaucoup moins d'absences à l'école et des digestions enfin apaisées. Eux croient prendre un bonbon, moi je suis rassurée sur leur santé.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Fini les démangeaisons après le sport. Je fais mousser, je rince, et c'est réglé pour la journée. La flore a vraiment l'air plus équilibrée depuis que je l'utilise.",
             "helpful_up": 3,
             "helpful_down": 1,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "18 mai 2026",
-            "reply_text": "Merci Sophie ! Savoir vos enfants moins malades cet hiver, c'est notre plus belle récompense. Pour une famille, notre abonnement revient moins cher au pot — on vous explique tout à contact@super-bonbon.com."
+            "reply_text": "Merci Sébastien ! Les ferments font le job sur la durée. Continue comme ça, et n'hésite pas si tu veux des conseils : contact@zgueg.fr"
           }
         },
         "review_r04": {
           "type": "review",
           "settings": {
-            "author": "Nadia K.",
+            "author": "Karim A.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "15 mai 2026",
-            "product": "le-probiotique",
-            "text": "Ma fille a retrouvé un confort intestinal incroyable. Elle qui avait le ventre gonflé et douloureux après chaque repas se sent enfin bien et joue sans se plaindre. Toute la famille a adopté.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Texture agréable, ça mousse bien sans être décapant. Aucune odeur de parfum chimique, juste une vraie sensation de propre. Adopté.",
             "helpful_up": 9,
             "helpful_down": 0,
             "reply_enable": false,
@@ -755,27 +755,27 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "12 mai 2026",
-            "product": "le-probiotique",
-            "text": "Sceptique au début, mais après six semaines la différence est nette sur mon petit : presque plus de maux de ventre, plus d'énergie pour jouer et il tombe beaucoup moins souvent malade. Totalement convaincu !",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Sceptique au début, mais après trois semaines la différence est réelle : plus de mauvaises odeurs en fin de journée et zéro irritation. Totalement convaincu.",
             "helpful_up": 2,
             "helpful_down": 2,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "13 mai 2026",
-            "reply_text": "Merci Julien ! On adore les sceptiques convaincus 😊 Le microbiote a besoin de 6 à 8 semaines pour se rééquilibrer, vous avez eu le bon réflexe de poursuivre. Besoin de conseils ? contact@super-bonbon.com."
+            "reply_text": "Merci Julien ! On adore les sceptiques convaincus 😎 La flore met quelques semaines à se rééquilibrer, tu as eu le bon réflexe de continuer. contact@zgueg.fr si besoin."
           }
         },
         "review_r06": {
           "type": "review",
           "settings": {
-            "author": "Camille R.",
+            "author": "Maxime C.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "9 mai 2026",
-            "product": "le-probiotique",
-            "text": "Le 3-en-1 a vraiment rééquilibré le système de ma fille. Sa digestion est au top, je la trouve plus tonique et de bien meilleure humeur tout au long de la journée.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Doux, efficace, sans chichi. Je l'emmène même en week-end. Ma copine a remarqué la différence avant moi, c'est dire.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -788,13 +788,13 @@
         "review_r07": {
           "type": "review",
           "settings": {
-            "author": "Léa M.",
+            "author": "Léo M.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "6 mai 2026",
-            "product": "le-probiotique",
-            "text": "Très bon produit, mes enfants adorent le goût kiwi et le prennent sans rechigner. J'aurais aimé un pot un peu plus grand, mais les effets sur leur digestion et leur entrain sont bien là.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Très bon produit, la peau est apaisée et c'est vraiment propre. J'aurais juste aimé un flacon un peu plus grand, je l'utilise tellement que je le finis vite.",
             "helpful_up": 4,
             "helpful_down": 0,
             "reply_enable": false,
@@ -807,32 +807,32 @@
         "review_r08": {
           "type": "review",
           "settings": {
-            "author": "Émilie V.",
+            "author": "Nicolas V.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "22 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Ma fille de 7 ans mettait une heure à s'endormir. Depuis L'apaisant, elle s'endort en quelques minutes et dort toute la nuit. Au réveil elle est fraîche et de bonne humeur, plus du tout patraque. Et sans mélatonine, ça me rassure énormément.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Je transpire beaucoup et j'avais des soucis d'odeurs intimes. Depuis que je l'utilise le matin, c'est réglé, avec une sensation de fraîcheur qui tient.",
             "helpful_up": 12,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "22 mai 2026",
-            "reply_text": "Merci Émilie ! Un endormissement rapide et des nuits complètes sans mélatonine, c'est précisément pourquoi nous avons créé L'apaisant. De belles nuits à votre fille ! (contact@super-bonbon.com pour toute question)"
+            "reply_text": "Merci Nicolas ! Pour les journées chargées, garde le spray sous la main entre deux douches. Des questions ? contact@zgueg.fr 💧"
           }
         },
         "review_r09": {
           "type": "review",
           "settings": {
-            "author": "Karim A.",
+            "author": "Hugo D.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "19 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Mon fils était très agité le soir. Le magnésium l'aide vraiment à se détendre : les couchers sont devenus paisibles et il s'endort serein. Un vrai soulagement pour toute la maison.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "La mousse est légère et le rinçage est net, aucun film gras. Peau nickel, aucune sécheresse. Parfait pour un usage quotidien.",
             "helpful_up": 5,
             "helpful_down": 0,
             "reply_enable": false,
@@ -845,32 +845,32 @@
         "review_r10": {
           "type": "review",
           "settings": {
-            "author": "Aurélie F.",
+            "author": "Aurélien F.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "16 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Ma petite se réveillait plusieurs fois par nuit. Après quelques semaines, ses nuits sont enfin continues et réparatrices, et elle est beaucoup moins grognon au réveil. Le matin est tellement plus doux.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Ça fait des années que je cherchais ça. Nettoyage efficace mais doux, et la flore reste équilibrée. Je ne reviendrai pas en arrière.",
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "16 mai 2026",
-            "reply_text": "Merci Aurélie ! Pour espacer encore les réveils, une prise environ 45 min avant le coucher dans une routine calme aide beaucoup. On reste dispo à contact@super-bonbon.com 💤"
+            "reply_text": "Merci Aurélien ! Ravis que tu aies trouvé ta routine. On reste dispo : contact@zgueg.fr 💧"
           }
         },
         "review_r11": {
           "type": "review",
           "settings": {
-            "author": "Mathilde G.",
+            "author": "Mathis G.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "13 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Fini les réveils nocturnes pour mon fils. Il dort d'une traite et se lève de bonne humeur, prêt pour l'école. Le goût fraise est un vrai plus, il le prend comme une gourmandise.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Parfait après la salle de sport. Plus de gêne, plus d'odeurs. La peau ne tire pas du tout après le rinçage, ce qui n'était pas le cas avec mon ancien gel.",
             "helpful_up": 8,
             "helpful_down": 0,
             "reply_enable": false,
@@ -888,8 +888,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "10 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Mon ado était très stressé par les contrôles et dormait mal. Depuis sa cure, il s'endort plus sereinement et aborde ses journées bien plus reposé. Sans accoutumance, c'est exactement ce que je cherchais pour lui.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Simple et efficace. Une noisette suffit, donc le flacon dure bien plus longtemps que prévu. Bonne surprise sur tous les plans.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -902,13 +902,13 @@
         "review_r13": {
           "type": "review",
           "settings": {
-            "author": "Sandrine T.",
+            "author": "Sami T.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "7 mai 2026",
-            "product": "la-nuit-pleine",
-            "text": "Ma fille se détend beaucoup mieux le soir et s'endort plus vite. Il reste quelques réveils occasionnels, mais l'amélioration est nette et elle adore le goût fraise.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Vraiment propre et apaisé, je suis content. Petit bémol sur la pompe qui pousse parfois un peu trop de produit, mais le résultat est là.",
             "helpful_up": 4,
             "helpful_down": 0,
             "reply_enable": false,
@@ -926,15 +926,15 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "23 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Mon fils est très difficile et ne mange aucun légume. Avec Le multi, je suis enfin tranquille sur ses apports : il a plus d'énergie, est plus concentré à l'école et tombe moins souvent malade. Un vrai soulagement de parent.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "J'ai la peau réactive et beaucoup de produits m'irritent. Celui-là, rien à signaler : doux, propre, apaisant. Un vrai soulagement au quotidien.",
             "helpful_up": 11,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "23 mai 2026",
-            "reply_text": "Merci Lucas ! Couvrir les apports d'un enfant qui boude les légumes, c'est tout l'intérêt du multi. Ravis qu'il soit plus en forme à l'école ! Une question sur le dosage enfant ? contact@super-bonbon.com."
+            "reply_text": "Merci Lucas ! Centella et armoise sont là précisément pour les peaux réactives. Profite bien ! contact@zgueg.fr"
           }
         },
         "review_r15": {
@@ -945,8 +945,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "20 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Mes enfants refusent obstinément les légumes verts, et ces gummies comblent enfin les manques. Ils croient croquer un bonbon acidulé alors qu'ils font le plein de superaliments ! Je les trouve plus toniques le matin et en bien meilleure forme générale.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Acheté pour mon copain qui n'osait pas trop en parler. Il l'utilise tous les jours maintenant et se sent beaucoup plus à l'aise. Validé à la maison.",
             "helpful_up": 5,
             "helpful_down": 0,
             "reply_enable": false,
@@ -964,27 +964,27 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "17 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Mes enfants réclament leurs gummies Le multi chaque matin tellement le goût acidulé leur plaît. Résultat : ils sont plus en forme et bien plus rarement malades, et la composition 100% bio me rassure totalement.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Texture agréable, odeur neutre et discrète, résultat impeccable. Exactement ce que je cherchais pour le quotidien.",
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "17 mai 2026",
-            "reply_text": "Merci Olivier ! Des enfants qui réclament leurs superaliments, c'est notre plus belle réussite 😊 Contents que la compo bio vous rassure autant que nous. À votre dispo : contact@super-bonbon.com 🌱"
+            "reply_text": "Merci Olivier ! Le neutre et discret, c'est un parti pris assumé 😉 À dispo : contact@zgueg.fr"
           }
         },
         "review_r17": {
           "type": "review",
           "settings": {
-            "author": "Fanny R.",
+            "author": "Fabien R.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "14 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Ma fille a meilleure mine et beaucoup plus de vitalité depuis sa cure. Elle qui était souvent fatiguée tient bien mieux ses longues journées d'école.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Je l'utilise matin et soir les jours de grosse chaleur. Aucune irritation malgré l'usage rapproché, la peau reste confortable.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1002,27 +1002,27 @@
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "11 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Mes enfants adorent le goût acidulé de ces gummies et les prennent sans jamais rechigner. Niveau résultats, ils ont clairement plus d'énergie et une meilleure immunité cet hiver. Je mets 4 étoiles seulement car j'aurais aimé un pot avec un peu plus de gummies.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Très bon produit, efficace et doux. Je mets 4 étoiles seulement parce que le prix est un peu élevé, mais le flacon dure longtemps donc ça se justifie.",
             "helpful_up": 4,
             "helpful_down": 1,
             "reply_enable": true,
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "11 mai 2026",
-            "reply_text": "Merci David pour ce retour ! Ravis que vos enfants se régalent et profitent des bienfaits. On note bien votre remarque sur la quantité — jetez un œil à notre format abonnement, plus avantageux. contact@super-bonbon.com si besoin."
+            "reply_text": "Merci David pour ton retour ! Une noisette suffit, donc au final le flacon tient un bon moment. Jette un œil aux packs, plus avantageux. contact@zgueg.fr"
           }
         },
         "review_r19": {
           "type": "review",
           "settings": {
-            "author": "Claire J.",
+            "author": "Clément J.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "8 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Un seul produit pour couvrir les apports de mes enfants difficiles à table. Leur peau et leur énergie s'en ressentent vraiment, je le recommande à tous les parents inquiets de l'alimentation de leurs petits.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Adopté par toute la coloc. Nettoyage efficace, sensation de fraîcheur qui dure et zéro odeur chimique. On en rachète déjà.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1035,13 +1035,13 @@
         "review_r20": {
           "type": "review",
           "settings": {
-            "author": "Hugo D.",
+            "author": "Romain D.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "5 mai 2026",
-            "product": "le-multivitamines",
-            "text": "Parfait pour compléter l'alimentation de mon fils qui boude les légumes : il croque ses gummies avec plaisir grâce au goût acidulé, et je le sens nettement plus en forme depuis. Juste un format un peu petit à mon goût.",
+            "product": "gel-moussant-intime-pour-homme",
+            "text": "Bonne mousse, peau propre et apaisée. J'aurais aimé un format voyage en plus du grand flacon, mais sinon rien à redire.",
             "helpful_up": 2,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1104,8 +1104,8 @@
         "rating_filter_all": "Toutes les notes",
         "stars_word": "étoiles",
         "show_product_filter": true,
-        "product_filter_label": "Type de complément",
-        "product_filter_all": "Tous les compléments",
+        "product_filter_label": "Type de produit",
+        "product_filter_all": "Tous les produits",
         "empty_text": "Aucune note pour les filtres sélectionnés",
         "show_date": true,
         "show_reply_date": true,
