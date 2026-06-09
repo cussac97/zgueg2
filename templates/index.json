@@ -167,6 +167,7 @@
         "title_VJYpaX",
         "quick_buy_JpjgdR"
       ],
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "heading": "Featured collection",
