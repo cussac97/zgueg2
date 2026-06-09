@@ -402,9 +402,9 @@
           "type": "title",
           "settings": {
             "title": "Se laver au gel douche classique, c'est agresser une zone fragile",
-            "title_size": "heading-size--small",
+            "title_size": "heading-size--regular",
             "title_weight": "400",
-            "title_size_custom": 52,
+            "title_size_custom": 0,
             "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
           }
@@ -462,8 +462,8 @@
           "type": "title",
           "settings": {
             "title": "Un nettoyage intime qui respecte ta flore",
-            "title_size": "heading-size--small",
-            "title_weight": "inherit",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
             "title_size_custom": 0,
             "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
