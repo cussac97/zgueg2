@@ -28,7 +28,7 @@
             "offset_x": 0,
             "offset_y": 0,
             "pos_mobile": "inherit",
-            "max_width": 55,
+            "max_width": 78,
             "max_width_mobile": 90,
             "hide_desktop": false,
             "hide_mobile": false
@@ -80,7 +80,7 @@
             "offset_x": 0,
             "offset_y": 0,
             "pos_mobile": "inherit",
-            "max_width": 40,
+            "max_width": 67,
             "max_width_mobile": 90,
             "hide_desktop": false,
             "hide_mobile": false
@@ -127,7 +127,7 @@
         "mobile_height": "80vh",
         "mobile_height_px": 520,
         "min_height": 420,
-        "background_image": "shopify://shop_images/cosmos_633994579.jpg",
+        "background_image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_21_07.png",
         "background_image_mobile": "shopify://shop_images/why-us-bg.webp",
         "image_position": "center",
         "background_color": "rgba(0,0,0,0)",
