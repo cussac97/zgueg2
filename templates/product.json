@@ -155,6 +155,39 @@
             "hide_block_if": false
           }
         },
+        "reassort_DNpYLw": {
+          "type": "reassort",
+          "settings": {
+            "display_condition": "always",
+            "icon": "truck",
+            "ship_in_days": 5,
+            "heading": "Ce produit est en rupture de stock, mais vous pouvez quand même le commander",
+            "heading_size": 18,
+            "heading_font": "theme",
+            "reserved_percent": 70,
+            "subtext": "{percent}% du réassort est déjà réservé",
+            "show_progress_bar": true,
+            "show_percent_label": true,
+            "bar_height": 8,
+            "bar_radius": 50,
+            "animate_bar": true,
+            "min_percent": 0,
+            "max_percent": 95,
+            "show_disclaimer": false,
+            "disclaimer": "Stock limité à cette série de production.",
+            "text_alignment": "center",
+            "accent_color": "#d4ac66",
+            "track_color": "#fffdfa",
+            "text_color": "#1a1a1a",
+            "muted_color": "#6b6b6b",
+            "show_card": true,
+            "card_background": "#f8f3ec",
+            "card_border_color": "#ececec",
+            "card_border_width": 0,
+            "card_radius": 12,
+            "card_padding": 16
+          }
+        },
         "collapsible_tab_zXdGmR": {
           "type": "collapsible_tab",
           "settings": {
@@ -201,6 +234,7 @@
         "variant_bundler_6mBmkR",
         "buy_buttons",
         "icons_Knqhhh",
+        "reassort_DNpYLw",
         "collapsible_tab_zXdGmR",
         "collapsible_tab_P4hk8m",
         "collapsible_tab_RKezaD",
