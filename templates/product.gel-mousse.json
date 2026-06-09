@@ -328,7 +328,7 @@
         "gallery_mobile_margin": false,
         "gallery_aspect_ratio": "1",
         "gallery_fit": false,
-        "gallery_padding": 5,
+        "gallery_padding": 8,
         "section_background_color": "#ffffff",
         "gallery_background": "#ededed",
         "gallery_border": "rgba(0,0,0,0)",
@@ -762,11 +762,11 @@
             "helpful_up": 2,
             "helpful_down": 2,
             "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "13 mai 2026",
-            "reply_text": "Merci JB (et merci à ta copine 😄). Ravis que ça change l'ambiance à la maison. Pour les jours de grosse chaleur, garde le spray dans le sac. contact@zgueg.fr",
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+            "reply_text": "Merci JB (et merci à ta copine 😄). Ravis que ça change l'ambiance à la maison. Pour les jours de grosse chaleur, garde le spray dans le sac. contact@zgueg.fr"
           }
         },
         "review_r06": {
@@ -820,11 +820,11 @@
             "helpful_up": 12,
             "helpful_down": 0,
             "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "22 mai 2026",
-            "reply_text": "Merci Sofiane ! La canicule c'est le vrai test, content que ça ait tenu 🔥 Le spray en renfort l'après-midi et t'es peinard. contact@zgueg.fr",
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+            "reply_text": "Merci Sofiane ! La canicule c'est le vrai test, content que ça ait tenu 🔥 Le spray en renfort l'après-midi et t'es peinard. contact@zgueg.fr"
           }
         },
         "review_r09": {
@@ -859,11 +859,11 @@
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "16 mai 2026",
-            "reply_text": "Haha merci Yanis, on adore les retours cash 😄 Ravis que madame valide. À dispo si besoin : contact@zgueg.fr",
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+            "reply_text": "Haha merci Yanis, on adore les retours cash 😄 Ravis que madame valide. À dispo si besoin : contact@zgueg.fr"
           }
         },
         "review_r11": {
@@ -936,11 +936,11 @@
             "helpful_up": 11,
             "helpful_down": 0,
             "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "23 mai 2026",
-            "reply_text": "Merci Romain ! La centella et l'armoise sont là exactement pour ça. Ravis que ta peau dise enfin merci 🙌 contact@zgueg.fr",
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+            "reply_text": "Merci Romain ! La centella et l'armoise sont là exactement pour ça. Ravis que ta peau dise enfin merci 🙌 contact@zgueg.fr"
           }
         },
         "review_r15": {
@@ -975,11 +975,11 @@
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "17 mai 2026",
-            "reply_text": "Merci Karim, droit au but 😄 Exactement l'effet recherché. Le spray pour les coups de chaud en journée si jamais. contact@zgueg.fr",
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+            "reply_text": "Merci Karim, droit au but 😄 Exactement l'effet recherché. Le spray pour les coups de chaud en journée si jamais. contact@zgueg.fr"
           }
         },
         "review_r17": {
@@ -1014,11 +1014,11 @@
             "helpful_up": 4,
             "helpful_down": 1,
             "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "11 mai 2026",
-            "reply_text": "Merci Sébastien ! Une noisette suffit donc ramené à l'utilisation ça reste raisonnable, et les packs font baisser la note 😉 contact@zgueg.fr",
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+            "reply_text": "Merci Sébastien ! Une noisette suffit donc ramené à l'utilisation ça reste raisonnable, et les packs font baisser la note 😉 contact@zgueg.fr"
           }
         },
         "review_r19": {
