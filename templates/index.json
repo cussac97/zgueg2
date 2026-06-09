@@ -140,45 +140,51 @@
         "remove_spacing": true
       }
     },
-    "products_bundle_fjBq6T": {
-      "type": "products-bundle",
+    "featured_collection_twN73x": {
+      "type": "featured-collection",
       "blocks": {
-        "price_VrreQ3": {
+        "price_wtTkr8": {
           "type": "price",
           "settings": {}
         },
-        "title_xyQDnw": {
+        "title_VJYpaX": {
           "type": "title",
           "settings": {}
+        },
+        "quick_buy_JpjgdR": {
+          "type": "quick_buy",
+          "settings": {
+            "type": "inline",
+            "show_only_available": false,
+            "show_price": true,
+            "variant_default": false,
+            "unavailable_variants": "hide"
+          }
         }
       },
       "block_order": [
-        "price_VrreQ3",
-        "title_xyQDnw"
+        "price_wtTkr8",
+        "title_VJYpaX",
+        "quick_buy_JpjgdR"
       ],
-      "name": "t:sections.bundle-extra-words.sections.products_bundle.name",
+      "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "heading": "Products bundle",
-        "subheading": "Share your <strong>best</strong> offers",
-        "section_heading_size": "text-size--regular",
-        "section_heading_layout": "section-heading--left section-heading--one-row",
-        "cta_label": "",
-        "cta_url": "",
-        "select_collection": "",
-        "collection_limit": 3,
-        "select_products": [
-          "cleaned-®-gel-mousse-nettoyant-quotidien",
-          "spray-reequilibrant-intime-pour-homme"
-        ],
-        "limit_bundles": true,
-        "layout_mobile": "grid-palm-1",
-        "discount_title": "Add 2 items to get a discount",
-        "discount_items": 2,
-        "limit_maximum": false,
-        "panel_bg_color": "#3E3E3E",
-        "panel_text_color": "#F5F5F5",
-        "discount_opened": true,
+        "heading": "Featured collection",
+        "subheading": "",
+        "section_heading_size": "text-size--large",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "show_view_all": true,
+        "layout": "grid-4 grid-portable-3 grid-lap-2",
+        "layout_mobile": "grid-palm-2",
+        "card_alignment": "left",
+        "style": "grid",
+        "products_number": 2,
+        "collection": "frontpage",
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
         "gutter_decrease": false,
+        "remove_bottom_margin": false,
         "seo_h_tag": "h2"
       }
     },
@@ -616,7 +622,7 @@
   },
   "order": [
     "enriched_hero_e4bhR9",
-    "products_bundle_fjBq6T",
+    "featured_collection_twN73x",
     "rich_text_EcNqNq",
     "certifications_DDdq8b",
     "rich_text_3E9aKj",
