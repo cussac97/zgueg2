@@ -674,17 +674,17 @@
         "row_MRNn6x": {
           "type": "row",
           "settings": {
-            "label": "Surface utile* (plus grand = mieux)",
-            "value_brand": "60 cm²",
-            "value_1": "49 cm²",
-            "value_2": "58 cm²",
+            "label": "pH* (la zone intime vit à ≈ 5,5)",
+            "value_brand": "5,5",
+            "value_1": "8,5",
+            "value_2": "6,5",
             "value_3": ""
           }
         },
         "row_Lh8e4f": {
           "type": "row",
           "settings": {
-            "label": "Enrichi en actifs naturels",
+            "label": "Tensioactifs 100 % végétaux",
             "value_brand": "Oui",
             "value_1": "Non",
             "value_2": "Non",
@@ -694,40 +694,40 @@
         "row_GFYk4G": {
           "type": "row",
           "settings": {
-            "label": "Densité de la formule* (plus élevée = mieux)",
-            "value_brand": "78 g/m²",
-            "value_1": "52 g/m²",
-            "value_2": "59 g/m²",
+            "label": "Ferments probiotiques rééquilibrants (Lactobacillus, Bifida)",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
             "value_3": ""
           }
         },
         "row_V8Jyah": {
           "type": "row",
           "settings": {
-            "label": "Testé dermatologiquement",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
+            "label": "Actifs apaisants* (centella, armoise, thé vert…)",
+            "value_brand": "4",
+            "value_1": "0",
+            "value_2": "1",
             "value_3": ""
           }
         },
         "row_dMdTM7": {
           "type": "row",
           "settings": {
-            "label": "Fabriqué en France",
+            "label": "Conçu pour la zone intime masculine",
             "value_brand": "Oui",
             "value_1": "Non",
-            "value_2": "Non",
+            "value_2": "Oui",
             "value_3": ""
           }
         },
         "row_X3C9gH": {
           "type": "row",
           "settings": {
-            "label": "Sans parfum de synthèse",
+            "label": "Sans savon, sans parfum de synthèse",
             "value_brand": "Oui",
             "value_1": "Non",
-            "value_2": "Oui",
+            "value_2": "Non",
             "value_3": ""
           }
         }
@@ -749,15 +749,15 @@
         "cta_label": "",
         "cta_url": "",
         "brand_logo_width": 120,
-        "brand_name": "Votre marque",
-        "brand_tagline": "Le produit malin",
-        "competitor_1": "Grande marque",
-        "competitor_2": "Autre marque DTC",
+        "brand_name": "zgueg",
+        "brand_tagline": "Gel mousse Cleaned®",
+        "competitor_1": "Gel douche classique",
+        "competitor_2": "Autre gel intime",
         "competitor_3": "",
         "yes_no_icons": false,
         "value_font": "comparison-table--mono",
         "value_alignment": "center",
-        "footnote": "<p>*Basé sur les sites, produits et emballages des marques concurrentes au moment de la publication.</p>",
+        "footnote": "<p>*Basé sur la composition type des gels douches et gels intimes du commerce au moment de la publication.</p>",
         "section_background": "",
         "table_background": "#FFFFFF",
         "text_color": "#1A1A1A",
