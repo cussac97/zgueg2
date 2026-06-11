@@ -1431,12 +1431,14 @@ html[dir=ltr] .product-quick-view__title {
   min-height: 20px;
 }
 
-/* Taille personnalisée du titre produit (bloc titre, réglages desktop/mobile) */
-.product__title.product__title--custom-size {
-  font-size: var(--pt-fs);
+/* Taille personnalisée du titre produit (bloc titre, réglages desktop/mobile indépendants) */
+@media screen and (min-width: 750px) {
+  .product__title.product__title--custom-size {
+    font-size: var(--pt-fs);
+  }
 }
 @media screen and (max-width: 749px) {
-  .product__title.product__title--custom-size {
-    font-size: var(--pt-fs-m, var(--pt-fs));
+  .product__title.product__title--custom-size-m {
+    font-size: var(--pt-fs-m);
   }
 }

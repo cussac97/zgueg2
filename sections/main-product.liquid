@@ -900,9 +900,9 @@
                 endif
                 if title_size > 0
                   echo '--pt-fs:' | append: title_size | append: 'px;'
-                  if title_size_mobile > 0
-                    echo '--pt-fs-m:' | append: title_size_mobile | append: 'px;'
-                  endif
+                endif
+                if title_size_mobile > 0
+                  echo '--pt-fs-m:' | append: title_size_mobile | append: 'px;'
                 endif
                 if title_color != blank and title_color != 'rgba(0,0,0,0)'
                   echo 'color:' | append: title_color | append: ';'
@@ -923,7 +923,7 @@
                 endif
               endcapture
             -%}
-            <h1 class="product__title heading-size--page-title{% if title_size > 0 %} product__title--custom-size{% endif %}" style="{{ title_style }}" {{ block.shopify_attributes }}>
+            <h1 class="product__title heading-size--page-title{% if title_size > 0 %} product__title--custom-size{% endif %}{% if title_size_mobile > 0 %} product__title--custom-size-m{% endif %}" style="{{ title_style }}" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
 
@@ -2683,7 +2683,7 @@
           "type": "range",
           "id": "title_font_size_mobile",
           "label": "Taille du texte sur mobile (0 = automatique)",
-          "info": "Appliquée sous 750px, uniquement si une taille desktop est définie.",
+          "info": "Appliquée sous 750 px, indépendamment de la taille desktop.",
           "min": 0,
           "max": 80,
           "step": 2,

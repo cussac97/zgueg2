@@ -174,7 +174,7 @@
           "settings": {
             "title_font": "theme",
             "title_font_size": 52,
-            "title_font_size_mobile": 0,
+            "title_font_size_mobile": 32,
             "title_font_weight": "400",
             "title_text_transform": "none",
             "title_letter_spacing": 0,
