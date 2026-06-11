@@ -898,6 +898,12 @@
                 if title_font_family != ''
                   echo 'font-family:' | append: title_font_family | append: ';'
                 endif
+                if title_size > 0
+                  echo '--pt-fs:' | append: title_size | append: 'px;'
+                  if title_size_mobile > 0
+                    echo '--pt-fs-m:' | append: title_size_mobile | append: 'px;'
+                  endif
+                endif
                 if title_color != blank and title_color != 'rgba(0,0,0,0)'
                   echo 'color:' | append: title_color | append: ';'
                 endif
@@ -917,21 +923,7 @@
                 endif
               endcapture
             -%}
-            {%- if title_size > 0 -%}
-              {%- style -%}
-                #shopify-section-{{ section.id }} .product__title {
-                  font-size: {{ title_size }}px;
-                }
-                {%- if title_size_mobile > 0 %}
-                  @media screen and (max-width: 749px) {
-                    #shopify-section-{{ section.id }} .product__title {
-                      font-size: {{ title_size_mobile }}px;
-                    }
-                  }
-                {%- endif %}
-              {%- endstyle -%}
-            {%- endif -%}
-            <h1 class="product__title heading-size--page-title" style="{{ title_style }}" {{ block.shopify_attributes }}>
+            <h1 class="product__title heading-size--page-title{% if title_size > 0 %} product__title--custom-size{% endif %}" style="{{ title_style }}" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
 
