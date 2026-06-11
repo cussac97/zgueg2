@@ -2,6 +2,15 @@
   assign s = section.settings
   assign uid = section.id
   assign recolor = s.icon_recolor
+
+  assign body_align = s.body_alignment | default: 'left'
+  if body_align == 'center'
+    assign body_margin = '0 auto'
+  elsif body_align == 'right'
+    assign body_margin = '0 0 0 auto'
+  else
+    assign body_margin = '0'
+  endif
 -%}
 
 {% style %}
@@ -41,7 +50,7 @@
     line-height: 1.5;
     color: var(--cert-body);
     text-align: {{ s.body_alignment | default: 'left' }};
-    margin: 0;
+    margin: {{ body_margin }};
     max-width: {{ s.body_max_width | default: 640 }}px;
   }
   #cert-{{ uid }} .cert-body > *:first-child { margin-top: 0; }
