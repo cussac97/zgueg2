@@ -1,0 +1,630 @@
+{{ 'section-comparison-table.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="comparison-table-section">
+  {%- style -%}
+    #section-{{ section.id }} {
+      {%- if section.settings.section_background != blank %}
+      --ct-section-bg: {{ section.settings.section_background }};
+      {%- endif %}
+      --ct-table-bg: {{ section.settings.table_background }};
+      --ct-text: {{ section.settings.text_color }};
+      --ct-value-color: {{ section.settings.value_color }};
+      --ct-line: {{ section.settings.line_color }};
+      --ct-hl-bg: {{ section.settings.highlight_background }};
+      --ct-hl-border: {{ section.settings.highlight_border }};
+      --ct-hl-color: {{ section.settings.highlight_text }};
+      --ct-hl-bw: {{ section.settings.highlight_border_width }}px;
+      --ct-radius: {{ section.settings.border_radius }}px;
+      --ct-pad-y: {{ section.settings.cell_padding_y }}px;
+      --ct-pad-x: {{ section.settings.cell_padding_x }}px;
+      --ct-first-col: {{ section.settings.first_col_width }}%;
+      --ct-col-min: {{ section.settings.mobile_col_width }}px;
+      --ct-logo-w: {{ section.settings.brand_logo_width }}px;
+      --ct-label-size: {{ section.settings.label_size }}px;
+      --ct-header-size: {{ section.settings.header_size }}px;
+      --ct-value-size: {{ section.settings.value_size }}px;
+      --ct-footnote-size: {{ section.settings.footnote_size }}px;
+      --ct-value-align: {{ section.settings.value_alignment }};
+    }
+  {%- endstyle -%}
+
+  <div class="container--large container--vertical-space{% if section.settings.gutter_decrease %}-small{% endif %} remove-empty-space">
+    {%- render 'section-heading',
+      heading: section.settings.heading,
+      subheading: section.settings.subheading,
+      heading_size: section.settings.section_heading_size,
+      section_layout: section.settings.section_heading_layout,
+      button: section.settings.cta_label,
+      button_label: section.settings.cta_label,
+      link: section.settings.cta_url,
+      seo_h_tag: section.settings.seo_h_tag
+    -%}
+
+    {%- liquid
+      assign table_classes = 'comparison-table ' | append: section.settings.value_font
+      if section.settings.sticky_first_column
+        assign table_classes = table_classes | append: ' comparison-table--sticky-first'
+      endif
+    -%}
+
+    <div class="comparison-table__scroller">
+      <table class="{{ table_classes }}">
+        {%- if section.settings.heading != blank -%}
+          <caption class="visually-hidden">{{ section.settings.heading | escape }}</caption>
+        {%- endif -%}
+        <thead>
+          <tr>
+            <td class="comparison-table__feature"></td>
+            <th scope="col" class="is-brand">
+              <div class="comparison-table__brand">
+                {%- if section.settings.brand_logo != blank -%}
+                  {%- assign logo_width = section.settings.brand_logo_width | times: 2 -%}
+                  {{ section.settings.brand_logo | image_url: width: logo_width | image_tag: loading: 'lazy' }}
+                {%- elsif section.settings.brand_name != blank -%}
+                  <span class="comparison-table__brand-name">{{ section.settings.brand_name | escape }}</span>
+                {%- endif -%}
+                {%- if section.settings.brand_tagline != blank -%}
+                  <span class="comparison-table__brand-tagline">{{ section.settings.brand_tagline | escape }}</span>
+                {%- endif -%}
+              </div>
+            </th>
+            {%- if section.settings.competitor_1 != blank -%}
+              <th scope="col">{{ section.settings.competitor_1 | escape }}</th>
+            {%- endif -%}
+            {%- if section.settings.competitor_2 != blank -%}
+              <th scope="col">{{ section.settings.competitor_2 | escape }}</th>
+            {%- endif -%}
+            {%- if section.settings.competitor_3 != blank -%}
+              <th scope="col">{{ section.settings.competitor_3 | escape }}</th>
+            {%- endif -%}
+          </tr>
+        </thead>
+        <tbody>
+          {%- for block in section.blocks -%}
+            <tr {{ block.shopify_attributes }}>
+              <th scope="row" class="comparison-table__feature">{{ block.settings.label | escape }}</th>
+              <td class="is-brand">
+                <span class="comparison-table__value">
+                  {%- render 'comparison-table-value', value: block.settings.value_brand, icons: section.settings.yes_no_icons -%}
+                </span>
+              </td>
+              {%- if section.settings.competitor_1 != blank -%}
+                <td>
+                  <span class="comparison-table__value">
+                    {%- render 'comparison-table-value', value: block.settings.value_1, icons: section.settings.yes_no_icons -%}
+                  </span>
+                </td>
+              {%- endif -%}
+              {%- if section.settings.competitor_2 != blank -%}
+                <td>
+                  <span class="comparison-table__value">
+                    {%- render 'comparison-table-value', value: block.settings.value_2, icons: section.settings.yes_no_icons -%}
+                  </span>
+                </td>
+              {%- endif -%}
+              {%- if section.settings.competitor_3 != blank -%}
+                <td>
+                  <span class="comparison-table__value">
+                    {%- render 'comparison-table-value', value: block.settings.value_3, icons: section.settings.yes_no_icons -%}
+                  </span>
+                </td>
+              {%- endif -%}
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+
+    {%- if section.settings.footnote != blank -%}
+      <div class="comparison-table__footnote">{{ section.settings.footnote }}</div>
+    {%- endif -%}
+  </div>
+
+  {%- render 'section-footer',
+    button: section.settings.cta_label,
+    button_label: section.settings.cta_label,
+    link: section.settings.cta_url
+  -%}
+</div>
+
+{% schema %}
+{
+  "name": "Tableau comparatif",
+  "max_blocks": 16,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Titre de section"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "Aucune concurrence"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Sous-titre"
+    },
+    {
+      "type": "select",
+      "id": "section_heading_size",
+      "label": "Taille du titre",
+      "options": [
+        {
+          "value": "text-size--regular",
+          "label": "Normale"
+        },
+        {
+          "value": "text-size--large",
+          "label": "Grande"
+        }
+      ],
+      "default": "text-size--large"
+    },
+    {
+      "type": "select",
+      "id": "section_heading_layout",
+      "label": "Disposition du titre",
+      "options": [
+        {
+          "value": "section-heading--left section-heading--one-row",
+          "label": "À gauche, une ligne"
+        },
+        {
+          "value": "section-heading--left section-heading--two-rows",
+          "label": "À gauche, deux lignes"
+        },
+        {
+          "value": "section-heading--center section-heading--two-rows",
+          "label": "Centré"
+        }
+      ],
+      "default": "section-heading--left section-heading--one-row"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Texte du bouton"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "visible_if": "{{ section.settings.cta_label != blank }}",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "header",
+      "content": "Colonne mise en avant (votre marque)"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_logo",
+      "label": "Logo"
+    },
+    {
+      "type": "range",
+      "id": "brand_logo_width",
+      "visible_if": "{{ section.settings.brand_logo != blank }}",
+      "label": "Largeur du logo",
+      "min": 40,
+      "max": 240,
+      "step": 5,
+      "unit": "px",
+      "default": 120
+    },
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Nom de la marque",
+      "info": "Affiché si aucun logo n'est sélectionné.",
+      "default": "Votre marque"
+    },
+    {
+      "type": "text",
+      "id": "brand_tagline",
+      "label": "Texte à côté du logo",
+      "default": "Le produit malin"
+    },
+    {
+      "type": "header",
+      "content": "Concurrents"
+    },
+    {
+      "type": "paragraph",
+      "content": "Laissez un nom vide pour masquer la colonne."
+    },
+    {
+      "type": "text",
+      "id": "competitor_1",
+      "label": "Concurrent 1",
+      "default": "Grande marque"
+    },
+    {
+      "type": "text",
+      "id": "competitor_2",
+      "label": "Concurrent 2",
+      "default": "Autre marque DTC"
+    },
+    {
+      "type": "text",
+      "id": "competitor_3",
+      "label": "Concurrent 3"
+    },
+    {
+      "type": "header",
+      "content": "Valeurs"
+    },
+    {
+      "type": "checkbox",
+      "id": "yes_no_icons",
+      "label": "Remplacer « Oui » / « Non » par des icônes ✓ / ✕",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "value_font",
+      "label": "Police des valeurs",
+      "options": [
+        {
+          "value": "comparison-table--mono",
+          "label": "Monospace (fidèle au design)"
+        },
+        {
+          "value": "comparison-table--text",
+          "label": "Police du thème"
+        }
+      ],
+      "default": "comparison-table--mono"
+    },
+    {
+      "type": "select",
+      "id": "value_alignment",
+      "label": "Alignement des valeurs",
+      "options": [
+        {
+          "value": "left",
+          "label": "À gauche"
+        },
+        {
+          "value": "center",
+          "label": "Centré"
+        },
+        {
+          "value": "right",
+          "label": "À droite"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Note de bas de tableau"
+    },
+    {
+      "type": "richtext",
+      "id": "footnote",
+      "label": "Note",
+      "default": "<p>*Basé sur les sites, produits et emballages des marques concurrentes au moment de la publication.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color_background",
+      "id": "section_background",
+      "label": "Fond de la section"
+    },
+    {
+      "type": "color",
+      "id": "table_background",
+      "label": "Fond du tableau",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Texte",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "color",
+      "id": "value_color",
+      "label": "Valeurs des concurrents",
+      "default": "#4F4F4F"
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "Lignes du tableau",
+      "default": "#E6E6E6"
+    },
+    {
+      "type": "color",
+      "id": "highlight_background",
+      "label": "Fond de la colonne mise en avant",
+      "default": "#E8EDFB"
+    },
+    {
+      "type": "color",
+      "id": "highlight_border",
+      "label": "Bordure de la colonne mise en avant",
+      "default": "#2545D3"
+    },
+    {
+      "type": "color",
+      "id": "highlight_text",
+      "label": "Valeurs de la colonne mise en avant",
+      "default": "#2545D3"
+    },
+    {
+      "type": "header",
+      "content": "Style du tableau"
+    },
+    {
+      "type": "range",
+      "id": "highlight_border_width",
+      "label": "Épaisseur de la bordure mise en avant",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Arrondi des angles",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "cell_padding_y",
+      "label": "Hauteur des lignes",
+      "info": "Espace vertical dans chaque cellule.",
+      "min": 12,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "cell_padding_x",
+      "label": "Espace horizontal des cellules",
+      "min": 8,
+      "max": 64,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "first_col_width",
+      "label": "Largeur de la colonne des critères",
+      "min": 20,
+      "max": 45,
+      "step": 1,
+      "unit": "%",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Typographie"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "label": "Taille des critères",
+      "min": 12,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "header_size",
+      "label": "Taille des en-têtes de colonnes",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "value_size",
+      "label": "Taille des valeurs",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "footnote_size",
+      "label": "Taille de la note",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky_first_column",
+      "label": "Figer la colonne des critères au défilement",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "mobile_col_width",
+      "label": "Largeur minimale des colonnes",
+      "min": 100,
+      "max": 240,
+      "step": 10,
+      "unit": "px",
+      "default": 140
+    },
+    {
+      "type": "header",
+      "content": "Espacement"
+    },
+    {
+      "type": "checkbox",
+      "id": "gutter_decrease",
+      "label": "Réduire l'espacement vertical",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "SEO"
+    },
+    {
+      "type": "select",
+      "id": "seo_h_tag",
+      "label": "Balise du titre",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "span",
+          "label": "span"
+        }
+      ],
+      "default": "h2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Critère",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Nom du critère",
+          "default": "Critère"
+        },
+        {
+          "type": "text",
+          "id": "value_brand",
+          "label": "Valeur — votre marque",
+          "default": "Oui"
+        },
+        {
+          "type": "text",
+          "id": "value_1",
+          "visible_if": "{{ section.settings.competitor_1 != blank }}",
+          "label": "Valeur — concurrent 1",
+          "default": "Non"
+        },
+        {
+          "type": "text",
+          "id": "value_2",
+          "visible_if": "{{ section.settings.competitor_2 != blank }}",
+          "label": "Valeur — concurrent 2",
+          "default": "Non"
+        },
+        {
+          "type": "text",
+          "id": "value_3",
+          "visible_if": "{{ section.settings.competitor_3 != blank }}",
+          "label": "Valeur — concurrent 3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tableau comparatif",
+      "category": "t:sections-categories.storytelling",
+      "blocks": [
+        {
+          "type": "row",
+          "settings": {
+            "label": "Surface utile* (plus grand = mieux)",
+            "value_brand": "60 cm²",
+            "value_1": "49 cm²",
+            "value_2": "58 cm²"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Enrichi en actifs naturels",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Densité de la formule* (plus élevée = mieux)",
+            "value_brand": "78 g/m²",
+            "value_1": "52 g/m²",
+            "value_2": "59 g/m²"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Testé dermatologiquement",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Fabriqué en France",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Sans parfum de synthèse",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Oui"
+          }
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header"]
+  }
+}
+{% endschema %}

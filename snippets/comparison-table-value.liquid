@@ -1,0 +1,34 @@
+{% doc %}
+  Renders a single cell value of the comparison table section. When icons
+  is true, values equal to oui/yes are replaced by a checkmark icon and
+  non/no by a cross icon (the original text is kept for screen readers).
+
+  @param {string} value - The raw value to display
+  @param {boolean} [icons] - Replace yes/no values with icons
+
+  @example
+  {% render 'comparison-table-value', value: 'Oui', icons: true %}
+{% enddoc %}
+
+{%- liquid
+  assign v = value | strip
+  assign v_down = v | downcase
+  assign mode = 'text'
+  if icons
+    if v_down == 'oui' or v_down == 'yes'
+      assign mode = 'yes'
+    elsif v_down == 'non' or v_down == 'no'
+      assign mode = 'no'
+    endif
+  endif
+-%}
+
+{%- if mode == 'yes' -%}
+  <svg class="comparison-table__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5L19.5 7"/></svg>
+  <span class="visually-hidden">{{ v | escape }}</span>
+{%- elsif mode == 'no' -%}
+  <svg class="comparison-table__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  <span class="visually-hidden">{{ v | escape }}</span>
+{%- else -%}
+  {{- v | escape -}}
+{%- endif -%}
