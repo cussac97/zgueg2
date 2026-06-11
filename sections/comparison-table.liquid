@@ -26,13 +26,29 @@
       --ct-footnote-size: {{ section.settings.footnote_size }}px;
       --ct-value-align: {{ section.settings.value_alignment }};
     }
+
+    #section-{{ section.id }} .section-heading__title {
+      font-family: var(--font-stack-headings-primary);
+      font-weight: {{ section.settings.heading_weight }};
+      font-size: {{ section.settings.heading_size_mobile }}px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      {%- if section.settings.heading_color != blank and section.settings.heading_color != 'rgba(0,0,0,0)' %}
+      color: {{ section.settings.heading_color }};
+      {%- endif %}
+    }
+
+    @media screen and (min-width: 750px) {
+      #section-{{ section.id }} .section-heading__title {
+        font-size: {{ section.settings.heading_size }}px;
+      }
+    }
   {%- endstyle -%}
 
   <div class="container--large container--vertical-space{% if section.settings.gutter_decrease %}-small{% endif %} remove-empty-space">
     {%- render 'section-heading',
       heading: section.settings.heading,
       subheading: section.settings.subheading,
-      heading_size: section.settings.section_heading_size,
       section_layout: section.settings.section_heading_layout,
       button: section.settings.cta_label,
       button_label: section.settings.cta_label,
@@ -148,20 +164,59 @@
       "label": "Sous-titre"
     },
     {
-      "type": "select",
-      "id": "section_heading_size",
+      "type": "range",
+      "id": "heading_size",
       "label": "Taille du titre",
+      "min": 24,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Taille du titre sur mobile",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Graisse du titre",
       "options": [
         {
-          "value": "text-size--regular",
-          "label": "Normale"
+          "value": "300",
+          "label": "Light (300)"
         },
         {
-          "value": "text-size--large",
-          "label": "Grande"
+          "value": "400",
+          "label": "Normal (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold (600)"
+        },
+        {
+          "value": "700",
+          "label": "Bold (700)"
         }
       ],
-      "default": "text-size--large"
+      "default": "400"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Couleur du titre",
+      "info": "Transparent = couleur du thème.",
+      "default": "rgba(0,0,0,0)"
     },
     {
       "type": "select",

@@ -886,6 +886,7 @@
               endif
 
               assign title_size = block.settings.title_font_size | default: 0
+              assign title_size_mobile = block.settings.title_font_size_mobile | default: 0
               assign title_color = block.settings.title_color
               assign title_weight = block.settings.title_font_weight | default: 'inherit'
               assign title_transform = block.settings.title_text_transform | default: 'none'
@@ -896,9 +897,6 @@
               capture title_style
                 if title_font_family != ''
                   echo 'font-family:' | append: title_font_family | append: ';'
-                endif
-                if title_size > 0
-                  echo 'font-size:' | append: title_size | append: 'px;'
                 endif
                 if title_color != blank and title_color != 'rgba(0,0,0,0)'
                   echo 'color:' | append: title_color | append: ';'
@@ -919,6 +917,20 @@
                 endif
               endcapture
             -%}
+            {%- if title_size > 0 -%}
+              {%- style -%}
+                #shopify-section-{{ section.id }} .product__title {
+                  font-size: {{ title_size }}px;
+                }
+                {%- if title_size_mobile > 0 %}
+                  @media screen and (max-width: 749px) {
+                    #shopify-section-{{ section.id }} .product__title {
+                      font-size: {{ title_size_mobile }}px;
+                    }
+                  }
+                {%- endif %}
+              {%- endstyle -%}
+            {%- endif -%}
             <h1 class="product__title heading-size--page-title" style="{{ title_style }}" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
@@ -2671,6 +2683,17 @@
           "label": "Taille du texte (0 = taille du thème)",
           "min": 0,
           "max": 120,
+          "step": 2,
+          "unit": "px",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "title_font_size_mobile",
+          "label": "Taille du texte sur mobile (0 = automatique)",
+          "info": "Appliquée sous 750px, uniquement si une taille desktop est définie.",
+          "min": 0,
+          "max": 80,
           "step": 2,
           "unit": "px",
           "default": 0

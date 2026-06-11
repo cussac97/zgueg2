@@ -173,7 +173,8 @@
           "type": "title",
           "settings": {
             "title_font": "theme",
-            "title_font_size": 0,
+            "title_font_size": 52,
+            "title_font_size_mobile": 32,
             "title_font_weight": "400",
             "title_text_transform": "none",
             "title_letter_spacing": 0,
@@ -496,8 +497,8 @@
             "title": "Se laver au gel douche classique, c'est agresser une zone fragile",
             "title_size": "heading-size--regular",
             "title_weight": "400",
-            "title_size_custom": 0,
-            "title_size_custom_mobile": 0,
+            "title_size_custom": 52,
+            "title_size_custom_mobile": 32,
             "seo_h_tag": "h2"
           }
         },
@@ -556,8 +557,8 @@
             "title": "Un nettoyage intime qui respecte ta flore",
             "title_size": "heading-size--regular",
             "title_weight": "400",
-            "title_size_custom": 0,
-            "title_size_custom_mobile": 0,
+            "title_size_custom": 52,
+            "title_size_custom_mobile": 32,
             "seo_h_tag": "h2"
           }
         },
@@ -744,7 +745,10 @@
       "settings": {
         "heading": "La concurrence ? Y'en a pas.",
         "subheading": "",
-        "section_heading_size": "text-size--large",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
         "section_heading_layout": "section-heading--left section-heading--one-row",
         "cta_label": "",
         "cta_url": "",
@@ -1213,7 +1217,7 @@
         "heading": "Ils en pensent quoi les zguegs ?",
         "heading_alignment": "left",
         "heading_size": 52,
-        "heading_size_mobile": 34,
+        "heading_size_mobile": 32,
         "heading_weight": "400",
         "show_summary": true,
         "summary_rating": 4.8,
