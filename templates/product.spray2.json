@@ -1,0 +1,1147 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "enriched_hero_tq8Pwr": {
+      "type": "enriched-hero",
+      "blocks": {
+        "heading_eFJXnL": {
+          "type": "heading",
+          "settings": {
+            "text": "Ton nettoyant intime quotidien, sous la douche.",
+            "font_size": 44,
+            "font_size_mobile": 26,
+            "font_weight": "400",
+            "line_height": 120,
+            "letter_spacing": 0,
+            "text_transform": "none",
+            "text_align": "left",
+            "color": "rgba(0,0,0,0)",
+            "pos": "top left",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "max_width": 55,
+            "max_width_mobile": 60,
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "image_CE67bF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "link": "",
+            "width": 140,
+            "width_mobile": 110,
+            "opacity": 100,
+            "pos": "top right",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "divider_JyyNj6": {
+          "type": "divider",
+          "settings": {
+            "length": 100,
+            "thickness": 1,
+            "color": "#ffffff",
+            "opacity": 100,
+            "pos": "bottom left",
+            "offset_x": 0,
+            "offset_y": 20,
+            "pos_mobile": "inherit",
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "text_p3xzR6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tensioactifs 100 % végétaux et pH bas : il élimine en douceur sueur, smegma et odeurs — même après le sport — sans dessécher ni faire tirer la peau. Ses ferments probiotiques rééquilibrent ta flore à chaque lavage. Tu rinces, c'est propre, c'est reparti.</p>",
+            "font_size": 16,
+            "font_size_mobile": 14,
+            "font_weight": "400",
+            "line_height": 150,
+            "opacity": 100,
+            "text_align": "left",
+            "color": "rgba(0,0,0,0)",
+            "pos": "bottom left",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "max_width": 87,
+            "max_width_mobile": 90,
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_eFJXnL",
+        "image_CE67bF",
+        "divider_JyyNj6",
+        "text_p3xzR6"
+      ],
+      "disabled": true,
+      "name": "Enriched hero",
+      "settings": {
+        "width": "full",
+        "content_full_width": true,
+        "content_max_width": 1400,
+        "content_align": "center",
+        "content_padding_x_desktop": 64,
+        "content_padding_y_desktop": 56,
+        "content_padding_x_mobile": 24,
+        "content_padding_y_mobile": 28,
+        "content_padding_top_enable": false,
+        "content_padding_top_desktop": 56,
+        "content_padding_top_mobile": 28,
+        "desktop_height": "70vh",
+        "desktop_height_px": 640,
+        "mobile_height": "60vh",
+        "mobile_height_px": 520,
+        "min_height": 420,
+        "background_image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_14_45_16.png",
+        "image_position": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "overlay_style": "none",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "default_text_color": "#ffffff",
+        "rounded": false,
+        "border_radius": 16,
+        "remove_spacing": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "media_badge_HMcaAm": {
+          "type": "media_badge",
+          "settings": {
+            "badge_text": "",
+            "badge_link": "",
+            "badge_position": "top left",
+            "badge_offset_x": 16,
+            "badge_offset_y": 16,
+            "badge_width": 130,
+            "badge_mobile_width": 80,
+            "badge_rotation": 0,
+            "badge_opacity": 100,
+            "badge_shadow": false,
+            "badge_bg_color": "#ffffff",
+            "badge_text_color": "#1a1a1a",
+            "badge_border_color": "#1a1a1a",
+            "badge_border_width": 1,
+            "badge_radius": 100,
+            "badge_padding_v": 7,
+            "badge_padding_h": 14,
+            "badge_font_size": 13,
+            "badge_font_weight": "700",
+            "badge_text_transform": "uppercase"
+          }
+        },
+        "badges_6Ax9rj": {
+          "type": "badges",
+          "settings": {
+            "tag_bg_color": "#d1e3fb",
+            "tag_text_color": "#0000c9",
+            "tag_border_color": "#0000c9",
+            "tag_radius": 6,
+            "tag_border_width": 0,
+            "tag_padding_vertical": 4,
+            "tag_padding_horizontal": 10,
+            "tag_gap": 8,
+            "tag_font_size": 13,
+            "tag_font_weight": "500",
+            "tag_text_transform": "none",
+            "tag_alignment": "center"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_font": "theme",
+            "title_font_size": 0,
+            "title_font_weight": "400",
+            "title_text_transform": "none",
+            "title_letter_spacing": 0,
+            "title_line_height": 0,
+            "title_color": "rgba(0,0,0,0)",
+            "title_alignment": "center"
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "content_alignment": "center",
+            "badge_text": "",
+            "badge_bg_color": "#0000c9",
+            "badge_text_color": "#ffffff",
+            "badge_radius": 20,
+            "badge_font_size": 15,
+            "badge_font": "theme"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "content_alignment": "center",
+            "product_description_truncated": "full",
+            "collapsible": false,
+            "heading": "Description"
+          }
+        },
+        "variant_bundler_6mBmkR": {
+          "type": "variant_bundler",
+          "settings": {
+            "heading": "Choisissez votre pack",
+            "heading_font": "theme",
+            "heading_alignment": "center",
+            "style": "minimal",
+            "variant_labels": false,
+            "cards_per_row": 2,
+            "card_layout": "image-top",
+            "show_variant_image": true,
+            "show_price": true,
+            "image_ratio": "natural",
+            "image_size": 55,
+            "card_padding": 18,
+            "card_inner_gap": 11,
+            "card_bg_color": "rgba(0,0,0,0)",
+            "card_border_color": "#dddddd",
+            "card_border_width": 1,
+            "card_radius": 12,
+            "selected_border_color": "#0000c9",
+            "badge_text": "10€ de remise",
+            "badge_card": 2,
+            "badge_bg_color": "#0000c9",
+            "badge_text_color": "#ffffff",
+            "badge2_text": "-30%",
+            "badge2_card": 3,
+            "badge2_bg_color": "#0000c9",
+            "badge2_text_color": "#ffffff",
+            "unavailable_variants": "show"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "button_font": "theme",
+            "show_quantity_selector": true,
+            "show_preorder": false,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "show_price": false,
+            "style": "outline",
+            "color_text_buttons": "#0000c9"
+          }
+        },
+        "icons_Knqhhh": {
+          "type": "icons",
+          "settings": {
+            "title": "",
+            "content_alignment": "center",
+            "layout": "horizontal",
+            "margin_top": 20,
+            "margin_bottom": 34,
+            "icon_1_image": "shopify://shop_images/Capture_d_ecran_2026-06-09_a_15.01.51.png",
+            "icon_1_label": "Paiement sécurisé",
+            "icon_2_image": "shopify://shop_images/Capture_d_ecran_2026-06-09_a_15.01.57.png",
+            "icon_2_label": "Livraison gratuite",
+            "icon_3_image": "shopify://shop_images/Capture_d_ecran_2026-06-09_a_15.02.03.png",
+            "icon_3_label": "Support client 9h-18h",
+            "icon_4_label": "",
+            "icon_5_label": "",
+            "icon_6_label": "",
+            "hide_block_if": false
+          }
+        },
+        "collapsible_tab_zXdGmR": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bénéfices",
+            "content": "<ul><li>Nettoie en profondeur sans agresser</li><li>Élimine sueur, smegma et odeurs à la source</li><li>Rééquilibre la flore intime à chaque lavage</li><li>Tensioactifs 100 % végétaux</li><li>pH bas, respecte les muqueuses</li><li>Sans savon, sans parfum agressif</li></ul>",
+            "page": "",
+            "hide_block_if": false
+          }
+        },
+        "collapsible_tab_P4hk8m": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingrédients",
+            "content": "<ul><li>Tensioactifs végétaux doux (coco)</li><li>Ferments probiotiques (Lactobacillus, Bifida)</li><li>Eau d'armoise (Artemisia)</li><li>Centella asiatica</li><li>Houttuynia cordata</li><li>Thé vert (Camellia sinensis)</li><li>Glycérine végétale</li></ul>",
+            "page": "",
+            "hide_block_if": false
+          }
+        },
+        "collapsible_tab_RKezaD": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Pour qui ?",
+            "content": "<p>Conçu pour l'hygiène intime masculine au quotidien. Convient à tous les types de peau. Usage externe uniquement.</p>",
+            "page": "",
+            "hide_block_if": false
+          }
+        },
+        "collapsible_tab_YyQ3H7": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Comment l'utiliser ?",
+            "content": "<p>Sous la douche, applique une noisette de gel moussant sur les parties intimes externes, fais mousser quelques secondes puis rince abondamment. Une fois par jour suffit. Pour rester frais entre deux douches, enchaîne avec le spray rééquilibrant.</p>",
+            "page": "",
+            "hide_block_if": false
+          }
+        }
+      },
+      "block_order": [
+        "media_badge_HMcaAm",
+        "badges_6Ax9rj",
+        "title",
+        "price",
+        "description",
+        "variant_bundler_6mBmkR",
+        "buy_buttons",
+        "icons_Knqhhh",
+        "collapsible_tab_zXdGmR",
+        "collapsible_tab_P4hk8m",
+        "collapsible_tab_RKezaD",
+        "collapsible_tab_YyQ3H7"
+      ],
+      "settings": {
+        "gallery_layout": "two-cols scroll",
+        "enhance_first_image": true,
+        "gallery_desktop_width": "one-half",
+        "gallery_mobile_width": 100,
+        "gallery_mobile_margin": false,
+        "gallery_aspect_ratio": "1",
+        "gallery_fit": false,
+        "gallery_padding": 8,
+        "section_background_color": "#ffffff",
+        "gallery_background": "#ededed",
+        "gallery_border": "rgba(0,0,0,0)",
+        "border_radius": 9,
+        "show_thumbnails": false,
+        "show_first_image_only": true,
+        "enable_zoom": false,
+        "enable_video_looping": false,
+        "enable_video_autoplay": false,
+        "video_fit": true,
+        "default_to_first_variant": true,
+        "sticky_add_to_cart": false,
+        "sticky_atc_variants": false,
+        "sticky_atc_style": "floating",
+        "sticky_bar_bgcolor": "#0000c9",
+        "sticky_bar_txtcolor": "#ffffff"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "product_link": {
+          "type": "product_link",
+          "settings": {
+            "button_label": "View product"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "title",
+        "product_link"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Recommended",
+        "subheading": "Complète ta <strong>routine</strong>",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "layout_desktop": "four-columns",
+        "layout_mobile": "grid-palm-2",
+        "style": "slider",
+        "layout_mobile_less_items": true,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false
+      }
+    },
+    "certifications_Tniktg": {
+      "type": "certifications",
+      "blocks": {
+        "certification_Giz7h8": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.29.png",
+            "label": "Nettoie sans agresser\n\nLes tensioactifs végétaux (coco, glucoside) délogent sueur, smegma et résidus tout en respectant le pH et les muqueuses de la zone intime.",
+            "link": ""
+          }
+        },
+        "certification_8XX37L": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.35.png",
+            "label": "Rééquilibre la flore\n\nLes ferments probiotiques Lactobacillus et Bifida soutiennent la flore intime à chaque lavage, pour limiter le retour des odeurs en fin de journée.",
+            "link": ""
+          }
+        },
+        "certification_w6cwby": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.43.png",
+            "label": "Apaise les irritations\n\nCentella asiatica, armoise et Houttuynia cordata calment les rougeurs et l'inconfort des zones sensibles.",
+            "link": ""
+          }
+        },
+        "certification_XAFn7c": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.56.png",
+            "label": "Assainit sans dessécher\n\nLe thé vert et les actifs purifiants gardent une sensation de fraîcheur durable — la peau reste nette après le sport, sans tirer.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "certification_Giz7h8",
+        "certification_8XX37L",
+        "certification_w6cwby",
+        "certification_XAFn7c"
+      ],
+      "name": "Certifications",
+      "settings": {
+        "container_width": "large",
+        "two_columns": true,
+        "left_width": 47,
+        "column_gap": 48,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "section_bg": "#ffffff",
+        "heading": "Ce que chaque ingrédient fait concrètement",
+        "text_color": "#1a1a1a",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_alignment": "left",
+        "heading_alignment_mobile": "left",
+        "body": "<p>Le gel moussant zgueg combine des actifs choisis pour nettoyer la zone intime masculine en profondeur, sans casser son équilibre. Tensioactifs végétaux, ferments probiotiques et apaisants botaniques : chacun a un rôle précis — ensemble, ils nettoient, rééquilibrent et apaisent, pour rester propre et au sec jusqu'en fin de journée.</p>",
+        "body_color": "#1a1a1a",
+        "body_size": 19,
+        "body_max_width": 640,
+        "body_alignment": "left",
+        "body_alignment_mobile": "left",
+        "icons_per_row": 4,
+        "icons_per_row_mobile": 2,
+        "icon_size": 56,
+        "icon_gap": 24,
+        "row_gap": 28,
+        "label_gap": 14,
+        "icons_margin_top": 40,
+        "icon_recolor": false,
+        "icon_color": "#0000c9",
+        "label_color": "#1a1a1a",
+        "label_size": 13,
+        "label_weight": "400",
+        "label_transform": "none",
+        "show_button": true,
+        "button_label": "Lire la composition",
+        "button_link": "",
+        "button_bg": "#0000c9",
+        "button_text_color": "#ffffff",
+        "button_radius": 40,
+        "button_padding_v": 15,
+        "button_padding_h": 40,
+        "button_font_size": 15,
+        "button_weight": "700",
+        "button_transform": "none",
+        "button_alignment": "center",
+        "button_alignment_mobile": "center",
+        "button_full_width_mobile": false
+      }
+    },
+    "rich_text_FmJFM4": {
+      "type": "rich-text",
+      "blocks": {
+        "image_emEfTD": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_height": 58
+          }
+        },
+        "title_UDcVcH": {
+          "type": "title",
+          "settings": {
+            "title": "Se laver au gel douche classique, c'est agresser une zone fragile",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_GKafAp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Le gel douche classique n'est pas fait pour cette zone : pH trop élevé, parfums agressifs, tensioactifs qui dessèchent. Résultat, la peau tire, ça gratte, et l'odeur revient dès la fin de journée — surtout l'été ou après une séance. Tu nettoies, mais tu déséquilibres en même temps. La zone intime masculine mérite mieux qu'un produit pensé pour les aisselles.</p>",
+            "text_size": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "image_emEfTD",
+        "title_UDcVcH",
+        "text_GKafAp"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_17_03.png",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "large",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "rich_text_LRtXGt": {
+      "type": "rich-text",
+      "blocks": {
+        "image_kbTPya": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_height": 58
+          }
+        },
+        "title_aj3KDD": {
+          "type": "title",
+          "settings": {
+            "title": "Un nettoyage intime qui respecte ta flore",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_fqVCan": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Le gel moussant zgueg associe des tensioactifs 100 % végétaux à un pH bas : il élimine sueur, smegma et résidus sans agresser ni faire tirer la peau. Ses ferments probiotiques (Lactobacillus, Bifida) rééquilibrent ta flore à chaque lavage pour limiter le retour des odeurs, pendant que l'armoise, la centella et le thé vert apaisent irritations et démangeaisons. La mousse est douce, ça ne pique pas — tu te sens propre et au sec, jusqu'au soir.</p>",
+            "text_size": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "image_kbTPya",
+        "title_aj3KDD",
+        "text_fqVCan"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_24_35.png",
+        "video_controls": false,
+        "image_position": "left",
+        "height": "large",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "instagram_shots_943TFC": {
+      "type": "instagram-shots",
+      "blocks": {
+        "photo_hDeBQk": {
+          "type": "photo",
+          "settings": {
+            "ratio": "1:1",
+            "username": "michaelow",
+            "link": "",
+            "rotation": -4,
+            "offset_y": 24
+          }
+        },
+        "photo_hGXnx6": {
+          "type": "photo",
+          "settings": {
+            "ratio": "natural",
+            "username": "labrunette",
+            "link": "",
+            "rotation": 3,
+            "offset_y": 0
+          }
+        },
+        "photo_i8qhkr": {
+          "type": "photo",
+          "settings": {
+            "ratio": "natural",
+            "username": "marielou7",
+            "link": "",
+            "rotation": -2,
+            "offset_y": 44
+          }
+        },
+        "photo_r4iQFa": {
+          "type": "photo",
+          "settings": {
+            "ratio": "natural",
+            "username": "Lhistoiredeanne",
+            "link": "",
+            "rotation": 4,
+            "offset_y": 12
+          }
+        }
+      },
+      "block_order": [
+        "photo_hDeBQk",
+        "photo_hGXnx6",
+        "photo_i8qhkr",
+        "photo_r4iQFa"
+      ],
+      "disabled": true,
+      "name": "Instagram shots",
+      "settings": {
+        "heading": "On t'explique tout",
+        "heading_color": "#1a1a1a",
+        "background_color": "#f7f3ec",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "heading_spacing": 80,
+        "card_width": 245,
+        "card_min_width": 180,
+        "card_min_width_mobile": 150,
+        "gap_horizontal": 38,
+        "gap_vertical": 24,
+        "show_instagram_icon": true,
+        "tilt_images": true
+      }
+    },
+    "customer_reviews_QkecMN": {
+      "type": "customer-reviews",
+      "blocks": {
+        "review_r01": {
+          "type": "review",
+          "settings": {
+            "author": "Kevin R.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "21 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Franchement sceptique au début, un gel spécial pour ça je trouvais ça un peu marketing. Bah j'avais tort. En fin de journée au boulot c'est plus du tout la même chose qu'avec mon gel douche normal, fini l'odeur de transpi et les démangeaisons. La mousse est douce, ça pique pas. Je rachète.",
+            "helpful_up": 14,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Zgueg",
+            "reply_date": "21 mai 2026",
+            "reply_text": "Salut Kevin, content que t'aies tenté le coup malgré tout 😉 C'est exactement pour ça qu'on l'a fait. Si t'as des galères de transpi en journée, le spray complète bien. contact@zgueg.fr"
+          }
+        },
+        "review_r02": {
+          "type": "review",
+          "settings": {
+            "author": "Mehdi 06",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "20 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Nickel. Propre, ça gratte plus, ça sent rien d'agressif. Rien à dire.",
+            "helpful_up": 6,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r03": {
+          "type": "review",
+          "settings": {
+            "author": "Antoine",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 4,
+            "date": "18 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Très bon produit, la peau est apaisée et y'a plus cette odeur en fin de journée. Seul truc, le flacon part vite quand tu l'utilises tous les jours, j'aurais aimé un format plus gros. Sinon top.",
+            "helpful_up": 3,
+            "helpful_down": 1,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "18 mai 2026",
+            "reply_text": "Merci Antoine ! Une petite noisette suffit largement, normalement ça dure un bon moment — mais on note pour un grand format 💪 contact@zgueg.fr"
+          }
+        },
+        "review_r04": {
+          "type": "review",
+          "settings": {
+            "author": "Greg",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "15 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Je fais du crossfit 4 fois par semaine et niveau macération en bas c'était un peu la cata. Depuis que je me lave avec ça après chaque séance plus aucun souci, même le soir. Adopté.",
+            "helpful_up": 9,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r05": {
+          "type": "review",
+          "settings": {
+            "author": "JB.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "12 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "alors au départ ma copine m'a un peu forcé la main parce que bon disons que c'était pas toujours très frais quand je rentrais du taf, et franchement je m'attendais pas à grand chose mais au final c'est elle qui me le rachète maintenant donc voilà je crois que ça dit tout, la mousse est agréable ça sent propre sans sentir le parfum chimique, que du positif",
+            "helpful_up": 2,
+            "helpful_down": 2,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "13 mai 2026",
+            "reply_text": "Merci JB (et merci à ta copine 😄). Ravis que ça change l'ambiance à la maison. Pour les jours de grosse chaleur, garde le spray dans le sac. contact@zgueg.fr"
+          }
+        },
+        "review_r06": {
+          "type": "review",
+          "settings": {
+            "author": "Thomas L.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "9 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Découvert un peu par hasard et je regrette pas. Sensation de propre qui dure, et la peau tire pas après la douche contrairement aux savons classiques.",
+            "helpful_up": 7,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r07": {
+          "type": "review",
+          "settings": {
+            "author": "didier",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 4,
+            "date": "6 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Bon produit, efficace contre les odeurs et doux pour la peau qui devient fragile à mon âge. Je mets 4 parce que le parfum est vraiment très discret, presque rien, j'aurais aimé un poil plus. Mais ça fait le job.",
+            "helpful_up": 4,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r08": {
+          "type": "review",
+          "settings": {
+            "author": "Sofiane",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "22 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Testé pendant la canicule, l'épreuve du feu. Bah écoute au sec et frais toute la journée alors que d'habitude l'été c'est effet sauna direct. Bluffé.",
+            "helpful_up": 12,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "22 mai 2026",
+            "reply_text": "Merci Sofiane ! La canicule c'est le vrai test, content que ça ait tenu 🔥 Le spray en renfort l'après-midi et t'es peinard. contact@zgueg.fr"
+          }
+        },
+        "review_r09": {
+          "type": "review",
+          "settings": {
+            "author": "Marc",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "19 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Que du bonheur. Propre, frais, zéro irritation. Je recommande.",
+            "helpful_up": 5,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r10": {
+          "type": "review",
+          "settings": {
+            "author": "Yanis",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "16 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Bon disons les choses clairement : avant, les bijoux de famille sentaient pas la rose en fin de journée. Là c'est réglé, et madame valide grave. Merci 🙏",
+            "helpful_up": 3,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "16 mai 2026",
+            "reply_text": "Haha merci Yanis, on adore les retours cash 😄 Ravis que madame valide. À dispo si besoin : contact@zgueg.fr"
+          }
+        },
+        "review_r11": {
+          "type": "review",
+          "settings": {
+            "author": "Pierre-Yves",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 4,
+            "date": "13 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Efficace et doux, rien à redire sur le produit en lui-même. Par contre la pompe pousse un peu trop de matière d'un coup, faut faire gaffe au gaspillage. Détail, mais bon.",
+            "helpful_up": 8,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r12": {
+          "type": "review",
+          "settings": {
+            "author": "le_breton29",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "10 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "ça fait des années que je cherchais un truc pour cette zone parce que le gel douche normal ça me desséchait et ça réglait pas le problème d'odeur, et là enfin un produit qui fait ce qu'il dit, peau apaisée plus de démangeaisons et ça sent propre, si j'avais su j'aurais commencé bien avant",
+            "helpful_up": 6,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r13": {
+          "type": "review",
+          "settings": {
+            "author": "Anonyme",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 3,
+            "date": "7 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Le produit est correct, la mousse est agréable et ça nettoie bien. Honnêtement sur les odeurs j'ai vu une petite différence mais pas le miracle annoncé non plus. Après ça dépend peut-être des peaux. Ni déçu ni convaincu à 100%.",
+            "helpful_up": 4,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r14": {
+          "type": "review",
+          "settings": {
+            "author": "Romain",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "23 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "J'ai la peau hyper réactive, la plupart des savons me font des rougeurs en bas. Celui-là rien, nada, et en plus ça apaise. Premier produit que je garde.",
+            "helpful_up": 11,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "23 mai 2026",
+            "reply_text": "Merci Romain ! La centella et l'armoise sont là exactement pour ça. Ravis que ta peau dise enfin merci 🙌 contact@zgueg.fr"
+          }
+        },
+        "review_r15": {
+          "type": "review",
+          "settings": {
+            "author": "Lucie (pour mon copain)",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "20 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Acheté pour mon mec qui osait pas trop aborder le sujet. Résultat il l'utilise tous les jours et c'est plus agréable pour tout le monde si vous voyez ce que je veux dire 😅 Validé.",
+            "helpful_up": 5,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r16": {
+          "type": "review",
+          "settings": {
+            "author": "Karim",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "17 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Fini les boules qui collent l'été. Voilà, tout est dit. Top.",
+            "helpful_up": 3,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "17 mai 2026",
+            "reply_text": "Merci Karim, droit au but 😄 Exactement l'effet recherché. Le spray pour les coups de chaud en journée si jamais. contact@zgueg.fr"
+          }
+        },
+        "review_r17": {
+          "type": "review",
+          "settings": {
+            "author": "fab",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "14 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Simple et efficace. Je rachète direct.",
+            "helpful_up": 6,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r18": {
+          "type": "review",
+          "settings": {
+            "author": "Sébastien M.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 4,
+            "date": "11 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Vraiment bon produit, doux et efficace, aucune irritation. Le seul bémol c'est le prix, un peu cher quand même. Après vu que ça dure et que ça marche, je vais sûrement reprendre.",
+            "helpful_up": 4,
+            "helpful_down": 1,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "11 mai 2026",
+            "reply_text": "Merci Sébastien ! Une noisette suffit donc ramené à l'utilisation ça reste raisonnable, et les packs font baisser la note 😉 contact@zgueg.fr"
+          }
+        },
+        "review_r19": {
+          "type": "review",
+          "settings": {
+            "author": "Greg77",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "8 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Emmené en déplacement pro toute la semaine. Frais et propre du lundi au vendredi, même après les journées à rallonge. Devenu un indispensable de la trousse.",
+            "helpful_up": 7,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r20": {
+          "type": "review",
+          "settings": {
+            "author": "Nono",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 4,
+            "date": "5 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Top au quotidien, peau nickel et plus d'odeurs. J'aurais juste aimé un petit format pour la salle de sport, le grand flacon c'est pas pratique à trimballer.",
+            "helpful_up": 2,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_r01",
+        "review_r02",
+        "review_r03",
+        "review_r04",
+        "review_r05",
+        "review_r06",
+        "review_r07",
+        "review_r08",
+        "review_r09",
+        "review_r10",
+        "review_r11",
+        "review_r12",
+        "review_r13",
+        "review_r14",
+        "review_r15",
+        "review_r16",
+        "review_r17",
+        "review_r18",
+        "review_r19",
+        "review_r20"
+      ],
+      "name": "Customer Reviews",
+      "settings": {
+        "container_width": "large",
+        "show_pagination": true,
+        "per_page": 5,
+        "two_columns": true,
+        "left_width": 50,
+        "column_gap": 48,
+        "sticky_heading": true,
+        "sticky_offset": 100,
+        "meta_width": 28,
+        "review_spacing": 28,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "heading": "Ils en pensent quoi les zguegs ?",
+        "heading_alignment": "left",
+        "heading_size": 52,
+        "heading_size_mobile": 34,
+        "heading_weight": "400",
+        "show_summary": true,
+        "summary_rating": 4.8,
+        "summary_count": "20",
+        "summary_caption": "moyenne sur",
+        "summary_reviews_word": "avis",
+        "summary_text_size": 13,
+        "show_rating_filter": true,
+        "rating_filter_label": "Note",
+        "rating_filter_all": "Toutes les notes",
+        "stars_word": "étoiles",
+        "show_product_filter": true,
+        "product_filter_label": "Type de produit",
+        "product_filter_all": "Tous les produits",
+        "empty_text": "Aucune note pour les filtres sélectionnés",
+        "show_date": true,
+        "show_reply_date": true,
+        "clamp_lines": 4,
+        "read_more_label": "Voir plus",
+        "read_less_label": "Voir moins",
+        "show_helpful": true,
+        "helpful_label": "Cet avis est-il utile ?",
+        "section_bg": "#ffffff",
+        "text_color": "#1a1a1a",
+        "muted_color": "#6b6b6b",
+        "divider_color": "#d7d7d7",
+        "star_color": "#1a1a1a",
+        "star_empty_color": "#c9c9c9",
+        "field_bg": "#ffffff",
+        "field_border": "#d9d9d9",
+        "field_radius": 8
+      }
+    }
+  },
+  "order": [
+    "enriched_hero_tq8Pwr",
+    "main",
+    "product-recommendations",
+    "certifications_Tniktg",
+    "rich_text_FmJFM4",
+    "rich_text_LRtXGt",
+    "instagram_shots_943TFC",
+    "customer_reviews_QkecMN"
+  ]
+}
