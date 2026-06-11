@@ -668,6 +668,119 @@
         "tilt_images": true
       }
     },
+    "comparison_table_bXEKM3": {
+      "type": "comparison-table",
+      "blocks": {
+        "row_MRNn6x": {
+          "type": "row",
+          "settings": {
+            "label": "Surface utile* (plus grand = mieux)",
+            "value_brand": "60 cm²",
+            "value_1": "49 cm²",
+            "value_2": "58 cm²",
+            "value_3": ""
+          }
+        },
+        "row_Lh8e4f": {
+          "type": "row",
+          "settings": {
+            "label": "Enrichi en actifs naturels",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_GFYk4G": {
+          "type": "row",
+          "settings": {
+            "label": "Densité de la formule* (plus élevée = mieux)",
+            "value_brand": "78 g/m²",
+            "value_1": "52 g/m²",
+            "value_2": "59 g/m²",
+            "value_3": ""
+          }
+        },
+        "row_V8Jyah": {
+          "type": "row",
+          "settings": {
+            "label": "Testé dermatologiquement",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_dMdTM7": {
+          "type": "row",
+          "settings": {
+            "label": "Fabriqué en France",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_X3C9gH": {
+          "type": "row",
+          "settings": {
+            "label": "Sans parfum de synthèse",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Oui",
+            "value_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_MRNn6x",
+        "row_Lh8e4f",
+        "row_GFYk4G",
+        "row_V8Jyah",
+        "row_dMdTM7",
+        "row_X3C9gH"
+      ],
+      "name": "Tableau comparatif",
+      "settings": {
+        "heading": "La concurrence ? Y'en a pas.",
+        "subheading": "",
+        "section_heading_size": "text-size--large",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "brand_logo_width": 120,
+        "brand_name": "Votre marque",
+        "brand_tagline": "Le produit malin",
+        "competitor_1": "Grande marque",
+        "competitor_2": "Autre marque DTC",
+        "competitor_3": "",
+        "yes_no_icons": false,
+        "value_font": "comparison-table--mono",
+        "value_alignment": "center",
+        "footnote": "<p>*Basé sur les sites, produits et emballages des marques concurrentes au moment de la publication.</p>",
+        "section_background": "",
+        "table_background": "#FFFFFF",
+        "text_color": "#1A1A1A",
+        "value_color": "#4F4F4F",
+        "line_color": "#E6E6E6",
+        "highlight_background": "#E8EDFB",
+        "highlight_border": "#2545D3",
+        "highlight_text": "#2545D3",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "cell_padding_y": 40,
+        "cell_padding_x": 24,
+        "first_col_width": 30,
+        "label_size": 16,
+        "header_size": 16,
+        "value_size": 15,
+        "footnote_size": 13,
+        "sticky_first_column": true,
+        "mobile_col_width": 140,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
+      }
+    },
     "customer_reviews_QkecMN": {
       "type": "customer-reviews",
       "blocks": {
@@ -1142,6 +1255,7 @@
     "rich_text_FmJFM4",
     "rich_text_LRtXGt",
     "instagram_shots_943TFC",
+    "comparison_table_bXEKM3",
     "customer_reviews_QkecMN"
   ]
 }
