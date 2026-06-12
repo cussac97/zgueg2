@@ -122,7 +122,7 @@
         "content_padding_top_enable": true,
         "content_padding_top_desktop": 120,
         "content_padding_top_mobile": 72,
-        "desktop_height": "70vh",
+        "desktop_height": "80vh",
         "desktop_height_px": 640,
         "mobile_height": "80vh",
         "mobile_height_px": 520,
