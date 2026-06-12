@@ -427,6 +427,7 @@
         "title_x7jGrL",
         "text_UYMML3"
       ],
+      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/benetjulien.png",
