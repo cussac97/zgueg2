@@ -165,7 +165,7 @@
           "type": "button",
           "settings": {
             "button_label": "Je shoppe cleaned®",
-            "link": "",
+            "link": "shopify://products/cleaned-®-gel-mousse-nettoyant-quotidien",
             "open_in_new_window": false,
             "button_style": "outline"
           }
@@ -227,7 +227,7 @@
           "type": "button",
           "settings": {
             "button_label": "Je shoppe refreshed®",
-            "link": "",
+            "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
             "open_in_new_window": false,
             "button_style": "outline"
           }
