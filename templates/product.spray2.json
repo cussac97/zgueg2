@@ -15,7 +15,7 @@
         "heading_eFJXnL": {
           "type": "heading",
           "settings": {
-            "text": "Ton nettoyant intime quotidien, sous la douche.",
+            "text": "Ton coup de frais intime, à toute heure.",
             "font_size": 44,
             "font_size_mobile": 26,
             "font_weight": "400",
@@ -68,7 +68,7 @@
         "text_p3xzR6": {
           "type": "text",
           "settings": {
-            "text": "<p>Tensioactifs 100 % végétaux et pH bas : il élimine en douceur sueur, smegma et odeurs — même après le sport — sans dessécher ni faire tirer la peau. Ses ferments probiotiques rééquilibrent ta flore à chaque lavage. Tu rinces, c'est propre, c'est reparti.</p>",
+            "text": "<p>Sans rinçage et sans alcool : une brume légère qui neutralise sueur et odeurs en quelques secondes — au boulot, après le sport, en déplacement. Ses ferments probiotiques rééquilibrent ta flore à chaque pulvérisation. Tu sprayes, t'es frais, c'est reparti.</p>",
             "font_size": 16,
             "font_size_mobile": 14,
             "font_weight": "400",
@@ -173,7 +173,8 @@
           "type": "title",
           "settings": {
             "title_font": "theme",
-            "title_font_size": 0,
+            "title_font_size": 52,
+            "title_font_size_mobile": 32,
             "title_font_weight": "400",
             "title_text_transform": "none",
             "title_letter_spacing": 0,
@@ -269,11 +270,44 @@
             "hide_block_if": false
           }
         },
+        "reassort_3B4kgy": {
+          "type": "reassort",
+          "settings": {
+            "display_condition": "always",
+            "icon": "truck",
+            "ship_in_days": 5,
+            "heading": "Mise à jour : En rupture de stock",
+            "heading_size": 17,
+            "heading_font": "comerie",
+            "reserved_percent": 77,
+            "subtext": "Commandez maintenant pour être livré le 25 juin, jour de l'arrivée du nouveau stock. Actuellement, 77% du nouveau stock est déjà réservé.",
+            "show_progress_bar": true,
+            "show_percent_label": true,
+            "bar_height": 8,
+            "bar_radius": 50,
+            "animate_bar": true,
+            "min_percent": 0,
+            "max_percent": 95,
+            "show_disclaimer": false,
+            "disclaimer": "Stock limité à cette série de production.",
+            "text_alignment": "left",
+            "accent_color": "#0000c9",
+            "track_color": "#eaf3ff",
+            "text_color": "#0000c9",
+            "muted_color": "#000000",
+            "show_card": true,
+            "card_background": "#d1e3fb",
+            "card_border_color": "#ececec",
+            "card_border_width": 0,
+            "card_radius": 12,
+            "card_padding": 16
+          }
+        },
         "collapsible_tab_zXdGmR": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Bénéfices",
-            "content": "<ul><li>Nettoie en profondeur sans agresser</li><li>Élimine sueur, smegma et odeurs à la source</li><li>Rééquilibre la flore intime à chaque lavage</li><li>Tensioactifs 100 % végétaux</li><li>pH bas, respecte les muqueuses</li><li>Sans savon, sans parfum agressif</li></ul>",
+            "content": "<ul><li>Neutralise sueur et odeurs en quelques secondes</li><li>Fraîcheur immédiate, sans rinçage</li><li>Rééquilibre la flore intime à chaque pulvérisation</li><li>Sans alcool, ne pique pas</li><li>pH physiologique, respecte les muqueuses</li><li>Format nomade : poche, sac, vestiaire</li></ul>",
             "page": "",
             "hide_block_if": false
           }
@@ -282,7 +316,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Ingrédients",
-            "content": "<ul><li>Tensioactifs végétaux doux (coco)</li><li>Ferments probiotiques (Lactobacillus, Bifida)</li><li>Eau d'armoise (Artemisia)</li><li>Centella asiatica</li><li>Houttuynia cordata</li><li>Thé vert (Camellia sinensis)</li><li>Glycérine végétale</li></ul>",
+            "content": "<ul><li>Ferments probiotiques (Lactobacillus, Bifida)</li><li>Eau d'armoise (Artemisia)</li><li>Centella asiatica</li><li>Houttuynia cordata</li><li>Thé vert (Camellia sinensis)</li><li>Glycérine végétale</li><li>Sans alcool, sans parfum de synthèse</li></ul>",
             "page": "",
             "hide_block_if": false
           }
@@ -291,7 +325,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Pour qui ?",
-            "content": "<p>Conçu pour l'hygiène intime masculine au quotidien. Convient à tous les types de peau. Usage externe uniquement.</p>",
+            "content": "<p>Conçu pour les hommes qui veulent rester frais entre deux douches : bureau, sport, déplacements, grosses chaleurs. Convient à tous les types de peau. Usage externe uniquement.</p>",
             "page": "",
             "hide_block_if": false
           }
@@ -300,7 +334,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Comment l'utiliser ?",
-            "content": "<p>Sous la douche, applique une noisette de gel moussant sur les parties intimes externes, fais mousser quelques secondes puis rince abondamment. Une fois par jour suffit. Pour rester frais entre deux douches, enchaîne avec le spray rééquilibrant.</p>",
+            "content": "<p>Deux à trois pulvérisations sur les parties intimes externes, à n'importe quel moment de la journée — après le sport, à la pause, avant un rendez-vous. Pas besoin de rincer : ça sèche en quelques secondes, sans résidu. Pour une routine complète, combine-le avec le gel mousse nettoyant sous la douche.</p>",
             "page": "",
             "hide_block_if": false
           }
@@ -315,6 +349,7 @@
         "variant_bundler_6mBmkR",
         "buy_buttons",
         "icons_Knqhhh",
+        "reassort_3B4kgy",
         "collapsible_tab_zXdGmR",
         "collapsible_tab_P4hk8m",
         "collapsible_tab_RKezaD",
@@ -394,7 +429,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.29.png",
-            "label": "Nettoie sans agresser\n\nLes tensioactifs végétaux (coco, glucoside) délogent sueur, smegma et résidus tout en respectant le pH et les muqueuses de la zone intime.",
+            "label": "Rafraîchit sans agresser\n\nUne brume fine, sans alcool et au pH physiologique, qui neutralise sueur et odeurs sans piquer ni dessécher la zone intime.",
             "link": ""
           }
         },
@@ -402,7 +437,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.35.png",
-            "label": "Rééquilibre la flore\n\nLes ferments probiotiques Lactobacillus et Bifida soutiennent la flore intime à chaque lavage, pour limiter le retour des odeurs en fin de journée.",
+            "label": "Rééquilibre la flore\n\nLes ferments probiotiques Lactobacillus et Bifida soutiennent la flore intime à chaque pulvérisation, pour limiter le retour des odeurs en fin de journée.",
             "link": ""
           }
         },
@@ -410,7 +445,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.43.png",
-            "label": "Apaise les irritations\n\nCentella asiatica, armoise et Houttuynia cordata calment les rougeurs et l'inconfort des zones sensibles.",
+            "label": "Apaise les irritations\n\nCentella asiatica, armoise et Houttuynia cordata calment échauffements, rougeurs et inconfort des zones sensibles — même après le sport.",
             "link": ""
           }
         },
@@ -418,7 +453,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.56.png",
-            "label": "Assainit sans dessécher\n\nLe thé vert et les actifs purifiants gardent une sensation de fraîcheur durable — la peau reste nette après le sport, sans tirer.",
+            "label": "Sèche en quelques secondes\n\nPas besoin de rincer : le thé vert et les actifs purifiants laissent une sensation de frais et de sec immédiate, sans résidu collant.",
             "link": ""
           }
         }
@@ -438,19 +473,19 @@
         "padding_top": 70,
         "padding_bottom": 70,
         "section_bg": "#ffffff",
-        "heading": "Ce que chaque ingrédient fait concrètement",
+        "heading": "Pourquoi ça marche mieux qu'un déo ou des lingettes ?",
         "text_color": "#1a1a1a",
         "heading_size": 52,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "heading_alignment": "left",
-        "heading_alignment_mobile": "left",
-        "body": "<p>Le gel moussant zgueg combine des actifs choisis pour nettoyer la zone intime masculine en profondeur, sans casser son équilibre. Tensioactifs végétaux, ferments probiotiques et apaisants botaniques : chacun a un rôle précis — ensemble, ils nettoient, rééquilibrent et apaisent, pour rester propre et au sec jusqu'en fin de journée.</p>",
+        "heading_alignment_mobile": "center",
+        "body": "<p>Le spray zgueg combine des actifs choisis pour rafraîchir la zone intime masculine en pleine journée, sans casser son équilibre. Ferments probiotiques, apaisants botaniques et formule sans alcool : chacun a un rôle précis — ensemble, ils neutralisent les odeurs, rééquilibrent et apaisent, pour rester frais et au sec jusqu'au soir.</p>",
         "body_color": "#1a1a1a",
         "body_size": 19,
         "body_max_width": 640,
         "body_alignment": "left",
-        "body_alignment_mobile": "left",
+        "body_alignment_mobile": "center",
         "icons_per_row": 4,
         "icons_per_row_mobile": 2,
         "icon_size": 56,
@@ -493,18 +528,18 @@
         "title_UDcVcH": {
           "type": "title",
           "settings": {
-            "title": "Se laver au gel douche classique, c'est agresser une zone fragile",
+            "title": "Entre deux douches, ta zone intime est livrée à elle-même",
             "title_size": "heading-size--regular",
             "title_weight": "400",
-            "title_size_custom": 0,
-            "title_size_custom_mobile": 0,
+            "title_size_custom": 52,
+            "title_size_custom_mobile": 32,
             "seo_h_tag": "h2"
           }
         },
         "text_GKafAp": {
           "type": "text",
           "settings": {
-            "text": "<p>Le gel douche classique n'est pas fait pour cette zone : pH trop élevé, parfums agressifs, tensioactifs qui dessèchent. Résultat, la peau tire, ça gratte, et l'odeur revient dès la fin de journée — surtout l'été ou après une séance. Tu nettoies, mais tu déséquilibres en même temps. La zone intime masculine mérite mieux qu'un produit pensé pour les aisselles.</p>",
+            "text": "<p>Chaleur, frottements, journées à rallonge : la transpiration s'accumule, ça macère, et l'odeur s'installe bien avant le retour à la maison. Le déo n'est pas fait pour cette zone, les lingettes assèchent, et se changer ne règle rien. Résultat : tu y penses toute la journée, sans vraie solution. La zone intime masculine mérite mieux que des rustines pensées pour les aisselles.</p>",
             "text_size": "regular"
           }
         }
@@ -553,18 +588,18 @@
         "title_aj3KDD": {
           "type": "title",
           "settings": {
-            "title": "Un nettoyage intime qui respecte ta flore",
+            "title": "Un coup de frais qui respecte ta flore",
             "title_size": "heading-size--regular",
             "title_weight": "400",
-            "title_size_custom": 0,
-            "title_size_custom_mobile": 0,
+            "title_size_custom": 52,
+            "title_size_custom_mobile": 32,
             "seo_h_tag": "h2"
           }
         },
         "text_fqVCan": {
           "type": "text",
           "settings": {
-            "text": "<p>Le gel moussant zgueg associe des tensioactifs 100 % végétaux à un pH bas : il élimine sueur, smegma et résidus sans agresser ni faire tirer la peau. Ses ferments probiotiques (Lactobacillus, Bifida) rééquilibrent ta flore à chaque lavage pour limiter le retour des odeurs, pendant que l'armoise, la centella et le thé vert apaisent irritations et démangeaisons. La mousse est douce, ça ne pique pas — tu te sens propre et au sec, jusqu'au soir.</p>",
+            "text": "<p>Le spray zgueg, c'est une brume fine, sans alcool et au pH physiologique : deux pulvérisations, ça sèche en quelques secondes et ça neutralise sueur et odeurs sans piquer. Ses ferments probiotiques (Lactobacillus, Bifida) rééquilibrent ta flore à chaque utilisation pour limiter le retour des odeurs, pendant que l'armoise, la centella et le thé vert apaisent échauffements et irritations. Dans la poche ou le sac de sport — tu restes frais et au sec, jusqu'au soir.</p>",
             "text_size": "regular"
           }
         }
@@ -668,19 +703,136 @@
         "tilt_images": true
       }
     },
+    "comparison_table_bXEKM3": {
+      "type": "comparison-table",
+      "blocks": {
+        "row_MRNn6x": {
+          "type": "row",
+          "settings": {
+            "label": "pH* (la zone intime vit à ≈ 5,5)",
+            "value_brand": "5,5",
+            "value_1": "8",
+            "value_2": "7",
+            "value_3": ""
+          }
+        },
+        "row_Lh8e4f": {
+          "type": "row",
+          "settings": {
+            "label": "Sans alcool, ne pique pas",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Oui",
+            "value_3": ""
+          }
+        },
+        "row_GFYk4G": {
+          "type": "row",
+          "settings": {
+            "label": "Ferments probiotiques rééquilibrants (Lactobacillus, Bifida)",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_V8Jyah": {
+          "type": "row",
+          "settings": {
+            "label": "Actifs apaisants* (centella, armoise, thé vert…)",
+            "value_brand": "4",
+            "value_1": "0",
+            "value_2": "1",
+            "value_3": ""
+          }
+        },
+        "row_dMdTM7": {
+          "type": "row",
+          "settings": {
+            "label": "Conçu pour la zone intime masculine",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_X3C9gH": {
+          "type": "row",
+          "settings": {
+            "label": "Neutralise les odeurs au lieu de les masquer",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Oui",
+            "value_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_MRNn6x",
+        "row_Lh8e4f",
+        "row_GFYk4G",
+        "row_V8Jyah",
+        "row_dMdTM7",
+        "row_X3C9gH"
+      ],
+      "name": "Tableau comparatif",
+      "settings": {
+        "heading": "La concurrence ? Y'en a pas.",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "#000000",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "brand_logo": "shopify://shop_images/zgueg.svg",
+        "brand_logo_width": 120,
+        "brand_name": "zgueg",
+        "brand_tagline": "Spray Refreshed®",
+        "competitor_1": "Déodorant classique",
+        "competitor_2": "Lingettes intimes",
+        "competitor_3": "",
+        "yes_no_icons": false,
+        "value_font": "comparison-table--mono",
+        "value_alignment": "center",
+        "footnote": "<p>*Basé sur la composition type des déodorants et lingettes du commerce au moment de la publication.</p>",
+        "section_background": "",
+        "table_background": "#ffffff",
+        "text_color": "#1a1a1a",
+        "value_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#2545d3",
+        "highlight_text": "#2545d3",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "cell_padding_y": 40,
+        "cell_padding_x": 24,
+        "first_col_width": 30,
+        "label_size": 16,
+        "header_size": 16,
+        "value_size": 15,
+        "footnote_size": 13,
+        "sticky_first_column": true,
+        "mobile_col_width": 140,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
+      }
+    },
     "customer_reviews_QkecMN": {
       "type": "customer-reviews",
       "blocks": {
         "review_r01": {
           "type": "review",
           "settings": {
-            "author": "Kevin R.",
+            "author": "Julien M.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "21 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Franchement sceptique au début, un gel spécial pour ça je trouvais ça un peu marketing. Bah j'avais tort. En fin de journée au boulot c'est plus du tout la même chose qu'avec mon gel douche normal, fini l'odeur de transpi et les démangeaisons. La mousse est douce, ça pique pas. Je rachète.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Je l'ai toujours dans le sac maintenant. Le pschitt d'après-sport à 18h avant de rentrer, ça change tout. Ça pique pas, ça sent juste propre, et ça sèche direct. Adopté.",
             "helpful_up": 14,
             "helpful_down": 0,
             "reply_enable": true,
@@ -688,19 +840,19 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Zgueg",
             "reply_date": "21 mai 2026",
-            "reply_text": "Salut Kevin, content que t'aies tenté le coup malgré tout 😉 C'est exactement pour ça qu'on l'a fait. Si t'as des galères de transpi en journée, le spray complète bien. contact@zgueg.fr"
+            "reply_text": "Salut Julien, exactement l'usage pour lequel on l'a pensé 💪 Et sous la douche, le gel mousse complète bien la routine. contact@zgueg.fr"
           }
         },
         "review_r02": {
           "type": "review",
           "settings": {
-            "author": "Mehdi 06",
+            "author": "Rachid",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "20 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Nickel. Propre, ça gratte plus, ça sent rien d'agressif. Rien à dire.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Nickel. Deux pschitts, t'es frais, ça sèche en dix secondes. Rien à dire.",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -713,13 +865,13 @@
         "review_r03": {
           "type": "review",
           "settings": {
-            "author": "Antoine",
+            "author": "Maxime",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "18 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Très bon produit, la peau est apaisée et y'a plus cette odeur en fin de journée. Seul truc, le flacon part vite quand tu l'utilises tous les jours, j'aurais aimé un format plus gros. Sinon top.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Très efficace contre les odeurs, vraiment. Seul truc, le flacon est un peu gros pour une poche de jean, ça passe mieux dans un sac. Sinon top.",
             "helpful_up": 3,
             "helpful_down": 1,
             "reply_enable": true,
@@ -727,19 +879,19 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "18 mai 2026",
-            "reply_text": "Merci Antoine ! Une petite noisette suffit largement, normalement ça dure un bon moment — mais on note pour un grand format 💪 contact@zgueg.fr"
+            "reply_text": "Merci Maxime ! C'est noté pour le format poche, on y réfléchit 💪 contact@zgueg.fr"
           }
         },
         "review_r04": {
           "type": "review",
           "settings": {
-            "author": "Greg",
+            "author": "Damien",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "15 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Je fais du crossfit 4 fois par semaine et niveau macération en bas c'était un peu la cata. Depuis que je me lave avec ça après chaque séance plus aucun souci, même le soir. Adopté.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Livreur, 8h par jour sur le scooter. Avant c'était compliqué en fin de tournée, maintenant un pschitt à la pause déj et c'est réglé. Franchement bravo.",
             "helpful_up": 9,
             "helpful_down": 0,
             "reply_enable": false,
@@ -752,13 +904,13 @@
         "review_r05": {
           "type": "review",
           "settings": {
-            "author": "JB.",
+            "author": "JulieB (pour mon copain)",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "12 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "alors au départ ma copine m'a un peu forcé la main parce que bon disons que c'était pas toujours très frais quand je rentrais du taf, et franchement je m'attendais pas à grand chose mais au final c'est elle qui me le rachète maintenant donc voilà je crois que ça dit tout, la mousse est agréable ça sent propre sans sentir le parfum chimique, que du positif",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "commandé pour mon copain qui fait du vélotaf tous les jours, il y croyait pas du tout et maintenant il le prend partout même en week-end, donc voilà je crois que ça dit tout, conquis tous les deux",
             "helpful_up": 2,
             "helpful_down": 2,
             "reply_enable": true,
@@ -766,19 +918,19 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "13 mai 2026",
-            "reply_text": "Merci JB (et merci à ta copine 😄). Ravis que ça change l'ambiance à la maison. Pour les jours de grosse chaleur, garde le spray dans le sac. contact@zgueg.fr"
+            "reply_text": "Merci Julie (et merci au cycliste 😄). Les convertis du vélotaf, on commence à les compter. contact@zgueg.fr"
           }
         },
         "review_r06": {
           "type": "review",
           "settings": {
-            "author": "Thomas L.",
+            "author": "Thibault L.",
             "verified": true,
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "9 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Découvert un peu par hasard et je regrette pas. Sensation de propre qui dure, et la peau tire pas après la douche contrairement aux savons classiques.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Découvert via un pote. Sensation de frais immédiate et surtout ça dure — rien à voir avec un déo qui masque pendant 20 minutes.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -796,8 +948,8 @@
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "6 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Bon produit, efficace contre les odeurs et doux pour la peau qui devient fragile à mon âge. Je mets 4 parce que le parfum est vraiment très discret, presque rien, j'aurais aimé un poil plus. Mais ça fait le job.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Bon produit, pratique et efficace contre les odeurs, et doux pour la peau qui devient fragile à mon âge. Je mets 4 parce que l'odeur est vraiment très discrète, presque rien, j'aurais aimé un poil plus. Mais ça fait le job.",
             "helpful_up": 4,
             "helpful_down": 0,
             "reply_enable": false,
@@ -815,8 +967,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "22 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Testé pendant la canicule, l'épreuve du feu. Bah écoute au sec et frais toute la journée alors que d'habitude l'été c'est effet sauna direct. Bluffé.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Canicule + costume toute la journée, le combo de la mort. Bah le spray a tenu. Frais à 19h alors que d'habitude c'est effet sauna direct. Bluffé.",
             "helpful_up": 12,
             "helpful_down": 0,
             "reply_enable": true,
@@ -824,7 +976,7 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "22 mai 2026",
-            "reply_text": "Merci Sofiane ! La canicule c'est le vrai test, content que ça ait tenu 🔥 Le spray en renfort l'après-midi et t'es peinard. contact@zgueg.fr"
+            "reply_text": "Merci Sofiane ! Le combo costume-canicule c'est l'examen final 🔥 Recale un pschitt en milieu d'après-midi les pires jours et t'es peinard. contact@zgueg.fr"
           }
         },
         "review_r09": {
@@ -835,8 +987,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "19 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Que du bonheur. Propre, frais, zéro irritation. Je recommande.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Que du bonheur. Frais, discret, zéro picotement. Je recommande.",
             "helpful_up": 5,
             "helpful_down": 0,
             "reply_enable": false,
@@ -854,8 +1006,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "16 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Bon disons les choses clairement : avant, les bijoux de famille sentaient pas la rose en fin de journée. Là c'est réglé, et madame valide grave. Merci 🙏",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Le pschitt de la confiance avant un date, y'a pas mieux. Les bijoux de famille sont frais à toute heure et madame valide grave. Merci 🙏",
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
@@ -863,7 +1015,7 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "16 mai 2026",
-            "reply_text": "Haha merci Yanis, on adore les retours cash 😄 Ravis que madame valide. À dispo si besoin : contact@zgueg.fr"
+            "reply_text": "Haha merci Yanis, la confiance avant tout 😄 Ravis que madame valide. À dispo si besoin : contact@zgueg.fr"
           }
         },
         "review_r11": {
@@ -874,8 +1026,8 @@
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "13 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Efficace et doux, rien à redire sur le produit en lui-même. Par contre la pompe pousse un peu trop de matière d'un coup, faut faire gaffe au gaspillage. Détail, mais bon.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Efficace et agréable, rien à redire sur le produit en lui-même. Par contre le spray vaporise un peu large, faut viser. Détail, mais bon.",
             "helpful_up": 8,
             "helpful_down": 0,
             "reply_enable": false,
@@ -893,8 +1045,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "10 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "ça fait des années que je cherchais un truc pour cette zone parce que le gel douche normal ça me desséchait et ça réglait pas le problème d'odeur, et là enfin un produit qui fait ce qu'il dit, peau apaisée plus de démangeaisons et ça sent propre, si j'avais su j'aurais commencé bien avant",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "ça fait des années que je cherchais un truc pour les longues journées de chantier parce que les lingettes ça dessèche et le déo ça tient pas une heure, et là enfin un produit qui fait ce qu'il dit, fraîcheur qui dure pas de picotement pas de résidu collant, si j'avais su j'aurais commencé bien avant",
             "helpful_up": 6,
             "helpful_down": 0,
             "reply_enable": false,
@@ -912,8 +1064,8 @@
             "verified_label": "Client vérifié",
             "rating": 3,
             "date": "7 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Le produit est correct, la mousse est agréable et ça nettoie bien. Honnêtement sur les odeurs j'ai vu une petite différence mais pas le miracle annoncé non plus. Après ça dépend peut-être des peaux. Ni déçu ni convaincu à 100%.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Le produit est correct, c'est pratique et ça rafraîchit sur le moment. Honnêtement sur la durée j'ai vu une petite différence mais pas le miracle annoncé non plus. Après ça dépend peut-être des peaux. Ni déçu ni convaincu à 100%.",
             "helpful_up": 4,
             "helpful_down": 0,
             "reply_enable": false,
@@ -931,8 +1083,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "23 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "J'ai la peau hyper réactive, la plupart des savons me font des rougeurs en bas. Celui-là rien, nada, et en plus ça apaise. Premier produit que je garde.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "J'ai la peau hyper réactive, les lingettes me faisaient des rougeurs direct. Là rien, nada, ça apaise même après le rasage. Premier produit du genre que je garde.",
             "helpful_up": 11,
             "helpful_down": 0,
             "reply_enable": true,
@@ -940,7 +1092,7 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "23 mai 2026",
-            "reply_text": "Merci Romain ! La centella et l'armoise sont là exactement pour ça. Ravis que ta peau dise enfin merci 🙌 contact@zgueg.fr"
+            "reply_text": "Merci Romain ! La centella et l'armoise sont là exactement pour ça — et après rasage c'est le combo parfait 🙌 contact@zgueg.fr"
           }
         },
         "review_r15": {
@@ -951,8 +1103,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "20 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Acheté pour mon mec qui osait pas trop aborder le sujet. Résultat il l'utilise tous les jours et c'est plus agréable pour tout le monde si vous voyez ce que je veux dire 😅 Validé.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Acheté pour mon mec qui rentre du foot le mercredi soir, si vous voyez ce que je veux dire 😅 Maintenant il spraye direct au vestiaire et tout le monde est content. Validé.",
             "helpful_up": 5,
             "helpful_down": 0,
             "reply_enable": false,
@@ -970,8 +1122,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "17 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Fini les boules qui collent l'été. Voilà, tout est dit. Top.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Fini les boules qui collent en réunion l'été. Voilà, tout est dit. Top.",
             "helpful_up": 3,
             "helpful_down": 0,
             "reply_enable": true,
@@ -979,7 +1131,7 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "17 mai 2026",
-            "reply_text": "Merci Karim, droit au but 😄 Exactement l'effet recherché. Le spray pour les coups de chaud en journée si jamais. contact@zgueg.fr"
+            "reply_text": "Merci Karim, droit au but comme toujours 😄 Exactement l'effet recherché. Et sous la douche, le gel mousse finit le travail. contact@zgueg.fr"
           }
         },
         "review_r17": {
@@ -990,7 +1142,7 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "14 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "product": "spray-reequilibrant-intime-pour-homme",
             "text": "Simple et efficace. Je rachète direct.",
             "helpful_up": 6,
             "helpful_down": 0,
@@ -1009,8 +1161,8 @@
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "11 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Vraiment bon produit, doux et efficace, aucune irritation. Le seul bémol c'est le prix, un peu cher quand même. Après vu que ça dure et que ça marche, je vais sûrement reprendre.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Très bon produit, efficace et agréable, aucune irritation. Le seul bémol c'est le prix pour la taille du flacon. Après vu que deux pulvérisations suffisent, ça dure plus longtemps que prévu.",
             "helpful_up": 4,
             "helpful_down": 1,
             "reply_enable": true,
@@ -1018,7 +1170,7 @@
             "reply_avatar_bg": "#1f49ff",
             "reply_author": "Chloé",
             "reply_date": "11 mai 2026",
-            "reply_text": "Merci Sébastien ! Une noisette suffit donc ramené à l'utilisation ça reste raisonnable, et les packs font baisser la note 😉 contact@zgueg.fr"
+            "reply_text": "Merci Sébastien ! Deux pschitts suffisent en effet, donc ramené à l'utilisation ça reste raisonnable — et les packs font baisser la note 😉 contact@zgueg.fr"
           }
         },
         "review_r19": {
@@ -1029,8 +1181,8 @@
             "verified_label": "Client vérifié",
             "rating": 5,
             "date": "8 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Emmené en déplacement pro toute la semaine. Frais et propre du lundi au vendredi, même après les journées à rallonge. Devenu un indispensable de la trousse.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Déplacements pro toute la semaine : train, avion, réunions à rallonge. Le spray vit dans ma sacoche. Frais du lundi au vendredi, devenu un indispensable de la trousse.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1048,8 +1200,8 @@
             "verified_label": "Client vérifié",
             "rating": 4,
             "date": "5 mai 2026",
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "text": "Top au quotidien, peau nickel et plus d'odeurs. J'aurais juste aimé un petit format pour la salle de sport, le grand flacon c'est pas pratique à trimballer.",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Top après la salle, fraîcheur immédiate et ça tient. J'aurais juste aimé un capuchon plus solide, le mien a sauté une fois dans le sac. Sinon nickel.",
             "helpful_up": 2,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1099,7 +1251,7 @@
         "heading": "Ils en pensent quoi les zguegs ?",
         "heading_alignment": "left",
         "heading_size": 52,
-        "heading_size_mobile": 34,
+        "heading_size_mobile": 32,
         "heading_weight": "400",
         "show_summary": true,
         "summary_rating": 4.8,
@@ -1142,6 +1294,7 @@
     "rich_text_FmJFM4",
     "rich_text_LRtXGt",
     "instagram_shots_943TFC",
+    "comparison_table_bXEKM3",
     "customer_reviews_QkecMN"
   ]
 }
