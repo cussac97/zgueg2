@@ -270,6 +270,39 @@
             "hide_block_if": false
           }
         },
+        "reassort_3B4kgy": {
+          "type": "reassort",
+          "settings": {
+            "display_condition": "always",
+            "icon": "truck",
+            "ship_in_days": 5,
+            "heading": "Mise à jour : En rupture de stock",
+            "heading_size": 17,
+            "heading_font": "comerie",
+            "reserved_percent": 77,
+            "subtext": "Commandez maintenant pour être livré le 25 juin, jour de l'arrivée du nouveau stock. Actuellement, 77% du nouveau stock est déjà réservé.",
+            "show_progress_bar": true,
+            "show_percent_label": true,
+            "bar_height": 8,
+            "bar_radius": 50,
+            "animate_bar": true,
+            "min_percent": 0,
+            "max_percent": 95,
+            "show_disclaimer": false,
+            "disclaimer": "Stock limité à cette série de production.",
+            "text_alignment": "left",
+            "accent_color": "#0000c9",
+            "track_color": "#eaf3ff",
+            "text_color": "#0000c9",
+            "muted_color": "#000000",
+            "show_card": true,
+            "card_background": "#d1e3fb",
+            "card_border_color": "#ececec",
+            "card_border_width": 0,
+            "card_radius": 12,
+            "card_padding": 16
+          }
+        },
         "collapsible_tab_zXdGmR": {
           "type": "collapsible_tab",
           "settings": {
@@ -316,6 +349,7 @@
         "variant_bundler_6mBmkR",
         "buy_buttons",
         "icons_Knqhhh",
+        "reassort_3B4kgy",
         "collapsible_tab_zXdGmR",
         "collapsible_tab_P4hk8m",
         "collapsible_tab_RKezaD",
