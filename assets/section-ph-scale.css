@@ -1,5 +1,7 @@
 .ph-scale-section {
   background: var(--phs-section-bg, transparent);
+  padding-top: var(--phs-pt, 60px);
+  padding-bottom: var(--phs-pb, 60px);
 }
 
 .ph-scale {
@@ -106,6 +108,13 @@
   color: var(--phs-hl-color, #2545d3);
   font-weight: 500;
   border-right-color: transparent;
+}
+
+.ph-scale__logo {
+  display: block;
+  width: var(--phs-logo-w, 110px);
+  max-width: 100%;
+  height: auto;
 }
 
 .ph-scale__track {

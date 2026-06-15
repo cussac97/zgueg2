@@ -61,6 +61,8 @@
       --phs-value-size: {{ s.value_size }}px;
       --phs-axis-size: {{ s.axis_size }}px;
       --phs-footnote-size: {{ s.footnote_size }}px;
+      --phs-pt: {{ s.padding_top }}px;
+      --phs-pb: {{ s.padding_bottom }}px;
     }
 
     #section-{{ section.id }} .section-heading__title {
@@ -84,7 +86,7 @@
     }
   {%- endstyle -%}
 
-  <div class="container--large container--vertical-space{% if s.gutter_decrease %}-small{% endif %} remove-empty-space">
+  <div class="container--large remove-empty-space">
     {%- render 'section-heading',
       heading: s.heading,
       subheading: s.subheading,
@@ -134,8 +136,15 @@
               assign row_class = row_class | append: ' is-brand'
             endif
           -%}
-          <div class="{{ row_class }}" style="--pos: {{ pos }};" {{ block.shopify_attributes }}>
-            <div class="ph-scale__name">{{ block.settings.label | escape }}</div>
+          <div class="{{ row_class }}" style="--pos: {{ pos }};{% if block.settings.image != blank %} --phs-logo-w: {{ block.settings.logo_width }}px;{% endif %}" {{ block.shopify_attributes }}>
+            <div class="ph-scale__name">
+              {%- if block.settings.image != blank -%}
+                {%- assign logo_w2x = block.settings.logo_width | times: 2 -%}
+                {{ block.settings.image | image_url: width: logo_w2x | image_tag: class: 'ph-scale__logo', loading: 'lazy', alt: block.settings.label }}
+              {%- else -%}
+                {{ block.settings.label | escape }}
+              {%- endif -%}
+            </div>
             <div class="ph-scale__track">
               {%- if show_ideal -%}
                 <span class="ph-scale__ideal" style="--s: {{ istart }}; --e: {{ iend }};" aria-hidden="true"></span>
@@ -530,10 +539,24 @@
       "content": "Espacement"
     },
     {
-      "type": "checkbox",
-      "id": "gutter_decrease",
-      "label": "Réduire l'espacement vertical",
-      "default": false
+      "type": "range",
+      "id": "padding_top",
+      "label": "Espace en haut",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Espace en bas",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 60
     },
     {
       "type": "header",
@@ -563,6 +586,23 @@
           "id": "label",
           "label": "Nom du produit",
           "default": "Produit"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo (optionnel)",
+          "info": "Remplace le nom du produit par un logo."
+        },
+        {
+          "type": "range",
+          "id": "logo_width",
+          "label": "Largeur du logo",
+          "min": 40,
+          "max": 200,
+          "step": 5,
+          "unit": "px",
+          "default": 110,
+          "visible_if": "{{ block.settings.image != blank }}"
         },
         {
           "type": "text",
