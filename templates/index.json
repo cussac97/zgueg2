@@ -130,7 +130,7 @@
         "background_image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_21_07.png",
         "background_image_mobile": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_27_37.png",
         "image_position": "right",
-        "background_color": "#13111100",
+        "background_color": "rgba(0,0,0,0)",
         "overlay_style": "solid",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
@@ -200,117 +200,6 @@
         "color_hide_borders": true,
         "gutter_decrease": false,
         "remove_margin": false,
-        "remove_bottom_margin": false
-      }
-    },
-    "featured_collection_nUjFKx": {
-      "type": "featured-collection",
-      "blocks": {
-        "price_7tWgMP": {
-          "type": "price",
-          "settings": {}
-        },
-        "title_HgXNPM": {
-          "type": "title",
-          "settings": {}
-        },
-        "quick_buy_RAmHyd": {
-          "type": "quick_buy",
-          "settings": {
-            "type": "inline",
-            "show_only_available": false,
-            "show_price": true,
-            "variant_default": false,
-            "unavailable_variants": "hide"
-          }
-        }
-      },
-      "block_order": [
-        "price_7tWgMP",
-        "title_HgXNPM",
-        "quick_buy_RAmHyd"
-      ],
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "heading": "Featured collection",
-        "subheading": "Share your <strong>best</strong> offers",
-        "section_heading_size": "text-size--regular",
-        "section_heading_layout": "section-heading--left section-heading--one-row",
-        "show_view_all": true,
-        "layout": "grid-2 grid-lap-2",
-        "layout_mobile": "grid-palm-2",
-        "card_alignment": "left",
-        "style": "grid",
-        "products_number": 2,
-        "collection": "frontpage",
-        "section_background_color": "rgba(0,0,0,0)",
-        "section_background_gradient": "",
-        "section_heading_color": "rgba(0,0,0,0)",
-        "gutter_decrease": false,
-        "remove_bottom_margin": false,
-        "seo_h_tag": "h2"
-      }
-    },
-    "rich_text_3E9aKj": {
-      "type": "rich-text",
-      "blocks": {
-        "title_ih9K6A": {
-          "type": "title",
-          "settings": {
-            "title": "Le spray rééquilibrant",
-            "title_size": "heading-size--small",
-            "title_weight": "400",
-            "title_size_custom": 44,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        },
-        "text_pzzdk3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® règle le problème — il ne le cache pas derrière un parfum.</p>",
-            "text_size": "regular"
-          }
-        },
-        "button_FpdwFg": {
-          "type": "button",
-          "settings": {
-            "button_label": "Je shoppe refreshed®",
-            "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
-            "open_in_new_window": false,
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "title_ih9K6A",
-        "text_pzzdk3",
-        "button_FpdwFg"
-      ],
-      "disabled": true,
-      "name": "t:sections-categories.presets.rich_text_with_image",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_35_35.png",
-        "video_controls": false,
-        "image_position": "left",
-        "height": "large",
-        "content_vertical_position": "middle",
-        "image_crop": true,
-        "image_object_position": "auto",
-        "overlay_image_width": 160,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
-        "text_alignment": "horizontal-left",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 24,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "#d9d9d9",
-        "border_radius": 0,
-        "color_hide_borders": true,
-        "gutter_decrease": false,
-        "remove_margin": true,
         "remove_bottom_margin": false
       }
     },
@@ -405,6 +294,134 @@
         "button_alignment": "center",
         "button_alignment_mobile": "center",
         "button_full_width_mobile": false
+      }
+    },
+    "featured_collection_nUjFKx": {
+      "type": "featured-collection",
+      "blocks": {
+        "price_7tWgMP": {
+          "type": "price",
+          "settings": {}
+        },
+        "title_HgXNPM": {
+          "type": "title",
+          "settings": {}
+        },
+        "description_Fba3F7": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "excerpt_limit": 15,
+            "show_link": true
+          }
+        },
+        "product_link_erqhMA": {
+          "type": "product_link",
+          "settings": {
+            "button_label": "Découvrir"
+          }
+        },
+        "quick_buy_RAmHyd": {
+          "type": "quick_buy",
+          "disabled": true,
+          "settings": {
+            "type": "inline",
+            "show_only_available": false,
+            "show_price": true,
+            "variant_default": false,
+            "unavailable_variants": "hide"
+          }
+        }
+      },
+      "block_order": [
+        "price_7tWgMP",
+        "title_HgXNPM",
+        "description_Fba3F7",
+        "product_link_erqhMA",
+        "quick_buy_RAmHyd"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "section_heading_size": "text-size--large",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "show_view_all": true,
+        "layout": "grid-2 grid-lap-2",
+        "layout_mobile": "grid-palm-2",
+        "card_alignment": "center",
+        "style": "grid",
+        "products_number": 2,
+        "collection": "frontpage",
+        "section_background_color": "#DBDBE900",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "rich_text_3E9aKj": {
+      "type": "rich-text",
+      "blocks": {
+        "title_ih9K6A": {
+          "type": "title",
+          "settings": {
+            "title": "Le spray rééquilibrant",
+            "title_size": "heading-size--small",
+            "title_weight": "400",
+            "title_size_custom": 44,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_pzzdk3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® règle le problème — il ne le cache pas derrière un parfum.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_FpdwFg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Je shoppe refreshed®",
+            "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
+            "open_in_new_window": false,
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "title_ih9K6A",
+        "text_pzzdk3",
+        "button_FpdwFg"
+      ],
+      "disabled": true,
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_35_35.png",
+        "video_controls": false,
+        "image_position": "left",
+        "height": "large",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-left",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
       }
     },
     "rich_text_UKfy6N": {
