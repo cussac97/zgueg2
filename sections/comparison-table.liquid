@@ -33,8 +33,11 @@
       font-size: {{ section.settings.heading_size_mobile }}px;
       line-height: 1.1;
       letter-spacing: -0.01em;
-      {%- if section.settings.heading_color != blank and section.settings.heading_color != 'rgba(0,0,0,0)' %}
+      {%- if section.settings.heading_color != blank %}
+        {%- assign hc_alpha = section.settings.heading_color | color_extract: 'alpha' -%}
+        {%- if hc_alpha != 0 %}
       color: {{ section.settings.heading_color }};
+        {%- endif %}
       {%- endif %}
     }
 

@@ -69,8 +69,11 @@
       font-size: {{ s.heading_size_mobile }}px;
       line-height: 1.1;
       letter-spacing: -0.01em;
-      {%- if s.heading_color != blank and s.heading_color != 'rgba(0,0,0,0)' %}
+      {%- if s.heading_color != blank %}
+        {%- assign hc_alpha = s.heading_color | color_extract: 'alpha' -%}
+        {%- if hc_alpha != 0 %}
       color: {{ s.heading_color }};
+        {%- endif %}
       {%- endif %}
     }
 
@@ -97,20 +100,20 @@
         <div class="ph-scale__axis-row">
           <div class="ph-scale__axis-spacer" aria-hidden="true"></div>
           <div class="ph-scale__axis">
+            {%- if s.axis_label_left != blank -%}
+              <span class="ph-scale__axis-word ph-scale__axis-word--left">{{ s.axis_label_left | escape }}</span>
+            {%- endif -%}
             {%- if show_ideal and s.ideal_label != blank -%}
               <span class="ph-scale__axis-ideal" style="--p: {{ ideal_mid }};">{{ s.ideal_label | escape }}</span>
             {%- endif -%}
-            {%- if s.axis_label_left != blank or s.axis_label_right != blank -%}
-              <div class="ph-scale__axis-words">
-                <span>{{ s.axis_label_left | escape }}</span>
-                <span>{{ s.axis_label_right | escape }}</span>
-              </div>
+            {%- if s.axis_label_right != blank -%}
+              <span class="ph-scale__axis-word ph-scale__axis-word--right">{{ s.axis_label_right | escape }}</span>
             {%- endif -%}
-            <span class="ph-scale__axis-tick" style="--p: 0;">{{ ph_min }}</span>
+            <span class="ph-scale__axis-num ph-scale__axis-num--min">{{ ph_min }}</span>
             {%- if neutral_in_range -%}
-              <span class="ph-scale__axis-tick ph-scale__axis-tick--neutral" style="--p: {{ npos }};">7</span>
+              <span class="ph-scale__axis-num ph-scale__axis-num--neutral" style="--n: {{ npos }};">7</span>
             {%- endif -%}
-            <span class="ph-scale__axis-tick" style="--p: 1;">{{ ph_max }}</span>
+            <span class="ph-scale__axis-num ph-scale__axis-num--max">{{ ph_max }}</span>
           </div>
         </div>
       {%- endif -%}
