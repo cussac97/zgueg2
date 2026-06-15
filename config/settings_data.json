@@ -49,7 +49,7 @@
     "product_card_badge_custom_2_tags": "new",
     "product_card_badge_custom_2_color": "#ffffff",
     "product_card_badge_custom_2_text_color": "#000000",
-    "favicon": "shopify://shop_images/favikon-super.svg",
+    "favicon": "shopify://shop_images/zguegsvg.svg",
     "cart_notes_enable": false,
     "cart_image_ratio": "0.83333",
     "cart_upsell_heading": "Produits recommandés",
@@ -78,6 +78,7 @@
           },
           "popups-1": {
             "type": "newsletter",
+            "disabled": true,
             "settings": {
               "enable": true,
               "visibility": "all",
