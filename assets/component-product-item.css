@@ -6,6 +6,20 @@
   animation: reveal-opacity 350ms ease-out forwards 50ms;
 }
 
+/*
+  Images produit transparentes (PNG) : les images de variantes pré-empilées
+  dans la carte (quick-buy) se voyaient par transparence les unes derrière
+  les autres. On ne garde visible que l'image active (la variante sélectionnée,
+  sinon l'image principale).
+*/
+.product-item__image .product-item__image-figure--primary:not(.product-item__image-figure--on-top) {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.product-item__image:has(.product-item__image-figure--on-top) .product-item__image-figure--top {
+  opacity: 0 !important;
+}
+
 .product-item {
   overflow: visible;
   position: relative;
