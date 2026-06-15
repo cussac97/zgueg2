@@ -176,7 +176,6 @@
         "text_Vz8W6y",
         "button_dXzPWN"
       ],
-      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_17_03.png",
@@ -340,6 +339,7 @@
         "product_link_erqhMA",
         "quick_buy_RAmHyd"
       ],
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "heading": "",
@@ -397,7 +397,6 @@
         "text_pzzdk3",
         "button_FpdwFg"
       ],
-      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_35_35.png",
