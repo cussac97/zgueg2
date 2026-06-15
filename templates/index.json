@@ -176,6 +176,7 @@
         "text_Vz8W6y",
         "button_dXzPWN"
       ],
+      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_17_03.png",
@@ -200,6 +201,54 @@
         "gutter_decrease": false,
         "remove_margin": false,
         "remove_bottom_margin": false
+      }
+    },
+    "featured_collection_nUjFKx": {
+      "type": "featured-collection",
+      "blocks": {
+        "price_7tWgMP": {
+          "type": "price",
+          "settings": {}
+        },
+        "title_HgXNPM": {
+          "type": "title",
+          "settings": {}
+        },
+        "quick_buy_RAmHyd": {
+          "type": "quick_buy",
+          "settings": {
+            "type": "inline",
+            "show_only_available": false,
+            "show_price": true,
+            "variant_default": false,
+            "unavailable_variants": "hide"
+          }
+        }
+      },
+      "block_order": [
+        "price_7tWgMP",
+        "title_HgXNPM",
+        "quick_buy_RAmHyd"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "heading": "Featured collection",
+        "subheading": "Share your <strong>best</strong> offers",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "show_view_all": true,
+        "layout": "grid-2 grid-lap-2",
+        "layout_mobile": "grid-palm-2",
+        "card_alignment": "left",
+        "style": "grid",
+        "products_number": 2,
+        "collection": "frontpage",
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
       }
     },
     "rich_text_3E9aKj": {
@@ -238,6 +287,7 @@
         "text_pzzdk3",
         "button_FpdwFg"
       ],
+      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_35_35.png",
@@ -576,8 +626,9 @@
   "order": [
     "enriched_hero_e4bhR9",
     "rich_text_EcNqNq",
-    "rich_text_3E9aKj",
     "certifications_DDdq8b",
+    "featured_collection_nUjFKx",
+    "rich_text_3E9aKj",
     "rich_text_UKfy6N",
     "rich_text_9XNcQB",
     "customer_reviews_c89ViU"
