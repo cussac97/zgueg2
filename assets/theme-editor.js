@@ -178,21 +178,3 @@ document.addEventListener('shopify:block:deselect', e=>{
 		}
 	}
 })
-
-const krownThemeState = Shopify.theme.role ?? "unknown";
-(!localStorage.getItem("krown-check") || localStorage.getItem("krown-check") !== krownThemeState) && fetch("https://check.krownthemes.com/", {
-	headers: { "Content-Type": "application/x-www-form-urlencoded" },
-	method: "POST",
-	mode: "cors",
-	body: new URLSearchParams({
-			shop: Shopify.shop,
-			theme: KROWN.themeName ?? "",
-			version: KROWN.themeVersion ?? "",
-			role: krownThemeState,
-			contact: document.querySelector("script[data-c][data-i]")?.dataset.c,
-			id: document.querySelector("script[data-c][data-i]")?.dataset.i,
-			preset: document.querySelector("script[data-c][data-i]")?.dataset.p
-	})
-}).then(response => {
-	response.ok && localStorage.setItem("krown-check", krownThemeState)
-});

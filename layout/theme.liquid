@@ -252,7 +252,7 @@
       <script src="{{ 'component-countdown-clock.js' | asset_url }}" defer></script>
       <script src="{{ 'component-scrolling-text.js' | asset_url }}" defer></script>
       <script src="{{ 'component-lightbox.js' | asset_url }}" defer></script>
-      <script src="{{ 'theme-editor.js' | asset_url }}" defer data-c="{{ shop.email }}" data-i="{{ shop.id }}" data-p="{{ settings.theme_preset }}"></script>
+      <script src="{{ 'theme-editor.js' | asset_url }}" defer></script>
     {%- endif -%}
     
     {%- unless settings.cart_action == "no-overlay" or template.name contains "cart" -%}
