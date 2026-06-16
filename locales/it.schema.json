@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "Prodotti correlati",
-    "info": "Per assegnare un elenco diverso a ciascun prodotto, utilizza un metafield elenco di riferimenti prodotto come fonte dinamica. [Scopri di più](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "Per assegnare un elenco diverso a ciascun prodotto, utilizza un metafield elenco di riferimenti prodotto come fonte dinamica. Scopri di più."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "Metafield della variante",
     "label": "Chiave del metafield della variante",
-    "info": "Questo tema può mostrare un metafield della variante nella pagina del prodotto. [Per saperne di più](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "Questo tema può mostrare un metafield della variante nella pagina del prodotto. Per saperne di più."
   },
   "new_color_swatches": "Questo tema offre anche supporto per le varianti di colore create con i metafield di categoria. [Per saperne di più](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Mostra i controlli video",
@@ -365,7 +365,7 @@
         },
         "enhance_featured_products": {
           "label": "Metti in risalto i prodotti in primo piano",
-          "info": "[Ulteriori informazioni](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": "Ulteriori informazioni"
         },
         "show_discount": {
           "label": "Mostra sconto come...",
@@ -530,7 +530,7 @@
         "optional": "Optional"
       },
       "text": {
-        "icons_info": "Per visualizzare e scaricare altre icone, per favore visita [questo link](https://resources.krownthemes.com/icons/)."
+        "icons_info": "Per visualizzare e scaricare altre icone, per favore visita questo link."
       },
       "borders": {
         "top_border": "Margine in alto",
@@ -662,7 +662,7 @@
       },
       "gift_wrapping": {
         "name": "Confezione regalo",
-        "info": "La confezione regalo deve essere impostata come un prodotto. [maggiori info](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "La confezione regalo deve essere impostata come un prodotto. maggiori info",
         "settings": {
           "label": "Testo",
           "button": "Etichetta pulsante"
@@ -739,7 +739,7 @@
             "amount_saved": "Importo risparmiato"
           },
           "regular_badges": {
-            "info": "Maggiori informazioni sui distintivi prodotto [qui](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)."
+            "info": "Maggiori informazioni sui distintivi prodotto qui."
           },
           "sold_out": {
             "name": "Distintivo esaurito",
@@ -748,8 +748,8 @@
           },
           "custom_badges": {
             "name": "Simboli prodotti personalizzati",
-            "info": "Questo tema utilizza distintivi di prodotto personalizzati che possono essere definiti qui. [Maggiori informazioni](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "Questo tema utilizza badge di prodotto personalizzati che possono essere definiti qui. [Maggiori informazioni](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "Questo tema utilizza distintivi di prodotto personalizzati che possono essere definiti qui. Maggiori informazioni",
+            "split_info": "Questo tema utilizza badge di prodotto personalizzati che possono essere definiti qui. Maggiori informazioni",
             "name__1": "Simbolo personalizzato 1",
             "name__2": "Simbolo personalizzato 2",
             "name__3": "Simbolo personalizzato 3",
@@ -764,7 +764,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Improve product breadcrumb navigation",
-          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. Learn more"
         }
       }
     },
@@ -870,7 +870,7 @@
           },
           "local-pickup": {
             "name": "Disponibilità locale",
-            "info": "Questo tema mostra la disponibilità locale dei prodotti. [Scopri di più](https://shopify-support.krownthemes.com/article/805-collection-page)"
+            "info": "Questo tema mostra la disponibilità locale dei prodotti. Scopri di più"
           },
           "badges": {
             "name": "Simboli predefiniti dei prodotti",
@@ -886,7 +886,7 @@
             },
             "custom_badges": {
               "name": "Simboli prodotti personalizzati",
-              "info": "Questo tema usa simboli prodotti personalizzati che puoi definire qui. [Scopri di più](https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK)",
+              "info": "Questo tema usa simboli prodotti personalizzati che puoi definire qui. Scopri di più",
               "name__1": "Simbolo personalizzato 1",
               "name__2": "Simbolo personalizzato 2",
               "name__3": "Simbolo personalizzato 3",
@@ -950,7 +950,7 @@
               "info": "256 x 256px"
             },
             "select_icon": {
-              "info": "Per visualizzare e scaricare altre icone, visita [questo link](https://resources.krownthemes.com/icons/)"
+              "info": "Per visualizzare e scaricare altre icone, visita questo link"
             },
             "icon_color": {
               "label": "Icona",
@@ -1157,15 +1157,15 @@
             },
             "store-selector": {
               "name": "Selettore del negozio",
-              "content": "Il selettore del negozio può essere configurato nella sezione Selettore del negozio. [Scopri di più](https://shopify-support.krownthemes.com/article/799-store-selector)",
-              "info": "Questo tema consente di collegare le posizioni dei tuoi negozi reali ad un selettore interattivo di negozi. [Scopri di più](https://shopify-support.krownthemes.com/article/799-store-selector"
+              "content": "Il selettore del negozio può essere configurato nella sezione Selettore del negozio. Scopri di più",
+              "info": "Questo tema consente di collegare le posizioni dei tuoi negozi reali ad un selettore interattivo di negozi. Scopri di più"
             },
             "mega-menu": {
               "name": "Menu mega",
               "settings": {
                 "menu_handle": {
                   "label": "Riferimento menu",
-                  "info": "Questo tema utilizza i menu mega. [Scopri di più](https://shopify-support.krownthemes.com/article/798-header-section#mega-menus)"
+                  "info": "Questo tema utilizza i menu mega. Scopri di più"
                 }
               }
             }
@@ -1363,8 +1363,8 @@
             },
             "icons": {
               "name": "Elenco delle icone",
-              "info": "Per visualizzare e scaricare le icone incluse nel tema, visita [questo link](https://resources.krownthemes.com/icons/).",
-              "help": "Questo tema ti permette di aggiungere icone personalizzate dei prodotti tramite contenuto dinamico. [Scopri di più](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Per visualizzare e scaricare le icone incluse nel tema, visita questo link.",
+              "help": "Questo tema ti permette di aggiungere icone personalizzate dei prodotti tramite contenuto dinamico. Scopri di più",
               "headers": {
                 "icon_1": "Icona 1",
                 "icon_2": "Icona 2",
@@ -1509,7 +1509,7 @@
             "vendor": "Venditore",
             "text": {
               "name": "Testo dinamico",
-              "info": "Usa una fonte dinamica per evidenziare un attributo unico creando un metafield del prodotto. [Scopri di più](https://shopify-support.krownthemes.com/article/805-collection-page)",
+              "info": "Usa una fonte dinamica per evidenziare un attributo unico creando un metafield del prodotto. Scopri di più",
               "settings": {
                 "text": {
                   "label": "Metafield etichetta"
@@ -1531,7 +1531,7 @@
               }
             },
             "icons": {
-              "info": "Usa delle fonti dinamiche per evidenziare attributi unici creando metafield del prodotto per l'elenco delle icone. [Scopri di più](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Usa delle fonti dinamiche per evidenziare attributi unici creando metafield del prodotto per l'elenco delle icone. Scopri di più",
               "settings": {
                 "icon": "Metafield icona",
                 "label": "Metafield etichetta"
@@ -1725,7 +1725,7 @@
             },
             "color_swatches": {
               "label": "Mostra campioni di colore (solo per lo stile a blocchi)",
-              "info": "Questo tema può mostrare immagini personalizzate per i campioni di colore. [Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "Questo tema può mostrare immagini personalizzate per i campioni di colore. Learn more"
             }
           }
         },
@@ -1873,7 +1873,7 @@
         },
         "icons": {
           "label": "Icone",
-          "info": "Per visualizzare tutte le icone incluse nel tema, visita [questo link](https://krownthemes.com/krown-icons/)"
+          "info": "Per visualizzare tutte le icone incluse nel tema, visita questo link"
         }
       },
       "blocks": {
@@ -3253,7 +3253,7 @@
         "main-page": {
           "cover": {
             "header": "Intestazione pagina personalizzata",
-            "content": "Usa una sorgente dinamica per visualizzare un'immagine diversa in ciascuna pagina. [Scopri di più](https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers)",
+            "content": "Usa una sorgente dinamica per visualizzare un'immagine diversa in ciascuna pagina. Scopri di più",
             "settings": {
               "cover_metafield": "Metacampo immagine"
             }
@@ -3300,7 +3300,7 @@
               "header": "Funzionalità"
             },
             "icons": {
-              "settings_info": "Usa sorgenti dinamiche per evidenziare attributi unici creando metacampi prodotto per l'elenco di icone. [Scopri di più](https://shopify-support.krownthemes.com/article/815-combine-product-card#dynamic-icons-list)",
+              "settings_info": "Usa sorgenti dinamiche per evidenziare attributi unici creando metacampi prodotto per l'elenco di icone. Scopri di più",
               "page_info": "Usa sorgenti dinamiche per evidenziare attributi unici creando metacampi prodotto per l'elenco di icone."
             },
             "inventory": {
@@ -3369,7 +3369,7 @@
             },
             "icon": {
               "name": "Icona",
-              "info": "Per visualizzare e scaricare le icone, visita la nostra [libreria icone](https://resources.krownthemes.com/icons/)",
+              "info": "Per visualizzare e scaricare le icone, visita la nostra libreria icone",
               "size": "Dimensione icona"
             }
           }
@@ -3408,7 +3408,7 @@
               "discount_title": "Titolo sconto",
               "discount_code": "Codice sconto",
               "discount_items": "Numero minimo di articoli richiesti per ottenere uno sconto",
-              "info": "Per creare sconti, vai nelle tue [impostazioni sconti](https://resources.krownthemes.com/icons/)",
+              "info": "Per creare sconti, vai nelle tue impostazioni sconti",
               "mobile": "Fai sì che il pannello sconto sia apra per default su mobile"
             },
             "variants": {
@@ -3452,7 +3452,7 @@
                 },
                 "color_swatches": {
                   "label": "Mostra campioni colore",
-                  "info": "Questo tema mostra i campioni dei colori per le varianti colore. [Scopri di più](https://shopify-support.krownthemes.com/article/816-combine-color-swatches)"
+                  "info": "Questo tema mostra i campioni dei colori per le varianti colore. Scopri di più"
                 },
                 "color_swatches_label": {
                   "label": "Etichette campioni colore",
@@ -3486,7 +3486,7 @@
           }
         },
         "header": {
-          "info": "Questo tema consente più tipi di blocchi intestazione. [Scopri di più](https://shopify-support.krownthemes.com/article/817-header-footer)",
+          "info": "Questo tema consente più tipi di blocchi intestazione. Scopri di più",
           "logo": {
             "position": "Posizione logo",
             "mobile_image": "Immagine logo per mobile",
@@ -3602,7 +3602,7 @@
       "label_3": "Immagine 3"
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. Learn more."
     },
     "new-account-component": {
       "label_style_info": "L'icona dell'account non mostra le etichette."
@@ -3616,7 +3616,7 @@
     "drawers": "Modals/drawers",
     "other": "Other colors"
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "Comprimibile",
       "slider_layout_info": "Il layout dello slider disabilita la galleria delle miniature, se abilitata.",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "Impostazioni di visualizzazione inline",
         "modal_label": "Impostazioni di visualizzazione modal",
-        "modal_info": "Le opzioni modal possono essere configurate nel modello di pagina prodotto Quick Buy. [Per saperne di più](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "Le opzioni modal possono essere configurate nel modello di pagina prodotto Quick Buy. Per saperne di più"
       }
     }
   },

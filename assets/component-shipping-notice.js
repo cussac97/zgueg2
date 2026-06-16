@@ -15,10 +15,10 @@ if ( typeof ShippingNotice !== 'function' ) {
 			
       let cartSliderWidth = 0;
       if ( freeShippingRemaining < 0 ) {
-        this.querySelector('[data-js-free-shipping-text]').innerHTML = window.KROWN.settings.locales.shipping_notice_remaining_to_free.replace('{{ remaining_amount }}', this._formatMoney(Math.abs(freeShippingRemaining), KROWN.settings.shop_money_format));
+        this.querySelector('[data-js-free-shipping-text]').innerHTML = window.ZGUEG.settings.locales.shipping_notice_remaining_to_free.replace('{{ remaining_amount }}', this._formatMoney(Math.abs(freeShippingRemaining), ZGUEG.settings.shop_money_format));
         cartSliderWidth = 100 - (Math.abs(freeShippingRemaining) * 100 / freeShippingThreshold);
       } else {
-        this.querySelector('[data-js-free-shipping-text]').innerHTML = window.KROWN.settings.locales.shipping_notice_eligible_for_free;
+        this.querySelector('[data-js-free-shipping-text]').innerHTML = window.ZGUEG.settings.locales.shipping_notice_eligible_for_free;
         cartSliderWidth = 100;
       }
 			if ( this.querySelector('[data-js-free-shipping-slider]') ) {
@@ -54,7 +54,7 @@ if ( typeof ShippingNotice !== 'function' ) {
 				);
 				const centsAmount = parts[1] ? decimal + parts[1] : '';
 	
-				return dollarsAmount + centsAmount + KROWN.settings.iso_code;
+				return dollarsAmount + centsAmount + ZGUEG.settings.iso_code;
 			}
 	
 			switch (formatString.match(placeholderRegex)[1]) {

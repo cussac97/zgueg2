@@ -8,7 +8,7 @@ if ( typeof ToggleTab !== 'function' ) {
 
 			this.titleEl = this.querySelector('[data-js-title]');
 			this.contentEl = this.querySelector('[data-js-content]');
-			this.titleEl.innerHTML = `${this.titleEl.innerHTML}${this.hasAttribute('data-togglepack-alternate') ? KROWN.settings.symbols.toggle_pack_alternate : KROWN.settings.symbols.toggle_pack}`;
+			this.titleEl.innerHTML = `${this.titleEl.innerHTML}${this.hasAttribute('data-togglepack-alternate') ? ZGUEG.settings.symbols.toggle_pack_alternate : ZGUEG.settings.symbols.toggle_pack}`;
 
 			if ( this.hasAttribute('data-toggle-inert') ) {
 				this.toggleInert = true;

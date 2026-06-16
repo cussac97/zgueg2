@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "Product siblings",
-    "info": "To assign a different list to each product, use a product reference list metafield as a dynamic source. [Learn more](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "To assign a different list to each product, use a product reference list metafield as a dynamic source."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "Variant metafield",
     "label": "Variant metafield key",
-    "info": "This theme can show a variant metafield on the product page. [Learn more](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "This theme can show a variant metafield on the product page."
   },
   "new_color_swatches": "This theme also offers support for color swatches created with category metafields. [Learn more](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Show video controls",
@@ -373,10 +373,10 @@
         },
         "enhance_featured_products": {
           "label": "Emphasize featured products",
-          "info": "[Learn more](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": ""
         },
         "show_discount": {
-          "label": "Show discount as...",
+          "label": "Show discount as.",
           "options__1": {
             "label": "Text"
           },
@@ -606,7 +606,7 @@
           },
           "local-pickup": {
             "name": "Local availability",
-            "info": "This theme shows local availability for products. [Learn more](https://shopify-support.krownthemes.com/article/805-collection-page)"
+            "info": "This theme shows local availability for products."
           },
           "products-list": {
             "name": "Products list"
@@ -625,7 +625,7 @@
             },
             "custom_badges": {
               "name": "Custom product badges",
-              "info": "This theme uses custom product badges that you can define here. [Learn more](https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK)",
+              "info": "This theme uses custom product badges that you can define here.",
               "name__1": "Custom badge 1",
               "name__2": "Custom badge 2",
               "name__3": "Custom badge 3",
@@ -679,7 +679,7 @@
               "info": "256 x 256px"
             },
             "select_icon": {
-              "info": "To visualize & download more icons, please visit [this link](https://resources.krownthemes.com/icons/)"
+              "info": "To visualize & download more icons, please visit"
             },
             "icon_color": {
               "label": "Icon",
@@ -886,15 +886,15 @@
             },
             "store-selector": {
               "name": "Store selector",
-              "content": "The store selector can be configured in the Store Selector section. [Learn more](https://shopify-support.krownthemes.com/article/799-store-selector)",
-              "info": "This theme allows you to connect your real store locations to an interactive store selector. [Learn more](https://shopify-support.krownthemes.com/article/799-store-selector)"
+              "content": "The store selector can be configured in the Store Selector section.",
+              "info": "This theme allows you to connect your real store locations to an interactive store selector."
             },
             "mega-menu": {
               "name": "Mega menu",
               "settings": {
                 "menu_handle": {
                   "label": "Menu handle",
-                  "info": "This theme uses mega menus. [Learn more](https://shopify-support.krownthemes.com/article/798-header-section#mega-menus)"
+                  "info": "This theme uses mega menus."
                 }
               }
             }
@@ -1092,8 +1092,8 @@
             },
             "icons": {
               "name": "Icons list",
-              "info": "To visualize & download icons included in the theme, please visit [this link](https://resources.krownthemes.com/icons//).",
-              "help": "This theme allows you to add custom product icons through dynamic content. [Learn more](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "To visualize & download icons included in the theme, please visit.",
+              "help": "This theme allows you to add custom product icons through dynamic content.",
               "headers": {
                 "icon_1": "Icon 1",
                 "icon_2": "Icon 2",
@@ -1238,7 +1238,7 @@
             "vendor": "Vendor",
             "text": {
               "name": "Dynamic text",
-              "info": "Use a dynamic source to highlight a unique attribute by creating a product metafield. [Learn more](https://shopify-support.krownthemes.com/article/805-collection-page)",
+              "info": "Use a dynamic source to highlight a unique attribute by creating a product metafield.",
               "settings": {
                 "text": {
                   "label": "Label metafield"
@@ -1260,7 +1260,7 @@
               }
             },
             "icons": {
-              "info": "Use dynamic sources to highlight unique attributes by creating product metafields for the icon list. [Learn more](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Use dynamic sources to highlight unique attributes by creating product metafields for the icon list.",
               "settings": {
                 "icon": "Icon metafield",
                 "label": "Label metafield"
@@ -1299,7 +1299,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Improve product breadcrumb navigation",
-          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's."
         }
       },
       "seo": {
@@ -1308,7 +1308,7 @@
         "info": "Specify heading level to help search engines index the structure of your page.",
         "microdata": {
           "label": "Disable microdata schema",
-          "info": "This will remove the schema.org markup from the page. Disable only if you are using a third party app for SEO! [Learn more](https://shopify-support.krownthemes.com/article/697-seo#microdata)"
+          "info": "This will remove the schema.org markup from the page. Disable only if you are using a third party app for SEO!"
         }
       },
       "late_edits": {
@@ -1342,7 +1342,7 @@
         "optional": "Optional"
       },
       "text": {
-        "icons_info": "To visualize & download more icons, please visit [this link](https://resources.krownthemes.com/icons/)"
+        "icons_info": "To visualize & download more icons, please visit"
       },
       "borders": {
         "show_border": "Show border",
@@ -1474,7 +1474,7 @@
       },
       "gift_wrapping": {
         "name": "Gift wrapping",
-        "info": "Gift wrapping needs to be set up as a product. [Learn more](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "Gift wrapping needs to be set up as a product.",
         "settings": {
           "label": "Text",
           "button": "Button label"
@@ -1551,7 +1551,7 @@
             "amount_saved": "Amount saved"
           },
           "regular_badges": {
-            "info": "Learn more about product badges [here](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)."
+            "info": "Learn more about product badges."
           },
           "sold_out": {
             "name": "Sold out badge",
@@ -1560,8 +1560,8 @@
           },
           "custom_badges": {
             "name": "Custom product badges",
-            "info": "This theme uses custom product badges that you can define here. [Learn more](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "This theme uses custom product badges that you can define here. [Learn more](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "This theme uses custom product badges that you can define here.",
+            "split_info": "This theme uses custom product badges that you can define here.",
             "name__1": "Custom badge 1",
             "name__2": "Custom badge 2",
             "name__3": "Custom badge 3",
@@ -1749,7 +1749,7 @@
             },
             "color_swatches": {
               "label": "Show color swatches",
-              "info": "This theme can show custom images for color swatches. [Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "This theme can show custom images for color swatches."
             }
           }
         },
@@ -1889,7 +1889,7 @@
         },
         "icons": {
           "label": "Icons",
-          "info": "To visualize all the icons included in the theme, please visit [this link](https://krownthemes.com/krown-icons/)"
+          "info": "To visualize all the icons included in the theme, please visit"
         }
       },
       "blocks": {
@@ -3068,7 +3068,7 @@
       }
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent."
     },
     "bundle-extra-words-v110": {
       "settings_schema": {
@@ -3264,7 +3264,7 @@
         "main-page": {
           "cover": {
             "header": "Custom page header",
-            "content": "Use a dynamic source to display a different image on each page. [Learn more](https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers)",
+            "content": "Use a dynamic source to display a different image on each page.",
             "settings": {
               "cover_metafield": "Image metafield"
             }
@@ -3383,7 +3383,7 @@
             },
             "icon": {
               "name": "Icon",
-              "info": "To visualize & download icons, please visit our [icon library](https://resources.krownthemes.com/icons/)",
+              "info": "To visualize & download icons, please visit our",
               "size": "Icon size"
             }
           }
@@ -3466,7 +3466,7 @@
                 },
                 "color_swatches": {
                   "label": "Show color swatches",
-                  "info": "This theme shows color swatches for color variants. [Learn more](https://shopify-support.krownthemes.com/article/816-combine-color-swatches)"
+                  "info": "This theme shows color swatches for color variants."
                 },
                 "color_swatches_label": {
                   "label": "Color swatches labels",
@@ -3500,7 +3500,7 @@
           }
         },
         "header": {
-          "info": "This theme allows more types of header blocks. [Learn more](https://shopify-support.krownthemes.com/article/817-header-footer)",
+          "info": "This theme allows more types of header blocks.",
           "logo": {
             "position": "Logo position",
             "mobile_image": "Logo mobile image",
@@ -3616,7 +3616,7 @@
       "label_style_info": "The account icon doesn't show labels."
     }
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "Collapsible",
       "slider_layout_info": "The slider layout disables the thumbnail gallery, if enabled.",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "Inline display settings",
         "modal_label": "Modal display settings",
-        "modal_info": "Modal options can be configured in the Quick Buy product page template. [Learn more](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "Modal options can be configured in the Quick Buy product page template."
       }
     }
   },

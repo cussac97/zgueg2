@@ -88,7 +88,7 @@ if ( typeof ProductBundler !== 'function' ) {
           elm.addEventListener('click', e=>{
             e.preventDefault();
             const product = e.target.closest('[data-js-product-item]');
-            product.querySelector('.button__text').innerHTML = KROWN.settings.locales.products_added_to_bundle_label;
+            product.querySelector('.button__text').innerHTML = ZGUEG.settings.locales.products_added_to_bundle_label;
             const variant = product.querySelector('product-variants').currentVariant;
             this.addToBundle(variant, product);
             this.classList.add('opened');
@@ -116,7 +116,7 @@ if ( typeof ProductBundler !== 'function' ) {
     }
     
     clearSlot(slot) {
-      slot.product.querySelector('[data-js-product-add-to-cart-text]').textContent = KROWN.settings.locales.products_add_to_bundle_button;
+      slot.product.querySelector('[data-js-product-add-to-cart-text]').textContent = ZGUEG.settings.locales.products_add_to_bundle_button;
       if ( this.bundleProducts.length > this._bundleMin ) {
         this.bundleProducts.splice(this.bundleProducts.indexOf(slot), 1);
         slot.product.classList.remove('product-item--bundled');

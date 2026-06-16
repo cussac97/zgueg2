@@ -262,7 +262,7 @@ if ( ! window.handleAddToCart ) {
 		
 		let alert = '';
 
-		fetch(`${KROWN.settings.routes.cart_add_url}.js`, {
+		fetch(`${ZGUEG.settings.routes.cart_add_url}.js`, {
 			body: body,
 			headers: headers,
 			method: 'POST'
@@ -287,9 +287,9 @@ if ( ! window.handleAddToCart ) {
 			if ( document.body.classList.contains('template-cart' ) ) {
 				doNext = "page";
 			} else {
-				if ( KROWN.settings.cart_popup == "true" && document.getElementById('mini-cart-popup') ) {
+				if ( ZGUEG.settings.cart_popup == "true" && document.getElementById('mini-cart-popup') ) {
 					doNext = "popup";
-				} else if ( KROWN.settings.cart_action == "overlay" && document.getElementById('site-cart-sidebar') ) {
+				} else if ( ZGUEG.settings.cart_action == "overlay" && document.getElementById('site-cart-sidebar') ) {
 					doNext = "drawer";
 				} else {
 					doNext = "page";
@@ -297,7 +297,7 @@ if ( ! window.handleAddToCart ) {
 			}
 
 			if ( doNext == "page" ) {
-				window.location.href = KROWN.settings.routes.cart_url;
+				window.location.href = ZGUEG.settings.routes.cart_url;
 			} else {
 
 				if ( document.getElementById('site-cart-sidebar') ) {
@@ -334,7 +334,7 @@ if ( ! window.handleAddToCart ) {
 						miniCartPopup.querySelector('[data-js-mini-cart-plural]').style.display = 'none';
 					} else {
 						miniCartPopup.querySelector('[data-js-mini-cart-plural]').style.display = 'block';
-						miniCartPopup.querySelector('[data-js-mini-cart-plural]').innerHTML = KROWN.settings.locales.cart_added_items_count.replace('{{ count }}', items);
+						miniCartPopup.querySelector('[data-js-mini-cart-plural]').innerHTML = ZGUEG.settings.locales.cart_added_items_count.replace('{{ count }}', items);
 						miniCartPopup.querySelector('[data-js-mini-cart-single]').style.display = 'none';
 					}
 					miniCartPopup.show();
@@ -376,9 +376,9 @@ if ( typeof QuickAddToCart !== 'function' ) {
 				if ( document.body.classList.contains('template-cart' ) ) {
 					doNext = "page";
 				} else {
-					if ( KROWN.settings.cart_popup == "true" && document.getElementById('mini-cart-popup') ) {
+					if ( ZGUEG.settings.cart_popup == "true" && document.getElementById('mini-cart-popup') ) {
 						doNext = "popup";
-					} else if ( KROWN.settings.cart_action == "overlay" && document.getElementById('site-cart-sidebar') ) {
+					} else if ( ZGUEG.settings.cart_action == "overlay" && document.getElementById('site-cart-sidebar') ) {
 						doNext = "drawer";
 					} else {
 						doNext = "page";
@@ -386,7 +386,7 @@ if ( typeof QuickAddToCart !== 'function' ) {
 				}
 
 				if ( doNext == "page" ) {
-					window.location.href = KROWN.settings.routes.cart_url;
+					window.location.href = ZGUEG.settings.routes.cart_url;
 				} else {
 	
 					if ( doNext == "drawer" ) {
@@ -491,7 +491,7 @@ if ( typeof QuickViewProduct !== 'function' ) {
 							>
 								<div class="container--medium">
 									<div class="modal-content" data-js-product-page>
-										<button class="modal-close" data-js-close data-js-first-focus style="position:absolute;margin:0;top:0;right:0">${window.KROWN.settings.symbols.close}</button>
+										<button class="modal-close" data-js-close data-js-first-focus style="position:absolute;margin:0;top:0;right:0">${window.ZGUEG.settings.symbols.close}</button>
 									</div>
 								</div>
 								<span class="modal-background" data-js-close></span>
@@ -539,9 +539,9 @@ if ( typeof QuickViewProduct !== 'function' ) {
 
 }
 
-if ( ! KROWN.productItemUpdateHelper ) {
+if ( ! ZGUEG.productItemUpdateHelper ) {
 
-	KROWN.productItemUpdateHelper = (productItem, productId, html, skeleton) => {
+	ZGUEG.productItemUpdateHelper = (productItem, productId, html, skeleton) => {
 
 		const truncate = (str, max = 10) => {
 			const array = str.trim().split(' ');

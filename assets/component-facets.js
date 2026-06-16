@@ -78,7 +78,7 @@ class FacetFiltersForm extends HTMLElement {
     document.getElementById('CollectionProductGrid').querySelectorAll('template').forEach(elm=>{
       elm.closest('form')?.append(elm.content.cloneNode(true));
     })
-    const event = new CustomEvent('krown:main-collection-grid:filtered', {
+    const event = new CustomEvent('zgueg:main-collection-grid:filtered', {
       bubbles: true,
       detail: {
         gridElement: document.getElementById('CollectionProductGrid')

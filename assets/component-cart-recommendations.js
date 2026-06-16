@@ -8,7 +8,7 @@ class CartRecommendations extends HTMLElement {
 	generateRecommendations(){
 		const cartItems = document.getElementById('AjaxCartForm').querySelectorAll('[data-js-cart-item]');
 		if ( cartItems.length > 0 ) {
-			fetch(`${KROWN.settings.routes.product_recommendations_url}?section_id=${this.dataset.section}&product_id=${cartItems[0].dataset.productId}&limit=${this.dataset.limit}`)
+			fetch(`${ZGUEG.settings.routes.product_recommendations_url}?section_id=${this.dataset.section}&product_id=${cartItems[0].dataset.productId}&limit=${this.dataset.limit}`)
 				.then(response => response.text())
 				.then(text => {
 					const innerHTML = new DOMParser()

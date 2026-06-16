@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "関連商品",
-    "info": "各商品に異なるリストを割り当てるには、商品参照リストのメタフィールドを動的ソースとして使用します。[詳細](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "各商品に異なるリストを割り当てるには、商品参照リストのメタフィールドを動的ソースとして使用します。."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "バリアントメタフィールド",
     "label": "バリアントメタフィールドキー",
-    "info": "このテーマでは、商品ページにバリアントメタフィールドを表示できます。 [詳細はこちら](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "このテーマでは、商品ページにバリアントメタフィールドを表示できます。."
   },
   "new_color_swatches": "このテーマでは、カテゴリーメタフィールドで作成されたカラースウォッチにも対応しています。 [詳細はこちら](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "ビデオコントロールを表示",
@@ -365,10 +365,10 @@
         },
         "enhance_featured_products": {
           "label": "注目商品を強調する",
-          "info": "[詳細](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": ""
         },
         "show_discount": {
-          "label": "割引の表示方法...",
+          "label": "割引の表示方法.",
           "options__1": {
             "label": "文字"
           },
@@ -530,7 +530,7 @@
         "optional": "Optional"
       },
       "text": {
-        "icons_info": "より多くのアイコンをビジュアル化・ダウンロードするには、[このリンク](https://resources.krownthemes.com/icons/)をご覧ください。"
+        "icons_info": "より多くのアイコンをビジュアル化・ダウンロードするには、をご覧ください。"
       },
       "borders": {
         "top_border": "上辺ボーダー",
@@ -662,7 +662,7 @@
       },
       "gift_wrapping": {
         "name": "ギフト包装",
-        "info": "ギフト包装は商品として設定する必要があります。[詳しくはこちら](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "ギフト包装は商品として設定する必要があります。",
         "settings": {
           "label": "文字",
           "button": "ボタンラベル"
@@ -739,7 +739,7 @@
             "amount_saved": "保存されている量"
           },
           "regular_badges": {
-            "info": "商品バッジについて詳しくは[こちら](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)をご覧ください。"
+            "info": "商品バッジについて詳しくはをご覧ください。"
           },
           "sold_out": {
             "name": "完売バッジ",
@@ -748,8 +748,8 @@
           },
           "custom_badges": {
             "name": "カスタム商品バッジ",
-            "info": "このテーマでは、ここで定義可能なカスタム商品バッジを使用しています。[詳しくはこちら](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "このテーマでは、ここで定義可能なカスタム商品バッジを使用しています。[詳しくはこちら](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "このテーマでは、ここで定義可能なカスタム商品バッジを使用しています。",
+            "split_info": "このテーマでは、ここで定義可能なカスタム商品バッジを使用しています。",
             "name__1": "カスタムバッジ 1",
             "name__2": "カスタムバッジ 2",
             "name__3": "カスタムバッジ 3",
@@ -764,7 +764,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Improve product breadcrumb navigation",
-          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's."
         }
       }
     },
@@ -870,7 +870,7 @@
           },
           "local-pickup": {
             "name": "現地入手可能性",
-            "info": "このテーマは、商品の現地入手可能性を表示します。[詳しく知る]（https://shopify-support.krownthemes.com/article/805-collection-page）"
+            "info": "このテーマは、商品の現地入手可能性を表示します。詳しく知る"
           },
           "badges": {
             "name": "デフォルトの商品バッジ",
@@ -886,7 +886,7 @@
             },
             "custom_badges": {
               "name": "カスタム商品バッジ",
-              "info": "このテーマは、ここで定義することができるカスタム商品バッジを使用します。[詳しく知る]（https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK）",
+              "info": "このテーマは、ここで定義することができるカスタム商品バッジを使用します。詳しく知る",
               "name__1": "カスタムバッジ 1",
               "name__2": "カスタムバッジ 2",
               "name__3": "カスタムバッジ 3",
@@ -950,7 +950,7 @@
               "info": "256 x 256px"
             },
             "select_icon": {
-              "info": "もっと多くのアイコンを表示・ダウンロードするには、[このリンク]（https://resources.krownthemes.com/icons/）へ行ってください"
+              "info": "もっと多くのアイコンを表示・ダウンロードするには、このリンクへ行ってください"
             },
             "icon_color": {
               "label": "アイコン",
@@ -1157,15 +1157,15 @@
             },
             "store-selector": {
               "name": "ストアセレクター",
-              "content": "ストアセレクターは、「ストアセレクター」セクションで設定できます。[詳しく知る]（https://shopify-support.krownthemes.com/article/799-store-selector）",
-              "info": "このテーマは、本物の店舗の場所と、インタラクティブなストアセレクターを結びつけることができます。[詳しく知る]（https://shopify-support.krownthemes.com/article/799-store-selector）"
+              "content": "ストアセレクターは、「ストアセレクター」セクションで設定できます。詳しく知る",
+              "info": "このテーマは、本物の店舗の場所と、インタラクティブなストアセレクターを結びつけることができます。詳しく知る"
             },
             "mega-menu": {
               "name": "メガメニュー",
               "settings": {
                 "menu_handle": {
                   "label": "メニューハンドル",
-                  "info": "このテーマはメガメニューを使用します。[詳しく知る]（https://shopify-support.krownthemes.com/article/798-header-section#mega-menus）"
+                  "info": "このテーマはメガメニューを使用します。詳しく知る"
                 }
               }
             }
@@ -1363,8 +1363,8 @@
             },
             "icons": {
               "name": "アイコンリスト",
-              "info": "このテーマに含まれるアイコンを表示・ダウンロードするには、[このリンク]へ行ってください（https://resources.krownthemes.com/icons/）。",
-              "help": "このテーマは、ダイナミックコンテンツを通してカスタム商品アイコンを追加することができます。[詳しく知る]（https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons）",
+              "info": "このテーマに含まれるアイコンを表示・ダウンロードするには、このリンクへ行ってください。",
+              "help": "このテーマは、ダイナミックコンテンツを通してカスタム商品アイコンを追加することができます。詳しく知る",
               "headers": {
                 "icon_1": "アイコン 1",
                 "icon_2": "アイコン 2",
@@ -1509,7 +1509,7 @@
             "vendor": "販売業者",
             "text": {
               "name": "ダイナミックテキスト",
-              "info": "ダイナミックソースを使って商品メタフィールドを作成することで、固有の属性を強調してください。[詳しく知る]（https://shopify-support.krownthemes.com/article/805-collection-page）",
+              "info": "ダイナミックソースを使って商品メタフィールドを作成することで、固有の属性を強調してください。詳しく知る",
               "settings": {
                 "text": {
                   "label": "ラベルメタフィールド"
@@ -1531,7 +1531,7 @@
               }
             },
             "icons": {
-              "info": "ダイナミックソースを使ってアイコンリスト用の商品メタフィールドを作成することで、固有の属性を強調してください。[詳しく知る]（https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons）",
+              "info": "ダイナミックソースを使ってアイコンリスト用の商品メタフィールドを作成することで、固有の属性を強調してください。詳しく知る",
               "settings": {
                 "icon": "アイコンメタフィールド",
                 "label": "ラベルメタフィールド"
@@ -1733,7 +1733,7 @@
             },
             "color_swatches": {
               "label": "色見本を表示する（ブロックスタイルの場合のみ）",
-              "info": "このテーマでは、色見本のカスタム画像を表示できます。[Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "このテーマでは、色見本のカスタム画像を表示できます。"
             }
           }
         },
@@ -1873,7 +1873,7 @@
         },
         "icons": {
           "label": "アイコン",
-          "info": "このテーマに含まれるすべてのアイコンを表示するには、 [こちらのリンク](https://krownthemes.com/krown-icons/) をご覧ください"
+          "info": "このテーマに含まれるすべてのアイコンを表示するには、 をご覧ください"
         }
       },
       "blocks": {
@@ -3253,7 +3253,7 @@
         "main-page": {
           "cover": {
             "header": "カスタムページヘッダー",
-            "content": "ダイナミックソースを使って、ページごとに異なる画像を表示できます。[もっと詳しく]（https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers）",
+            "content": "ダイナミックソースを使って、ページごとに異なる画像を表示できます。もっと詳しく",
             "settings": {
               "cover_metafield": "画像のメタフィールド"
             }
@@ -3300,7 +3300,7 @@
               "header": "機能性"
             },
             "icons": {
-              "settings_info": "ダイナミックソースを使ってアイコンリストのための商品のメタフィールドを作成して、独自の特徴を強調できます。[もっと詳しく]（https://shopify-support.krownthemes.com/article/815-combine-product-card#dynamic-icons-list）",
+              "settings_info": "ダイナミックソースを使ってアイコンリストのための商品のメタフィールドを作成して、独自の特徴を強調できます。もっと詳しく",
               "page_info": "ダイナミックソースを使ってアイコンリストのための商品のメタフィールドを作成して、商品独自の特徴を強調できます。"
             },
             "inventory": {
@@ -3369,7 +3369,7 @@
             },
             "icon": {
               "name": "アイコン",
-              "info": "アイコンを可視化またはダウンロードするには、[アイコンライブラリ]（https://resources.krownthemes.com/icons/）にアクセスしてください。",
+              "info": "アイコンを可視化またはダウンロードするには、アイコンライブラリにアクセスしてください。",
               "size": "アイコンサイズ"
             }
           }
@@ -3452,7 +3452,7 @@
                 },
                 "color_swatches": {
                   "label": "色見本を表示",
-                  "info": "このテーマでは、カラーバリエーションのためのカラースウォッチが表示されます。[もっと詳しく]（https://shopify-support.krownthemes.com/article/816-combine-color-swatches）"
+                  "info": "このテーマでは、カラーバリエーションのためのカラースウォッチが表示されます。もっと詳しく"
                 },
                 "color_swatches_label": {
                   "label": "カラースウォッチのラベル",
@@ -3486,7 +3486,7 @@
           }
         },
         "header": {
-          "info": "このテーマでは、より多くの種類のヘッダーブロックを利用できます。[もっと詳しく]（https://shopify-support.krownthemes.com/article/817-header-footer）",
+          "info": "このテーマでは、より多くの種類のヘッダーブロックを利用できます。もっと詳しく",
           "logo": {
             "position": "ロゴの位置",
             "mobile_image": "モバイル版ロゴ画像",
@@ -3602,7 +3602,7 @@
       "label_3": "画像3"
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent."
     },
     "new-account-component": {
       "label_style_info": "アカウントアイコンにはラベルが表示されません。"
@@ -3616,7 +3616,7 @@
     "drawers": "Modals/drawers",
     "other": "Other colors"
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "折りたたみ可能",
       "slider_layout_info": "スライダーのレイアウトは、サムネイルギャラリーが有効になっている場合、それを無効にします。",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "インライン表示設定",
         "modal_label": "モーダル表示設定",
-        "modal_info": "モーダルオプションは、クイックバイ商品ページテンプレートで設定できます。 [詳細はこちら](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "モーダルオプションは、クイックバイ商品ページテンプレートで設定できます。"
       }
     }
   },

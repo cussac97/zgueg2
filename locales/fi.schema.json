@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "Tuotteen sisarukset",
-    "info": "Määrittääksesi eri luettelon kullekin tuotteelle, käytä tuoteviiteluettelon metakenttää dynaamisena lähteenä. [Lue lisää](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "Määrittääksesi eri luettelon kullekin tuotteelle, käytä tuoteviiteluettelon metakenttää dynaamisena lähteenä."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "Varianttimetakenttä",
     "label": "Varianttimetakentän avain",
-    "info": "Tämä teema voi näyttää varianttimetakentän tuotesivulla. [Lue lisää](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "Tämä teema voi näyttää varianttimetakentän tuotesivulla."
   },
   "new_color_swatches": "Tämä teema tukee myös värimallien käyttöä, jotka on luotu kategorian metakentillä. [Lisätietoja](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Näytä videon säätimet",
@@ -365,7 +365,7 @@
         },
         "enhance_featured_products": {
           "label": "Korosta esittelyssä olevia tuotteita",
-          "info": "[Lue lisää](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": ""
         },
         "show_discount": {
           "label": "Näytä alennus muodossa…",
@@ -598,7 +598,7 @@
           },
           "local-pickup": {
             "name": "Paikallinen saatavuus",
-            "info": "Tämä teema näyttää tuotteiden paikallisen saatavuuden. [Lue lisää](https://shopify-support.krownthemes.com/article/805-collection-page)"
+            "info": "Tämä teema näyttää tuotteiden paikallisen saatavuuden."
           },
           "products-list": {
             "name": "Tuoteluettelo"
@@ -617,7 +617,7 @@
             },
             "custom_badges": {
               "name": "Mukautetut tuotetunnukset",
-              "info": "Tämä teema käyttää mukautettuja tuotetunnuksia, joita voit määrittää täällä. [Lue lisää](https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK)",
+              "info": "Tämä teema käyttää mukautettuja tuotetunnuksia, joita voit määrittää täällä.",
               "name__1": "Mukautettu tunnus 1",
               "name__2": "Mukautettu tunnus 2",
               "name__3": "Mukautettu tunnus 3",
@@ -671,7 +671,7 @@
               "info": "256 × 256 pikseliä"
             },
             "select_icon": {
-              "info": "Voit visualisoida ja ladata lisää kuvakkeita [tämän linkin](https://resources.krownthemes.com/icons/) kautta"
+              "info": "Voit visualisoida ja ladata lisää kuvakkeita kautta"
             },
             "icon_color": {
               "label": "Kuvake",
@@ -878,15 +878,15 @@
             },
             "store-selector": {
               "name": "Kaupan valitsin",
-              "content": "Kaupan valitsin voidaan määrittää Kaupan valitsin -osiossa. [Lue lisää](https://shopify-support.krownthemes.com/article/799-store-selector)",
-              "info": "Tämän teeman avulla voit yhdistää kauppojesi todelliset sijainnit interaktiiviseen kaupan valitsimeen. [Lue lisää](https://shopify-support.krownthemes.com/article/799-store-selector)"
+              "content": "Kaupan valitsin voidaan määrittää Kaupan valitsin -osiossa.",
+              "info": "Tämän teeman avulla voit yhdistää kauppojesi todelliset sijainnit interaktiiviseen kaupan valitsimeen."
             },
             "mega-menu": {
               "name": "Megavalikko",
               "settings": {
                 "menu_handle": {
                   "label": "Valikon kutsumanimi",
-                  "info": "Tämä teema käyttää megavalikkoja. [Lue lisää](https://shopify-support.krownthemes.com/article/798-header-section#mega-menus)"
+                  "info": "Tämä teema käyttää megavalikkoja."
                 }
               }
             }
@@ -1084,8 +1084,8 @@
             },
             "icons": {
               "name": "Kuvakeluettelo",
-              "info": "Voit visualisoida ja ladata teemaan sisältyviä kuvakkeita [tämän linkin](https://resources.krownthemes.com/icons//) kautta.",
-              "help": "Tämä teema mahdollistaa mukautettujen tuotekuvakkeiden lisäämisen dynaamisen sisällön avulla. [Lue lisää](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Voit visualisoida ja ladata teemaan sisältyviä kuvakkeita kautta.",
+              "help": "Tämä teema mahdollistaa mukautettujen tuotekuvakkeiden lisäämisen dynaamisen sisällön avulla.",
               "headers": {
                 "icon_1": "Kuvake 1",
                 "icon_2": "Kuvake 2",
@@ -1230,7 +1230,7 @@
             "vendor": "Myyjä",
             "text": {
               "name": "Dynaaminen teksti",
-              "info": "Luo tuotteen metakenttä, niin voit käyttää dynaamista lähdettä ainutlaatuisen ominaisuuden korostamiseen. [Lue lisää](https://shopify-support.krownthemes.com/article/805-collection-page)",
+              "info": "Luo tuotteen metakenttä, niin voit käyttää dynaamista lähdettä ainutlaatuisen ominaisuuden korostamiseen.",
               "settings": {
                 "text": {
                   "label": "Nimikkeen metakenttä"
@@ -1252,7 +1252,7 @@
               }
             },
             "icons": {
-              "info": "Luo tuotteiden metakenttiä kuvakeluetteloa varten, niin voit käyttää dynaamisia lähteitä ainutlaatuisten ominaisuuksien korostamiseen. [Lue lisää](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Luo tuotteiden metakenttiä kuvakeluetteloa varten, niin voit käyttää dynaamisia lähteitä ainutlaatuisten ominaisuuksien korostamiseen.",
               "settings": {
                 "icon": "Kuvakkeen metakenttä",
                 "label": "Nimikkeen metakenttä"
@@ -1291,7 +1291,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Paranna linkkipolkua pitkin navigointia",
-          "info": "Tämä asetus luo tuotesivujen URL-osoitteista kaksoiskappaleita, joihin sisällytetään kokoelmien nimet. [Lue lisää](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Tämä asetus luo tuotesivujen URL-osoitteista kaksoiskappaleita, joihin sisällytetään kokoelmien nimet."
         }
       },
       "seo": {
@@ -1300,7 +1300,7 @@
         "info": "Määritä otsikkotaso, jotta hakukoneet voivat indeksoida sivusi rakenteen helpommin.",
         "microdata": {
           "label": "Poista schema.org-merkkaus käytöstä",
-          "info": "Tämä poistaa schema.org-merkkauksen sivulta. Poista tämä käytöstä vain, jos käytät kolmannen osapuolen sovellusta hakukoneoptimointiin! [Lue lisää](https://shopify-support.krownthemes.com/article/697-seo#microdata)"
+          "info": "Tämä poistaa schema.org-merkkauksen sivulta. Poista tämä käytöstä vain, jos käytät kolmannen osapuolen sovellusta hakukoneoptimointiin!"
         }
       },
       "late_edits": {
@@ -1334,7 +1334,7 @@
         "optional": "Valinnainen"
       },
       "text": {
-        "icons_info": "Voit visualisoida ja ladata lisää kuvakkeita [tämän linkin](https://resources.krownthemes.com/icons/) kautta"
+        "icons_info": "Voit visualisoida ja ladata lisää kuvakkeita kautta"
       },
       "borders": {
         "show_border": "Näytä reuna",
@@ -1466,7 +1466,7 @@
       },
       "gift_wrapping": {
         "name": "Lahjapaketointi",
-        "info": "Lahjapaketointi on asetettava tuotteeksi. [Lue lisää](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "Lahjapaketointi on asetettava tuotteeksi.",
         "settings": {
           "label": "Teksti",
           "button": "Painikkeen teksti"
@@ -1543,7 +1543,7 @@
             "amount_saved": "Säästetty summa"
           },
           "regular_badges": {
-            "info": "Lue tuotetunnuksista lisää [täältä](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)."
+            "info": "Lue tuotetunnuksista lisää."
           },
           "sold_out": {
             "name": "\"Loppuunmyyty\"-tunnus",
@@ -1552,8 +1552,8 @@
           },
           "custom_badges": {
             "name": "Mukautetut tuotetunnukset",
-            "info": "Tässä teemassa käytetään mukautettuja tuotetunnuksia, jotka voit määrittää täällä. [Lue lisää](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "Tässä teemassa käytetään mukautettuja tuotetunnuksia, jotka voit määrittää täällä. [Lue lisää](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "Tässä teemassa käytetään mukautettuja tuotetunnuksia, jotka voit määrittää täällä.",
+            "split_info": "Tässä teemassa käytetään mukautettuja tuotetunnuksia, jotka voit määrittää täällä.",
             "name__1": "Mukautettu tunnus 1",
             "name__2": "Mukautettu tunnus 2",
             "name__3": "Mukautettu tunnus 3",
@@ -1741,7 +1741,7 @@
             },
             "color_swatches": {
               "label": "Näytä väriruudut (vain alueen tyyliä varten)",
-              "info": "Tässä teemassa voidaan näyttää mukautettuja kuvia väriruutuja varten. [Lue lisää](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "Tässä teemassa voidaan näyttää mukautettuja kuvia väriruutuja varten."
             }
           }
         },
@@ -1881,7 +1881,7 @@
         },
         "icons": {
           "label": "Kuvakkeet",
-          "info": "Voit katsella kaikkia tähän teemaan kuuluvia kuvakkeita käymällä [tässä linkissä](https://krownthemes.com/krown-icons/)"
+          "info": "Voit katsella kaikkia tähän teemaan kuuluvia kuvakkeita käymällä"
         }
       },
       "blocks": {
@@ -3253,7 +3253,7 @@
         "main-page": {
           "cover": {
             "header": "Mukautettu sivun ylätunniste",
-            "content": "Käytä dynaamista lähdettä näyttääksesi eri kuvan kullakin sivulla. [Lue lisää](https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers)",
+            "content": "Käytä dynaamista lähdettä näyttääksesi eri kuvan kullakin sivulla.",
             "settings": {
               "cover_metafield": "Kuvan metakenttä"
             }
@@ -3303,7 +3303,7 @@
               "header": "Toiminnallisuus"
             },
             "icons": {
-              "settings_info": "Luo tuotteiden metakenttiä kuvakeluetteloa varten, niin voit käyttää dynaamisia lähteitä ainutlaatuisten ominaisuuksien korostamiseen. [Lue lisää](https://shopify-support.krownthemes.com/article/815-combine-product-card#dynamic-icons-list)",
+              "settings_info": "Luo tuotteiden metakenttiä kuvakeluetteloa varten, niin voit käyttää dynaamisia lähteitä ainutlaatuisten ominaisuuksien korostamiseen.",
               "page_info": "Luo tuotteiden metakenttiä kuvakeluetteloa varten, niin voit käyttää dynaamisia lähteitä ainutlaatuisten ominaisuuksien korostamiseen."
             },
             "inventory": {
@@ -3372,7 +3372,7 @@
             },
             "icon": {
               "name": "Kuvake",
-              "info": "Voit visualisoida ja ladata kuvakkeita käymällä [kuvakekirjastossamme](https://resources.krownthemes.com/icons/)",
+              "info": "Voit visualisoida ja ladata kuvakkeita käymällä",
               "size": "Kuvakkeen koko"
             }
           }
@@ -3455,7 +3455,7 @@
                 },
                 "color_swatches": {
                   "label": "Näytä väriruudut",
-                  "info": "Tämä teema tuo esiin väriruudut, jotka kuvastavat erivärisiä tuoteversioita. [Lue lisää](https://shopify-support.krownthemes.com/article/816-combine-color-swatches)"
+                  "info": "Tämä teema tuo esiin väriruudut, jotka kuvastavat erivärisiä tuoteversioita."
                 },
                 "color_swatches_label": {
                   "label": "Väriruutujen nimikkeet",
@@ -3489,7 +3489,7 @@
           }
         },
         "header": {
-          "info": "Tämä teema mahdollistaa useammantyyppisten ylätunnistelohkojen käytön. [Lue lisää](https://shopify-support.krownthemes.com/article/817-header-footer)",
+          "info": "Tämä teema mahdollistaa useammantyyppisten ylätunnistelohkojen käytön.",
           "logo": {
             "position": "Logon sijainti",
             "mobile_image": "Logon mobiiliversio",
@@ -3602,7 +3602,7 @@
       "label_3": "Kuva 3"
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent."
     },
     "new-account-component": {
       "label_style_info": "Tilikuvake ei näytä tunnisteita."
@@ -3616,7 +3616,7 @@
     "drawers": "Modals/drawers",
     "other": "Other colors"
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "Kokoontaitettava",
       "slider_layout_info": "Liukusommittelu poistaa pikkukuvagallerian käytöstä, jos se on käytössä.",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "Rinnakkaisen näytön asetukset",
         "modal_label": "Modal-näytön asetukset",
-        "modal_info": "Modaalivaihtoehtoja voidaan määrittää Pikahaku-tuotesivun mallissa. [Lue lisää](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "Modaalivaihtoehtoja voidaan määrittää Pikahaku-tuotesivun mallissa."
       }
     }
   },

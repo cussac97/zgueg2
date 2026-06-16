@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "Beslægtede produkter",
-    "info": "For at tildele en anden liste til hvert produkt skal du bruge et produktreferenceliste-metafelt som dynamisk kilde. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "For at tildele en anden liste til hvert produkt skal du bruge et produktreferenceliste-metafelt som dynamisk kilde."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "Variant metafelt",
     "label": "Variant metafelt nøgle",
-    "info": "Dette tema kan vise et variant metafelt på produktsiden. [Lær mere](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "Dette tema kan vise et variant metafelt på produktsiden."
   },
   "new_color_swatches": "Dette tema tilbyder også support til farveprøver oprettet med kategorimetafelt. [Lær mere](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Vis videokontroller",
@@ -365,10 +365,10 @@
         },
         "enhance_featured_products": {
           "label": "Understreg fremhævede produkter",
-          "info": "[Få flere oplysninger](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": ""
         },
         "show_discount": {
-          "label": "Vis rabat som...",
+          "label": "Vis rabat som.",
           "options__1": {
             "label": "Tekst"
           },
@@ -530,7 +530,7 @@
         "optional": "Optional"
       },
       "text": {
-        "icons_info": "For at visualisere og downloade flere ikoner, besøg venligst [dette link](https://resources.krownthemes.com/icons/)."
+        "icons_info": "For at visualisere og downloade flere ikoner, besøg venligst."
       },
       "borders": {
         "top_border": "Øverste kant",
@@ -662,7 +662,7 @@
       },
       "gift_wrapping": {
         "name": "Gaveindpakning",
-        "info": "Gaveindpakning skal opsættes som et produkt. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "Gaveindpakning skal opsættes som et produkt.",
         "settings": {
           "label": "Tekst",
           "button": "Knapetiket"
@@ -739,7 +739,7 @@
             "amount_saved": "Beløb gemt"
           },
           "regular_badges": {
-            "info": "Få flere oplysninger om produktbadges [her](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)."
+            "info": "Få flere oplysninger om produktbadges."
           },
           "sold_out": {
             "name": "Udsolgt badge",
@@ -748,8 +748,8 @@
           },
           "custom_badges": {
             "name": "Brugerdefinerede produktbadges",
-            "info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her.",
+            "split_info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her.",
             "name__1": "Brugerdefineret badge 1",
             "name__2": "Brugerdefineret badge 2",
             "name__3": "Brugerdefineret badge 3",
@@ -764,7 +764,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Improve product breadcrumb navigation",
-          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's."
         }
       }
     },
@@ -877,7 +877,7 @@
           },
           "local-pickup": {
             "name": "Lokal tilgængelighed",
-            "info": "Dette tema viser lokal tilgængelighed for produkter. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/805-collection-page)"
+            "info": "Dette tema viser lokal tilgængelighed for produkter."
           },
           "badges": {
             "name": "Standard produktbadges",
@@ -893,7 +893,7 @@
             },
             "custom_badges": {
               "name": "Brugerdefinerede produktbadges",
-              "info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK)",
+              "info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her.",
               "name__1": "Brugerdefineret badge 1",
               "name__2": "Brugerdefineret badge 2",
               "name__3": "Brugerdefineret badge 3",
@@ -950,7 +950,7 @@
               "info": "256 x 256 px"
             },
             "select_icon": {
-              "info": "For at visualisere og downloade flere ikoner, besøg venligst [dette link](https://resources.krownthemes.com/icons/)"
+              "info": "For at visualisere og downloade flere ikoner, besøg venligst"
             },
             "icon_color": {
               "label": "Ikon",
@@ -1157,15 +1157,15 @@
             },
             "store-selector": {
               "name": "Butiksvælger",
-              "content": "Butiksvælgeren kan konfigureres i sektionen Butiksvælger. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/799-store-selector)",
-              "info": "Dette tema giver dig mulighed for at forbinde dine rigtige butikslokationer til en interaktiv butiksvælger. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/799-store-selector)"
+              "content": "Butiksvælgeren kan konfigureres i sektionen Butiksvælger.",
+              "info": "Dette tema giver dig mulighed for at forbinde dine rigtige butikslokationer til en interaktiv butiksvælger."
             },
             "mega-menu": {
               "name": "Megamenu",
               "settings": {
                 "menu_handle": {
                   "label": "Menuhåndtag",
-                  "info": "Dette tema bruger mega menuer. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/798-header-section#mega-menus)"
+                  "info": "Dette tema bruger mega menuer."
                 }
               }
             }
@@ -1363,8 +1363,8 @@
             },
             "icons": {
               "name": "Ikonliste",
-              "info": "For at visualisere og downloade ikoner inkluderet i temaet, besøg venligst [dette link](https://resources.krownthemes.com/icons//).",
-              "help": "Dette tema giver dig mulighed for at tilføje brugerdefinerede produktikoner gennem dynamisk indhold. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "For at visualisere og downloade ikoner inkluderet i temaet, besøg venligst.",
+              "help": "Dette tema giver dig mulighed for at tilføje brugerdefinerede produktikoner gennem dynamisk indhold.",
               "headers": {
                 "icon_1": "Ikon 1",
                 "icon_2": "Ikon 2",
@@ -1509,7 +1509,7 @@
             "vendor": "Sælger",
             "text": {
               "name": "Dynamisk tekst",
-              "info": "Brug en dynamisk kilde til at fremhæve en unik egenskab ved at oprette et produktmetafelt. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/805-collection-page)",
+              "info": "Brug en dynamisk kilde til at fremhæve en unik egenskab ved at oprette et produktmetafelt.",
               "settings": {
                 "text": {
                   "label": "Etiketmetafelt"
@@ -1531,7 +1531,7 @@
               }
             },
             "icons": {
-              "info": "Brug dynamiske kilder til at fremhæve unikke attributter ved at oprette produktmetafelter til ikonlisten. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Brug dynamiske kilder til at fremhæve unikke attributter ved at oprette produktmetafelter til ikonlisten.",
               "settings": {
                 "icon": "Ikonmetafelt",
                 "label": "Etiketmetafelt"
@@ -1733,7 +1733,7 @@
             },
             "color_swatches": {
               "label": "Vis farveprøver (kun for blokstil)",
-              "info": "Dette tema kan vise brugerdefinerede billeder som farveprøver. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "Dette tema kan vise brugerdefinerede billeder som farveprøver."
             }
           }
         },
@@ -1873,7 +1873,7 @@
         },
         "icons": {
           "label": "Ikoner",
-          "info": "For at visualisere alle de ikoner, der er inkluderet i temaet, skal du besøge [dette link](https://krownthemes.com/krown-icons/)"
+          "info": "For at visualisere alle de ikoner, der er inkluderet i temaet, skal du besøge"
         }
       },
       "blocks": {
@@ -3253,7 +3253,7 @@
         "main-page": {
           "cover": {
             "header": "Brugerdefineret sidehoved",
-            "content": "Brug en dynamisk kilde til at vise et andet billede på hver side. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers)",
+            "content": "Brug en dynamisk kilde til at vise et andet billede på hver side.",
             "settings": {
               "cover_metafield": "Billedmetafelt"
             }
@@ -3300,7 +3300,7 @@
               "header": "Funktionalitet"
             },
             "icons": {
-              "settings_info": "Brug dynamiske kilder til at fremhæve unikke attributter ved at oprette produktmetafelter til ikonlisten. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/815-combine-product-card#dynamic-icons-list)",
+              "settings_info": "Brug dynamiske kilder til at fremhæve unikke attributter ved at oprette produktmetafelter til ikonlisten.",
               "page_info": "Brug dynamiske kilder til at fremhæve unikke attributter ved at oprette produktmetafelter til ikonlisten."
             },
             "inventory": {
@@ -3369,7 +3369,7 @@
             },
             "icon": {
               "name": "Ikon",
-              "info": "For at visualisere og downloade ikoner, besøg venligst vores [ikonbibliotek](https://resources.krownthemes.com/icons/)",
+              "info": "For at visualisere og downloade ikoner, besøg venligst vores",
               "size": "Ikonstørrelse"
             }
           }
@@ -3452,7 +3452,7 @@
                 },
                 "color_swatches": {
                   "label": "Vis farveprøver",
-                  "info": "Dette tema viser farveprøver for farvevarianter. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/816-combine-color-swatches)"
+                  "info": "Dette tema viser farveprøver for farvevarianter."
                 },
                 "color_swatches_label": {
                   "label": "Farveprøveetiketter",
@@ -3486,7 +3486,7 @@
           }
         },
         "header": {
-          "info": "Dette tema tillader flere typer headerblokke. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/817-header-footer)",
+          "info": "Dette tema tillader flere typer headerblokke.",
           "logo": {
             "position": "Logoposition",
             "mobile_image": "Logomobilbillede",
@@ -3602,7 +3602,7 @@
       "label_3": "Billede 3"
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent."
     },
     "new-account-component": {
       "label_style_info": "Kontoikonet viser ikke etiketter."
@@ -3616,7 +3616,7 @@
     "drawers": "Modals/drawers",
     "other": "Other colors"
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "Sammenklappelig",
       "slider_layout_info": "Sliderlayoutet deaktiverer miniaturegalleriet, hvis det er aktiveret.",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "Inline visningsindstillinger",
         "modal_label": "Modal visningsindstillinger",
-        "modal_info": "Modalindstillinger kan konfigureres i Quick Buy produktside skabelon. [Lær mere](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "Modalindstillinger kan konfigureres i Quick Buy produktside skabelon."
       }
     }
   },

@@ -163,7 +163,7 @@ if ( typeof CSSSlider !== 'function' ) {
           });
           this.prevEl.querySelector('svg').setAttribute('aria-hidden', 'true');
           const prevElA11y = document.createElement('span');
-          prevElA11y.textContent = window.KROWN.settings.locales.slider_prev_button_label;
+          prevElA11y.textContent = window.ZGUEG.settings.locales.slider_prev_button_label;
           prevElA11y.classList.add(`${this._prefix}visually-hidden`);
           this.prevEl.appendChild(prevElA11y);
 
@@ -182,7 +182,7 @@ if ( typeof CSSSlider !== 'function' ) {
           });
           this.nextEl.querySelector('svg').setAttribute('aria-hidden', 'true');
           const nextElA11y = document.createElement('span');
-          nextElA11y.textContent = window.KROWN.settings.locales.slider_next_button_label;
+          nextElA11y.textContent = window.ZGUEG.settings.locales.slider_next_button_label;
           nextElA11y.classList.add(`${this._prefix}visually-hidden`);
           this.nextEl.appendChild(nextElA11y);
 
@@ -535,7 +535,7 @@ if ( typeof CSSSlider !== 'function' ) {
             dot.addEventListener('click', (e)=>{
               this.changeSlide(e.target.dataset.index);
             });
-            dot.setAttribute('aria-label', window.KROWN.settings.locales.slider_thumbnail_label.replace('{{ count }}', i+1));
+            dot.setAttribute('aria-label', window.ZGUEG.settings.locales.slider_thumbnail_label.replace('{{ count }}', i+1));
             dot.setAttribute('role', 'button');
             dot.setAttribute('tabindex', 0);
             dot.addEventListener('keydown', e=>{

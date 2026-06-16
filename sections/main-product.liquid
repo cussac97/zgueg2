@@ -2079,7 +2079,7 @@
 
   {%- if video_script -%}
     <script>
-      KrownAssetLoader.loadScript('{{ "component-video.js" | asset_url }}');
+      ZguegAssetLoader.loadScript('{{ "component-video.js" | asset_url }}');
     </script>
   {%- endif -%}
 
@@ -3833,7 +3833,7 @@
           "type": "checkbox",
           "id": "collapsible",
           "visible_if": "{{ block.settings.product_description_truncated == 'full' }}",
-          "label": "t:combine-260.labels.collapsible",
+          "label": "t:zgueg-260.labels.collapsible",
           "default": false
         },
         {

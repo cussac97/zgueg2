@@ -219,7 +219,7 @@ if ( typeof MainHeader !== 'function' ) {
 						if ( ! document.body.classList.contains('predictive-script-loaded') ) {
 							document.body.classList.add('predictive-script-loaded')
 							const predictiveSearchJS = document.createElement('script');
-							predictiveSearchJS.src = KROWN.settings.predictive_search_script;
+							predictiveSearchJS.src = ZGUEG.settings.predictive_search_script;
 							document.head.appendChild(predictiveSearchJS); 
 						}
 						setTimeout(()=>{
@@ -232,7 +232,7 @@ if ( typeof MainHeader !== 'function' ) {
 
 				this.querySelector('search-form').addEventListener('click', e=>{
 					e.preventDefault();
-					window.location.href = KROWN.settings.routes.search_url;
+					window.location.href = ZGUEG.settings.routes.search_url;
 				});
 
 			}

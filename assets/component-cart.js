@@ -54,7 +54,7 @@ if ( typeof CartForm !== 'function' ) {
 				quantity: newQty
 			});
 
-			fetch(KROWN.settings.routes.cart_change_url, {
+			fetch(ZGUEG.settings.routes.cart_change_url, {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json', 'Accept': 'application/javascript' },
 					body
@@ -70,7 +70,7 @@ if ( typeof CartForm !== 'function' ) {
 						} else {
 							alert.innerHTML = response.message;
 						}
-						KROWN.functions.eventDispatcher('krown:cart:error', {
+						ZGUEG.functions.eventDispatcher('zgueg:cart:error', {
 							error: alert.textContent
 						});
 					}
@@ -105,7 +105,7 @@ if ( typeof CartForm !== 'function' ) {
 
 					const updatedItem = cartItems.querySelector(`[data-js-cart-item][data-line="${item.dataset.line}"]`);
 					if ( updatedItem ) {
-						KROWN.functions.eventDispatcher('krown:cart:update', {
+						ZGUEG.functions.eventDispatcher('zgueg:cart:update', {
 							itemKey: updatedItem.dataset.id,
 							itemQty: updatedItem.dataset.qty,
 							itemVariantId: updatedItem.dataset.variant,
@@ -118,7 +118,7 @@ if ( typeof CartForm !== 'function' ) {
 					console.log(e);
 					let alert = document.createElement('span');
 					alert.classList.add(`${prefix}alert`, `${prefix}alert--error`);
-					alert.textContent = KROWN.settings.locales.cart_general_error;
+					alert.textContent = ZGUEG.settings.locales.cart_general_error;
 					this.form.prepend(alert);
 				})
 				.finally(() => {
@@ -208,7 +208,7 @@ if ( ! customElements.get('cart-note') ) {
           'input',
           debounce(event => {
             const body = JSON.stringify({ note: event.target.value });
-            fetch(`${KROWN.settings.routes.cart_update_url}`, { 
+            fetch(`${ZGUEG.settings.routes.cart_update_url}`, { 
 							method: 'POST',
 							headers: { 'Content-Type': 'application/json', 'Accept': 'application/javascript' },
 							body 
@@ -252,7 +252,7 @@ if ( ! customElements.get('cart-discounts' ) ) {
 						const discountString = allDiscounts.join(',');
 						const body = JSON.stringify({ discount: discountString });
 
-						fetch(`${KROWN.settings.routes.cart_update_url}`, { 
+						fetch(`${ZGUEG.settings.routes.cart_update_url}`, { 
 							method: 'POST',
 							headers: { 'Content-Type': 'application/json', 'Accept': 'application/javascript' },
 							body 
@@ -325,7 +325,7 @@ if ( ! customElements.get('cart-discounts' ) ) {
 								discount: remainingDiscounts.join(',') 
 							});
 							
-							fetch(`${KROWN.settings.routes.cart_update_url}`, { 
+							fetch(`${ZGUEG.settings.routes.cart_update_url}`, { 
 								method: 'POST',
 								headers: { 'Content-Type': 'application/json', 'Accept': 'application/javascript' },
 								body 
@@ -346,7 +346,7 @@ if ( ! customElements.get('cart-discounts' ) ) {
 				if (this.discountCodes) {
 					this.discountCodes.classList.remove(`${this._prefix}processing`);
 				}
-				this.cartDiscountError.innerHTML = window.KROWN.settings.locales.cart_discount_code_error;
+				this.cartDiscountError.innerHTML = window.ZGUEG.settings.locales.cart_discount_code_error;
 			}
 
 		}	

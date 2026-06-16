@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "Relaterte produkter",
-    "info": "For å tilordne en annen liste til hvert produkt, bruk et produktreferanseliste-metafelt som dynamisk kilde. [Lær mer](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "For å tilordne en annen liste til hvert produkt, bruk et produktreferanseliste-metafelt som dynamisk kilde."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "Variantmetafelt",
     "label": "Variantmetafelt nøkkel",
-    "info": "Dette temaet kan vise et variantmetafelt på produktsiden. [Lær mer](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "Dette temaet kan vise et variantmetafelt på produktsiden."
   },
   "new_color_swatches": "Dette temaet støtter også fargeprøver opprettet med kategorimetafelter. [Lær mer](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Vis videokontroller",
@@ -365,7 +365,7 @@
         },
         "enhance_featured_products": {
           "label": "Fremhev utvalgte produkter",
-          "info": "[Få vite mer](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": ""
         },
         "show_discount": {
           "label": "Vis rabatt som …",
@@ -530,7 +530,7 @@
         "optional": "Optional"
       },
       "text": {
-        "icons_info": "For å visualisere og laste ned flere ikoner, besøk [this link](https://resources.krownthemes.com/icons/)."
+        "icons_info": "For å visualisere og laste ned flere ikoner, besøk."
       },
       "borders": {
         "top_border": "Toppkantlinje",
@@ -662,7 +662,7 @@
       },
       "gift_wrapping": {
         "name": "Gaveinnpakning",
-        "info": "Gaveinnpakning må settes opp som et produkt. [Lær mer](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "Gaveinnpakning må settes opp som et produkt.",
         "settings": {
           "label": "Tekst",
           "button": "Merkelapp for knapp"
@@ -739,7 +739,7 @@
             "amount_saved": "Beløp spart"
           },
           "regular_badges": {
-            "info": "Lær mer om produktmerkelapper [her](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)."
+            "info": "Lær mer om produktmerkelapper."
           },
           "sold_out": {
             "name": "Utsolgt merkelapp",
@@ -748,8 +748,8 @@
           },
           "custom_badges": {
             "name": "Egendefinerte produktmerker",
-            "info": "Dette temaet bruker egentilpassede produktmerkelapper som du kan definere her. [Lær mer](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "Dette temaet bruker egentilpassede produktmerkelapper som du kan definere her. [Lær mer](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "Dette temaet bruker egentilpassede produktmerkelapper som du kan definere her.",
+            "split_info": "Dette temaet bruker egentilpassede produktmerkelapper som du kan definere her.",
             "name__1": "Egendefinert merke 1",
             "name__2": "Egendefinert merke 2",
             "name__3": "Egendefinert merke 3",
@@ -764,7 +764,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Improve product breadcrumb navigation",
-          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's."
         }
       }
     },
@@ -870,7 +870,7 @@
           },
           "local-pickup": {
             "name": "Lokal tilgjengelighet",
-            "info": "Dette temaet viser lokal tilgjengelighet for produkter. [Les mer](https://shopify-support.krownthemes.com/article/805-collection-page)"
+            "info": "Dette temaet viser lokal tilgjengelighet for produkter."
           },
           "badges": {
             "name": "Standard produktmerker",
@@ -886,7 +886,7 @@
             },
             "custom_badges": {
               "name": "Egendefinerte produktmerker",
-              "info": "Dette temaet bruker egendefinerte produktmerker som du kan definere her. [Les mer](https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK)",
+              "info": "Dette temaet bruker egendefinerte produktmerker som du kan definere her.",
               "name__1": "Egendefinert merke 1",
               "name__2": "Egendefinert merke 2",
               "name__3": "Egendefinert merke 3",
@@ -950,7 +950,7 @@
               "info": "256 x 256 px"
             },
             "select_icon": {
-              "info": "For å se og laste ned flere ikoner kan du besøke [denne koblingen](https://resources.krownthemes.com/icons/)"
+              "info": "For å se og laste ned flere ikoner kan du besøke"
             },
             "icon_color": {
               "label": "Ikon",
@@ -1157,15 +1157,15 @@
             },
             "store-selector": {
               "name": "Butikkvelger",
-              "content": "Butikkvelgeren kan konfigureres i Butikkvelger-delen. [Les mer](https://shopify-support.krownthemes.com/article/799-store-selector)",
-              "info": "Med dette temaet kan du koble ekte butikklokasjoner til en interaktiv butikkvelger. [Les mer](https://shopify-support.krownthemes.com/article/799-store-selector)"
+              "content": "Butikkvelgeren kan konfigureres i Butikkvelger-delen.",
+              "info": "Med dette temaet kan du koble ekte butikklokasjoner til en interaktiv butikkvelger."
             },
             "mega-menu": {
               "name": "Megameny",
               "settings": {
                 "menu_handle": {
                   "label": "Menyhåndtak",
-                  "info": "Dette teamet bruker megamenyer. [Les mer](https://shopify-support.krownthemes.com/article/798-header-section#mega-menus)"
+                  "info": "Dette teamet bruker megamenyer."
                 }
               }
             }
@@ -1363,8 +1363,8 @@
             },
             "icons": {
               "name": "Ikonliste",
-              "info": "For å se og laste ned ikoner som er inkludert i teamet, kan du besøke [denne koblingen](https://resources.krownthemes.com/icons/).",
-              "help": "Med dette temaet kan du legge til egendefinerte produktikoner gjennom dynamisk innhold. [Les mer](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "For å se og laste ned ikoner som er inkludert i teamet, kan du besøke.",
+              "help": "Med dette temaet kan du legge til egendefinerte produktikoner gjennom dynamisk innhold.",
               "headers": {
                 "icon_1": "Ikon 1",
                 "icon_2": "Ikon 2",
@@ -1509,7 +1509,7 @@
             "vendor": "Leverandør",
             "text": {
               "name": "Dynamisk tekst",
-              "info": "Bruk en dynamisk kilde til å fremheve en unik egenskap ved å opprette et produktmetafelt. [Les mer](https://shopify-support.krownthemes.com/article/805-collection-page)",
+              "info": "Bruk en dynamisk kilde til å fremheve en unik egenskap ved å opprette et produktmetafelt.",
               "settings": {
                 "text": {
                   "label": "Etikettmetafelt"
@@ -1531,7 +1531,7 @@
               }
             },
             "icons": {
-              "info": "Bruk dynamiske kilder for å fremheve unike egenskaper ved å opprette produktmetafelt for ikonlisten. [Les mer](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Bruk dynamiske kilder for å fremheve unike egenskaper ved å opprette produktmetafelt for ikonlisten.",
               "settings": {
                 "icon": "Ikonmetafelt",
                 "label": "Etikettmetafelt"
@@ -1733,7 +1733,7 @@
             },
             "color_swatches": {
               "label": "Vis fargekart (kun for blokkstil)",
-              "info": "Dette temaet kan vise egendefinerte bilder for fargekart. [Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "Dette temaet kan vise egendefinerte bilder for fargekart."
             }
           }
         },
@@ -1873,7 +1873,7 @@
         },
         "icons": {
           "label": "Ikoner",
-          "info": "For å visualisere alle ikoner som er med i temaet: Vennligst besøk [denne lenken](https://krownthemes.com/krown-icons/)"
+          "info": "For å visualisere alle ikoner som er med i temaet: Vennligst besøk"
         }
       },
       "blocks": {
@@ -3253,7 +3253,7 @@
         "main-page": {
           "cover": {
             "header": "Egendefinert sidetopptekst",
-            "content": "Bruk en dynamisk kilde for å vise forskjellig bilde på hver side. [Finn ut mer](https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers)",
+            "content": "Bruk en dynamisk kilde for å vise forskjellig bilde på hver side.",
             "settings": {
               "cover_metafield": "Bildemetafelt"
             }
@@ -3300,7 +3300,7 @@
               "header": "Funksjonalitet"
             },
             "icons": {
-              "settings_info": "Bruk dynamriske kilder for å fremheve unike egenskaper ved å opprette produktmetafelt for ikonlisten. [Finn ut mer](https://shopify-support.krownthemes.com/article/815-combine-product-card#dynamic-icons-list)",
+              "settings_info": "Bruk dynamriske kilder for å fremheve unike egenskaper ved å opprette produktmetafelt for ikonlisten.",
               "page_info": "Bruk dynamiske kilder for å fremheve unike egenskaper ved å opprette produktmetafelt for ikonlisten."
             },
             "inventory": {
@@ -3369,7 +3369,7 @@
             },
             "icon": {
               "name": "Ikon",
-              "info": "For å se og laste ned ikoner, kan du besøke [ikonbiblioteket](https://resources.krownthemes.com/icons/)",
+              "info": "For å se og laste ned ikoner, kan du besøke",
               "size": "Ikonstørrelse"
             }
           }
@@ -3452,7 +3452,7 @@
                 },
                 "color_swatches": {
                   "label": "Vis fargeprøver",
-                  "info": "Dette teamet viser fargeprøver for fargevarianter. [Finn ut mer](https://shopify-support.krownthemes.com/article/816-combine-color-swatches)"
+                  "info": "Dette teamet viser fargeprøver for fargevarianter."
                 },
                 "color_swatches_label": {
                   "label": "Etiketter for fargevarianter",
@@ -3486,7 +3486,7 @@
           }
         },
         "header": {
-          "info": "Dette teamet tillater flere typer topptekstblokker. [Finn ut mer](https://shopify-support.krownthemes.com/article/817-header-footer)",
+          "info": "Dette teamet tillater flere typer topptekstblokker.",
           "logo": {
             "position": "Logoposisjon",
             "mobile_image": "Mobilbilde for logo",
@@ -3602,7 +3602,7 @@
       "label_3": "Bilde 3"
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent."
     },
     "new-account-component": {
       "label_style_info": "Kontoikonet viser ikke etiketter."
@@ -3616,7 +3616,7 @@
     "drawers": "Modals/drawers",
     "other": "Other colors"
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "Sammenleggbar",
       "slider_layout_info": "Slideroppsettet deaktiverer miniatyrgalleriet, hvis det er aktivert.",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "Innstillinger for inline-visning",
         "modal_label": "Innstillinger for modal-visning",
-        "modal_info": "Modalalternativer kan konfigureres i produktmalen for Quick Buy. [Lær mer](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "Modalalternativer kan konfigureres i produktmalen for Quick Buy."
       }
     }
   },

@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "Gerelateerde producten",
-    "info": "Om een andere lijst toe te wijzen aan elk product, gebruik een productreferentielijst metaveld als dynamische bron. [Meer informatie](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "Om een andere lijst toe te wijzen aan elk product, gebruik een productreferentielijst metaveld als dynamische bron."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "Variantmetaveld",
     "label": "Variantmetaveld sleutel",
-    "info": "Dit thema kan een variantmetaveld weergeven op de productpagina. [Meer informatie](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "Dit thema kan een variantmetaveld weergeven op de productpagina."
   },
   "new_color_swatches": "Dit thema biedt ook ondersteuning voor kleurstalen die zijn gemaakt met categorie-meta velden. [Meer informatie](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Videobediening tonen",
@@ -365,10 +365,10 @@
         },
         "enhance_featured_products": {
           "label": "Uitgelichte producten benadrukken",
-          "info": "[Learn more](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": ""
         },
         "show_discount": {
-          "label": "Toon korting als...",
+          "label": "Toon korting als.",
           "options__1": {
             "label": "Tekst"
           },
@@ -530,7 +530,7 @@
         "optional": "Optional"
       },
       "text": {
-        "icons_info": "Bezoek [deze link] om meer iconen te visualiseren en downloaden: (https://resources.krownthemes.com/icons/)."
+        "icons_info": "Bezoek deze link om meer iconen te visualiseren en downloaden."
       },
       "borders": {
         "top_border": "Bovenrand",
@@ -662,7 +662,7 @@
       },
       "gift_wrapping": {
         "name": "Cadeauverpakking",
-        "info": "Cadeauverpakking dient als product ingesteld te worden. [Meer informatie](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "Cadeauverpakking dient als product ingesteld te worden.",
         "settings": {
           "label": "Tekst",
           "button": "Knoplabel"
@@ -739,7 +739,7 @@
             "amount_saved": "Bedrag gespaard"
           },
           "regular_badges": {
-            "info": "Lees [hier] meer informatie over productbadges (https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)."
+            "info": "Lees hier meer informatie over productbadges."
           },
           "sold_out": {
             "name": "Uitverkochtbadge",
@@ -748,8 +748,8 @@
           },
           "custom_badges": {
             "name": "Aangepaste productbadges",
-            "info": "Dit thema maakt gebruik van aangepaste productbadges die u hier kunt definiëren. [Meer informatie](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "Dit thema maakt gebruik van aangepaste productbadges die u hier kunt definiëren. [Meer informatie](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "Dit thema maakt gebruik van aangepaste productbadges die u hier kunt definiëren.",
+            "split_info": "Dit thema maakt gebruik van aangepaste productbadges die u hier kunt definiëren.",
             "name__1": "Aangepaste badge 1",
             "name__2": "Aangepaste badge 2",
             "name__3": "Aangepaste badge 3",
@@ -764,7 +764,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Improve product breadcrumb navigation",
-          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's."
         }
       }
     },
@@ -870,7 +870,7 @@
           },
           "local-pickup": {
             "name": "Lokale beschikbaarheid",
-            "info": "Dit thema toont de lokale beschikbaarheid van producten. [Leer meer](https://shopify-support.krownthemes.com/article/805-collection-page)"
+            "info": "Dit thema toont de lokale beschikbaarheid van producten."
           },
           "badges": {
             "name": "Standaard productbadges",
@@ -886,7 +886,7 @@
             },
             "custom_badges": {
               "name": "Aangepaste productbadges",
-              "info": "Dit thema maakt gebruik van aangepaste productbadges die je hier kunt definiëren. [Leer meer](https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK)",
+              "info": "Dit thema maakt gebruik van aangepaste productbadges die je hier kunt definiëren.",
               "name__1": "Aangepaste badge 1",
               "name__2": "Aangepaste badge 2",
               "name__3": "Aangepaste badge 3",
@@ -950,7 +950,7 @@
               "info": "256 x 256 px"
             },
             "select_icon": {
-              "info": "Ga naar [deze link] om meer pictogrammen te visualiseren en te downloaden (https://resources.krownthemes.com/icons/)"
+              "info": "Ga naar deze link om meer pictogrammen te visualiseren en te downloaden"
             },
             "icon_color": {
               "label": "Pictogram",
@@ -1363,7 +1363,7 @@
             },
             "icons": {
               "name": "Lijst met pictogrammen",
-              "info": "Ga naar [deze link](https://www.krownthemes.com/crown-icons/) om pictogrammen die deel uitmaken van het thema te visualiseren en te downloaden.",
+              "info": "Ga naar om pictogrammen die deel uitmaken van het thema te visualiseren en te downloaden.",
               "help": "Met dit thema kun je aangepaste productpictogrammen toevoegen via dynamische inhoud. [Meer informatie](https://shopify-support.kroownthemes.com/article/639-theme-settings#dynamic-icons)",
               "headers": {
                 "icon_1": "Pictogram 1",
@@ -1509,7 +1509,7 @@
             "vendor": "Leverancier",
             "text": {
               "name": "Dynamische tekst",
-              "info": "Gebruik een dynamische bron om een uniek kenmerk te markeren door een productmetaveld te maken. [Learn more](https://shopify-support.krownthemes.com/article/805-collection-page)",
+              "info": "Gebruik een dynamische bron om een uniek kenmerk te markeren door een productmetaveld te maken.",
               "settings": {
                 "text": {
                   "label": "Label metaveld"
@@ -1733,7 +1733,7 @@
             },
             "color_swatches": {
               "label": "Toon kleurstalen (alleen voor blokstijl)",
-              "info": "Dit thema kan aangepaste afbeeldingen voor kleurstalen tonen. [Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "Dit thema kan aangepaste afbeeldingen voor kleurstalen tonen."
             }
           }
         },
@@ -1873,7 +1873,7 @@
         },
         "icons": {
           "label": "Iconen",
-          "info": "Om alle iconen in het thema te visualiseren, gaat u naar [this link](https://krownthemes.com/kroown-icons/)"
+          "info": "Om alle iconen in het thema te visualiseren, gaat u naar"
         }
       },
       "blocks": {
@@ -3253,7 +3253,7 @@
         "main-page": {
           "cover": {
             "header": "Aangepaste paginakoptekst",
-            "content": "Gebruik een dynamische bron om op elke pagina een andere afbeelding weer te geven. [Leer meer](https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers)",
+            "content": "Gebruik een dynamische bron om op elke pagina een andere afbeelding weer te geven.",
             "settings": {
               "cover_metafield": "Afbeelding metaveld"
             }
@@ -3300,7 +3300,7 @@
               "header": "Functionaliteit"
             },
             "icons": {
-              "settings_info": "Gebruik dynamische bronnen om unieke kenmerken te markeren door productmetavelden voor de pictogramlijst te maken. [Leer meer](https://shopify-support.krownthemes.com/article/815-combine-product-card#dynamic-icons-list)",
+              "settings_info": "Gebruik dynamische bronnen om unieke kenmerken te markeren door productmetavelden voor de pictogramlijst te maken.",
               "page_info": "Gebruik dynamische bronnen om unieke kenmerken te markeren door productmetavelden voor de pictogramlijst te maken."
             },
             "inventory": {
@@ -3369,7 +3369,7 @@
             },
             "icon": {
               "name": "Icoon",
-              "info": "Om pictogrammen te visualiseren en te downloaden, gaat u naar onze [pictogrambibliotheek](https://resources.krownthemes.com/icons/)",
+              "info": "Om pictogrammen te visualiseren en te downloaden, gaat u naar onze",
               "size": "Pictogramgrootte"
             }
           }
@@ -3452,7 +3452,7 @@
                 },
                 "color_swatches": {
                   "label": "Toon kleurstalen",
-                  "info": "Dit thema toont kleurstalen voor kleurvarianten. [Leer meer](https://shopify-support.krownthemes.com/article/816-combine-color-swatches)"
+                  "info": "Dit thema toont kleurstalen voor kleurvarianten."
                 },
                 "color_swatches_label": {
                   "label": "Etiketten met kleurstalen",
@@ -3486,7 +3486,7 @@
           }
         },
         "header": {
-          "info": "Dit thema staat meer soorten kopblokken toe. [Leer meer](https://shopify-support.krownthemes.com/article/817-header-footer)",
+          "info": "Dit thema staat meer soorten kopblokken toe.",
           "logo": {
             "position": "Logopositie",
             "mobile_image": "Logo mobiele afbeelding",
@@ -3602,7 +3602,7 @@
       "label_3": "Afbeelding 3"
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent."
     },
     "new-account-component": {
       "label_style_info": "Het accountpictogram toont geen labels."
@@ -3616,7 +3616,7 @@
     "drawers": "Modals/drawers",
     "other": "Other colors"
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "Inklapbaar",
       "slider_layout_info": "De sliderindeling schakelt de miniatuurweergave uit, als deze is ingeschakeld.",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "Instellingen inline-weergave",
         "modal_label": "Instellingen modale weergave",
-        "modal_info": "Modale opties kunnen worden geconfigureerd in de Quick Buy productpagina-sjabloon. [Meer informatie](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "Modale opties kunnen worden geconfigureerd in de Quick Buy productpagina-sjabloon."
       }
     }
   },

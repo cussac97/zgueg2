@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "Relaterade produkter",
-    "info": "För att tilldela en annan lista till varje produkt, använd ett produktreferenslist-metafält som dynamisk källa. [Läs mer](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "För att tilldela en annan lista till varje produkt, använd ett produktreferenslist-metafält som dynamisk källa."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "Variantmetafält",
     "label": "Variantmetafält nyckel",
-    "info": "Detta tema kan visa ett variantmetafält på produktsidan. [Läs mer](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "Detta tema kan visa ett variantmetafält på produktsidan."
   },
   "new_color_swatches": "Detta tema erbjuder också stöd för färgprover skapade med kategorimetafält. [Läs mer](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "Visa videokontroller",
@@ -365,10 +365,10 @@
         },
         "enhance_featured_products": {
           "label": "Betona utvalda produkter",
-          "info": "[Learn more](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": ""
         },
         "show_discount": {
-          "label": "Visa rabatt som...",
+          "label": "Visa rabatt som.",
           "options__1": {
             "label": "Text"
           },
@@ -530,7 +530,7 @@
         "optional": "Optional"
       },
       "text": {
-        "icons_info": "För att visualisera och ladda ner fler ikoner ber vi dig att gå till [denna länk](https://resources.krownthemes.com/icons/)."
+        "icons_info": "För att visualisera och ladda ner fler ikoner ber vi dig att gå till."
       },
       "borders": {
         "top_border": "Övre kant",
@@ -662,7 +662,7 @@
       },
       "gift_wrapping": {
         "name": "Presentinslagning",
-        "info": "Presentinslagning måste ställas in som en produkt. [Ta reda på mer](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "Presentinslagning måste ställas in som en produkt.",
         "settings": {
           "label": "Text",
           "button": "Knappetikett"
@@ -739,7 +739,7 @@
             "amount_saved": "Belopp sparat"
           },
           "regular_badges": {
-            "info": "Ta reda på mer om produktmärken [här](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)."
+            "info": "Ta reda på mer om produktmärken."
           },
           "sold_out": {
             "name": "Märke för utsålt",
@@ -748,8 +748,8 @@
           },
           "custom_badges": {
             "name": "Anpassade produktmärken",
-            "info": "Det här temat använder anpassade produktmärken som du kan bestämma här. [Ta reda på mer](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "Det här temat använder anpassade produktmärken som du kan bestämma här. [Ta reda på mer](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "Det här temat använder anpassade produktmärken som du kan bestämma här.",
+            "split_info": "Det här temat använder anpassade produktmärken som du kan bestämma här.",
             "name__1": "Anpassad bricka 1",
             "name__2": "Anpassad bricka 2",
             "name__3": "Anpassad bricka 3",
@@ -764,7 +764,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Improve product breadcrumb navigation",
-          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's."
         }
       }
     },
@@ -870,7 +870,7 @@
           },
           "local-pickup": {
             "name": "Lokal tillgänglighet",
-            "info": "Det här temat visar lokal tillgänglighet för produkter. [Läs mer](https://shopify-support.krownthemes.com/article/805-collection-page)"
+            "info": "Det här temat visar lokal tillgänglighet för produkter."
           },
           "badges": {
             "name": "Standard produktmärken",
@@ -886,7 +886,7 @@
             },
             "custom_badges": {
               "name": "Anpassade produktmärken",
-              "info": "Det här temat använder anpassade produktmärken som du kan definiera här. [Läs mer](https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK)",
+              "info": "Det här temat använder anpassade produktmärken som du kan definiera här.",
               "name__1": "Anpassad bricka 1",
               "name__2": "Anpassad bricka 2",
               "name__3": "Anpassad bricka 3",
@@ -950,7 +950,7 @@
               "info": "256 x 256px"
             },
             "select_icon": {
-              "info": "För att se och ladda ner fler ikoner, besök [den här länken](https://resources.krownthemes.com/icons/)"
+              "info": "För att se och ladda ner fler ikoner, besök"
             },
             "icon_color": {
               "label": "Ikon",
@@ -1157,15 +1157,15 @@
             },
             "store-selector": {
               "name": "Val av butik",
-              "content": "Butiksväljaren kan konfigureras i avsnittet Butiksväljaren. [Läs mer](https://shopify-support.krownthemes.com/article/799-store-selector)",
-              "info": "Med det här temat kan du koppla ihop dina riktiga butiker med en interaktiv butiksväljare. [Läs mer](https://shopify-support.krownthemes.com/article/799-store-selector)"
+              "content": "Butiksväljaren kan konfigureras i avsnittet Butiksväljaren.",
+              "info": "Med det här temat kan du koppla ihop dina riktiga butiker med en interaktiv butiksväljare."
             },
             "mega-menu": {
               "name": "Megameny",
               "settings": {
                 "menu_handle": {
                   "label": "Handtag för menyn",
-                  "info": "Det här temat använder megamenyer. [Läs mer](https://shopify-support.krownthemes.com/article/798-header-section#mega-menus)"
+                  "info": "Det här temat använder megamenyer."
                 }
               }
             }
@@ -1363,8 +1363,8 @@
             },
             "icons": {
               "name": "Lista över ikoner",
-              "info": "För att se och ladda ner de ikoner som ingår i temat, besök [den här länken](https://resources.krownthemes.com/icons/).",
-              "help": "Med det här temat kan du lägga till anpassade produktikoner genom dynamiskt innehåll. [Läs mer](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "För att se och ladda ner de ikoner som ingår i temat, besök.",
+              "help": "Med det här temat kan du lägga till anpassade produktikoner genom dynamiskt innehåll.",
               "headers": {
                 "icon_1": "Ikon 1",
                 "icon_2": "Ikon 2",
@@ -1509,7 +1509,7 @@
             "vendor": "Leverantör",
             "text": {
               "name": "Dynamisk text",
-              "info": "Använd en dynamisk källa för att lyfta fram ett unikt attribut genom att skapa ett metafält för en produkt. [Läs mer](https://shopify-support.krownthemes.com/article/805-collection-page)",
+              "info": "Använd en dynamisk källa för att lyfta fram ett unikt attribut genom att skapa ett metafält för en produkt.",
               "settings": {
                 "text": {
                   "label": "Metafält med etikett"
@@ -1531,7 +1531,7 @@
               }
             },
             "icons": {
-              "info": "Använd dynamiska källor för att framhäva unika attribut genom att skapa metafält för produkten i ikonlistan. [Läs mer](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Använd dynamiska källor för att framhäva unika attribut genom att skapa metafält för produkten i ikonlistan.",
               "settings": {
                 "icon": "Metafält med ikon",
                 "label": "Metafält med etikett"
@@ -1733,7 +1733,7 @@
             },
             "color_swatches": {
               "label": "Visa färgprover (endast för blockstil)",
-              "info": "Detta tema kan visa anpassade bilder för färgprover. [Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "Detta tema kan visa anpassade bilder för färgprover."
             }
           }
         },
@@ -1873,7 +1873,7 @@
         },
         "icons": {
           "label": "Ikoner",
-          "info": "För att se alla ikoner som ingår i temat, besök [this link](https://krownthemes.com/krown-icons/)"
+          "info": "För att se alla ikoner som ingår i temat, besök"
         }
       },
       "blocks": {
@@ -3253,7 +3253,7 @@
         "main-page": {
           "cover": {
             "header": "Egen sidrubrik",
-            "content": "Använd en dynamisk källa för att visa olika bilder på varje sida. [Läs mer](https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers)",
+            "content": "Använd en dynamisk källa för att visa olika bilder på varje sida.",
             "settings": {
               "cover_metafield": "Bildens metafält"
             }
@@ -3300,7 +3300,7 @@
               "header": "Funktionalitet"
             },
             "icons": {
-              "settings_info": "Använd dynamiska källor och lyft fram unika attribut med hjälp av metafält för produkter i ikonlistan. [Läs mer](https://shopify-support.krownthemes.com/article/815-combine-product-card#dynamic-icons-list)",
+              "settings_info": "Använd dynamiska källor och lyft fram unika attribut med hjälp av metafält för produkter i ikonlistan.",
               "page_info": "Använd dynamiska källor och lyft fram unika attribut med hjälp av metafält för produkter i ikonlistan."
             },
             "inventory": {
@@ -3369,7 +3369,7 @@
             },
             "icon": {
               "name": "Ikon",
-              "info": "Du kan visualisera och ladda ned ikoner i vårt [ikonbibliotek](https://resources.krownthemes.com/icons/)",
+              "info": "Du kan visualisera och ladda ned ikoner i vårt",
               "size": "Ikonstorlek"
             }
           }
@@ -3452,7 +3452,7 @@
                 },
                 "color_swatches": {
                   "label": "Visa färgrutor",
-                  "info": "Detta tema visar färgprover för färgvarianter. [Läs mer](https://shopify-support.krownthemes.com/article/816-combine-color-swatches)"
+                  "info": "Detta tema visar färgprover för färgvarianter."
                 },
                 "color_swatches_label": {
                   "label": "Etiketter på färgprover",
@@ -3486,7 +3486,7 @@
           }
         },
         "header": {
-          "info": "Detta tema tillåter fler typer av rubrikblock. [Läs mer](https://shopify-support.krownthemes.com/article/817-header-footer)",
+          "info": "Detta tema tillåter fler typer av rubrikblock.",
           "logo": {
             "position": "Logotypens placering",
             "mobile_image": "Logotypen på mobil",
@@ -3602,7 +3602,7 @@
       "label_3": "Bild 3"
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent."
     },
     "new-account-component": {
       "label_style_info": "Kontoikonen visar inte etiketter."
@@ -3616,7 +3616,7 @@
     "drawers": "Modals/drawers",
     "other": "Other colors"
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "Hopfällbar",
       "slider_layout_info": "Slider-layouten inaktiverar miniatyrgalleriet, om det är aktiverat.",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "Inställningar för inline-visning",
         "modal_label": "Inställningar för modal-visning",
-        "modal_info": "Modalalternativ kan konfigureras i Quick Buy produktsidans mall. [Läs mer](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "Modalalternativ kan konfigureras i Quick Buy produktsidans mall."
       }
     }
   },

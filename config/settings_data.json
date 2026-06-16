@@ -58,7 +58,7 @@
     "smooth_scroll_lerp_pct": 10,
     "show_breadcrumb": false,
     "show_gotop": true,
-    "theme_preset": "Combine",
+    "theme_preset": "Zgueg",
     "color_accent_header": "#f25a38",
     "color_accent_main": "#f25a38",
     "color_background_cards": "#FFFFFF",
@@ -136,9 +136,9 @@
     },
     "content_for_index": []
   },
-  "installed_preset_name": "Combine",
+  "installed_preset_name": "Zgueg",
   "presets": {
-    "Combine": {
+    "Zgueg": {
       "headings_font_primary": "sans-serif",
       "headings_primary_size": 60,
       "body_font_primary": "sans-serif",
@@ -184,7 +184,7 @@
       "color_background_cards": "#FFFFFF",
       "color_accent_cards": "#f25a38",
       "color_accent_footer": "#f25a38",
-      "theme_preset": "Combine"
+      "theme_preset": "Zgueg"
     },
     "Gadget": {
       "headings_font_primary": "dm_sans_n4",

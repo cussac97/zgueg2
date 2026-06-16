@@ -102,7 +102,7 @@ if ( typeof ProductsSet !== 'function' ) {
 
       if ( setFull && this.classList.contains('products-set--empty' ) ) {
         this.classList.remove('products-set--empty');
-        this.querySelector('[data-js-add-set-to-cart-text]').textContent = KROWN.settings.locales.sets_add_to_cart;
+        this.querySelector('[data-js-add-set-to-cart-text]').textContent = ZGUEG.settings.locales.sets_add_to_cart;
       } else if ( ! setFull && ! this.classList.contains('products-set--empty' ) ) {
         this.classList.add('products-set--empty');
       }
@@ -139,7 +139,7 @@ if ( typeof ProductsSet !== 'function' ) {
         });
         this.initSet();
         this.checkSet();
-        this.querySelector('[data-js-add-set-to-cart-text]').textContent = KROWN.settings.locales.sets_choose_products;
+        this.querySelector('[data-js-add-set-to-cart-text]').textContent = ZGUEG.settings.locales.sets_choose_products;
         this.classList.add('products-set--empty');
       }
     }

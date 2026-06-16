@@ -1,11 +1,11 @@
 [
 	{
 		"name": "theme_info",
-		"theme_name": "Combine",
-		"theme_author": "KrownThemes",
+		"theme_name": "Zgueg",
+		"theme_author": "Zgueg",
 		"theme_version": "3.2.2",
-		"theme_documentation_url": "https://shopify-support.krownthemes.com/collection/657-combine",
-		"theme_support_url": "https://contact.krownthemes.com/"
+		"theme_documentation_url": "",
+		"theme_support_url": ""
 	},
 	{
 		"name": "t:settings_schema.typography.name",

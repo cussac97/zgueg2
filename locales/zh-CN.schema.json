@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "相关产品",
-    "info": "要为每个产品分配不同的列表，请使用产品参考列表元字段作为动态源。 [了解更多](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "要为每个产品分配不同的列表，请使用产品参考列表元字段作为动态源。."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "变体元字段",
     "label": "变体元字段键",
-    "info": "此主题可以在产品页面上显示变体元字段。 [了解更多](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "此主题可以在产品页面上显示变体元字段。."
   },
   "new_color_swatches": "此主题还支持使用类别元字段创建的颜色样本。 [了解更多](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "显示视频控件",
@@ -365,7 +365,7 @@
         },
         "enhance_featured_products": {
           "label": "突出特色产品",
-          "info": "[了解更多](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": ""
         },
         "show_discount": {
           "label": "显示折扣为……",
@@ -530,7 +530,7 @@
         "optional": "Optional"
       },
       "text": {
-        "icons_info": "如果要显示 & 下载更多图标，请访问 [此链接](https://resources.krownthemes.com/icons/)。"
+        "icons_info": "如果要显示 & 下载更多图标，请访问。"
       },
       "borders": {
         "top_border": "上边框",
@@ -662,7 +662,7 @@
       },
       "gift_wrapping": {
         "name": "礼品包装",
-        "info": "礼品包装需要设置为产品。[了解更多](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "礼品包装需要设置为产品。",
         "settings": {
           "label": "文本",
           "button": "按钮标签"
@@ -739,7 +739,7 @@
             "amount_saved": "节省金额"
           },
           "regular_badges": {
-            "info": "进一步了解产品徽章 [这里](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)。"
+            "info": "进一步了解产品徽章。"
           },
           "sold_out": {
             "name": "售罄徽章",
@@ -748,8 +748,8 @@
           },
           "custom_badges": {
             "name": "定制产品标识",
-            "info": "该主题使用自定义产品徽标，您可以在这里进行设置。[了解更多](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "该主题使用自定义产品徽标，您可以在这里进行设置。[了解更多](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "该主题使用自定义产品徽标，您可以在这里进行设置。",
+            "split_info": "该主题使用自定义产品徽标，您可以在这里进行设置。",
             "name__1": "自定义标识 1",
             "name__2": "自定义标识 2",
             "name__3": "自定义标识 3",
@@ -764,7 +764,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Improve product breadcrumb navigation",
-          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's."
         }
       }
     },
@@ -870,7 +870,7 @@
           },
           "local-pickup": {
             "name": "本地供应情况",
-            "info": "此主题显示产品的本地供应情况。[了解更多](https://shopify-support.krownthemes.com/article/805-collection-page)"
+            "info": "此主题显示产品的本地供应情况。"
           },
           "badges": {
             "name": "默认产品标识",
@@ -886,7 +886,7 @@
             },
             "custom_badges": {
               "name": "定制产品标识",
-              "info": "此主题使用自定义产品标识，你可以在这里为之定义。[了解更多](https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK)",
+              "info": "此主题使用自定义产品标识，你可以在这里为之定义。",
               "name__1": "自定义标识 1",
               "name__2": "自定义标识 2",
               "name__3": "自定义标识 3",
@@ -950,7 +950,7 @@
               "info": "256 x 256px"
             },
             "select_icon": {
-              "info": "要可视化和下载更多图标，请访问 [此链接](https://resources.krownthemes.com/icons/)"
+              "info": "要可视化和下载更多图标，请访问"
             },
             "icon_color": {
               "label": "图标",
@@ -1157,15 +1157,15 @@
             },
             "store-selector": {
               "name": "商店选择器",
-              "content": "可以在\"店铺选择器\"分部中对商店选择器进行配置。[了解更多](https://shopify-support.krownthemes.com/article/799-store-selector)",
-              "info": "这个主题允许你将真实商店位置连接到交互式商店选择器。[了解更多](https://shopify-support.krownthemes.com/article/799-store-selector)"
+              "content": "可以在\"店铺选择器\"分部中对商店选择器进行配置。",
+              "info": "这个主题允许你将真实商店位置连接到交互式商店选择器。"
             },
             "mega-menu": {
               "name": "超级菜单",
               "settings": {
                 "menu_handle": {
                   "label": "菜单操控",
-                  "info": "这个主题使用超级菜单。[了解更多](https://shopify-support.krownthemes.com/article/798-header-section#mega-menus)"
+                  "info": "这个主题使用超级菜单。"
                 }
               }
             }
@@ -1363,8 +1363,8 @@
             },
             "icons": {
               "name": "图标列表",
-              "info": "要可视化和下载主题中包含的图标，请访问 [此链接](https://resources.krownthemes.com/icons/)。",
-              "help": "此主题允许你通过动态内容添加自定义产品图标。[了解更多](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "要可视化和下载主题中包含的图标，请访问。",
+              "help": "此主题允许你通过动态内容添加自定义产品图标。",
               "headers": {
                 "icon_1": "图标 1",
                 "icon_2": "图标 2",
@@ -1509,7 +1509,7 @@
             "vendor": "供应商",
             "text": {
               "name": "动态文本",
-              "info": "通过创建产品元字段，使用动态源突出显示独特属性。[了解更多](https://shopify-support.krownthemes.com/article/805-collection-page)",
+              "info": "通过创建产品元字段，使用动态源突出显示独特属性。",
               "settings": {
                 "text": {
                   "label": "标签元字段"
@@ -1531,7 +1531,7 @@
               }
             },
             "icons": {
-              "info": "通过为图标列表创建产品元字段，使用动态源突出显示独特属性。[了解更多](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "通过为图标列表创建产品元字段，使用动态源突出显示独特属性。",
               "settings": {
                 "icon": "图标元字段",
                 "label": "标签元字段"
@@ -1733,7 +1733,7 @@
             },
             "color_swatches": {
               "label": "显示色板（仅适用于版块样式）",
-              "info": "此主题可以显示色板的自定义图像。 [Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "此主题可以显示色板的自定义图像。"
             }
           }
         },
@@ -1873,7 +1873,7 @@
         },
         "icons": {
           "label": "图标",
-          "info": "要可视化主题中包含的所有图标，请访问[此链接](https://krownthemes.com/krown-icons/)"
+          "info": "要可视化主题中包含的所有图标，请访问"
         }
       },
       "blocks": {
@@ -3253,7 +3253,7 @@
         "main-page": {
           "cover": {
             "header": "自定义页眉",
-            "content": "使用动态源在各页面上显示不同的图像。[了解更多](https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers)",
+            "content": "使用动态源在各页面上显示不同的图像。",
             "settings": {
               "cover_metafield": "图像元字段"
             }
@@ -3300,7 +3300,7 @@
               "header": "功能"
             },
             "icons": {
-              "settings_info": "通过创建图标列表的产品元字段，使用动态源突出显示独特属性。[了解更多](https://shopify-support.krownthemes.com/article/815-combine-product-card#dynamic-icons-list)",
+              "settings_info": "通过创建图标列表的产品元字段，使用动态源突出显示独特属性。",
               "page_info": "通过创建图标列表的产品元字段，使用动态源突出显示独特属性。"
             },
             "inventory": {
@@ -3369,7 +3369,7 @@
             },
             "icon": {
               "name": "图标",
-              "info": "若要将图标可视化并下载，请访问我们的[图标库](https://resources.krownthemes.com/icons/)",
+              "info": "若要将图标可视化并下载，请访问我们的",
               "size": "图标大小"
             }
           }
@@ -3452,7 +3452,7 @@
                 },
                 "color_swatches": {
                   "label": "显示色样",
-                  "info": "此主题显示颜色变体的色卡。[了解更多](https://shopify-support.krownthemes.com/article/816-combine-color-swatches)"
+                  "info": "此主题显示颜色变体的色卡。"
                 },
                 "color_swatches_label": {
                   "label": "色卡标签",
@@ -3486,7 +3486,7 @@
           }
         },
         "header": {
-          "info": "此主题允许更多的页眉块类型。[了解更多](https://shopify-support.krownthemes.com/article/817-header-footer)",
+          "info": "此主题允许更多的页眉块类型。",
           "logo": {
             "position": "徽标位置",
             "mobile_image": "徽标移动端图像",
@@ -3602,7 +3602,7 @@
       "label_3": "图片 3"
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent."
     },
     "new-account-component": {
       "label_style_info": "账户图标不显示标签。"
@@ -3616,7 +3616,7 @@
     "drawers": "Modals/drawers",
     "other": "Other colors"
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "可折叠",
       "slider_layout_info": "滑块布局会禁用缩略图库, 如果已启用。",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "内联显示设置",
         "modal_label": "模态显示设置",
-        "modal_info": "模态选项可以在快速购买产品页面模板中配置。 [了解更多](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "模态选项可以在快速购买产品页面模板中配置。"
       }
     }
   },

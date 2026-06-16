@@ -10,7 +10,7 @@ if ( typeof SearchForm !== 'function' ) {
 			this.results = [];
 			this.preloader = false;
 
-			if ( KROWN.settings.predictive_search_enabled != "false" ) {
+			if ( ZGUEG.settings.predictive_search_enabled != "false" ) {
 
 				let inputValue = this.input.value;
 				this.input.addEventListener('keyup', debounce(e=>{
@@ -68,7 +68,7 @@ if ( typeof SearchForm !== 'function' ) {
 
 			this.a11yIndex = -1;
 
-			fetch(`${KROWN.settings.routes.predictive_search_url}?q=${encodeURIComponent(query)}&section_id=helper-predictive-search`)
+			fetch(`${ZGUEG.settings.routes.predictive_search_url}?q=${encodeURIComponent(query)}&section_id=helper-predictive-search`)
 				.then(response=>{
 					if (!response.ok) {
 						var error = new Error(response.status);
@@ -97,7 +97,7 @@ if ( typeof SearchForm !== 'function' ) {
 		preloadSearchResults(){
 			if ( ! this.preloader ) {
 				this.preloader = true;
-				this.predictiveSearchResults.innerHTML = KROWN.settings.predictive_search_placeholder;
+				this.predictiveSearchResults.innerHTML = ZGUEG.settings.predictive_search_placeholder;
 			}
 		}
 

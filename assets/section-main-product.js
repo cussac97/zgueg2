@@ -83,7 +83,7 @@ if ( typeof ProductPage !== 'function' ) {
 
 			// show cart drawer when element is added to cart
 
-			if ( ! document.body.classList.contains('template-cart') && KROWN.settings.cart_action == 'overlay' ) {
+			if ( ! document.body.classList.contains('template-cart') && ZGUEG.settings.cart_action == 'overlay' ) {
 				
 				let addToCartEnter = false;
 				if ( this.querySelector('[data-js-product-add-to-cart]') ) {

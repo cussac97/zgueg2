@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "สินค้าที่เกี่ยวข้อง",
-    "info": "หากต้องการกำหนดรายการที่แตกต่างกันให้กับแต่ละสินค้า ให้ใช้เมตาฟิลด์รายการอ้างอิงสินค้าเป็นแหล่งข้อมูลแบบไดนามิก [เรียนรู้เพิ่มเติม](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "หากต้องการกำหนดรายการที่แตกต่างกันให้กับแต่ละสินค้า ให้ใช้เมตาฟิลด์รายการอ้างอิงสินค้าเป็นแหล่งข้อมูลแบบไดนามิก."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "เมทาฟิลด์ของตัวเลือกสินค้า",
     "label": "คีย์เมทาฟิลด์ของตัวเลือกสินค้า",
-    "info": "ธีมนี้สามารถแสดงเมทาฟิลด์ของตัวเลือกสินค้าบนหน้าผลิตภัณฑ์ [เรียนรู้เพิ่มเติม](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "ธีมนี้สามารถแสดงเมทาฟิลด์ของตัวเลือกสินค้าบนหน้าผลิตภัณฑ์."
   },
   "new_color_swatches": "ธีมนี้ยังรองรับการสร้างตัวอย่างสีด้วยเมตาฟิลด์หมวดหมู่ [เรียนรู้เพิ่มเติม](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "แสดงการควบคุมวิดีโอ",
@@ -365,10 +365,10 @@
         },
         "enhance_featured_products": {
           "label": "เน้นสินค้าเด่น",
-          "info": "[Learn more](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": ""
         },
         "show_discount": {
-          "label": "แสดงส่วนลดเป็น...",
+          "label": "แสดงส่วนลดเป็น.",
           "options__1": {
             "label": "ข้อความ"
           },
@@ -530,7 +530,7 @@
         "optional": "Optional"
       },
       "text": {
-        "icons_info": "หากต้องการดูและดาวน์โหลดไอคอนเพิ่มเติมโปรดไปที่ [ลิงก์นี้ ]( https://resources.krownthemes.com/icons/)"
+        "icons_info": "หากต้องการดูและดาวน์โหลดไอคอนเพิ่มเติมโปรดไปที่ ลิงก์นี้ "
       },
       "borders": {
         "top_border": "ขอบด้านบน",
@@ -662,7 +662,7 @@
       },
       "gift_wrapping": {
         "name": "การห่อของขวัญ",
-        "info": "การห่อของขวัญจะต้องตั้งค่าเป็นผลิตภัณฑ์ [เรียนรู้เพิ่มเติม ](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "การห่อของขวัญจะต้องตั้งค่าเป็นผลิตภัณฑ์",
         "settings": {
           "label": "ข้อความ",
           "button": "ป้ายกำกับปุ่ม"
@@ -739,7 +739,7 @@
             "amount_saved": "จำนวนที่ประหยัด"
           },
           "regular_badges": {
-            "info": "ดูรายละเอียดเพิ่มเติมเกี่ยวกับป้ายผลิตภัณฑ์ [ที่นี่ ]( https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)"
+            "info": "ดูรายละเอียดเพิ่มเติมเกี่ยวกับป้ายผลิตภัณฑ์ ที่นี่ "
           },
           "sold_out": {
             "name": "ป้ายที่ขายหมดแล้ว",
@@ -748,8 +748,8 @@
           },
           "custom_badges": {
             "name": "ป้ายสินค้าแบบกำหนดเอง",
-            "info": "ธีมนี้ใช้ป้ายผลิตภัณฑ์ที่กำหนดเองซึ่งคุณสามารถกำหนดได้ที่นี่ [ดูรายละเอียดเพิ่มเติม]( https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "ธีมนี้ใช้ป้ายผลิตภัณฑ์ที่กำหนดเองซึ่งคุณสามารถกำหนดได้ที่นี่ [ดูรายละเอียดเพิ่มเติม]( https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "ธีมนี้ใช้ป้ายผลิตภัณฑ์ที่กำหนดเองซึ่งคุณสามารถกำหนดได้ที่นี่ ดูรายละเอียดเพิ่มเติม",
+            "split_info": "ธีมนี้ใช้ป้ายผลิตภัณฑ์ที่กำหนดเองซึ่งคุณสามารถกำหนดได้ที่นี่ ดูรายละเอียดเพิ่มเติม",
             "name__1": "ป้ายกำหนดเอง 1",
             "name__2": "ป้ายกำหนดเอง 2",
             "name__3": "ป้ายกำหนดเอง 3",
@@ -764,7 +764,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Improve product breadcrumb navigation",
-          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's."
         }
       }
     },
@@ -870,7 +870,7 @@
           },
           "local-pickup": {
             "name": "ความพร้อมจำหน่ายในท้องถิ่น",
-            "info": "ธีมนี้แสดงความพร้อมจำหน่ายในท้องถิ่นสำหรับสินค้า[ศึกษาข้อมูลเพิ่มเติม](https://shopify-support.krownthemes.com/article/805-collection-page)"
+            "info": "ธีมนี้แสดงความพร้อมจำหน่ายในท้องถิ่นสำหรับสินค้า"
           },
           "badges": {
             "name": "ป้ายสินค้าเริ่มต้น",
@@ -886,7 +886,7 @@
             },
             "custom_badges": {
               "name": "ป้ายสินค้าแบบกำหนดเอง",
-              "info": "ธีมนี้ใช้ป้ายสินค้าแบบกำหนดเองซึ่งคุณสามารถกำหนดได้ที่นี่ [ศึกษาข้อมูลเพิ่มเติม](https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK)",
+              "info": "ธีมนี้ใช้ป้ายสินค้าแบบกำหนดเองซึ่งคุณสามารถกำหนดได้ที่นี่",
               "name__1": "ป้ายกำหนดเอง 1",
               "name__2": "ป้ายกำหนดเอง 2",
               "name__3": "ป้ายกำหนดเอง 3",
@@ -950,7 +950,7 @@
               "info": "256 x 256px"
             },
             "select_icon": {
-              "info": "หากต้องการดูภาพและดาวน์โหลดไอคอนเพิ่มเติม โปรดไปที่ [ลิงก์นี้](https://resources.krownthemes.com/icons/)"
+              "info": "หากต้องการดูภาพและดาวน์โหลดไอคอนเพิ่มเติม โปรดไปที่"
             },
             "icon_color": {
               "label": "ไอคอน",
@@ -1157,15 +1157,15 @@
             },
             "store-selector": {
               "name": "ตัวเลือกร้านค้า",
-              "content": "สามารถกำหนดค่าตัวเลือกร้านค้าได้ในส่วนตัวเลือกร้านค้า [ศึกษาข้อมูลเพิ่มเติม](https://shopify-support.krownthemes.com/article/799-store-selector)",
-              "info": "ธีมนี้ช่วยให้คุณสามารถเชื่อมต่อที่ตั้งร้านค้าจริงของคุณกับตัวเลือกร้านค้าแบบอินเทอร์แอกทีฟได้ [ศึกษาข้อมูลเพิ่มเติม](https://shopify-support.krownthemes.com/article/799-store-selector)"
+              "content": "สามารถกำหนดค่าตัวเลือกร้านค้าได้ในส่วนตัวเลือกร้านค้า",
+              "info": "ธีมนี้ช่วยให้คุณสามารถเชื่อมต่อที่ตั้งร้านค้าจริงของคุณกับตัวเลือกร้านค้าแบบอินเทอร์แอกทีฟได้"
             },
             "mega-menu": {
               "name": "เมนูเมกา",
               "settings": {
                 "menu_handle": {
                   "label": "การจัดการเมนู",
-                  "info": "ธีมนี้ใช้เมนูเมกา [ศึกษาข้อมูลเพิ่มเติม](https://shopify-support.krownthemes.com/article/798-header-section#mega-menus)"
+                  "info": "ธีมนี้ใช้เมนูเมกา"
                 }
               }
             }
@@ -1363,8 +1363,8 @@
             },
             "icons": {
               "name": "รายการไอคอน",
-              "info": "หากต้องการดูภาพและดาวน์โหลดไอคอนที่รวมอยู่ในธีม โปรดไปที่ [ลิงก์นี้](https://resources.krownthemes.com/icons/)",
-              "help": "ธีมนี้ช่วยให้คุณเพิ่มไอคอนสินค้าแบบกำหนดเองผ่านเนื้อหาแบบไดนามิก [ศึกษาข้อมูลเพิ่มเติม](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "หากต้องการดูภาพและดาวน์โหลดไอคอนที่รวมอยู่ในธีม โปรดไปที่",
+              "help": "ธีมนี้ช่วยให้คุณเพิ่มไอคอนสินค้าแบบกำหนดเองผ่านเนื้อหาแบบไดนามิก",
               "headers": {
                 "icon_1": "ไอคอน 1",
                 "icon_2": "ไอคอน 2",
@@ -1509,7 +1509,7 @@
             "vendor": "ผู้ขาย",
             "text": {
               "name": "ข้อความแบบไดนามิก",
-              "info": "ใช้แหล่งที่มาแบบไดนามิกเพื่อเน้นแอตทริบิวต์ที่ไม่ซ้ำกันโดยการสร้างเขตข้อมูลเมตาของสินค้า [ศึกษาข้อมูลเพิ่มเติม](https://shopify-support.krownthemes.com/article/805-collection-page)",
+              "info": "ใช้แหล่งที่มาแบบไดนามิกเพื่อเน้นแอตทริบิวต์ที่ไม่ซ้ำกันโดยการสร้างเขตข้อมูลเมตาของสินค้า",
               "settings": {
                 "text": {
                   "label": "เมตาฟิลด์ป้ายกำกับ"
@@ -1531,7 +1531,7 @@
               }
             },
             "icons": {
-              "info": "ใช้แหล่งที่มาแบบไดนามิกเพื่อเน้นแอตทริบิวต์ที่ไม่ซ้ำกันโดยสร้างเมตาฟิลด์สินค้าสำหรับรายการไอคอน [ศึกษาข้อมูลเพิ่มเติม](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "ใช้แหล่งที่มาแบบไดนามิกเพื่อเน้นแอตทริบิวต์ที่ไม่ซ้ำกันโดยสร้างเมตาฟิลด์สินค้าสำหรับรายการไอคอน",
               "settings": {
                 "icon": "เมตาฟิลด์ไอคอน",
                 "label": "เมตาฟิลด์ป้ายกำกับ"
@@ -1733,7 +1733,7 @@
             },
             "color_swatches": {
               "label": "แสดงตัวอย่างสี (สำหรับสไตล์บล็อกเท่านั้น)",
-              "info": "ชุดรูปแบบนี้สามารถแสดงภาพที่กำหนดเองสำหรับตัวอย่างสี [Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "ชุดรูปแบบนี้สามารถแสดงภาพที่กำหนดเองสำหรับตัวอย่างสี"
             }
           }
         },
@@ -1873,7 +1873,7 @@
         },
         "icons": {
           "label": "ไอคอน",
-          "info": "หากต้องการแสดงภาพไอคอนทั้งหมดที่รวมอยู่ในธีม โปรดไปที่ [this link](https://krownthemes.com/krown-icons/)"
+          "info": "หากต้องการแสดงภาพไอคอนทั้งหมดที่รวมอยู่ในธีม โปรดไปที่"
         }
       },
       "blocks": {
@@ -3253,7 +3253,7 @@
         "main-page": {
           "cover": {
             "header": "ส่วนหัวของหน้าแบบกำหนดเอง",
-            "content": "ใช้แหล่งข้อมูลแบบไดนามิกเพื่อแสดงรูปที่แตกต่างกันในแต่ละหน้า [เรียนรู้เพิ่มเติม](https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers)",
+            "content": "ใช้แหล่งข้อมูลแบบไดนามิกเพื่อแสดงรูปที่แตกต่างกันในแต่ละหน้า",
             "settings": {
               "cover_metafield": "เขตข้อมูลเมตาดาต้าของภาพ"
             }
@@ -3300,7 +3300,7 @@
               "header": "การใช้งานได้"
             },
             "icons": {
-              "settings_info": "ใช้แหล่งข้อมูลไดนามิกเพื่อเน้นลักษณะเฉพาะโดยการสร้างเขตข้อมูลเมตาดาต้าสำหรับรายการไอคอน [เรียนรู้เพิ่มเติม](https://shopify-support.krownthemes.com/article/815-combine-product-card#dynamic-icons-list)",
+              "settings_info": "ใช้แหล่งข้อมูลไดนามิกเพื่อเน้นลักษณะเฉพาะโดยการสร้างเขตข้อมูลเมตาดาต้าสำหรับรายการไอคอน",
               "page_info": "ใช้แหล่งข้อมูลไดนามิกเพื่อเน้นลักษณะเฉพาะโดยการสร้างเขตข้อมูลเมตาดาต้าสำหรับรายการไอคอน"
             },
             "inventory": {
@@ -3369,7 +3369,7 @@
             },
             "icon": {
               "name": "ไอคอน",
-              "info": "หากต้องการดูภาพและดาวน์โหลดไอคอน โปรดไปที่[คลังไอคอน]ของเรา (https://resources.krownthemes.com/icons/)",
+              "info": "หากต้องการดูภาพและดาวน์โหลดไอคอน โปรดไปที่คลังไอคอนของเรา",
               "size": "ขนาดไอคอน"
             }
           }
@@ -3452,7 +3452,7 @@
                 },
                 "color_swatches": {
                   "label": "แสดงตัวอย่างสี",
-                  "info": "ชุดรูปแบบนี้แสดงชุดสีสำหรับสีแปร [เรียนรู้เพิ่มเติม](https://shopify-support.krownthemes.com/article/816-combine-color-swatches)"
+                  "info": "ชุดรูปแบบนี้แสดงชุดสีสำหรับสีแปร"
                 },
                 "color_swatches_label": {
                   "label": "ป้ายชุดสี",
@@ -3486,7 +3486,7 @@
           }
         },
         "header": {
-          "info": "ชุดรูปแบบนี้ทำให้สามารถมีจำนวนประเภทบล็อกส่วนหัวมากขึ้น [เรียนรู้เพิ่มเติม](https://shopify-support.krownthemes.com/article/817-header-footer)",
+          "info": "ชุดรูปแบบนี้ทำให้สามารถมีจำนวนประเภทบล็อกส่วนหัวมากขึ้น",
           "logo": {
             "position": "ตำแหน่งโลโก้",
             "mobile_image": "ภาพสำหรับมือถือของโลโก้",
@@ -3602,7 +3602,7 @@
       "label_3": "ภาพที่ 3"
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent."
     },
     "new-account-component": {
       "label_style_info": "ไอคอนบัญชีไม่แสดงป้ายกำกับ"
@@ -3616,7 +3616,7 @@
     "drawers": "Modals/drawers",
     "other": "Other colors"
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "พับได้",
       "slider_layout_info": "รูปแบบตัวเลื่อนจะปิดใช้งานแกลเลอรีภาพขนาดย่อ หากเปิดใช้งาน.",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "การตั้งค่าการแสดงผลแบบอินไลน์",
         "modal_label": "การตั้งค่าการแสดงผลแบบโมดอล",
-        "modal_info": "สามารถกำหนดค่าตัวเลือกโมดอลได้ในแม่แบบหน้าผลิตภัณฑ์ Quick Buy [เรียนรู้เพิ่มเติม](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "สามารถกำหนดค่าตัวเลือกโมดอลได้ในแม่แบบหน้าผลิตภัณฑ์ Quick Buy"
       }
     }
   },

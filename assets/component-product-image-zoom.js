@@ -10,8 +10,8 @@ if ( typeof ProductImageZoom !== 'function' ) {
 				this.zoom.id = 'zoom';
 				this.zoom.innerHTML = `
 					<img />
-					<span class="zoom__exit">${KROWN.settings.symbols.zoom_out}</span>
-					<span class="zoom__loader">${KROWN.settings.symbols.zoom_loader}</span>
+					<span class="zoom__exit">${ZGUEG.settings.symbols.zoom_out}</span>
+					<span class="zoom__loader">${ZGUEG.settings.symbols.zoom_loader}</span>
 					<div class="zoom__overlay"></div>
 				`;
 				document.body.append(this.zoom);

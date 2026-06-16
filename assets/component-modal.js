@@ -41,7 +41,7 @@ if ( typeof ModalBox !== 'function' ) {
 						"marketing": true,
 						"preferences": true
 					}, () => {});
-					localStorage.setItem('krown-cookie-banner', 'true'); 
+					localStorage.setItem('zgueg-cookie-banner', 'true'); 
 				}
 				const cookiesDecline = () => {
 					window.Shopify.customerPrivacy.setTrackingConsent({
@@ -49,11 +49,11 @@ if ( typeof ModalBox !== 'function' ) {
 						"marketing": false,
 						"preferences": false
 					}, () => {});
-					localStorage.setItem('krown-cookie-banner', 'true'); 
+					localStorage.setItem('zgueg-cookie-banner', 'true'); 
 				}
 			
 				const initCookieBanner = () => {
-					if ( localStorage.getItem('krown-cookie-banner') !== 'true' ) {
+					if ( localStorage.getItem('zgueg-cookie-banner') !== 'true' ) {
 						showBanner();
 					}
 				}

@@ -164,7 +164,7 @@
   },
   "product-siblings": {
     "name": "관련 제품",
-    "info": "각 제품에 다른 목록을 할당하려면 제품 참조 목록 메타필드를 동적 소스로 사용하십시오. [자세히 알아보기](https://shopify-support.krownthemes.com/article/804-product-page#Product-siblings-IzGzR)."
+    "info": "각 제품에 다른 목록을 할당하려면 제품 참조 목록 메타필드를 동적 소스로 사용하십시오."
   },
   "local-260": {
     "labels": {
@@ -219,7 +219,7 @@
   "variant_metafields": {
     "name": "변형 메타필드",
     "label": "변형 메타필드 키",
-    "info": "이 테마는 제품 페이지에 변형 메타필드를 표시할 수 있습니다. [자세히 알아보기](https://shopify-support.krownthemes.com/article/884-using-variant-metafields-in-product-pages)."
+    "info": "이 테마는 제품 페이지에 변형 메타필드를 표시할 수 있습니다."
   },
   "new_color_swatches": "이 테마는 카테고리 메타필드를 사용하여 생성된 색상 견본도 지원합니다. [자세히 알아보기](https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields).",
   "video_controls": "비디오 제어 표시",
@@ -365,10 +365,10 @@
         },
         "enhance_featured_products": {
           "label": "대표 제품 강조",
-          "info": "[더 알아보기](https://shopify-support.krownthemes.com/article/832-product-card)"
+          "info": ""
         },
         "show_discount": {
-          "label": "할인 표시...",
+          "label": "할인 표시.",
           "options__1": {
             "label": "글"
           },
@@ -530,7 +530,7 @@
         "optional": "Optional"
       },
       "text": {
-        "icons_info": "시각화를 위해 더 많은 아이콘을 다운로드하려면 [이 링크](https://resources.krownthemes.com/icons/)를 방문해 주십시오."
+        "icons_info": "시각화를 위해 더 많은 아이콘을 다운로드하려면를 방문해 주십시오."
       },
       "borders": {
         "top_border": "상단 테두리",
@@ -662,7 +662,7 @@
       },
       "gift_wrapping": {
         "name": "선물 포장",
-        "info": "선물 포장은 제품으로 설정되어야 합니다. [더 알아보기](https://shopify-support.krownthemes.com/article/779-borders-theme-settings-cart)",
+        "info": "선물 포장은 제품으로 설정되어야 합니다.",
         "settings": {
           "label": "글",
           "button": "버튼 레이블"
@@ -739,7 +739,7 @@
             "amount_saved": "저장된 양"
           },
           "regular_badges": {
-            "info": "[여기](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)에서 제품 배지에 관해 자세히 알아보십시오."
+            "info": "에서 제품 배지에 관해 자세히 알아보십시오."
           },
           "sold_out": {
             "name": "매진 배지",
@@ -748,8 +748,8 @@
           },
           "custom_badges": {
             "name": "사용자 정의 제품 배지",
-            "info": "이 테마는 여기에서 정의할 수 있는 사용자 지정 제품 배지를 사용합니다. [더 알아보기](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "이 테마는 여기에서 정의할 수 있는 사용자 지정 제품 배지를 사용합니다. [더 알아보기](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "이 테마는 여기에서 정의할 수 있는 사용자 지정 제품 배지를 사용합니다.",
+            "split_info": "이 테마는 여기에서 정의할 수 있는 사용자 지정 제품 배지를 사용합니다.",
             "name__1": "사용자 정의 배지 1",
             "name__2": "사용자 정의 배지 2",
             "name__3": "사용자 정의 배지 3",
@@ -764,7 +764,7 @@
       "seo_late": {
         "breadcrumbs": {
           "label": "Improve product breadcrumb navigation",
-          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's. [Learn more](https://shopify-support.krownthemes.com/article/697-seo#breadcrumbs)"
+          "info": "Adds collection names to the breadcrumb navigation, by duplicating product url's."
         }
       }
     },
@@ -877,7 +877,7 @@
           },
           "local-pickup": {
             "name": "지역별 가능 여부",
-            "info": "이 테마는 제품의 지역별 가능 여부를 보여줍니다. [더 알아보기](https://shopify-support.krownthemes.com/article/805-collection-page)"
+            "info": "이 테마는 제품의 지역별 가능 여부를 보여줍니다."
           },
           "badges": {
             "name": "기본 제품 배지",
@@ -893,7 +893,7 @@
             },
             "custom_badges": {
               "name": "사용자 정의 제품 배지",
-              "info": "이 테마는 당신이 여기에서 정의할 수 있는 사용자 정의 제품 배지를 사용합니다. [더 알아보기](https://shopify-support.krownthemes.com/article/795-product-card#Product-badges-_KIdK)",
+              "info": "이 테마는 당신이 여기에서 정의할 수 있는 사용자 정의 제품 배지를 사용합니다.",
               "name__1": "사용자 정의 배지 1",
               "name__2": "사용자 정의 배지 2",
               "name__3": "사용자 정의 배지 3",
@@ -950,7 +950,7 @@
               "info": "256 x 256px"
             },
             "select_icon": {
-              "info": "더 많은 아이콘을 시각화하고 다운로드하려면, [이 링크](https://resources.krownthemes.com/icons/)를 방문해주십시오"
+              "info": "더 많은 아이콘을 시각화하고 다운로드하려면,를 방문해주십시오"
             },
             "icon_color": {
               "label": "아이콘",
@@ -1157,15 +1157,15 @@
             },
             "store-selector": {
               "name": "매 선택기",
-              "content": "매장 선택기는 매장 선택기 섹션에서만 설정할 수 있습니다. [더 알아보기](https://shopify-support.krownthemes.com/article/799-store-selector)",
-              "info": "이 테마는 실제 매장 위치를 상호 작용 매장 선택기와 연결할 수 있도록 해줍니다. [더 알아보기](https://shopify-support.krownthemes.com/article/799-store-selector)"
+              "content": "매장 선택기는 매장 선택기 섹션에서만 설정할 수 있습니다.",
+              "info": "이 테마는 실제 매장 위치를 상호 작용 매장 선택기와 연결할 수 있도록 해줍니다."
             },
             "mega-menu": {
               "name": "메가 메뉴",
               "settings": {
                 "menu_handle": {
                   "label": "메뉴 관리",
-                  "info": "이 테마는 메가 메뉴를 사용합니다. [더 알아보기]((https://shopify-support.krownthemes.com/article/798-header-section#mega-menus)"
+                  "info": "이 테마는 메가 메뉴를 사용합니다. 더 알아보기"
                 }
               }
             }
@@ -1363,8 +1363,8 @@
             },
             "icons": {
               "name": "아이콘 목록",
-              "info": "테마에 포함된 아이콘을 시각화하고 다운로드하려면 [이 링크](https://resources.krownthemes.com/icons//)를 방문하여 주십시오.",
-              "help": "이 테마 동적 콘텐츠를 통해 사용자 정의 제품 아이콘을 추가할 수 있도록 해줍니다. [더 알아보기](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "테마에 포함된 아이콘을 시각화하고 다운로드하려면를 방문하여 주십시오.",
+              "help": "이 테마 동적 콘텐츠를 통해 사용자 정의 제품 아이콘을 추가할 수 있도록 해줍니다.",
               "headers": {
                 "icon_1": "아이콘 1",
                 "icon_2": "아이콘 2",
@@ -1509,7 +1509,7 @@
             "vendor": "판매자",
             "text": {
               "name": "동적 텍스트",
-              "info": "제품 메타 필드를 생성하여 동적 소스를 통해 고유 속성을 강조하세요. [더 알아보기](https://shopify-support.krownthemes.com/article/805-collection-page)",
+              "info": "제품 메타 필드를 생성하여 동적 소스를 통해 고유 속성을 강조하세요.",
               "settings": {
                 "text": {
                   "label": "메타 필드 레이블"
@@ -1531,7 +1531,7 @@
               }
             },
             "icons": {
-              "info": "아이콘 목록에 제품 메타 필드를 생성하여 동적 소스를 통해 고유 속성을 강조하세요. [더 알아보기](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "아이콘 목록에 제품 메타 필드를 생성하여 동적 소스를 통해 고유 속성을 강조하세요.",
               "settings": {
                 "icon": "아이콘 메타 필드",
                 "label": "메타 필드 레이블"
@@ -1733,7 +1733,7 @@
             },
             "color_swatches": {
               "label": "색상 견본 표시(블록 스타일에만)",
-              "info": "이 테마는 색상 견본을 위한 사용자 정의 이미지를 보여줍니다. [더 알아보기](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "이 테마는 색상 견본을 위한 사용자 정의 이미지를 보여줍니다."
             }
           }
         },
@@ -1873,7 +1873,7 @@
         },
         "icons": {
           "label": "아이콘",
-          "info": "테마에 포함된 모든 아이콘을 시각화하려면, [이 링크](https://krownthemes.com/krown-icons/)를 방문해 주십시오."
+          "info": "테마에 포함된 모든 아이콘을 시각화하려면,를 방문해 주십시오."
         }
       },
       "blocks": {
@@ -3253,7 +3253,7 @@
         "main-page": {
           "cover": {
             "header": "사용자 정의 페이지 헤더",
-            "content": "동적 소스를 사용하여 각 페이지에 다른 이미지를 표시하세요. [더 알아보기](https://shopify-support.krownthemes.com/article/827-combine-custom-page-headers)",
+            "content": "동적 소스를 사용하여 각 페이지에 다른 이미지를 표시하세요.",
             "settings": {
               "cover_metafield": "이미지 메타 필드"
             }
@@ -3300,7 +3300,7 @@
               "header": "기능성"
             },
             "icons": {
-              "settings_info": "동적 소스를 사용하여 아이콘 목록에 대한 제품 메타 필드를 생성하는 것으로 고유 속성을 강조하세요. [더 알아보기](https://shopify-support.krownthemes.com/article/815-combine-product-card#dynamic-icons-list)",
+              "settings_info": "동적 소스를 사용하여 아이콘 목록에 대한 제품 메타 필드를 생성하는 것으로 고유 속성을 강조하세요.",
               "page_info": "동적 소스를 사용하여 아이콘 목록에 대한 제품 메타 필드를 생성하는 것으로 고유 속성을 강조하세요."
             },
             "inventory": {
@@ -3369,7 +3369,7 @@
             },
             "icon": {
               "name": "아이콘",
-              "info": "아이콘을 다운로드하고 시각화하려면, [아이콘 라이브러리](https://resources.krownthemes.com/icons/) 를 방문해 주십시오.",
+              "info": "아이콘을 다운로드하고 시각화하려면, 를 방문해 주십시오.",
               "size": "아이콘 크기"
             }
           }
@@ -3452,7 +3452,7 @@
                 },
                 "color_swatches": {
                   "label": "색상 견본 표시",
-                  "info": "이 테마는 색상 옵션에 대한 색상 견본을 보여줍니다. [더 알아보기](https://shopify-support.krownthemes.com/article/816-combine-color-swatches)"
+                  "info": "이 테마는 색상 옵션에 대한 색상 견본을 보여줍니다."
                 },
                 "color_swatches_label": {
                   "label": "색상 견본 레이블",
@@ -3486,7 +3486,7 @@
           }
         },
         "header": {
-          "info": "이 테마는 더 많은 유형의 헤더 블록을 허용합니다. [더 알아보기](https://shopify-support.krownthemes.com/article/817-header-footer)",
+          "info": "이 테마는 더 많은 유형의 헤더 블록을 허용합니다.",
           "logo": {
             "position": "로고 위치",
             "mobile_image": "로고 모바일 이미지",
@@ -3602,7 +3602,7 @@
       "label_3": "이미지 3"
     },
     "cookies": {
-      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent. [Learn more](https://shopify-support.krownthemes.com/article/790-cookies-popup)."
+      "cookies_info": "The cookies popover will only be visible if it customer data is set to be collected after consent."
     },
     "new-account-component": {
       "label_style_info": "계정 아이콘에는 라벨이 표시되지 않습니다."
@@ -3616,7 +3616,7 @@
     "drawers": "Modals/drawers",
     "other": "Other colors"
   },
-  "combine-260": {
+  "zgueg-260": {
     "labels": {
       "collapsible": "접을 수 있는",
       "slider_layout_info": "슬라이더 레이아웃은 썸네일 갤러리를 비활성화합니다, 활성화된 경우.",
@@ -3636,7 +3636,7 @@
       "settings": {
         "inline_label": "인라인 표시 설정",
         "modal_label": "모달 표시 설정",
-        "modal_info": "모달 옵션은 퀵 구매 제품 페이지 템플릿에서 구성할 수 있습니다. [자세히 알아보기](https://shopify-support.krownthemes.com/article/824-combine-product-page#Editing-the-quick-buy-modal-template-WsS0q)"
+        "modal_info": "모달 옵션은 퀵 구매 제품 페이지 템플릿에서 구성할 수 있습니다."
       }
     }
   },

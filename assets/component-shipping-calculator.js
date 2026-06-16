@@ -28,7 +28,7 @@ if ( typeof ShippingCalculator !== 'function' ) {
 
 				resultsBlockContentList.innerHTML = "";
 
-				fetch("".concat(KROWN.settings.routes.cart_url, "/shipping_rates.json?shipping_address[zip]=").concat(zip.value, "&shipping_address[country]=").concat(country.value, "&shipping_address[province]=").concat(province.value), {
+				fetch("".concat(ZGUEG.settings.routes.cart_url, "/shipping_rates.json?shipping_address[zip]=").concat(zip.value, "&shipping_address[country]=").concat(country.value, "&shipping_address[province]=").concat(province.value), {
 					credentials: 'same-origin',
 					method: 'GET'
 				}).then(response=>{
@@ -51,13 +51,13 @@ if ( typeof ShippingCalculator !== 'function' ) {
 							resultsBlockContent.style.display = "block";
 							
 							if ( rates.length == 1 ) {
-								resultsBlockContentHeading.innerHTML = KROWN.settings.locales.shipping_calculator_results_heading_one;
+								resultsBlockContentHeading.innerHTML = ZGUEG.settings.locales.shipping_calculator_results_heading_one;
 							} else {
-								resultsBlockContentHeading.innerHTML = KROWN.settings.locales.shipping_calculator_results_heading_multiple;
+								resultsBlockContentHeading.innerHTML = ZGUEG.settings.locales.shipping_calculator_results_heading_multiple;
 							}
 
 							rates.forEach(key => {
-								resultsBlockContentList.innerHTML += `<li>${result.shipping_rates[key].presentment_name}: ${this._formatMoney(result.shipping_rates[key].price, KROWN.settings.shop_money_format)}</li>`;
+								resultsBlockContentList.innerHTML += `<li>${result.shipping_rates[key].presentment_name}: ${this._formatMoney(result.shipping_rates[key].price, ZGUEG.settings.shop_money_format)}</li>`;
 							});
 
 						}
