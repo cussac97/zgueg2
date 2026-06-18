@@ -34,7 +34,7 @@
         "show_social_icons": true,
         "bar_bgcolor": "#0000c9",
         "bar_txtcolor": "#ffffff",
-        "border_color": "rgba(0,0,0,0)",
+        "border_color": "#DADADA",
         "use_custom_font": true,
         "announcement_font": "geist_mono_n4",
         "use_custom_font_size": true,
