@@ -140,68 +140,6 @@
         "remove_spacing": true
       }
     },
-    "rich_text_EcNqNq": {
-      "type": "rich-text",
-      "blocks": {
-        "title_9yxCzV": {
-          "type": "title",
-          "settings": {
-            "title": "Le gel moussant quotidien",
-            "title_size": "heading-size--small",
-            "title_weight": "400",
-            "title_size_custom": 44,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        },
-        "text_Vz8W6y": {
-          "type": "text",
-          "settings": {
-            "text": "<p>cleaned® nettoie en profondeur avec des tensioactifs d'origine végétale, sans détruire le microbiome naturel qui protège ta zone intime. Les ferments probiotiques font le reste. Un gel douche classique n'a aucune idée de ce qu'il fait là en bas. cleaned® si.</p>",
-            "text_size": "regular"
-          }
-        },
-        "button_dXzPWN": {
-          "type": "button",
-          "settings": {
-            "button_label": "Je shoppe cleaned®",
-            "link": "shopify://products/cleaned-®-gel-mousse-nettoyant-quotidien",
-            "open_in_new_window": false,
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "title_9yxCzV",
-        "text_Vz8W6y",
-        "button_dXzPWN"
-      ],
-      "name": "t:sections-categories.presets.rich_text_with_image",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_17_03.png",
-        "video_controls": false,
-        "image_position": "right",
-        "height": "large",
-        "content_vertical_position": "middle",
-        "image_crop": true,
-        "image_object_position": "auto",
-        "overlay_image_width": 320,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
-        "text_alignment": "horizontal-left",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 24,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "#d9d9d9",
-        "border_radius": 0,
-        "color_hide_borders": true,
-        "gutter_decrease": false,
-        "remove_margin": false,
-        "remove_bottom_margin": false
-      }
-    },
     "certifications_DDdq8b": {
       "type": "certifications",
       "blocks": {
@@ -304,6 +242,7 @@
             "media_type": "image",
             "image": "shopify://shop_images/caleconall.png",
             "video_url": "",
+            "product_image": "shopify://shop_images/zgueglanctrans.png",
             "product_url": ""
           }
         }
@@ -311,21 +250,22 @@
       "block_order": [
         "item_ByF4H7"
       ],
+      "disabled": true,
       "name": "SS - Video & Image Text #3",
       "settings": {
         "body_gap": 70,
         "body_gap_mobile": 40,
         "content_horizontal_align": "start",
         "content_horizontal_align_mobile": "start",
-        "sub_heading": "<h3>SUBHEADING</h3>",
-        "sub_heading_custom": false,
-        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading": "<h3>Le gel douche</h3>",
+        "sub_heading_custom": true,
+        "sub_heading_font": "mono",
         "sub_heading_size": 16,
         "sub_heading_size_mobile": 14,
         "sub_heading_height": 130,
-        "heading": "<h2>Heading</h2>",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
+        "heading": "<h2>Propre, toute la journée.</h2>",
+        "heading_custom": true,
+        "heading_font": "inter_n4",
         "heading_size": 80,
         "heading_size_mobile": 48,
         "heading_height": 130,
@@ -510,6 +450,68 @@
         "border_radius": 0,
         "color_hide_borders": true,
         "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "rich_text_EcNqNq": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9yxCzV": {
+          "type": "title",
+          "settings": {
+            "title": "Le gel moussant quotidien",
+            "title_size": "heading-size--small",
+            "title_weight": "400",
+            "title_size_custom": 44,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_Vz8W6y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>cleaned® nettoie en profondeur avec des tensioactifs d'origine végétale, sans détruire le microbiome naturel qui protège ta zone intime. Les ferments probiotiques font le reste. Un gel douche classique n'a aucune idée de ce qu'il fait là en bas. cleaned® si.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_dXzPWN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Je shoppe cleaned®",
+            "link": "shopify://products/cleaned-®-gel-mousse-nettoyant-quotidien",
+            "open_in_new_window": false,
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "title_9yxCzV",
+        "text_Vz8W6y",
+        "button_dXzPWN"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_17_03.png",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "large",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 320,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-left",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": true,
         "remove_margin": true,
         "remove_bottom_margin": false
       }
@@ -732,11 +734,11 @@
   },
   "order": [
     "enriched_hero_e4bhR9",
-    "rich_text_EcNqNq",
     "certifications_DDdq8b",
     "ss_video_image_text_3_JLCMQb",
     "featured_collection_nUjFKx",
     "rich_text_3E9aKj",
+    "rich_text_EcNqNq",
     "rich_text_UKfy6N",
     "rich_text_9XNcQB",
     "customer_reviews_c89ViU"
