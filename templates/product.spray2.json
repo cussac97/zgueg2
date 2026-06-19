@@ -389,7 +389,8 @@
           "type": "point",
           "settings": {
             "label": "zgueg",
-            "logo_width": 110,
+            "image": "shopify://shop_images/zgueg.svg",
+            "logo_width": 90,
             "ph_value": "5,5",
             "highlight": true
           }
