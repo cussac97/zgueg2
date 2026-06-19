@@ -222,7 +222,7 @@
             "card_padding": 18,
             "card_inner_gap": 11,
             "card_bg_color": "#FFFFFF",
-            "card_border_color": "#dddddd",
+            "card_border_color": "#D1E3FB",
             "card_border_width": 1,
             "card_radius": 0,
             "selected_border_color": "#0000c9",
