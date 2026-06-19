@@ -584,7 +584,7 @@
         "label_size": 13,
         "label_weight": "400",
         "label_transform": "none",
-        "show_button": true,
+        "show_button": false,
         "button_label": "Lire la composition",
         "button_link": "",
         "button_bg": "#0000c9",
