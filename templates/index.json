@@ -140,6 +140,153 @@
         "remove_spacing": true
       }
     },
+    "ph_scale_pjWhrH": {
+      "type": "ph-scale",
+      "blocks": {
+        "point_8GjKdB": {
+          "type": "point",
+          "settings": {
+            "label": "zgueg",
+            "image": "shopify://shop_images/zgueg.svg",
+            "logo_width": 90,
+            "ph_value": "5,5",
+            "highlight": true
+          }
+        },
+        "point_r7JMxX": {
+          "type": "point",
+          "settings": {
+            "label": "Gel douche classique",
+            "logo_width": 110,
+            "ph_value": "8,5",
+            "highlight": false
+          }
+        },
+        "point_gWAdyQ": {
+          "type": "point",
+          "settings": {
+            "label": "Autre gel intime",
+            "logo_width": 110,
+            "ph_value": "6,5",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "point_8GjKdB",
+        "point_r7JMxX",
+        "point_gWAdyQ"
+      ],
+      "name": "Échelle de pH",
+      "settings": {
+        "heading": "Le pH change tout.",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "ph_min": 0,
+        "ph_max": 14,
+        "show_axis": true,
+        "axis_label_left": "Plus acide",
+        "axis_label_right": "Plus basique",
+        "show_neutral": true,
+        "show_ideal": true,
+        "ideal_min": "5",
+        "ideal_max": "6",
+        "ideal_label": "Zone idéale de la peau",
+        "value_font": "ph-scale--mono",
+        "footnote": "<p>L'équilibre naturel de la peau intime se situe autour de pH 5,5. Un produit au pH proche respecte cet équilibre ; un pH plus élevé l'agresse.</p>",
+        "section_background": "",
+        "table_background": "#FFFFFF",
+        "text_color": "#1A1A1A",
+        "value_color": "#4F4F4F",
+        "line_color": "#E6E6E6",
+        "track_color": "#D9D9D9",
+        "ideal_color": "#E3E9FB",
+        "highlight_background": "#E8EDFB",
+        "highlight_border": "#2545D3",
+        "highlight_text": "#2545D3",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "marker_size": 14,
+        "row_padding_y": 28,
+        "row_padding_x": 24,
+        "first_col_width": 30,
+        "label_size": 16,
+        "value_size": 15,
+        "axis_size": 13,
+        "footnote_size": 13,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "seo_h_tag": "h2"
+      }
+    },
+    "rich_text_3E9aKj": {
+      "type": "rich-text",
+      "blocks": {
+        "title_ih9K6A": {
+          "type": "title",
+          "settings": {
+            "title": "Le spray rééquilibrant",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_pzzdk3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® règle le problème — il ne le cache pas derrière un parfum.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_FpdwFg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Je shoppe refreshed®",
+            "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
+            "open_in_new_window": false,
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "title_ih9K6A",
+        "text_pzzdk3",
+        "button_FpdwFg"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_35_35.png",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "small",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-left",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
     "certifications_DDdq8b": {
       "type": "certifications",
       "blocks": {
@@ -191,9 +338,9 @@
         "padding_top": 70,
         "padding_bottom": 70,
         "section_bg": "#ffffff",
-        "heading": "Notre engagement pour la qualité",
+        "heading": "100% sain pour tous les zguegs.",
         "text_color": "#1a1a1a",
-        "heading_size": 44,
+        "heading_size": 52,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "heading_alignment": "left",
@@ -305,10 +452,10 @@
         "text_color": "#000000",
         "image_border_color": "#000000",
         "media_border_color": "#000000",
-        "action_bg_color": "#FFFFFF",
+        "action_bg_color": "#ffffff",
         "action_arrow_color": "#000000",
         "thumbs_border_color": "#000000",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "background_gradient": "",
         "border_color": "#000000",
         "margin_top": 0,
@@ -392,68 +539,6 @@
         "seo_h_tag": "h2"
       }
     },
-    "rich_text_3E9aKj": {
-      "type": "rich-text",
-      "blocks": {
-        "title_ih9K6A": {
-          "type": "title",
-          "settings": {
-            "title": "Le spray rééquilibrant",
-            "title_size": "heading-size--small",
-            "title_weight": "400",
-            "title_size_custom": 44,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        },
-        "text_pzzdk3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® règle le problème — il ne le cache pas derrière un parfum.</p>",
-            "text_size": "regular"
-          }
-        },
-        "button_FpdwFg": {
-          "type": "button",
-          "settings": {
-            "button_label": "Je shoppe refreshed®",
-            "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
-            "open_in_new_window": false,
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "title_ih9K6A",
-        "text_pzzdk3",
-        "button_FpdwFg"
-      ],
-      "name": "t:sections-categories.presets.rich_text_with_image",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_35_35.png",
-        "video_controls": false,
-        "image_position": "left",
-        "height": "large",
-        "content_vertical_position": "middle",
-        "image_crop": true,
-        "image_object_position": "auto",
-        "overlay_image_width": 160,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
-        "text_alignment": "horizontal-left",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 24,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "#d9d9d9",
-        "border_radius": 0,
-        "color_hide_borders": true,
-        "gutter_decrease": false,
-        "remove_margin": true,
-        "remove_bottom_margin": false
-      }
-    },
     "rich_text_EcNqNq": {
       "type": "rich-text",
       "blocks": {
@@ -461,9 +546,9 @@
           "type": "title",
           "settings": {
             "title": "Le gel moussant quotidien",
-            "title_size": "heading-size--small",
+            "title_size": "heading-size--regular",
             "title_weight": "400",
-            "title_size_custom": 44,
+            "title_size_custom": 0,
             "title_size_custom_mobile": 0,
             "seo_h_tag": "h2"
           }
@@ -494,8 +579,8 @@
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_17_03.png",
         "video_controls": false,
-        "image_position": "right",
-        "height": "large",
+        "image_position": "left",
+        "height": "small",
         "content_vertical_position": "middle",
         "image_crop": true,
         "image_object_position": "auto",
@@ -611,6 +696,123 @@
         "gutter_decrease": false,
         "remove_margin": true,
         "remove_bottom_margin": false
+      }
+    },
+    "comparison_table_rcciR8": {
+      "type": "comparison-table",
+      "blocks": {
+        "row_JzWMpf": {
+          "type": "row",
+          "settings": {
+            "label": "Surface utile* (plus grand = mieux)",
+            "value_brand": "60 cm²",
+            "value_1": "49 cm²",
+            "value_2": "58 cm²",
+            "value_3": ""
+          }
+        },
+        "row_pi6i66": {
+          "type": "row",
+          "settings": {
+            "label": "Enrichi en actifs naturels",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_kbQbwz": {
+          "type": "row",
+          "settings": {
+            "label": "Densité de la formule* (plus élevée = mieux)",
+            "value_brand": "78 g/m²",
+            "value_1": "52 g/m²",
+            "value_2": "59 g/m²",
+            "value_3": ""
+          }
+        },
+        "row_zKEtDC": {
+          "type": "row",
+          "settings": {
+            "label": "Testé dermatologiquement",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_KQapB7": {
+          "type": "row",
+          "settings": {
+            "label": "Fabriqué en France",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_MmMJ7C": {
+          "type": "row",
+          "settings": {
+            "label": "Sans parfum de synthèse",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Oui",
+            "value_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_JzWMpf",
+        "row_pi6i66",
+        "row_kbQbwz",
+        "row_zKEtDC",
+        "row_KQapB7",
+        "row_MmMJ7C"
+      ],
+      "name": "Tableau comparatif",
+      "settings": {
+        "heading": "Votre zgueg mérite bien mieux que votre gel douche 3 en 1.",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "brand_logo": "shopify://shop_images/zgueg.svg",
+        "brand_logo_width": 120,
+        "brand_name": "Votre marque",
+        "brand_tagline": "Spray et Gel intime",
+        "competitor_1": "Grande marque",
+        "competitor_2": "Autre marque DTC",
+        "competitor_3": "",
+        "yes_no_icons": false,
+        "value_font": "comparison-table--mono",
+        "value_alignment": "center",
+        "footnote": "<p>*Basé sur les sites, produits et emballages des marques concurrentes au moment de la publication.</p>",
+        "section_background": "",
+        "table_background": "#FFFFFF",
+        "text_color": "#1A1A1A",
+        "value_color": "#4F4F4F",
+        "line_color": "#E6E6E6",
+        "highlight_background": "#E8EDFB",
+        "highlight_border": "#2545D3",
+        "highlight_text": "#2545D3",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "cell_padding_y": 40,
+        "cell_padding_x": 24,
+        "first_col_width": 30,
+        "label_size": 16,
+        "header_size": 16,
+        "value_size": 15,
+        "footnote_size": 13,
+        "sticky_first_column": true,
+        "mobile_col_width": 140,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
       }
     },
     "customer_reviews_c89ViU": {
@@ -734,13 +936,15 @@
   },
   "order": [
     "enriched_hero_e4bhR9",
+    "ph_scale_pjWhrH",
+    "rich_text_3E9aKj",
     "certifications_DDdq8b",
     "ss_video_image_text_3_JLCMQb",
     "featured_collection_nUjFKx",
-    "rich_text_3E9aKj",
     "rich_text_EcNqNq",
     "rich_text_UKfy6N",
     "rich_text_9XNcQB",
+    "comparison_table_rcciR8",
     "customer_reviews_c89ViU"
   ]
 }
