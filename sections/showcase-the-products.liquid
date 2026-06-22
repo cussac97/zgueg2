@@ -57,6 +57,40 @@
         font-size: {{ s.heading_size }}px;
       }
     }
+
+    {%- comment -%} Bouton plein (carte mise en avant) {%- endcomment -%}
+    {%- assign bsb_alpha = s.button_solid_bg | color_extract: 'alpha' -%}
+    {%- if s.button_solid_bg != blank and bsb_alpha != 0 -%}
+      #section-{{ section.id }} .showcase-products__card .button--solid {
+        background-color: {{ s.button_solid_bg }};
+        border-color: {{ s.button_solid_bg }};
+      }
+    {%- endif -%}
+    {%- assign bst_alpha = s.button_solid_text | color_extract: 'alpha' -%}
+    {%- if s.button_solid_text != blank and bst_alpha != 0 -%}
+      #section-{{ section.id }} .showcase-products__card .button--solid,
+      #section-{{ section.id }} .showcase-products__card .button--solid .button__text {
+        color: {{ s.button_solid_text }};
+      }
+      #section-{{ section.id }} .showcase-products__card .button--solid path {
+        fill: {{ s.button_solid_text }};
+      }
+    {%- endif -%}
+
+    {%- comment -%} Bouton contour (carte standard) {%- endcomment -%}
+    {%- assign boc_alpha = s.button_outline_color | color_extract: 'alpha' -%}
+    {%- if s.button_outline_color != blank and boc_alpha != 0 -%}
+      #section-{{ section.id }} .showcase-products__card .button--outline {
+        border-color: {{ s.button_outline_color }};
+      }
+      #section-{{ section.id }} .showcase-products__card .button--outline,
+      #section-{{ section.id }} .showcase-products__card .button--outline .button__text {
+        color: {{ s.button_outline_color }};
+      }
+      #section-{{ section.id }} .showcase-products__card .button--outline path {
+        fill: {{ s.button_outline_color }};
+      }
+    {%- endif -%}
   {%- endstyle -%}
 
   <div class="container--large remove-empty-space">
@@ -347,6 +381,32 @@
       "id": "highlight_text",
       "label": "Accent de la carte mise en avant",
       "default": "#2545D3"
+    },
+    {
+      "type": "header",
+      "content": "Bouton « Découvrir »"
+    },
+    {
+      "type": "paragraph",
+      "content": "Transparent = couleurs de bouton du thème. La carte mise en avant utilise le bouton plein, les autres le bouton contour."
+    },
+    {
+      "type": "color",
+      "id": "button_solid_bg",
+      "label": "Bouton plein — fond",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "button_solid_text",
+      "label": "Bouton plein — texte",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "button_outline_color",
+      "label": "Bouton contour — bordure et texte",
+      "default": "rgba(0,0,0,0)"
     },
     {
       "type": "header",
