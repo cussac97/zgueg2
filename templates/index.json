@@ -152,8 +152,8 @@
             "tagline": "Fraîcheur immédiate, à emporter partout.",
             "details": "pH | 5,5\nFormat | 100 ml\nSans alcool\nFabriqué en France",
             "price_override": "",
-            "badge": "N°1",
-            "button_label": "Découvrir",
+            "badge": "Le plus vendu",
+            "button_label": "Acheter",
             "button_url": "",
             "highlight": true
           }
@@ -168,7 +168,7 @@
             "details": "pH | 5,5\nFormat | 200 ml\nSans savon\nFabriqué en France",
             "price_override": "",
             "badge": "",
-            "button_label": "Découvrir",
+            "button_label": "Acheter",
             "button_url": "",
             "highlight": false
           }
@@ -241,6 +241,7 @@
         },
         "button_FpdwFg": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Je shoppe refreshed®",
             "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
@@ -259,7 +260,7 @@
         "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_35_35.png",
         "video_controls": false,
         "image_position": "right",
-        "height": "small",
+        "height": "regular",
         "content_vertical_position": "middle",
         "image_crop": true,
         "image_object_position": "auto",
@@ -573,7 +574,7 @@
         "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_17_03.png",
         "video_controls": false,
         "image_position": "left",
-        "height": "small",
+        "height": "regular",
         "content_vertical_position": "middle",
         "image_crop": true,
         "image_object_position": "auto",
