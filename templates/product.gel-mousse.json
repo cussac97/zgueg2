@@ -382,90 +382,6 @@
         "sticky_bar_txtcolor": "#ffffff"
       }
     },
-    "ph_scale_nxqzew": {
-      "type": "ph-scale",
-      "blocks": {
-        "point_BRHcFw": {
-          "type": "point",
-          "settings": {
-            "label": "ZGUEG",
-            "logo_width": 110,
-            "ph_value": "5,5",
-            "highlight": true
-          }
-        },
-        "point_cfTEmc": {
-          "type": "point",
-          "settings": {
-            "label": "Gel douche classique",
-            "logo_width": 110,
-            "ph_value": "8,5",
-            "highlight": false
-          }
-        },
-        "point_M88afP": {
-          "type": "point",
-          "settings": {
-            "label": "Autre gel intime",
-            "logo_width": 110,
-            "ph_value": "6,5",
-            "highlight": false
-          }
-        }
-      },
-      "block_order": [
-        "point_BRHcFw",
-        "point_cfTEmc",
-        "point_M88afP"
-      ],
-      "name": "Échelle de pH",
-      "settings": {
-        "heading": "Le pH change tout.",
-        "subheading": "",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "heading_color": "rgba(0,0,0,0)",
-        "section_heading_layout": "section-heading--left section-heading--one-row",
-        "cta_label": "",
-        "cta_url": "",
-        "ph_min": 0,
-        "ph_max": 14,
-        "show_axis": true,
-        "axis_label_left": "Plus acide",
-        "axis_label_right": "Plus basique",
-        "show_neutral": true,
-        "show_ideal": true,
-        "ideal_min": "3.8",
-        "ideal_max": "5.5",
-        "ideal_label": "Zone idéale de la peau",
-        "value_font": "ph-scale--mono",
-        "footnote": "<p>L'équilibre naturel de la peau intime se situe autour de pH 5,5. Un produit au pH proche respecte cet équilibre ; un pH plus élevé l'agresse.</p>",
-        "section_background": "",
-        "table_background": "#ffffff",
-        "text_color": "#1a1a1a",
-        "value_color": "#4f4f4f",
-        "line_color": "#e6e6e6",
-        "track_color": "#d9d9d9",
-        "ideal_color": "#e3e9fb",
-        "highlight_background": "#e8edfb",
-        "highlight_border": "#2545d3",
-        "highlight_text": "#2545d3",
-        "highlight_border_width": 2,
-        "border_radius": 0,
-        "marker_size": 14,
-        "row_padding_y": 28,
-        "row_padding_x": 24,
-        "first_col_width": 30,
-        "label_size": 16,
-        "value_size": 15,
-        "axis_size": 13,
-        "footnote_size": 13,
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "seo_h_tag": "h2"
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "blocks": {
@@ -785,6 +701,90 @@
         "gap_vertical": 24,
         "show_instagram_icon": true,
         "tilt_images": true
+      }
+    },
+    "ph_scale_nxqzew": {
+      "type": "ph-scale",
+      "blocks": {
+        "point_BRHcFw": {
+          "type": "point",
+          "settings": {
+            "label": "ZGUEG",
+            "logo_width": 110,
+            "ph_value": "5,5",
+            "highlight": true
+          }
+        },
+        "point_cfTEmc": {
+          "type": "point",
+          "settings": {
+            "label": "Gel douche classique",
+            "logo_width": 110,
+            "ph_value": "8,5",
+            "highlight": false
+          }
+        },
+        "point_M88afP": {
+          "type": "point",
+          "settings": {
+            "label": "Autre gel intime",
+            "logo_width": 110,
+            "ph_value": "6,5",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "point_BRHcFw",
+        "point_cfTEmc",
+        "point_M88afP"
+      ],
+      "name": "Échelle de pH",
+      "settings": {
+        "heading": "Le pH change tout.",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "ph_min": 0,
+        "ph_max": 14,
+        "show_axis": true,
+        "axis_label_left": "Plus acide",
+        "axis_label_right": "Plus basique",
+        "show_neutral": true,
+        "show_ideal": true,
+        "ideal_min": "3.8",
+        "ideal_max": "5.5",
+        "ideal_label": "Zone idéale de la peau",
+        "value_font": "ph-scale--mono",
+        "footnote": "<p>L'équilibre naturel de la peau intime se situe autour de pH 5,5. Un produit au pH proche respecte cet équilibre ; un pH plus élevé l'agresse.</p>",
+        "section_background": "",
+        "table_background": "#ffffff",
+        "text_color": "#1a1a1a",
+        "value_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "track_color": "#d9d9d9",
+        "ideal_color": "#e3e9fb",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#2545d3",
+        "highlight_text": "#2545d3",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "marker_size": 14,
+        "row_padding_y": 28,
+        "row_padding_x": 24,
+        "first_col_width": 30,
+        "label_size": 16,
+        "value_size": 15,
+        "axis_size": 13,
+        "footnote_size": 13,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "seo_h_tag": "h2"
       }
     },
     "comparison_table_bXEKM3": {
@@ -1373,12 +1373,12 @@
   "order": [
     "enriched_hero_tq8Pwr",
     "main",
-    "ph_scale_nxqzew",
     "product-recommendations",
     "certifications_Tniktg",
     "rich_text_FmJFM4",
     "rich_text_LRtXGt",
     "instagram_shots_943TFC",
+    "ph_scale_nxqzew",
     "comparison_table_bXEKM3",
     "customer_reviews_QkecMN"
   ]
