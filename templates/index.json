@@ -133,7 +133,7 @@
         "background_color": "rgba(0,0,0,0)",
         "overlay_style": "solid",
         "overlay_color": "#000000",
-        "overlay_opacity": 0,
+        "overlay_opacity": 25,
         "default_text_color": "#ffffff",
         "rounded": false,
         "border_radius": 16,
