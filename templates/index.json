@@ -140,6 +140,81 @@
         "remove_spacing": true
       }
     },
+    "showcase_the_products_NFrmhk": {
+      "type": "showcase-the-products",
+      "blocks": {
+        "product_rhTXC8": {
+          "type": "product",
+          "settings": {
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "eyebrow": "Best-seller",
+            "name": "Spray intime",
+            "tagline": "Fraîcheur immédiate, à emporter partout.",
+            "details": "pH | 5,5\nFormat | 100 ml\nSans alcool\nFabriqué en France",
+            "price_override": "",
+            "badge": "N°1",
+            "button_label": "Découvrir",
+            "button_url": "",
+            "highlight": true
+          }
+        },
+        "product_zwtd9g": {
+          "type": "product",
+          "settings": {
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "eyebrow": "Best-seller",
+            "name": "Gel intime",
+            "tagline": "Toilette douce au quotidien.",
+            "details": "pH | 5,5\nFormat | 200 ml\nSans savon\nFabriqué en France",
+            "price_override": "",
+            "badge": "",
+            "button_label": "Découvrir",
+            "button_url": "",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "product_rhTXC8",
+        "product_zwtd9g"
+      ],
+      "name": "Showcase produits",
+      "settings": {
+        "heading": "Nos best-sellers",
+        "subheading": "Deux essentiels, un même geste.",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "footnote": "",
+        "value_font": "showcase-products--mono",
+        "section_background": "",
+        "card_background": "#FFFFFF",
+        "media_background": "#F5F5F3",
+        "text_color": "#1A1A1A",
+        "muted_color": "#4F4F4F",
+        "line_color": "#E6E6E6",
+        "highlight_background": "#E8EDFB",
+        "highlight_border": "#2545D3",
+        "highlight_text": "#2545D3",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "card_gap": 24,
+        "card_padding": 28,
+        "media_ratio": "4 / 5",
+        "name_size": 22,
+        "tagline_size": 15,
+        "detail_size": 13,
+        "price_size": 18,
+        "card_min_width": 320,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "seo_h_tag": "h2"
+      }
+    },
     "rich_text_3E9aKj": {
       "type": "rich-text",
       "blocks": {
@@ -932,85 +1007,11 @@
         "field_border": "#d9d9d9",
         "field_radius": 8
       }
-    },
-    "showcase_the_products_NFrmhk": {
-      "type": "showcase-the-products",
-      "blocks": {
-        "product_rhTXC8": {
-          "type": "product",
-          "settings": {
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "eyebrow": "Best-seller",
-            "name": "Spray intime",
-            "tagline": "Fraîcheur immédiate, à emporter partout.",
-            "details": "pH | 5,5\nFormat | 100 ml\nSans alcool\nFabriqué en France",
-            "price_override": "",
-            "badge": "N°1",
-            "button_label": "Découvrir",
-            "button_url": "",
-            "highlight": true
-          }
-        },
-        "product_zwtd9g": {
-          "type": "product",
-          "settings": {
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "eyebrow": "Best-seller",
-            "name": "Gel intime",
-            "tagline": "Toilette douce au quotidien.",
-            "details": "pH | 5,5\nFormat | 200 ml\nSans savon\nFabriqué en France",
-            "price_override": "",
-            "badge": "",
-            "button_label": "Découvrir",
-            "button_url": "",
-            "highlight": false
-          }
-        }
-      },
-      "block_order": [
-        "product_rhTXC8",
-        "product_zwtd9g"
-      ],
-      "name": "Showcase produits",
-      "settings": {
-        "heading": "Nos best-sellers",
-        "subheading": "Deux essentiels, un même geste.",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "heading_color": "rgba(0,0,0,0)",
-        "section_heading_layout": "section-heading--left section-heading--one-row",
-        "cta_label": "",
-        "cta_url": "",
-        "footnote": "",
-        "value_font": "showcase-products--mono",
-        "section_background": "",
-        "card_background": "#FFFFFF",
-        "media_background": "#F5F5F3",
-        "text_color": "#1A1A1A",
-        "muted_color": "#4F4F4F",
-        "line_color": "#E6E6E6",
-        "highlight_background": "#E8EDFB",
-        "highlight_border": "#2545D3",
-        "highlight_text": "#2545D3",
-        "highlight_border_width": 2,
-        "border_radius": 0,
-        "card_gap": 24,
-        "card_padding": 28,
-        "media_ratio": "4 / 5",
-        "name_size": 22,
-        "tagline_size": 15,
-        "detail_size": 13,
-        "price_size": 18,
-        "card_min_width": 320,
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "seo_h_tag": "h2"
-      }
     }
   },
   "order": [
     "enriched_hero_e4bhR9",
+    "showcase_the_products_NFrmhk",
     "rich_text_3E9aKj",
     "certifications_DDdq8b",
     "ss_video_image_text_3_JLCMQb",
@@ -1020,7 +1021,6 @@
     "rich_text_9XNcQB",
     "comparison_table_rcciR8",
     "ph_scale_pjWhrH",
-    "customer_reviews_c89ViU",
-    "showcase_the_products_NFrmhk"
+    "customer_reviews_c89ViU"
   ]
 }
