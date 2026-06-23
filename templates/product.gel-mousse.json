@@ -292,7 +292,7 @@
             "disclaimer": "Stock limité à cette série de production.",
             "text_alignment": "left",
             "accent_color": "#0000c9",
-            "track_color": "#f6f6f7",
+            "track_color": "#FFFFFF",
             "text_color": "#0000c9",
             "muted_color": "#000000",
             "show_card": true,
