@@ -190,7 +190,7 @@
         "lang_size": 13,
         "lang_size_mobile": 13,
         "lang_height": 130,
-        "bottom_menu": "main-menu",
+        "bottom_menu": "informations",
         "bottom_menu_hide_mobile": true,
         "bottom_list_mt_mobile": 16,
         "bottom_list_gap": 24,
