@@ -17,7 +17,7 @@
         "menu_AMAR9B": {
           "type": "menu",
           "settings": {
-            "heading": "Menu heading",
+            "heading": "Liens utiles",
             "menu": "main-menu"
           }
         },
@@ -25,7 +25,7 @@
           "type": "menu",
           "settings": {
             "heading": "Informations",
-            "menu": "footer"
+            "menu": "informations"
           }
         },
         "heading_CjkxB4": {
