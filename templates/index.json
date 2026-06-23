@@ -241,12 +241,11 @@
         },
         "button_FpdwFg": {
           "type": "button",
-          "disabled": true,
           "settings": {
             "button_label": "Je shoppe refreshed®",
             "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
             "open_in_new_window": false,
-            "button_style": "outline"
+            "button_style": "solid"
           }
         }
       },
@@ -257,7 +256,7 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_35_35.png",
+        "image": "shopify://shop_images/ChatGPT_Image_23_juin_2026_12_42_31.png",
         "video_controls": false,
         "image_position": "right",
         "height": "regular",
@@ -266,7 +265,7 @@
         "image_object_position": "auto",
         "overlay_image_width": 160,
         "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
+        "is_fullwidth": false,
         "text_alignment": "horizontal-left",
         "content_layout": "stacked",
         "split_left_width": 50,
@@ -275,103 +274,10 @@
         "color_text_main": "rgba(0,0,0,0)",
         "color_borders_main": "#d9d9d9",
         "border_radius": 0,
-        "color_hide_borders": true,
+        "color_hide_borders": false,
         "gutter_decrease": false,
         "remove_margin": true,
         "remove_bottom_margin": false
-      }
-    },
-    "certifications_DDdq8b": {
-      "type": "certifications",
-      "blocks": {
-        "certification_AmP3Wg": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/962a2632bae52161517f717aff14bea2d932821b-83x83.avif",
-            "label": "Sans ingrédient controversé\n\nSans alcool · Sans parabènes · Sans sulfates · Sans perturbateurs endocriniens · Sans phénoxyéthanol",
-            "link": ""
-          }
-        },
-        "certification_MXBLkR": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/a0882f0c3ba2974c0a77b1bdb5fcd4fb1941a01d-80x80.avif",
-            "label": "Soutenu par la science\n\nNos formules ont été développées par des docteurs en pharmacie et cosmétologie.",
-            "link": ""
-          }
-        },
-        "certification_YJRYkt": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/364411ef4d5d0272c1b3e846515b1534269d72f5-83x83.avif",
-            "label": "Sans parfum\n\nLe choix du naturel : car on croit profondément que l'odeur d'une peau propre est la meilleure des odeurs.",
-            "link": ""
-          }
-        },
-        "certification_GtJLgp": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/1499c3f4f728e1c3fe812506b9332ea9c5cfe1d9-80x80.avif",
-            "label": "93/100\n\nC'est la note qui a été délivrée par les autorités pour nos 2 formules. \n(on en est pas peu fiers)",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "certification_AmP3Wg",
-        "certification_MXBLkR",
-        "certification_YJRYkt",
-        "certification_GtJLgp"
-      ],
-      "name": "Certifications",
-      "settings": {
-        "container_width": "large",
-        "two_columns": true,
-        "left_width": 47,
-        "column_gap": 48,
-        "padding_top": 70,
-        "padding_bottom": 70,
-        "section_bg": "#ffffff",
-        "heading": "100% sain pour tous les zguegs.",
-        "text_color": "#1a1a1a",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "heading_alignment": "left",
-        "heading_alignment_mobile": "left",
-        "body": "<p>Zgueg a été créé par des hommes, pour les hommes. Car on sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt pour finir un rendez-vous comme il se doit. C'est pour cela que nous avons réfléchit pendant 2 ans au produit ultime, pour votre hygiène intime.</p>",
-        "body_color": "#1a1a1a",
-        "body_size": 16,
-        "body_max_width": 640,
-        "body_alignment": "left",
-        "body_alignment_mobile": "left",
-        "icons_per_row": 4,
-        "icons_per_row_mobile": 2,
-        "icon_size": 56,
-        "icon_gap": 24,
-        "row_gap": 28,
-        "label_gap": 14,
-        "icons_margin_top": 40,
-        "icon_recolor": false,
-        "icon_color": "#0000c9",
-        "label_color": "#1a1a1a",
-        "label_size": 13,
-        "label_weight": "400",
-        "label_transform": "none",
-        "show_button": false,
-        "button_label": "Lire nos analyses",
-        "button_link": "",
-        "button_bg": "#0000c9",
-        "button_text_color": "#ffffff",
-        "button_radius": 40,
-        "button_padding_v": 15,
-        "button_padding_h": 40,
-        "button_font_size": 15,
-        "button_weight": "700",
-        "button_transform": "none",
-        "button_alignment": "center",
-        "button_alignment_mobile": "center",
-        "button_full_width_mobile": false
       }
     },
     "ss_video_image_text_3_JLCMQb": {
@@ -572,7 +478,7 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_17_03.png",
+        "image": "shopify://shop_images/ChatGPT_Image_23_juin_2026_14_14_48.png",
         "video_controls": false,
         "image_position": "left",
         "height": "regular",
@@ -581,7 +487,7 @@
         "image_object_position": "auto",
         "overlay_image_width": 320,
         "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
+        "is_fullwidth": false,
         "text_alignment": "horizontal-left",
         "content_layout": "stacked",
         "split_left_width": 50,
@@ -590,9 +496,9 @@
         "color_text_main": "rgba(0,0,0,0)",
         "color_borders_main": "#d9d9d9",
         "border_radius": 0,
-        "color_hide_borders": true,
+        "color_hide_borders": false,
         "gutter_decrease": true,
-        "remove_margin": true,
+        "remove_margin": false,
         "remove_bottom_margin": false
       }
     },
@@ -765,6 +671,7 @@
         "row_KQapB7",
         "row_MmMJ7C"
       ],
+      "disabled": true,
       "name": "Tableau comparatif",
       "settings": {
         "heading": "Votre zgueg mérite bien mieux que votre gel douche 3 en 1.",
@@ -810,6 +717,99 @@
         "seo_h_tag": "h2"
       }
     },
+    "certifications_DDdq8b": {
+      "type": "certifications",
+      "blocks": {
+        "certification_AmP3Wg": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/962a2632bae52161517f717aff14bea2d932821b-83x83.avif",
+            "label": "Sans ingrédient controversé\n\nSans alcool · Sans parabènes · Sans sulfates · Sans perturbateurs endocriniens · Sans phénoxyéthanol",
+            "link": ""
+          }
+        },
+        "certification_MXBLkR": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/a0882f0c3ba2974c0a77b1bdb5fcd4fb1941a01d-80x80.avif",
+            "label": "Soutenu par la science\n\nNos formules ont été développées par des docteurs en pharmacie et cosmétologie.",
+            "link": ""
+          }
+        },
+        "certification_YJRYkt": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/364411ef4d5d0272c1b3e846515b1534269d72f5-83x83.avif",
+            "label": "Sans parfum\n\nLe choix du naturel : car on croit profondément que l'odeur d'une peau propre est la meilleure des odeurs.",
+            "link": ""
+          }
+        },
+        "certification_GtJLgp": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/1499c3f4f728e1c3fe812506b9332ea9c5cfe1d9-80x80.avif",
+            "label": "93/100\n\nC'est la note qui a été délivrée par les autorités pour nos 2 formules. \n(on en est pas peu fiers)",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "certification_AmP3Wg",
+        "certification_MXBLkR",
+        "certification_YJRYkt",
+        "certification_GtJLgp"
+      ],
+      "name": "Certifications",
+      "settings": {
+        "container_width": "large",
+        "two_columns": true,
+        "left_width": 47,
+        "column_gap": 48,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "section_bg": "#ffffff",
+        "heading": "100% sain pour tous les zguegs.",
+        "text_color": "#1a1a1a",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_alignment": "left",
+        "heading_alignment_mobile": "left",
+        "body": "<p>Zgueg a été créé par des hommes, pour les hommes. Car on sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt pour finir un rendez-vous comme il se doit. C'est pour cela que nous avons réfléchit pendant 2 ans au produit ultime, pour votre hygiène intime.</p>",
+        "body_color": "#1a1a1a",
+        "body_size": 16,
+        "body_max_width": 640,
+        "body_alignment": "left",
+        "body_alignment_mobile": "left",
+        "icons_per_row": 4,
+        "icons_per_row_mobile": 2,
+        "icon_size": 56,
+        "icon_gap": 24,
+        "row_gap": 28,
+        "label_gap": 14,
+        "icons_margin_top": 40,
+        "icon_recolor": false,
+        "icon_color": "#0000c9",
+        "label_color": "#1a1a1a",
+        "label_size": 13,
+        "label_weight": "400",
+        "label_transform": "none",
+        "show_button": false,
+        "button_label": "Lire nos analyses",
+        "button_link": "",
+        "button_bg": "#0000c9",
+        "button_text_color": "#ffffff",
+        "button_radius": 40,
+        "button_padding_v": 15,
+        "button_padding_h": 40,
+        "button_font_size": 15,
+        "button_weight": "700",
+        "button_transform": "none",
+        "button_alignment": "center",
+        "button_alignment_mobile": "center",
+        "button_full_width_mobile": false
+      }
+    },
     "ph_scale_pjWhrH": {
       "type": "ph-scale",
       "blocks": {
@@ -847,6 +847,7 @@
         "point_r7JMxX",
         "point_gWAdyQ"
       ],
+      "disabled": true,
       "name": "Échelle de pH",
       "settings": {
         "heading": "Le pH change tout.",
@@ -1018,13 +1019,13 @@
     "enriched_hero_e4bhR9",
     "showcase_the_products_NFrmhk",
     "rich_text_3E9aKj",
-    "certifications_DDdq8b",
     "ss_video_image_text_3_JLCMQb",
     "featured_collection_nUjFKx",
     "rich_text_EcNqNq",
     "rich_text_UKfy6N",
     "rich_text_9XNcQB",
     "comparison_table_rcciR8",
+    "certifications_DDdq8b",
     "ph_scale_pjWhrH",
     "customer_reviews_c89ViU"
   ]
