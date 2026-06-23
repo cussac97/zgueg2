@@ -32,11 +32,11 @@
           "type": "heading",
           "settings": {
             "heading": "<h3>C'est pour qui les cadeaux ? </h3>",
-            "heading_custom": false,
-            "heading_font": "josefin_sans_n4",
-            "heading_size": 44,
+            "heading_custom": true,
+            "heading_font": "inter_n4",
+            "heading_size": 32,
             "heading_size_mobile": 28,
-            "heading_height": 130,
+            "heading_height": 100,
             "heading_mt": 0,
             "heading_mt_mobile": 0,
             "heading_color": "#000000"
