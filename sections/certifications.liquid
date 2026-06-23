@@ -11,6 +11,26 @@
   else
     assign body_margin = '0'
   endif
+
+  assign grid_style = s.grid_style | default: 'classic'
+
+  assign item_align = s.item_alignment | default: 'center'
+  if item_align == 'left'
+    assign item_flex = 'flex-start'
+    assign item_text = 'left'
+  elsif item_align == 'right'
+    assign item_flex = 'flex-end'
+    assign item_text = 'right'
+  else
+    assign item_flex = 'center'
+    assign item_text = 'center'
+  endif
+
+  if grid_style == 'bordered'
+    assign grid_justify = 'stretch'
+  else
+    assign grid_justify = 'center'
+  endif
 -%}
 
 {% style %}
@@ -24,6 +44,10 @@
     --cert-label-gap: {{ s.label_gap | default: 14 }}px;
     --cert-cols-d: {{ s.icons_per_row | default: 4 }};
     --cert-cols-m: {{ s.icons_per_row_mobile | default: 2 }};
+    --cert-line: {{ s.line_color | default: '#e6e6e6' }};
+    --cert-card-bg: {{ s.card_bg | default: '#ffffff' }};
+    --cert-radius: {{ s.border_radius | default: 0 }}px;
+    --cert-cell-pad: {{ s.cell_padding | default: 28 }}px;
     background-color: {{ s.section_bg | default: 'rgba(0,0,0,0)' }};
     padding-top: {{ s.padding_top | default: 70 }}px;
     padding-bottom: {{ s.padding_bottom | default: 70 }}px;
@@ -60,17 +84,35 @@
     grid-template-columns: repeat(var(--cert-cols-d), minmax(0, 1fr));
     gap: {{ s.row_gap | default: 28 }}px var(--cert-icon-gap);
     margin-top: {{ s.icons_margin_top | default: 40 }}px;
-    justify-items: center;
+    justify-items: {{ grid_justify }};
   }
   #cert-{{ uid }} .cert-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: {{ item_flex }};
+    text-align: {{ item_text }};
     gap: var(--cert-label-gap);
     max-width: 180px;
   }
-  #cert-{{ uid }} .cert-item__link { text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; gap: var(--cert-label-gap); }
+  #cert-{{ uid }} .cert-item__link { text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: {{ item_flex }}; gap: var(--cert-label-gap); }
+
+  {%- comment -%} Style « Grille bordée » — fidèle aux sections tableau comparatif / échelle de pH / showcase {%- endcomment -%}
+  #cert-{{ uid }} .cert-grid--bordered {
+    gap: 1px;
+    background: var(--cert-line);
+    border: 1px solid var(--cert-line);
+    border-radius: var(--cert-radius);
+    overflow: hidden;
+    column-gap: 1px;
+  }
+  #cert-{{ uid }} .cert-grid--bordered .cert-item {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: var(--cert-cell-pad);
+    background: var(--cert-card-bg);
+    justify-content: center;
+  }
   #cert-{{ uid }} .cert-item__icon {
     width: var(--cert-icon-size);
     height: var(--cert-icon-size);
@@ -96,6 +138,12 @@
     text-transform: {{ s.label_transform | default: 'none' }};
     color: var(--cert-label);
   }
+  {%- if s.label_font == 'mono' -%}
+  #cert-{{ uid }} .cert-item__label {
+    font-family: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+  {%- endif -%}
   #cert-{{ uid }} .cert-button-wrap {
     margin-top: {{ s.button_margin_top | default: 40 }}px;
     text-align: {{ s.button_alignment | default: 'center' }};
@@ -149,7 +197,7 @@
       {%- endif -%}
 
       {%- if section.blocks.size > 0 -%}
-        <div class="cert-grid">
+        <div class="cert-grid{% if grid_style == 'bordered' %} cert-grid--bordered{% endif %}">
           {%- for block in section.blocks -%}
             {%- if block.type == 'certification' -%}
               {%- capture item_inner -%}
@@ -403,6 +451,78 @@
       "default": "left"
     },
 
+    {
+      "type": "header",
+      "content": "Style de grille"
+    },
+    {
+      "type": "select",
+      "id": "grid_style",
+      "label": "Style d'affichage",
+      "info": "« Grille bordée » reprend le design des sections Tableau comparatif, Échelle de pH et Showcase produits.",
+      "options": [
+        { "value": "classic", "label": "Classique (icônes espacées)" },
+        { "value": "bordered", "label": "Grille bordée (minimaliste)" }
+      ],
+      "default": "classic"
+    },
+    {
+      "type": "select",
+      "id": "item_alignment",
+      "label": "Alignement dans chaque cellule",
+      "options": [
+        { "value": "center", "label": "Centré" },
+        { "value": "left", "label": "Gauche" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "label_font",
+      "label": "Police des libellés",
+      "options": [
+        { "value": "theme", "label": "Police du thème" },
+        { "value": "mono", "label": "Monospace (fidèle au design)" }
+      ],
+      "default": "theme"
+    },
+    {
+      "type": "color",
+      "id": "card_bg",
+      "label": "Fond des cellules",
+      "default": "#ffffff",
+      "visible_if": "{{ section.settings.grid_style == 'bordered' }}"
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "Couleur des lignes",
+      "default": "#e6e6e6",
+      "visible_if": "{{ section.settings.grid_style == 'bordered' }}"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Arrondi des angles",
+      "min": 0,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ section.settings.grid_style == 'bordered' }}"
+    },
+    {
+      "type": "range",
+      "id": "cell_padding",
+      "label": "Marge intérieure des cellules",
+      "min": 12,
+      "max": 56,
+      "step": 2,
+      "unit": "px",
+      "default": 28,
+      "visible_if": "{{ section.settings.grid_style == 'bordered' }}"
+    },
     {
       "type": "header",
       "content": "Icônes / certifications"
