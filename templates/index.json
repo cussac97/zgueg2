@@ -266,7 +266,7 @@
         "overlay_image_width": 160,
         "overlay_image_width_mobile": 100,
         "is_fullwidth": false,
-        "text_alignment": "horizontal-left",
+        "text_alignment": "horizontal-center",
         "content_layout": "stacked",
         "split_left_width": 50,
         "spacing": 24,
@@ -462,12 +462,11 @@
         },
         "button_dXzPWN": {
           "type": "button",
-          "disabled": true,
           "settings": {
             "button_label": "Je shoppe cleaned®",
             "link": "shopify://products/cleaned-®-gel-mousse-nettoyant-quotidien",
             "open_in_new_window": false,
-            "button_style": "outline"
+            "button_style": "solid"
           }
         }
       },
@@ -488,7 +487,7 @@
         "overlay_image_width": 320,
         "overlay_image_width_mobile": 100,
         "is_fullwidth": false,
-        "text_alignment": "horizontal-left",
+        "text_alignment": "horizontal-center",
         "content_layout": "stacked",
         "split_left_width": 50,
         "spacing": 24,
