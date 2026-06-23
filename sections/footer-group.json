@@ -24,8 +24,8 @@
         "menu_8KiQz6": {
           "type": "menu",
           "settings": {
-            "heading": "Menu heading",
-            "menu": "main-menu"
+            "heading": "Informations",
+            "menu": "footer"
           }
         },
         "heading_CjkxB4": {
