@@ -878,7 +878,7 @@
         "competitor_1": "Déodorant classique",
         "competitor_2": "Lingettes intimes",
         "competitor_3": "",
-        "yes_no_icons": false,
+        "yes_no_icons": true,
         "value_font": "comparison-table--mono",
         "value_alignment": "center",
         "footnote": "<p>*Basé sur la composition type des déodorants et lingettes du commerce au moment de la publication.</p>",
