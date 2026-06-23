@@ -292,7 +292,7 @@
             "disclaimer": "Stock limité à cette série de production.",
             "text_alignment": "left",
             "accent_color": "#0000c9",
-            "track_color": "#FFFFFF",
+            "track_color": "#ffffff",
             "text_color": "#0000c9",
             "muted_color": "#000000",
             "show_card": true,
@@ -428,7 +428,7 @@
         "certification_Giz7h8": {
           "type": "certification",
           "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.29.png",
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-23_a_14.12.20.png",
             "label": "Rafraîchit sans agresser\n\nUne brume fine, sans alcool et au pH physiologique, qui neutralise sueur et odeurs sans piquer ni dessécher la zone intime.",
             "link": ""
           }
@@ -436,7 +436,7 @@
         "certification_8XX37L": {
           "type": "certification",
           "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.35.png",
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-23_a_14.12.24.png",
             "label": "Rééquilibre la flore\n\nLes ferments probiotiques Lactobacillus et Bifida soutiennent la flore intime à chaque pulvérisation, pour limiter le retour des odeurs en fin de journée.",
             "link": ""
           }
@@ -444,7 +444,7 @@
         "certification_w6cwby": {
           "type": "certification",
           "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.43.png",
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-23_a_14.12.29.png",
             "label": "Apaise les irritations\n\nCentella asiatica, armoise et Houttuynia cordata calment échauffements, rougeurs et inconfort des zones sensibles — même après le sport.",
             "link": ""
           }
@@ -452,7 +452,7 @@
         "certification_XAFn7c": {
           "type": "certification",
           "settings": {
-            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-02_a_17.45.56.png",
+            "icon": "shopify://shop_images/Capture_d_ecran_2026-06-23_a_14.12.33.png",
             "label": "Sèche en quelques secondes\n\nPas besoin de rincer : le thé vert et les actifs purifiants laissent une sensation de frais et de sec immédiate, sans résidu collant.",
             "link": ""
           }
@@ -551,7 +551,7 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_35_35.png",
+        "image": "shopify://shop_images/ChatGPT_Image_23_juin_2026_12_42_31.png",
         "video_controls": false,
         "image_position": "right",
         "height": "large",
@@ -611,7 +611,7 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_9_juin_2026_15_24_35.png",
+        "image": "shopify://shop_images/caleconall.png",
         "video_controls": false,
         "image_position": "left",
         "height": "large",
@@ -862,13 +862,13 @@
       ],
       "name": "Tableau comparatif",
       "settings": {
-        "heading": "La concurrence ? Y'en a pas.",
+        "heading": "La concurrence ? Mon zgueg ouais.",
         "subheading": "",
         "heading_size": 52,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "heading_color": "#000000",
-        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
         "cta_label": "",
         "cta_url": "",
         "brand_logo": "shopify://shop_images/zgueg.svg",
