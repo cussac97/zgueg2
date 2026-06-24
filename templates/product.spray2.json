@@ -908,7 +908,7 @@
         "footnote_size": 13,
         "sticky_first_column": true,
         "mobile_col_width": 140,
-        "gutter_decrease": false,
+        "gutter_decrease": true,
         "seo_h_tag": "h2"
       }
     },
