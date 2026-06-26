@@ -897,7 +897,7 @@
         "highlight_background": "#e8edfb",
         "highlight_border": "#2545d3",
         "highlight_text": "#2545d3",
-        "highlight_border_width": 2,
+        "highlight_border_width": 1,
         "border_radius": 0,
         "cell_padding_y": 40,
         "cell_padding_x": 24,
