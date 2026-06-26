@@ -618,7 +618,7 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_13_21_40.png",
+        "image": "shopify://shop_images/caleconall.png",
         "video_controls": false,
         "image_position": "left",
         "height": "regular",
@@ -747,6 +747,7 @@
         "point_Dg9yWc",
         "point_yaQjbb"
       ],
+      "disabled": true,
       "name": "Échelle de pH",
       "settings": {
         "heading": "Le pH change tout.",
