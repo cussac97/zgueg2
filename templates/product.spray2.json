@@ -453,7 +453,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/Capture_d_ecran_2026-06-23_a_14.12.33.png",
-            "label": "Sèche en quelques secondes\n\nPas besoin de rincer : le thé vert et les actifs purifiants laissent une sensation de frais et de sec immédiate, sans résidu collant.",
+            "label": "Sans rinçage \n\nPas besoin de rincer : le thé vert et les actifs purifiants laissent une sensation de frais et de sec immédiate.",
             "link": ""
           }
         }
@@ -535,10 +535,10 @@
         "title_UDcVcH": {
           "type": "title",
           "settings": {
-            "title": "Entre deux douches, ta zone intime est livrée à elle-même",
+            "title": "Entre deux douches, ta zone intime est (une zone) morte",
             "title_size": "heading-size--regular",
             "title_weight": "400",
-            "title_size_custom": 52,
+            "title_size_custom": 56,
             "title_size_custom_mobile": 32,
             "seo_h_tag": "h2"
           }
@@ -546,7 +546,7 @@
         "text_GKafAp": {
           "type": "text",
           "settings": {
-            "text": "<p>Chaleur, frottements, journées à rallonge : la transpiration s'accumule, ça macère, et l'odeur s'installe bien avant le retour à la maison. Le déo n'est pas fait pour cette zone, les lingettes assèchent, et se changer ne règle rien. Résultat : tu y penses toute la journée, sans vraie solution. La zone intime masculine mérite mieux que des rustines pensées pour les aisselles.</p>",
+            "text": "<p>Chaleur, frottements, journées à rallonge : l'humidité s'installe, le pH se dérègle, et le film hydrolipidique ne joue plus son rôle de barrière. Le déo n'est pas pensé pour cette zone, les lingettes l'agressent un peu plus. Résultat : ta zone intime est déréglé au cours de la journée.Cette zone mérite une solution conçue pour elle, on l'a développé pour vous.</p>",
             "text_size": "regular"
           }
         }
@@ -595,7 +595,7 @@
         "title_aj3KDD": {
           "type": "title",
           "settings": {
-            "title": "Un coup de frais qui respecte ta flore",
+            "title": "Un coup de frais qui équilibre (enfin) ta flore.",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 52,
@@ -606,7 +606,7 @@
         "text_fqVCan": {
           "type": "text",
           "settings": {
-            "text": "<p>Le spray zgueg, c'est une brume fine, sans alcool et au pH physiologique : deux pulvérisations, ça sèche en quelques secondes et ça neutralise sueur et odeurs sans piquer. Ses ferments probiotiques (Lactobacillus, Bifida) rééquilibrent ta flore à chaque utilisation pour limiter le retour des odeurs, pendant que l'armoise, la centella et le thé vert apaisent échauffements et irritations. Dans la poche ou le sac de sport — tu restes frais et au sec, jusqu'au soir.</p>",
+            "text": "<p>Le spray Refreshed® c'est : une brume fine, sans alcool, au pH physiologique. Deux pulvérisations, séchage en quelques secondes, sueur et odeurs neutralisées sans piquer. Ses postbiotiques (Lactobacillus, Bifida) rééquilibrent la flore pour limiter le retour des odeurs ; l'armoise, la centella et le thé vert apaisent échauffements et irritations. Il se garde dans la poche ou le sac de sport jusqu'au soir.</p>",
             "text_size": "regular"
           }
         }
@@ -811,17 +811,17 @@
         "row_Lh8e4f": {
           "type": "row",
           "settings": {
-            "label": "Sans alcool, ne pique pas",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Oui",
+            "label": " À base d'alcool",
+            "value_brand": "Non",
+            "value_1": "Oui",
+            "value_2": "Non",
             "value_3": ""
           }
         },
         "row_GFYk4G": {
           "type": "row",
           "settings": {
-            "label": "Ferments probiotiques rééquilibrants (Lactobacillus, Bifida)",
+            "label": "Postbiotiques rééquilibrants (Lactobacillus, Bifida)",
             "value_brand": "Oui",
             "value_1": "Non",
             "value_2": "Non",
@@ -851,10 +851,10 @@
         "row_X3C9gH": {
           "type": "row",
           "settings": {
-            "label": "Neutralise les odeurs au lieu de les masquer",
+            "label": "Neutralisant* d'odeurs",
             "value_brand": "Oui",
             "value_1": "Non",
-            "value_2": "Oui",
+            "value_2": "Non",
             "value_3": ""
           }
         }
@@ -869,7 +869,7 @@
       ],
       "name": "Tableau comparatif",
       "settings": {
-        "heading": "La concurrence ? Mon zgueg ouais.",
+        "heading": "La concurrence ? Mon zgueg ouais !",
         "subheading": "",
         "heading_size": 52,
         "heading_size_mobile": 32,
@@ -888,7 +888,7 @@
         "yes_no_icons": true,
         "value_font": "comparison-table--mono",
         "value_alignment": "center",
-        "footnote": "<p>*Basé sur la composition type des déodorants et lingettes du commerce au moment de la publication.</p>",
+        "footnote": "<p>*Basé sur la composition type des déodorants et lingettes du commerce au moment de la publication.</p><p>*Neutralise grâce au Zinc PCA</p>",
         "section_background": "",
         "table_background": "#ffffff",
         "text_color": "#1a1a1a",
