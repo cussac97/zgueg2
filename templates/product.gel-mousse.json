@@ -473,14 +473,14 @@
         "padding_top": 70,
         "padding_bottom": 70,
         "section_bg": "#ffffff",
-        "heading": "Pourquoi ça marche mieux qu'un gel douche classique ?",
+        "heading": "Pourquoi cleaned® marche mieux qu'un gel douche classique ?",
         "text_color": "#1a1a1a",
         "heading_size": 52,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "heading_alignment": "left",
         "heading_alignment_mobile": "center",
-        "body": "<p>La zone intime n'a pas le même pH ni la même flore que le reste de la peau. Un gel douche classique alcalin déséquilibre la région génitale. La flore protectrice s'appauvrit et les odeurs reviennent plus vite. Le gel mousse cleaned® agit à la source par des tensioactifs végétaux qui respectent le (bon) pH, des ferments postbiotiques qui rééquilibrent la flore, et nos apaisants botaniques calment les irritations.</p>",
+        "body": "<p>Le gel mousse cleaned® est formulé pour la zone intime, pas pour le corps entier. Il respecte son pH plus acide et sa flore spécifique au lieu de les décaper. Trois familles d'actifs agissent à la source : des tensioactifs végétaux qui nettoient sans agresser, des ferments postbiotiques qui rééquilibrent la flore, des apaisants botaniques qui calment les irritations.</p>",
         "body_color": "#1a1a1a",
         "body_size": 19,
         "body_max_width": 640,
@@ -620,7 +620,7 @@
         "title_UDcVcH": {
           "type": "title",
           "settings": {
-            "title": "Se laver au gel douche classique, c'est agresser une zone fragile",
+            "title": "On en avait marre de décaper nos parties intimes.",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 52,
@@ -631,7 +631,7 @@
         "text_GKafAp": {
           "type": "text",
           "settings": {
-            "text": "<p>Le gel douche classique n'est pas fait pour cette zone : pH trop élevé, parfums agressifs, tensioactifs qui dessèchent. Résultat, la peau tire, ça gratte, et l'odeur revient dès la fin de journée — surtout l'été ou après une séance. Tu nettoies, mais tu déséquilibres en même temps. La zone intime masculine mérite mieux qu'un produit pensé pour les aisselles.</p>",
+            "text": "<p>Un gel douche décape au lieu de nettoyer : il monte le pH, dessèche la peau et fragilise la flore. Résultat : la zone se défend mal, l'odeur revient dès la fin de journée et tu relaves = ça l'agresse encore plus. Le problème n'est pas l'hygiène, c'est le produit.</p>",
             "text_size": "regular"
           }
         }
@@ -680,7 +680,7 @@
         "title_aj3KDD": {
           "type": "title",
           "settings": {
-            "title": "Un nettoyage intime qui respecte ta flore",
+            "title": "Cleaned® nettoie (vraiment)  ta flore",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 52,
@@ -691,7 +691,7 @@
         "text_fqVCan": {
           "type": "text",
           "settings": {
-            "text": "<p>Le gel moussant zgueg associe des tensioactifs 100 % végétaux à un pH bas : il élimine sueur, smegma et résidus sans agresser ni faire tirer la peau. Ses ferments probiotiques (Lactobacillus, Bifida) rééquilibrent ta flore à chaque lavage pour limiter le retour des odeurs, pendant que l'armoise, la centella et le thé vert apaisent irritations et démangeaisons. La mousse est douce, ça ne pique pas — tu te sens propre et au sec, jusqu'au soir.</p>",
+            "text": "<p></p><p>Le gel moussant cleaned® associe des tensioactifs 100 % végétaux à un pH physiologique : il déloge sueur, smegma et résidus sans agresser ni faire tirer la peau. Ses ferments postbiotiques (Lactobacillus, Bifida) rééquilibrent ta flore à chaque lavage pour limiter le retour des odeurs, pendant que l'armoise, la centella et le thé vert apaisent irritations et démangeaisons.</p>",
             "text_size": "regular"
           }
         }
