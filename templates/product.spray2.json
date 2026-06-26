@@ -522,91 +522,6 @@
         "button_full_width_mobile": false
       }
     },
-    "ph_scale_4aedxP": {
-      "type": "ph-scale",
-      "blocks": {
-        "point_MMzmKE": {
-          "type": "point",
-          "settings": {
-            "label": "zgueg",
-            "image": "shopify://shop_images/zgueg.svg",
-            "logo_width": 90,
-            "ph_value": "5,5",
-            "highlight": true
-          }
-        },
-        "point_Dg9yWc": {
-          "type": "point",
-          "settings": {
-            "label": "Gel douche classique",
-            "logo_width": 110,
-            "ph_value": "8,5",
-            "highlight": false
-          }
-        },
-        "point_yaQjbb": {
-          "type": "point",
-          "settings": {
-            "label": "Autre gel intime",
-            "logo_width": 110,
-            "ph_value": "6,5",
-            "highlight": false
-          }
-        }
-      },
-      "block_order": [
-        "point_MMzmKE",
-        "point_Dg9yWc",
-        "point_yaQjbb"
-      ],
-      "name": "Échelle de pH",
-      "settings": {
-        "heading": "Le pH change tout.",
-        "subheading": "",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "heading_color": "rgba(0,0,0,0)",
-        "section_heading_layout": "section-heading--center section-heading--two-rows",
-        "cta_label": "",
-        "cta_url": "",
-        "ph_min": 0,
-        "ph_max": 14,
-        "show_axis": true,
-        "axis_label_left": "Plus acide",
-        "axis_label_right": "Plus basique",
-        "show_neutral": true,
-        "show_ideal": true,
-        "ideal_min": "5",
-        "ideal_max": "6",
-        "ideal_label": "Zone idéale de la peau",
-        "value_font": "ph-scale--mono",
-        "footnote": "<p>L'équilibre naturel de la peau intime se situe autour de pH 5,5. Un produit au pH proche respecte cet équilibre ; un pH plus élevé l'agresse.</p>",
-        "section_background": "",
-        "table_background": "#ffffff",
-        "text_color": "#1a1a1a",
-        "value_color": "#4f4f4f",
-        "line_color": "#e6e6e6",
-        "track_color": "#d9d9d9",
-        "ideal_color": "#e3e9fb",
-        "highlight_background": "#e8edfb",
-        "highlight_border": "#2545d3",
-        "highlight_text": "#2545d3",
-        "highlight_border_width": 1,
-        "border_radius": 0,
-        "marker_size": 14,
-        "row_padding_y": 28,
-        "row_padding_x": 24,
-        "first_col_width": 30,
-        "label_size": 16,
-        "value_size": 15,
-        "axis_size": 13,
-        "footnote_size": 13,
-        "padding_top": 44,
-        "padding_bottom": 104,
-        "seo_h_tag": "h2"
-      }
-    },
     "rich_text_FmJFM4": {
       "type": "rich-text",
       "blocks": {
@@ -703,7 +618,7 @@
       ],
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_13_21_40.png",
+        "image": "shopify://shop_images/caleconall.png",
         "video_controls": false,
         "image_position": "left",
         "height": "regular",
@@ -793,6 +708,91 @@
         "gap_vertical": 24,
         "show_instagram_icon": true,
         "tilt_images": true
+      }
+    },
+    "ph_scale_4aedxP": {
+      "type": "ph-scale",
+      "blocks": {
+        "point_MMzmKE": {
+          "type": "point",
+          "settings": {
+            "label": "zgueg",
+            "image": "shopify://shop_images/zgueg.svg",
+            "logo_width": 90,
+            "ph_value": "5,5",
+            "highlight": true
+          }
+        },
+        "point_Dg9yWc": {
+          "type": "point",
+          "settings": {
+            "label": "Gel douche classique",
+            "logo_width": 110,
+            "ph_value": "8,5",
+            "highlight": false
+          }
+        },
+        "point_yaQjbb": {
+          "type": "point",
+          "settings": {
+            "label": "Autre gel intime",
+            "logo_width": 110,
+            "ph_value": "6,5",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "point_MMzmKE",
+        "point_Dg9yWc",
+        "point_yaQjbb"
+      ],
+      "name": "Échelle de pH",
+      "settings": {
+        "heading": "Le pH change tout.",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "ph_min": 0,
+        "ph_max": 14,
+        "show_axis": true,
+        "axis_label_left": "Plus acide",
+        "axis_label_right": "Plus basique",
+        "show_neutral": true,
+        "show_ideal": true,
+        "ideal_min": "5",
+        "ideal_max": "6",
+        "ideal_label": "Zone idéale de la peau",
+        "value_font": "ph-scale--mono",
+        "footnote": "<p>L'équilibre naturel de la peau intime se situe autour de pH 5,5. Un produit au pH proche respecte cet équilibre ; un pH plus élevé l'agresse.</p>",
+        "section_background": "",
+        "table_background": "#ffffff",
+        "text_color": "#1a1a1a",
+        "value_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "track_color": "#d9d9d9",
+        "ideal_color": "#e3e9fb",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#2545d3",
+        "highlight_text": "#2545d3",
+        "highlight_border_width": 1,
+        "border_radius": 0,
+        "marker_size": 14,
+        "row_padding_y": 28,
+        "row_padding_x": 24,
+        "first_col_width": 30,
+        "label_size": 16,
+        "value_size": 15,
+        "axis_size": 13,
+        "footnote_size": 13,
+        "padding_top": 100,
+        "padding_bottom": 60,
+        "seo_h_tag": "h2"
       }
     },
     "comparison_table_bXEKM3": {
@@ -963,13 +963,13 @@
             "rating": 4,
             "date": "18 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Très efficace contre les odeurs, vraiment. Seul truc, le flacon est un peu gros pour une poche de jean, ça passe mieux dans un sac. Sinon top.",
+            "text": "Bien efficace contre les odeurs. Seul truc, le flacon est un peu gros pour une poche de jean ça passe mieux dans un sac. Sinon top.",
             "helpful_up": 3,
             "helpful_down": 1,
             "reply_enable": true,
             "reply_avatar": "shopify://shop_images/zguegsvg.svg",
             "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Chloé",
+            "reply_author": "Zgueg",
             "reply_date": "18 mai 2026",
             "reply_text": "Merci Maxime ! C'est noté pour le format poche, on y réfléchit 💪 contact@zgueg.fr"
           }
@@ -983,7 +983,7 @@
             "rating": 5,
             "date": "15 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Livreur, 8h par jour sur le scooter. Avant c'était compliqué en fin de tournée, maintenant un pschitt à la pause déj et c'est réglé. Franchement bravo.",
+            "text": "très bien !",
             "helpful_up": 9,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1002,7 +1002,7 @@
             "rating": 5,
             "date": "12 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "commandé pour mon copain qui fait du vélotaf tous les jours, il y croyait pas du tout et maintenant il le prend partout même en week-end, donc voilà je crois que ça dit tout, conquis tous les deux",
+            "text": "commandé pour mon copain qui fait du vélo tous les jours, il y croyait pas du tout et maintenant il le prend partout même en week-end, donc voilà je crois que ça dit tout, conquis tous les deux",
             "helpful_up": 2,
             "helpful_down": 2,
             "reply_enable": true,
@@ -1022,7 +1022,7 @@
             "rating": 5,
             "date": "9 mai 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Découvert via un pote. Sensation de frais immédiate et surtout ça dure — rien à voir avec un déo qui masque pendant 20 minutes.",
+            "text": "Découvert via un pote. Sensation de frais agréable et leproduit à l'air de durer.",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
@@ -1383,10 +1383,10 @@
     "main",
     "product-recommendations",
     "certifications_Tniktg",
-    "ph_scale_4aedxP",
     "rich_text_FmJFM4",
     "rich_text_LRtXGt",
     "instagram_shots_943TFC",
+    "ph_scale_4aedxP",
     "comparison_table_bXEKM3",
     "customer_reviews_QkecMN"
   ]
