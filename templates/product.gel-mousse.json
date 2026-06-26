@@ -480,7 +480,7 @@
         "heading_weight": "400",
         "heading_alignment": "left",
         "heading_alignment_mobile": "center",
-        "body": "<p>Le gel moussant zgueg combine des actifs choisis pour nettoyer la zone intime masculine en profondeur, sans casser son équilibre. Tensioactifs végétaux, ferments probiotiques et apaisants botaniques : chacun a un rôle précis — ensemble, ils nettoient, rééquilibrent et apaisent, pour rester propre et au sec jusqu'en fin de journée.</p>",
+        "body": "<p>La zone intime n'a pas le même pH ni la même flore que le reste de la peau. Un gel douche classique alcalin déséquilibre la région génital La flore protectrice s'appauvrit et les odeurs reviennent plus vite. Le gel mousse cleaned® agit à la source à l’aide de tensioactifs végétaux qui respectent le (bon) pH, des ferments postbiotiques qui rééquilibrent la flore, et nos apaisants botaniques calment les irritations.</p>",
         "body_color": "#1a1a1a",
         "body_size": 19,
         "body_max_width": 640,
@@ -558,6 +558,7 @@
         "point_cfTEmc",
         "point_M88afP"
       ],
+      "disabled": true,
       "name": "Échelle de pH",
       "settings": {
         "heading": "Le pH change tout.",
