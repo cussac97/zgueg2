@@ -1,0 +1,116 @@
+/*
+ * Restyle du widget d'abonnement natif (app Shopify Subscriptions)
+ * pour qu'il colle au bloc « Sélecteur variantes+ » (variant_bundler).
+ * Valeurs alignées sur les réglages du bloc : bord #d1e3fb, sélection #0000c9,
+ * angles droits (radius 0), fond blanc, padding 18px.
+ * Tout est scopé sous .shopify_subscriptions_app_container pour passer
+ * devant le <style> inline injecté par l'app.
+ */
+
+.shopify_subscriptions_app_container {
+  --sub-border: #d1e3fb;
+  --sub-selected: #0000c9;
+  --sub-bg: #ffffff;
+  --sub-radius: 0px;
+  --sub-pad: 18px;
+  --sub-gap: 11px;
+}
+
+/* La carte enveloppante devient un simple conteneur transparent :
+   ce sont les deux onglets qui deviennent les « cartes ». */
+.shopify_subscriptions_app_container .toggle_card {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible; /* indispensable pour ne pas rogner le box-shadow de sélection */
+}
+
+/* Les deux onglets côte à côte, comme une grille 2 colonnes */
+.shopify_subscriptions_app_container .tabs_wrapper {
+  gap: 0.625rem;
+  align-items: stretch;
+}
+
+/* Chaque onglet = une carte identique à .vb-card */
+.shopify_subscriptions_app_container .tab_label {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--sub-gap);
+  padding: var(--sub-pad);
+  background: var(--sub-bg);
+  border: 1px solid var(--sub-border);
+  border-radius: var(--sub-radius);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Libellé (Achat ponctuel / Abonnement) */
+.shopify_subscriptions_app_container .tab_label > span:first-child {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-body-primary-bold, 700);
+  line-height: 1.2;
+}
+
+/* Prix */
+.shopify_subscriptions_app_container .tab_label .price {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.shopify_subscriptions_app_container .tab_price_row {
+  justify-content: center;
+}
+
+.shopify_subscriptions_app_container .tab_price_compare {
+  opacity: 0.55;
+  font-size: 0.85em;
+}
+
+/* État sélectionné — onglet actif (les ID varient par variante, on cible
+   les préfixes stables tab_otp_ / tab_subscribe_). Bordure + liseré accent,
+   exactement comme .vb-card__input:checked + .vb-card__inner. */
+.shopify_subscriptions_app_container .tab_radio[id*="tab_otp"]:checked ~ .tabs_wrapper .tab_label:first-child,
+.shopify_subscriptions_app_container .tab_radio[id*="tab_subscribe"]:checked ~ .tabs_wrapper .tab_label:nth-child(2) {
+  border-color: var(--sub-selected);
+  box-shadow: 0 0 0 1px var(--sub-selected);
+}
+
+/* Panneau de fréquence (n'apparaît que sur l'onglet Abonnement) */
+.shopify_subscriptions_app_container .subscribe_panel {
+  background: var(--sub-bg);
+}
+
+/* Séparateur fin uniquement quand le panneau est déployé (évite la ligne
+   résiduelle quand il est replié à max-height:0) */
+.shopify_subscriptions_app_container .toggle_card:has(.tab_radio[id*="tab_subscribe"]:checked) .subscribe_panel {
+  border-top: 1px solid var(--sub-border);
+}
+
+.shopify_subscriptions_app_container .group_name {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-body-primary-bold, 700);
+}
+
+.shopify_subscriptions_app_container .group_list_item {
+  padding: 0.35rem 0;
+}
+
+.shopify_subscriptions_app_container .selling_plan_and_price_wrapper .price {
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+/* Boutons radio de fréquence à la couleur de marque */
+.shopify_subscriptions_app_container .group_list_item input[type="radio"] {
+  accent-color: var(--sub-selected);
+}
+
+/* Mention de renouvellement, discrète */
+.shopify_subscriptions_app_container .shopify_subscriptions_app_policy {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
