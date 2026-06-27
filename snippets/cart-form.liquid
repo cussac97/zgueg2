@@ -167,6 +167,24 @@
 										{%- endfor -%}
 									{%- endif -%}
 
+									{%- comment -%} Upsell abonnement : visible uniquement si la ligne est en achat unique et qu'un plan existe {%- endcomment -%}
+									{%- unless item.gift_card -%}
+										{%- assign sub_alloc = item.variant.selling_plan_allocations | first -%}
+										{%- if item.selling_plan_allocation == blank and sub_alloc != blank and sub_alloc.price < item.variant.price -%}
+											{%- assign sub_save_pct = item.variant.price | minus: sub_alloc.price | times: 100.0 | divided_by: item.variant.price | round -%}
+											<div class="cart-sub-upsell">
+												<div class="cart-sub-upsell__text">
+													<span class="cart-sub-upsell__title">Économisez <strong>-{{ sub_save_pct }}%</strong> avec l'abonnement</span>
+													<span class="cart-sub-upsell__sub">Livré chaque mois · sans engagement, annulable à tout moment</span>
+												</div>
+												<label class="cart-sub-upsell__switch">
+													<input type="checkbox" data-js-sub-toggle data-selling-plan="{{ sub_alloc.selling_plan.id }}" aria-label="Activer l'abonnement et économiser {{ sub_save_pct }}%">
+													<span class="cart-sub-upsell__slider" aria-hidden="true"></span>
+												</label>
+											</div>
+										{%- endif -%}
+									{%- endunless -%}
+
 									<div class="cart-item__actions">
 
 										<product-quantity class="quantity-selector-holder">

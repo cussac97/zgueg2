@@ -35,11 +35,35 @@ if ( typeof CartForm !== 'function' ) {
 					})
 				}
 
+				const subToggle = item.querySelector('[data-js-sub-toggle]');
+				if ( subToggle ) {
+					subToggle.addEventListener('change', ()=>{
+						this.updateSellingPlan(item, subToggle.checked ? subToggle.dataset.sellingPlan : '');
+					})
+				}
+
 			})
 
 		}
 
 		updateCartQty(item, newQty){
+			const body = JSON.stringify({
+				line: parseInt(item.dataset.line),
+				quantity: newQty
+			});
+			this.applyChange(item, body);
+		}
+
+		updateSellingPlan(item, sellingPlan){
+			const body = JSON.stringify({
+				id: item.dataset.id,
+				quantity: parseInt(item.dataset.qty),
+				selling_plan: sellingPlan ? sellingPlan : null
+			});
+			this.applyChange(item, body);
+		}
+
+		applyChange(item, body){
 
 			let alert = null;
 			const prefix = window.KT_PREFIX || '';
@@ -48,11 +72,6 @@ if ( typeof CartForm !== 'function' ) {
 			if ( this.querySelector(`.${prefix}alert`) ) {
 				this.querySelector(`.${prefix}alert`).remove();
 			}
-
-			const body = JSON.stringify({
-				line: parseInt(item.dataset.line),
-				quantity: newQty
-			});
 
 			fetch(ZGUEG.settings.routes.cart_change_url, {
 					method: 'POST',
