@@ -78,34 +78,10 @@
   box-shadow: 0 0 0 1px var(--sub-selected);
 }
 
-/* Panneau de fréquence (n'apparaît que sur l'onglet Abonnement) */
+/* Panneau de fréquence masqué : le plan d'abonnement reste sélectionné
+   automatiquement par l'app, on n'affiche simplement pas le détail. */
 .shopify_subscriptions_app_container .subscribe_panel {
-  background: var(--sub-bg);
-}
-
-/* Séparateur fin uniquement quand le panneau est déployé (évite la ligne
-   résiduelle quand il est replié à max-height:0) */
-.shopify_subscriptions_app_container .toggle_card:has(.tab_radio[id*="tab_subscribe"]:checked) .subscribe_panel {
-  border-top: 1px solid var(--sub-border);
-}
-
-.shopify_subscriptions_app_container .group_name {
-  font-size: 0.875rem;
-  font-weight: var(--font-weight-body-primary-bold, 700);
-}
-
-.shopify_subscriptions_app_container .group_list_item {
-  padding: 0.35rem 0;
-}
-
-.shopify_subscriptions_app_container .selling_plan_and_price_wrapper .price {
-  font-size: 0.8125rem;
-  font-weight: 500;
-}
-
-/* Boutons radio de fréquence à la couleur de marque */
-.shopify_subscriptions_app_container .group_list_item input[type="radio"] {
-  accent-color: var(--sub-selected);
+  display: none !important;
 }
 
 /* Mention de renouvellement, discrète */
