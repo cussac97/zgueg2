@@ -1002,6 +1002,81 @@
         "visible_if": "{{ settings.gift_wrap_product != blank }}",
         "label": "t:sections.refactor_words.gift_wrapping.settings.label",
         "default": "Please wrap the products in this order"
+      },
+      {
+        "type": "header",
+        "content": "Carte abonnement (tiroir panier)"
+      },
+      {
+        "type": "paragraph",
+        "content": "Carte affichée sous un produit en achat unique pour proposer de basculer en abonnement via un interrupteur."
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_sub_upsell_enable",
+        "label": "Afficher la carte d'abonnement",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "cart_sub_upsell_title",
+        "label": "Titre",
+        "info": "[reduction] est remplacé automatiquement par le pourcentage d'économie (ex : -30%).",
+        "default": "Économisez [reduction] avec l'abonnement",
+        "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
+      },
+      {
+        "type": "text",
+        "id": "cart_sub_upsell_subtitle",
+        "label": "Sous-texte",
+        "default": "Livré chaque mois · sans engagement, annulable à tout moment",
+        "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
+      },
+      {
+        "type": "color",
+        "id": "cart_sub_upsell_bg",
+        "label": "Fond de la carte",
+        "default": "#f3f3fc",
+        "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
+      },
+      {
+        "type": "color",
+        "id": "cart_sub_upsell_border",
+        "label": "Bordure",
+        "default": "#d1e3fb",
+        "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
+      },
+      {
+        "type": "color",
+        "id": "cart_sub_upsell_accent",
+        "label": "Accent (pourcentage et interrupteur actif)",
+        "default": "#0000c9",
+        "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
+      },
+      {
+        "type": "color",
+        "id": "cart_sub_upsell_text",
+        "label": "Couleur du titre",
+        "default": "#1a1a1a",
+        "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
+      },
+      {
+        "type": "color",
+        "id": "cart_sub_upsell_muted",
+        "label": "Couleur du sous-texte",
+        "default": "#5f6368",
+        "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
+      },
+      {
+        "type": "range",
+        "id": "cart_sub_upsell_radius",
+        "label": "Arrondi des angles",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "default": 0,
+        "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
       }
 		]
 	},
