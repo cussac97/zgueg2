@@ -3,9 +3,7 @@
 		"name": "theme_info",
 		"theme_name": "Zgueg",
 		"theme_author": "Zgueg",
-		"theme_version": "3.2.2",
-		"theme_documentation_url": "",
-		"theme_support_url": ""
+		"theme_version": "3.2.2"
 	},
 	{
 		"name": "t:settings_schema.typography.name",
