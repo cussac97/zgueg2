@@ -237,6 +237,20 @@
             "unavailable_variants": "show"
           }
         },
+        "subscriptions_app_block_RRrMdt": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "widget_style": "toggle",
+            "widget_style_card_selector": "dropdown",
+            "subscription_policy_url": "",
+            "color_text_body": "#000000",
+            "dividers_color": "#e8edfb",
+            "background_color": "#ffffff",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "product": "{{product}}"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -268,20 +282,6 @@
             "icon_5_label": "",
             "icon_6_label": "",
             "hide_block_if": false
-          }
-        },
-        "subscriptions_app_block_RRrMdt": {
-          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
-          "settings": {
-            "widget_style": "toggle",
-            "widget_style_card_selector": "dropdown",
-            "subscription_policy_url": "",
-            "color_text_body": "#000000",
-            "dividers_color": "#e8edfb",
-            "background_color": "#ffffff",
-            "border_thickness": 1,
-            "border_radius": 0,
-            "product": "{{product}}"
           }
         },
         "reassort_3B4kgy": {
@@ -361,14 +361,20 @@
         "price",
         "description",
         "variant_bundler_6mBmkR",
+        "subscriptions_app_block_RRrMdt",
         "buy_buttons",
         "icons_Knqhhh",
-        "subscriptions_app_block_RRrMdt",
         "reassort_3B4kgy",
         "collapsible_tab_zXdGmR",
         "collapsible_tab_P4hk8m",
         "collapsible_tab_RKezaD",
         "collapsible_tab_YyQ3H7"
+      ],
+      "custom_css": [
+        ".subscribe_panel {display: none;}",
+        ".shopify_subscriptions_app_policy {display: none;}",
+        ".toggle_card {background-color: #fff;}",
+        "#tab_otp_template--30071179608412__main_57779179618652:checked ~ .tabs_wrapper .tab_label[for=\"tab_otp_template--30071179608412__main_57779179618652\"],#tab_subscribe_template--30071179608412__main_57779179618652:checked ~ .tabs_wrapper .tab_label[for=\"tab_subscribe_template--30071179608412__main_57779179618652\"] {border: solid 2px #0000C9;}"
       ],
       "settings": {
         "gallery_layout": "two-cols scroll",
