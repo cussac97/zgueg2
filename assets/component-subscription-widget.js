@@ -77,11 +77,20 @@
       '</div>' +
       '<span class="zg-sub-toggle__switch" aria-hidden="true"><span class="zg-sub-toggle__slider"></span></span>';
 
+    function select(radio, label) {
+      if (label) label.click();
+      // garde-fou : si le clic sur le label n'a pas coché le radio (label masqué),
+      // on force l'état et on notifie l'app.
+      if (!radio.checked) {
+        radio.checked = true;
+        radio.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    }
     function toggle() {
       if (sub.checked) {
-        otpLabel.click();
+        select(otp, otpLabel);
       } else {
-        subLabel.click();
+        select(sub, subLabel);
       }
     }
     el.addEventListener('click', toggle);

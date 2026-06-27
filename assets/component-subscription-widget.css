@@ -96,8 +96,17 @@
    Les onglets natifs sont masqués ; la carte .zg-sub-toggle (injectée
    en JS) prend le relais avec un toggle on/off, façon carte panier.
    =================================================================== */
+/* Onglets natifs masqués visuellement mais conservés fonctionnels
+   (label.click() doit continuer à cocher le radio natif). */
 .sub-widget-style--toggle .shopify_subscriptions_app_container .tabs_wrapper {
-  display: none !important;
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .sub-widget-style--toggle .shopify_subscriptions_app_container .toggle_card {
