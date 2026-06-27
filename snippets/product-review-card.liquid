@@ -1,0 +1,82 @@
+{% comment %}
+  Bloc « Carte avis client » rendu sous l'image produit (colonne gauche).
+  Accepts: block (le block de type review_card)
+{% endcomment %}
+
+{%- liquid
+  assign s = block.settings
+  assign rating = s.rating | times: 1.0
+  assign rating_pct = s.rating | times: 20
+  assign meta_class = ''
+  if s.meta_font == 'mono'
+    assign meta_class = ' prc--mono-meta'
+  endif
+
+  capture star_svg
+    echo '<svg class="prc__star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.6l2.47 5.01 5.53.8-4 3.9.94 5.5L10 14.9l-4.94 2.6.94-5.5-4-3.9 5.53-.8z"/></svg>'
+  endcapture
+-%}
+
+<div
+  class="prc{{ meta_class }}"
+  style="
+    --prc-bg: {{ s.card_bg }};
+    --prc-border: {{ s.border_color }};
+    --prc-bw: {{ s.border_width }}px;
+    --prc-radius: {{ s.border_radius }}px;
+    --prc-pad: {{ s.card_padding }}px;
+    --prc-accent: {{ s.accent_color }};
+    --prc-text: {{ s.text_color }};
+    --prc-muted: {{ s.muted_color }};
+    --prc-star: {{ s.star_color }};
+    --prc-star-empty: {{ s.star_empty_color }};
+    --prc-star-size: {{ s.star_size }}px;
+    --prc-title-size: {{ s.title_size }}px;
+    --prc-body-size: {{ s.body_size }}px;
+    --prc-name-size: {{ s.name_size }}px;
+    --prc-date-size: {{ s.date_size }}px;
+    --prc-mt: {{ s.margin_top }}px;
+    --prc-pct: {{ rating_pct }}%;
+  "
+  {{ block.shopify_attributes }}
+>
+  {%- if s.eyebrow != blank -%}
+    <span class="prc__eyebrow">{{ s.eyebrow | escape }}</span>
+  {%- endif -%}
+
+  <div class="prc__head">
+    <span class="prc__stars" role="img" aria-label="{{ rating }} / 5">
+      <span class="prc__stars-track" aria-hidden="true">{{ star_svg }}{{ star_svg }}{{ star_svg }}{{ star_svg }}{{ star_svg }}</span>
+      <span class="prc__stars-fill" aria-hidden="true">{{ star_svg }}{{ star_svg }}{{ star_svg }}{{ star_svg }}{{ star_svg }}</span>
+    </span>
+    {%- if s.review_date != blank -%}
+      <span class="prc__date">{{ s.review_date | escape }}</span>
+    {%- endif -%}
+  </div>
+
+  {%- if s.review_title != blank -%}
+    <p class="prc__title">{{ s.review_title | escape }}</p>
+  {%- endif -%}
+
+  {%- if s.review_body != blank -%}
+    <div class="prc__body rte">{{ s.review_body }}</div>
+  {%- endif -%}
+
+  <div class="prc__foot">
+    {%- if s.show_avatar and s.customer_name != blank -%}
+      <span class="prc__avatar" aria-hidden="true">{{ s.customer_name | strip | slice: 0 | upcase }}</span>
+    {%- endif -%}
+    {%- if s.customer_name != blank -%}
+      <span class="prc__name">{{ s.customer_name | escape }}</span>
+    {%- endif -%}
+    {%- if s.show_verified -%}
+      <span class="prc__verified">
+        <svg class="prc__verified-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="8" cy="8" r="7" fill="currentColor"/>
+          <path d="M4.8 8.2l2.1 2.1 4.3-4.6" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        {{ s.verified_label | escape }}
+      </span>
+    {%- endif -%}
+  </div>
+</div>

@@ -1,5 +1,6 @@
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-subscription-widget.css' | asset_url | stylesheet_tag }}
+{{ 'component-product-review-card.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.section_background_color != 'rgba(0,0,0,0)' -%}
   {% style %}
@@ -368,6 +369,12 @@
           </div>
         {%- endif -%}
       </div>
+
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'review_card' -%}
+          {%- render 'product-review-card', block: block -%}
+        {%- endif -%}
+      {%- endfor -%}
     </div>
 
     <div class="product-text {{ text_class }} element--is-sticky remove-empty-space">
@@ -382,6 +389,9 @@
 
       {%- for block in section.blocks -%}
         {%- case block.type -%}
+          {%- when 'review_card' -%}
+            {%- comment -%} Rendu dans la colonne de gauche, sous l'image {%- endcomment -%}
+
           {%- when '@app' -%}
             <div class="has-bg-style--{{ section.settings.style }}" {{ block.shopify_attributes }}>
               {%- render block -%}
@@ -2176,6 +2186,239 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "review_card",
+      "name": "Carte avis client",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Affiche un avis client en carte, sous l'image du produit (colonne de gauche sur ordinateur, sous l'image sur mobile)."
+        },
+        {
+          "type": "header",
+          "content": "Contenu"
+        },
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Étiquette au-dessus (optionnel)"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Note",
+          "min": 0,
+          "max": 5,
+          "step": 0.5,
+          "unit": "★",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "review_title",
+          "label": "Titre de l'avis",
+          "default": "Adopté direct"
+        },
+        {
+          "type": "textarea",
+          "id": "review_body",
+          "label": "Texte de l'avis",
+          "default": "Je l'ai toujours dans le sac maintenant. Ça pique pas, ça sent juste propre, et ça sèche direct. Rien à dire."
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Nom du client",
+          "default": "Thomas L."
+        },
+        {
+          "type": "text",
+          "id": "review_date",
+          "label": "Date de l'avis",
+          "default": "12 mars 2026"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_avatar",
+          "label": "Afficher la pastille avec l'initiale",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "Badge acheteur vérifié"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_verified",
+          "label": "Afficher le badge",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "verified_label",
+          "label": "Texte du badge",
+          "default": "Achat vérifié"
+        },
+        {
+          "type": "header",
+          "content": "Étoiles"
+        },
+        {
+          "type": "range",
+          "id": "star_size",
+          "label": "Taille des étoiles",
+          "min": 12,
+          "max": 28,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "color",
+          "id": "star_color",
+          "label": "Couleur des étoiles pleines",
+          "default": "#0000c9"
+        },
+        {
+          "type": "color",
+          "id": "star_empty_color",
+          "label": "Couleur des étoiles vides",
+          "default": "#d1e3fb"
+        },
+        {
+          "type": "header",
+          "content": "Couleurs"
+        },
+        {
+          "type": "color",
+          "id": "card_bg",
+          "label": "Fond de la carte",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "border_color",
+          "label": "Couleur de la bordure",
+          "default": "#d1e3fb"
+        },
+        {
+          "type": "color",
+          "id": "accent_color",
+          "label": "Accent (badge, pastille)",
+          "default": "#0000c9"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Texte principal",
+          "default": "#1a1a1a"
+        },
+        {
+          "type": "color",
+          "id": "muted_color",
+          "label": "Texte secondaire (date)",
+          "default": "#4f4f4f"
+        },
+        {
+          "type": "header",
+          "content": "Style de la carte"
+        },
+        {
+          "type": "range",
+          "id": "border_width",
+          "label": "Épaisseur de la bordure",
+          "min": 0,
+          "max": 4,
+          "step": 1,
+          "unit": "px",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "border_radius",
+          "label": "Arrondi des angles",
+          "min": 0,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "card_padding",
+          "label": "Marge intérieure",
+          "min": 10,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "default": 18
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Espace au-dessus (sous l'image)",
+          "min": 0,
+          "max": 60,
+          "step": 2,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "header",
+          "content": "Typographie"
+        },
+        {
+          "type": "range",
+          "id": "title_size",
+          "label": "Taille du titre",
+          "min": 12,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "body_size",
+          "label": "Taille du texte",
+          "min": 12,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "default": 14
+        },
+        {
+          "type": "range",
+          "id": "name_size",
+          "label": "Taille du nom",
+          "min": 11,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "default": 14
+        },
+        {
+          "type": "range",
+          "id": "date_size",
+          "label": "Taille de la date et du badge",
+          "min": 10,
+          "max": 18,
+          "step": 1,
+          "unit": "px",
+          "default": 13
+        },
+        {
+          "type": "select",
+          "id": "meta_font",
+          "label": "Police de la date / badge",
+          "options": [
+            { "value": "theme", "label": "Police du thème" },
+            { "value": "mono", "label": "Monospace (fidèle au design)" }
+          ],
+          "default": "theme"
+        }
+      ]
     },
     {
       "type": "media_badge",
