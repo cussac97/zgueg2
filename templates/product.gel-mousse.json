@@ -127,6 +127,37 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "review_card_AdYfWD": {
+          "type": "review_card",
+          "settings": {
+            "eyebrow": "",
+            "rating": 5,
+            "review_title": "J'adore mon zgueg",
+            "review_body": "Bon disons les choses clairement : avant, les bijoux de famille sentaient pas la rose en fin de journée. Là c'est réglé, et madame valide grave. Merci 🙏",
+            "customer_name": "Yanis",
+            "review_date": "12 mars 2026",
+            "show_avatar": true,
+            "show_verified": true,
+            "verified_label": "Achat vérifié",
+            "star_size": 16,
+            "star_color": "#0000c9",
+            "star_empty_color": "#d1e3fb",
+            "card_bg": "#E8EDFB",
+            "border_color": "#0000C9",
+            "accent_color": "#0000c9",
+            "text_color": "#1a1a1a",
+            "muted_color": "#4f4f4f",
+            "border_width": 1,
+            "border_radius": 0,
+            "card_padding": 18,
+            "margin_top": 16,
+            "title_size": 16,
+            "body_size": 14,
+            "name_size": 14,
+            "date_size": 13,
+            "meta_font": "theme"
+          }
+        },
         "media_badge_HMcaAm": {
           "type": "media_badge",
           "settings": {
@@ -355,6 +386,7 @@
         }
       },
       "block_order": [
+        "review_card_AdYfWD",
         "media_badge_HMcaAm",
         "badges_6Ax9rj",
         "title",
