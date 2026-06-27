@@ -441,7 +441,9 @@ html[dir=ltr] .cart-notice__slider-bar {
 }
 
 /* Carte upsell abonnement dans le tiroir panier (même DA que nos cartes) */
-.cart-sub-upsell {
+/* Sélecteur préfixé .cart-item__content pour battre la règle du thème
+   `.cart-item__content > div > * { display: block }` qui cassait le flex. */
+.cart-item__content .cart-sub-upsell {
   --csu-accent: #0000c9;
   --csu-border: #d1e3fb;
   display: flex;
@@ -452,6 +454,8 @@ html[dir=ltr] .cart-notice__slider-bar {
   background: color-mix(in srgb, var(--csu-accent) 5%, #ffffff);
   border: 1px solid var(--csu-border);
   border-radius: 0;
+  box-sizing: border-box;
+  width: 100%;
 }
 .cart-sub-upsell__text {
   display: flex;
