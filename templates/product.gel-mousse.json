@@ -370,12 +370,7 @@
         "collapsible_tab_RKezaD",
         "collapsible_tab_YyQ3H7"
       ],
-      "custom_css": [
-        ".subscribe_panel {display: none;}",
-        ".shopify_subscriptions_app_policy {display: none;}",
-        ".toggle_card {background-color: #fff;}",
-        "#tab_otp_template--30071179608412__main_57779179618652:checked ~ .tabs_wrapper .tab_label[for=\"tab_otp_template--30071179608412__main_57779179618652\"],#tab_subscribe_template--30071179608412__main_57779179618652:checked ~ .tabs_wrapper .tab_label[for=\"tab_subscribe_template--30071179608412__main_57779179618652\"] {border: solid 2px #0000C9;}"
-      ],
+      "custom_css": [],
       "settings": {
         "gallery_layout": "two-cols scroll",
         "enhance_first_image": true,

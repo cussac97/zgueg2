@@ -338,5 +338,14 @@
       "show_breadcrumb": true,
       "theme_preset": "Bites"
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".subscribe_panel {display: none;}",
+      ".shopify_subscriptions_app_policy {display: none;}",
+      ".toggle_card {background-color: #fff;}",
+      "#tab_otp_template--30071179608412__main_57779179618652:checked ~ .tabs_wrapper .tab_label[for=\"tab_otp_template--30071179608412__main_57779179618652\"],#tab_subscribe_template--30071179608412__main_57779179618652:checked ~ .tabs_wrapper .tab_label[for=\"tab_subscribe_template--30071179608412__main_57779179618652\"] {background: #e8edfb; border: none;}",
+      ".toggle_card {border: solid 2px #0000c9;}"
+    ]
   }
 }
