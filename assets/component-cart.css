@@ -496,7 +496,7 @@ html[dir=ltr] .cart-notice__slider-bar {
 .cart-sub-upsell__slider {
   position: absolute;
   inset: 0;
-  background: var(--csu-border, #d1e3fb);
+  background: var(--csu-switch-off, var(--csu-border, #d1e3fb));
   border-radius: 999px;
   transition: background 0.15s ease;
   pointer-events: none;
@@ -514,7 +514,7 @@ html[dir=ltr] .cart-notice__slider-bar {
   transition: transform 0.15s ease;
 }
 .cart-sub-upsell__switch input:checked + .cart-sub-upsell__slider {
-  background: var(--csu-accent, #0000c9);
+  background: var(--csu-switch-on, var(--csu-accent, #0000c9));
 }
 .cart-sub-upsell__switch input:checked + .cart-sub-upsell__slider::before {
   transform: translateX(18px);

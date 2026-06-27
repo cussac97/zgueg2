@@ -1049,8 +1049,22 @@
       {
         "type": "color",
         "id": "cart_sub_upsell_accent",
-        "label": "Accent (pourcentage et interrupteur actif)",
+        "label": "Accent (pourcentage)",
         "default": "#0000c9",
+        "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
+      },
+      {
+        "type": "color",
+        "id": "cart_sub_upsell_switch_on",
+        "label": "Interrupteur — activé",
+        "default": "#0000c9",
+        "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
+      },
+      {
+        "type": "color",
+        "id": "cart_sub_upsell_switch_off",
+        "label": "Interrupteur — désactivé",
+        "default": "#d1e3fb",
         "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
       },
       {
@@ -1078,6 +1092,108 @@
         "default": 0,
         "visible_if": "{{ settings.cart_sub_upsell_enable == true }}"
       }
+		]
+	},
+	{
+		"name": "Widget d'abonnement",
+		"settings": [
+			{
+				"type": "paragraph",
+				"content": "Choisissez l'apparence du widget d'abonnement (app Subscriptions) affiché sur la page produit."
+			},
+			{
+				"type": "select",
+				"id": "sub_widget_style",
+				"label": "Thème du widget",
+				"options": [
+					{ "value": "tabs", "label": "Onglets (Achat ponctuel / Abonnement)" },
+					{ "value": "toggle", "label": "Carte avec interrupteur" }
+				],
+				"default": "tabs"
+			},
+			{
+				"type": "header",
+				"content": "Carte avec interrupteur"
+			},
+			{
+				"type": "paragraph",
+				"content": "Réglages appliqués quand le thème « Carte avec interrupteur » est sélectionné."
+			},
+			{
+				"type": "text",
+				"id": "sub_widget_title",
+				"label": "Titre",
+				"info": "[reduction] est remplacé automatiquement par le pourcentage d'économie.",
+				"default": "Économisez [reduction] avec l'abonnement",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "text",
+				"id": "sub_widget_subtitle",
+				"label": "Sous-texte",
+				"default": "Livré chaque mois · sans engagement, annulable à tout moment",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "color",
+				"id": "sub_widget_bg",
+				"label": "Fond de la carte",
+				"default": "#f3f3fc",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "color",
+				"id": "sub_widget_border",
+				"label": "Bordure",
+				"default": "#d1e3fb",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "color",
+				"id": "sub_widget_accent",
+				"label": "Accent (pourcentage)",
+				"default": "#0000c9",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "color",
+				"id": "sub_widget_switch_on",
+				"label": "Interrupteur — activé",
+				"default": "#0000c9",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "color",
+				"id": "sub_widget_switch_off",
+				"label": "Interrupteur — désactivé",
+				"default": "#d1e3fb",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "color",
+				"id": "sub_widget_text",
+				"label": "Couleur du titre",
+				"default": "#1a1a1a",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "color",
+				"id": "sub_widget_muted",
+				"label": "Couleur du sous-texte",
+				"default": "#5f6368",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "range",
+				"id": "sub_widget_radius",
+				"label": "Arrondi des angles",
+				"min": 0,
+				"max": 24,
+				"step": 1,
+				"unit": "px",
+				"default": 0,
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			}
 		]
 	},
 	{

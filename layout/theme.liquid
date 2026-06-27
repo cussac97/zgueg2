@@ -111,8 +111,9 @@
   
   <body id="{{ page_title | handle }}" class="no-touchevents 
     {% if customer %} customer-logged-in {% endif %} 
-    template-{{ template.name }} template-{{ template | replace: '.', ' ' | handle }} 
+    template-{{ template.name }} template-{{ template | replace: '.', ' ' | handle }}
     {% unless settings.show_sidebars_scrollbar %} sidebars-has-scrollbars {% endunless %}
+    sub-widget-style--{{ settings.sub_widget_style | default: 'tabs' }}
   ">
     
     <script type="text/javascript">

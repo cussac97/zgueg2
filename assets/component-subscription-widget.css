@@ -90,3 +90,90 @@
   font-size: 0.75rem;
   opacity: 0.7;
 }
+
+/* ===================================================================
+   Thème « Carte avec interrupteur » (sub_widget_style == 'toggle')
+   Les onglets natifs sont masqués ; la carte .zg-sub-toggle (injectée
+   en JS) prend le relais avec un toggle on/off, façon carte panier.
+   =================================================================== */
+.sub-widget-style--toggle .shopify_subscriptions_app_container .tabs_wrapper {
+  display: none !important;
+}
+
+.sub-widget-style--toggle .shopify_subscriptions_app_container .toggle_card {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.zg-sub-toggle {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--zsw-bg, #f3f3fc);
+  border: 1px solid var(--zsw-border, #d1e3fb);
+  border-radius: var(--zsw-radius, 0px);
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
+}
+.zg-sub-toggle:focus-visible {
+  outline: 2px solid var(--zsw-switch-on, #0000c9);
+  outline-offset: 2px;
+}
+.zg-sub-toggle__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.zg-sub-toggle__title {
+  font-size: 0.9375rem;
+  line-height: 1.25;
+  color: var(--zsw-text, #1a1a1a);
+}
+.zg-sub-toggle__title strong {
+  color: var(--zsw-accent, #0000c9);
+  font-weight: 700;
+}
+.zg-sub-toggle__sub {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  color: var(--zsw-muted, #5f6368);
+}
+
+/* Switch */
+.zg-sub-toggle__switch {
+  position: relative;
+  flex: 0 0 auto;
+  width: 46px;
+  height: 26px;
+  margin-left: auto;
+}
+.zg-sub-toggle__slider {
+  position: absolute;
+  inset: 0;
+  background: var(--zsw-switch-off, #d1e3fb);
+  border-radius: 999px;
+  transition: background 0.15s ease;
+}
+.zg-sub-toggle__slider::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease;
+}
+.zg-sub-toggle.is-on .zg-sub-toggle__slider {
+  background: var(--zsw-switch-on, #0000c9);
+}
+.zg-sub-toggle.is-on .zg-sub-toggle__slider::before {
+  transform: translateX(20px);
+}

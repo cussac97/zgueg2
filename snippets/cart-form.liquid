@@ -173,7 +173,7 @@
 											{%- assign sub_alloc = item.variant.selling_plan_allocations | first -%}
 											{%- if item.selling_plan_allocation == blank and sub_alloc != blank and sub_alloc.price < item.variant.price -%}
 												{%- assign sub_save_pct = item.variant.price | minus: sub_alloc.price | times: 100.0 | divided_by: item.variant.price | round -%}
-												<div class="cart-sub-upsell" style="--csu-bg: {{ settings.cart_sub_upsell_bg }}; --csu-border: {{ settings.cart_sub_upsell_border }}; --csu-accent: {{ settings.cart_sub_upsell_accent }}; --csu-text: {{ settings.cart_sub_upsell_text }}; --csu-muted: {{ settings.cart_sub_upsell_muted }}; --csu-radius: {{ settings.cart_sub_upsell_radius }}px;">
+												<div class="cart-sub-upsell" style="--csu-bg: {{ settings.cart_sub_upsell_bg }}; --csu-border: {{ settings.cart_sub_upsell_border }}; --csu-accent: {{ settings.cart_sub_upsell_accent }}; --csu-switch-on: {{ settings.cart_sub_upsell_switch_on }}; --csu-switch-off: {{ settings.cart_sub_upsell_switch_off }}; --csu-text: {{ settings.cart_sub_upsell_text }}; --csu-muted: {{ settings.cart_sub_upsell_muted }}; --csu-radius: {{ settings.cart_sub_upsell_radius }}px;">
 													<div class="cart-sub-upsell__text">
 														{%- if settings.cart_sub_upsell_title contains '[reduction]' -%}
 															{%- assign csu_title_parts = settings.cart_sub_upsell_title | split: '[reduction]' -%}
