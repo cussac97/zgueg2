@@ -2,11 +2,18 @@
 {{ 'component-subscription-widget.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-review-card.css' | asset_url | stylesheet_tag }}
 
+{%- if settings.sub_widget_hide_policy -%}
+  {%- style -%}
+    .shopify_subscriptions_app_container .shopify_subscriptions_app_policy { display: none !important; }
+  {%- endstyle -%}
+{%- endif -%}
+
 {%- if settings.sub_widget_style == 'toggle' -%}
   {%- style -%}
     .shopify_subscriptions_app_container {
       --zsw-bg: {{ settings.sub_widget_bg }};
       --zsw-border: {{ settings.sub_widget_border }};
+      --zsw-bw: {{ settings.sub_widget_border_width }}px;
       --zsw-accent: {{ settings.sub_widget_accent }};
       --zsw-switch-on: {{ settings.sub_widget_switch_on }};
       --zsw-switch-off: {{ settings.sub_widget_switch_off }};
@@ -15,12 +22,36 @@
       --zsw-radius: {{ settings.sub_widget_radius }}px;
     }
   {%- endstyle -%}
+  {%- liquid
+    assign sp_entries = ''
+    for v in product.variants
+      assign alloc = v.selling_plan_allocations | first
+      if alloc
+        capture entry
+          echo '"'
+          echo v.id
+          echo '":{"now":'
+          echo alloc.price | money | json
+          echo ',"was":'
+          echo v.price | money | json
+          echo '}'
+        endcapture
+        if sp_entries == ''
+          assign sp_entries = entry
+        else
+          assign sp_entries = sp_entries | append: ',' | append: entry
+        endif
+      endif
+    endfor
+  -%}
   <script>
     window.ZGUEG_SUB_WIDGET = {
       style: 'toggle',
       title: {{ settings.sub_widget_title | json }},
-      subtitle: {{ settings.sub_widget_subtitle | json }}
+      subtitle: {{ settings.sub_widget_subtitle | json }},
+      defaultSubscription: {{ settings.sub_widget_default_subscription | json }}
     };
+    window.ZGUEG_SUB_PRICES = { {{ sp_entries }} };
   </script>
   <script src="{{ 'component-subscription-widget.js' | asset_url }}" defer></script>
 {%- endif -%}

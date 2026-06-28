@@ -1112,6 +1112,20 @@
 				"default": "tabs"
 			},
 			{
+				"type": "checkbox",
+				"id": "sub_widget_default_subscription",
+				"label": "Sélectionner l'abonnement par défaut",
+				"info": "Au chargement de la page, l'abonnement est activé (prix réduit appliqué).",
+				"default": false
+			},
+			{
+				"type": "checkbox",
+				"id": "sub_widget_hide_policy",
+				"label": "Masquer la mention de renouvellement",
+				"info": "Cache le texte « Le renouvellement est automatique… » sous le widget.",
+				"default": false
+			},
+			{
 				"type": "header",
 				"content": "Carte avec interrupteur"
 			},
@@ -1146,6 +1160,17 @@
 				"id": "sub_widget_border",
 				"label": "Bordure",
 				"default": "#d1e3fb",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "range",
+				"id": "sub_widget_border_width",
+				"label": "Épaisseur de la bordure",
+				"min": 0,
+				"max": 4,
+				"step": 1,
+				"unit": "px",
+				"default": 1,
 				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
 			},
 			{
