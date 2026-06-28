@@ -129,6 +129,7 @@
       "blocks": {
         "review_card_AdYfWD": {
           "type": "review_card",
+          "disabled": true,
           "settings": {
             "eyebrow": "",
             "rating": 5,
