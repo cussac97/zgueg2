@@ -55,6 +55,8 @@
     "cart_upsell_heading": "Produits recommandés",
     "cart_recommendations": false,
     "sub_widget_style": "toggle",
+    "sub_widget_default_subscription": true,
+    "sub_widget_hide_policy": true,
     "sub_widget_bg": "#E8EDFB",
     "sub_widget_border": "#0000C9",
     "sub_widget_switch_off": "#D1D2FB",
