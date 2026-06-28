@@ -1393,7 +1393,7 @@
                         <div
                           class="product-variant__container product-variant__container--radio vb-grid vb-layout--{{ vb.card_layout }}"
                           data-js-product-variant-container="radio"
-                          style="--vb-per-row: {{ vb.cards_per_row }}; --vb-border-width: {{ vb.card_border_width }}px; --vb-border-color: {{ vb.card_border_color }}; --vb-radius: {{ vb.card_radius }}px; --vb-selected-color: {{ vb.selected_border_color }}; --vb-card-padding: {{ vb.card_padding }}px; --vb-card-gap: {{ vb.card_inner_gap }}px; --vb-card-bg: {{ vb.card_bg_color }};"
+                          style="--vb-per-row: {{ vb.cards_per_row }}; --vb-border-width: {{ vb.card_border_width }}px; --vb-border-color: {{ vb.card_border_color }}; --vb-radius: {{ vb.card_radius }}px; --vb-selected-color: {{ vb.selected_border_color }}; --vb-selected-bw: {{ vb.selected_border_width | default: 1 }}px; --vb-card-padding: {{ vb.card_padding }}px; --vb-card-gap: {{ vb.card_inner_gap }}px; --vb-card-bg: {{ vb.card_bg_color }};"
                         >
                           {%- for value in option.values -%}
                             {%- capture option_id -%}{{ product.handle }}-option-{{ option.name | escape | downcase | strip | handleize }}-{{ forloop.index }}-{{ section.id }}{%- endcapture -%}
@@ -3412,6 +3412,17 @@
           "id": "selected_border_color",
           "label": "Couleur de la card sélectionnée",
           "default": "#1a1a1a"
+        },
+        {
+          "type": "range",
+          "id": "selected_border_width",
+          "label": "Épaisseur du contour (card sélectionnée)",
+          "info": "S'ajoute à la bordure de base de la carte.",
+          "min": 0,
+          "max": 6,
+          "step": 1,
+          "unit": "px",
+          "default": 1
         },
         {
           "type": "header",
