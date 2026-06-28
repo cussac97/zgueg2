@@ -16,7 +16,8 @@
   if (cfg.style !== 'toggle') return;
 
   var PRICES = window.ZGUEG_SUB_PRICES || {};
-  var defaultApplied = false;
+  // Choix abonnement on/off, GLOBAL (indépendant de la variante sélectionnée).
+  var wantSub = !!cfg.defaultSubscription;
   var orig = new WeakMap(); // élément -> valeur d'origine (sans muter le DOM)
 
   function esc(s) {
@@ -134,15 +135,21 @@
     if (el.getAttribute('aria-checked') !== a) el.setAttribute('aria-checked', a);
   }
 
-  function maybeDefault(visible, sub, subLabel) {
-    if (cfg.defaultSubscription && !defaultApplied && visible && !sub.checked) {
-      defaultApplied = true;
-      if (subLabel) subLabel.click();
-      if (!sub.checked) {
-        sub.checked = true;
-        sub.dispatchEvent(new Event('change', { bubbles: true }));
-      }
+  function selectRadio(radio, label) {
+    if (label) label.click();
+    if (!radio.checked) {
+      radio.checked = true;
+      radio.dispatchEvent(new Event('change', { bubbles: true }));
     }
+  }
+
+  // Le choix abonnement on/off est GLOBAL (window wantSub), pas lié à une
+  // variante : on l'applique au bloc visible pour qu'il soit conservé quand on
+  // change de variante (chaque variante a son propre bloc natif côté app).
+  function enforce(visible, otp, otpLabel, sub, subLabel) {
+    if (!visible) return;
+    if (wantSub && !sub.checked) selectRadio(sub, subLabel);
+    else if (!wantSub && sub.checked) selectRadio(otp, otpLabel);
   }
 
   function enhanceCard(card) {
@@ -158,8 +165,8 @@
 
     var el = card.querySelector('.zg-sub-toggle');
     if (el) {
+      enforce(visible, otp, otpLabel, sub, subLabel);
       syncState(el, sub);
-      maybeDefault(visible, sub, subLabel);
       return;
     }
 
@@ -175,16 +182,10 @@
       '</div>' +
       '<span class="zg-sub-toggle__switch" aria-hidden="true"><span class="zg-sub-toggle__slider"></span></span>';
 
-    function select(radio, label) {
-      if (label) label.click();
-      if (!radio.checked) {
-        radio.checked = true;
-        radio.dispatchEvent(new Event('change', { bubbles: true }));
-      }
-    }
     function toggle() {
-      if (sub.checked) select(otp, otpLabel);
-      else select(sub, subLabel);
+      wantSub = !sub.checked; // l'utilisateur fixe le choix global
+      if (wantSub) selectRadio(sub, subLabel);
+      else selectRadio(otp, otpLabel);
     }
     el.addEventListener('click', toggle);
     el.addEventListener('keydown', function (e) {
@@ -195,8 +196,8 @@
     sub.addEventListener('change', function () { syncState(el, sub); schedule(); });
 
     card.insertBefore(el, card.firstChild);
+    enforce(visible, otp, otpLabel, sub, subLabel);
     syncState(el, sub);
-    maybeDefault(visible, sub, subLabel);
   }
 
   /* -------- Boucle de travail (anti-crash) -------- */
