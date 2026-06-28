@@ -902,6 +902,7 @@ html[dir=ltr] .zoom__exit {
 .vb-card__input:checked + .vb-card__inner {
   border-color: var(--vb-selected-color, #1a1a1a);
   box-shadow: 0 0 0 var(--vb-selected-bw, 1px) var(--vb-selected-color, #1a1a1a);
+  background-color: var(--vb-selected-bg, var(--vb-card-bg, transparent));
 }
 .vb-card__input:focus-visible + .vb-card__inner {
   outline: 2px solid var(--vb-selected-color, #1a1a1a);

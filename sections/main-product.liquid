@@ -1344,6 +1344,7 @@
             {%- liquid
               assign vb = block.settings
               assign vb_unavail = vb.unavailable_variants | default: 'show'
+              assign vb_sel_bg_alpha = vb.selected_bg_color | color_extract: 'alpha'
               assign vb_heading_font = ''
               if vb.heading_font == 'stefan'
                 assign vb_heading_font = "'ABCStefan', sans-serif"
@@ -1393,7 +1394,7 @@
                         <div
                           class="product-variant__container product-variant__container--radio vb-grid vb-layout--{{ vb.card_layout }}"
                           data-js-product-variant-container="radio"
-                          style="--vb-per-row: {{ vb.cards_per_row }}; --vb-border-width: {{ vb.card_border_width }}px; --vb-border-color: {{ vb.card_border_color }}; --vb-radius: {{ vb.card_radius }}px; --vb-selected-color: {{ vb.selected_border_color }}; --vb-selected-bw: {{ vb.selected_border_width | default: 1 }}px; --vb-card-padding: {{ vb.card_padding }}px; --vb-card-gap: {{ vb.card_inner_gap }}px; --vb-card-bg: {{ vb.card_bg_color }};"
+                          style="--vb-per-row: {{ vb.cards_per_row }}; --vb-border-width: {{ vb.card_border_width }}px; --vb-border-color: {{ vb.card_border_color }}; --vb-radius: {{ vb.card_radius }}px; --vb-selected-color: {{ vb.selected_border_color }}; --vb-selected-bw: {{ vb.selected_border_width | default: 1 }}px; --vb-card-padding: {{ vb.card_padding }}px; --vb-card-gap: {{ vb.card_inner_gap }}px; --vb-card-bg: {{ vb.card_bg_color }};{% if vb.selected_bg_color != blank and vb_sel_bg_alpha != 0 %} --vb-selected-bg: {{ vb.selected_bg_color }};{% endif %}"
                         >
                           {%- for value in option.values -%}
                             {%- capture option_id -%}{{ product.handle }}-option-{{ option.name | escape | downcase | strip | handleize }}-{{ forloop.index }}-{{ section.id }}{%- endcapture -%}
@@ -3423,6 +3424,13 @@
           "step": 1,
           "unit": "px",
           "default": 1
+        },
+        {
+          "type": "color",
+          "id": "selected_bg_color",
+          "label": "Fond de la card sélectionnée",
+          "info": "Transparent = même fond que les autres cartes.",
+          "default": "rgba(0,0,0,0)"
         },
         {
           "type": "header",
