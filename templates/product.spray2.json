@@ -261,7 +261,7 @@
             "show_preorder": false,
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false,
-            "show_price": false,
+            "show_price": true,
             "style": "outline",
             "color_text_buttons": "#0000c9"
           }
