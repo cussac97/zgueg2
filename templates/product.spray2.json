@@ -226,7 +226,7 @@
             "card_border_width": 1,
             "card_radius": 0,
             "selected_border_color": "#0000c9",
-            "selected_border_width": 1,
+            "selected_border_width": 0,
             "selected_bg_color": "rgba(0,0,0,0)",
             "badge_text": "Soldes d'été  : -30%",
             "badge_card": 2,
