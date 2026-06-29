@@ -25,31 +25,52 @@
       --zsw-badge-radius: {{ settings.sub_widget_badge_radius }}px;
     }
   {%- endstyle -%}
+{%- endif -%}
+
+{%- liquid
+  comment
+    On charge le JS du widget si le thème « carte interrupteur » est actif OU
+    si un bloc « bouton d'achat » affiche le prix dans le bouton.
+  endcomment
+  assign sub_need_js = false
+  if settings.sub_widget_style == 'toggle'
+    assign sub_need_js = true
+  endif
+  for b in section.blocks
+    if b.type == 'buy_buttons' and b.settings.show_price
+      assign sub_need_js = true
+    endif
+  endfor
+-%}
+
+{%- if sub_need_js -%}
   {%- liquid
     assign sp_entries = ''
     for v in product.variants
       assign alloc = v.selling_plan_allocations | first
-      if alloc
-        capture entry
-          echo '"'
-          echo v.id
-          echo '":{"now":'
+      capture entry
+        echo '"'
+        echo v.id
+        echo '":{"now":'
+        if alloc
           echo alloc.price | money | json
-          echo ',"was":'
-          echo v.price | money | json
-          echo '}'
-        endcapture
-        if sp_entries == ''
-          assign sp_entries = entry
         else
-          assign sp_entries = sp_entries | append: ',' | append: entry
+          echo '""'
         endif
+        echo ',"was":'
+        echo v.price | money | json
+        echo '}'
+      endcapture
+      if sp_entries == ''
+        assign sp_entries = entry
+      else
+        assign sp_entries = sp_entries | append: ',' | append: entry
       endif
     endfor
   -%}
   <script>
     window.ZGUEG_SUB_WIDGET = {
-      style: 'toggle',
+      style: {{ settings.sub_widget_style | json }},
       title: {{ settings.sub_widget_title | json }},
       subtitle: {{ settings.sub_widget_subtitle | json }},
       badge: {{ settings.sub_widget_badge_text | json }},
@@ -1629,27 +1650,6 @@
 
           {%- when 'buy_buttons' -%}
             <div class="product-actions" {{ block.shopify_attributes }}>
-              {%- if block.settings.show_price -%}
-                <div
-                  class="sidebar-widget sidebar-widget--{{ block.settings.style }} {% unless default_to_first_variant %} show-block-if-variant-selected {% endunless %} "
-                  data-update-block="price-extended-main"
-                >
-                  {%- if block.settings.style == 'outline' -%}
-                    <span class="sidebar-widget__title">{{ 'products.page.price' | t }}</span>
-                  {%- endif -%}
-                  <div class="sidebar-widget__content">
-                    <div>
-                      {%- render 'product-price',
-                        variant: current_variant,
-                        target: current_variant,
-                        show_saving: true,
-                        id: section.id
-                      -%}
-                    </div>
-                  </div>
-                </div>
-              {%- endif -%}
-
               <product-form
                 id="add-to-cart-{{ section.id }}"
                 class="product-form"
@@ -1783,6 +1783,9 @@
                             endunless
                           -%}
                         </span>
+                        {%- if block.settings.show_price -%}
+                          <span class="add-to-cart__price" data-js-atc-price>{% if default_to_first_variant and current_variant.available %} – {{ current_variant.price | money }}{% endif %}</span>
+                        {%- endif -%}
                         <span class="button__preloader">
                           <svg class="button__preloader-element" viewBox="25 25 50 50">
                             <circle cx="50" cy="50" r="20" fill="none" stroke-width="4"/>

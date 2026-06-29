@@ -1443,3 +1443,12 @@ html[dir=ltr] .product-quick-view__title {
     font-size: var(--pt-fs-m);
   }
 }
+/* Prix dans le bouton « Ajouter au panier – 27,30 € » */
+.add-to-cart:has(.add-to-cart__price) .button__text {
+  width: auto;
+}
+.add-to-cart__price {
+  display: inline-block;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}

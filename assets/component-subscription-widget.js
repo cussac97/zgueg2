@@ -13,7 +13,7 @@
  */
 (function () {
   var cfg = window.ZGUEG_SUB_WIDGET || {};
-  if (cfg.style !== 'toggle') return;
+  var IS_TOGGLE = cfg.style === 'toggle';
 
   var PRICES = window.ZGUEG_SUB_PRICES || {};
   // Choix abonnement on/off, GLOBAL (indépendant de la variante sélectionnée).
@@ -71,7 +71,8 @@
       var wrap = card.querySelector('.vb-card__price');
       if (!nowEl || !wrap) return;
 
-      if (on) {
+      var so = on && m.now; // pas de prix abonné pour cette variante -> on n'override pas
+      if (so) {
         if (!orig.has(nowEl)) orig.set(nowEl, nowEl.textContent);
         setText(nowEl, m.now);
         var was = wrap.querySelector('.zg-sub-was');
@@ -103,7 +104,7 @@
     var vid = currentVariantId();
     var m = vid ? PRICES[vid] : null;
     document.querySelectorAll('.main-product-price .product-price--original').forEach(function (el) {
-      if (on && m) {
+      if (on && m && m.now) {
         if (!orig.has(el)) orig.set(el, el.innerHTML);
         var html =
           '<span class="zg-sub-price">' + esc(m.now) + '</span>' +
@@ -121,10 +122,27 @@
     });
   }
 
+  // Prix affiché dans le bouton « Ajouter au panier – 27,30 € ».
+  // Reflète la variante sélectionnée + l'état abonnement on/off.
+  function updateButtonPrice(on) {
+    var vid = currentVariantId();
+    var m = vid ? PRICES[vid] : null;
+    document.querySelectorAll('[data-js-atc-price]').forEach(function (span) {
+      var btn = span.closest('button');
+      if (!m || (btn && btn.classList.contains('disabled'))) {
+        setText(span, '');
+        return;
+      }
+      var price = (on && m.now) ? m.now : m.was;
+      setText(span, price ? ' – ' + price : '');
+    });
+  }
+
   function refreshPrices() {
     var on = isSubscribed();
     applyCardPrices(on);
     applyMainPrice(on);
+    updateButtonPrice(on);
   }
 
   /* -------- Carte toggle -------- */
@@ -210,7 +228,9 @@
   var timer = null;
 
   function work() {
-    document.querySelectorAll('.shopify_subscriptions_app_container .toggle_card').forEach(enhanceCard);
+    if (IS_TOGGLE) {
+      document.querySelectorAll('.shopify_subscriptions_app_container .toggle_card').forEach(enhanceCard);
+    }
     refreshPrices();
   }
 
