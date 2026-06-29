@@ -58,6 +58,7 @@
     "sub_widget_default_subscription": false,
     "sub_widget_hide_policy": true,
     "sub_widget_subtitle": "Livré tous les 2 mois · sans engagement, annulable à tout moment",
+    "sub_widget_badge_radius": 0,
     "sub_widget_bg": "#E8EDFB",
     "sub_widget_border": "#0000C9",
     "sub_widget_switch_off": "#D1D2FB",
