@@ -148,8 +148,8 @@
           "settings": {
             "product": "spray-reequilibrant-intime-pour-homme",
             "eyebrow": "Best-seller",
-            "name": "Spray intime de poche",
-            "tagline": "Fraîcheur immédiate + 16h d'efficacité.",
+            "name": "Spray protecteur après-douche",
+            "tagline": "Soin fraîcheur + 16h d'efficacité.",
             "details": "pH | 5,5\nFormat | 100 ml\nNote Yuka | 95/100\nSans alcool\nFabriqué en France",
             "price_override": "",
             "badge": "Le plus vendu",
@@ -224,7 +224,7 @@
         "title_ih9K6A": {
           "type": "title",
           "settings": {
-            "title": "Le spray rééquilibrant",
+            "title": "Le spray protecteur après-douche",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 0,
@@ -235,7 +235,7 @@
         "text_pzzdk3": {
           "type": "text",
           "settings": {
-            "text": "<p>Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® règle le problème — il ne le cache pas derrière un parfum. </p>",
+            "text": "<p>Refreshed® a été pensé pour finir la routine intime parfaitement. Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® Fait durer votre hygiène dans le temps.</p>",
             "text_size": "regular"
           }
         },
