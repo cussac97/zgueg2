@@ -289,7 +289,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/1499c3f4f728e1c3fe812506b9332ea9c5cfe1d9-80x80.avif",
-            "label": "97/100 sur Yuka\n\nC'est la moyenne des notations de nos produits sur la plateforme réputée Yuka !",
+            "label": "100/100 sur Yuka\n\nC'est la note de nos produits sur la plateforme réputée Yuka !",
             "link": ""
           }
         }
