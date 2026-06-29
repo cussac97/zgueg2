@@ -1171,6 +1171,18 @@
 				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
 			},
 			{
+				"type": "range",
+				"id": "sub_widget_badge_radius",
+				"label": "Arrondi du badge",
+				"info": "30 px = pilule arrondie, 0 = carré.",
+				"min": 0,
+				"max": 30,
+				"step": 1,
+				"unit": "px",
+				"default": 30,
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
 				"type": "color",
 				"id": "sub_widget_bg",
 				"label": "Fond de la carte",
