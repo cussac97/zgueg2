@@ -140,6 +140,224 @@
         "remove_spacing": true
       }
     },
+    "customer_reviews_c89ViU": {
+      "type": "customer-reviews",
+      "blocks": {
+        "review_JnBAQ3": {
+          "type": "review",
+          "settings": {
+            "author": "Mary H.",
+            "verified": true,
+            "verified_label": "Verified Buyer",
+            "rating": 4,
+            "date": "May 22, 2026",
+            "product": "",
+            "text": "Love all the products, but this one didn't do as well. I think the 5 pant is bigger than the 5 diaper, IMO. We struggled with some leakage, but once I got them on my daughter right they were fine. My biggest issue was through the night. They are not nearly as absorbent as the diapers. Many mornings we woke up to accidents. I switched back to the originals.",
+            "helpful_up": 0,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloe",
+            "reply_date": "May 21, 2026",
+            "reply_text": ""
+          }
+        },
+        "review_dPmihX": {
+          "type": "review",
+          "settings": {
+            "author": "Chandana M.",
+            "verified": true,
+            "verified_label": "Verified Buyer",
+            "rating": 3,
+            "date": "May 22, 2026",
+            "product": "",
+            "text": "Like the product but the stick is too fragile. It comes off when I'm taking it off the package. I would have liked the sticking part design to be better.",
+            "helpful_up": 0,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloe",
+            "reply_date": "May 21, 2026",
+            "reply_text": ""
+          }
+        },
+        "review_WhmgKB": {
+          "type": "review",
+          "settings": {
+            "author": "Erin H.",
+            "verified": true,
+            "verified_label": "Verified Buyer",
+            "rating": 5,
+            "date": "May 21, 2026",
+            "product": "",
+            "text": "We have been loving it. It is so easy to change with the tabs on the side yet gives our 21 month old the practice she needs pulling them up and down for potty training.",
+            "helpful_up": 0,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloe",
+            "reply_date": "May 21, 2026",
+            "reply_text": "Thanks, Erin H.! We're thrilled the side tabs are making potty training smoother and giving her confident pull-up practice. Our mission is to make parents' lives easier."
+          }
+        }
+      },
+      "block_order": [
+        "review_JnBAQ3",
+        "review_dPmihX",
+        "review_WhmgKB"
+      ],
+      "disabled": true,
+      "name": "Customer Reviews",
+      "settings": {
+        "container_width": "large",
+        "show_pagination": true,
+        "per_page": 5,
+        "two_columns": true,
+        "left_width": 38,
+        "column_gap": 48,
+        "sticky_heading": true,
+        "sticky_offset": 100,
+        "meta_width": 28,
+        "review_spacing": 28,
+        "padding_top": 128,
+        "padding_bottom": 60,
+        "heading": "Notre bande de zguegs en parlent. (ils adorent)",
+        "heading_alignment": "left",
+        "heading_size": 56,
+        "heading_size_mobile": 34,
+        "heading_weight": "500",
+        "show_summary": true,
+        "summary_rating": 4.2,
+        "summary_count": "1762",
+        "summary_caption": "based on",
+        "summary_reviews_word": "reviews",
+        "summary_text_size": 13,
+        "show_rating_filter": true,
+        "rating_filter_label": "Rating",
+        "rating_filter_all": "All ratings",
+        "stars_word": "stars",
+        "show_product_filter": true,
+        "product_filter_label": "Product",
+        "product_filter_all": "All products",
+        "empty_text": "No reviews match your filters.",
+        "show_date": true,
+        "show_reply_date": true,
+        "clamp_lines": 4,
+        "read_more_label": "Read More",
+        "read_less_label": "Read Less",
+        "show_helpful": true,
+        "helpful_label": "Was This Review Helpful?",
+        "section_bg": "#ffffff",
+        "text_color": "#1a1a1a",
+        "muted_color": "#6b6b6b",
+        "divider_color": "#e6e6e6",
+        "star_color": "#1a1a1a",
+        "star_empty_color": "#c9c9c9",
+        "field_bg": "#ffffff",
+        "field_border": "#d9d9d9",
+        "field_radius": 8
+      }
+    },
+    "certifications_DDdq8b": {
+      "type": "certifications",
+      "blocks": {
+        "certification_AmP3Wg": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/962a2632bae52161517f717aff14bea2d932821b-83x83.avif",
+            "label": "Sans ingrédient controversé\n\nSans alcool · Sans parabènes · Sans sulfates · Sans perturbateurs endocriniens · Sans phénoxyéthanol",
+            "link": ""
+          }
+        },
+        "certification_MXBLkR": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/a0882f0c3ba2974c0a77b1bdb5fcd4fb1941a01d-80x80.avif",
+            "label": "Soutenu par la science\n\nNos formules ont été développées par des docteurs en pharmacie et cosmétologie.",
+            "link": ""
+          }
+        },
+        "certification_YJRYkt": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/364411ef4d5d0272c1b3e846515b1534269d72f5-83x83.avif",
+            "label": "Sans parfum\n\nLe choix du naturel : car on croit profondément que l'odeur d'une peau propre est la meilleure des odeurs.",
+            "link": ""
+          }
+        },
+        "certification_GtJLgp": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/1499c3f4f728e1c3fe812506b9332ea9c5cfe1d9-80x80.avif",
+            "label": "97/100 sur Yuka\n\nC'est la moyenne de nos produits sur la plateforme de notation renommée Yuka !",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "certification_AmP3Wg",
+        "certification_MXBLkR",
+        "certification_YJRYkt",
+        "certification_GtJLgp"
+      ],
+      "name": "Certifications",
+      "settings": {
+        "container_width": "large",
+        "two_columns": true,
+        "left_width": 47,
+        "column_gap": 48,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "section_bg": "#ffffff",
+        "heading": "100% sain pour tous les zguegs.",
+        "text_color": "#1a1a1a",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_alignment": "left",
+        "heading_alignment_mobile": "center",
+        "body": "<p>Zgueg a été créé par des hommes, pour les hommes. Car on sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt pour finir un rendez-vous comme il se doit. C'est pour cela que nous avons réfléchit pendant 2 ans au produit ultime, pour votre hygiène intime.</p>",
+        "body_color": "#1a1a1a",
+        "body_size": 16,
+        "body_max_width": 640,
+        "body_alignment": "left",
+        "body_alignment_mobile": "center",
+        "grid_style": "classic",
+        "item_alignment": "center",
+        "label_font": "theme",
+        "card_bg": "#ffffff",
+        "line_color": "#e6e6e6",
+        "border_radius": 0,
+        "cell_padding": 28,
+        "icons_per_row": 4,
+        "icons_per_row_mobile": 2,
+        "icon_size": 56,
+        "icon_gap": 24,
+        "row_gap": 28,
+        "label_gap": 14,
+        "icons_margin_top": 40,
+        "icon_recolor": false,
+        "icon_color": "#0000c9",
+        "label_color": "#1a1a1a",
+        "label_size": 13,
+        "label_weight": "400",
+        "label_transform": "none",
+        "show_button": false,
+        "button_label": "Lire nos analyses",
+        "button_link": "",
+        "button_bg": "#0000c9",
+        "button_text_color": "#ffffff",
+        "button_radius": 40,
+        "button_padding_v": 15,
+        "button_padding_h": 40,
+        "button_font_size": 15,
+        "button_weight": "700",
+        "button_transform": "none",
+        "button_alignment": "center",
+        "button_alignment_mobile": "center",
+        "button_full_width_mobile": false
+      }
+    },
     "showcase_the_products_NFrmhk": {
       "type": "showcase-the-products",
       "blocks": {
@@ -724,106 +942,6 @@
         "seo_h_tag": "h2"
       }
     },
-    "certifications_DDdq8b": {
-      "type": "certifications",
-      "blocks": {
-        "certification_AmP3Wg": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/962a2632bae52161517f717aff14bea2d932821b-83x83.avif",
-            "label": "Sans ingrédient controversé\n\nSans alcool · Sans parabènes · Sans sulfates · Sans perturbateurs endocriniens · Sans phénoxyéthanol",
-            "link": ""
-          }
-        },
-        "certification_MXBLkR": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/a0882f0c3ba2974c0a77b1bdb5fcd4fb1941a01d-80x80.avif",
-            "label": "Soutenu par la science\n\nNos formules ont été développées par des docteurs en pharmacie et cosmétologie.",
-            "link": ""
-          }
-        },
-        "certification_YJRYkt": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/364411ef4d5d0272c1b3e846515b1534269d72f5-83x83.avif",
-            "label": "Sans parfum\n\nLe choix du naturel : car on croit profondément que l'odeur d'une peau propre est la meilleure des odeurs.",
-            "link": ""
-          }
-        },
-        "certification_GtJLgp": {
-          "type": "certification",
-          "settings": {
-            "icon": "shopify://shop_images/1499c3f4f728e1c3fe812506b9332ea9c5cfe1d9-80x80.avif",
-            "label": "93/100\n\nC'est la note qui a été délivrée par les autorités pour nos 2 formules. \n(on en est pas peu fiers)",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "certification_AmP3Wg",
-        "certification_MXBLkR",
-        "certification_YJRYkt",
-        "certification_GtJLgp"
-      ],
-      "name": "Certifications",
-      "settings": {
-        "container_width": "large",
-        "two_columns": true,
-        "left_width": 47,
-        "column_gap": 48,
-        "padding_top": 70,
-        "padding_bottom": 70,
-        "section_bg": "#ffffff",
-        "heading": "100% sain pour tous les zguegs.",
-        "text_color": "#1a1a1a",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "heading_alignment": "left",
-        "heading_alignment_mobile": "center",
-        "body": "<p>Zgueg a été créé par des hommes, pour les hommes. Car on sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt pour finir un rendez-vous comme il se doit. C'est pour cela que nous avons réfléchit pendant 2 ans au produit ultime, pour votre hygiène intime.</p>",
-        "body_color": "#1a1a1a",
-        "body_size": 16,
-        "body_max_width": 640,
-        "body_alignment": "left",
-        "body_alignment_mobile": "center",
-        "grid_style": "classic",
-        "item_alignment": "center",
-        "label_font": "theme",
-        "card_bg": "#ffffff",
-        "line_color": "#e6e6e6",
-        "border_radius": 0,
-        "cell_padding": 28,
-        "icons_per_row": 4,
-        "icons_per_row_mobile": 2,
-        "icon_size": 56,
-        "icon_gap": 24,
-        "row_gap": 28,
-        "label_gap": 14,
-        "icons_margin_top": 40,
-        "icon_recolor": false,
-        "icon_color": "#0000c9",
-        "label_color": "#1a1a1a",
-        "label_size": 13,
-        "label_weight": "400",
-        "label_transform": "none",
-        "show_button": false,
-        "button_label": "Lire nos analyses",
-        "button_link": "",
-        "button_bg": "#0000c9",
-        "button_text_color": "#ffffff",
-        "button_radius": 40,
-        "button_padding_v": 15,
-        "button_padding_h": 40,
-        "button_font_size": 15,
-        "button_weight": "700",
-        "button_transform": "none",
-        "button_alignment": "center",
-        "button_alignment_mobile": "center",
-        "button_full_width_mobile": false
-      }
-    },
     "ph_scale_pjWhrH": {
       "type": "ph-scale",
       "blocks": {
@@ -909,128 +1027,12 @@
         "padding_bottom": 60,
         "seo_h_tag": "h2"
       }
-    },
-    "customer_reviews_c89ViU": {
-      "type": "customer-reviews",
-      "blocks": {
-        "review_JnBAQ3": {
-          "type": "review",
-          "settings": {
-            "author": "Mary H.",
-            "verified": true,
-            "verified_label": "Verified Buyer",
-            "rating": 4,
-            "date": "May 22, 2026",
-            "product": "",
-            "text": "Love all the products, but this one didn't do as well. I think the 5 pant is bigger than the 5 diaper, IMO. We struggled with some leakage, but once I got them on my daughter right they were fine. My biggest issue was through the night. They are not nearly as absorbent as the diapers. Many mornings we woke up to accidents. I switched back to the originals.",
-            "helpful_up": 0,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Chloe",
-            "reply_date": "May 21, 2026",
-            "reply_text": ""
-          }
-        },
-        "review_dPmihX": {
-          "type": "review",
-          "settings": {
-            "author": "Chandana M.",
-            "verified": true,
-            "verified_label": "Verified Buyer",
-            "rating": 3,
-            "date": "May 22, 2026",
-            "product": "",
-            "text": "Like the product but the stick is too fragile. It comes off when I'm taking it off the package. I would have liked the sticking part design to be better.",
-            "helpful_up": 0,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Chloe",
-            "reply_date": "May 21, 2026",
-            "reply_text": ""
-          }
-        },
-        "review_WhmgKB": {
-          "type": "review",
-          "settings": {
-            "author": "Erin H.",
-            "verified": true,
-            "verified_label": "Verified Buyer",
-            "rating": 5,
-            "date": "May 21, 2026",
-            "product": "",
-            "text": "We have been loving it. It is so easy to change with the tabs on the side yet gives our 21 month old the practice she needs pulling them up and down for potty training.",
-            "helpful_up": 0,
-            "helpful_down": 0,
-            "reply_enable": true,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Chloe",
-            "reply_date": "May 21, 2026",
-            "reply_text": "Thanks, Erin H.! We're thrilled the side tabs are making potty training smoother and giving her confident pull-up practice. Our mission is to make parents' lives easier."
-          }
-        }
-      },
-      "block_order": [
-        "review_JnBAQ3",
-        "review_dPmihX",
-        "review_WhmgKB"
-      ],
-      "disabled": true,
-      "name": "Customer Reviews",
-      "settings": {
-        "container_width": "large",
-        "show_pagination": true,
-        "per_page": 5,
-        "two_columns": true,
-        "left_width": 38,
-        "column_gap": 48,
-        "sticky_heading": true,
-        "sticky_offset": 100,
-        "meta_width": 28,
-        "review_spacing": 28,
-        "padding_top": 128,
-        "padding_bottom": 60,
-        "heading": "Notre bande de zguegs en parlent. (ils adorent)",
-        "heading_alignment": "left",
-        "heading_size": 56,
-        "heading_size_mobile": 34,
-        "heading_weight": "500",
-        "show_summary": true,
-        "summary_rating": 4.2,
-        "summary_count": "1762",
-        "summary_caption": "based on",
-        "summary_reviews_word": "reviews",
-        "summary_text_size": 13,
-        "show_rating_filter": true,
-        "rating_filter_label": "Rating",
-        "rating_filter_all": "All ratings",
-        "stars_word": "stars",
-        "show_product_filter": true,
-        "product_filter_label": "Product",
-        "product_filter_all": "All products",
-        "empty_text": "No reviews match your filters.",
-        "show_date": true,
-        "show_reply_date": true,
-        "clamp_lines": 4,
-        "read_more_label": "Read More",
-        "read_less_label": "Read Less",
-        "show_helpful": true,
-        "helpful_label": "Was This Review Helpful?",
-        "section_bg": "#ffffff",
-        "text_color": "#1a1a1a",
-        "muted_color": "#6b6b6b",
-        "divider_color": "#e6e6e6",
-        "star_color": "#1a1a1a",
-        "star_empty_color": "#c9c9c9",
-        "field_bg": "#ffffff",
-        "field_border": "#d9d9d9",
-        "field_radius": 8
-      }
     }
   },
   "order": [
     "enriched_hero_e4bhR9",
+    "customer_reviews_c89ViU",
+    "certifications_DDdq8b",
     "showcase_the_products_NFrmhk",
     "rich_text_3E9aKj",
     "ss_video_image_text_3_JLCMQb",
@@ -1039,8 +1041,6 @@
     "rich_text_UKfy6N",
     "rich_text_9XNcQB",
     "comparison_table_rcciR8",
-    "certifications_DDdq8b",
-    "ph_scale_pjWhrH",
-    "customer_reviews_c89ViU"
+    "ph_scale_pjWhrH"
   ]
 }
