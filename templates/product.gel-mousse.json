@@ -259,6 +259,7 @@
             "card_radius": 0,
             "selected_border_color": "#0000c9",
             "selected_border_width": 0,
+            "selected_bg_color": "rgba(0,0,0,0)",
             "badge_text": "Soldes d'été : -30%",
             "badge_card": 2,
             "badge_bg_color": "#0000c9",
@@ -299,6 +300,25 @@
         },
         "icons_Knqhhh": {
           "type": "icons",
+          "settings": {
+            "title": "",
+            "content_alignment": "center",
+            "layout": "horizontal",
+            "margin_top": 20,
+            "margin_bottom": 34,
+            "icon_1_image": "shopify://shop_images/Logo_Yuka.png",
+            "icon_1_label": "Noté 100/100 sur Yuka !",
+            "icon_2_label": "",
+            "icon_3_label": "",
+            "icon_4_label": "",
+            "icon_5_label": "",
+            "icon_6_label": "",
+            "hide_block_if": false
+          }
+        },
+        "icons_f8n6eM": {
+          "type": "icons",
+          "disabled": true,
           "settings": {
             "title": "",
             "content_alignment": "center",
@@ -398,6 +418,7 @@
         "subscriptions_app_block_RRrMdt",
         "buy_buttons",
         "icons_Knqhhh",
+        "icons_f8n6eM",
         "reassort_3B4kgy",
         "collapsible_tab_zXdGmR",
         "collapsible_tab_P4hk8m",
