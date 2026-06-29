@@ -1149,6 +1149,28 @@
 				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
 			},
 			{
+				"type": "text",
+				"id": "sub_widget_badge_text",
+				"label": "Badge à côté du titre",
+				"info": "Laisser vide pour masquer le badge.",
+				"default": "Sans engagement",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "color",
+				"id": "sub_widget_badge_bg",
+				"label": "Fond du badge",
+				"default": "#0000c9",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
+				"type": "color",
+				"id": "sub_widget_badge_color",
+				"label": "Texte du badge",
+				"default": "#ffffff",
+				"visible_if": "{{ settings.sub_widget_style == 'toggle' }}"
+			},
+			{
 				"type": "color",
 				"id": "sub_widget_bg",
 				"label": "Fond de la carte",

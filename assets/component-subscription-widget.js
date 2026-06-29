@@ -177,7 +177,12 @@
     el.setAttribute('tabindex', '0');
     el.innerHTML =
       '<div class="zg-sub-toggle__text">' +
-      (cfg.title ? '<span class="zg-sub-toggle__title">' + titleHTML(pct) + '</span>' : '') +
+      ((cfg.title || cfg.badge) ?
+        '<span class="zg-sub-toggle__titlerow">' +
+          (cfg.title ? '<span class="zg-sub-toggle__title">' + titleHTML(pct) + '</span>' : '') +
+          (cfg.badge ? '<span class="zg-sub-toggle__badge">' + esc(cfg.badge) + '</span>' : '') +
+        '</span>'
+      : '') +
       (cfg.subtitle ? '<span class="zg-sub-toggle__sub">' + esc(cfg.subtitle) + '</span>' : '') +
       '</div>' +
       '<span class="zg-sub-toggle__switch" aria-hidden="true"><span class="zg-sub-toggle__slider"></span></span>';

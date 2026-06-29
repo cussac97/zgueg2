@@ -20,6 +20,8 @@
       --zsw-text: {{ settings.sub_widget_text }};
       --zsw-muted: {{ settings.sub_widget_muted }};
       --zsw-radius: {{ settings.sub_widget_radius }}px;
+      --zsw-badge-bg: {{ settings.sub_widget_badge_bg }};
+      --zsw-badge-color: {{ settings.sub_widget_badge_color }};
     }
   {%- endstyle -%}
   {%- liquid
@@ -49,6 +51,7 @@
       style: 'toggle',
       title: {{ settings.sub_widget_title | json }},
       subtitle: {{ settings.sub_widget_subtitle | json }},
+      badge: {{ settings.sub_widget_badge_text | json }},
       defaultSubscription: {{ settings.sub_widget_default_subscription | json }}
     };
     window.ZGUEG_SUB_PRICES = { {{ sp_entries }} };
