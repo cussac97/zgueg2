@@ -1449,6 +1449,10 @@ html[dir=ltr] .product-quick-view__title {
 }
 .add-to-cart__price {
   display: inline-block;
+  margin-left: 0.35em;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
+}
+.add-to-cart__price:empty {
+  margin-left: 0;
 }

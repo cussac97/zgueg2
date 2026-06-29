@@ -134,7 +134,7 @@
         return;
       }
       var price = (on && m.now) ? m.now : m.was;
-      setText(span, price ? ' – ' + price : '');
+      setText(span, price ? '– ' + price : '');
     });
   }
 
