@@ -956,7 +956,7 @@
         "competitor_1": "Gel douche classique",
         "competitor_2": "Autre gel intime",
         "competitor_3": "",
-        "yes_no_icons": false,
+        "yes_no_icons": true,
         "value_font": "comparison-table--mono",
         "value_alignment": "center",
         "footnote": "<p>*Basé sur la composition type des gels douches et gels intimes du commerce au moment de la publication.</p>",
