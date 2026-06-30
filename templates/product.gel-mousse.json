@@ -892,7 +892,7 @@
         "row_GFYk4G": {
           "type": "row",
           "settings": {
-            "label": "Ferments probiotiques rééquilibrants (Lactobacillus, Bifida)",
+            "label": "Ferments probiotiques rééquilibrants à long-terme (Lactobacillus, Bifida)",
             "value_brand": "Oui",
             "value_1": "Non",
             "value_2": "Non",
@@ -922,7 +922,7 @@
         "row_X3C9gH": {
           "type": "row",
           "settings": {
-            "label": "Sans savon, sans parfum de synthèse",
+            "label": "Sans savon, sans parfum de synthèse (phtalates)",
             "value_brand": "Oui",
             "value_1": "Non",
             "value_2": "Non",
