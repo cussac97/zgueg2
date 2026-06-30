@@ -227,7 +227,7 @@
             "card_radius": 0,
             "selected_border_color": "#0000c9",
             "selected_border_width": 0,
-            "selected_bg_color": "rgba(0,0,0,0)",
+            "selected_bg_color": "#E8EDFB",
             "badge_text": "Soldes d'été  : -30%",
             "badge_card": 2,
             "badge_bg_color": "#0000c9",
@@ -879,10 +879,10 @@
         "row_dMdTM7": {
           "type": "row",
           "settings": {
-            "label": "Conçu pour la zone intime masculine",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
+            "label": "Note Yuka (composition)",
+            "value_brand": "100/100",
+            "value_1": "~75/100",
+            "value_2": "~70/100",
             "value_3": ""
           }
         },
