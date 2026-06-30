@@ -1935,7 +1935,14 @@ For inquiries or permissions, contact daniel@section.store
                   <span class="header-search-text-{{ section.id }}">{{ block.settings.search_text }}</span>
                 </a>             
               {% when 'cart' %}
-                <a href="{{ routes.cart_url }}" class="header-cart-{{ section.id }} header-cart-{{ block.id }} header-right-item-{{ section.id }}">
+                <a
+                  class="header-cart-{{ section.id }} header-cart-{{ block.id }} header-right-item-{{ section.id }}"
+                  {% if settings.cart_action == 'overlay' and template != 'cart' %}
+                    data-js-sidebar-handle data-js-sidebar-handle-direction="right" aria-expanded="false" aria-controls="site-cart-sidebar" role="button"
+                  {% else %}
+                    href="{{ routes.cart_url }}"
+                  {% endif %}
+                >
                   <span class="header-cart-icon-{{ section.id }}">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 16 16" stroke-linecap="round" stroke-linejoin="round" stroke="#121212" height="16" width="16"><path d="M10.3125 13.125a0.9375 0.9375 0 1 0 0 -1.875 0.9375 0.9375 0 0 0 0 1.875m-5 0a0.9375 0.9375 0 1 0 0 -1.875 0.9375 0.9375 0 0 0 0 1.875M2.31875 3.375h9.508750000000001c0.86125 0 1.4831250000000002 0.79375 1.2468750000000002 1.5925l-1.03375 3.5C11.881250000000001 9.004999999999999 11.3725 9.375 10.79375 9.375H5.07c-0.579375 0 -1.08875 -0.370625 -1.2475 -0.9075zm0 0L1.875 1.875" stroke-width="1"></path></svg>
                   </span>
