@@ -258,6 +258,32 @@
     
     {%- unless settings.cart_action == "no-overlay" or template.name contains "cart" -%}
   
+      {%- liquid
+        assign cd_bg_a = settings.cart_drawer_bg | color_extract: 'alpha'
+        assign cd_footer_a = settings.cart_drawer_footer_bg | color_extract: 'alpha'
+        assign cd_text_a = settings.cart_drawer_text | color_extract: 'alpha'
+        assign cd_border_a = settings.cart_drawer_border | color_extract: 'alpha'
+        assign cd_btnbg_a = settings.cart_drawer_checkout_bg | color_extract: 'alpha'
+        assign cd_btntext_a = settings.cart_drawer_checkout_text | color_extract: 'alpha'
+      -%}
+      {%- if cd_bg_a != 0 or cd_footer_a != 0 or cd_text_a != 0 or cd_border_a != 0 or cd_btnbg_a != 0 or cd_btntext_a != 0 -%}
+        {%- style -%}
+          #site-cart-sidebar {
+            {% if cd_bg_a != 0 %}--color-background-main: {{ settings.cart_drawer_bg }};{% endif %}
+            {% if cd_footer_a != 0 %}--color-background-main-alternate: {{ settings.cart_drawer_footer_bg }};{% endif %}
+            {% if cd_text_a != 0 %}--color-text-main: {{ settings.cart_drawer_text }};{% endif %}
+            {% if cd_border_a != 0 %}--color-borders-main: {{ settings.cart_drawer_border }};{% endif %}
+          }
+          {% if cd_btnbg_a != 0 %}
+            #site-cart-sidebar .button--solid { background-color: {{ settings.cart_drawer_checkout_bg }}; border-color: {{ settings.cart_drawer_checkout_bg }}; }
+          {% endif %}
+          {% if cd_btntext_a != 0 %}
+            #site-cart-sidebar .button--solid,
+            #site-cart-sidebar .button--solid .button__text { color: {{ settings.cart_drawer_checkout_text }}; }
+            #site-cart-sidebar .button--solid path { fill: {{ settings.cart_drawer_checkout_text }}; }
+          {% endif %}
+        {%- endstyle -%}
+      {%- endif -%}
       <sidebar-drawer id="site-cart-sidebar" class="sidebar sidebar--right {% if cart.item_count == 0 %} cart-is-empty {% endif %}" tabindex="-1" role="dialog" aria-modal="true" data-cart-items="{{ cart.item_count }}" style="display:none" data-js-site-cart-sidebar>
         
         <div class="sidebar__header">

@@ -832,6 +832,51 @@
 			},
 			{
 				"type": "header",
+				"content": "Couleurs du tiroir panier"
+			},
+			{
+				"type": "paragraph",
+				"content": "Transparent = couleur du thème par défaut. Ces réglages ne touchent que le tiroir panier."
+			},
+			{
+				"type": "color",
+				"id": "cart_drawer_bg",
+				"label": "Fond du tiroir",
+				"default": "rgba(0,0,0,0)"
+			},
+			{
+				"type": "color",
+				"id": "cart_drawer_footer_bg",
+				"label": "Fond du bas (récapitulatif)",
+				"default": "rgba(0,0,0,0)"
+			},
+			{
+				"type": "color",
+				"id": "cart_drawer_text",
+				"label": "Texte",
+				"default": "rgba(0,0,0,0)"
+			},
+			{
+				"type": "color",
+				"id": "cart_drawer_border",
+				"label": "Lignes et bordures",
+				"default": "rgba(0,0,0,0)"
+			},
+			{
+				"type": "color",
+				"id": "cart_drawer_checkout_bg",
+				"label": "Boutons principaux — fond",
+				"info": "Bouton « Commander » et « Continuer mes achats ».",
+				"default": "rgba(0,0,0,0)"
+			},
+			{
+				"type": "color",
+				"id": "cart_drawer_checkout_text",
+				"label": "Boutons principaux — texte",
+				"default": "rgba(0,0,0,0)"
+			},
+			{
+				"type": "header",
 				"content": "t:notes-discounts.header"
 			},
 			{
