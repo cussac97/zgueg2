@@ -105,7 +105,7 @@
             "sidebar_menu_padding_vertical_mobile": 10,
             "sidebar_menu_list_padding_vertical": 40,
             "sidebar_menu_list_padding_vertical_mobile": 16,
-            "close_text": "Close Menu",
+            "close_text": "Fermer",
             "close_custom": false,
             "close_font": "josefin_sans_n4",
             "close_size": 12,
@@ -134,7 +134,7 @@
             "close_color": "#121212",
             "sidebar_menu_link_color": "#121212",
             "sidebar_menu_link_hover_color": "#121212",
-            "circle_color": "#121212",
+            "circle_color": "#0000C9",
             "sidebar_bottom_link_color": "#121212",
             "sidebar_bottom_link_hover_color": "#afafaf",
             "sidebar_bottom_border_color": "#e7e7e7"
