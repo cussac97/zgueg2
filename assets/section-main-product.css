@@ -1456,3 +1456,7 @@ html[dir=ltr] .product-quick-view__title {
 .add-to-cart__price:empty {
   margin-left: 0;
 }
+/* Le prix dans le bouton suit l'animation de survol « move » du libellé */
+.no-touchevents .button--move:hover .add-to-cart__price {
+  animation: move 350ms ease-in-out forwards;
+}
