@@ -17,7 +17,7 @@
         "95532ce8-d90b-4117-9996-ae0c49cd02eb": {
           "type": "content",
           "settings": {
-            "text": "Soldes d'été : -30% sur le pack Spray et Gel mousse + Livraison gratuite",
+            "text": "Soldes d'été : -30% sur le pack Spray + Gel mousse",
             "link": "",
             "open_newsletter": true,
             "target": true
@@ -134,7 +134,7 @@
             "close_color": "#121212",
             "sidebar_menu_link_color": "#121212",
             "sidebar_menu_link_hover_color": "#121212",
-            "circle_color": "#0000C9",
+            "circle_color": "#0000c9",
             "sidebar_bottom_link_color": "#121212",
             "sidebar_bottom_link_hover_color": "#afafaf",
             "sidebar_bottom_border_color": "#e7e7e7"
