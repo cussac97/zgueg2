@@ -1936,11 +1936,10 @@ For inquiries or permissions, contact daniel@section.store
                 </a>             
               {% when 'cart' %}
                 <a
+                  href="{{ routes.cart_url }}"
                   class="header-cart-{{ section.id }} header-cart-{{ block.id }} header-right-item-{{ section.id }}"
                   {% if settings.cart_action == 'overlay' and template != 'cart' %}
-                    data-js-sidebar-handle data-js-sidebar-handle-direction="right" aria-expanded="false" aria-controls="site-cart-sidebar" role="button"
-                  {% else %}
-                    href="{{ routes.cart_url }}"
+                    data-ss-cart-drawer aria-controls="site-cart-sidebar" role="button" aria-expanded="false"
                   {% endif %}
                 >
                   <span class="header-cart-icon-{{ section.id }}">
@@ -2276,6 +2275,33 @@ For inquiries or permissions, contact daniel@section.store
   })();
   {%- endif -%}
 </script>
+
+{%- comment -%}
+  Ouvre le tiroir panier quand le réglage Panier est sur « overlay ».
+  ss-header-9 n'instancie pas le custom element d'en-tête standard, donc on
+  relie nous-mêmes le clic au tiroir (#site-cart-sidebar) via son .show().
+  Le href reste un repli si le JS / le tiroir n'est pas dispo.
+{%- endcomment -%}
+{%- if settings.cart_action == 'overlay' and template != 'cart' -%}
+  <script>
+    (function () {
+      if (window.__ssCartDrawerBound) return;
+      window.__ssCartDrawerBound = true;
+      document.addEventListener('click', function (e) {
+        var el = e.target.closest ? e.target.closest('[data-ss-cart-drawer]') : null;
+        if (!el) return;
+        var drawer = document.getElementById('site-cart-sidebar');
+        if (drawer && typeof drawer.show === 'function') {
+          e.preventDefault();
+          el.setAttribute('aria-expanded', 'true');
+          drawer.classList.remove('sidebar--left', 'sidebar--right');
+          drawer.classList.add('sidebar--right');
+          drawer.show();
+        }
+      });
+    })();
+  </script>
+{%- endif -%}
 
 {% schema %}
   {
