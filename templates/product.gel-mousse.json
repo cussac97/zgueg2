@@ -912,10 +912,10 @@
         "row_dMdTM7": {
           "type": "row",
           "settings": {
-            "label": "Conçu pour la zone intime masculine",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Oui",
+            "label": "Note Yuka (composition)",
+            "value_brand": "100/100",
+            "value_1": "~75/100",
+            "value_2": "~70/100",
             "value_3": ""
           }
         },
