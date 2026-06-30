@@ -1,5 +1,11 @@
 .comparison-table-section {
   background: var(--ct-section-bg, transparent);
+  /* Confine tout débordement horizontal fantôme au niveau de la section
+     (le tableau défile déjà dans son propre .comparison-table__scroller).
+     `clip` n'établit pas de conteneur de défilement et n'affecte pas l'axe Y
+     ni le scroll interne du tableau — il empêche juste la page de scroller
+     horizontalement sur mobile. */
+  overflow-x: clip;
 }
 
 .comparison-table__scroller {

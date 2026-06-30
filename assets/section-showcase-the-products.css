@@ -2,6 +2,7 @@
   background: var(--sp-section-bg, transparent);
   padding-top: var(--sp-pt, 60px);
   padding-bottom: var(--sp-pb, 60px);
+  overflow-x: clip; /* évite tout débordement horizontal de la page sur mobile */
 }
 
 .showcase-products__grid {

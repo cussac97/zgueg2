@@ -2,6 +2,7 @@
   background: var(--phs-section-bg, transparent);
   padding-top: var(--phs-pt, 60px);
   padding-bottom: var(--phs-pb, 60px);
+  overflow-x: clip; /* évite tout débordement horizontal de la page sur mobile */
 }
 
 .ph-scale {
