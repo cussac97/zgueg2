@@ -1,0 +1,1046 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "enriched_hero_e4bhR9": {
+      "type": "enriched-hero",
+      "blocks": {
+        "heading_yHJyNM": {
+          "type": "heading",
+          "settings": {
+            "text": "Vos parties intimes méritent (aussi) d'être en bonne santé !",
+            "font_size": 50,
+            "font_size_mobile": 26,
+            "font_weight": "400",
+            "line_height": 120,
+            "letter_spacing": 0,
+            "text_transform": "none",
+            "text_align": "left",
+            "color": "rgba(0,0,0,0)",
+            "pos": "top left",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "max_width": 66,
+            "max_width_mobile": 74,
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "image_9mUziw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "link": "",
+            "width": 180,
+            "width_mobile": 90,
+            "opacity": 100,
+            "pos": "top right",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "divider_Fc93Rz": {
+          "type": "divider",
+          "settings": {
+            "length": 100,
+            "thickness": 1,
+            "color": "#ffffff",
+            "opacity": 100,
+            "pos": "bottom left",
+            "offset_x": 0,
+            "offset_y": 20,
+            "pos_mobile": "inherit",
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "text_zJRC4R": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Zgueg a été conçu pour compléter votre routine bien-être en prenant soin de votre zone intime. Les produits classiquent ne respectent pas les besoins nécessaires à l'hydratation, le pH et les nutriments de la partie intime masculine. C'est pour cela que Zgueg est né. </p>",
+            "font_size": 16,
+            "font_size_mobile": 14,
+            "font_weight": "400",
+            "line_height": 150,
+            "opacity": 100,
+            "text_align": "left",
+            "color": "rgba(0,0,0,0)",
+            "pos": "bottom left",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "max_width": 67,
+            "max_width_mobile": 90,
+            "hide_desktop": false,
+            "hide_mobile": false
+          }
+        },
+        "button_YhzCgM": {
+          "type": "button",
+          "settings": {
+            "label": "Découvrir",
+            "link": "shopify://collections/frontpage",
+            "open_in_new_window": false,
+            "button_style": "outline",
+            "pos": "bottom right",
+            "offset_x": 0,
+            "offset_y": 0,
+            "pos_mobile": "inherit",
+            "hide_desktop": false,
+            "hide_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_yHJyNM",
+        "image_9mUziw",
+        "divider_Fc93Rz",
+        "text_zJRC4R",
+        "button_YhzCgM"
+      ],
+      "name": "Enriched hero",
+      "settings": {
+        "width": "full",
+        "content_full_width": true,
+        "content_max_width": 1400,
+        "content_align": "center",
+        "content_padding_x_desktop": 64,
+        "content_padding_y_desktop": 64,
+        "content_padding_x_mobile": 24,
+        "content_padding_y_mobile": 28,
+        "content_padding_top_enable": true,
+        "content_padding_top_desktop": 120,
+        "content_padding_top_mobile": 72,
+        "desktop_height": "80vh",
+        "desktop_height_px": 640,
+        "mobile_height": "80vh",
+        "mobile_height_px": 520,
+        "min_height": 420,
+        "background_image": "shopify://shop_images/ChatGPT_Image_23_juin_2026_13_46_10.png",
+        "background_image_mobile": "shopify://shop_images/ChatGPT_Image_9_juin_2026_16_27_37.png",
+        "image_position": "right",
+        "background_color": "#000000",
+        "overlay_style": "solid",
+        "overlay_color": "#000000",
+        "overlay_opacity": 25,
+        "default_text_color": "#ffffff",
+        "rounded": false,
+        "border_radius": 16,
+        "remove_spacing": true
+      }
+    },
+    "customer_reviews_c89ViU": {
+      "type": "customer-reviews",
+      "blocks": {
+        "review_JnBAQ3": {
+          "type": "review",
+          "settings": {
+            "author": "Mary H.",
+            "verified": true,
+            "verified_label": "Verified Buyer",
+            "rating": 4,
+            "date": "May 22, 2026",
+            "product": "",
+            "text": "Love all the products, but this one didn't do as well. I think the 5 pant is bigger than the 5 diaper, IMO. We struggled with some leakage, but once I got them on my daughter right they were fine. My biggest issue was through the night. They are not nearly as absorbent as the diapers. Many mornings we woke up to accidents. I switched back to the originals.",
+            "helpful_up": 0,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloe",
+            "reply_date": "May 21, 2026",
+            "reply_text": ""
+          }
+        },
+        "review_dPmihX": {
+          "type": "review",
+          "settings": {
+            "author": "Chandana M.",
+            "verified": true,
+            "verified_label": "Verified Buyer",
+            "rating": 3,
+            "date": "May 22, 2026",
+            "product": "",
+            "text": "Like the product but the stick is too fragile. It comes off when I'm taking it off the package. I would have liked the sticking part design to be better.",
+            "helpful_up": 0,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloe",
+            "reply_date": "May 21, 2026",
+            "reply_text": ""
+          }
+        },
+        "review_WhmgKB": {
+          "type": "review",
+          "settings": {
+            "author": "Erin H.",
+            "verified": true,
+            "verified_label": "Verified Buyer",
+            "rating": 5,
+            "date": "May 21, 2026",
+            "product": "",
+            "text": "We have been loving it. It is so easy to change with the tabs on the side yet gives our 21 month old the practice she needs pulling them up and down for potty training.",
+            "helpful_up": 0,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloe",
+            "reply_date": "May 21, 2026",
+            "reply_text": "Thanks, Erin H.! We're thrilled the side tabs are making potty training smoother and giving her confident pull-up practice. Our mission is to make parents' lives easier."
+          }
+        }
+      },
+      "block_order": [
+        "review_JnBAQ3",
+        "review_dPmihX",
+        "review_WhmgKB"
+      ],
+      "disabled": true,
+      "name": "Customer Reviews",
+      "settings": {
+        "container_width": "large",
+        "show_pagination": true,
+        "per_page": 5,
+        "two_columns": true,
+        "left_width": 38,
+        "column_gap": 48,
+        "sticky_heading": true,
+        "sticky_offset": 100,
+        "meta_width": 28,
+        "review_spacing": 28,
+        "padding_top": 128,
+        "padding_bottom": 60,
+        "heading": "Notre bande de zguegs en parlent. (ils adorent)",
+        "heading_alignment": "left",
+        "heading_size": 56,
+        "heading_size_mobile": 34,
+        "heading_weight": "500",
+        "show_summary": true,
+        "summary_rating": 4.2,
+        "summary_count": "1762",
+        "summary_caption": "based on",
+        "summary_reviews_word": "reviews",
+        "summary_text_size": 13,
+        "show_rating_filter": true,
+        "rating_filter_label": "Rating",
+        "rating_filter_all": "All ratings",
+        "stars_word": "stars",
+        "show_product_filter": true,
+        "product_filter_label": "Product",
+        "product_filter_all": "All products",
+        "empty_text": "No reviews match your filters.",
+        "show_date": true,
+        "show_reply_date": true,
+        "clamp_lines": 4,
+        "read_more_label": "Read More",
+        "read_less_label": "Read Less",
+        "show_helpful": true,
+        "helpful_label": "Was This Review Helpful?",
+        "section_bg": "#ffffff",
+        "text_color": "#1a1a1a",
+        "muted_color": "#6b6b6b",
+        "divider_color": "#e6e6e6",
+        "star_color": "#1a1a1a",
+        "star_empty_color": "#c9c9c9",
+        "field_bg": "#ffffff",
+        "field_border": "#d9d9d9",
+        "field_radius": 8
+      }
+    },
+    "certifications_DDdq8b": {
+      "type": "certifications",
+      "blocks": {
+        "certification_AmP3Wg": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/962a2632bae52161517f717aff14bea2d932821b-83x83.avif",
+            "label": "Sans ingrédient controversé\n\nSans alcool · Sans parabènes · Sans sulfates · Sans perturbateurs endocriniens · Sans phénoxyéthanol",
+            "link": ""
+          }
+        },
+        "certification_MXBLkR": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/a0882f0c3ba2974c0a77b1bdb5fcd4fb1941a01d-80x80.avif",
+            "label": "Soutenu par la science\n\nNos formules ont été développées par des docteurs en pharmacie et cosmétologie.",
+            "link": ""
+          }
+        },
+        "certification_YJRYkt": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/364411ef4d5d0272c1b3e846515b1534269d72f5-83x83.avif",
+            "label": "Sans parfum\n\nLe choix du naturel : car on croit profondément que l'odeur d'une peau propre est la meilleure des odeurs.",
+            "link": ""
+          }
+        },
+        "certification_GtJLgp": {
+          "type": "certification",
+          "settings": {
+            "icon": "shopify://shop_images/1499c3f4f728e1c3fe812506b9332ea9c5cfe1d9-80x80.avif",
+            "label": "100/100 sur Yuka\n\nC'est la note de nos produits sur la plateforme réputée Yuka !",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "certification_AmP3Wg",
+        "certification_MXBLkR",
+        "certification_YJRYkt",
+        "certification_GtJLgp"
+      ],
+      "name": "Certifications",
+      "settings": {
+        "container_width": "large",
+        "two_columns": true,
+        "left_width": 47,
+        "column_gap": 48,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "section_bg": "#ffffff",
+        "heading": "100% sain pour tous les zguegs.",
+        "text_color": "#1a1a1a",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_alignment": "left",
+        "heading_alignment_mobile": "center",
+        "body": "<p>Zgueg a été créé par des hommes, pour les hommes. Car on sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt pour finir un rendez-vous comme il se doit. C'est pour cela que nous avons réfléchit pendant 2 ans au produit ultime, pour votre hygiène intime.</p>",
+        "body_color": "#1a1a1a",
+        "body_size": 16,
+        "body_max_width": 640,
+        "body_alignment": "left",
+        "body_alignment_mobile": "center",
+        "grid_style": "classic",
+        "item_alignment": "center",
+        "label_font": "theme",
+        "card_bg": "#ffffff",
+        "line_color": "#e6e6e6",
+        "border_radius": 0,
+        "cell_padding": 28,
+        "icons_per_row": 4,
+        "icons_per_row_mobile": 2,
+        "icon_size": 56,
+        "icon_gap": 24,
+        "row_gap": 28,
+        "label_gap": 14,
+        "icons_margin_top": 40,
+        "icon_recolor": false,
+        "icon_color": "#0000c9",
+        "label_color": "#1a1a1a",
+        "label_size": 13,
+        "label_weight": "400",
+        "label_transform": "none",
+        "show_button": false,
+        "button_label": "Lire nos analyses",
+        "button_link": "",
+        "button_bg": "#0000c9",
+        "button_text_color": "#ffffff",
+        "button_radius": 40,
+        "button_padding_v": 15,
+        "button_padding_h": 40,
+        "button_font_size": 15,
+        "button_weight": "700",
+        "button_transform": "none",
+        "button_alignment": "center",
+        "button_alignment_mobile": "center",
+        "button_full_width_mobile": false
+      }
+    },
+    "showcase_the_products_NFrmhk": {
+      "type": "showcase-the-products",
+      "blocks": {
+        "product_rhTXC8": {
+          "type": "product",
+          "settings": {
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "eyebrow": "Best-seller",
+            "name": "Spray protecteur après-douche",
+            "tagline": "Soin fraîcheur + 16h d'efficacité.",
+            "details": "pH | 5,5\nFormat | 100 ml\nNote Yuka | 100/100\nSans alcool",
+            "price_override": "",
+            "badge": "Le plus vendu",
+            "button_label": "Acheter",
+            "button_url": "",
+            "highlight": true
+          }
+        },
+        "product_zwtd9g": {
+          "type": "product",
+          "settings": {
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "eyebrow": "Best-seller",
+            "name": "Gel intime quotidien",
+            "tagline": "Nettoyage quotidien en profondeur.",
+            "details": "pH | 5,5\nFormat | 200 ml\nNote Yuka | 100/100\nSans savon",
+            "price_override": "",
+            "badge": "",
+            "button_label": "Acheter",
+            "button_url": "",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "product_rhTXC8",
+        "product_zwtd9g"
+      ],
+      "name": "Showcase produits",
+      "settings": {
+        "heading": "Nos best-sellers",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "footnote": "",
+        "value_font": "showcase-products--mono",
+        "section_background": "",
+        "card_background": "#ffffff",
+        "media_background": "#f5f5f3",
+        "text_color": "#1a1a1a",
+        "muted_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#0000c9",
+        "highlight_text": "#0000c9",
+        "button_solid_bg": "#0000c9",
+        "button_solid_text": "rgba(0,0,0,0)",
+        "button_outline_color": "rgba(0,0,0,0)",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "card_gap": 24,
+        "card_padding": 28,
+        "media_ratio": "4 / 5",
+        "name_size": 22,
+        "tagline_size": 15,
+        "detail_size": 13,
+        "price_size": 18,
+        "card_min_width": 320,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "seo_h_tag": "h2"
+      }
+    },
+    "rich_text_3E9aKj": {
+      "type": "rich-text",
+      "blocks": {
+        "title_ih9K6A": {
+          "type": "title",
+          "settings": {
+            "title": "Le spray protecteur après-douche",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_pzzdk3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Refreshed® a été pensé pour finir la routine intime parfaitement. Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® Fait durer votre hygiène dans le temps.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_FpdwFg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Je shoppe refreshed®",
+            "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
+            "open_in_new_window": false,
+            "button_style": "solid"
+          }
+        },
+        "text_N8H9Y7": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "title_ih9K6A",
+        "text_pzzdk3",
+        "button_FpdwFg",
+        "text_N8H9Y7"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_24_juin_2026_16_29_01.png",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "regular",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": false,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": false,
+        "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "ss_video_image_text_3_JLCMQb": {
+      "type": "ss-video-image-text-3",
+      "blocks": {
+        "item_ByF4H7": {
+          "type": "item",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/caleconall.png",
+            "video_url": "",
+            "product_image": "shopify://shop_images/zgueglanctrans.png",
+            "product_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_ByF4H7"
+      ],
+      "disabled": true,
+      "name": "SS - Video & Image Text #3",
+      "settings": {
+        "body_gap": 70,
+        "body_gap_mobile": 40,
+        "content_horizontal_align": "start",
+        "content_horizontal_align_mobile": "start",
+        "sub_heading": "<h3>Le gel douche</h3>",
+        "sub_heading_custom": true,
+        "sub_heading_font": "mono",
+        "sub_heading_size": 16,
+        "sub_heading_size_mobile": 14,
+        "sub_heading_height": 130,
+        "heading": "<h2>Propre, toute la journée.</h2>",
+        "heading_custom": true,
+        "heading_font": "inter_n4",
+        "heading_size": 80,
+        "heading_size_mobile": 48,
+        "heading_height": 130,
+        "heading_mt": 16,
+        "heading_mt_mobile": 12,
+        "text": "<p>Pair text with an image or a video to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.</p>",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 18,
+        "text_size_mobile": 16,
+        "text_height": 150,
+        "text_mt": 48,
+        "text_mt_mobile": 16,
+        "image_radius": 40,
+        "image_radius_mobile": 24,
+        "image_border_thickness": 0,
+        "image_mt": 48,
+        "image_mt_mobile": 100,
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "portrait",
+        "image_horizontal_align": "right",
+        "media_position": "right",
+        "media_position_mobile": "bottom",
+        "media_radius": 40,
+        "media_radius_mobile": 24,
+        "media_border_thickness": 0,
+        "media_ratio": "portrait",
+        "media_ratio_mobile": "portrait",
+        "use_action": true,
+        "action_size": 40,
+        "action_size_mobile": 40,
+        "thumbs_size": 56,
+        "thumbs_size_mobile": 60,
+        "thumbs_border_thickness": 3,
+        "sub_heading_color": "#000000",
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "image_border_color": "#000000",
+        "media_border_color": "#000000",
+        "action_bg_color": "#ffffff",
+        "action_arrow_color": "#000000",
+        "thumbs_border_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 2,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "featured_collection_nUjFKx": {
+      "type": "featured-collection",
+      "blocks": {
+        "price_7tWgMP": {
+          "type": "price",
+          "settings": {}
+        },
+        "title_HgXNPM": {
+          "type": "title",
+          "settings": {}
+        },
+        "description_Fba3F7": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "excerpt_limit": 15,
+            "show_link": true
+          }
+        },
+        "product_link_erqhMA": {
+          "type": "product_link",
+          "settings": {
+            "button_label": "Découvrir"
+          }
+        },
+        "quick_buy_RAmHyd": {
+          "type": "quick_buy",
+          "disabled": true,
+          "settings": {
+            "type": "inline",
+            "show_only_available": false,
+            "show_price": true,
+            "variant_default": false,
+            "unavailable_variants": "hide"
+          }
+        }
+      },
+      "block_order": [
+        "price_7tWgMP",
+        "title_HgXNPM",
+        "description_Fba3F7",
+        "product_link_erqhMA",
+        "quick_buy_RAmHyd"
+      ],
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "section_heading_size": "text-size--large",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "show_view_all": true,
+        "layout": "grid-2 grid-lap-2",
+        "layout_mobile": "grid-palm-2",
+        "card_alignment": "center",
+        "style": "grid",
+        "products_number": 2,
+        "collection": "frontpage",
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "rich_text_EcNqNq": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9yxCzV": {
+          "type": "title",
+          "settings": {
+            "title": "Le gel moussant quotidien",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_Vz8W6y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>cleaned® nettoie en profondeur avec des tensioactifs d'origine végétale, sans détruire le microbiome naturel qui protège ta zone intime. Les ferments probiotiques font le reste. Un gel douche classique n'a aucune idée de ce qu'il fait là en bas. cleaned® si.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_dXzPWN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Je shoppe cleaned®",
+            "link": "shopify://products/cleaned-®-gel-mousse-nettoyant-quotidien",
+            "open_in_new_window": false,
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "title_9yxCzV",
+        "text_Vz8W6y",
+        "button_dXzPWN"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_11_20_40.png",
+        "video_controls": false,
+        "image_position": "left",
+        "height": "regular",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 320,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": false,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": false,
+        "gutter_decrease": true,
+        "remove_margin": false,
+        "remove_bottom_margin": false
+      }
+    },
+    "rich_text_UKfy6N": {
+      "type": "rich-text",
+      "blocks": {
+        "title_Uhdr6e": {
+          "type": "title",
+          "settings": {
+            "title": "L'histoire de deux 🍆 qui ont créé Zgueg®",
+            "title_size": "heading-size--small",
+            "title_weight": "400",
+            "title_size_custom": 44,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "title_Uhdr6e"
+      ],
+      "disabled": true,
+      "name": "t:sections-categories.presets.heading_text",
+      "settings": {
+        "video_controls": false,
+        "image_position": "top no-image",
+        "height": "small",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 36,
+        "color_background_main": "#f7f3ec",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 14,
+        "color_hide_borders": true,
+        "gutter_decrease": true,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "rich_text_9XNcQB": {
+      "type": "rich-text",
+      "blocks": {
+        "title_x7jGrL": {
+          "type": "title",
+          "settings": {
+            "title": "L'histoire de deux 🍆 qui ont créé Zgueg®",
+            "title_size": "heading-size--small",
+            "title_weight": "500",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_UYMML3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Hello ! Nous, c’est Ben et Julien </strong>👋</p><p>Deux amis de longue date.</p><p>Un soir, autour d’un verre, on s’est demandé comment arriver à un date avec cette vraie confiance d’être frais, propre, irréprochable jusque dans l’intime.</p><p>On s’est partagé nos astuces. Puis on a compris qu’aucune solution n’était vraiment pensée pour les hommes.</p><p>Alors pendant plus de deux ans, avec des pharmaciens et cosmétologues, on a travaillé sur une formule sérieuse, clean et efficace.</p><p>Parce que l’intime masculin méritait enfin mieux qu’un tabou.</p><p><strong>Zgueg® est né comme ça : d’une amitié, d’une conversation honnête, et de l’envie de créer le produit qu’on aurait aimé avoir.</strong></p>",
+            "text_size": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "title_x7jGrL",
+        "text_UYMML3"
+      ],
+      "disabled": true,
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/benetjulien.png",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "regular",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "top",
+        "overlay_image_width": 320,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-left",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "#f7f3ec",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "comparison_table_rcciR8": {
+      "type": "comparison-table",
+      "blocks": {
+        "row_JzWMpf": {
+          "type": "row",
+          "settings": {
+            "label": "Surface utile* (plus grand = mieux)",
+            "value_brand": "60 cm²",
+            "value_1": "49 cm²",
+            "value_2": "58 cm²",
+            "value_3": ""
+          }
+        },
+        "row_pi6i66": {
+          "type": "row",
+          "settings": {
+            "label": "Enrichi en actifs naturels",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_kbQbwz": {
+          "type": "row",
+          "settings": {
+            "label": "Densité de la formule* (plus élevée = mieux)",
+            "value_brand": "78 g/m²",
+            "value_1": "52 g/m²",
+            "value_2": "59 g/m²",
+            "value_3": ""
+          }
+        },
+        "row_zKEtDC": {
+          "type": "row",
+          "settings": {
+            "label": "Testé dermatologiquement",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_KQapB7": {
+          "type": "row",
+          "settings": {
+            "label": "Fabriqué en France",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_MmMJ7C": {
+          "type": "row",
+          "settings": {
+            "label": "Sans parfum de synthèse",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Oui",
+            "value_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_JzWMpf",
+        "row_pi6i66",
+        "row_kbQbwz",
+        "row_zKEtDC",
+        "row_KQapB7",
+        "row_MmMJ7C"
+      ],
+      "disabled": true,
+      "name": "Tableau comparatif",
+      "settings": {
+        "heading": "Votre zgueg mérite bien mieux que votre gel douche 3 en 1.",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "brand_logo": "shopify://shop_images/zgueg.svg",
+        "brand_logo_width": 120,
+        "brand_name": "Votre marque",
+        "brand_tagline": "Spray et Gel intime",
+        "competitor_1": "Gel douche classique",
+        "competitor_2": "Autre gel intime",
+        "competitor_3": "",
+        "yes_no_icons": true,
+        "value_font": "comparison-table--mono",
+        "value_alignment": "center",
+        "footnote": "<p>*Basé sur les sites, produits et emballages des marques concurrentes au moment de la publication.</p>",
+        "section_background": "",
+        "table_background": "#ffffff",
+        "text_color": "#1a1a1a",
+        "value_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#2545d3",
+        "highlight_text": "#2545d3",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "cell_padding_y": 40,
+        "cell_padding_x": 24,
+        "first_col_width": 30,
+        "label_size": 16,
+        "header_size": 16,
+        "value_size": 15,
+        "footnote_size": 13,
+        "sticky_first_column": true,
+        "mobile_col_width": 140,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "ph_scale_pjWhrH": {
+      "type": "ph-scale",
+      "blocks": {
+        "point_8GjKdB": {
+          "type": "point",
+          "settings": {
+            "label": "zgueg",
+            "image": "shopify://shop_images/zgueg.svg",
+            "logo_width": 90,
+            "ph_value": "5,5",
+            "highlight": true
+          }
+        },
+        "point_r7JMxX": {
+          "type": "point",
+          "settings": {
+            "label": "Gel douche classique",
+            "logo_width": 110,
+            "ph_value": "8,5",
+            "highlight": false
+          }
+        },
+        "point_gWAdyQ": {
+          "type": "point",
+          "settings": {
+            "label": "Autre gel intime",
+            "logo_width": 110,
+            "ph_value": "6,5",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "point_8GjKdB",
+        "point_r7JMxX",
+        "point_gWAdyQ"
+      ],
+      "disabled": true,
+      "name": "Échelle de pH",
+      "settings": {
+        "heading": "Le pH change tout.",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "ph_min": 0,
+        "ph_max": 14,
+        "show_axis": true,
+        "axis_label_left": "Plus acide",
+        "axis_label_right": "Plus basique",
+        "show_neutral": true,
+        "show_ideal": true,
+        "ideal_min": "5",
+        "ideal_max": "6",
+        "ideal_label": "Zone idéale de la peau",
+        "value_font": "ph-scale--mono",
+        "footnote": "<p>L'équilibre naturel de la peau intime se situe autour de pH 5,5. Un produit au pH proche respecte cet équilibre ; un pH plus élevé l'agresse.</p>",
+        "section_background": "",
+        "table_background": "#ffffff",
+        "text_color": "#1a1a1a",
+        "value_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "track_color": "#d9d9d9",
+        "ideal_color": "#e3e9fb",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#2545d3",
+        "highlight_text": "#2545d3",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "marker_size": 14,
+        "row_padding_y": 28,
+        "row_padding_x": 24,
+        "first_col_width": 30,
+        "label_size": 16,
+        "value_size": 15,
+        "axis_size": 13,
+        "footnote_size": 13,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "seo_h_tag": "h2"
+      }
+    }
+  },
+  "order": [
+    "enriched_hero_e4bhR9",
+    "customer_reviews_c89ViU",
+    "certifications_DDdq8b",
+    "showcase_the_products_NFrmhk",
+    "rich_text_3E9aKj",
+    "ss_video_image_text_3_JLCMQb",
+    "featured_collection_nUjFKx",
+    "rich_text_EcNqNq",
+    "rich_text_UKfy6N",
+    "rich_text_9XNcQB",
+    "comparison_table_rcciR8",
+    "ph_scale_pjWhrH"
+  ]
+}

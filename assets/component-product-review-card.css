@@ -1,0 +1,137 @@
+/*
+ * Carte avis client (bloc review_card) affichée sous l'image produit.
+ * Même DA que les blocs/sections maison : carte bordée, fond blanc,
+ * accent de marque, angles réglables. Tout est piloté par variables CSS
+ * injectées en inline depuis les réglages du bloc.
+ */
+
+.prc {
+  margin-top: var(--prc-mt, 16px);
+  padding: var(--prc-pad, 18px);
+  background: var(--prc-bg, #ffffff);
+  border: var(--prc-bw, 1px) solid var(--prc-border, #d1e3fb);
+  border-radius: var(--prc-radius, 0px);
+  color: var(--prc-text, #1a1a1a);
+}
+
+.prc__eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--prc-muted, #4f4f4f);
+}
+
+.prc__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+/* Étoiles — couche pleine clippée à la largeur du score */
+.prc__stars {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  flex: 0 0 auto;
+}
+.prc__stars-track,
+.prc__stars-fill {
+  display: flex;
+  gap: 2px;
+}
+.prc__stars-track {
+  color: var(--prc-star-empty, #d1e3fb);
+}
+.prc__stars-fill {
+  position: absolute;
+  inset: 0;
+  width: var(--prc-pct, 100%);
+  overflow: hidden;
+  color: var(--prc-star, #0000c9);
+}
+.prc__star-icon {
+  width: var(--prc-star-size, 16px);
+  height: var(--prc-star-size, 16px);
+  flex: 0 0 auto;
+}
+
+.prc__date {
+  font-size: var(--prc-date-size, 13px);
+  color: var(--prc-muted, #4f4f4f);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.prc__title {
+  margin: 0 0 6px;
+  font-size: var(--prc-title-size, 16px);
+  font-weight: var(--font-weight-body-primary-bold, 700);
+  line-height: 1.25;
+  color: var(--prc-text, #1a1a1a);
+}
+
+.prc__body {
+  margin: 0;
+  font-size: var(--prc-body-size, 14px);
+  line-height: 1.55;
+  color: var(--prc-text, #1a1a1a);
+}
+.prc__body > *:first-child { margin-top: 0; }
+.prc__body > *:last-child { margin-bottom: 0; }
+
+.prc__foot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.prc__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--prc-accent, #0000c9);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.prc__name {
+  font-size: var(--prc-name-size, 14px);
+  font-weight: 600;
+  color: var(--prc-text, #1a1a1a);
+}
+
+.prc__verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  font-size: var(--prc-date-size, 13px);
+  line-height: 1;
+  color: var(--prc-accent, #0000c9);
+  white-space: nowrap;
+}
+.prc__verified-icon {
+  width: 1.05em;
+  height: 1.05em;
+  flex: 0 0 auto;
+  color: var(--prc-accent, #0000c9);
+}
+
+/* Police monospace optionnelle pour les méta (date + acheteur vérifié) */
+.prc--mono-meta .prc__date,
+.prc--mono-meta .prc__verified {
+  font-family: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+  letter-spacing: 0.02em;
+}

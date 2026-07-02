@@ -1,0 +1,659 @@
+{{ 'section-ph-scale.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+  assign ph_min = s.ph_min
+  assign ph_max = s.ph_max
+  assign range_f = ph_max | minus: ph_min | times: 1.0
+  if range_f <= 0
+    assign range_f = 1
+  endif
+
+  assign neutral_in_range = false
+  if s.show_neutral and ph_min <= 7 and ph_max >= 7
+    assign neutral_in_range = true
+    assign npos = 7 | minus: ph_min | divided_by: range_f | round: 4
+  endif
+
+  assign show_ideal = s.show_ideal
+  if show_ideal
+    assign imin = s.ideal_min | replace: ',', '.' | times: 1.0
+    assign imax = s.ideal_max | replace: ',', '.' | times: 1.0
+    assign istart = imin | minus: ph_min | divided_by: range_f | round: 4
+    assign iend = imax | minus: ph_min | divided_by: range_f | round: 4
+    if istart < 0
+      assign istart = 0
+    endif
+    if iend > 1
+      assign iend = 1
+    endif
+    assign ideal_mid = istart | plus: iend | divided_by: 2.0 | round: 4
+    if iend <= istart
+      assign show_ideal = false
+    endif
+  endif
+
+  assign scale_classes = 'ph-scale ' | append: s.value_font
+-%}
+
+<div id="section-{{ section.id }}" class="ph-scale-section">
+  {%- style -%}
+    #section-{{ section.id }} {
+      {%- if s.section_background != blank %}
+      --phs-section-bg: {{ s.section_background }};
+      {%- endif %}
+      --phs-table-bg: {{ s.table_background }};
+      --phs-text: {{ s.text_color }};
+      --phs-value-color: {{ s.value_color }};
+      --phs-line: {{ s.line_color }};
+      --phs-track: {{ s.track_color }};
+      --phs-ideal: {{ s.ideal_color }};
+      --phs-hl-bg: {{ s.highlight_background }};
+      --phs-hl-border: {{ s.highlight_border }};
+      --phs-hl-color: {{ s.highlight_text }};
+      --phs-hl-bw: {{ s.highlight_border_width }}px;
+      --phs-radius: {{ s.border_radius }}px;
+      --phs-pad-y: {{ s.row_padding_y }}px;
+      --phs-pad-x: {{ s.row_padding_x }}px;
+      --phs-first-col: {{ s.first_col_width }}%;
+      --phs-marker: {{ s.marker_size }}px;
+      --phs-label-size: {{ s.label_size }}px;
+      --phs-value-size: {{ s.value_size }}px;
+      --phs-axis-size: {{ s.axis_size }}px;
+      --phs-footnote-size: {{ s.footnote_size }}px;
+      --phs-pt: {{ s.padding_top }}px;
+      --phs-pb: {{ s.padding_bottom }}px;
+    }
+
+    #section-{{ section.id }} .section-heading__title {
+      font-family: var(--font-stack-headings-primary);
+      font-weight: {{ s.heading_weight }};
+      font-size: {{ s.heading_size_mobile }}px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      {%- if s.heading_color != blank %}
+        {%- assign hc_alpha = s.heading_color | color_extract: 'alpha' -%}
+        {%- if hc_alpha != 0 %}
+      color: {{ s.heading_color }};
+        {%- endif %}
+      {%- endif %}
+    }
+
+    @media screen and (min-width: 750px) {
+      #section-{{ section.id }} .section-heading__title {
+        font-size: {{ s.heading_size }}px;
+      }
+    }
+  {%- endstyle -%}
+
+  <div class="container--large remove-empty-space">
+    {%- render 'section-heading',
+      heading: s.heading,
+      subheading: s.subheading,
+      section_layout: s.section_heading_layout,
+      button: s.cta_label,
+      button_label: s.cta_label,
+      link: s.cta_url,
+      seo_h_tag: s.seo_h_tag
+    -%}
+
+    <div class="{{ scale_classes }}">
+      {%- if s.show_axis -%}
+        <div class="ph-scale__axis-row">
+          <div class="ph-scale__axis-spacer" aria-hidden="true"></div>
+          <div class="ph-scale__axis">
+            {%- if s.axis_label_left != blank -%}
+              <span class="ph-scale__axis-word ph-scale__axis-word--left">{{ s.axis_label_left | escape }}</span>
+            {%- endif -%}
+            {%- if show_ideal and s.ideal_label != blank -%}
+              <span class="ph-scale__axis-ideal" style="--p: {{ ideal_mid }};">{{ s.ideal_label | escape }}</span>
+            {%- endif -%}
+            {%- if s.axis_label_right != blank -%}
+              <span class="ph-scale__axis-word ph-scale__axis-word--right">{{ s.axis_label_right | escape }}</span>
+            {%- endif -%}
+            <span class="ph-scale__axis-num ph-scale__axis-num--min">{{ ph_min }}</span>
+            {%- if neutral_in_range -%}
+              <span class="ph-scale__axis-num ph-scale__axis-num--neutral" style="--n: {{ npos }};">7</span>
+            {%- endif -%}
+            <span class="ph-scale__axis-num ph-scale__axis-num--max">{{ ph_max }}</span>
+          </div>
+        </div>
+      {%- endif -%}
+
+      <div class="ph-scale__rows">
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign num = block.settings.ph_value | replace: ',', '.' | times: 1.0
+            assign pos = num | minus: ph_min | divided_by: range_f | round: 4
+            if pos < 0
+              assign pos = 0
+            endif
+            if pos > 1
+              assign pos = 1
+            endif
+            assign row_class = 'ph-scale__row'
+            if block.settings.highlight
+              assign row_class = row_class | append: ' is-brand'
+            endif
+          -%}
+          <div class="{{ row_class }}" style="--pos: {{ pos }};{% if block.settings.image != blank %} --phs-logo-w: {{ block.settings.logo_width }}px;{% endif %}" {{ block.shopify_attributes }}>
+            <div class="ph-scale__name">
+              {%- if block.settings.image != blank -%}
+                {%- assign logo_w2x = block.settings.logo_width | times: 2 -%}
+                {{ block.settings.image | image_url: width: logo_w2x | image_tag: class: 'ph-scale__logo', loading: 'lazy', alt: block.settings.label }}
+              {%- else -%}
+                {{ block.settings.label | escape }}
+              {%- endif -%}
+            </div>
+            <div class="ph-scale__track">
+              {%- if show_ideal -%}
+                <span class="ph-scale__ideal" style="--s: {{ istart }}; --e: {{ iend }};" aria-hidden="true"></span>
+              {%- endif -%}
+              <span class="ph-scale__baseline" aria-hidden="true"></span>
+              {%- if neutral_in_range -%}
+                <span class="ph-scale__neutral" aria-hidden="true"></span>
+              {%- endif -%}
+              <span class="ph-scale__marker">
+                <span class="ph-scale__value">{{ block.settings.ph_value | escape }}</span>
+                <span class="ph-scale__connector" aria-hidden="true"></span>
+                <span class="ph-scale__dot" aria-hidden="true"></span>
+              </span>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      {%- if s.footnote != blank -%}
+        <div class="ph-scale__footnote">{{ s.footnote }}</div>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- render 'section-footer',
+    button: s.cta_label,
+    button_label: s.cta_label,
+    link: s.cta_url
+  -%}
+</div>
+
+{% schema %}
+{
+  "name": "Échelle de pH",
+  "max_blocks": 8,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Titre de section"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "Le pH change tout."
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Sous-titre"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Taille du titre",
+      "min": 24,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Taille du titre sur mobile",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Graisse du titre",
+      "options": [
+        { "value": "300", "label": "Light (300)" },
+        { "value": "400", "label": "Normal (400)" },
+        { "value": "500", "label": "Medium (500)" },
+        { "value": "600", "label": "Semi-bold (600)" },
+        { "value": "700", "label": "Bold (700)" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Couleur du titre",
+      "info": "Transparent = couleur du thème.",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "select",
+      "id": "section_heading_layout",
+      "label": "Disposition du titre",
+      "options": [
+        { "value": "section-heading--left section-heading--one-row", "label": "À gauche, une ligne" },
+        { "value": "section-heading--left section-heading--two-rows", "label": "À gauche, deux lignes" },
+        { "value": "section-heading--center section-heading--two-rows", "label": "Centré" }
+      ],
+      "default": "section-heading--left section-heading--one-row"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Texte du bouton"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "visible_if": "{{ section.settings.cta_label != blank }}",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "header",
+      "content": "Échelle de pH"
+    },
+    {
+      "type": "range",
+      "id": "ph_min",
+      "label": "pH minimum de l'échelle",
+      "min": 0,
+      "max": 7,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "ph_max",
+      "label": "pH maximum de l'échelle",
+      "min": 7,
+      "max": 14,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "checkbox",
+      "id": "show_axis",
+      "label": "Afficher l'axe (graduations et libellés)",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "axis_label_left",
+      "label": "Libellé à gauche de l'axe",
+      "default": "Plus acide",
+      "visible_if": "{{ section.settings.show_axis }}"
+    },
+    {
+      "type": "text",
+      "id": "axis_label_right",
+      "label": "Libellé à droite de l'axe",
+      "default": "Plus basique",
+      "visible_if": "{{ section.settings.show_axis }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_neutral",
+      "label": "Marquer le point neutre (7)",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Zone idéale"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_ideal",
+      "label": "Afficher la zone idéale",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "ideal_min",
+      "label": "Début de la zone idéale",
+      "info": "Valeur de pH, ex : 3,8",
+      "default": "3.8",
+      "visible_if": "{{ section.settings.show_ideal }}"
+    },
+    {
+      "type": "text",
+      "id": "ideal_max",
+      "label": "Fin de la zone idéale",
+      "info": "Valeur de pH, ex : 5,5",
+      "default": "5.5",
+      "visible_if": "{{ section.settings.show_ideal }}"
+    },
+    {
+      "type": "text",
+      "id": "ideal_label",
+      "label": "Libellé de la zone idéale",
+      "default": "Zone idéale de la peau",
+      "visible_if": "{{ section.settings.show_ideal }}"
+    },
+    {
+      "type": "header",
+      "content": "Valeurs"
+    },
+    {
+      "type": "select",
+      "id": "value_font",
+      "label": "Police des valeurs",
+      "options": [
+        { "value": "ph-scale--mono", "label": "Monospace (fidèle au design)" },
+        { "value": "ph-scale--text", "label": "Police du thème" }
+      ],
+      "default": "ph-scale--mono"
+    },
+    {
+      "type": "header",
+      "content": "Note de bas de tableau"
+    },
+    {
+      "type": "richtext",
+      "id": "footnote",
+      "label": "Note",
+      "default": "<p>L'équilibre naturel de la peau intime se situe autour de pH 5,5. Un produit au pH proche respecte cet équilibre ; un pH plus élevé l'agresse.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color_background",
+      "id": "section_background",
+      "label": "Fond de la section"
+    },
+    {
+      "type": "color",
+      "id": "table_background",
+      "label": "Fond du tableau",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Texte",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "color",
+      "id": "value_color",
+      "label": "Valeurs et points des concurrents",
+      "default": "#4F4F4F"
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "Lignes du tableau",
+      "default": "#E6E6E6"
+    },
+    {
+      "type": "color",
+      "id": "track_color",
+      "label": "Réglette de l'échelle",
+      "default": "#D9D9D9"
+    },
+    {
+      "type": "color",
+      "id": "ideal_color",
+      "label": "Bande de la zone idéale",
+      "default": "#E3E9FB"
+    },
+    {
+      "type": "color",
+      "id": "highlight_background",
+      "label": "Fond de la ligne mise en avant",
+      "default": "#E8EDFB"
+    },
+    {
+      "type": "color",
+      "id": "highlight_border",
+      "label": "Bordure et point de la ligne mise en avant",
+      "default": "#2545D3"
+    },
+    {
+      "type": "color",
+      "id": "highlight_text",
+      "label": "Texte de la ligne mise en avant",
+      "default": "#2545D3"
+    },
+    {
+      "type": "header",
+      "content": "Style du tableau"
+    },
+    {
+      "type": "range",
+      "id": "highlight_border_width",
+      "label": "Épaisseur de la bordure mise en avant",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Arrondi des angles",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "marker_size",
+      "label": "Taille des points",
+      "min": 8,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "row_padding_y",
+      "label": "Hauteur des lignes",
+      "min": 12,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "row_padding_x",
+      "label": "Espace horizontal des cellules",
+      "min": 8,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "first_col_width",
+      "label": "Largeur de la colonne des produits",
+      "min": 20,
+      "max": 45,
+      "step": 1,
+      "unit": "%",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Typographie"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "label": "Taille des noms de produits",
+      "min": 12,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "value_size",
+      "label": "Taille des valeurs pH",
+      "min": 12,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "axis_size",
+      "label": "Taille des libellés d'axe",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "footnote_size",
+      "label": "Taille de la note",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "header",
+      "content": "Espacement"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Espace en haut",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Espace en bas",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "SEO"
+    },
+    {
+      "type": "select",
+      "id": "seo_h_tag",
+      "label": "Balise du titre",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "span", "label": "span" }
+      ],
+      "default": "h2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Produit",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Nom du produit",
+          "default": "Produit"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo (optionnel)",
+          "info": "Remplace le nom du produit par un logo."
+        },
+        {
+          "type": "range",
+          "id": "logo_width",
+          "label": "Largeur du logo",
+          "min": 40,
+          "max": 200,
+          "step": 5,
+          "unit": "px",
+          "default": 110,
+          "visible_if": "{{ block.settings.image != blank }}"
+        },
+        {
+          "type": "text",
+          "id": "ph_value",
+          "label": "Valeur de pH",
+          "info": "Entrez seulement le nombre, ex : 5,5",
+          "default": "7"
+        },
+        {
+          "type": "checkbox",
+          "id": "highlight",
+          "label": "Mettre en avant (votre produit)",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Échelle de pH",
+      "category": "t:sections-categories.storytelling",
+      "blocks": [
+        {
+          "type": "point",
+          "settings": {
+            "label": "zgueg",
+            "ph_value": "5,5",
+            "highlight": true
+          }
+        },
+        {
+          "type": "point",
+          "settings": {
+            "label": "Gel douche classique",
+            "ph_value": "8,5",
+            "highlight": false
+          }
+        },
+        {
+          "type": "point",
+          "settings": {
+            "label": "Autre gel intime",
+            "ph_value": "6,5",
+            "highlight": false
+          }
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header"]
+  }
+}
+{% endschema %}

@@ -1,0 +1,818 @@
+{%- liquid
+  assign s = section.settings
+  assign uid = section.id
+  assign recolor = s.icon_recolor
+
+  assign body_align = s.body_alignment | default: 'left'
+  if body_align == 'center'
+    assign body_margin = '0 auto'
+  elsif body_align == 'right'
+    assign body_margin = '0 0 0 auto'
+  else
+    assign body_margin = '0'
+  endif
+
+  assign grid_style = s.grid_style | default: 'classic'
+
+  assign item_align = s.item_alignment | default: 'center'
+  if item_align == 'left'
+    assign item_flex = 'flex-start'
+    assign item_text = 'left'
+  elsif item_align == 'right'
+    assign item_flex = 'flex-end'
+    assign item_text = 'right'
+  else
+    assign item_flex = 'center'
+    assign item_text = 'center'
+  endif
+
+  if grid_style == 'bordered'
+    assign grid_justify = 'stretch'
+  else
+    assign grid_justify = 'center'
+  endif
+-%}
+
+{% style %}
+  #cert-{{ uid }} {
+    --cert-text: {{ s.text_color | default: '#1a1a1a' }};
+    --cert-body: {{ s.body_color | default: '#1a1a1a' }};
+    --cert-label: {{ s.label_color | default: '#1a1a1a' }};
+    --cert-icon-color: {{ s.icon_color | default: '#0000c9' }};
+    --cert-icon-size: {{ s.icon_size | default: 56 }}px;
+    --cert-icon-gap: {{ s.icon_gap | default: 24 }}px;
+    --cert-label-gap: {{ s.label_gap | default: 14 }}px;
+    --cert-cols-d: {{ s.icons_per_row | default: 4 }};
+    --cert-cols-m: {{ s.icons_per_row_mobile | default: 2 }};
+    --cert-line: {{ s.line_color | default: '#e6e6e6' }};
+    --cert-card-bg: {{ s.card_bg | default: '#ffffff' }};
+    --cert-radius: {{ s.border_radius | default: 0 }}px;
+    --cert-cell-pad: {{ s.cell_padding | default: 28 }}px;
+    background-color: {{ s.section_bg | default: 'rgba(0,0,0,0)' }};
+    padding-top: {{ s.padding_top | default: 70 }}px;
+    padding-bottom: {{ s.padding_bottom | default: 70 }}px;
+  }
+  #cert-{{ uid }} .cert-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: {{ s.column_gap | default: 48 }}px;
+    align-items: start;
+  }
+  #cert-{{ uid }} .cert-heading {
+    font-family: var(--font-stack-headings-primary);
+    font-weight: {{ s.heading_weight | default: 400 }};
+    font-size: {{ s.heading_size_mobile | default: 32 }}px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: var(--cert-text);
+    text-align: {{ s.heading_alignment | default: 'left' }};
+  }
+  #cert-{{ uid }} .cert-right { display: flex; flex-direction: column; }
+  #cert-{{ uid }} .cert-body {
+    font-size: {{ s.body_size | default: 19 }}px;
+    line-height: 1.5;
+    color: var(--cert-body);
+    text-align: {{ s.body_alignment | default: 'left' }};
+    margin: {{ body_margin }};
+    max-width: {{ s.body_max_width | default: 640 }}px;
+  }
+  #cert-{{ uid }} .cert-body > *:first-child { margin-top: 0; }
+  #cert-{{ uid }} .cert-body > *:last-child { margin-bottom: 0; }
+  #cert-{{ uid }} .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--cert-cols-d), minmax(0, 1fr));
+    gap: {{ s.row_gap | default: 28 }}px var(--cert-icon-gap);
+    margin-top: {{ s.icons_margin_top | default: 40 }}px;
+    justify-items: {{ grid_justify }};
+  }
+  #cert-{{ uid }} .cert-item {
+    display: flex;
+    flex-direction: column;
+    align-items: {{ item_flex }};
+    text-align: {{ item_text }};
+    gap: var(--cert-label-gap);
+    max-width: 180px;
+  }
+  #cert-{{ uid }} .cert-item__link { text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: {{ item_flex }}; gap: var(--cert-label-gap); }
+
+  {%- comment -%} Style « Grille bordée » — fidèle aux sections tableau comparatif / échelle de pH / showcase {%- endcomment -%}
+  #cert-{{ uid }} .cert-grid--bordered {
+    gap: 1px;
+    background: var(--cert-line);
+    border: 1px solid var(--cert-line);
+    border-radius: var(--cert-radius);
+    overflow: hidden;
+    column-gap: 1px;
+  }
+  #cert-{{ uid }} .cert-grid--bordered .cert-item {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: var(--cert-cell-pad);
+    background: var(--cert-card-bg);
+    justify-content: center;
+  }
+  #cert-{{ uid }} .cert-item__icon {
+    width: var(--cert-icon-size);
+    height: var(--cert-icon-size);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #cert-{{ uid }} .cert-item__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  #cert-{{ uid }} .cert-item__icon--mask {
+    background-color: var(--cert-icon-color);
+    -webkit-mask: var(--cert-icon-url) no-repeat center / contain;
+            mask: var(--cert-icon-url) no-repeat center / contain;
+  }
+  #cert-{{ uid }} .cert-item__label {
+    font-size: {{ s.label_size | default: 13 }}px;
+    line-height: 1.3;
+    font-weight: {{ s.label_weight | default: 400 }};
+    text-transform: {{ s.label_transform | default: 'none' }};
+    color: var(--cert-label);
+  }
+  {%- if s.label_font == 'mono' -%}
+  #cert-{{ uid }} .cert-item__label {
+    font-family: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+  {%- endif -%}
+  #cert-{{ uid }} .cert-button-wrap {
+    margin-top: {{ s.button_margin_top | default: 40 }}px;
+    text-align: {{ s.button_alignment | default: 'center' }};
+  }
+  #cert-{{ uid }} .cert-button {
+    display: inline-block;
+    background-color: {{ s.button_bg | default: '#0000c9' }};
+    color: {{ s.button_text_color | default: '#ffffff' }};
+    border-radius: {{ s.button_radius | default: 40 }}px;
+    padding: {{ s.button_padding_v | default: 15 }}px {{ s.button_padding_h | default: 40 }}px;
+    font-size: {{ s.button_font_size | default: 15 }}px;
+    font-weight: {{ s.button_weight | default: 700 }};
+    text-transform: {{ s.button_transform | default: 'none' }};
+    letter-spacing: .01em;
+    text-decoration: none;
+    line-height: 1.2;
+    transition: opacity .15s ease, transform .15s ease;
+  }
+  #cert-{{ uid }} .cert-button:hover { opacity: .9; }
+
+  @media screen and (max-width: 749px) {
+    #cert-{{ uid }} .cert-heading { text-align: {{ s.heading_alignment_mobile | default: 'left' }}; }
+    #cert-{{ uid }} .cert-body { text-align: {{ s.body_alignment_mobile | default: 'left' }}; max-width: none; }
+    #cert-{{ uid }} .cert-grid { grid-template-columns: repeat(var(--cert-cols-m), minmax(0, 1fr)); }
+    #cert-{{ uid }} .cert-button-wrap { text-align: {{ s.button_alignment_mobile | default: 'center' }}; }
+    {% if s.button_full_width_mobile %}
+      #cert-{{ uid }} .cert-button { display: block; width: 100%; text-align: center; }
+    {% endif %}
+  }
+
+  @media screen and (min-width: 750px) {
+    #cert-{{ uid }} .cert-heading { font-size: {{ s.heading_size | default: 52 }}px; }
+    {% if s.two_columns %}
+      #cert-{{ uid }} .cert-wrap { grid-template-columns: {{ s.left_width | default: 38 }}% 1fr; }
+    {% endif %}
+  }
+{% endstyle %}
+
+<div id="cert-{{ uid }}" class="cert-section{% if recolor %} cert--recolor{% endif %}" {{ section.shopify_attributes }}>
+  <div class="container--{{ s.container_width | default: 'large' }} cert-wrap">
+
+    <div class="cert-left">
+      {%- if s.heading != blank -%}
+        <h2 class="cert-heading">{{ s.heading | escape }}</h2>
+      {%- endif -%}
+    </div>
+
+    <div class="cert-right">
+      {%- if s.body != blank -%}
+        <div class="cert-body rte">{{ s.body }}</div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="cert-grid{% if grid_style == 'bordered' %} cert-grid--bordered{% endif %}">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'certification' -%}
+              {%- capture item_inner -%}
+                {%- if block.settings.icon != blank -%}
+                  {%- if recolor -%}
+                    <span class="cert-item__icon cert-item__icon--mask" style="--cert-icon-url: url('{{ block.settings.icon | image_url: width: 240 }}')" role="img" aria-label="{{ block.settings.label | strip_newlines | escape }}"></span>
+                  {%- else -%}
+                    <span class="cert-item__icon">
+                      <img
+                        src="{{ block.settings.icon | image_url: width: 240 }}"
+                        srcset="{{ block.settings.icon | image_url: width: 120 }} 120w, {{ block.settings.icon | image_url: width: 240 }} 240w"
+                        sizes="{{ s.icon_size | default: 56 }}px"
+                        width="{{ block.settings.icon.width }}"
+                        height="{{ block.settings.icon.height }}"
+                        loading="lazy"
+                        alt="{{ block.settings.label | strip_newlines | escape }}"
+                      >
+                    </span>
+                  {%- endif -%}
+                {%- endif -%}
+                {%- if block.settings.label != blank -%}
+                  <div class="cert-item__label">{{ block.settings.label | newline_to_br }}</div>
+                {%- endif -%}
+              {%- endcapture -%}
+
+              <div class="cert-item" {{ block.shopify_attributes }}>
+                {%- if block.settings.link != blank -%}
+                  <a class="cert-item__link" href="{{ block.settings.link }}">{{ item_inner }}</a>
+                {%- else -%}
+                  {{ item_inner }}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      {%- if s.show_button and s.button_label != blank -%}
+        <div class="cert-button-wrap">
+          <a class="cert-button" href="{{ s.button_link | default: '#' }}">{{ s.button_label | escape }}</a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Certifications",
+  "tag": "section",
+  "class": "section-certifications",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Mise en page"
+    },
+    {
+      "type": "select",
+      "id": "container_width",
+      "label": "Largeur du conteneur",
+      "options": [
+        { "value": "small", "label": "Étroit" },
+        { "value": "regular", "label": "Moyen" },
+        { "value": "large", "label": "Large" },
+        { "value": "fullwidth", "label": "Pleine largeur" }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "checkbox",
+      "id": "two_columns",
+      "label": "Disposition en deux colonnes (ordinateur)",
+      "info": "Titre à gauche, contenu à droite.",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "left_width",
+      "label": "Largeur de la colonne titre",
+      "min": 25,
+      "max": 60,
+      "step": 1,
+      "unit": "%",
+      "default": 38
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "label": "Espace entre les colonnes",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Marge en haut",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Marge en bas",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "default": 70
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Couleur de fond",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "header",
+      "content": "Titre"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "Nos standards de qualité"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du titre",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Taille du titre (ordinateur)",
+      "min": 24,
+      "max": 90,
+      "step": 1,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Taille du titre (mobile)",
+      "min": 18,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Graisse du titre",
+      "options": [
+        { "value": "300", "label": "Fine" },
+        { "value": "400", "label": "Normale" },
+        { "value": "500", "label": "Moyenne" },
+        { "value": "600", "label": "Semi-grasse" },
+        { "value": "700", "label": "Grasse" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Alignement (ordinateur)",
+      "options": [
+        { "value": "left", "label": "Gauche" },
+        { "value": "center", "label": "Centre" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment_mobile",
+      "label": "Alignement (mobile)",
+      "options": [
+        { "value": "left", "label": "Gauche" },
+        { "value": "center", "label": "Centre" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "left"
+    },
+
+    {
+      "type": "header",
+      "content": "Texte"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Texte descriptif",
+      "default": "<p>Nos produits sont fabriqués sans colorants ni arômes artificiels. Ils sont testés en laboratoire indépendant, fabriqués en France et formulés avec des ingrédients naturels de qualité. Nous publions nos analyses en toute transparence.</p>"
+    },
+    {
+      "type": "color",
+      "id": "body_color",
+      "label": "Couleur du texte",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "range",
+      "id": "body_size",
+      "label": "Taille du texte",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 19
+    },
+    {
+      "type": "range",
+      "id": "body_max_width",
+      "label": "Largeur max. du texte",
+      "min": 280,
+      "max": 900,
+      "step": 10,
+      "unit": "px",
+      "default": 640
+    },
+    {
+      "type": "select",
+      "id": "body_alignment",
+      "label": "Alignement (ordinateur)",
+      "options": [
+        { "value": "left", "label": "Gauche" },
+        { "value": "center", "label": "Centre" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "body_alignment_mobile",
+      "label": "Alignement (mobile)",
+      "options": [
+        { "value": "left", "label": "Gauche" },
+        { "value": "center", "label": "Centre" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "left"
+    },
+
+    {
+      "type": "header",
+      "content": "Style de grille"
+    },
+    {
+      "type": "select",
+      "id": "grid_style",
+      "label": "Style d'affichage",
+      "info": "« Grille bordée » reprend le design des sections Tableau comparatif, Échelle de pH et Showcase produits.",
+      "options": [
+        { "value": "classic", "label": "Classique (icônes espacées)" },
+        { "value": "bordered", "label": "Grille bordée (minimaliste)" }
+      ],
+      "default": "classic"
+    },
+    {
+      "type": "select",
+      "id": "item_alignment",
+      "label": "Alignement dans chaque cellule",
+      "options": [
+        { "value": "center", "label": "Centré" },
+        { "value": "left", "label": "Gauche" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "label_font",
+      "label": "Police des libellés",
+      "options": [
+        { "value": "theme", "label": "Police du thème" },
+        { "value": "mono", "label": "Monospace (fidèle au design)" }
+      ],
+      "default": "theme"
+    },
+    {
+      "type": "color",
+      "id": "card_bg",
+      "label": "Fond des cellules",
+      "default": "#ffffff",
+      "visible_if": "{{ section.settings.grid_style == 'bordered' }}"
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "Couleur des lignes",
+      "default": "#e6e6e6",
+      "visible_if": "{{ section.settings.grid_style == 'bordered' }}"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Arrondi des angles",
+      "min": 0,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ section.settings.grid_style == 'bordered' }}"
+    },
+    {
+      "type": "range",
+      "id": "cell_padding",
+      "label": "Marge intérieure des cellules",
+      "min": 12,
+      "max": 56,
+      "step": 2,
+      "unit": "px",
+      "default": 28,
+      "visible_if": "{{ section.settings.grid_style == 'bordered' }}"
+    },
+    {
+      "type": "header",
+      "content": "Icônes / certifications"
+    },
+    {
+      "type": "range",
+      "id": "icons_per_row",
+      "label": "Icônes par ligne (ordinateur)",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "icons_per_row_mobile",
+      "label": "Icônes par ligne (mobile)",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Taille des icônes",
+      "min": 24,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "icon_gap",
+      "label": "Espace horizontal entre icônes",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "row_gap",
+      "label": "Espace vertical entre lignes",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "label_gap",
+      "label": "Espace icône / libellé",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "icons_margin_top",
+      "label": "Espace au-dessus des icônes",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "checkbox",
+      "id": "icon_recolor",
+      "label": "Recolorer les icônes",
+      "info": "Applique la couleur ci-dessous (idéal pour des icônes SVG/PNG d'une seule couleur sur fond transparent).",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Couleur des icônes (si recoloration)",
+      "default": "#0000c9"
+    },
+    {
+      "type": "header",
+      "content": "Libellés"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Couleur des libellés",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "label": "Taille des libellés",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "select",
+      "id": "label_weight",
+      "label": "Graisse des libellés",
+      "options": [
+        { "value": "400", "label": "Normale" },
+        { "value": "500", "label": "Moyenne" },
+        { "value": "600", "label": "Semi-grasse" },
+        { "value": "700", "label": "Grasse" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "select",
+      "id": "label_transform",
+      "label": "Casse des libellés",
+      "options": [
+        { "value": "none", "label": "Normale" },
+        { "value": "uppercase", "label": "MAJUSCULES" },
+        { "value": "lowercase", "label": "minuscules" },
+        { "value": "capitalize", "label": "Capitalisé" }
+      ],
+      "default": "none"
+    },
+
+    {
+      "type": "header",
+      "content": "Bouton"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Afficher le bouton",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Texte du bouton",
+      "default": "Lire nos analyses"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Couleur de fond",
+      "default": "#0000c9"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Couleur du texte",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "label": "Arrondi des angles",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "button_padding_v",
+      "label": "Marge intérieure verticale",
+      "min": 6,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "button_padding_h",
+      "label": "Marge intérieure horizontale",
+      "min": 10,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "label": "Taille du texte",
+      "min": 11,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "select",
+      "id": "button_weight",
+      "label": "Graisse du texte",
+      "options": [
+        { "value": "400", "label": "Normale" },
+        { "value": "500", "label": "Moyenne" },
+        { "value": "600", "label": "Semi-grasse" },
+        { "value": "700", "label": "Grasse" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "select",
+      "id": "button_transform",
+      "label": "Casse du texte",
+      "options": [
+        { "value": "none", "label": "Normale" },
+        { "value": "uppercase", "label": "MAJUSCULES" },
+        { "value": "capitalize", "label": "Capitalisé" }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "button_alignment",
+      "label": "Alignement (ordinateur)",
+      "options": [
+        { "value": "left", "label": "Gauche" },
+        { "value": "center", "label": "Centre" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "button_alignment_mobile",
+      "label": "Alignement (mobile)",
+      "options": [
+        { "value": "left", "label": "Gauche" },
+        { "value": "center", "label": "Centre" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_full_width_mobile",
+      "label": "Bouton pleine largeur sur mobile",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "certification",
+      "name": "Certification",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icône"
+        },
+        {
+          "type": "textarea",
+          "id": "label",
+          "label": "Libellé",
+          "info": "Retour à la ligne pris en charge (pour un libellé sur deux lignes).",
+          "default": "Sans sucre\najouté"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Lien (optionnel)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Certifications",
+      "blocks": [
+        { "type": "certification", "settings": { "label": "Sans sucre\najouté" } },
+        { "type": "certification", "settings": { "label": "Testé en\nlaboratoire" } },
+        { "type": "certification", "settings": { "label": "Ingrédients\nnaturels" } },
+        { "type": "certification", "settings": { "label": "Fabriqué\nen France" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

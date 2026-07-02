@@ -1,0 +1,1472 @@
+{%- liquid
+  # --- Hauteur ---
+  assign h_d = section.settings.desktop_height
+  if h_d == 'custom'
+    assign h_d = section.settings.desktop_height_px | append: 'px'
+  endif
+  assign h_m = section.settings.mobile_height
+  if h_m == 'custom'
+    assign h_m = section.settings.mobile_height_px | append: 'px'
+  endif
+
+  # --- Largeur du contenu ---
+  if section.settings.content_full_width
+    assign content_mw = 'none'
+  else
+    assign content_mw = section.settings.content_max_width | append: 'px'
+  endif
+
+  case section.settings.content_align
+    when 'left'
+      assign content_just = 'flex-start'
+    when 'right'
+      assign content_just = 'flex-end'
+    else
+      assign content_just = 'center'
+  endcase
+
+  # --- Overlay ---
+  assign ov = section.settings.overlay_color
+  assign overlay_bg = ''
+  case section.settings.overlay_style
+    when 'solid'
+      assign overlay_bg = ov
+    when 'gradient_bottom'
+      assign overlay_bg = 'linear-gradient(to top, ' | append: ov | append: ' 0%, rgba(0,0,0,0) 75%)'
+    when 'gradient_top'
+      assign overlay_bg = 'linear-gradient(to bottom, ' | append: ov | append: ' 0%, rgba(0,0,0,0) 75%)'
+  endcase
+
+  assign img = section.settings.background_image
+  assign img_m = section.settings.background_image_mobile
+  assign vid = section.settings.background_video
+-%}
+
+{%- liquid
+  assign pad_top_d = section.settings.content_padding_y_desktop
+  assign pad_top_m = section.settings.content_padding_y_mobile
+  if section.settings.content_padding_top_enable
+    assign pad_top_d = section.settings.content_padding_top_desktop
+    assign pad_top_m = section.settings.content_padding_top_mobile
+  endif
+-%}
+{%- capture hero_vars -%}
+  --eh-h-d:{{ h_d }};
+  --eh-h-m:{{ h_m }};
+  --eh-minh:{{ section.settings.min_height }}px;
+  --eh-cmw:{{ content_mw }};
+  --eh-cjust:{{ content_just }};
+  --eh-obj:{{ section.settings.image_position }};
+  --eh-pad-x-d:{{ section.settings.content_padding_x_desktop }}px;
+  --eh-pad-y-d:{{ section.settings.content_padding_y_desktop }}px;
+  --eh-pad-top-d:{{ pad_top_d }}px;
+  --eh-pad-x-m:{{ section.settings.content_padding_x_mobile }}px;
+  --eh-pad-y-m:{{ section.settings.content_padding_y_mobile }}px;
+  --eh-pad-top-m:{{ pad_top_m }}px;
+  {%- if section.settings.default_text_color != 'rgba(0,0,0,0)' -%}--eh-text:{{ section.settings.default_text_color }};{%- endif -%}
+  {%- if section.settings.background_color != 'rgba(0,0,0,0)' -%}--eh-bg:{{ section.settings.background_color }};{%- endif -%}
+  {%- if section.settings.rounded -%}--eh-radius:{{ section.settings.border_radius }}px;{%- endif -%}
+{%- endcapture -%}
+
+<div
+  class="enriched-hero-wrap{% if section.settings.width == 'page' %} container--large{% endif %}{% unless section.settings.remove_spacing %} container--vertical-space{% endunless %}"
+>
+  <div
+    class="enriched-hero{% if section.settings.width == 'page' and section.settings.rounded %} enriched-hero--rounded{% endif %}{% if section.settings.default_text_color != 'rgba(0,0,0,0)' %} enriched-hero--has-text-color{% endif %}"
+    style="{{ hero_vars | strip_newlines }}"
+  >
+    {%- liquid
+      assign bg_url = ''
+      assign bg_url_m = ''
+      if img != blank
+        assign bg_url = img | image_url: width: 3000
+      endif
+      if img_m != blank
+        assign bg_url_m = img_m | image_url: width: 1400
+      endif
+    -%}
+    <div
+      class="enriched-hero__media"
+      style="{% if bg_url != blank %}--eh-bg-img:url('{{ bg_url }}');{% endif %}{% if bg_url_m != blank %}--eh-bg-img-m:url('{{ bg_url_m }}');{% endif %}"
+    >
+      {%- if vid != blank -%}
+        {{ vid | video_tag: image_size: '1600x', loop: true, autoplay: true, muted: true, controls: false }}
+      {%- elsif img == blank -%}
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'enriched-hero__placeholder' }}
+      {%- endif -%}
+    </div>
+
+    {%- if overlay_bg != blank -%}
+      <div
+        class="enriched-hero__overlay"
+        style="background:{{ overlay_bg }};opacity:{{ section.settings.overlay_opacity | times: 1.0 | divided_by: 100.0 }};"
+      ></div>
+    {%- endif -%}
+
+    <div class="enriched-hero__inner">
+      <div class="enriched-hero__canvas">
+        {%- comment -%}
+          Les blocs sont regroupés par ancrage (pos). Chaque zone est positionnée une seule fois
+          dans le canvas ; les blocs qui la composent s'empilent ensuite dans le flux normal.
+          Ainsi un séparateur placé au même ancrage qu'un texte reste relatif à ce contenu
+          (et le suit quand il grandit), au lieu d'être figé à une coordonnée absolue.
+        {%- endcomment -%}
+        {%- assign eh_anchors = '' -%}
+        {%- for block in section.blocks -%}
+          {%- assign eh_a = block.settings.pos | default: 'top left' -%}
+          {%- unless eh_anchors contains eh_a -%}
+            {%- assign eh_anchors = eh_anchors | append: eh_a | append: '~' -%}
+          {%- endunless -%}
+        {%- endfor -%}
+        {%- assign eh_anchor_list = eh_anchors | split: '~' -%}
+
+        {%- for anchor in eh_anchor_list -%}
+          {%- liquid
+            assign v = anchor | split: ' ' | first
+            assign h = anchor | split: ' ' | last
+            assign zcount = 0
+            assign first_ox = 0
+            assign edge_oy = 0
+            assign zmw = 0
+            assign zmw_m = 0
+            for block in section.blocks
+              assign ba = block.settings.pos | default: 'top left'
+              if ba == anchor
+                assign zcount = zcount | plus: 1
+                if zcount == 1
+                  assign first_ox = block.settings.offset_x | default: 0
+                endif
+                if v == 'bottom'
+                  assign edge_oy = block.settings.offset_y | default: 0
+                elsif zcount == 1
+                  assign edge_oy = block.settings.offset_y | default: 0
+                endif
+                assign bmw = block.settings.max_width | default: 0
+                if bmw > zmw
+                  assign zmw = bmw
+                endif
+                assign bmwm = block.settings.max_width_mobile | default: 0
+                if bmwm > zmw_m
+                  assign zmw_m = bmwm
+                endif
+              endif
+            endfor
+          -%}
+          {%- capture zpos -%}{%- render 'enriched-hero-position', pos: anchor, pos_mobile: 'inherit', ox: first_ox, oy: edge_oy -%}{%- endcapture -%}
+          <div
+            class="enriched-hero__zone eh-v--{{ v }} eh-h--{{ h }}"
+            style="{{ zpos }}{% if zmw > 0 %}--eh-zmw:{{ zmw }}%;{% endif %}{% if zmw_m > 0 %}--eh-zmw-m:{{ zmw_m }}%;{% endif %}"
+          >
+            {%- assign jdx = 0 -%}
+            {%- for block in section.blocks -%}
+              {%- assign ba = block.settings.pos | default: 'top left' -%}
+              {%- unless ba == anchor -%}{%- continue -%}{%- endunless -%}
+              {%- assign jdx = jdx | plus: 1 -%}
+              {%- liquid
+                assign sp = block.settings.offset_y | default: 0
+                assign space_style = ''
+                if v == 'bottom'
+                  if jdx < zcount
+                    assign space_style = 'margin-bottom:' | append: sp | append: 'px;'
+                  endif
+                elsif jdx > 1
+                  assign space_style = 'margin-top:' | append: sp | append: 'px;'
+                endif
+              -%}
+              {%- capture item_class -%}enriched-hero__item enriched-hero__item--{{ block.type }}{% if block.settings.hide_desktop %} eh-hide-desk{% endif %}{% if block.settings.hide_mobile %} eh-hide-mob{% endif %}{%- endcapture -%}
+
+              {%- case block.type -%}
+                {%- when 'heading' -%}
+                  <div
+                    class="{{ item_class }}"
+                    style="{{ space_style }}--eh-mw:{{ block.settings.max_width }}%;--eh-mw-m:{{ block.settings.max_width_mobile }}%;text-align:{{ block.settings.text_align }};"
+                    {{ block.shopify_attributes }}
+                  >
+                    <div
+                      class="enriched-hero__heading"
+                      style="--eh-fs-d:{{ block.settings.font_size }}px;--eh-fs-m:{{ block.settings.font_size_mobile }}px;--eh-fw:{{ block.settings.font_weight }};--eh-lh:{{ block.settings.line_height | divided_by: 100.0 }};--eh-ls:{{ block.settings.letter_spacing }}px;text-transform:{{ block.settings.text_transform }};{% if block.settings.color != 'rgba(0,0,0,0)' %}--eh-color:{{ block.settings.color }};{% endif %}"
+                    >
+                      {{ block.settings.text }}
+                    </div>
+                  </div>
+
+                {%- when 'text' -%}
+                  <div
+                    class="{{ item_class }}"
+                    style="{{ space_style }}--eh-mw:{{ block.settings.max_width }}%;--eh-mw-m:{{ block.settings.max_width_mobile }}%;text-align:{{ block.settings.text_align }};"
+                    {{ block.shopify_attributes }}
+                  >
+                    <div
+                      class="enriched-hero__text"
+                      style="--eh-fs-d:{{ block.settings.font_size }}px;--eh-fs-m:{{ block.settings.font_size_mobile }}px;--eh-fw:{{ block.settings.font_weight }};--eh-lh:{{ block.settings.line_height | divided_by: 100.0 }};opacity:{{ block.settings.opacity | times: 1.0 | divided_by: 100.0 }};{% if block.settings.color != 'rgba(0,0,0,0)' %}--eh-color:{{ block.settings.color }};{% endif %}"
+                    >
+                      {{ block.settings.text }}
+                    </div>
+                  </div>
+
+                {%- when 'image' -%}
+                  <div
+                    class="{{ item_class }}"
+                    style="{{ space_style }}--eh-iw-d:{{ block.settings.width }}px;--eh-iw-m:{{ block.settings.width_mobile }}px;opacity:{{ block.settings.opacity | times: 1.0 | divided_by: 100.0 }};"
+                    {{ block.shopify_attributes }}
+                  >
+                    {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}" class="enriched-hero__image-link">{%- endif -%}
+                    {%- if block.settings.image != blank -%}
+                      {{ block.settings.image | image_url: width: 800 | image_tag: class: 'enriched-hero__img', widths: '120, 240, 360, 480, 600, 800', sizes: '(max-width: 767px) 50vw, 25vw' }}
+                    {%- else -%}
+                      {{ 'image' | placeholder_svg_tag: 'enriched-hero__img placeholder-svg' }}
+                    {%- endif -%}
+                    {%- if block.settings.link != blank -%}</a>{%- endif -%}
+                  </div>
+
+                {%- when 'divider' -%}
+                  <div
+                    class="{{ item_class }}"
+                    style="{{ space_style }}--eh-len:{{ block.settings.length }}%;--eh-thick:{{ block.settings.thickness }}px;"
+                    {{ block.shopify_attributes }}
+                  >
+                    <span
+                      class="enriched-hero__divider"
+                      style="background:{{ block.settings.color }};opacity:{{ block.settings.opacity | times: 1.0 | divided_by: 100.0 }};"
+                    ></span>
+                  </div>
+
+                {%- when 'button' -%}
+                  <div
+                    class="{{ item_class }}"
+                    style="{{ space_style }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {%- if block.settings.label != blank -%}
+                      <a
+                        href="{{ block.settings.link | default: '#' }}"
+                        class="button button--{{ block.settings.button_style }}"
+                        {% if block.settings.open_in_new_window %}target="_blank" rel="noopener"{% endif %}
+                      >{{ block.settings.label }}</a>
+                    {%- endif -%}
+                  </div>
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+.enriched-hero-wrap {
+  width: 100%;
+}
+.enriched-hero {
+  position: relative;
+  width: 100%;
+  height: var(--eh-h-d, 70vh);
+  min-height: var(--eh-minh, 0px);
+  overflow: hidden;
+  isolation: isolate;
+  background-color: var(--eh-bg, transparent);
+}
+.enriched-hero--rounded {
+  border-radius: var(--eh-radius, 0px);
+}
+.enriched-hero--has-text-color {
+  color: var(--eh-text);
+}
+.enriched-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: var(--eh-bg-img, none);
+  background-size: cover;
+  background-position: var(--eh-obj, center);
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .enriched-hero__media {
+    background-image: var(--eh-bg-img-m, var(--eh-bg-img, none));
+  }
+}
+.enriched-hero__media img,
+.enriched-hero__media video,
+.enriched-hero__media svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--eh-obj, center);
+  display: block;
+}
+.enriched-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.enriched-hero__inner {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: var(--eh-cjust, center);
+  padding: var(--eh-pad-top-d, var(--eh-pad-y-d, 48px)) var(--eh-pad-x-d, 48px) var(--eh-pad-y-d, 48px);
+}
+.enriched-hero__canvas {
+  position: relative;
+  width: 100%;
+  max-width: var(--eh-cmw, 1400px);
+  height: 100%;
+}
+.enriched-hero__zone {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  width: var(--eh-zmw, auto);
+  max-width: 100%;
+  top: var(--eh-top, auto);
+  right: var(--eh-right, auto);
+  bottom: var(--eh-bottom, auto);
+  left: var(--eh-left, auto);
+  transform: translate(calc(var(--eh-tx, 0%) + var(--eh-ox, 0px)), calc(var(--eh-ty, 0%) + var(--eh-oy, 0px)));
+}
+.enriched-hero__item {
+  margin: 0;
+  max-width: var(--eh-mw, 100%);
+}
+.enriched-hero__heading {
+  margin: 0;
+  font-size: var(--eh-fs-d, 44px);
+  font-weight: var(--eh-fw, 400);
+  line-height: var(--eh-lh, 1.2);
+  letter-spacing: var(--eh-ls, 0px);
+  color: var(--eh-color, inherit);
+}
+.enriched-hero__heading > * {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+.enriched-hero__text {
+  margin: 0;
+  font-size: var(--eh-fs-d, 16px);
+  font-weight: var(--eh-fw, 400);
+  line-height: var(--eh-lh, 1.5);
+  color: var(--eh-color, inherit);
+}
+.enriched-hero__text > * {
+  margin: 0;
+}
+.enriched-hero__text > * + * {
+  margin-top: 0.6em;
+}
+.enriched-hero__item--divider {
+  width: var(--eh-len, 100%);
+  max-width: 100%;
+}
+.enriched-hero__divider {
+  display: block;
+  width: 100%;
+  height: var(--eh-thick, 1px);
+}
+.enriched-hero__image-link {
+  display: inline-block;
+}
+.enriched-hero__img {
+  display: block;
+  width: var(--eh-iw-d, 120px);
+  height: auto;
+}
+.enriched-hero__item--button .button {
+  display: inline-block;
+  line-height: 1.25;
+}
+.enriched-hero .button--solid {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #111111;
+}
+.enriched-hero .button--outline {
+  background: transparent;
+  border-color: currentColor;
+  color: inherit;
+}
+.eh-hide-desk {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .enriched-hero {
+    height: var(--eh-h-m, 80vh);
+  }
+  .enriched-hero__inner {
+    padding: var(--eh-pad-top-m, var(--eh-pad-y-m, 24px)) var(--eh-pad-x-m, 24px) var(--eh-pad-y-m, 24px);
+  }
+  .enriched-hero__zone {
+    top: var(--eh-top-m, var(--eh-top, auto));
+    right: var(--eh-right-m, var(--eh-right, auto));
+    bottom: var(--eh-bottom-m, var(--eh-bottom, auto));
+    left: var(--eh-left-m, var(--eh-left, auto));
+    width: var(--eh-zmw-m, var(--eh-zmw, auto));
+    transform: translate(calc(var(--eh-tx-m, var(--eh-tx, 0%)) + var(--eh-ox-m, var(--eh-ox, 0px))), calc(var(--eh-ty-m, var(--eh-ty, 0%)) + var(--eh-oy-m, var(--eh-oy, 0px))));
+  }
+  .enriched-hero__item {
+    max-width: var(--eh-mw-m, var(--eh-mw, 100%));
+  }
+  .enriched-hero__heading {
+    font-size: var(--eh-fs-m, var(--eh-fs-d, 28px));
+  }
+  .enriched-hero__text {
+    font-size: var(--eh-fs-m, var(--eh-fs-d, 15px));
+  }
+  .enriched-hero__img {
+    width: var(--eh-iw-m, var(--eh-iw-d, 80px));
+  }
+  .eh-hide-desk {
+    display: block;
+  }
+  .eh-hide-mob {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .eh-hide-desk {
+    display: none !important;
+  }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Enriched hero",
+  "tag": "section",
+  "class": "section-enriched-hero",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Mise en page"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Largeur de la section",
+      "options": [
+        { "value": "full", "label": "Pleine largeur (bord à bord)" },
+        { "value": "page", "label": "Largeur cappée (page)" }
+      ],
+      "default": "full"
+    },
+    {
+      "type": "checkbox",
+      "id": "content_full_width",
+      "label": "Contenu sur toute la largeur",
+      "info": "Sinon, le contenu est limité par la largeur ci-dessous et centré.",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Largeur max. du contenu",
+      "min": 400,
+      "max": 1800,
+      "step": 20,
+      "default": 1400,
+      "unit": "px",
+      "visible_if": "{{ section.settings.content_full_width == false }}"
+    },
+    {
+      "type": "select",
+      "id": "content_align",
+      "label": "Alignement du bloc de contenu",
+      "options": [
+        { "value": "left", "label": "Gauche" },
+        { "value": "center", "label": "Centré" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "center",
+      "visible_if": "{{ section.settings.content_full_width == false }}"
+    },
+    {
+      "type": "range",
+      "id": "content_padding_x_desktop",
+      "label": "Marge intérieure horizontale (ordinateur)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 64,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "content_padding_y_desktop",
+      "label": "Marge intérieure verticale (ordinateur)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 56,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "content_padding_x_mobile",
+      "label": "Marge intérieure horizontale (mobile)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 24,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "content_padding_y_mobile",
+      "label": "Marge intérieure verticale (mobile)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 28,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "content_padding_top_enable",
+      "label": "Marge intérieure haute distincte",
+      "info": "Définit une marge intérieure en haut différente de la marge verticale (le bas garde la marge verticale).",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "content_padding_top_desktop",
+      "label": "Marge intérieure haute (ordinateur)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 56,
+      "unit": "px",
+      "visible_if": "{{ section.settings.content_padding_top_enable }}"
+    },
+    {
+      "type": "range",
+      "id": "content_padding_top_mobile",
+      "label": "Marge intérieure haute (mobile)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 28,
+      "unit": "px",
+      "visible_if": "{{ section.settings.content_padding_top_enable }}"
+    },
+    {
+      "type": "header",
+      "content": "Hauteur"
+    },
+    {
+      "type": "select",
+      "id": "desktop_height",
+      "label": "Hauteur (ordinateur)",
+      "options": [
+        { "value": "40vh", "label": "40 %" },
+        { "value": "50vh", "label": "50 %" },
+        { "value": "60vh", "label": "60 %" },
+        { "value": "70vh", "label": "70 %" },
+        { "value": "80vh", "label": "80 %" },
+        { "value": "90vh", "label": "90 %" },
+        { "value": "100vh", "label": "Plein écran" },
+        { "value": "custom", "label": "Personnalisée (px)" }
+      ],
+      "default": "70vh"
+    },
+    {
+      "type": "range",
+      "id": "desktop_height_px",
+      "label": "Hauteur personnalisée (ordinateur)",
+      "min": 200,
+      "max": 1200,
+      "step": 10,
+      "default": 640,
+      "unit": "px",
+      "visible_if": "{{ section.settings.desktop_height == 'custom' }}"
+    },
+    {
+      "type": "select",
+      "id": "mobile_height",
+      "label": "Hauteur (mobile)",
+      "options": [
+        { "value": "40vh", "label": "40 %" },
+        { "value": "50vh", "label": "50 %" },
+        { "value": "60vh", "label": "60 %" },
+        { "value": "70vh", "label": "70 %" },
+        { "value": "80vh", "label": "80 %" },
+        { "value": "90vh", "label": "90 %" },
+        { "value": "100vh", "label": "Plein écran" },
+        { "value": "custom", "label": "Personnalisée (px)" }
+      ],
+      "default": "80vh"
+    },
+    {
+      "type": "range",
+      "id": "mobile_height_px",
+      "label": "Hauteur personnalisée (mobile)",
+      "min": 200,
+      "max": 1000,
+      "step": 10,
+      "default": 520,
+      "unit": "px",
+      "visible_if": "{{ section.settings.mobile_height == 'custom' }}"
+    },
+    {
+      "type": "range",
+      "id": "min_height",
+      "label": "Hauteur minimale",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "default": 420,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Arrière-plan"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Image (ordinateur)"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mobile",
+      "label": "Image (mobile)",
+      "info": "Optionnelle. Sinon l'image ordinateur est utilisée."
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Cadrage de l'image",
+      "options": [
+        { "value": "center", "label": "Centre" },
+        { "value": "top", "label": "Haut" },
+        { "value": "bottom", "label": "Bas" },
+        { "value": "left", "label": "Gauche" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "video",
+      "id": "background_video",
+      "label": "Vidéo de fond",
+      "info": "Optionnelle. Lue en boucle, sans son. Remplace l'image si définie."
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond (repli)",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "header",
+      "content": "Superposition (overlay)"
+    },
+    {
+      "type": "select",
+      "id": "overlay_style",
+      "label": "Type de superposition",
+      "options": [
+        { "value": "none", "label": "Aucune" },
+        { "value": "solid", "label": "Couleur unie" },
+        { "value": "gradient_bottom", "label": "Dégradé depuis le bas" },
+        { "value": "gradient_top", "label": "Dégradé depuis le haut" }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Couleur de la superposition",
+      "default": "#000000",
+      "visible_if": "{{ section.settings.overlay_style != 'none' }}"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Opacité de la superposition",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 30,
+      "unit": "%",
+      "visible_if": "{{ section.settings.overlay_style != 'none' }}"
+    },
+    {
+      "type": "header",
+      "content": "Style général"
+    },
+    {
+      "type": "color",
+      "id": "default_text_color",
+      "label": "Couleur de texte par défaut",
+      "info": "Appliquée aux blocs dont la couleur n'est pas définie.",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "label": "Coins arrondis",
+      "default": false,
+      "visible_if": "{{ section.settings.width == 'page' }}"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Rayon des coins",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 16,
+      "unit": "px",
+      "visible_if": "{{ section.settings.width == 'page' and section.settings.rounded == true }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_spacing",
+      "label": "Supprimer l'espace au-dessus",
+      "info": "Par défaut, la section ajoute le même espacement vertical que les autres sections du thème.",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Titre / gros texte",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Texte",
+          "default": "Des ingrédients propres et éprouvés, puis on monte d'un cran avec des actifs premium."
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "label": "Taille (ordinateur)",
+          "min": 20,
+          "max": 120,
+          "step": 1,
+          "default": 44,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "font_size_mobile",
+          "label": "Taille (mobile)",
+          "min": 14,
+          "max": 80,
+          "step": 1,
+          "default": 26,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "font_weight",
+          "label": "Graisse",
+          "options": [
+            { "value": "300", "label": "Light (300)" },
+            { "value": "400", "label": "Regular (400)" },
+            { "value": "500", "label": "Medium (500)" },
+            { "value": "600", "label": "Semibold (600)" },
+            { "value": "700", "label": "Bold (700)" }
+          ],
+          "default": "400"
+        },
+        {
+          "type": "range",
+          "id": "line_height",
+          "label": "Interligne",
+          "min": 90,
+          "max": 200,
+          "step": 5,
+          "default": 120,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "id": "letter_spacing",
+          "label": "Espacement des lettres",
+          "min": -3,
+          "max": 10,
+          "step": 1,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "text_transform",
+          "label": "Casse",
+          "options": [
+            { "value": "none", "label": "Normale" },
+            { "value": "uppercase", "label": "MAJUSCULES" },
+            { "value": "lowercase", "label": "minuscules" },
+            { "value": "capitalize", "label": "Initiales Majuscules" }
+          ],
+          "default": "none"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "Alignement du texte",
+          "options": [
+            { "value": "left", "label": "Gauche" },
+            { "value": "center", "label": "Centre" },
+            { "value": "right", "label": "Droite" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Couleur",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "select",
+          "id": "pos",
+          "label": "Ancrage (ordinateur)",
+          "options": [
+            { "value": "top left", "label": "Haut gauche", "group": "Haut" },
+            { "value": "top center", "label": "Haut centre", "group": "Haut" },
+            { "value": "top right", "label": "Haut droite", "group": "Haut" },
+            { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
+            { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
+            { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
+            { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
+            { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
+            { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
+          ],
+          "default": "top left"
+        },
+        {
+          "type": "range",
+          "id": "offset_x",
+          "label": "Décalage horizontal",
+          "min": -100,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "offset_y",
+          "label": "Décalage vertical",
+          "min": -100,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "pos_mobile",
+          "label": "Ancrage (mobile)",
+          "options": [
+            { "value": "inherit", "label": "Comme l'ordinateur" },
+            { "value": "top left", "label": "Haut gauche", "group": "Haut" },
+            { "value": "top center", "label": "Haut centre", "group": "Haut" },
+            { "value": "top right", "label": "Haut droite", "group": "Haut" },
+            { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
+            { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
+            { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
+            { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
+            { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
+            { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
+          ],
+          "default": "inherit"
+        },
+        {
+          "type": "range",
+          "id": "max_width",
+          "label": "Largeur max. (ordinateur)",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "default": 55,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "id": "max_width_mobile",
+          "label": "Largeur max. (mobile)",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "default": 90,
+          "unit": "%"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_desktop",
+          "label": "Masquer sur ordinateur",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "Masquer sur mobile",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Texte / légende",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Texte",
+          "default": "<p>Le résultat : un soin de la peau et du corps simple et efficace.</p>"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "label": "Taille (ordinateur)",
+          "min": 11,
+          "max": 48,
+          "step": 1,
+          "default": 16,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "font_size_mobile",
+          "label": "Taille (mobile)",
+          "min": 10,
+          "max": 32,
+          "step": 1,
+          "default": 14,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "font_weight",
+          "label": "Graisse",
+          "options": [
+            { "value": "300", "label": "Light (300)" },
+            { "value": "400", "label": "Regular (400)" },
+            { "value": "500", "label": "Medium (500)" },
+            { "value": "600", "label": "Semibold (600)" },
+            { "value": "700", "label": "Bold (700)" }
+          ],
+          "default": "400"
+        },
+        {
+          "type": "range",
+          "id": "line_height",
+          "label": "Interligne",
+          "min": 90,
+          "max": 200,
+          "step": 5,
+          "default": 150,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacité",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "default": 100,
+          "unit": "%"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "Alignement du texte",
+          "options": [
+            { "value": "left", "label": "Gauche" },
+            { "value": "center", "label": "Centre" },
+            { "value": "right", "label": "Droite" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Couleur",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "select",
+          "id": "pos",
+          "label": "Ancrage (ordinateur)",
+          "options": [
+            { "value": "top left", "label": "Haut gauche", "group": "Haut" },
+            { "value": "top center", "label": "Haut centre", "group": "Haut" },
+            { "value": "top right", "label": "Haut droite", "group": "Haut" },
+            { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
+            { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
+            { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
+            { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
+            { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
+            { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
+          ],
+          "default": "bottom left"
+        },
+        {
+          "type": "range",
+          "id": "offset_x",
+          "label": "Décalage horizontal",
+          "min": -100,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "offset_y",
+          "label": "Décalage vertical",
+          "min": -100,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "pos_mobile",
+          "label": "Ancrage (mobile)",
+          "options": [
+            { "value": "inherit", "label": "Comme l'ordinateur" },
+            { "value": "top left", "label": "Haut gauche", "group": "Haut" },
+            { "value": "top center", "label": "Haut centre", "group": "Haut" },
+            { "value": "top right", "label": "Haut droite", "group": "Haut" },
+            { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
+            { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
+            { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
+            { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
+            { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
+            { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
+          ],
+          "default": "inherit"
+        },
+        {
+          "type": "range",
+          "id": "max_width",
+          "label": "Largeur max. (ordinateur)",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "default": 40,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "id": "max_width_mobile",
+          "label": "Largeur max. (mobile)",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "default": 90,
+          "unit": "%"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_desktop",
+          "label": "Masquer sur ordinateur",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "Masquer sur mobile",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image / badge",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Lien (optionnel)"
+        },
+        {
+          "type": "range",
+          "id": "width",
+          "label": "Largeur (ordinateur)",
+          "min": 20,
+          "max": 420,
+          "step": 4,
+          "default": 140,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "width_mobile",
+          "label": "Largeur (mobile)",
+          "min": 20,
+          "max": 220,
+          "step": 2,
+          "default": 90,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacité",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "default": 100,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "select",
+          "id": "pos",
+          "label": "Ancrage (ordinateur)",
+          "options": [
+            { "value": "top left", "label": "Haut gauche", "group": "Haut" },
+            { "value": "top center", "label": "Haut centre", "group": "Haut" },
+            { "value": "top right", "label": "Haut droite", "group": "Haut" },
+            { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
+            { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
+            { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
+            { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
+            { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
+            { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
+          ],
+          "default": "top right"
+        },
+        {
+          "type": "range",
+          "id": "offset_x",
+          "label": "Décalage horizontal",
+          "min": -100,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "offset_y",
+          "label": "Décalage vertical",
+          "min": -100,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "pos_mobile",
+          "label": "Ancrage (mobile)",
+          "options": [
+            { "value": "inherit", "label": "Comme l'ordinateur" },
+            { "value": "top left", "label": "Haut gauche", "group": "Haut" },
+            { "value": "top center", "label": "Haut centre", "group": "Haut" },
+            { "value": "top right", "label": "Haut droite", "group": "Haut" },
+            { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
+            { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
+            { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
+            { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
+            { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
+            { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
+          ],
+          "default": "inherit"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_desktop",
+          "label": "Masquer sur ordinateur",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "Masquer sur mobile",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "name": "Ligne / séparateur",
+      "settings": [
+        {
+          "type": "range",
+          "id": "length",
+          "label": "Longueur",
+          "min": 5,
+          "max": 100,
+          "step": 1,
+          "default": 100,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "id": "thickness",
+          "label": "Épaisseur",
+          "min": 1,
+          "max": 20,
+          "step": 1,
+          "default": 1,
+          "unit": "px"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Couleur",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacité",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "default": 60,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "select",
+          "id": "pos",
+          "label": "Ancrage (ordinateur)",
+          "options": [
+            { "value": "top left", "label": "Haut gauche", "group": "Haut" },
+            { "value": "top center", "label": "Haut centre", "group": "Haut" },
+            { "value": "top right", "label": "Haut droite", "group": "Haut" },
+            { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
+            { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
+            { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
+            { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
+            { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
+            { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
+          ],
+          "default": "bottom left"
+        },
+        {
+          "type": "range",
+          "id": "offset_x",
+          "label": "Décalage horizontal",
+          "min": -100,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "offset_y",
+          "label": "Décalage vertical",
+          "min": -100,
+          "max": 100,
+          "step": 2,
+          "default": 60,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "pos_mobile",
+          "label": "Ancrage (mobile)",
+          "options": [
+            { "value": "inherit", "label": "Comme l'ordinateur" },
+            { "value": "top left", "label": "Haut gauche", "group": "Haut" },
+            { "value": "top center", "label": "Haut centre", "group": "Haut" },
+            { "value": "top right", "label": "Haut droite", "group": "Haut" },
+            { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
+            { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
+            { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
+            { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
+            { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
+            { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
+          ],
+          "default": "inherit"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_desktop",
+          "label": "Masquer sur ordinateur",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "Masquer sur mobile",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Bouton",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Libellé",
+          "default": "Découvrir"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Lien"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_in_new_window",
+          "label": "Ouvrir dans un nouvel onglet",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "options": [
+            { "value": "solid", "label": "Plein" },
+            { "value": "outline", "label": "Contour" }
+          ],
+          "default": "solid"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "select",
+          "id": "pos",
+          "label": "Ancrage (ordinateur)",
+          "options": [
+            { "value": "top left", "label": "Haut gauche", "group": "Haut" },
+            { "value": "top center", "label": "Haut centre", "group": "Haut" },
+            { "value": "top right", "label": "Haut droite", "group": "Haut" },
+            { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
+            { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
+            { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
+            { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
+            { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
+            { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
+          ],
+          "default": "bottom right"
+        },
+        {
+          "type": "range",
+          "id": "offset_x",
+          "label": "Décalage horizontal",
+          "min": -100,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "offset_y",
+          "label": "Décalage vertical",
+          "min": -100,
+          "max": 100,
+          "step": 2,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "pos_mobile",
+          "label": "Ancrage (mobile)",
+          "options": [
+            { "value": "inherit", "label": "Comme l'ordinateur" },
+            { "value": "top left", "label": "Haut gauche", "group": "Haut" },
+            { "value": "top center", "label": "Haut centre", "group": "Haut" },
+            { "value": "top right", "label": "Haut droite", "group": "Haut" },
+            { "value": "middle left", "label": "Milieu gauche", "group": "Milieu" },
+            { "value": "middle center", "label": "Milieu centre", "group": "Milieu" },
+            { "value": "middle right", "label": "Milieu droite", "group": "Milieu" },
+            { "value": "bottom left", "label": "Bas gauche", "group": "Bas" },
+            { "value": "bottom center", "label": "Bas centre", "group": "Bas" },
+            { "value": "bottom right", "label": "Bas droite", "group": "Bas" }
+          ],
+          "default": "inherit"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_desktop",
+          "label": "Masquer sur ordinateur",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "Masquer sur mobile",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Enriched hero",
+      "blocks": [
+        {
+          "type": "heading",
+          "settings": {
+            "text": "Des ingrédients propres et éprouvés, puis on monte d'un cran avec des actifs premium rarement vus à ce prix.",
+            "pos": "top left",
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "pos": "top right",
+            "width": 140
+          }
+        },
+        {
+          "type": "divider",
+          "settings": {
+            "pos": "bottom left",
+            "offset_y": 70,
+            "length": 100
+          }
+        },
+        {
+          "type": "text",
+          "settings": {
+            "text": "<p>Le résultat : un soin de la peau et du corps simple et efficace.</p>",
+            "pos": "bottom left",
+            "offset_y": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

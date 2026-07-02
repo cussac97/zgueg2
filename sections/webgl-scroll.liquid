@@ -1,0 +1,385 @@
+{%- liquid
+  assign model_url = section.settings.model_url
+  if model_url == blank
+    assign model_url = 'gummy-bear.glb' | asset_url
+  endif
+  assign scroll_len = section.settings.scroll_length
+  assign exposure = section.settings.exposure_level | divided_by: 10.0
+  assign shadow = section.settings.shadow_level | divided_by: 100.0
+
+  assign poster_src = ''
+  if section.settings.poster_image != blank
+    assign poster_src = section.settings.poster_image | image_url: width: 900
+  else
+    assign poster_src = 'bonbonamodeliser.png' | asset_url
+  endif
+-%}
+
+{% style %}
+  #webgl-{{ section.id }} {
+    position: relative;
+    height: {{ scroll_len | times: 100 }}vh;
+    {% if section.settings.background_color != "rgba(0,0,0,0)" %}background-color: {{ section.settings.background_color }};{% endif %}
+  }
+  #webgl-{{ section.id }} .webgl-scroll__stage {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #webgl-{{ section.id }} model-viewer,
+  #webgl-{{ section.id }} .webgl-scroll__fallback {
+    width: min(90vw, 720px);
+    height: 80vh;
+    --poster-color: transparent;
+    background: transparent;
+  }
+  #webgl-{{ section.id }} .webgl-scroll__fallback {
+    object-fit: contain;
+    will-change: transform;
+    transition: transform 0.1s linear;
+  }
+  #webgl-{{ section.id }} .webgl-scroll__overlays {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  #webgl-{{ section.id }} .webgl-scroll__step {
+    position: absolute;
+    top: 50%;
+    width: min(90vw, 420px);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  #webgl-{{ section.id }} .webgl-scroll__step.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #webgl-{{ section.id }} .webgl-scroll__step--left {
+    left: clamp(1rem, 6vw, 6rem);
+    transform: translate(-30px, 0);
+    text-align: left;
+  }
+  #webgl-{{ section.id }} .webgl-scroll__step--left.is-visible { transform: translate(0, 0); }
+  #webgl-{{ section.id }} .webgl-scroll__step--right {
+    right: clamp(1rem, 6vw, 6rem);
+    transform: translate(30px, 0);
+    text-align: right;
+  }
+  #webgl-{{ section.id }} .webgl-scroll__step--right.is-visible { transform: translate(0, 0); }
+  #webgl-{{ section.id }} .webgl-scroll__step--center {
+    left: 50%;
+    margin-left: min(-45vw, -210px);
+    text-align: center;
+  }
+  #webgl-{{ section.id }} .webgl-scroll__step {
+    transform-origin: center;
+    translate: 0 -50%;
+  }
+  #webgl-{{ section.id }} .webgl-scroll__step h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2.75rem);
+    line-height: 1.1;
+    margin: 0 0 0.75rem;
+  }
+  @media screen and (max-width: 767px) {
+    #webgl-{{ section.id }} .webgl-scroll__step {
+      left: 50% !important;
+      right: auto !important;
+      margin-left: 0 !important;
+      width: min(86vw, 420px);
+      translate: -50% -50%;
+      text-align: center;
+    }
+  }
+{% endstyle %}
+
+<section id="webgl-{{ section.id }}" class="webgl-scroll" {{ section.shopify_attributes }}>
+  <div class="webgl-scroll__stage">
+    {%- if model_url != blank -%}
+      <model-viewer
+        data-js-webgl-model
+        src="{{ model_url }}"
+        poster="{{ poster_src }}"
+        alt="{{ section.settings.model_alt | escape }}"
+        camera-orbit="{{ section.settings.start_angle }}deg {{ section.settings.tilt }}deg auto"
+        field-of-view="30deg"
+        interaction-prompt="none"
+        disable-zoom
+        disable-tap
+        disable-pan
+        exposure="{{ exposure }}"
+        shadow-intensity="{{ shadow }}"
+        interpolation-decay="80"
+        loading="eager"
+        reveal="auto"
+      ></model-viewer>
+    {%- else -%}
+      <img
+        class="webgl-scroll__fallback"
+        data-js-webgl-fallback
+        src="{{ poster_src }}"
+        alt="{{ section.settings.model_alt | escape }}"
+        loading="eager"
+      >
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="webgl-scroll__overlays">
+        {%- for block in section.blocks -%}
+          <div
+            class="webgl-scroll__step webgl-scroll__step--{{ block.settings.position }}"
+            data-from="{{ block.settings.appear_at }}"
+            data-to="{{ block.settings.disappear_at }}"
+            style="{% if block.settings.text_color != "rgba(0,0,0,0)" %}color: {{ block.settings.text_color }};{% endif %}"
+            {{ block.shopify_attributes }}
+          >
+            {%- unless block.settings.heading == blank -%}
+              <h2>{{ block.settings.heading | escape }}</h2>
+            {%- endunless -%}
+            {%- unless block.settings.text == blank -%}
+              <div class="rte">{{ block.settings.text }}</div>
+            {%- endunless -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{%- if model_url != blank -%}
+  <script>
+    if (!customElements.get('model-viewer') && !window.__mvLoading) {
+      window.__mvLoading = true;
+      var mvScript = document.createElement('script');
+      mvScript.type = 'module';
+      mvScript.src = 'https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js';
+      document.head.appendChild(mvScript);
+    }
+  </script>
+{%- endif -%}
+
+<script>
+  (function () {
+    var root = document.getElementById('webgl-{{ section.id }}');
+    if (!root) return;
+    var model = root.querySelector('[data-js-webgl-model]');
+    var fallback = root.querySelector('[data-js-webgl-fallback]');
+    var steps = root.querySelectorAll('.webgl-scroll__step');
+    var startTheta = {{ section.settings.start_angle }};
+    var rotation = {{ section.settings.rotation_amount }};
+    var phi = {{ section.settings.tilt }};
+    var ticking = false;
+
+    function update() {
+      ticking = false;
+      var rect = root.getBoundingClientRect();
+      var total = rect.height - window.innerHeight;
+      var p = total > 0 ? (-rect.top) / total : 0;
+      if (p < 0) p = 0;
+      if (p > 1) p = 1;
+
+      var theta = startTheta + rotation * p;
+      if (model) {
+        model.setAttribute('camera-orbit', theta + 'deg ' + phi + 'deg auto');
+      }
+      if (fallback) {
+        var scale = 0.85 + 0.25 * Math.sin(p * Math.PI);
+        fallback.style.transform = 'scale(' + scale.toFixed(3) + ')';
+      }
+      for (var i = 0; i < steps.length; i++) {
+        var from = parseFloat(steps[i].dataset.from) / 100;
+        var to = parseFloat(steps[i].dataset.to) / 100;
+        var active = p >= from && p <= to;
+        steps[i].classList.toggle('is-visible', active);
+      }
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(update);
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    update();
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "WebGL scroll 3D",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Modèle 3D (.glb) qui pivote au défilement, avec des textes qui apparaissent. Par défaut : l'ourson gummy 3D fourni. Pour un autre modèle, importe ton .glb dans Contenu → Fichiers et colle son URL ci-dessous."
+    },
+    {
+      "type": "text",
+      "id": "model_url",
+      "label": "URL d'un modèle 3D (.glb)",
+      "info": "Laisser vide pour utiliser l'ourson gummy 3D intégré au thème."
+    },
+    {
+      "type": "image_picker",
+      "id": "poster_image",
+      "label": "Image (poster / fallback)",
+      "info": "Affichée pendant le chargement du 3D ou si aucun modèle. Par défaut : bonbonamodeliser.png."
+    },
+    {
+      "type": "text",
+      "id": "model_alt",
+      "label": "Texte alternatif",
+      "default": "Bonbon ourson 3D"
+    },
+    {
+      "type": "header",
+      "content": "Animation au scroll"
+    },
+    {
+      "type": "range",
+      "id": "scroll_length",
+      "label": "Longueur de défilement",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "unit": "x",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "start_angle",
+      "label": "Angle de départ",
+      "min": -180,
+      "max": 180,
+      "step": 10,
+      "unit": "°",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "rotation_amount",
+      "label": "Rotation totale au scroll",
+      "min": 0,
+      "max": 720,
+      "step": 20,
+      "unit": "°",
+      "default": 360
+    },
+    {
+      "type": "range",
+      "id": "tilt",
+      "label": "Inclinaison verticale",
+      "min": 0,
+      "max": 180,
+      "step": 5,
+      "unit": "°",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Rendu 3D"
+    },
+    {
+      "type": "range",
+      "id": "exposure_level",
+      "label": "Luminosité (exposition)",
+      "min": 5,
+      "max": 20,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "shadow_level",
+      "label": "Intensité de l'ombre",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "default": 60
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#f7f3ec"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Texte au scroll",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Titre",
+          "default": "Un titre ici"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Texte",
+          "default": "<p>Décrivez votre produit pendant que l'objet tourne.</p>"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Position",
+          "options": [
+            { "value": "left", "label": "Gauche" },
+            { "value": "center", "label": "Centre" },
+            { "value": "right", "label": "Droite" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Couleur du texte",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "range",
+          "id": "appear_at",
+          "label": "Apparaît à (% du scroll)",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "disappear_at",
+          "label": "Disparaît à (% du scroll)",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 35
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "WebGL scroll 3D",
+      "blocks": [
+        { "type": "step", "settings": { "heading": "Acidulé", "position": "left", "appear_at": 0, "disappear_at": 35 } },
+        { "type": "step", "settings": { "heading": "Fondant", "position": "right", "appear_at": 35, "disappear_at": 70 } },
+        { "type": "step", "settings": { "heading": "Irrésistible", "position": "center", "appear_at": 70, "disappear_at": 100 } }
+      ]
+    }
+  ]
+}
+{% endschema %}

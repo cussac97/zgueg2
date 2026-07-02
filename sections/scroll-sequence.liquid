@@ -1,0 +1,201 @@
+{%- liquid
+  assign scroll_len = section.settings.scroll_length
+  if section.settings.sprite_image != blank
+    assign sprite_url = section.settings.sprite_image | image_url: width: 3200
+  else
+    assign sprite_url = 'gummy-sprite.webp' | asset_url
+  endif
+-%}
+
+{% style %}
+  #seq-{{ section.id }} {
+    position: relative;
+    height: {{ scroll_len | times: 100 }}vh;
+    {% if section.settings.background_color != "rgba(0,0,0,0)" %}background-color: {{ section.settings.background_color }};{% endif %}
+  }
+  #seq-{{ section.id }} .seq__stage {
+    position: sticky; top: 0; height: 100vh; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #seq-{{ section.id }} canvas {
+    height: 82vh; width: auto; max-width: 92vw;
+    display: block;
+  }
+  #seq-{{ section.id }} .seq__overlays { position: absolute; inset: 0; pointer-events: none; }
+  #seq-{{ section.id }} .seq__step {
+    position: absolute; top: 50%; translate: 0 -50%;
+    width: min(90vw, 420px);
+    opacity: 0; transition: opacity .6s ease, transform .6s ease;
+  }
+  #seq-{{ section.id }} .seq__step.is-visible { opacity: 1; }
+  #seq-{{ section.id }} .seq__step--left { left: clamp(1rem,6vw,6rem); text-align: left; transform: translateX(-30px); }
+  #seq-{{ section.id }} .seq__step--left.is-visible { transform: translateX(0); }
+  #seq-{{ section.id }} .seq__step--right { right: clamp(1rem,6vw,6rem); text-align: right; transform: translateX(30px); }
+  #seq-{{ section.id }} .seq__step--right.is-visible { transform: translateX(0); }
+  #seq-{{ section.id }} .seq__step--center { left: 50%; margin-left: min(-45vw,-210px); text-align: center; transform: translateY(30px); }
+  #seq-{{ section.id }} .seq__step--center.is-visible { transform: translateY(0); }
+  #seq-{{ section.id }} .seq__step h2 { font-size: clamp(1.5rem,3.5vw,2.75rem); line-height: 1.1; margin: 0 0 .75rem; }
+  @media screen and (max-width: 767px) {
+    #seq-{{ section.id }} .seq__step { left: 50% !important; right: auto !important; margin-left: 0 !important; translate: -50% -50%; transform: none; text-align: center; width: min(86vw,420px); }
+  }
+{% endstyle %}
+
+<section id="seq-{{ section.id }}" class="scroll-sequence" {{ section.shopify_attributes }}>
+  <div class="seq__stage">
+    <canvas data-js-seq-canvas width="400" height="512" role="img" aria-label="{{ section.settings.alt | escape }}"></canvas>
+    {%- if section.blocks.size > 0 -%}
+      <div class="seq__overlays">
+        {%- for block in section.blocks -%}
+          <div class="seq__step seq__step--{{ block.settings.position }}"
+            data-from="{{ block.settings.appear_at }}" data-to="{{ block.settings.disappear_at }}"
+            style="{% if block.settings.text_color != "rgba(0,0,0,0)" %}color: {{ block.settings.text_color }};{% endif %}"
+            {{ block.shopify_attributes }}>
+            {%- unless block.settings.heading == blank -%}<h2>{{ block.settings.heading | escape }}</h2>{%- endunless -%}
+            {%- unless block.settings.text == blank -%}<div class="rte">{{ block.settings.text }}</div>{%- endunless -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+<script>
+  (function () {
+    var root = document.getElementById('seq-{{ section.id }}');
+    if (!root) return;
+    var canvas = root.querySelector('[data-js-seq-canvas]');
+    var ctx = canvas.getContext('2d');
+    var steps = root.querySelectorAll('.seq__step');
+    var N = {{ section.settings.frame_count }};
+    var COLS = {{ section.settings.columns }};
+    var ROWS = Math.ceil(N / COLS);
+    var img = new Image();
+    var cw = 0, ch = 0, loaded = false, lastFrame = -1, ticking = false;
+
+    img.onload = function () {
+      cw = img.naturalWidth / COLS;
+      ch = img.naturalHeight / ROWS;
+      canvas.width = cw; canvas.height = ch;
+      loaded = true;
+      draw(0);
+      update();
+    };
+    img.src = '{{ sprite_url }}';
+
+    function draw(frame) {
+      var col = frame % COLS, row = Math.floor(frame / COLS);
+      ctx.clearRect(0, 0, cw, ch);
+      ctx.drawImage(img, col * cw, row * ch, cw, ch, 0, 0, cw, ch);
+    }
+
+    function update() {
+      ticking = false;
+      var rect = root.getBoundingClientRect();
+      var total = rect.height - window.innerHeight;
+      var p = total > 0 ? (-rect.top) / total : 0;
+      if (p < 0) p = 0; if (p > 1) p = 1;
+      if (loaded) {
+        var frame = Math.min(N - 1, Math.floor(p * N));
+        if (frame !== lastFrame) { lastFrame = frame; draw(frame); }
+      }
+      for (var i = 0; i < steps.length; i++) {
+        var f = parseFloat(steps[i].dataset.from) / 100, t = parseFloat(steps[i].dataset.to) / 100;
+        steps[i].classList.toggle('is-visible', p >= f && p <= t);
+      }
+    }
+    function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Scroll 3D (séquence)",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Objet 3D photoréaliste qui pivote au défilement (séquence d'images pré-rendues, technique Apple). Par défaut : le bonbon gummy. Pour un autre objet, fournis une sprite sheet et ses réglages."
+    },
+    {
+      "type": "image_picker",
+      "id": "sprite_image",
+      "label": "Sprite sheet (grille d'images)",
+      "info": "Laisser vide pour utiliser le bonbon gummy intégré."
+    },
+    {
+      "type": "number",
+      "id": "frame_count",
+      "label": "Nombre d'images",
+      "default": 64
+    },
+    {
+      "type": "number",
+      "id": "columns",
+      "label": "Colonnes de la grille",
+      "default": 8
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Texte alternatif",
+      "default": "Bonbon gummy 3D"
+    },
+    {
+      "type": "header",
+      "content": "Défilement"
+    },
+    {
+      "type": "range",
+      "id": "scroll_length",
+      "label": "Longueur de défilement",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "unit": "x",
+      "default": 3
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#f7f3ec"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Texte au scroll",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Titre", "default": "Un titre" },
+        { "type": "richtext", "id": "text", "label": "Texte", "default": "<p>Votre texte ici.</p>" },
+        {
+          "type": "select", "id": "position", "label": "Position",
+          "options": [
+            { "value": "left", "label": "Gauche" },
+            { "value": "center", "label": "Centre" },
+            { "value": "right", "label": "Droite" }
+          ],
+          "default": "left"
+        },
+        { "type": "color", "id": "text_color", "label": "Couleur du texte", "default": "rgba(0,0,0,0)" },
+        { "type": "range", "id": "appear_at", "label": "Apparaît à (%)", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 0 },
+        { "type": "range", "id": "disappear_at", "label": "Disparaît à (%)", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 35 }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Scroll 3D (séquence)",
+      "blocks": [
+        { "type": "step", "settings": { "heading": "Acidulé", "position": "left", "appear_at": 0, "disappear_at": 35 } },
+        { "type": "step", "settings": { "heading": "Fondant", "position": "right", "appear_at": 35, "disappear_at": 70 } },
+        { "type": "step", "settings": { "heading": "Irrésistible", "position": "center", "appear_at": 70, "disappear_at": 100 } }
+      ]
+    }
+  ]
+}
+{% endschema %}
