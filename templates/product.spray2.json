@@ -1385,7 +1385,7 @@
         "heading_weight": "400",
         "show_summary": true,
         "summary_rating": 4.7,
-        "summary_count": 20,
+        "summary_count": "20",
         "summary_caption": "moyenne sur",
         "summary_reviews_word": "avis",
         "summary_text_size": 13,
