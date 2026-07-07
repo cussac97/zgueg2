@@ -1147,6 +1147,77 @@
         "padding_bottom": 60,
         "seo_h_tag": "h2"
       }
+    },
+    "instagram_shots_XXa4rz": {
+      "type": "instagram-shots",
+      "blocks": {
+        "photo_cYBFzw": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/734664350_18144331258474224_6367943887764334060_n.jpg",
+            "ratio": "natural",
+            "username": "zguegfr",
+            "link": "",
+            "rotation": -4,
+            "offset_y": 24
+          }
+        },
+        "photo_c4YW8f": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/731397105_2124619314783465_9222613973754406186_n.jpg",
+            "ratio": "natural",
+            "username": "zguegfr",
+            "link": "",
+            "rotation": 4,
+            "offset_y": 12
+          }
+        },
+        "photo_xLqz6m": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/729539972_903929108649516_3600706314502179396_n.jpg",
+            "ratio": "natural",
+            "username": "zguegfr",
+            "link": "",
+            "rotation": -2,
+            "offset_y": 44
+          }
+        },
+        "photo_zeFwLY": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/734872032_18145239259474224_3698200024824348827_n.jpg",
+            "ratio": "natural",
+            "username": "zguegfr",
+            "link": "",
+            "rotation": 3,
+            "offset_y": 20
+          }
+        }
+      },
+      "block_order": [
+        "photo_cYBFzw",
+        "photo_c4YW8f",
+        "photo_xLqz6m",
+        "photo_zeFwLY"
+      ],
+      "name": "Instagram shots",
+      "settings": {
+        "heading": "Suivez nous sur Instagram !",
+        "heading_color": "#1a1a1a",
+        "background_color": "#F9F4EC",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "heading_spacing": 62,
+        "card_width": 245,
+        "card_min_width": 205,
+        "card_min_width_mobile": 150,
+        "gap_horizontal": 38,
+        "gap_vertical": 22,
+        "show_instagram_icon": true,
+        "tilt_images": true
+      }
     }
   },
   "order": [
@@ -1163,6 +1234,7 @@
     "rich_text_UKfy6N",
     "rich_text_9XNcQB",
     "comparison_table_rcciR8",
-    "ph_scale_pjWhrH"
+    "ph_scale_pjWhrH",
+    "instagram_shots_XXa4rz"
   ]
 }
