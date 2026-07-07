@@ -482,7 +482,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/Capture_d_ecran_2026-06-23_a_14.12.29.png",
-            "label": "Apaise les irritations\n\nCentella asiatica, armoise et Houttuynia cordata calment échauffements, rougeurs et inconfort des zones sensibles — même après le sport.",
+            "label": "Apaise les irritations\n\nCentella asiatica, armoise et Houttuynia cordata calment échauffements, rougeurs et inconfort des zones sensibles, même après le sport.",
             "link": ""
           }
         },
@@ -583,7 +583,7 @@
         "text_GKafAp": {
           "type": "text",
           "settings": {
-            "text": "<p>Le matin, tout est clean. Sauf qu'à la seconde où tu remets un caleçon, la zone repart au combat : chaleur, frottements, transpiration, zéro ventilation. En quelques heures, le smegma se reforme, les mauvaises bactéries prolifèrent et le pH se dérègle — et l'odeur revient, pile au mauvais moment.</p><p>Ta douche du matin ne tient pas jusqu'au soir, et un gel douche classique n'est ni pensé ni assez doux pour cette zone : trop décapant, il fragilise la flore qui te protège. Cette zone mérite une solution développée pour elle. On l'a faite.</p>",
+            "text": "<p>Le matin, tout est clean. Sauf qu'à la seconde où tu remets un caleçon, la zone repart au combat : chaleur, frottements, transpiration, zéro ventilation. En quelques heures, le smegma se reforme, les mauvaises bactéries prolifèrent et le pH se dérègle. L'odeur revient, pile au mauvais moment.</p><p>Ta douche du matin ne tient pas jusqu'au soir, et un gel douche classique n'est ni pensé ni assez doux pour cette zone : trop décapant, il fragilise la flore qui te protège. Cette zone mérite une solution développée pour elle. On l'a faite.</p>",
             "text_size": "regular"
           }
         }
@@ -856,6 +856,26 @@
             "value_3": ""
           }
         },
+        "row_ZGsmegma": {
+          "type": "row",
+          "settings": {
+            "label": "Freine smegma & mauvaises bactéries au fil de la journée",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_X3C9gH": {
+          "type": "row",
+          "settings": {
+            "label": "Neutralise les odeurs* (Zinc PCA)",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
         "row_GFYk4G": {
           "type": "row",
           "settings": {
@@ -883,26 +903,6 @@
             "value_brand": "100/100",
             "value_1": "~70/100",
             "value_2": "~75/100",
-            "value_3": ""
-          }
-        },
-        "row_X3C9gH": {
-          "type": "row",
-          "settings": {
-            "label": "Neutralise les odeurs* (Zinc PCA)",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
-            "value_3": ""
-          }
-        },
-        "row_ZGsmegma": {
-          "type": "row",
-          "settings": {
-            "label": "Freine smegma & mauvaises bactéries au fil de la journée",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
             "value_3": ""
           }
         }
@@ -1040,6 +1040,26 @@
             "reply_author": "Zgueg",
             "reply_date": "",
             "reply_text": ""
+          }
+        },
+        "review_r21": {
+          "type": "review",
+          "settings": {
+            "author": "Florian D.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 2,
+            "date": "1 juillet 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Commande passée il y a plus d'une semaine et toujours rien reçu, aucune nouvelle du suivi. Le produit a l'air bien d'après les avis mais là pour l'instant je m'impatiente un peu...",
+            "helpful_up": 1,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Zgueg",
+            "reply_date": "1 juillet 2026",
+            "reply_text": "Bonjour Florian, désolés pour l'attente, ça ne devrait pas se passer comme ça. Écrivez-nous à contact@zgueg.fr avec votre numéro de commande et on regarde votre suivi tout de suite pour vous débloquer ça 🙏"
           }
         },
         "review_r05": {
@@ -1351,26 +1371,6 @@
             "reply_date": "",
             "reply_text": ""
           }
-        },
-        "review_r21": {
-          "type": "review",
-          "settings": {
-            "author": "Florian D.",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 2,
-            "date": "1 juillet 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Commande passée il y a plus d'une semaine et toujours rien reçu, aucune nouvelle du suivi. Le produit a l'air bien d'après les avis mais là pour l'instant je m'impatiente un peu...",
-            "helpful_up": 1,
-            "helpful_down": 0,
-            "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "1 juillet 2026",
-            "reply_text": "Bonjour Florian, désolés pour l'attente, ça ne devrait pas se passer comme ça. Écrivez-nous à contact@zgueg.fr avec votre numéro de commande et on regarde votre suivi tout de suite pour vous débloquer ça 🙏"
-          }
         }
       },
       "block_order": [
@@ -1429,6 +1429,7 @@
         "product_filter_label": "Type de produit",
         "product_filter_all": "Tous les produits",
         "empty_text": "Aucune note pour les filtres sélectionnés",
+        "no_comment_text": "Cet acheteur n'a pas laissé de commentaire",
         "show_date": true,
         "show_reply_date": true,
         "clamp_lines": 4,
