@@ -27,55 +27,142 @@ if ( typeof ModalBox !== 'function' ) {
       };
 
 			if ( this.o.type == 'cookies' ) {
-				
-				this.o.enabled = false;
 
-				const showBanner = () => {
-					this.o.enabled = true;
-					this.show();
-				}
-			
-				const cookiesAccept = () => {
-					window.Shopify.customerPrivacy.setTrackingConsent({
-						"analytics": true,
-						"marketing": true,
-						"preferences": true
-					}, () => {});
-					localStorage.setItem('zgueg-cookie-banner', 'true'); 
-				}
-				const cookiesDecline = () => {
-					window.Shopify.customerPrivacy.setTrackingConsent({
-						"analytics": false,
-						"marketing": false,
-						"preferences": false
-					}, () => {});
-					localStorage.setItem('zgueg-cookie-banner', 'true'); 
-				}
-			
-				const initCookieBanner = () => {
-					if ( localStorage.getItem('zgueg-cookie-banner') !== 'true' ) {
-						showBanner();
-					}
-				}
+        this.o.enabled = false;
+        this.o.showOnce = false;
 
-				this.querySelector('[data-js-cookies-accept]').addEventListener('click', cookiesAccept);
-				this.querySelector('[data-js-cookies-decline]').addEventListener('click', cookiesDecline);
+        var modal = this;
+        var STORAGE_KEY = 'zgueg-cookie-consent';
+        var CATS = ['shopify', 'meta', 'tiktok', 'ga'];
 
-				window.Shopify.loadFeatures(
-					[
-						{
-							name: 'consent-tracking-api',
-							version: '0.1',
-						},
-					],
-					error => {
-						if (error) {
-							throw error;
-						}
-						initCookieBanner();
-					}
-				);
-			}
+        var readConsent = function () {
+          try { return JSON.parse(localStorage.getItem(STORAGE_KEY)); } catch (e) { return null; }
+        };
+
+        // Vendor toggles -> standard Shopify consent categories
+        var applyConsent = function (c) {
+          var marketing = !!(c.meta || c.tiktok);
+          var consent = {
+            analytics: !!c.ga,
+            marketing: marketing,
+            preferences: !!c.shopify,
+            sale_of_data: marketing
+          };
+          if (window.Shopify && Shopify.customerPrivacy && Shopify.customerPrivacy.setTrackingConsent) {
+            Shopify.customerPrivacy.setTrackingConsent(consent, function () {});
+          }
+          window.zguegConsent = c;
+          document.dispatchEvent(new CustomEvent('zgueg:consent', { detail: c }));
+        };
+
+        var saveConsent = function (c) {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(c));
+          applyConsent(c);
+        };
+
+        var setToggles = function (c) {
+          CATS.forEach(function (k) {
+            var el = modal.querySelector('[data-cookie-toggle="' + k + '"]');
+            if (el) { el.checked = c ? !!c[k] : true; }
+          });
+        };
+
+        var readToggles = function () {
+          var c = {};
+          CATS.forEach(function (k) {
+            var el = modal.querySelector('[data-cookie-toggle="' + k + '"]');
+            c[k] = el ? !!el.checked : true;
+          });
+          return c;
+        };
+
+        var showPrefs = function (on) {
+          modal.classList.toggle('cookies-prefs-open', on !== false);
+        };
+
+        var acceptAll = function () {
+          var c = { shopify: true, meta: true, tiktok: true, ga: true };
+          setToggles(c);
+          saveConsent(c);
+        };
+
+        var saveChoices = function () { saveConsent(readToggles()); };
+
+        var showBanner = function () {
+          modal.o.enabled = true;
+          showPrefs(false);
+          modal.show();
+        };
+
+        var initCookieBanner = function () {
+          var saved = readConsent();
+          if (saved) { applyConsent(saved); }
+          else { showBanner(); }
+        };
+
+        // Re-open the preferences panel later (footer link)
+        window.zguegOpenCookiePrefs = function () {
+          modal.o.enabled = true;
+          setToggles(readConsent());
+          modal.show();
+          showPrefs(true);
+        };
+
+        var acceptBtn = modal.querySelector('[data-js-cookies-accept]');
+        var customizeBtn = modal.querySelector('[data-js-cookies-customize]');
+        var saveBtn = modal.querySelector('[data-js-cookies-save]');
+        var backBtn = modal.querySelector('[data-js-cookies-back]');
+        if (acceptBtn) { acceptBtn.addEventListener('click', acceptAll); }
+        if (customizeBtn) { customizeBtn.addEventListener('click', function (e) { e.preventDefault(); setToggles(readConsent()); showPrefs(true); }); }
+        if (saveBtn) { saveBtn.addEventListener('click', saveChoices); }
+        if (backBtn) { backBtn.addEventListener('click', function (e) { e.preventDefault(); showPrefs(false); }); }
+
+        // Footer "Préférences de cookies" link + any [data-zgueg-cookie-prefs] / #cookie-preferences link
+        var wirePrefsLinks = function () {
+          document.querySelectorAll('a[href*="#cookie-preferences"], [data-zgueg-cookie-prefs]').forEach(function (el) {
+            if (el.dataset.zgCookieWired) { return; }
+            el.dataset.zgCookieWired = '1';
+            el.addEventListener('click', function (e) { e.preventDefault(); window.zguegOpenCookiePrefs(); });
+          });
+        };
+        var injectFooterLink = function () {
+          if (!document.querySelector('[data-zgueg-cookie-prefs]')) {
+            var groups = document.querySelectorAll('.shopify-section-group-footer-group');
+            var footer = groups.length ? groups[0] : null;
+            if (footer) {
+              var card = modal.querySelector('[data-cookie-card]');
+              var label = (card && card.dataset.prefsLinkLabel) ? card.dataset.prefsLinkLabel : 'Préférences de cookies';
+              var wrap = document.createElement('div');
+              wrap.className = 'zgueg-cookie-prefs-link';
+              var btn = document.createElement('button');
+              btn.type = 'button';
+              btn.setAttribute('data-zgueg-cookie-prefs', '');
+              btn.textContent = label;
+              wrap.appendChild(btn);
+              footer.appendChild(wrap);
+            }
+          }
+          wirePrefsLinks();
+        };
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', injectFooterLink);
+        } else {
+          injectFooterLink();
+        }
+
+        window.Shopify.loadFeatures(
+          [
+            {
+              name: 'consent-tracking-api',
+              version: '0.1',
+            },
+          ],
+          function (error) {
+            if (error) { throw error; }
+            initCookieBanner();
+          }
+        );
+      }
 
       this._scrollTriggered = false; 
 
