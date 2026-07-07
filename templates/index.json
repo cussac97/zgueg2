@@ -15,10 +15,10 @@
         "button_qQnETJ": {
           "type": "button",
           "settings": {
-            "label": "Découvrir Refreshed®",
+            "label": "Découvrir",
             "url": "shopify://products/spray-reequilibrant-intime-pour-homme",
             "style": "solid",
-            "bg_color": "#0000C9",
+            "bg_color": "#0000c9",
             "text_color": "#ffffff",
             "open_in_new_window": false
           }
