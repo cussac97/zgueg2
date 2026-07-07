@@ -145,8 +145,8 @@
         "type": "exit-intent-popup",
         "settings": {
           "enable": false,
-          "title": "Before you leave",
-          "text": "<p>Be the first to know about new collections and exclusive offers.</p>",
+          "title": "Quoi, on pue ? C'est ça ?",
+          "text": "<p>Pas si vite l'asticot ! Pourquoi tu t'en vas ? T'es pas convaincu ? Tu veux un code promo ? AAHH c'est ça que tu voulais n'est ce pas ? C'est un code promo que tu voulais ! Bon aller, va pour cette fois, fais en bon usage : \"OUT10\"</p>",
           "cta_label": "",
           "cta_url": "",
           "cta_target": false,
