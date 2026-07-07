@@ -165,6 +165,12 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  #cr-{{ uid }} .cr-review__text--empty {
+    color: var(--cr-muted);
+    font-style: italic;
+    opacity: .85;
+  }
+  #cr-{{ uid }} .cr-review--no-comment { opacity: .9; }
   #cr-{{ uid }} .cr-readmore {
     background: none; border: 0; padding: 0;
     font: inherit; cursor: pointer;
@@ -326,7 +332,7 @@
         {%- for block in section.blocks -%}
           {%- if block.type == 'review' -%}
             {%- assign b = block.settings -%}
-            <article class="cr-review" data-cr-item data-rating="{{ b.rating }}" data-product="{{ b.product.handle }}" {{ block.shopify_attributes }}>
+            <article class="cr-review{% if b.text == blank %} cr-review--no-comment{% endif %}" data-cr-item data-rating="{{ b.rating }}" data-product="{{ b.product.handle }}" {{ block.shopify_attributes }}>
               <div class="cr-review__meta">
                 <p class="cr-review__name">{{ b.author | default: 'Anonymous' }}</p>
                 {%- if b.verified -%}
@@ -344,9 +350,11 @@
                 {%- if b.text != blank -%}
                   <p class="cr-review__text is-clamped" data-cr-text>{{ b.text }}</p>
                   <button type="button" class="cr-readmore" data-cr-readmore hidden>{{ s.read_more_label | default: 'Read More' }}</button>
+                {%- else -%}
+                  <p class="cr-review__text cr-review__text--empty">{{ s.no_comment_text | default: "Cet acheteur n'a pas laissé de commentaire" }}</p>
                 {%- endif -%}
 
-                {%- if s.show_helpful -%}
+                {%- if s.show_helpful and b.text != blank -%}
                   <div class="cr-helpful">
                     <span class="cr-helpful__label">{{ s.helpful_label | default: 'Was This Review Helpful?' }}</span>
                     <div class="cr-votes">
@@ -805,6 +813,12 @@
       "id": "empty_text",
       "label": "Texte si aucun avis ne correspond",
       "default": "No reviews match your filters."
+    },
+    {
+      "type": "text",
+      "id": "no_comment_text",
+      "label": "Texte des avis sans commentaire",
+      "default": "Cet acheteur n'a pas laissé de commentaire"
     },
 
     {
