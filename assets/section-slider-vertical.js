@@ -24,6 +24,27 @@ if ( typeof SliderVertical !== 'function' ) {
       }
 
       this.calculateHeight();
+
+      // Robustness: at parse-time init() the media may not have real dimensions
+      // yet, which collapses the vertical height and leaves only the horizontal
+      // drift visible. Recalculate once each media is ready + on window load.
+      const recalc = () => {
+        this.scrollParallax();
+        this.scrollRotation();
+        this.scrollHorizontal();
+        if ( this.bgImage ) { this.scrollBackground(); }
+        this.calculateHeight();
+      };
+      this.querySelectorAll('img').forEach(img => {
+        if ( !img.complete ) { img.addEventListener('load', recalc, { once: true }); }
+      });
+      this.querySelectorAll('video').forEach(v => {
+        v.addEventListener('loadedmetadata', recalc, { once: true });
+      });
+      if ( document.readyState !== 'complete' ) {
+        window.addEventListener('load', recalc, { once: true });
+      }
+
       window.addEventListener('resize', debounce(()=>{
         this.scrollParallax();
         this.scrollRotation();
