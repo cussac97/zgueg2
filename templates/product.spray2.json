@@ -583,7 +583,7 @@
         "text_GKafAp": {
           "type": "text",
           "settings": {
-            "text": "<p>Chaleur, frottements, journées à rallonge : l'humidité s'installe, le pH se dérègle, et le film hydrolipidique ne joue plus son rôle de barrière. Le déo n'est pas pensé pour cette zone, les lingettes l'agressent un peu plus. Résultat : ta zone intime est déréglé au cours de la journée.Cette zone mérite une solution conçue pour elle, on l'a développé pour vous.</p>",
+            "text": "<p>Le matin, tout est clean. Sauf qu'à la seconde où tu remets un caleçon, la zone repart au combat : chaleur, frottements, transpiration, zéro ventilation. En quelques heures, le smegma se reforme, les mauvaises bactéries prolifèrent et le pH se dérègle — et l'odeur revient, pile au mauvais moment.</p><p>Ta douche du matin ne tient pas jusqu'au soir, et un gel douche classique n'est ni pensé ni assez doux pour cette zone : trop décapant, il fragilise la flore qui te protège. Cette zone mérite une solution développée pour elle. On l'a faite.</p>",
             "text_size": "regular"
           }
         }
@@ -839,19 +839,19 @@
         "row_MRNn6x": {
           "type": "row",
           "settings": {
-            "label": "pH* (la zone intime vit à ≈ 5,5)",
+            "label": "pH physiologique (la zone intime vit à ≈ 5,5)",
             "value_brand": "5,5",
             "value_1": "8",
-            "value_2": "7",
+            "value_2": "5,5",
             "value_3": ""
           }
         },
         "row_Lh8e4f": {
           "type": "row",
           "settings": {
-            "label": " À base d'alcool",
-            "value_brand": "Non",
-            "value_1": "Oui",
+            "label": "Agit toute la journée, sans rinçage",
+            "value_brand": "Oui",
+            "value_1": "Non",
             "value_2": "Non",
             "value_3": ""
           }
@@ -869,7 +869,7 @@
         "row_V8Jyah": {
           "type": "row",
           "settings": {
-            "label": "Actifs apaisants* (centella, armoise, thé vert…)",
+            "label": "Actifs apaisants (centella, armoise, thé vert…)",
             "value_brand": "4",
             "value_1": "0",
             "value_2": "1",
@@ -881,15 +881,25 @@
           "settings": {
             "label": "Note Yuka (composition)",
             "value_brand": "100/100",
-            "value_1": "~75/100",
-            "value_2": "~70/100",
+            "value_1": "~70/100",
+            "value_2": "~75/100",
             "value_3": ""
           }
         },
         "row_X3C9gH": {
           "type": "row",
           "settings": {
-            "label": "Neutralisant* d'odeurs",
+            "label": "Neutralise les odeurs* (Zinc PCA)",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_ZGsmegma": {
+          "type": "row",
+          "settings": {
+            "label": "Freine smegma & mauvaises bactéries au fil de la journée",
             "value_brand": "Oui",
             "value_1": "Non",
             "value_2": "Non",
@@ -900,14 +910,15 @@
       "block_order": [
         "row_MRNn6x",
         "row_Lh8e4f",
+        "row_ZGsmegma",
+        "row_X3C9gH",
         "row_GFYk4G",
         "row_V8Jyah",
-        "row_dMdTM7",
-        "row_X3C9gH"
+        "row_dMdTM7"
       ],
       "name": "Tableau comparatif",
       "settings": {
-        "heading": "La concurrence ? On la cherche.",
+        "heading": "Un gel douche, ça lave. Ça ne protège pas ta journée.",
         "subheading": "",
         "heading_size": 52,
         "heading_size_mobile": 32,
@@ -920,13 +931,13 @@
         "brand_logo_width": 120,
         "brand_name": "zgueg",
         "brand_tagline": "Spray Refreshed®",
-        "competitor_1": "Déodorant classique",
-        "competitor_2": "Lingettes intimes",
+        "competitor_1": "Gel douche classique",
+        "competitor_2": "Gel intime du commerce",
         "competitor_3": "",
         "yes_no_icons": true,
         "value_font": "comparison-table--mono",
         "value_alignment": "center",
-        "footnote": "<p>*Basé sur la composition type des déodorants et lingettes du commerce au moment de la publication.</p><p>*Neutralise grâce au Zinc PCA</p>",
+        "footnote": "<p>*Comparé à la composition type des gels douche et gels intimes du commerce au moment de la publication.</p><p>*Neutralise les odeurs grâce au Zinc PCA.</p>",
         "section_background": "",
         "table_background": "#ffffff",
         "text_color": "#1a1a1a",
@@ -1099,7 +1110,7 @@
             "rating": 5,
             "date": "20 juin 2026",
             "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "ça faisait un moment que je cherchais un truc qui tient sur la durée, javais tout essayé les déos qui tiennent pas les lingettes qui dessèchent etc, un pote men a parlé jai testé sans trop y croire et en fait cest le premier produit qui tient vraiment toute la journée, un pschitt en sortie de douche et basta, je rachete direct",
+            "text": "ça faisait un moment que je cherchais un truc qui tient sur la durée, parce que le matin ça va mais en milieu daprès-midi lodeur revenait, une douche ça protège pas toute la journée quoi. un pote men a parlé, testé sans trop y croire et en fait cest le premier truc qui me garde clean jusquau soir, un pschitt en sortie de douche et basta, je rachete direct",
             "helpful_up": 7,
             "helpful_down": 0,
             "reply_enable": false,
