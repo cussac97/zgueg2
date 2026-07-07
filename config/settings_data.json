@@ -91,6 +91,23 @@
           "popups-0": {
             "type": "cookies",
             "settings": {
+              "title": "Salut c'est nous… 🍪 les cookies !",
+              "content": "<p>On a attendu d'être sûrs que nos Zgueg® vous plaisent avant de venir vous déranger. Maintenant qu'on est là, on aimerait bien vous accompagner tranquillement pendant votre visite ... promis, on reste bien plus discrets que certaines odeurs. 😏</p><p>C'est ok pour vous ? </p>",
+              "accept_label": "Tout accepter",
+              "customize_label": "Je choisis",
+              "prefs_title": "Vos préférences cookies",
+              "save_label": "Enregistrer mes choix",
+              "back_label": "Retour",
+              "prefs_link_label": "Préférences de cookies",
+              "toggle_color": "#1f49ff",
+              "cat_shopify_label": "Cookies Shopify",
+              "cat_shopify_desc": "Indispensables au fonctionnement de la boutique : panier, commande, sécurité.",
+              "cat_meta_label": "Cookies Meta",
+              "cat_meta_desc": "Facebook & Instagram : mesure et personnalisation de nos publicités.",
+              "cat_tiktok_label": "Cookies TikTok",
+              "cat_tiktok_desc": "Suivi de nos campagnes et de nos vidéos TikTok.",
+              "cat_ga_label": "Cookies Google Analytics",
+              "cat_ga_desc": "Mesure d'audience, pour savoir ce qui vous plaît sur le site.",
               "popup_bgcolor": "#111111",
               "popup_txtcolor": "#ffffff",
               "popup_box_shadow": false
