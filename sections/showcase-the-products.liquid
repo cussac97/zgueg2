@@ -34,6 +34,9 @@
       --sp-detail-size: {{ s.detail_size }}px;
       --sp-price-size: {{ s.price_size }}px;
       --sp-ratio: {{ s.media_ratio }};
+      --sp-media-pad: {{ s.image_padding }}px;
+      --sp-image-fit: {{ s.image_fit }};
+      --sp-image-scale: {{ s.image_scale | divided_by: 100.0 }};
       --sp-pt: {{ s.padding_top }}px;
       --sp-pb: {{ s.padding_bottom }}px;
     }
@@ -453,9 +456,13 @@
       "default": 28
     },
     {
+      "type": "header",
+      "content": "Image du produit"
+    },
+    {
       "type": "select",
       "id": "media_ratio",
-      "label": "Format de l'image",
+      "label": "Format de la zone image",
       "options": [
         { "value": "1 / 1", "label": "Carré (1:1)" },
         { "value": "4 / 5", "label": "Portrait (4:5)" },
@@ -463,6 +470,38 @@
         { "value": "16 / 10", "label": "Paysage (16:10)" }
       ],
       "default": "4 / 5"
+    },
+    {
+      "type": "select",
+      "id": "image_fit",
+      "label": "Ajustement de l'image",
+      "info": "« Remplir » recadre pour couvrir la zone. « Image entière » affiche tout le produit (idéal pour les packshots).",
+      "options": [
+        { "value": "cover", "label": "Remplir la zone (recadre)" },
+        { "value": "contain", "label": "Image entière (taille produit)" }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "range",
+      "id": "image_scale",
+      "label": "Taille de l'image",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "image_padding",
+      "label": "Marge autour de l'image",
+      "info": "Espace entre l'image et le bord de la zone (laisse voir le fond de l'image).",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 0
     },
     {
       "type": "header",
