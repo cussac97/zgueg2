@@ -15,7 +15,7 @@
         "button_qQnETJ": {
           "type": "button",
           "settings": {
-            "label": "Découvrir",
+            "label": "Découvrir Refreshed®",
             "url": "shopify://products/spray-reequilibrant-intime-pour-homme",
             "style": "solid",
             "bg_color": "#0000c9",
@@ -30,7 +30,7 @@
       "name": "Bannière hero",
       "settings": {
         "eyebrow": "",
-        "title": "Le seul \"déo\" dont tu as besoin cet été.",
+        "title": "Un seul soin pour ne plus jamais sentir mauvais.",
         "description": "",
         "image": "shopify://shop_images/ChatGPT_Image_24_juin_2026_16_29_01.png",
         "focal_point": "center center",
