@@ -54,6 +54,152 @@
         "seo_h_tag": "h2"
       }
     },
+    "showcase_the_products_NFrmhk": {
+      "type": "showcase-the-products",
+      "blocks": {
+        "product_rhTXC8": {
+          "type": "product",
+          "settings": {
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "eyebrow": "Best-seller",
+            "name": "Spray protecteur après-douche",
+            "tagline": "Soin fraîcheur + 16h d'efficacité.",
+            "details": "pH | 5,5\nFormat | 100 ml\nNote Yuka | 100/100\nSans alcool",
+            "price_override": "",
+            "badge": "Le plus vendu",
+            "button_label": "Acheter",
+            "button_url": "",
+            "highlight": true
+          }
+        },
+        "product_zwtd9g": {
+          "type": "product",
+          "settings": {
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "eyebrow": "Best-seller",
+            "name": "Gel intime quotidien",
+            "tagline": "Nettoyage quotidien en profondeur.",
+            "details": "pH | 5,5\nFormat | 200 ml\nNote Yuka | 100/100\nSans savon",
+            "price_override": "",
+            "badge": "",
+            "button_label": "Acheter",
+            "button_url": "",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "product_rhTXC8",
+        "product_zwtd9g"
+      ],
+      "name": "Showcase produits",
+      "settings": {
+        "heading": "Nos best-sellers",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "footnote": "",
+        "value_font": "showcase-products--mono",
+        "section_background": "",
+        "card_background": "#ffffff",
+        "media_background": "#f5f5f3",
+        "text_color": "#1a1a1a",
+        "muted_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#0000c9",
+        "highlight_text": "#0000c9",
+        "button_solid_bg": "#0000c9",
+        "button_solid_text": "rgba(0,0,0,0)",
+        "button_outline_color": "rgba(0,0,0,0)",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "card_gap": 24,
+        "card_padding": 28,
+        "media_ratio": "4 / 5",
+        "name_size": 22,
+        "tagline_size": 15,
+        "detail_size": 13,
+        "price_size": 18,
+        "card_min_width": 320,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "seo_h_tag": "h2"
+      }
+    },
+    "slider_X9kAL9": {
+      "type": "slider",
+      "blocks": {
+        "image_Lqi3bN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_13_21_40.png",
+            "link": "",
+            "offset_width": 30,
+            "offset_x": 30,
+            "offset_x_end": 10,
+            "offset_y": 80,
+            "hide_on_desk": false,
+            "hide_on_mobile": false,
+            "offset_width_mobile": 30,
+            "offset_x_mobile": 0,
+            "offset_y_mobile": 80,
+            "scroll_speed": 5,
+            "rotation_start": 0,
+            "rotation_end": -5
+          }
+        },
+        "image_3Ftk6A": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_11_12_44.png",
+            "link": "",
+            "offset_width": 30,
+            "offset_x": 45,
+            "offset_x_end": 55,
+            "offset_y": 145,
+            "hide_on_desk": false,
+            "hide_on_mobile": false,
+            "offset_width_mobile": 65,
+            "offset_x_mobile": 30,
+            "offset_y_mobile": 35,
+            "scroll_speed": 7,
+            "rotation_start": 0,
+            "rotation_end": 5
+          }
+        }
+      },
+      "block_order": [
+        "image_Lqi3bN",
+        "image_3Ftk6A"
+      ],
+      "name": "t:sections.bundle-extra-words.sections.slider.name",
+      "settings": {
+        "caption": "",
+        "title": "<p>Irréprochable de jour, comme de nuit.</p>",
+        "button_label": "",
+        "button_link": "",
+        "open_in_new_window": false,
+        "alignment": "horizontal-center align-content--vertical-middle",
+        "title_size": "heading-size--xlarge",
+        "spacing": 32,
+        "button_style": "solid",
+        "blend_mode": "behind",
+        "color_background_main": "#FFFFFF",
+        "color_text_main": "#000000",
+        "border_radius": 0,
+        "add_top_margin": false,
+        "remove_inner_padding": false,
+        "scroll_start_space": 0,
+        "scroll_end_space": 40,
+        "seo_h_tag": "h3"
+      }
+    },
     "enriched_hero_e4bhR9": {
       "type": "enriched-hero",
       "blocks": {
@@ -405,84 +551,6 @@
         "button_full_width_mobile": false
       }
     },
-    "showcase_the_products_NFrmhk": {
-      "type": "showcase-the-products",
-      "blocks": {
-        "product_rhTXC8": {
-          "type": "product",
-          "settings": {
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "eyebrow": "Best-seller",
-            "name": "Spray protecteur après-douche",
-            "tagline": "Soin fraîcheur + 16h d'efficacité.",
-            "details": "pH | 5,5\nFormat | 100 ml\nNote Yuka | 100/100\nSans alcool",
-            "price_override": "",
-            "badge": "Le plus vendu",
-            "button_label": "Acheter",
-            "button_url": "",
-            "highlight": true
-          }
-        },
-        "product_zwtd9g": {
-          "type": "product",
-          "settings": {
-            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "eyebrow": "Best-seller",
-            "name": "Gel intime quotidien",
-            "tagline": "Nettoyage quotidien en profondeur.",
-            "details": "pH | 5,5\nFormat | 200 ml\nNote Yuka | 100/100\nSans savon",
-            "price_override": "",
-            "badge": "",
-            "button_label": "Acheter",
-            "button_url": "",
-            "highlight": false
-          }
-        }
-      },
-      "block_order": [
-        "product_rhTXC8",
-        "product_zwtd9g"
-      ],
-      "name": "Showcase produits",
-      "settings": {
-        "heading": "Nos best-sellers",
-        "subheading": "",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "heading_color": "rgba(0,0,0,0)",
-        "section_heading_layout": "section-heading--center section-heading--two-rows",
-        "cta_label": "",
-        "cta_url": "",
-        "footnote": "",
-        "value_font": "showcase-products--mono",
-        "section_background": "",
-        "card_background": "#ffffff",
-        "media_background": "#f5f5f3",
-        "text_color": "#1a1a1a",
-        "muted_color": "#4f4f4f",
-        "line_color": "#e6e6e6",
-        "highlight_background": "#e8edfb",
-        "highlight_border": "#0000c9",
-        "highlight_text": "#0000c9",
-        "button_solid_bg": "#0000c9",
-        "button_solid_text": "rgba(0,0,0,0)",
-        "button_outline_color": "rgba(0,0,0,0)",
-        "highlight_border_width": 2,
-        "border_radius": 0,
-        "card_gap": 24,
-        "card_padding": 28,
-        "media_ratio": "4 / 5",
-        "name_size": 22,
-        "tagline_size": 15,
-        "detail_size": 13,
-        "price_size": 18,
-        "card_min_width": 320,
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "seo_h_tag": "h2"
-      }
-    },
     "rich_text_3E9aKj": {
       "type": "rich-text",
       "blocks": {
@@ -527,6 +595,7 @@
         "button_FpdwFg",
         "text_N8H9Y7"
       ],
+      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_24_juin_2026_16_29_01.png",
@@ -748,6 +817,7 @@
         "text_Vz8W6y",
         "button_dXzPWN"
       ],
+      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_11_20_40.png",
@@ -1078,10 +1148,11 @@
   },
   "order": [
     "hero_banner_4RL9MK",
+    "showcase_the_products_NFrmhk",
+    "slider_X9kAL9",
     "enriched_hero_e4bhR9",
     "customer_reviews_c89ViU",
     "certifications_DDdq8b",
-    "showcase_the_products_NFrmhk",
     "rich_text_3E9aKj",
     "ss_video_image_text_3_JLCMQb",
     "featured_collection_nUjFKx",
