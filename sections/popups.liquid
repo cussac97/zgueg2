@@ -209,33 +209,128 @@
                 </div>
 
               {%- when 'cookies' -%}
-                <div class="popup-text gutter--regular spacing--large remove-empty-space">
-                  <div>
-                    <span class="popup-title">{{ 'general.cookies_popup.title' | t }}</span>
-                  </div>
-                  <div>
-                    <span class="text-size--small">{{ 'general.cookies_popup.content' | t }}</span>
-                  </div>
-                  <div class="increased-spacing cta-stacked">
-                    {%- render 'button',
-                      style: 'solid',
-                      fullwidth: true,
-                      label: 'general.cookies_popup.button_label',
-                      label_is_translation: true,
-                      type: 'button',
-                      attribute: 'data-js-close data-js-cookies-accept'
-                    -%}
+                {%- liquid
+                  assign shopify_desc_default = 'Indispensables au fonctionnement de la boutique : panier, commande, sécurité.'
+                  assign meta_desc_default = 'Facebook & Instagram : mesure et personnalisation de nos publicités.'
+                  assign tiktok_desc_default = 'Suivi de nos campagnes et de nos vidéos TikTok.'
+                  assign ga_desc_default = 'Mesure d''audience, pour savoir ce qui vous plaît sur le site.'
+                -%}
+                <div class="popup-text gutter--regular spacing--large remove-empty-space cookies-card" data-cookie-card data-prefs-link-label="{{ block.settings.prefs_link_label | default: 'Préférences de cookies' | escape }}" style="--cookie-accent: {{ block.settings.toggle_color | default: '#1f49ff' }};">
 
-                    {%- render 'button',
-                      style: 'outline',
-                      fullwidth: true,
-                      label: 'general.cookies_popup.button_label_decline',
-                      label_is_translation: true,
-                      type: 'button',
-                      attribute: 'data-js-close data-js-cookies-decline'
-                    -%}
+                  {%- comment -%} Vue principale : consentement {%- endcomment -%}
+                  <div class="cookies-main">
+                    <div>
+                      <span class="popup-title">{{ block.settings.title | default: "Salut c'est nous… 🍪 les cookies !" }}</span>
+                    </div>
+                    <div class="rte text-size--small cookies-desc">
+                      {{ block.settings.content | default: "<p>On a attendu d'être sûrs que nos zgueg vous plaisent avant de venir vous déranger. Maintenant qu'on est là, on aimerait bien vous accompagner tranquillement pendant votre visite — promis, on reste bien plus discrets que certaines odeurs. 😏</p><p>C'est ok pour vous ? Vous pourrez changer d'avis quand vous voulez via le lien « Préférences de cookies » en bas de page.</p>" }}
+                    </div>
+                    <div class="increased-spacing cookies-actions">
+                      {%- render 'button',
+                        style: 'solid',
+                        fullwidth: true,
+                        label: block.settings.accept_label,
+                        label_is_translation: false,
+                        type: 'button',
+                        attribute: 'data-js-close data-js-cookies-accept'
+                      -%}
+                      {%- render 'button',
+                        style: 'outline',
+                        fullwidth: true,
+                        label: block.settings.customize_label,
+                        label_is_translation: false,
+                        type: 'button',
+                        attribute: 'data-js-cookies-customize'
+                      -%}
+                    </div>
+                  </div>
+
+                  {%- comment -%} Vue préférences : interrupteurs par catégorie {%- endcomment -%}
+                  <div class="cookies-prefs">
+                    <div>
+                      <span class="popup-title">{{ block.settings.prefs_title | default: 'Vos préférences cookies' }}</span>
+                    </div>
+                    <div class="cookie-rows">
+                      <div class="cookie-row">
+                        <div class="cookie-row__text">
+                          <div class="cookie-row__label">{{ block.settings.cat_shopify_label | default: 'Cookies Shopify' }}</div>
+                          <div class="cookie-row__desc">{{ block.settings.cat_shopify_desc | default: shopify_desc_default }}</div>
+                        </div>
+                        <label class="cookie-switch">
+                          <input type="checkbox" data-cookie-toggle="shopify" checked aria-label="{{ block.settings.cat_shopify_label | default: 'Cookies Shopify' | escape }}">
+                          <span class="cookie-switch__track"></span>
+                        </label>
+                      </div>
+                      <div class="cookie-row">
+                        <div class="cookie-row__text">
+                          <div class="cookie-row__label">{{ block.settings.cat_meta_label | default: 'Cookies Meta' }}</div>
+                          <div class="cookie-row__desc">{{ block.settings.cat_meta_desc | default: meta_desc_default }}</div>
+                        </div>
+                        <label class="cookie-switch">
+                          <input type="checkbox" data-cookie-toggle="meta" checked aria-label="{{ block.settings.cat_meta_label | default: 'Cookies Meta' | escape }}">
+                          <span class="cookie-switch__track"></span>
+                        </label>
+                      </div>
+                      <div class="cookie-row">
+                        <div class="cookie-row__text">
+                          <div class="cookie-row__label">{{ block.settings.cat_tiktok_label | default: 'Cookies TikTok' }}</div>
+                          <div class="cookie-row__desc">{{ block.settings.cat_tiktok_desc | default: tiktok_desc_default }}</div>
+                        </div>
+                        <label class="cookie-switch">
+                          <input type="checkbox" data-cookie-toggle="tiktok" checked aria-label="{{ block.settings.cat_tiktok_label | default: 'Cookies TikTok' | escape }}">
+                          <span class="cookie-switch__track"></span>
+                        </label>
+                      </div>
+                      <div class="cookie-row">
+                        <div class="cookie-row__text">
+                          <div class="cookie-row__label">{{ block.settings.cat_ga_label | default: 'Cookies Google Analytics' }}</div>
+                          <div class="cookie-row__desc">{{ block.settings.cat_ga_desc | default: ga_desc_default }}</div>
+                        </div>
+                        <label class="cookie-switch">
+                          <input type="checkbox" data-cookie-toggle="ga" checked aria-label="{{ block.settings.cat_ga_label | default: 'Cookies Google Analytics' | escape }}">
+                          <span class="cookie-switch__track"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="cookies-actions">
+                      {%- render 'button',
+                        style: 'solid',
+                        fullwidth: true,
+                        label: block.settings.save_label,
+                        label_is_translation: false,
+                        type: 'button',
+                        attribute: 'data-js-close data-js-cookies-save'
+                      -%}
+                    </div>
+                    <button type="button" class="cookies-back" data-js-cookies-back>{{ block.settings.back_label | default: 'Retour' }}</button>
                   </div>
                 </div>
+
+                <style>
+                  .popup--cookies .popup-title { display:block; font-size:20px; line-height:1.25; font-weight:700; margin-bottom:12px; }
+                  .popup--cookies .cookies-desc p { margin:0 0 10px; }
+                  .popup--cookies .cookies-desc p:last-child { margin-bottom:0; }
+                  .popup--cookies .cookies-prefs { display:none; }
+                  .popup--cookies.cookies-prefs-open .cookies-main { display:none; }
+                  .popup--cookies.cookies-prefs-open .cookies-prefs { display:block; }
+                  .popup--cookies .cookies-actions { display:flex; flex-direction:column; gap:10px; margin-top:18px; }
+                  .popup--cookies .cookie-rows { margin-top:10px; }
+                  .popup--cookies .cookie-row { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid rgba(127,127,127,.22); }
+                  .popup--cookies .cookie-row:last-child { border-bottom:0; }
+                  .popup--cookies .cookie-row__label { font-weight:600; }
+                  .popup--cookies .cookie-row__desc { font-size:13px; opacity:.72; margin-top:3px; line-height:1.4; }
+                  .popup--cookies .cookie-switch { position:relative; flex:0 0 auto; width:46px; height:26px; display:inline-block; }
+                  .popup--cookies .cookie-switch input { position:absolute; inset:0; opacity:0; margin:0; cursor:pointer; z-index:1; background:transparent !important; border:0 !important; }
+                  .popup--cookies .cookie-switch__track { position:absolute; inset:0; border-radius:999px; background:rgba(127,127,127,.4); transition:background .2s ease; pointer-events:none; }
+                  .popup--cookies .cookie-switch__track::after { content:""; position:absolute; top:3px; left:3px; width:20px; height:20px; border-radius:50%; background:#fff; transition:transform .2s ease; }
+                  .popup--cookies .cookie-switch input:checked ~ .cookie-switch__track { background: var(--cookie-accent, #1f49ff); }
+                  .popup--cookies .cookie-switch input:checked ~ .cookie-switch__track::after { transform: translateX(20px); }
+                  .popup--cookies .cookie-switch input:focus-visible ~ .cookie-switch__track { outline:2px solid var(--cookie-accent, #1f49ff); outline-offset:2px; }
+                  .popup--cookies .cookies-back { display:block; margin:14px auto 0; background:none; border:0; font:inherit; cursor:pointer; text-decoration:underline; opacity:.7; }
+                  .zgueg-cookie-prefs-link { width:100%; text-align:center; padding:16px 12px; }
+                  .zgueg-cookie-prefs-link button { background:none; border:0; font:inherit; cursor:pointer; text-decoration:underline; opacity:.6; padding:4px; }
+                  .zgueg-cookie-prefs-link button:hover { opacity:1; }
+                </style>
 
               {%- when 'newsletter' -%}
                 <div class="popup-newsletter{% if block.settings.image != blank %} popup-newsletter--with-image popup-newsletter--mobile-{{ block.settings.mobile_layout | default: 'vertical' }}{% endif %}"{% if block.settings.image != blank %} style="--popup-img-width: {{ block.settings.image_width | default: 45 }}%; --popup-img-padding: {{ block.settings.image_padding | default: 16 }}px; --popup-img-mobile-width: {{ block.settings.mobile_image_width | default: 40 }}%; --popup-img-mobile-height: {{ block.settings.mobile_image_height | default: 160 }}px;"{% endif %}>
@@ -557,6 +652,116 @@
         {
           "type": "paragraph",
           "content": "t:sections.cookies.cookies_info"
+        },
+        {
+          "type": "header",
+          "content": "Carte cookies"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre de la carte",
+          "default": "Salut c'est nous… 🍪 les cookies !"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Description de la carte",
+          "default": "<p>On a attendu d'être sûrs que nos zgueg vous plaisent avant de venir vous déranger. Maintenant qu'on est là, on aimerait bien vous accompagner tranquillement pendant votre visite — promis, on reste bien plus discrets que certaines odeurs. 😏</p><p>C'est ok pour vous ? Vous pourrez changer d'avis quand vous voulez via le lien « Préférences de cookies » en bas de page.</p>"
+        },
+        {
+          "type": "text",
+          "id": "accept_label",
+          "label": "Bouton « tout accepter »",
+          "default": "Tout accepter"
+        },
+        {
+          "type": "text",
+          "id": "customize_label",
+          "label": "Bouton « je choisis »",
+          "default": "Je choisis"
+        },
+        {
+          "type": "header",
+          "content": "Préférences (interrupteurs)"
+        },
+        {
+          "type": "text",
+          "id": "prefs_title",
+          "label": "Titre de l'écran préférences",
+          "default": "Vos préférences cookies"
+        },
+        {
+          "type": "text",
+          "id": "save_label",
+          "label": "Bouton « enregistrer »",
+          "default": "Enregistrer mes choix"
+        },
+        {
+          "type": "text",
+          "id": "back_label",
+          "label": "Bouton « retour »",
+          "default": "Retour"
+        },
+        {
+          "type": "text",
+          "id": "prefs_link_label",
+          "label": "Lien dans le pied de page",
+          "default": "Préférences de cookies"
+        },
+        {
+          "type": "color",
+          "id": "toggle_color",
+          "label": "Couleur des interrupteurs (actifs)",
+          "default": "#1f49ff"
+        },
+        {
+          "type": "text",
+          "id": "cat_shopify_label",
+          "label": "Catégorie 1 — titre",
+          "default": "Cookies Shopify"
+        },
+        {
+          "type": "text",
+          "id": "cat_shopify_desc",
+          "label": "Catégorie 1 — description",
+          "default": "Indispensables au fonctionnement de la boutique : panier, commande, sécurité."
+        },
+        {
+          "type": "text",
+          "id": "cat_meta_label",
+          "label": "Catégorie 2 — titre",
+          "default": "Cookies Meta"
+        },
+        {
+          "type": "text",
+          "id": "cat_meta_desc",
+          "label": "Catégorie 2 — description",
+          "default": "Facebook & Instagram : mesure et personnalisation de nos publicités."
+        },
+        {
+          "type": "text",
+          "id": "cat_tiktok_label",
+          "label": "Catégorie 3 — titre",
+          "default": "Cookies TikTok"
+        },
+        {
+          "type": "text",
+          "id": "cat_tiktok_desc",
+          "label": "Catégorie 3 — description",
+          "default": "Suivi de nos campagnes et de nos vidéos TikTok."
+        },
+        {
+          "type": "text",
+          "id": "cat_ga_label",
+          "label": "Catégorie 4 — titre",
+          "default": "Cookies Google Analytics"
+        },
+        {
+          "type": "text",
+          "id": "cat_ga_desc",
+          "label": "Catégorie 4 — description",
+          "default": "Mesure d'audience, pour savoir ce qui vous plaît sur le site."
         },
         {
           "type": "header",
