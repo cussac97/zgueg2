@@ -9,6 +9,51 @@
  */
 {
   "sections": {
+    "hero_banner_4RL9MK": {
+      "type": "hero-banner",
+      "blocks": {
+        "button_qQnETJ": {
+          "type": "button",
+          "settings": {
+            "label": "Découvrir",
+            "url": "",
+            "style": "solid",
+            "bg_color": "#0000C9",
+            "text_color": "#ffffff",
+            "open_in_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "button_qQnETJ"
+      ],
+      "name": "Bannière hero",
+      "settings": {
+        "eyebrow": "",
+        "title": "Deviens le zgueg le plus frais du troupeau.",
+        "description": "",
+        "image": "shopify://shop_images/ChatGPT_Image_24_juin_2026_16_29_01.png",
+        "focal_point": "center center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 25,
+        "overlay_gradient": false,
+        "full_width": true,
+        "border_radius": 0,
+        "desktop_height": 80,
+        "mobile_height": 88,
+        "content_align_h": "center",
+        "content_align_v": "center",
+        "content_max_width": 760,
+        "heading_size": 66,
+        "heading_size_mobile": 38,
+        "heading_weight": "400",
+        "description_size": 18,
+        "text_color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "seo_h_tag": "h2"
+      }
+    },
     "enriched_hero_e4bhR9": {
       "type": "enriched-hero",
       "blocks": {
@@ -109,6 +154,7 @@
         "text_zJRC4R",
         "button_YhzCgM"
       ],
+      "disabled": true,
       "name": "Enriched hero",
       "settings": {
         "width": "full",
@@ -240,6 +286,7 @@
         "product_filter_label": "Product",
         "product_filter_all": "All products",
         "empty_text": "No reviews match your filters.",
+        "no_comment_text": "Cet acheteur n'a pas laissé de commentaire",
         "show_date": true,
         "show_reply_date": true,
         "clamp_lines": 4,
@@ -1030,6 +1077,7 @@
     }
   },
   "order": [
+    "hero_banner_4RL9MK",
     "enriched_hero_e4bhR9",
     "customer_reviews_c89ViU",
     "certifications_DDdq8b",
