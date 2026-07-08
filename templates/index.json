@@ -1209,6 +1209,8 @@
         "background_color": "#f9f4ec",
         "padding_top": 100,
         "padding_bottom": 100,
+        "margin_top": 0,
+        "margin_bottom": -60,
         "heading_spacing": 62,
         "card_width": 245,
         "card_min_width": 205,
