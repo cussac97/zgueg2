@@ -1157,7 +1157,7 @@
             "image": "shopify://shop_images/734664350_18144331258474224_6367943887764334060_n.jpg",
             "ratio": "natural",
             "username": "zguegfr",
-            "link": "",
+            "link": "https://www.instagram.com/zguegfr/",
             "rotation": -4,
             "offset_y": 24
           }
@@ -1168,7 +1168,7 @@
             "image": "shopify://shop_images/731397105_2124619314783465_9222613973754406186_n.jpg",
             "ratio": "natural",
             "username": "zguegfr",
-            "link": "",
+            "link": "https://www.instagram.com/zguegfr/",
             "rotation": 4,
             "offset_y": 12
           }
@@ -1179,7 +1179,7 @@
             "image": "shopify://shop_images/729539972_903929108649516_3600706314502179396_n.jpg",
             "ratio": "natural",
             "username": "zguegfr",
-            "link": "",
+            "link": "https://www.instagram.com/zguegfr/",
             "rotation": -2,
             "offset_y": 44
           }
@@ -1190,7 +1190,7 @@
             "image": "shopify://shop_images/734872032_18145239259474224_3698200024824348827_n.jpg",
             "ratio": "natural",
             "username": "zguegfr",
-            "link": "",
+            "link": "https://www.instagram.com/zguegfr/",
             "rotation": 3,
             "offset_y": 20
           }
@@ -1207,8 +1207,10 @@
         "heading": "Suivez nous sur Instagram !",
         "heading_color": "#1a1a1a",
         "background_color": "#f9f4ec",
-        "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_top": 120,
+        "padding_bottom": 120,
+        "margin_top": 0,
+        "margin_bottom": -60,
         "heading_spacing": 62,
         "card_width": 245,
         "card_min_width": 205,
