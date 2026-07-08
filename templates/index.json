@@ -15,8 +15,8 @@
         "button_qQnETJ": {
           "type": "button",
           "settings": {
-            "label": "Découvrir Refreshed®",
-            "url": "shopify://products/spray-reequilibrant-intime-pour-homme",
+            "label": "Découvrir nos produits",
+            "url": "#section-template--30285168968028__showcase_the_products_NFrmhk",
             "style": "solid",
             "bg_color": "#0000c9",
             "text_color": "#ffffff",
@@ -64,7 +64,7 @@
             "eyebrow": "Best-seller",
             "name": "Spray protecteur après-douche",
             "tagline": "Soin fraîcheur + 16h d'efficacité.",
-            "details": "pH | 5,5\nFormat | 100 ml\nNote Yuka | 100/100\nSans alcool",
+            "details": "Utilisation | Quotidienne\nFonction | Fraicheur longue durée\nFormat | 100 ml\nNote Yuka | 100/100",
             "price_override": "",
             "badge": "Le plus vendu",
             "button_label": "Acheter",
@@ -79,7 +79,7 @@
             "eyebrow": "Best-seller",
             "name": "Gel intime quotidien",
             "tagline": "Nettoyage quotidien en profondeur.",
-            "details": "pH | 5,5\nFormat | 200 ml\nNote Yuka | 100/100\nSans savon",
+            "details": "Utilisation | Quotidienne\nFonction | Nettoyant\nFormat | 200 ml\nNote Yuka | 100/100",
             "price_override": "",
             "badge": "",
             "button_label": "Acheter",
@@ -1206,7 +1206,7 @@
       "settings": {
         "heading": "Suivez nous sur Instagram !",
         "heading_color": "#1a1a1a",
-        "background_color": "#F9F4EC",
+        "background_color": "#f9f4ec",
         "padding_top": 100,
         "padding_bottom": 100,
         "heading_spacing": 62,
