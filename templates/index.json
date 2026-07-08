@@ -33,6 +33,7 @@
         "title": "Plus d'hygiène, plus de confiance.",
         "description": "",
         "image": "shopify://shop_images/ChatGPT_Image_24_juin_2026_16_29_01.png",
+        "image_mobile": "shopify://shop_images/ChatGPT_Image_24_juin_2026_16_29_01.png",
         "focal_point": "center center",
         "overlay_color": "#000000",
         "overlay_opacity": 15,
