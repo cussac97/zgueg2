@@ -122,7 +122,7 @@
     });
   }
 
-  // Prix affiché dans le bouton « Ajouter au panier – 27,30 € ».
+  // Prix affiché dans le bouton « Ajouter au panier | 27,30 € ».
   // Reflète la variante sélectionnée + l'état abonnement on/off.
   function updateButtonPrice(on) {
     var vid = currentVariantId();
@@ -134,7 +134,7 @@
         return;
       }
       var price = (on && m.now) ? m.now : m.was;
-      setText(span, price ? '– ' + price : '');
+      setText(span, price ? '| ' + price : '');
     });
   }
 
