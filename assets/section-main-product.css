@@ -1456,17 +1456,6 @@ html[dir=ltr] .product-quick-view__title {
 .add-to-cart__price:empty {
   margin-left: 0;
 }
-/* Séparateur : petite barre verticale (plus courte que le caractère « | ») */
-.add-to-cart__price:not(:empty)::before {
-  content: "";
-  display: inline-block;
-  width: 1.5px;
-  height: 0.72em;
-  margin-right: 0.42em;
-  background: currentColor;
-  opacity: 0.5;
-  vertical-align: middle;
-}
 /* Le prix dans le bouton suit l'animation de survol « move » du libellé */
 .no-touchevents .button--move:hover .add-to-cart__price {
   animation: move 350ms ease-in-out forwards;
