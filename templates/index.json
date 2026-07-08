@@ -497,6 +497,7 @@
         "certification_YJRYkt",
         "certification_GtJLgp"
       ],
+      "disabled": true,
       "name": "Certifications",
       "settings": {
         "container_width": "large",
