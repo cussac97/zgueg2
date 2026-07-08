@@ -1784,7 +1784,7 @@
                           -%}
                         </span>
                         {%- if block.settings.show_price -%}
-                          <span class="add-to-cart__price" data-js-atc-price>{% if default_to_first_variant and current_variant.available %}| {{ current_variant.price | money }}{% endif %}</span>
+                          <span class="add-to-cart__price" data-js-atc-price>{% if default_to_first_variant and current_variant.available %}{{ current_variant.price | money }}{% endif %}</span>
                         {%- endif -%}
                         <span class="button__preloader">
                           <svg class="button__preloader-element" viewBox="25 25 50 50">
