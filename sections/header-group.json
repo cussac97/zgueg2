@@ -18,9 +18,9 @@
           "type": "content",
           "settings": {
             "text": "Soldes d'été : -30% sur le pack Spray + Gel quotidien",
-            "link": "",
-            "open_newsletter": true,
-            "target": true
+            "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
+            "open_newsletter": false,
+            "target": false
           }
         }
       },
