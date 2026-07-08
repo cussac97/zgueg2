@@ -172,6 +172,18 @@ if ( typeof ProductPage !== 'function' ) {
 						} else {
 							variantImg.scrollIntoView({behavior: 'smooth', block: 'center'});
 						}
+					} else {
+						// Galerie en image unique (show_first_image_only) : l'image de la variante
+						// n'est pas rendue, on remplace directement l'image affichee par celle de la variante.
+						const singleItem = this.productGallery.querySelector('.product-gallery-item');
+						const singleImg = singleItem ? singleItem.querySelector('img') : null;
+						const vSrc = variant.featured_image ? variant.featured_image.src : ( variant.featured_media.preview_image ? variant.featured_media.preview_image.src : null );
+						if ( singleImg && vSrc ) {
+							const sep = vSrc.indexOf('?') === -1 ? '?' : '&';
+							singleImg.setAttribute('srcset', [400,600,800,1000,1200,1500].map(w => `${vSrc}${sep}width=${w} ${w}w`).join(', '));
+							singleImg.setAttribute('src', `${vSrc}${sep}width=1200`);
+							singleItem.setAttribute('data-media-id', variant.featured_media.id);
+						}
 					}
 				}
 				
