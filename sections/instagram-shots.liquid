@@ -7,6 +7,8 @@
     {% if section.settings.background_color != "rgba(0,0,0,0)" %}background-color: {{ section.settings.background_color }};{% endif %}
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
+    margin-top: {{ section.settings.margin_top }}px;
+    margin-bottom: {{ section.settings.margin_bottom }}px;
   }
   #shopify-section-{{ section.id }} .ig-shots__heading {
     text-align: center;
@@ -188,9 +190,13 @@
       "content": "Hauteur et espacements"
     },
     {
+      "type": "paragraph",
+      "content": "Padding = espace intérieur, DANS le fond coloré. Marge = espace extérieur, HORS du fond (entre cette section et les voisines). Une marge négative rapproche les sections et supprime le blanc."
+    },
+    {
       "type": "range",
       "id": "padding_top",
-      "label": "Marge au-dessus de la section",
+      "label": "Padding haut (dans le fond)",
       "min": 0,
       "max": 160,
       "step": 4,
@@ -200,12 +206,32 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Marge sous la section",
+      "label": "Padding bas (dans le fond)",
       "min": 0,
       "max": 160,
       "step": 4,
       "unit": "px",
       "default": 60
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Marge haute (hors fond)",
+      "min": -100,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Marge basse (hors fond)",
+      "min": -100,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 0
     },
     {
       "type": "range",
