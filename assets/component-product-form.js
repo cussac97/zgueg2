@@ -681,8 +681,9 @@ if ( typeof ProductForm !== 'function' ) {
 			// abonnement alors que l'achat unique est choisi.
 			const sellingPlanInput = this.form.querySelector('input[name="selling_plan"]');
 			if ( sellingPlanInput ) {
-				const subBlock = this.form.querySelector('.shopify_subscriptions_app_block:not(.shopify_subscriptions_app_block--hidden)') || this.form;
-				const subscribeChecked = subBlock.querySelector('.tab_radio[id*="tab_subscribe"]:checked');
+				const spScope = this.closest('product-page') || this.closest('[id^="shopify-section"]') || document;
+				const subBlock = spScope.querySelector('.shopify_subscriptions_app_block:not(.shopify_subscriptions_app_block--hidden)');
+				const subscribeChecked = subBlock && subBlock.querySelector('.tab_radio[id*="tab_subscribe"]:checked');
 				if ( subscribeChecked ) {
 					const planRadio = subBlock.querySelector('input[data-radio-type="selling_plan"][data-selling-plan-id]');
 					if ( planRadio ) {
