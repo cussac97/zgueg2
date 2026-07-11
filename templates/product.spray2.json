@@ -323,7 +323,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Bénéfices",
-            "content": "<ul><li>Neutralise sueur et odeurs en quelques secondes</li><li>Fraîcheur immédiate, sans rinçage</li><li>Rééquilibre la flore intime à chaque pulvérisation</li><li>Sans alcool, ne pique pas</li><li>pH physiologique, respecte les muqueuses</li><li>Format nomade : poche, sac, vestiaire</li></ul>",
+            "content": "<ul><li>Zéro odeur du matin au soir : la fraîcheur tient vraiment la journée</li><li>Effet frais immédiat, sans rinçage</li><li>Rééquilibre la flore pour empêcher les odeurs de revenir</li><li>Sans alcool : ça ne pique pas, même après le rasage</li><li>pH physiologique, respecte les muqueuses</li><li>Format nomade : poche, sac, vestiaire</li></ul>",
             "page": "",
             "hide_block_if": false
           }
@@ -341,7 +341,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Pour qui ?",
-            "content": "<p>Conçu pour les hommes qui veulent rester frais entre deux douches : bureau, sport, déplacements, grosses chaleurs. Convient à tous les types de peau. Usage externe uniquement.</p>",
+            "content": "<p>Pour les mecs qui veulent être tranquilles du matin au soir : bureau, sport, déplacements, grosses chaleurs, rendez-vous. Convient à tous les types de peau. Usage externe uniquement.</p>",
             "page": "",
             "hide_block_if": false
           }
@@ -350,7 +350,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Comment l'utiliser ?",
-            "content": "<p>Deux à trois pulvérisations sur les parties intimes externes, à n'importe quel moment de la journée — après le sport, à la pause, avant un rendez-vous. Pas besoin de rincer : ça sèche en quelques secondes, sans résidu. Pour une routine complète, combine-le avec le gel mousse nettoyant sous la douche.</p>",
+            "content": "<p>Deux pulvérisations sur les parties intimes externes en sortant de la douche : ça sèche en quelques secondes, sans rinçage ni résidu, et t'es tranquille jusqu'au soir. Journée caniculaire ou grosse séance de sport ? Remets un pschitt si tu veux — mais en temps normal, un seul geste le matin suffit. Pour une routine complète, combine-le avec le gel mousse nettoyant sous la douche.</p>",
             "page": "",
             "hide_block_if": false
           }
@@ -582,7 +582,7 @@
         "title_UDcVcH": {
           "type": "title",
           "settings": {
-            "title": "Entre deux douches, ta zone intime est (une zone) morte",
+            "title": "Ta douche tient 2 heures. Ta journée en dure 16.",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 56,
@@ -642,7 +642,7 @@
         "title_aj3KDD": {
           "type": "title",
           "settings": {
-            "title": "Un coup de frais qui équilibre (enfin) ta flore.",
+            "title": "Frais à 8h. Encore frais à 20h.",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 52,
@@ -653,7 +653,7 @@
         "text_fqVCan": {
           "type": "text",
           "settings": {
-            "text": "<p>Le spray Refreshed® c'est : une brume fine, sans alcool, au pH physiologique. Deux pulvérisations en sortant de la douche, séchage en quelques secondes, sueur et odeurs neutralisées sans piquer. Ses postbiotiques (Lactobacillus, Bifida) rééquilibrent la flore pour limiter le retour des odeurs ; l'armoise, la centella et le thé vert apaisent échauffements et irritations. Un seul geste le matin et c'est réglé : ça tient jusqu'au soir, pas besoin d'en remettre dans la journée.</p>",
+            "text": "<p>Deux pulvérisations en sortant de la douche, dix secondes de séchage, et tu n'y penses plus : pas d'odeur qui revient à 15h, pas de moiteur en réunion, pas de doute au moment où ça compte.</p><p>Sous le capot : une brume fine, sans alcool, au pH physiologique ; des postbiotiques (Lactobacillus, Bifida) qui rééquilibrent la flore pour bloquer le retour des odeurs ; l'armoise, la centella et le thé vert qui apaisent échauffements et irritations. Un geste le matin, tranquille jusqu'au soir.</p>",
             "text_size": "regular"
           }
         }
