@@ -183,6 +183,20 @@
             "title_alignment": "center"
           }
         },
+        "zg_rating": {
+          "type": "ratingproduct",
+          "settings": {
+            "rating": 4.6,
+            "count_label": "21 avis",
+            "alignment": "center",
+            "show_in_sticky": true,
+            "star_size": 16,
+            "star_color": "#1a1a1a",
+            "star_empty_color": "#c9c9c9",
+            "margin_top": 6,
+            "margin_bottom": 6
+          }
+        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -265,6 +279,21 @@
             "show_price": true,
             "style": "outline",
             "color_text_buttons": "#0000c9"
+          }
+        },
+        "zg_reassurance": {
+          "type": "reassurance",
+          "settings": {
+            "item_1_icon": "lock",
+            "item_1_text": "Paiement sécurisé",
+            "item_2_icon": "truck",
+            "item_2_text": "Livraison gratuite",
+            "item_3_icon": "chat",
+            "item_3_text": "Support client 9h-18h",
+            "item_4_icon": "flag",
+            "item_4_text": "",
+            "margin_top": 18,
+            "margin_bottom": 10
           }
         },
         "icons_ht7xCR": {
@@ -353,34 +382,6 @@
             "content": "<p>Deux pulvérisations sur les parties intimes externes en sortant de la douche : ça sèche en quelques secondes, sans rinçage ni résidu, et t'es tranquille jusqu'au soir. Journée caniculaire ou grosse séance de sport ? Remets un pschitt si tu veux — mais en temps normal, un seul geste le matin suffit. Pour une routine complète, combine-le avec le gel mousse nettoyant sous la douche.</p>",
             "page": "",
             "hide_block_if": false
-          }
-        },
-        "zg_rating": {
-          "type": "ratingproduct",
-          "settings": {
-            "rating": 4.6,
-            "count_label": "21 avis",
-            "show_in_sticky": true,
-            "star_size": 16,
-            "star_color": "#1a1a1a",
-            "star_empty_color": "#c9c9c9",
-            "margin_top": 6,
-            "margin_bottom": 6
-          }
-        },
-        "zg_reassurance": {
-          "type": "reassurance",
-          "settings": {
-            "item_1_icon": "lock",
-            "item_1_text": "Paiement sécurisé",
-            "item_2_icon": "truck",
-            "item_2_text": "Livraison gratuite",
-            "item_3_icon": "chat",
-            "item_3_text": "Support client 9h-18h",
-            "item_4_icon": "flag",
-            "item_4_text": "",
-            "margin_top": 18,
-            "margin_bottom": 10
           }
         }
       },
@@ -653,7 +654,7 @@
         "text_fqVCan": {
           "type": "text",
           "settings": {
-            "text": "<p>Deux pulvérisations en sortant de la douche, dix secondes de séchage, et tu n'y penses plus : pas d'odeur qui revient à 15h, pas de moiteur en réunion, pas de doute au moment où ça compte.</p><p>Sous le capot : une brume fine, sans alcool, au pH physiologique ; des postbiotiques (Lactobacillus, Bifida) qui rééquilibrent la flore pour bloquer le retour des odeurs ; l'armoise, la centella et le thé vert qui apaisent échauffements et irritations. Un geste le matin, tranquille jusqu'au soir.</p>",
+            "text": "<p>Deux pulvérisations en sortant de la douche, dix secondes de séchage, et tu n'y penses plus : pas d'odeur qui revient au fil de la journée, pas de doute au moment où ça compte.</p><p>Sous le capot : une brume fine, sans alcool, au pH physiologique ; des postbiotiques (Lactobacillus, Bifida) qui rééquilibrent la flore pour bloquer le retour des odeurs ; l'armoise, la centella et le thé vert qui apaisent échauffements et irritations. Un geste le matin, tranquille jusqu'au soir.</p>",
             "text_size": "regular"
           }
         }
