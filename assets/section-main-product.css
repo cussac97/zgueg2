@@ -1471,11 +1471,12 @@ html[dir=ltr] .product-quick-view__title {
 }
 .zg-rating__stars { position: relative; display: inline-block; line-height: 0; }
 .zg-rating__row { display: inline-flex; gap: 2px; white-space: nowrap; }
-.zg-rating__row svg { display: block; }
+.zg-rating__row svg { display: block; flex: 0 0 auto; }
 .zg-rating__row--empty svg { fill: var(--zg-rating-empty, #c9c9c9); }
 .zg-rating__row--full {
   position: absolute;
   top: 0; left: 0;
+  height: 100%;
   overflow: hidden;
 }
 .zg-rating__row--full svg { fill: var(--zg-rating-star, #1a1a1a); }
