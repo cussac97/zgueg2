@@ -259,7 +259,7 @@
             "card_radius": 0,
             "selected_border_color": "#0000c9",
             "selected_border_width": 0,
-            "selected_bg_color": "#E8EDFB",
+            "selected_bg_color": "#e8edfb",
             "badge_text": "Soldes d'été : -30%",
             "badge_card": 2,
             "badge_bg_color": "#0000c9",
@@ -273,6 +273,7 @@
         },
         "subscriptions_app_block_RRrMdt": {
           "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "disabled": true,
           "settings": {
             "widget_style": "toggle",
             "widget_style_card_selector": "dropdown",
@@ -339,6 +340,7 @@
         },
         "reassort_3B4kgy": {
           "type": "reassort",
+          "disabled": true,
           "settings": {
             "display_condition": "always",
             "icon": "truck",
@@ -856,6 +858,8 @@
         "background_color": "#f7f3ec",
         "padding_top": 160,
         "padding_bottom": 160,
+        "margin_top": 0,
+        "margin_bottom": 0,
         "heading_spacing": 80,
         "card_width": 245,
         "card_min_width": 180,
@@ -1430,6 +1434,7 @@
         "product_filter_label": "Type de produit",
         "product_filter_all": "Tous les produits",
         "empty_text": "Aucune note pour les filtres sélectionnés",
+        "no_comment_text": "Cet acheteur n'a pas laissé de commentaire",
         "show_date": true,
         "show_reply_date": true,
         "clamp_lines": 4,
