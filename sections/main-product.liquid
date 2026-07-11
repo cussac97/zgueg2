@@ -1981,15 +1981,6 @@
                 <span class="zg-rating__label">{{ zg_rating }}/5{% if block.settings.count_label != blank %} · {{ block.settings.count_label | escape }}{% endif %}</span>
               </a>
             </div>
-            <script>
-              (function(){
-                var l=document.currentScript.previousElementSibling.querySelector('[data-js-rating-scroll]');
-                if(l&&!l.dataset.init){l.dataset.init='1';l.addEventListener('click',function(e){
-                  var t=document.querySelector('.cr-section, [data-cr-list], .shopify-section:has(.cr-review)');
-                  if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
-                });}
-              })();
-            </script>
 
           {%- when 'reassurance' -%}
             {%- capture zg_icon_lock -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>{%- endcapture -%}
