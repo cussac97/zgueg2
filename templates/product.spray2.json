@@ -241,6 +241,7 @@
         },
         "subscriptions_app_block_xCQYck": {
           "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "disabled": true,
           "settings": {
             "widget_style": "toggle",
             "widget_style_card_selector": "radio_button",
@@ -737,6 +738,8 @@
         "background_color": "#f7f3ec",
         "padding_top": 160,
         "padding_bottom": 160,
+        "margin_top": 0,
+        "margin_bottom": 0,
         "heading_spacing": 80,
         "card_width": 245,
         "card_min_width": 180,
