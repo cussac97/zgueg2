@@ -1972,7 +1972,7 @@
               assign zg_fill_pct = zg_rating | times: 20.0 | at_most: 100
             -%}
             {%- capture zg_star_svg -%}<svg viewBox="0 0 24 24" width="{{ block.settings.star_size }}" height="{{ block.settings.star_size }}" aria-hidden="true"><path d="M12 2.6l2.94 5.96 6.58.96-4.76 4.64 1.12 6.55L12 17.62l-5.88 3.09 1.12-6.55L2.48 9.52l6.58-.96L12 2.6z"/></svg>{%- endcapture -%}
-            <div class="zg-rating" style="margin-top: {{ block.settings.margin_top }}px; margin-bottom: {{ block.settings.margin_bottom }}px; --zg-rating-star: {{ block.settings.star_color }}; --zg-rating-empty: {{ block.settings.star_empty_color }};" {{ block.shopify_attributes }}>
+            <div class="zg-rating" style="text-align: {{ block.settings.alignment | default: 'center' }}; margin-top: {{ block.settings.margin_top }}px; margin-bottom: {{ block.settings.margin_bottom }}px; --zg-rating-star: {{ block.settings.star_color }}; --zg-rating-empty: {{ block.settings.star_empty_color }};" {{ block.shopify_attributes }}>
               <a class="zg-rating__link" href="#{{ block.settings.anchor | default: 'avis' }}" data-js-rating-scroll aria-label="{{ zg_rating }} sur 5 — voir les avis">
                 <span class="zg-rating__stars" aria-hidden="true">
                   <span class="zg-rating__row zg-rating__row--empty">{{ zg_star_svg }}{{ zg_star_svg }}{{ zg_star_svg }}{{ zg_star_svg }}{{ zg_star_svg }}</span>
@@ -4526,6 +4526,22 @@
           "id": "count_label",
           "label": "Libellé du nombre d'avis",
           "default": "21 avis"
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Alignement",
+          "options": [
+            {
+              "value": "left",
+              "label": "Gauche"
+            },
+            {
+              "value": "center",
+              "label": "Centré"
+            }
+          ],
+          "default": "center"
         },
         {
           "type": "checkbox",
