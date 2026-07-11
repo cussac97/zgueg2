@@ -77,7 +77,7 @@
     "enable_smooth_scroll": true,
     "smooth_scroll_lerp_pct": 10,
     "show_breadcrumb": false,
-    "show_gotop": true,
+    "show_gotop": false,
     "theme_preset": "Zgueg",
     "color_accent_header": "#f25a38",
     "color_accent_main": "#f25a38",
