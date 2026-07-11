@@ -516,7 +516,7 @@
       "settings": {
         "container_width": "large",
         "two_columns": true,
-        "left_width": 47,
+        "left_width": 37,
         "column_gap": 48,
         "padding_top": 70,
         "padding_bottom": 70,
@@ -583,7 +583,7 @@
         "title_UDcVcH": {
           "type": "title",
           "settings": {
-            "title": "Ta douche tient 2 heures. Ta journée en dure 16.",
+            "title": "Au mauvais PH, ta zone intime est (une zone) morte.",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 56,
@@ -594,7 +594,7 @@
         "text_GKafAp": {
           "type": "text",
           "settings": {
-            "text": "<p>Le matin, tout est clean. Sauf qu'à la seconde où tu remets un caleçon, la zone repart au combat : chaleur, frottements, transpiration, zéro ventilation. En quelques heures, le smegma se reforme, les mauvaises bactéries prolifèrent et le pH se dérègle. L'odeur revient, pile au mauvais moment.</p><p>Ta douche du matin ne tient pas jusqu'au soir, et un gel douche classique n'est ni pensé ni assez doux pour cette zone : trop décapant, il fragilise la flore qui te protège. Cette zone mérite une solution développée pour elle. On l'a faite.</p>",
+            "text": "<p>Chaleur, frottements, macérations : l'humidité s'installe physiologiquement au cours de la journée. Le pH se dérègle, et le film hydrolipidique ne joue plus son rôle de barrière cutanée pour la flore intime.</p><p>Le déodorant classique a un pH trop abrasif pour la flore. L'entrejambe est la seule zone du corps qui nécessite un équilibre de pH physiologique à 5,5.</p>",
             "text_size": "regular"
           }
         }
@@ -643,7 +643,7 @@
         "title_aj3KDD": {
           "type": "title",
           "settings": {
-            "title": "Frais à 8h. Encore frais à 20h.",
+            "title": "Un soin fraîcheur qui équilibre (enfin) ta flore.",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 52,
@@ -654,7 +654,7 @@
         "text_fqVCan": {
           "type": "text",
           "settings": {
-            "text": "<p>Deux pulvérisations en sortant de la douche, dix secondes de séchage, et tu n'y penses plus : pas d'odeur qui revient au fil de la journée, pas de doute au moment où ça compte.</p><p>Sous le capot : une brume fine, sans alcool, au pH physiologique ; des postbiotiques (Lactobacillus, Bifida) qui rééquilibrent la flore pour bloquer le retour des odeurs ; l'armoise, la centella et le thé vert qui apaisent échauffements et irritations. Un geste le matin, tranquille jusqu'au soir.</p>",
+            "text": "<p>Le spray Refreshed® est une brume de soin, sans alcool, au pH physiologique. </p><p>Ses postbiotiques (Lactobacillus, Bifida) rééquilibrent la flore pour limiter le retour des odeurs ; l'armoise, la centella et le thé vert apaisent échauffements et irritations.</p><p> Nous vous conseillons de l'appliquer en sortant de la douche afin d'augmenter l'absorption des nutriments. </p>",
             "text_size": "regular"
           }
         }
@@ -931,7 +931,7 @@
       ],
       "name": "Tableau comparatif",
       "settings": {
-        "heading": "Un gel douche, ça lave. Ça ne protège pas ta journée.",
+        "heading": "La flore intime nécessite un soin adapté.",
         "subheading": "",
         "heading_size": 52,
         "heading_size_mobile": 32,
@@ -1423,7 +1423,7 @@
         "review_spacing": 28,
         "padding_top": 80,
         "padding_bottom": 80,
-        "heading": "Ils en pensent quoi les zguegs ?",
+        "heading": "Laissez vos avis sur Refreshed®  :",
         "heading_alignment": "left",
         "heading_size": 52,
         "heading_size_mobile": 32,
