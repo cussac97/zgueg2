@@ -183,6 +183,20 @@
             "title_alignment": "center"
           }
         },
+        "zg_rating": {
+          "type": "ratingproduct",
+          "settings": {
+            "rating": 4.6,
+            "count_label": "21 avis",
+            "alignment": "center",
+            "show_in_sticky": true,
+            "star_size": 16,
+            "star_color": "#1a1a1a",
+            "star_empty_color": "#c9c9c9",
+            "margin_top": 6,
+            "margin_bottom": 6
+          }
+        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -258,13 +272,28 @@
           "type": "buy_buttons",
           "settings": {
             "button_font": "theme",
-            "show_quantity_selector": true,
+            "show_quantity_selector": false,
             "show_preorder": false,
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false,
             "show_price": true,
             "style": "outline",
             "color_text_buttons": "#0000c9"
+          }
+        },
+        "zg_reassurance": {
+          "type": "reassurance",
+          "settings": {
+            "item_1_icon": "lock",
+            "item_1_text": "Paiement sécurisé",
+            "item_2_icon": "truck",
+            "item_2_text": "Livraison gratuite",
+            "item_3_icon": "chat",
+            "item_3_text": "Support client 9h-18h",
+            "item_4_icon": "flag",
+            "item_4_text": "",
+            "margin_top": 18,
+            "margin_bottom": 10
           }
         },
         "icons_ht7xCR": {
@@ -353,34 +382,6 @@
             "content": "<p>Deux à trois pulvérisations sur les parties intimes externes, à n'importe quel moment de la journée — après le sport, à la pause, avant un rendez-vous. Pas besoin de rincer : ça sèche en quelques secondes, sans résidu. Pour une routine complète, combine-le avec le gel mousse nettoyant sous la douche.</p>",
             "page": "",
             "hide_block_if": false
-          }
-        },
-        "zg_rating": {
-          "type": "ratingproduct",
-          "settings": {
-            "rating": 4.6,
-            "count_label": "21 avis",
-            "show_in_sticky": true,
-            "star_size": 16,
-            "star_color": "#1a1a1a",
-            "star_empty_color": "#c9c9c9",
-            "margin_top": 6,
-            "margin_bottom": 6
-          }
-        },
-        "zg_reassurance": {
-          "type": "reassurance",
-          "settings": {
-            "item_1_icon": "lock",
-            "item_1_text": "Paiement sécurisé",
-            "item_2_icon": "truck",
-            "item_2_text": "Livraison gratuite",
-            "item_3_icon": "chat",
-            "item_3_text": "Support client 9h-18h",
-            "item_4_icon": "flag",
-            "item_4_text": "",
-            "margin_top": 18,
-            "margin_bottom": 10
           }
         }
       },
