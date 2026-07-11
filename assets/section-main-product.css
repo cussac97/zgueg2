@@ -1460,3 +1460,47 @@ html[dir=ltr] .product-quick-view__title {
 .no-touchevents .button--move:hover .add-to-cart__price {
   animation: move 350ms ease-in-out forwards;
 }
+
+/* --- Note produit (bloc ratingproduct) --- */
+.zg-rating__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+.zg-rating__stars { position: relative; display: inline-block; line-height: 0; }
+.zg-rating__row { display: inline-flex; gap: 2px; white-space: nowrap; }
+.zg-rating__row svg { display: block; }
+.zg-rating__row--empty svg { fill: var(--zg-rating-empty, #c9c9c9); }
+.zg-rating__row--full {
+  position: absolute;
+  top: 0; left: 0;
+  overflow: hidden;
+}
+.zg-rating__row--full svg { fill: var(--zg-rating-star, #1a1a1a); }
+.zg-rating__label { font-size: 13.5px; line-height: 1; opacity: .8; }
+.zg-rating__link:hover .zg-rating__label { text-decoration: underline; opacity: 1; }
+.zg-rating--sticky { display: inline-flex; align-items: center; gap: 5px; margin-left: 12px; vertical-align: 1px; }
+.zg-rating--sticky .zg-rating__stars { position: static; }
+.zg-rating--sticky .zg-rating__row--full { position: static; }
+.zg-rating--sticky .zg-rating__label { font-size: 12px; opacity: .85; }
+@media screen and (max-width: 767px) {
+  .zg-rating--sticky { display: none; }
+}
+
+/* --- Réassurance (bloc reassurance) --- */
+.zg-reassurance {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 22px;
+}
+.zg-reassurance__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.zg-reassurance__icon { display: inline-flex; line-height: 0; opacity: .8; }
+.zg-reassurance__icon svg { width: 17px; height: 17px; display: block; }
+.zg-reassurance__text { font-size: 13px; line-height: 1.2; opacity: .75; }

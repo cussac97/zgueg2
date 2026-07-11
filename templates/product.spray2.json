@@ -267,27 +267,6 @@
             "color_text_buttons": "#0000c9"
           }
         },
-        "icons_Knqhhh": {
-          "type": "icons",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "content_alignment": "center",
-            "layout": "horizontal",
-            "margin_top": 20,
-            "margin_bottom": 34,
-            "icon_1_image": "shopify://shop_images/Capture_d_ecran_2026-06-09_a_15.01.51.png",
-            "icon_1_label": "Paiement sécurisé",
-            "icon_2_image": "shopify://shop_images/Capture_d_ecran_2026-06-09_a_15.01.57.png",
-            "icon_2_label": "Livraison gratuite",
-            "icon_3_image": "shopify://shop_images/Capture_d_ecran_2026-06-09_a_15.02.03.png",
-            "icon_3_label": "Support client 9h-18h",
-            "icon_4_label": "",
-            "icon_5_label": "",
-            "icon_6_label": "",
-            "hide_block_if": false
-          }
-        },
         "icons_ht7xCR": {
           "type": "icons",
           "settings": {
@@ -375,18 +354,47 @@
             "page": "",
             "hide_block_if": false
           }
+        },
+        "zg_rating": {
+          "type": "ratingproduct",
+          "settings": {
+            "rating": 4.6,
+            "count_label": "21 avis",
+            "show_in_sticky": true,
+            "star_size": 16,
+            "star_color": "#1a1a1a",
+            "star_empty_color": "#c9c9c9",
+            "margin_top": 6,
+            "margin_bottom": 6
+          }
+        },
+        "zg_reassurance": {
+          "type": "reassurance",
+          "settings": {
+            "item_1_icon": "lock",
+            "item_1_text": "Paiement sécurisé",
+            "item_2_icon": "truck",
+            "item_2_text": "Livraison gratuite",
+            "item_3_icon": "chat",
+            "item_3_text": "Support client 9h-18h",
+            "item_4_icon": "flag",
+            "item_4_text": "",
+            "margin_top": 18,
+            "margin_bottom": 10
+          }
         }
       },
       "block_order": [
         "media_badge_HMcaAm",
         "badges_6Ax9rj",
         "title",
+        "zg_rating",
         "price",
         "description",
         "variant_bundler_6mBmkR",
         "subscriptions_app_block_xCQYck",
         "buy_buttons",
-        "icons_Knqhhh",
+        "zg_reassurance",
         "icons_ht7xCR",
         "reassort_3B4kgy",
         "collapsible_tab_zXdGmR",
