@@ -202,3 +202,16 @@ if ( typeof ProductPage !== 'function' ) {
 	}
 
 }
+// Bloc « Note du produit » : clic -> défilement doux vers la section d'avis
+if (!window.__zgRatingScrollInit) {
+	window.__zgRatingScrollInit = true;
+	document.addEventListener('click', function (e) {
+		const link = e.target.closest('[data-js-rating-scroll]');
+		if (!link) return;
+		const target = document.querySelector('[data-cr-list], .cr-review');
+		if (target) {
+			e.preventDefault();
+			(target.closest('.shopify-section') || target).scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+	});
+}

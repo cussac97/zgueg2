@@ -1966,6 +1966,55 @@
               {%- render 'product-rating', vendor: settings.reviews_app, product: product -%}
             </div>
 
+          {%- when 'ratingproduct' -%}
+            {%- liquid
+              assign zg_rating = block.settings.rating | default: 4.6
+              assign zg_fill_pct = zg_rating | times: 20.0 | at_most: 100
+            -%}
+            {%- capture zg_star_svg -%}<svg viewBox="0 0 24 24" width="{{ block.settings.star_size }}" height="{{ block.settings.star_size }}" aria-hidden="true"><path d="M12 2.6l2.94 5.96 6.58.96-4.76 4.64 1.12 6.55L12 17.62l-5.88 3.09 1.12-6.55L2.48 9.52l6.58-.96L12 2.6z"/></svg>{%- endcapture -%}
+            <div class="zg-rating" style="margin-top: {{ block.settings.margin_top }}px; margin-bottom: {{ block.settings.margin_bottom }}px; --zg-rating-star: {{ block.settings.star_color }}; --zg-rating-empty: {{ block.settings.star_empty_color }};" {{ block.shopify_attributes }}>
+              <a class="zg-rating__link" href="#{{ block.settings.anchor | default: 'avis' }}" data-js-rating-scroll aria-label="{{ zg_rating }} sur 5 — voir les avis">
+                <span class="zg-rating__stars" aria-hidden="true">
+                  <span class="zg-rating__row zg-rating__row--empty">{{ zg_star_svg }}{{ zg_star_svg }}{{ zg_star_svg }}{{ zg_star_svg }}{{ zg_star_svg }}</span>
+                  <span class="zg-rating__row zg-rating__row--full" style="width: {{ zg_fill_pct }}%">{{ zg_star_svg }}{{ zg_star_svg }}{{ zg_star_svg }}{{ zg_star_svg }}{{ zg_star_svg }}</span>
+                </span>
+                <span class="zg-rating__label">{{ zg_rating }}/5{% if block.settings.count_label != blank %} · {{ block.settings.count_label | escape }}{% endif %}</span>
+              </a>
+            </div>
+
+          {%- when 'reassurance' -%}
+            {%- capture zg_icon_lock -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>{%- endcapture -%}
+            {%- capture zg_icon_truck -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 6.5h13v11h-13z"/><path d="M14.5 10.5h4l3 3v4h-7"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/></svg>{%- endcapture -%}
+            {%- capture zg_icon_return -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l-4-4 4-4"/><path d="M5 10h9a5 5 0 0 1 0 10h-3"/></svg>{%- endcapture -%}
+            {%- capture zg_icon_chat -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.9-.9L3 20l1-4.9a8.38 8.38 0 0 1-.9-3.6 8.5 8.5 0 0 1 8.4-8.5 8.38 8.38 0 0 1 9 8.5z"/></svg>{%- endcapture -%}
+            {%- capture zg_icon_flag -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4c4-2.5 8 2.5 14 0v10c-6 2.5-10-2.5-14 0"/></svg>{%- endcapture -%}
+            {%- capture zg_icon_leaf -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-4 3-8 9-9 4.5-.8 7 1 7 1s-1 8-5 12a7.5 7.5 0 0 1-4 3z"/><path d="M4 21c4-6 8-9 12-11"/></svg>{%- endcapture -%}
+            <div class="zg-reassurance" style="margin-top: {{ block.settings.margin_top }}px; margin-bottom: {{ block.settings.margin_bottom }}px;" {{ block.shopify_attributes }}>
+              {%- for zg_i in (1..4) -%}
+                {%- liquid
+                  assign zg_text_key = 'item_' | append: zg_i | append: '_text'
+                  assign zg_icon_key = 'item_' | append: zg_i | append: '_icon'
+                  assign zg_text = block.settings[zg_text_key]
+                  assign zg_icon = block.settings[zg_icon_key]
+                -%}
+                {%- if zg_text != blank -%}
+                  <span class="zg-reassurance__item">
+                    <span class="zg-reassurance__icon" aria-hidden="true">
+                      {%- case zg_icon -%}
+                        {%- when 'lock' -%}{{ zg_icon_lock }}
+                        {%- when 'truck' -%}{{ zg_icon_truck }}
+                        {%- when 'return' -%}{{ zg_icon_return }}
+                        {%- when 'chat' -%}{{ zg_icon_chat }}
+                        {%- when 'flag' -%}{{ zg_icon_flag }}
+                        {%- when 'leaf' -%}{{ zg_icon_leaf }}
+                      {%- endcase -%}
+                    </span>
+                    <span class="zg-reassurance__text">{{ zg_text | escape }}</span>
+                  </span>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+
           {%- when 'custom_liquid' -%}
             <div class="product-custom-liquid" {{ block.shopify_attributes }}>
               {{ block.settings.custom_liquid }}
@@ -2183,6 +2232,16 @@
       <div class="sticky-add-to-cart__inner">
         <div class="sticky-add-to-cart__title">
           <span class="text-size--larger text-weight--medium">{{ product.title | escape }}</span>
+          {%- assign zg_sticky_rating_block = section.blocks | where: 'type', 'ratingproduct' | first -%}
+          {%- if zg_sticky_rating_block and zg_sticky_rating_block.settings.show_in_sticky -%}
+            {%- assign zg_sr = zg_sticky_rating_block.settings.rating | default: 4.6 -%}
+            <span class="zg-rating zg-rating--sticky" style="--zg-rating-star: currentColor; --zg-rating-empty: transparent;" aria-label="{{ zg_sr }} sur 5">
+              <span class="zg-rating__stars" aria-hidden="true">
+                <span class="zg-rating__row zg-rating__row--full" style="width:100%"><svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 2.6l2.94 5.96 6.58.96-4.76 4.64 1.12 6.55L12 17.62l-5.88 3.09 1.12-6.55L2.48 9.52l6.58-.96L12 2.6z"/></svg></span>
+              </span>
+              <span class="zg-rating__label">{{ zg_sr }}/5{% if zg_sticky_rating_block.settings.count_label != blank %} · {{ zg_sticky_rating_block.settings.count_label | escape }}{% endif %}</span>
+            </span>
+          {%- endif -%}
         </div>
         <div class="sticky-add-to-cart__actions">
           <div class="sticky-add-to-cart__price text-size--large" data-js-atc-price>
@@ -2475,8 +2534,14 @@
           "id": "meta_font",
           "label": "Police de la date / badge",
           "options": [
-            { "value": "theme", "label": "Police du thème" },
-            { "value": "mono", "label": "Monospace (fidèle au design)" }
+            {
+              "value": "theme",
+              "label": "Police du thème"
+            },
+            {
+              "value": "mono",
+              "label": "Monospace (fidèle au design)"
+            }
           ],
           "default": "theme"
         }
@@ -2516,15 +2581,42 @@
           "id": "badge_position",
           "label": "Position",
           "options": [
-            { "value": "top left", "label": "Haut gauche" },
-            { "value": "top center", "label": "Haut centre" },
-            { "value": "top right", "label": "Haut droite" },
-            { "value": "middle left", "label": "Milieu gauche" },
-            { "value": "middle center", "label": "Centre" },
-            { "value": "middle right", "label": "Milieu droite" },
-            { "value": "bottom left", "label": "Bas gauche" },
-            { "value": "bottom center", "label": "Bas centre" },
-            { "value": "bottom right", "label": "Bas droite" }
+            {
+              "value": "top left",
+              "label": "Haut gauche"
+            },
+            {
+              "value": "top center",
+              "label": "Haut centre"
+            },
+            {
+              "value": "top right",
+              "label": "Haut droite"
+            },
+            {
+              "value": "middle left",
+              "label": "Milieu gauche"
+            },
+            {
+              "value": "middle center",
+              "label": "Centre"
+            },
+            {
+              "value": "middle right",
+              "label": "Milieu droite"
+            },
+            {
+              "value": "bottom left",
+              "label": "Bas gauche"
+            },
+            {
+              "value": "bottom center",
+              "label": "Bas centre"
+            },
+            {
+              "value": "bottom right",
+              "label": "Bas droite"
+            }
           ],
           "default": "top right"
         },
@@ -2671,10 +2763,22 @@
           "id": "badge_font_weight",
           "label": "Graisse du texte",
           "options": [
-            { "value": "400", "label": "Normale" },
-            { "value": "500", "label": "Moyenne" },
-            { "value": "600", "label": "Semi-grasse" },
-            { "value": "700", "label": "Grasse" }
+            {
+              "value": "400",
+              "label": "Normale"
+            },
+            {
+              "value": "500",
+              "label": "Moyenne"
+            },
+            {
+              "value": "600",
+              "label": "Semi-grasse"
+            },
+            {
+              "value": "700",
+              "label": "Grasse"
+            }
           ],
           "default": "700"
         },
@@ -2683,10 +2787,22 @@
           "id": "badge_text_transform",
           "label": "Casse du texte",
           "options": [
-            { "value": "none", "label": "Normale" },
-            { "value": "uppercase", "label": "MAJUSCULES" },
-            { "value": "lowercase", "label": "minuscules" },
-            { "value": "capitalize", "label": "Capitalisé" }
+            {
+              "value": "none",
+              "label": "Normale"
+            },
+            {
+              "value": "uppercase",
+              "label": "MAJUSCULES"
+            },
+            {
+              "value": "lowercase",
+              "label": "minuscules"
+            },
+            {
+              "value": "capitalize",
+              "label": "Capitalisé"
+            }
           ],
           "default": "uppercase"
         }
@@ -2915,9 +3031,18 @@
           "id": "tag_font_weight",
           "label": "Graisse du texte",
           "options": [
-            { "value": "400", "label": "Normal" },
-            { "value": "500", "label": "Moyen" },
-            { "value": "700", "label": "Gras" }
+            {
+              "value": "400",
+              "label": "Normal"
+            },
+            {
+              "value": "500",
+              "label": "Moyen"
+            },
+            {
+              "value": "700",
+              "label": "Gras"
+            }
           ],
           "default": "700"
         },
@@ -2926,10 +3051,22 @@
           "id": "tag_text_transform",
           "label": "Casse du texte",
           "options": [
-            { "value": "none", "label": "Normale" },
-            { "value": "uppercase", "label": "MAJUSCULES" },
-            { "value": "lowercase", "label": "minuscules" },
-            { "value": "capitalize", "label": "Première Lettre" }
+            {
+              "value": "none",
+              "label": "Normale"
+            },
+            {
+              "value": "uppercase",
+              "label": "MAJUSCULES"
+            },
+            {
+              "value": "lowercase",
+              "label": "minuscules"
+            },
+            {
+              "value": "capitalize",
+              "label": "Première Lettre"
+            }
           ],
           "default": "none"
         },
@@ -2942,9 +3079,18 @@
           "id": "tag_alignment",
           "label": "Alignement des badges",
           "options": [
-            { "value": "left", "label": "Gauche" },
-            { "value": "center", "label": "Centre" },
-            { "value": "right", "label": "Droite" }
+            {
+              "value": "left",
+              "label": "Gauche"
+            },
+            {
+              "value": "center",
+              "label": "Centre"
+            },
+            {
+              "value": "right",
+              "label": "Droite"
+            }
           ],
           "default": "left"
         }
@@ -2969,9 +3115,18 @@
           "id": "title_font",
           "label": "Police du titre",
           "options": [
-            { "value": "theme", "label": "Police du thème (par défaut)" },
-            { "value": "stefan", "label": "ABC Stefan" },
-            { "value": "comerie", "label": "Comerie" }
+            {
+              "value": "theme",
+              "label": "Police du thème (par défaut)"
+            },
+            {
+              "value": "stefan",
+              "label": "ABC Stefan"
+            },
+            {
+              "value": "comerie",
+              "label": "Comerie"
+            }
           ],
           "default": "theme"
         },
@@ -3001,13 +3156,34 @@
           "id": "title_font_weight",
           "label": "Graisse du texte",
           "options": [
-            { "value": "inherit", "label": "Par défaut" },
-            { "value": "300", "label": "Light (300)" },
-            { "value": "400", "label": "Normal (400)" },
-            { "value": "500", "label": "Medium (500)" },
-            { "value": "600", "label": "Semi-bold (600)" },
-            { "value": "700", "label": "Bold (700)" },
-            { "value": "900", "label": "Black (900)" }
+            {
+              "value": "inherit",
+              "label": "Par défaut"
+            },
+            {
+              "value": "300",
+              "label": "Light (300)"
+            },
+            {
+              "value": "400",
+              "label": "Normal (400)"
+            },
+            {
+              "value": "500",
+              "label": "Medium (500)"
+            },
+            {
+              "value": "600",
+              "label": "Semi-bold (600)"
+            },
+            {
+              "value": "700",
+              "label": "Bold (700)"
+            },
+            {
+              "value": "900",
+              "label": "Black (900)"
+            }
           ],
           "default": "inherit"
         },
@@ -3016,10 +3192,22 @@
           "id": "title_text_transform",
           "label": "Casse du texte",
           "options": [
-            { "value": "none", "label": "Normale" },
-            { "value": "uppercase", "label": "MAJUSCULES" },
-            { "value": "lowercase", "label": "minuscules" },
-            { "value": "capitalize", "label": "Première Lettre" }
+            {
+              "value": "none",
+              "label": "Normale"
+            },
+            {
+              "value": "uppercase",
+              "label": "MAJUSCULES"
+            },
+            {
+              "value": "lowercase",
+              "label": "minuscules"
+            },
+            {
+              "value": "capitalize",
+              "label": "Première Lettre"
+            }
           ],
           "default": "none"
         },
@@ -3062,9 +3250,18 @@
           "id": "title_alignment",
           "label": "Alignement",
           "options": [
-            { "value": "left", "label": "Gauche" },
-            { "value": "center", "label": "Centre" },
-            { "value": "right", "label": "Droite" }
+            {
+              "value": "left",
+              "label": "Gauche"
+            },
+            {
+              "value": "center",
+              "label": "Centre"
+            },
+            {
+              "value": "right",
+              "label": "Droite"
+            }
           ],
           "default": "left"
         }
@@ -3080,9 +3277,18 @@
           "id": "content_alignment",
           "label": "Alignement du contenu",
           "options": [
-            { "value": "left", "label": "Gauche" },
-            { "value": "center", "label": "Centre" },
-            { "value": "right", "label": "Droite" }
+            {
+              "value": "left",
+              "label": "Gauche"
+            },
+            {
+              "value": "center",
+              "label": "Centre"
+            },
+            {
+              "value": "right",
+              "label": "Droite"
+            }
           ],
           "default": "left"
         },
@@ -3133,9 +3339,18 @@
           "id": "badge_font",
           "label": "Police du badge",
           "options": [
-            { "value": "theme", "label": "Police du thème (par défaut)" },
-            { "value": "stefan", "label": "ABC Stefan" },
-            { "value": "comerie", "label": "Comerie" }
+            {
+              "value": "theme",
+              "label": "Police du thème (par défaut)"
+            },
+            {
+              "value": "stefan",
+              "label": "ABC Stefan"
+            },
+            {
+              "value": "comerie",
+              "label": "Comerie"
+            }
           ],
           "default": "theme"
         }
@@ -3265,9 +3480,18 @@
           "id": "heading_font",
           "label": "Police du titre",
           "options": [
-            { "value": "theme", "label": "Police du thème (par défaut)" },
-            { "value": "stefan", "label": "ABC Stefan" },
-            { "value": "comerie", "label": "Comerie" }
+            {
+              "value": "theme",
+              "label": "Police du thème (par défaut)"
+            },
+            {
+              "value": "stefan",
+              "label": "ABC Stefan"
+            },
+            {
+              "value": "comerie",
+              "label": "Comerie"
+            }
           ],
           "default": "theme"
         },
@@ -3276,9 +3500,18 @@
           "id": "heading_alignment",
           "label": "Alignement du titre",
           "options": [
-            { "value": "left", "label": "Gauche" },
-            { "value": "center", "label": "Centre" },
-            { "value": "right", "label": "Droite" }
+            {
+              "value": "left",
+              "label": "Gauche"
+            },
+            {
+              "value": "center",
+              "label": "Centre"
+            },
+            {
+              "value": "right",
+              "label": "Droite"
+            }
           ],
           "default": "left"
         },
@@ -3287,9 +3520,18 @@
           "id": "style",
           "label": "Style du widget",
           "options": [
-            { "value": "outline", "label": "Encadré" },
-            { "value": "plain", "label": "Simple" },
-            { "value": "minimal", "label": "Minimal (sans cadre)" }
+            {
+              "value": "outline",
+              "label": "Encadré"
+            },
+            {
+              "value": "plain",
+              "label": "Simple"
+            },
+            {
+              "value": "minimal",
+              "label": "Minimal (sans cadre)"
+            }
           ],
           "default": "plain"
         },
@@ -3317,8 +3559,14 @@
           "id": "card_layout",
           "label": "Disposition d'une card",
           "options": [
-            { "value": "image-top", "label": "Image au-dessus, titre en dessous" },
-            { "value": "image-left", "label": "Image à gauche, titre à droite" }
+            {
+              "value": "image-top",
+              "label": "Image au-dessus, titre en dessous"
+            },
+            {
+              "value": "image-left",
+              "label": "Image à gauche, titre à droite"
+            }
           ],
           "default": "image-top"
         },
@@ -3340,10 +3588,22 @@
           "id": "image_ratio",
           "label": "Format de l'image",
           "options": [
-            { "value": "natural", "label": "Original" },
-            { "value": "square", "label": "Carré (1:1)" },
-            { "value": "portrait", "label": "Portrait (3:4)" },
-            { "value": "landscape", "label": "Paysage (4:3)" }
+            {
+              "value": "natural",
+              "label": "Original"
+            },
+            {
+              "value": "square",
+              "label": "Carré (1:1)"
+            },
+            {
+              "value": "portrait",
+              "label": "Portrait (3:4)"
+            },
+            {
+              "value": "landscape",
+              "label": "Paysage (4:3)"
+            }
           ],
           "default": "square"
         },
@@ -3510,9 +3770,18 @@
           "id": "unavailable_variants",
           "label": "Variantes indisponibles",
           "options": [
-            { "value": "show", "label": "Afficher" },
-            { "value": "disable", "label": "Griser" },
-            { "value": "hide", "label": "Masquer" }
+            {
+              "value": "show",
+              "label": "Afficher"
+            },
+            {
+              "value": "disable",
+              "label": "Griser"
+            },
+            {
+              "value": "hide",
+              "label": "Masquer"
+            }
           ],
           "default": "show"
         }
@@ -3730,9 +3999,18 @@
           "id": "button_font",
           "label": "Police du bouton d'achat",
           "options": [
-            { "value": "theme", "label": "Police du thème (par défaut)" },
-            { "value": "stefan", "label": "ABC Stefan" },
-            { "value": "comerie", "label": "Comerie" }
+            {
+              "value": "theme",
+              "label": "Police du thème (par défaut)"
+            },
+            {
+              "value": "stefan",
+              "label": "ABC Stefan"
+            },
+            {
+              "value": "comerie",
+              "label": "Comerie"
+            }
           ],
           "default": "theme"
         },
@@ -3861,8 +4139,14 @@
           "id": "display_condition",
           "label": "Quand afficher la card",
           "options": [
-            { "value": "always", "label": "Toujours" },
-            { "value": "sold_out_only", "label": "Uniquement si le produit est épuisé" }
+            {
+              "value": "always",
+              "label": "Toujours"
+            },
+            {
+              "value": "sold_out_only",
+              "label": "Uniquement si le produit est épuisé"
+            }
           ],
           "default": "always"
         },
@@ -3875,11 +4159,26 @@
           "id": "icon",
           "label": "Icône",
           "options": [
-            { "value": "none", "label": "Aucune" },
-            { "value": "truck", "label": "Camion" },
-            { "value": "package", "label": "Colis" },
-            { "value": "clock", "label": "Horloge" },
-            { "value": "bolt", "label": "Éclair" }
+            {
+              "value": "none",
+              "label": "Aucune"
+            },
+            {
+              "value": "truck",
+              "label": "Camion"
+            },
+            {
+              "value": "package",
+              "label": "Colis"
+            },
+            {
+              "value": "clock",
+              "label": "Horloge"
+            },
+            {
+              "value": "bolt",
+              "label": "Éclair"
+            }
           ],
           "default": "truck"
         },
@@ -3915,9 +4214,18 @@
           "id": "heading_font",
           "label": "Police du titre",
           "options": [
-            { "value": "theme", "label": "Police du thème (par défaut)" },
-            { "value": "stefan", "label": "ABC Stefan" },
-            { "value": "comerie", "label": "Comerie" }
+            {
+              "value": "theme",
+              "label": "Police du thème (par défaut)"
+            },
+            {
+              "value": "stefan",
+              "label": "ABC Stefan"
+            },
+            {
+              "value": "comerie",
+              "label": "Comerie"
+            }
           ],
           "default": "theme"
         },
@@ -4026,8 +4334,14 @@
           "id": "text_alignment",
           "label": "Alignement",
           "options": [
-            { "value": "left", "label": "Gauche" },
-            { "value": "center", "label": "Centre" }
+            {
+              "value": "left",
+              "label": "Gauche"
+            },
+            {
+              "value": "center",
+              "label": "Centre"
+            }
           ],
           "default": "left"
         },
@@ -4119,9 +4433,18 @@
           "id": "content_alignment",
           "label": "Alignement du contenu",
           "options": [
-            { "value": "left", "label": "Gauche" },
-            { "value": "center", "label": "Centre" },
-            { "value": "right", "label": "Droite" }
+            {
+              "value": "left",
+              "label": "Gauche"
+            },
+            {
+              "value": "center",
+              "label": "Centre"
+            },
+            {
+              "value": "right",
+              "label": "Droite"
+            }
           ],
           "default": "left"
         },
@@ -4177,6 +4500,262 @@
         {
           "type": "paragraph",
           "content": "t:settings_schema.product-grid.settings.header__1.info"
+        }
+      ]
+    },
+    {
+      "type": "ratingproduct",
+      "name": "Note du produit (étoiles)",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Affiche une note en étoiles cliquable qui fait défiler jusqu'à la section d'avis."
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Note",
+          "min": 0,
+          "max": 5,
+          "step": 0.1,
+          "default": 4.6
+        },
+        {
+          "type": "text",
+          "id": "count_label",
+          "label": "Libellé du nombre d'avis",
+          "default": "21 avis"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_in_sticky",
+          "label": "Afficher aussi dans la barre d'achat sticky",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "star_size",
+          "label": "Taille des étoiles",
+          "min": 12,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "color",
+          "id": "star_color",
+          "label": "Couleur des étoiles",
+          "default": "#1a1a1a"
+        },
+        {
+          "type": "color",
+          "id": "star_empty_color",
+          "label": "Couleur des étoiles vides",
+          "default": "#c9c9c9"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Marge haute",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "default": 6
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Marge basse",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "default": 6
+        }
+      ]
+    },
+    {
+      "type": "reassurance",
+      "name": "Réassurance (icônes)",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Ligne d'arguments de confiance sous le bouton d'achat. Laissez un texte vide pour masquer un élément."
+        },
+        {
+          "type": "select",
+          "id": "item_1_icon",
+          "label": "Icône 1",
+          "options": [
+            {
+              "value": "lock",
+              "label": "Cadenas (paiement)"
+            },
+            {
+              "value": "truck",
+              "label": "Camion (livraison)"
+            },
+            {
+              "value": "return",
+              "label": "Flèche retour"
+            },
+            {
+              "value": "chat",
+              "label": "Bulle (support)"
+            },
+            {
+              "value": "flag",
+              "label": "Drapeau (origine)"
+            },
+            {
+              "value": "leaf",
+              "label": "Feuille (naturel)"
+            }
+          ],
+          "default": "lock"
+        },
+        {
+          "type": "text",
+          "id": "item_1_text",
+          "label": "Texte 1",
+          "default": "Paiement sécurisé"
+        },
+        {
+          "type": "select",
+          "id": "item_2_icon",
+          "label": "Icône 2",
+          "options": [
+            {
+              "value": "lock",
+              "label": "Cadenas (paiement)"
+            },
+            {
+              "value": "truck",
+              "label": "Camion (livraison)"
+            },
+            {
+              "value": "return",
+              "label": "Flèche retour"
+            },
+            {
+              "value": "chat",
+              "label": "Bulle (support)"
+            },
+            {
+              "value": "flag",
+              "label": "Drapeau (origine)"
+            },
+            {
+              "value": "leaf",
+              "label": "Feuille (naturel)"
+            }
+          ],
+          "default": "truck"
+        },
+        {
+          "type": "text",
+          "id": "item_2_text",
+          "label": "Texte 2",
+          "default": "Livraison gratuite"
+        },
+        {
+          "type": "select",
+          "id": "item_3_icon",
+          "label": "Icône 3",
+          "options": [
+            {
+              "value": "lock",
+              "label": "Cadenas (paiement)"
+            },
+            {
+              "value": "truck",
+              "label": "Camion (livraison)"
+            },
+            {
+              "value": "return",
+              "label": "Flèche retour"
+            },
+            {
+              "value": "chat",
+              "label": "Bulle (support)"
+            },
+            {
+              "value": "flag",
+              "label": "Drapeau (origine)"
+            },
+            {
+              "value": "leaf",
+              "label": "Feuille (naturel)"
+            }
+          ],
+          "default": "chat"
+        },
+        {
+          "type": "text",
+          "id": "item_3_text",
+          "label": "Texte 3",
+          "default": "Support client 9h-18h"
+        },
+        {
+          "type": "select",
+          "id": "item_4_icon",
+          "label": "Icône 4",
+          "options": [
+            {
+              "value": "lock",
+              "label": "Cadenas (paiement)"
+            },
+            {
+              "value": "truck",
+              "label": "Camion (livraison)"
+            },
+            {
+              "value": "return",
+              "label": "Flèche retour"
+            },
+            {
+              "value": "chat",
+              "label": "Bulle (support)"
+            },
+            {
+              "value": "flag",
+              "label": "Drapeau (origine)"
+            },
+            {
+              "value": "leaf",
+              "label": "Feuille (naturel)"
+            }
+          ],
+          "default": "flag"
+        },
+        {
+          "type": "text",
+          "id": "item_4_text",
+          "label": "Texte 4"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Marge haute",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "default": 18
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Marge basse",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "default": 10
         }
       ]
     },
@@ -4280,9 +4859,18 @@
           "id": "content_alignment",
           "label": "Alignement du contenu",
           "options": [
-            { "value": "left", "label": "Gauche" },
-            { "value": "center", "label": "Centre" },
-            { "value": "right", "label": "Droite" }
+            {
+              "value": "left",
+              "label": "Gauche"
+            },
+            {
+              "value": "center",
+              "label": "Centre"
+            },
+            {
+              "value": "right",
+              "label": "Droite"
+            }
           ],
           "default": "left"
         },
@@ -4295,8 +4883,14 @@
           "id": "layout",
           "label": "Disposition des icônes",
           "options": [
-            { "value": "horizontal", "label": "Horizontale (en ligne)" },
-            { "value": "vertical", "label": "Verticale (liste)" }
+            {
+              "value": "horizontal",
+              "label": "Horizontale (en ligne)"
+            },
+            {
+              "value": "vertical",
+              "label": "Verticale (liste)"
+            }
           ],
           "default": "horizontal"
         },
