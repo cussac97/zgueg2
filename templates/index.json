@@ -126,7 +126,7 @@
       "settings": {
         "heading": "Les produits qui vont changer ta vie (et celle de ton zgueg)",
         "subheading": "",
-        "heading_size": 52,
+        "heading_size": 40,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "heading_color": "rgba(0,0,0,0)",
@@ -177,7 +177,7 @@
         "marquee_img_1": {
           "type": "text",
           "settings": {
-            "marquee_text": "🍆"
+            "marquee_text": "·"
           }
         },
         "marquee_text_2": {
@@ -189,7 +189,7 @@
         "marquee_img_2": {
           "type": "text",
           "settings": {
-            "marquee_text": "🍆"
+            "marquee_text": "·"
           }
         },
         "marquee_text_3": {
@@ -201,7 +201,7 @@
         "marquee_img_3": {
           "type": "text",
           "settings": {
-            "marquee_text": "🍆"
+            "marquee_text": "·"
           }
         },
         "marquee_text_4": {
@@ -213,7 +213,7 @@
         "marquee_img_4": {
           "type": "text",
           "settings": {
-            "marquee_text": "🍆"
+            "marquee_text": "·"
           }
         }
       },
@@ -520,7 +520,7 @@
         "section_bg": "#ffffff",
         "heading": "100% sain pour tous les zguegs.",
         "text_color": "#1a1a1a",
-        "heading_size": 52,
+        "heading_size": 40,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "heading_alignment": "left",
@@ -575,9 +575,9 @@
           "settings": {
             "title": "Refreshed® — le spray qui tient 16 h",
             "title_size": "heading-size--regular",
-            "title_weight": "400",
-            "title_size_custom": 0,
-            "title_size_custom_mobile": 0,
+            "title_weight": "600",
+            "title_size_custom": 36,
+            "title_size_custom_mobile": 26,
             "seo_h_tag": "h2"
           }
         },
@@ -623,7 +623,7 @@
         "overlay_image_width": 160,
         "overlay_image_width_mobile": 100,
         "is_fullwidth": false,
-        "text_alignment": "horizontal-center",
+        "text_alignment": "horizontal-left",
         "content_layout": "stacked",
         "split_left_width": 50,
         "spacing": 24,
@@ -645,9 +645,9 @@
           "settings": {
             "title": "Cleaned® — le gel qui lave sans décaper",
             "title_size": "heading-size--regular",
-            "title_weight": "400",
-            "title_size_custom": 0,
-            "title_size_custom_mobile": 0,
+            "title_weight": "600",
+            "title_size_custom": 36,
+            "title_size_custom_mobile": 26,
             "seo_h_tag": "h2"
           }
         },
@@ -685,7 +685,7 @@
         "overlay_image_width": 320,
         "overlay_image_width_mobile": 100,
         "is_fullwidth": false,
-        "text_alignment": "horizontal-center",
+        "text_alignment": "horizontal-left",
         "content_layout": "stacked",
         "split_left_width": 50,
         "spacing": 24,
@@ -775,7 +775,7 @@
       "settings": {
         "heading": "Ton zgueg mérite bien mieux que ton gel douche 3-en-1.",
         "subheading": "",
-        "heading_size": 52,
+        "heading_size": 44,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "heading_color": "rgba(0,0,0,0)",
@@ -1001,8 +1001,8 @@
         "padding_bottom": 60,
         "heading": "Testé, validé, adopté.",
         "heading_alignment": "left",
-        "heading_size": 56,
-        "heading_size_mobile": 34,
+        "heading_size": 40,
+        "heading_size_mobile": 28,
         "heading_weight": "500",
         "show_summary": true,
         "summary_rating": 4.6,
@@ -1189,7 +1189,7 @@
         "style": "grid",
         "layout": "grid-4 grid-portable-3 grid-lap-2 grid-palm-1",
         "border_radius": 0,
-        "hide_borders": false,
+        "hide_borders": true,
         "opacity_on_hover": false,
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
