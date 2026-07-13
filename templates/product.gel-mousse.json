@@ -345,7 +345,7 @@
             "item_2_icon": "truck",
             "item_2_text": "Livraison gratuite",
             "item_3_icon": "return",
-            "item_3_text": "14 jours pour changer d'avis",
+            "item_3_text": "Retour 14 jours",
             "item_4_icon": "chat",
             "item_4_text": "Support client 9h-18h",
             "margin_top": 18,
@@ -537,7 +537,7 @@
             "eyebrow": "Le combo frais H24",
             "name": "Le Duo Cleaned® + Refreshed®",
             "tagline": "Le gel nettoie le matin, le spray protège la journée.",
-            "details": "Contenu | Gel 200 ml + Spray 100 ml\nÉconomie | 15,90 €\nNote Yuka | 100/100",
+            "details": "Contenu | Gel + Spray\nÉconomie | 15,90 €\nNote Yuka | 100/100",
             "price_override": "39,90 € au lieu de 55,80 €",
             "badge": "-30%",
             "button_label": "Je prends le duo",
@@ -603,10 +603,9 @@
           }
         },
         "marquee_img_1": {
-          "type": "image",
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/zguegstroke.svg",
-            "border_radius": 0
+            "marquee_text": "🍆"
           }
         },
         "marquee_text_2": {
@@ -616,10 +615,9 @@
           }
         },
         "marquee_img_2": {
-          "type": "image",
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/zguegstroke.svg",
-            "border_radius": 0
+            "marquee_text": "🍆"
           }
         },
         "marquee_text_3": {
@@ -629,10 +627,9 @@
           }
         },
         "marquee_img_3": {
-          "type": "image",
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/zguegstroke.svg",
-            "border_radius": 0
+            "marquee_text": "🍆"
           }
         },
         "marquee_text_4": {
@@ -642,10 +639,9 @@
           }
         },
         "marquee_img_4": {
-          "type": "image",
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/zguegstroke.svg",
-            "border_radius": 0
+            "marquee_text": "🍆"
           }
         }
       },
