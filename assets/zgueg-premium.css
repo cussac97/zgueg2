@@ -1,0 +1,120 @@
+/* ============================================================
+   ZGUEG — Passe premium (édition boku-edition)
+   Direction : Typology / Coterie — filets fins, mono en accent,
+   petites capitales espacées, alignements gauche, respirations.
+   ============================================================ */
+
+:root {
+  --zg-blue: #0000c9;
+  --zg-ink: #1a1a1a;
+  --zg-muted: #6f6f6f;
+  --zg-hairline: #e8e8e8;
+  --zg-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* ---------- Buy box produit ---------- */
+
+.product-text {
+  text-align: left;
+}
+
+/* Ligne de référence (premier bloc texte, au-dessus du titre) */
+.product-text .product__subtitle:first-of-type {
+  display: block;
+  font-family: var(--zg-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  margin-bottom: 2px;
+}
+.product-text .product__subtitle:first-of-type p { margin: 0; }
+
+/* Claims produit (blocs texte suivants) — mono Typology */
+.product-text .product__subtitle:not(:first-of-type) {
+  display: block;
+  font-family: var(--zg-mono);
+  font-size: 13px;
+  line-height: 1.7;
+  color: #3a3a3a;
+  max-width: 54ch;
+  margin: 16px 0 6px;
+}
+.product-text .product__subtitle:not(:first-of-type) p { margin: 0 0 12px; }
+.product-text .product__subtitle:not(:first-of-type) p:last-child { margin-bottom: 0; }
+
+.product-text .product__title {
+  margin-top: 6px;
+  margin-bottom: 2px;
+  letter-spacing: -0.01em;
+  line-height: 1.08;
+}
+
+.product-text .product__badges { justify-content: flex-start; }
+
+.product-text .zg-rating { justify-content: flex-start; }
+
+/* Sélecteur de format */
+.product-text .variant-bundler { margin-top: 14px; }
+
+/* Cross-sell : boîte → simple filet haut/bas */
+.product-text .product-recommendation {
+  border: 0;
+  border-top: 1px solid var(--zg-hairline);
+  border-bottom: 1px solid var(--zg-hairline);
+  border-radius: 0;
+  background: transparent;
+  padding: 18px 0;
+  margin: 20px 0 10px;
+}
+.product-text .product-recommendation .sidebar-widget--outline {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+}
+.product-text .product-recommendation .sidebar-widget__title {
+  position: static;
+  display: block;
+  background: transparent;
+  padding: 0;
+  margin: 0 0 14px;
+  font-family: var(--zg-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #7a7a7a;
+}
+
+/* CTA : capitales espacées, généreux */
+.product-text .product-actions .button,
+.product-text .product-actions button[type="submit"] {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 13px;
+  font-weight: 600;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+/* Réassurance : micro petites capitales */
+.product-text .zg-reassurance {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+  color: var(--zg-muted);
+}
+
+/* Accordéons : filets discrets, titres posés */
+.product-text toggle-tab,
+.product-text .toggle {
+  border-color: var(--zg-hairline);
+}
+
+/* ---------- Sections communes ---------- */
+
+/* Bande « CE PRODUIT EST : » gérée inline dans la section custom-liquid */
+
+/* Tableaux comparatif & pH : filets plus fins */
+.comparison-table th,
+.comparison-table td { border-color: #ececec; }
