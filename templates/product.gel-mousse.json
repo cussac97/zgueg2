@@ -259,7 +259,7 @@
             "card_radius": 0,
             "selected_border_color": "#0000c9",
             "selected_border_width": 0,
-            "selected_bg_color": "#E8EDFB",
+            "selected_bg_color": "#e8edfb",
             "badge_text": "Soldes d'été : -30%",
             "badge_card": 2,
             "badge_bg_color": "#0000c9",
@@ -856,6 +856,8 @@
         "background_color": "#f7f3ec",
         "padding_top": 160,
         "padding_bottom": 160,
+        "margin_top": 0,
+        "margin_bottom": 0,
         "heading_spacing": 80,
         "card_width": 245,
         "card_min_width": 180,
@@ -1397,6 +1399,7 @@
         "review_r19",
         "review_r20"
       ],
+      "disabled": true,
       "name": "Customer Reviews",
       "settings": {
         "container_width": "large",
@@ -1430,6 +1433,7 @@
         "product_filter_label": "Type de produit",
         "product_filter_all": "Tous les produits",
         "empty_text": "Aucune note pour les filtres sélectionnés",
+        "no_comment_text": "Cet acheteur n'a pas laissé de commentaire",
         "show_date": true,
         "show_reply_date": true,
         "clamp_lines": 4,
