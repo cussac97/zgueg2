@@ -42,6 +42,7 @@
     {%- render 'head-preloader' -%}
   
     {{ 'theme.css' | asset_url | stylesheet_tag }}
+    {{ 'zgueg-premium.css' | asset_url | stylesheet_tag }}
 
     {%- if settings.enable_smooth_scroll -%}
       {{ 'lenis.css' | asset_url | stylesheet_tag }}

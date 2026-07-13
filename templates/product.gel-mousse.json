@@ -186,6 +186,7 @@
         },
         "badges_6Ax9rj": {
           "type": "badges",
+          "disabled": true,
           "settings": {
             "tag_bg_color": "#e8edfb",
             "tag_text_color": "#0000c9",
@@ -201,18 +202,28 @@
             "tag_alignment": "center"
           }
         },
+        "text_ref_zg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gel mousse quotidien — 200 ml</p>",
+            "text_size": "text-size--regular",
+            "text_style": "text-color--primary",
+            "text_color": "rgba(0,0,0,0)",
+            "text_transform": false
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
             "title_font": "theme",
-            "title_font_size": 52,
-            "title_font_size_mobile": 32,
-            "title_font_weight": "400",
+            "title_font_size": 40,
+            "title_font_size_mobile": 28,
+            "title_font_weight": "500",
             "title_text_transform": "none",
             "title_letter_spacing": 0,
             "title_line_height": 0,
             "title_color": "rgba(0,0,0,0)",
-            "title_alignment": "center"
+            "title_alignment": "left"
           }
         },
         "zg_rating": {
@@ -220,7 +231,7 @@
           "settings": {
             "rating": 4.7,
             "count_label": "20 avis vérifiés",
-            "alignment": "center",
+            "alignment": "left",
             "show_in_sticky": true,
             "star_size": 16,
             "star_color": "#0000c9",
@@ -232,7 +243,7 @@
         "text_zgsub": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Le nettoyage du matin qui tient jusqu'au soir : une noisette, 30 secondes, rincé.</strong></p>",
+            "text": "<p>Nettoie sans décaper : pH 5,5, celui de la zone.</p><p>Élimine sueur, smegma et odeurs à la source.</p><p>Tensioactifs 100 % végétaux, ferments probiotiques.</p><p>Note Yuka 100/100 · une noisette par jour suffit.</p>",
             "text_size": "text-size--regular",
             "text_style": "text-color--primary",
             "text_color": "rgba(0,0,0,0)",
@@ -241,10 +252,11 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "content_alignment": "center",
             "badge_text": "",
-            "badge_bg_color": "#f25a38",
+            "badge_bg_color": "#0000c9",
             "badge_text_color": "#ffffff",
             "badge_radius": 0,
             "badge_font_size": 15,
@@ -253,6 +265,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "content_alignment": "center",
             "product_description_truncated": "200",
@@ -260,18 +273,12 @@
             "heading": "Description"
           }
         },
-        "checklist_zg": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class='zg-checklist'><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Nettoie sans décaper</strong> : pH 5,5, exactement celui de la zone</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p>Élimine <strong>sueur, smegma et odeurs</strong> à la source</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Tensioactifs 100 % végétaux</strong> — mousse fine, rinçage net</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p>Ferments probiotiques : la flore est <strong>rééquilibrée à chaque lavage</strong></p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Apaise</strong> échauffements et démangeaisons (centella, armoise)</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Une noisette par jour</strong> suffit — note Yuka 100/100</p></div><style>.zg-checklist{display:flex;flex-direction:column;gap:10px;margin:18px auto 22px;max-width:520px;text-align:left}.zg-checklist__item{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.45}.zg-checklist__item svg{flex:0 0 20px;margin-top:2px}.zg-checklist__item p{margin:0}</style></div>"
-          }
-        },
         "variant_bundler_6mBmkR": {
           "type": "variant_bundler",
           "settings": {
-            "heading": "Choisis et économise :",
+            "heading": "Choisis ton format :",
             "heading_font": "theme",
-            "heading_alignment": "center",
+            "heading_alignment": "left",
             "style": "minimal",
             "variant_labels": false,
             "cards_per_row": 2,
@@ -279,16 +286,16 @@
             "show_variant_image": true,
             "show_price": true,
             "image_ratio": "natural",
-            "image_size": 55,
-            "card_padding": 18,
+            "image_size": 45,
+            "card_padding": 16,
             "card_inner_gap": 11,
             "card_bg_color": "#ffffff",
-            "card_border_color": "#d1e3fb",
+            "card_border_color": "#e5e5e5",
             "card_border_width": 1,
             "card_radius": 0,
             "selected_border_color": "#0000c9",
-            "selected_border_width": 0,
-            "selected_bg_color": "#e8edfb",
+            "selected_border_width": 1,
+            "selected_bg_color": "#f7f8fd",
             "badge_text": "Économise 15,90 €",
             "badge_card": 2,
             "badge_bg_color": "#f25a38",
@@ -354,6 +361,7 @@
         },
         "icons_Knqhhh": {
           "type": "icons",
+          "disabled": true,
           "settings": {
             "title": "",
             "content_alignment": "center",
@@ -463,12 +471,12 @@
         "review_card_AdYfWD",
         "media_badge_HMcaAm",
         "badges_6Ax9rj",
+        "text_ref_zg",
         "title",
         "zg_rating",
         "text_zgsub",
         "price",
         "description",
-        "checklist_zg",
         "variant_bundler_6mBmkR",
         "subscriptions_app_block_RRrMdt",
         "cross_sell_zg",
@@ -494,9 +502,9 @@
         "gallery_fit": false,
         "gallery_padding": 8,
         "section_background_color": "#ffffff",
-        "gallery_background": "#ededed",
+        "gallery_background": "#f4f2ef",
         "gallery_border": "rgba(0,0,0,0)",
-        "border_radius": 9,
+        "border_radius": 0,
         "show_thumbnails": false,
         "show_first_image_only": true,
         "enable_zoom": false,
@@ -554,7 +562,7 @@
       "settings": {
         "heading": "Tu pourrais aussi apprécier",
         "subheading": "",
-        "heading_size": 44,
+        "heading_size": 40,
         "heading_size_mobile": 30,
         "heading_weight": "400",
         "heading_color": "rgba(0,0,0,0)",
@@ -593,80 +601,20 @@
         "seo_h_tag": "h2"
       }
     },
-    "marquee_zg": {
-      "type": "marquee",
-      "blocks": {
-        "marquee_text_1": {
-          "type": "text",
-          "settings": {
-            "marquee_text": "Propre"
-          }
-        },
-        "marquee_img_1": {
-          "type": "text",
-          "settings": {
-            "marquee_text": "🍆"
-          }
-        },
-        "marquee_text_2": {
-          "type": "text",
-          "settings": {
-            "marquee_text": "Frais"
-          }
-        },
-        "marquee_img_2": {
-          "type": "text",
-          "settings": {
-            "marquee_text": "🍆"
-          }
-        },
-        "marquee_text_3": {
-          "type": "text",
-          "settings": {
-            "marquee_text": "Confiant"
-          }
-        },
-        "marquee_img_3": {
-          "type": "text",
-          "settings": {
-            "marquee_text": "🍆"
-          }
-        },
-        "marquee_text_4": {
-          "type": "text",
-          "settings": {
-            "marquee_text": "+3M de vues sur les réseaux"
-          }
-        },
-        "marquee_img_4": {
-          "type": "text",
-          "settings": {
-            "marquee_text": "🍆"
-          }
-        }
-      },
-      "block_order": [
-        "marquee_text_1",
-        "marquee_img_1",
-        "marquee_text_2",
-        "marquee_img_2",
-        "marquee_text_3",
-        "marquee_img_3",
-        "marquee_text_4",
-        "marquee_img_4"
-      ],
-      "name": "Marquee",
+    "fact_line_zg": {
+      "type": "custom-liquid",
+      "name": "Ce produit est",
       "settings": {
-        "scroll_direction": "rtl",
-        "speed": 100,
-        "pause_on_hover": false,
-        "horizontal_space": "regular-x-2",
-        "text_size": "text-size--large",
-        "use_stefan_font": false,
-        "color_background_main": "#0000c9",
-        "color_text_main": "#ffffff",
-        "remove_top_margin": true,
-        "remove_bottom_margin": false
+        "heading": "",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "custom_liquid": "<div class='zg-factline'><span class='zg-factline__label'>CE PRODUIT EST&nbsp;: </span><span class='zg-factline__values'>FABRIQUÉ EN FRANCE, SANS SAVON, TENSIOACTIFS 100 % VÉGÉTAUX, PH PHYSIOLOGIQUE 5,5, NOTE YUKA 100/100</span></div><style>.zg-factline{max-width:1240px;margin:0 auto;padding:34px 24px;text-align:center;font-family:'Geist Mono',ui-monospace,'SF Mono',Menlo,monospace;font-size:13px;line-height:1.8;letter-spacing:.08em;border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8}.zg-factline__label{color:#8a8a8a}.zg-factline__values{color:#1a1a1a}</style>",
+        "full_width": false,
+        "remove_margin": false,
+        "seo_h_tag": "span"
       }
     },
     "steps_zg": {
@@ -728,7 +676,7 @@
         "section_heading_layout": "section-heading--center section-heading--two-rows",
         "cta_label": "",
         "cta_url": "",
-        "text_alignment": "text-align--center",
+        "text_alignment": "text-align--left",
         "style": "grid",
         "layout": "grid-3 grid-lap-2 grid-palm-1",
         "image_aspect_ratio": "1",
@@ -756,9 +704,9 @@
           "settings": {
             "title": "On en avait marre de décaper nos parties intimes.",
             "title_size": "heading-size--regular",
-            "title_weight": "400",
-            "title_size_custom": 52,
-            "title_size_custom_mobile": 32,
+            "title_weight": "600",
+            "title_size_custom": 36,
+            "title_size_custom_mobile": 26,
             "seo_h_tag": "h2"
           }
         },
@@ -787,7 +735,7 @@
         "overlay_image_width": 160,
         "overlay_image_width_mobile": 100,
         "is_fullwidth": false,
-        "text_alignment": "horizontal-center",
+        "text_alignment": "horizontal-left",
         "content_layout": "stacked",
         "split_left_width": 50,
         "spacing": 24,
@@ -816,9 +764,9 @@
           "settings": {
             "title": "Cleaned® nettoie (vraiment) ta flore",
             "title_size": "heading-size--regular",
-            "title_weight": "400",
-            "title_size_custom": 52,
-            "title_size_custom_mobile": 32,
+            "title_weight": "600",
+            "title_size_custom": 36,
+            "title_size_custom_mobile": 26,
             "seo_h_tag": "h2"
           }
         },
@@ -847,7 +795,7 @@
         "overlay_image_width": 160,
         "overlay_image_width_mobile": 100,
         "is_fullwidth": false,
-        "text_alignment": "horizontal-center",
+        "text_alignment": "horizontal-left",
         "content_layout": "stacked",
         "split_left_width": 50,
         "spacing": 24,
@@ -914,14 +862,14 @@
         "section_bg": "#ffffff",
         "heading": "Pourquoi cleaned® marche mieux qu'un gel douche classique ?",
         "text_color": "#1a1a1a",
-        "heading_size": 52,
+        "heading_size": 40,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "heading_alignment": "left",
         "heading_alignment_mobile": "center",
         "body": "<p>Le gel mousse cleaned® est formulé pour la zone intime, pas pour le corps entier. Il respecte son pH plus acide et sa flore spécifique au lieu de les décaper. Trois familles d'actifs agissent à la source : des tensioactifs végétaux qui nettoient sans agresser, des ferments postbiotiques qui rééquilibrent la flore, des apaisants botaniques qui calment les irritations.</p>",
         "body_color": "#1a1a1a",
-        "body_size": 19,
+        "body_size": 17,
         "body_max_width": 640,
         "body_alignment": "left",
         "body_alignment_mobile": "center",
@@ -1092,16 +1040,16 @@
         "heading_size_mobile": 30,
         "heading_weight": "400",
         "subheading_size": 15,
-        "value_size": 44,
-        "label_size": 15,
+        "value_size": 52,
+        "label_size": 12,
         "section_bg": "#ffffff",
-        "heading_color": "#0000c9",
+        "heading_color": "#1a1a1a",
         "value_color": "#0000c9",
         "text_color": "#1a1a1a",
         "muted_color": "#4f4f4f",
-        "stripe_color": "#eef1fd",
+        "stripe_color": "#ffffff",
         "line_color": "#e6e6e6",
-        "row_padding": 18,
+        "row_padding": 22,
         "padding_top": 80,
         "padding_bottom": 80,
         "seo_h_tag": "h2"
@@ -1183,8 +1131,8 @@
       "settings": {
         "heading": "La concurrence ? Mon zgueg ouais.",
         "subheading": "",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
+        "heading_size": 44,
+        "heading_size_mobile": 30,
         "heading_weight": "400",
         "heading_color": "#000000",
         "section_heading_layout": "section-heading--center section-heading--two-rows",
@@ -1211,7 +1159,7 @@
         "highlight_text": "#2545d3",
         "highlight_border_width": 2,
         "border_radius": 0,
-        "cell_padding_y": 40,
+        "cell_padding_y": 30,
         "cell_padding_x": 24,
         "first_col_width": 30,
         "label_size": 16,
@@ -1240,8 +1188,8 @@
             "title": "Et si t'étais frais H24 ?",
             "title_size": "heading-size--regular",
             "title_weight": "400",
-            "title_size_custom": 52,
-            "title_size_custom_mobile": 32,
+            "title_size_custom": 44,
+            "title_size_custom_mobile": 30,
             "seo_h_tag": "h2"
           }
         },
@@ -1723,7 +1671,7 @@
         "padding_bottom": 80,
         "heading": "Rejoins la bande de zguegs satisfaits.",
         "heading_alignment": "left",
-        "heading_size": 52,
+        "heading_size": 40,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "show_summary": true,
@@ -1948,7 +1896,7 @@
         "style": "grid",
         "layout": "grid-4 grid-portable-3 grid-lap-2 grid-palm-1",
         "border_radius": 0,
-        "hide_borders": false,
+        "hide_borders": true,
         "opacity_on_hover": false,
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
@@ -2073,7 +2021,7 @@
     "enriched_hero_tq8Pwr",
     "main",
     "showcase_upsell_zg",
-    "marquee_zg",
+    "fact_line_zg",
     "steps_zg",
     "rich_text_FmJFM4",
     "rich_text_LRtXGt",
