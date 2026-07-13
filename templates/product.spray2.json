@@ -130,7 +130,7 @@
         "media_badge_HMcaAm": {
           "type": "media_badge",
           "settings": {
-            "badge_text": "",
+            "badge_text": "Viral : +3M de vues",
             "badge_link": "",
             "badge_position": "top left",
             "badge_offset_x": 16,
@@ -141,13 +141,13 @@
             "badge_opacity": 100,
             "badge_shadow": false,
             "badge_bg_color": "#ffffff",
-            "badge_text_color": "#1a1a1a",
-            "badge_border_color": "#1a1a1a",
+            "badge_text_color": "#0000c9",
+            "badge_border_color": "#0000c9",
             "badge_border_width": 1,
-            "badge_radius": 100,
+            "badge_radius": 0,
             "badge_padding_v": 7,
             "badge_padding_h": 14,
-            "badge_font_size": 13,
+            "badge_font_size": 12,
             "badge_font_weight": "700",
             "badge_text_transform": "uppercase"
           }
@@ -187,25 +187,34 @@
           "type": "ratingproduct",
           "settings": {
             "rating": 4.6,
-            "count_label": "21 avis",
+            "count_label": "21 avis vérifiés",
             "alignment": "center",
             "show_in_sticky": true,
             "star_size": 16,
-            "star_color": "#1a1a1a",
+            "star_color": "#0000c9",
             "star_empty_color": "#c9c9c9",
             "margin_top": 6,
             "margin_bottom": 6
           }
         },
+        "text_zgsub": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Frais 16 h sans repasser par la douche : deux pressions, et t'es tranquille jusqu'au soir.</strong></p>",
+            "text_size": "text-size--regular",
+            "text_style": "text-color--primary",
+            "text_color": "rgba(0,0,0,0)",
+            "text_transform": false
+          }
+        },
         "price": {
           "type": "price",
-          "disabled": true,
           "settings": {
             "content_alignment": "center",
             "badge_text": "",
-            "badge_bg_color": "#0000c9",
+            "badge_bg_color": "#f25a38",
             "badge_text_color": "#ffffff",
-            "badge_radius": 20,
+            "badge_radius": 0,
             "badge_font_size": 15,
             "badge_font": "theme"
           }
@@ -214,15 +223,21 @@
           "type": "description",
           "settings": {
             "content_alignment": "center",
-            "product_description_truncated": "full",
+            "product_description_truncated": "200",
             "collapsible": false,
             "heading": "Description"
+          }
+        },
+        "checklist_zg": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class='zg-checklist'><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Zéro odeur pendant 16 h</strong> — testé les jours de canicule</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Frais en 2 pressions</strong>, sec en 10 secondes, sans rinçage</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Sans alcool</strong> : zéro picotement, même après le rasage</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p>Ferments probiotiques : la flore est <strong>rééquilibrée</strong>, les odeurs ne reviennent pas</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Format poche 100 ml</strong> : bureau, salle, week-end — discret</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Note Yuka 100/100</strong>, fabriqué en France</p></div><style>.zg-checklist{display:flex;flex-direction:column;gap:10px;margin:18px auto 22px;max-width:520px;text-align:left}.zg-checklist__item{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.45}.zg-checklist__item svg{flex:0 0 20px;margin-top:2px}.zg-checklist__item p{margin:0}</style></div>"
           }
         },
         "variant_bundler_6mBmkR": {
           "type": "variant_bundler",
           "settings": {
-            "heading": "Choisissez votre pack",
+            "heading": "Choisis et économise :",
             "heading_font": "theme",
             "heading_alignment": "center",
             "style": "minimal",
@@ -242,11 +257,11 @@
             "selected_border_color": "#0000c9",
             "selected_border_width": 0,
             "selected_bg_color": "#e8edfb",
-            "badge_text": "Soldes d'été  : -30%",
+            "badge_text": "Économise 16,10 €",
             "badge_card": 2,
-            "badge_bg_color": "#0000c9",
+            "badge_bg_color": "#f25a38",
             "badge_text_color": "#ffffff",
-            "badge2_text": "-30%",
+            "badge2_text": "",
             "badge2_card": 3,
             "badge2_bg_color": "#0000c9",
             "badge2_text_color": "#ffffff",
@@ -268,11 +283,20 @@
             "product": "{{product}}"
           }
         },
+        "cross_sell_zg": {
+          "type": "cross_sell",
+          "settings": {
+            "heading": "Complète ton achat avec :",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "style": "outline",
+            "hide_block_if": false
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "button_font": "theme",
-            "show_quantity_selector": true,
+            "show_quantity_selector": false,
             "show_preorder": false,
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false,
@@ -288,10 +312,10 @@
             "item_1_text": "Paiement sécurisé",
             "item_2_icon": "truck",
             "item_2_text": "Livraison gratuite",
-            "item_3_icon": "chat",
-            "item_3_text": "Support client 9h-18h",
-            "item_4_icon": "flag",
-            "item_4_text": "",
+            "item_3_icon": "return",
+            "item_3_text": "14 jours pour changer d'avis",
+            "item_4_icon": "chat",
+            "item_4_text": "Support client 9h-18h",
             "margin_top": 18,
             "margin_bottom": 10
           }
@@ -383,6 +407,24 @@
             "page": "",
             "hide_block_if": false
           }
+        },
+        "collapsible_tab_livraison": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Livraison & retours",
+            "content": "<p>Expédié depuis la France, en colis 100 % discret — aucune mention du contenu, ni sur la boîte ni sur le relevé bancaire côté regards indiscrets.</p><p>Tu as 14 jours après réception pour changer d'avis : un email à contact@zgueg.fr, un retour, remboursé. Sans interrogatoire.</p>",
+            "page": "",
+            "hide_block_if": false
+          }
+        },
+        "collapsible_tab_objection": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ça pique ? Ça colle ?",
+            "content": "<p>Non et non. La formule est sans alcool : zéro picotement, même après un rasage. La brume sèche en une dizaine de secondes, sans résidu collant — tu te rhabilles direct.</p>",
+            "page": "",
+            "hide_block_if": false
+          }
         }
       },
       "block_order": [
@@ -390,10 +432,13 @@
         "badges_6Ax9rj",
         "title",
         "zg_rating",
+        "text_zgsub",
         "price",
         "description",
+        "checklist_zg",
         "variant_bundler_6mBmkR",
         "subscriptions_app_block_xCQYck",
+        "cross_sell_zg",
         "buy_buttons",
         "zg_reassurance",
         "icons_ht7xCR",
@@ -401,7 +446,9 @@
         "collapsible_tab_zXdGmR",
         "collapsible_tab_P4hk8m",
         "collapsible_tab_RKezaD",
-        "collapsible_tab_YyQ3H7"
+        "collapsible_tab_YyQ3H7",
+        "collapsible_tab_livraison",
+        "collapsible_tab_objection"
       ],
       "settings": {
         "gallery_layout": "two-cols scroll",
@@ -430,43 +477,297 @@
         "sticky_bar_txtcolor": "#ffffff"
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
+    "showcase_upsell_zg": {
+      "type": "showcase-the-products",
       "blocks": {
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "product_link": {
-          "type": "product_link",
+        "product_gel_zg": {
+          "type": "product",
           "settings": {
-            "button_label": "View product"
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "eyebrow": "Le nettoyant du matin",
+            "name": "Cleaned® — Gel mousse intime",
+            "tagline": "Nettoie sans décaper. pH 5,5, note Yuka 100/100.",
+            "details": "Utilisation | Quotidienne\nFonction | Nettoyant\nFormat | 200 ml",
+            "price_override": "25,90 €",
+            "badge": "",
+            "button_label": "Découvrir",
+            "button_url": "",
+            "highlight": false
+          }
+        },
+        "product_duo_zg": {
+          "type": "product",
+          "settings": {
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "image": "shopify://shop_images/zguegboth_ba836848-06c2-4b78-8bb0-5be997a3a3da.png",
+            "eyebrow": "Le combo frais H24",
+            "name": "Le Duo Cleaned® + Refreshed®",
+            "tagline": "Le gel nettoie le matin, le spray protège la journée.",
+            "details": "Contenu | Gel 200 ml + Spray 100 ml\nÉconomie | 16,10 €\nNote Yuka | 100/100",
+            "price_override": "39,90 € au lieu de 56 €",
+            "badge": "-30%",
+            "button_label": "Je prends le duo",
+            "button_url": "/products/spray-reequilibrant-intime-pour-homme?variant=57776682959196",
+            "highlight": true
           }
         }
       },
       "block_order": [
-        "price",
-        "title",
-        "product_link"
+        "product_gel_zg",
+        "product_duo_zg"
       ],
-      "disabled": true,
+      "name": "Showcase produits",
       "settings": {
-        "heading": "Recommended",
-        "subheading": "Complète ta <strong>routine</strong>",
-        "section_heading_size": "text-size--regular",
-        "section_heading_layout": "section-heading--left section-heading--one-row",
-        "layout_desktop": "four-columns",
-        "layout_mobile": "grid-palm-2",
-        "style": "slider",
-        "layout_mobile_less_items": true,
+        "heading": "Tu pourrais aussi apprécier",
+        "subheading": "",
+        "heading_size": 44,
+        "heading_size_mobile": 30,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "footnote": "",
+        "value_font": "showcase-products--mono",
+        "section_background": "",
+        "card_background": "#ffffff",
+        "media_background": "#f5f5f3",
+        "text_color": "#1a1a1a",
+        "muted_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#0000c9",
+        "highlight_text": "#0000c9",
+        "button_solid_bg": "#0000c9",
+        "button_solid_text": "rgba(0,0,0,0)",
+        "button_outline_color": "rgba(0,0,0,0)",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "card_gap": 24,
+        "card_padding": 28,
+        "media_ratio": "1 / 1",
+        "image_fit": "cover",
+        "image_scale": 70,
+        "image_padding": 0,
+        "name_size": 22,
+        "tagline_size": 15,
+        "detail_size": 13,
+        "price_size": 18,
+        "card_min_width": 320,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "seo_h_tag": "h2"
+      }
+    },
+    "marquee_zg": {
+      "type": "marquee",
+      "blocks": {
+        "marquee_text_1": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "Propre"
+          }
+        },
+        "marquee_img_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        },
+        "marquee_text_2": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "Frais"
+          }
+        },
+        "marquee_img_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        },
+        "marquee_text_3": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "Confiant"
+          }
+        },
+        "marquee_img_3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        },
+        "marquee_text_4": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "+3M de vues sur les réseaux"
+          }
+        },
+        "marquee_img_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": [
+        "marquee_text_1",
+        "marquee_img_1",
+        "marquee_text_2",
+        "marquee_img_2",
+        "marquee_text_3",
+        "marquee_img_3",
+        "marquee_text_4",
+        "marquee_img_4"
+      ],
+      "name": "Marquee",
+      "settings": {
+        "scroll_direction": "rtl",
+        "speed": 100,
+        "pause_on_hover": false,
+        "horizontal_space": "regular-x-2",
+        "text_size": "text-size--large",
+        "use_stefan_font": false,
+        "color_background_main": "#0000c9",
+        "color_text_main": "#ffffff",
+        "remove_top_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "steps_zg": {
+      "type": "text-columns-images",
+      "blocks": {
+        "step_1_zg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_02_12_27.png",
+            "title": "Étape 1 — Dégaine",
+            "caption": "Poche, sac ou vestiaire : le flacon de 100 ml te suit partout, en toute discrétion.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "step_2_zg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_14_45_16.png",
+            "title": "Étape 2 — Deux pressions",
+            "caption": "Vaporise à 10-15 cm sur les zones externes. Ça sèche en 10 secondes, sans rincer, sans coller.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "step_3_zg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/caleconall.png",
+            "title": "Étape 3 — Vis ta vie",
+            "caption": "Réunion, séance, rendez-vous : t'es tranquille jusqu'au soir. Ton entourage appréciera (sans savoir pourquoi).",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "step_1_zg",
+        "step_2_zg",
+        "step_3_zg"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "heading": "Comment ça marche ?",
+        "subheading": "Un zgueg tout frais en 3 étapes ⬇️",
+        "section_heading_size": "text-size--large",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "text_alignment": "text-align--center",
+        "style": "grid",
+        "layout": "grid-3 grid-lap-2 grid-palm-1",
+        "image_aspect_ratio": "1",
+        "border_radius": 0,
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
         "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "rich_text_FmJFM4": {
+      "type": "rich-text",
+      "blocks": {
+        "image_emEfTD": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_height": 58
+          }
+        },
+        "title_UDcVcH": {
+          "type": "title",
+          "settings": {
+            "title": "Ton déo n'a rien à faire là en bas.",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 56,
+            "title_size_custom_mobile": 32,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_GKafAp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chaleur, frottements, transpiration : au fil de la journée, l'humidité s'installe, le pH se dérègle et les bactéries odorantes prolifèrent. C'est mécanique.</p><p>Et non, le déodorant n'est pas la solution : son pH est bien trop agressif pour cette zone, qui vit à 5,5. L'entrejambe est la seule partie du corps qui exige un vrai pH physiologique — c'est exactement pour elle que Refreshed® existe.</p>",
+            "text_size": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "image_emEfTD",
+        "title_UDcVcH",
+        "text_GKafAp"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_24_juin_2026_16_29_01.png",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "regular",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": false,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "color_hide_borders": false,
+        "gutter_decrease": false,
+        "remove_margin": true,
         "remove_bottom_margin": false
       }
     },
@@ -501,7 +802,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/Capture_d_ecran_2026-06-23_a_14.12.33.png",
-            "label": "Sans rinçage \n\nPas besoin de rincer : le thé vert et les actifs purifiants laissent une sensation de frais et de sec immédiate.",
+            "label": "Sans rinçage\n\nPas besoin de rincer : le thé vert et les actifs purifiants laissent une sensation de frais et de sec immédiate.",
             "link": ""
           }
         }
@@ -521,14 +822,14 @@
         "padding_top": 70,
         "padding_bottom": 70,
         "section_bg": "#ffffff",
-        "heading": "Plus d'hygiène, plus de confiance.",
+        "heading": "100% frais pour tous les zguegs.",
         "text_color": "#1a1a1a",
         "heading_size": 48,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "heading_alignment": "left",
         "heading_alignment_mobile": "center",
-        "body": "<p>Le spray Refreshed® combine des actifs choisis pour rafraîchir la zone intime masculine au quotidien.   Chaque actif remplit une fonction définie : neutralisation des molécules odorantes + restauration de l'équilibre du microbiote cutané + apaisement des tissus sensibles.</p>",
+        "body": "<p>Le spray Refreshed® combine des actifs choisis pour une seule mission : que tu restes frais du matin au soir. Chaque actif a un rôle précis — neutraliser les molécules odorantes, rééquilibrer le microbiote, apaiser les tissus sensibles. Rien de plus, rien de moins.</p>",
         "body_color": "#1a1a1a",
         "body_size": 19,
         "body_max_width": 640,
@@ -570,64 +871,194 @@
         "button_full_width_mobile": false
       }
     },
-    "rich_text_FmJFM4": {
-      "type": "rich-text",
+    "study_results_zg": {
+      "type": "study-results",
       "blocks": {
-        "image_emEfTD": {
-          "type": "image",
-          "disabled": true,
+        "stat_1_zg": {
+          "type": "stat",
           "settings": {
-            "image_height": 58
+            "value": "16 h",
+            "label": "de fraîcheur après deux pressions — testé les jours de canicule"
           }
         },
-        "title_UDcVcH": {
-          "type": "title",
+        "stat_2_zg": {
+          "type": "stat",
           "settings": {
-            "title": "Enfin le bon pH pour la zone intime.",
-            "title_size": "heading-size--regular",
-            "title_weight": "400",
-            "title_size_custom": 56,
-            "title_size_custom_mobile": 32,
-            "seo_h_tag": "h2"
+            "value": "10 s",
+            "label": "pour sécher, sans rinçage ni résidu"
           }
         },
-        "text_GKafAp": {
-          "type": "text",
+        "stat_3_zg": {
+          "type": "stat",
           "settings": {
-            "text": "<p>Chaleur, frottements, macérations : l'humidité s'installe physiologiquement au cours de la journée. Le pH se dérègle, et le film hydrolipidique ne joue plus son rôle de barrière cutanée pour la flore intime.</p><p>Le déodorant classique possède un pH trop abrasif pour la flore. L'entrejambe est la seule zone du corps qui nécessite un équilibre de pH physiologique à 5,5.</p>",
-            "text_size": "regular"
+            "value": "0 %",
+            "label": "d'alcool dans la formule : zéro picotement, même après rasage"
+          }
+        },
+        "stat_4_zg": {
+          "type": "stat",
+          "settings": {
+            "value": "4,6/5",
+            "label": "la note moyenne de la bande de zguegs (21 avis vérifiés)"
           }
         }
       },
       "block_order": [
-        "image_emEfTD",
-        "title_UDcVcH",
-        "text_GKafAp"
+        "stat_1_zg",
+        "stat_2_zg",
+        "stat_3_zg",
+        "stat_4_zg"
       ],
-      "name": "t:sections-categories.presets.rich_text_with_image",
+      "name": "Résultats d'usage",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_24_juin_2026_16_29_01.png",
-        "video_controls": false,
-        "image_position": "right",
-        "height": "regular",
-        "content_vertical_position": "middle",
-        "image_crop": true,
-        "image_object_position": "auto",
-        "overlay_image_width": 160,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": false,
-        "text_alignment": "horizontal-center",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 24,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "rgba(0,0,0,0)",
+        "heading": "Les chiffres qui comptent",
+        "subheading": "Ce que Refreshed® change, concrètement",
+        "footnote": "",
+        "heading_size": 44,
+        "heading_size_mobile": 30,
+        "heading_weight": "400",
+        "subheading_size": 15,
+        "value_size": 44,
+        "label_size": 15,
+        "section_bg": "#ffffff",
+        "heading_color": "#0000c9",
+        "value_color": "#0000c9",
+        "text_color": "#1a1a1a",
+        "muted_color": "#4f4f4f",
+        "stripe_color": "#eef1fd",
+        "line_color": "#e6e6e6",
+        "row_padding": 18,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "seo_h_tag": "h2"
+      }
+    },
+    "comparison_table_bXEKM3": {
+      "type": "comparison-table",
+      "blocks": {
+        "row_MRNn6x": {
+          "type": "row",
+          "settings": {
+            "label": "pH physiologique (la zone intime vit à ≈ 5,5)",
+            "value_brand": "5,5",
+            "value_1": "8",
+            "value_2": "5,5",
+            "value_3": ""
+          }
+        },
+        "row_Lh8e4f": {
+          "type": "row",
+          "settings": {
+            "label": "Agit toute la journée, sans rinçage",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_ZGsmegma": {
+          "type": "row",
+          "settings": {
+            "label": "Freine smegma & mauvaises bactéries au fil de la journée",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_X3C9gH": {
+          "type": "row",
+          "settings": {
+            "label": "Neutralise les odeurs* (Zinc PCA)",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_GFYk4G": {
+          "type": "row",
+          "settings": {
+            "label": "Postbiotiques rééquilibrants (Lactobacillus, Bifida)",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_V8Jyah": {
+          "type": "row",
+          "settings": {
+            "label": "Actifs apaisants (centella, armoise, thé vert…)",
+            "value_brand": "4",
+            "value_1": "0",
+            "value_2": "1",
+            "value_3": ""
+          }
+        },
+        "row_dMdTM7": {
+          "type": "row",
+          "settings": {
+            "label": "Note Yuka (composition)",
+            "value_brand": "100/100",
+            "value_1": "~70/100",
+            "value_2": "~75/100",
+            "value_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_MRNn6x",
+        "row_Lh8e4f",
+        "row_ZGsmegma",
+        "row_X3C9gH",
+        "row_GFYk4G",
+        "row_V8Jyah",
+        "row_dMdTM7"
+      ],
+      "name": "Tableau comparatif",
+      "settings": {
+        "heading": "Y'a pas photo. (Mais y'a un tableau.)",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "#000000",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "brand_logo": "shopify://shop_images/zgueg.svg",
+        "brand_logo_width": 120,
+        "brand_name": "zgueg",
+        "brand_tagline": "Spray Refreshed®",
+        "competitor_1": "Gel douche classique",
+        "competitor_2": "Gel intime du commerce",
+        "competitor_3": "",
+        "yes_no_icons": true,
+        "value_font": "comparison-table--mono",
+        "value_alignment": "center",
+        "footnote": "<p>*Comparé à la composition type des gels douche et gels intimes du commerce au moment de la publication.</p><p>*Neutralise les odeurs grâce au Zinc PCA.</p>",
+        "section_background": "",
+        "table_background": "#ffffff",
+        "text_color": "#1a1a1a",
+        "value_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#2545d3",
+        "highlight_text": "#2545d3",
+        "highlight_border_width": 1,
         "border_radius": 0,
-        "color_hide_borders": false,
-        "gutter_decrease": false,
-        "remove_margin": true,
-        "remove_bottom_margin": false
+        "cell_padding_y": 40,
+        "cell_padding_x": 24,
+        "first_col_width": 30,
+        "label_size": 16,
+        "header_size": 16,
+        "value_size": 15,
+        "footnote_size": 13,
+        "sticky_first_column": true,
+        "mobile_col_width": 140,
+        "gutter_decrease": true,
+        "seo_h_tag": "h2"
       }
     },
     "rich_text_LRtXGt": {
@@ -643,7 +1074,7 @@
         "title_aj3KDD": {
           "type": "title",
           "settings": {
-            "title": "Un soin fraîcheur qui s'inscrit dans un routine intime.",
+            "title": "Deux pressions en sortant de la douche. C'est tout.",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 52,
@@ -654,7 +1085,7 @@
         "text_fqVCan": {
           "type": "text",
           "settings": {
-            "text": "<p>Le spray Refreshed® est une brume de soin, au pH physiologique équilibrant la flore à la sortie de la douche </p><p>Ses postbiotiques (Lactobacillus, Bifida)  limite la prolifération des bactéries odorantes. L'armoise, la centella et le thé vert viennent apaiser échauffements et irritations, laissant une sensation de fraîcheur.</p><p> Nous vous conseillons de l'appliquer sur 2 sprays en sortant de la douche après avoir utilisé un nettoyant adapté comme Cleaned®. Cette utilisation permet  d'augmenter l'absorption des nutriments. </p>",
+            "text": "<p>Refreshed® est une brume de soin au pH physiologique, à appliquer en sortant de la douche — idéalement après un nettoyage au gel Cleaned®, pour une absorption optimale des nutriments.</p><p>Ses postbiotiques (Lactobacillus, Bifida) freinent les bactéries odorantes toute la journée, pendant que l'armoise, la centella et le thé vert apaisent échauffements et irritations. Toi ? Tu ne sens rien. Et c'est exactement le but.</p>",
             "text_size": "regular"
           }
         }
@@ -687,6 +1118,780 @@
         "color_hide_borders": false,
         "gutter_decrease": true,
         "remove_margin": false,
+        "remove_bottom_margin": false
+      }
+    },
+    "duo_band_zg": {
+      "type": "rich-text",
+      "blocks": {
+        "duo_eyebrow_zg": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SE SIMPLIFIER LA VIE</strong></p>",
+            "text_size": "regular"
+          }
+        },
+        "duo_title_zg": {
+          "type": "title",
+          "settings": {
+            "title": "Et si t'étais frais H24 ?",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 52,
+            "title_size_custom_mobile": 32,
+            "seo_h_tag": "h2"
+          }
+        },
+        "duo_text_zg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cleaned® nettoie sous la douche. Refreshed® prend le relais jusqu'au soir. Le duo complet est à 39,90 € au lieu de 56 € — soit 16,10 € qui restent dans ta poche.</p>",
+            "text_size": "regular"
+          }
+        },
+        "duo_button_zg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Je prends le duo",
+            "link": "/products/spray-reequilibrant-intime-pour-homme?variant=57776682959196",
+            "open_in_new_window": false,
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "duo_eyebrow_zg",
+        "duo_title_zg",
+        "duo_text_zg",
+        "duo_button_zg"
+      ],
+      "name": "t:sections-categories.presets.fullwidth_text_banner",
+      "settings": {
+        "video_controls": false,
+        "image_position": "top no-image",
+        "height": "regular",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "#0000c9",
+        "color_text_main": "#ffffff",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": false,
+        "remove_bottom_margin": false
+      }
+    },
+    "customer_reviews_QkecMN": {
+      "type": "customer-reviews",
+      "blocks": {
+        "review_r01": {
+          "type": "review",
+          "settings": {
+            "author": "Kevin R.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "21 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Le réflexe après la muscu maintenant. Deux pressions et c'est réglé pour la journée, pas besoin de repasser sous la douche. La fraîcheur tient vraiment, même tard le soir.",
+            "helpful_up": 14,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Zgueg",
+            "reply_date": "21 mai 2026",
+            "reply_text": "Salut Kevin ! Le geste post-séance, c'est exactement l'usage idéal 💪 Si tu veux nettoyer à fond le soir, le gel complète. contact@zgueg.fr"
+          }
+        },
+        "review_r02": {
+          "type": "review",
+          "settings": {
+            "author": "Mehdi 06",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "20 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Pratique, discret, efficace. Toujours dans mon sac.",
+            "helpful_up": 6,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r03": {
+          "type": "review",
+          "settings": {
+            "author": "Camille (pour mon homme)",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "18 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Pris pour mon copain qui transpire énormément. Honnêtement ça a changé nos soirées, je vous laisse imaginer 😏 Il l'emporte partout maintenant.",
+            "helpful_up": 3,
+            "helpful_down": 1,
+            "reply_enable": true,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "18 mai 2026",
+            "reply_text": "Merci Camille 😄 Ravis que ça fasse l'unanimité à la maison. Le format tient bien dans une poche pour les déplacements. contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+          }
+        },
+        "review_r04": {
+          "type": "review",
+          "settings": {
+            "author": "Greg",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "15 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Ce que j'aime c'est que ça masque pas juste avec du parfum, ça agit vraiment sur l'odeur. Même après une grosse journée y'a rien. Le jour et la nuit comparé à un déo classique.",
+            "helpful_up": 9,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r05": {
+          "type": "review",
+          "settings": {
+            "author": "JB.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "12 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "franchement un spray sans rinçage pour ça j'y croyais pas du tout, je pensais que ça allait laisser un truc collant ou mouillé mais non ça sèche direct et c'est frais immédiat, du coup maintenant j'en ai un au boulot un dans la voiture un à la maison, bref conquis",
+            "helpful_up": 2,
+            "helpful_down": 2,
+            "reply_enable": true,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "13 mai 2026",
+            "reply_text": "Merci JB ! Sans flotte et sans compromis, c'était tout le pari 😉 Un dans chaque sac et t'es paré. contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+          }
+        },
+        "review_r06": {
+          "type": "review",
+          "settings": {
+            "author": "Thomas L.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "9 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Parfait avant un rdv. Un coup vite fait et t'es tranquille toute la soirée, l'esprit léger. Discret en plus, ça se voit pas dans la poche.",
+            "helpful_up": 7,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r07": {
+          "type": "review",
+          "settings": {
+            "author": "didier",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 4,
+            "date": "6 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Efficace, ça tient bien la journée. Je mets 4 parce que perso j'aurais préféré une version sans parfum, mais l'effet anti-odeur est là, c'est le principal.",
+            "helpful_up": 4,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r08": {
+          "type": "review",
+          "settings": {
+            "author": "Sofiane",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "22 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Je transpire vraiment beaucoup et c'est le seul truc qui tient sans que je doive repasser à la douche le midi. Fraîcheur immédiate et longue durée, validé.",
+            "helpful_up": 12,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "22 mai 2026",
+            "reply_text": "Merci Sofiane ! Pour les grosses journées, un petit coup en milieu d'aprèm et c'est reparti. contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+          }
+        },
+        "review_r09": {
+          "type": "review",
+          "settings": {
+            "author": "Marc",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 4,
+            "date": "19 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Bien efficace et pratique, je l'utilise tous les jours. La diffusion du spray pourrait être un chouïa plus fine, ça fait parfois des grosses gouttes. Sinon rien à redire.",
+            "helpful_up": 5,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r10": {
+          "type": "review",
+          "settings": {
+            "author": "Yanis",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "16 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Game changer pour les voyages. Avion, train, hôtel, je reste frais sans dépendre d'une douche. Et ça agresse pas la peau comme les déos classiques.",
+            "helpful_up": 3,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "16 mai 2026",
+            "reply_text": "Merci Yanis ! Pensé exactement pour la vie nomade ✈️ Bon voyage, et à dispo : contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+          }
+        },
+        "review_r11": {
+          "type": "review",
+          "settings": {
+            "author": "Pierre-Yves",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "13 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Après la salle c'est devenu automatique. Aucune odeur, aucune gêne, et ça sèche tout de suite. Top.",
+            "helpful_up": 8,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r12": {
+          "type": "review",
+          "settings": {
+            "author": "le_breton29",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "10 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "j'avais toujours ce moment de stress en fin de journée surtout l'été quand tu sais que ça sent pas top et que t'as pas le temps de rentrer te doucher, là deux pressions le midi et le problème est réglé, je sais même pas comment je faisais avant honnêtement",
+            "helpful_up": 6,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r13": {
+          "type": "review",
+          "settings": {
+            "author": "Anonyme",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 3,
+            "date": "7 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Ça fait le job sur le moment, fraîcheur immédiate ok. Par contre chez moi la tenue est plus proche de la demi-journée que de la journée complète, faut que j'en remette. Correct sans plus.",
+            "helpful_up": 4,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r14": {
+          "type": "review",
+          "settings": {
+            "author": "Romain",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "23 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Peau sensible, et contrairement aux déos en stick zéro picotement. Frais, propre, et ça irrite pas. Parfait entre deux douches.",
+            "helpful_up": 11,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "23 mai 2026",
+            "reply_text": "Merci Romain ! Centella et armoise calment justement les zones sensibles. Content que ça te convienne 🙌 contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+          }
+        },
+        "review_r15": {
+          "type": "review",
+          "settings": {
+            "author": "Lucie (pour mon copain)",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "20 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Offert à mon copain, gros succès. Il l'utilise après le sport et avant de sortir. Disons que ça profite à tout le monde 😅",
+            "helpful_up": 5,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r16": {
+          "type": "review",
+          "settings": {
+            "author": "Karim",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "17 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Je l'utilise en combo avec le gel, l'un nettoie le matin l'autre dépanne dans la journée. Le duo parfait, frais H24.",
+            "helpful_up": 3,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "17 mai 2026",
+            "reply_text": "Merci Karim ! Le gel à la source + le spray en renfort, c'est exactement la routine idéale 🙌 contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+          }
+        },
+        "review_r17": {
+          "type": "review",
+          "settings": {
+            "author": "fab",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "14 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Efficace immédiat. Adopté.",
+            "helpful_up": 6,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r18": {
+          "type": "review",
+          "settings": {
+            "author": "Sébastien M.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 4,
+            "date": "11 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Très efficace, je l'emmène partout. Un peu cher à l'achat mais quelques pressions suffisent donc le flacon dure un bon moment, au final ça s'équilibre.",
+            "helpful_up": 4,
+            "helpful_down": 1,
+            "reply_enable": true,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "11 mai 2026",
+            "reply_text": "Merci Sébastien ! Quelques pressions par jour, le flacon tient longtemps — et les packs allègent la facture 😉 contact@zgueg.fr",
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg"
+          }
+        },
+        "review_r19": {
+          "type": "review",
+          "settings": {
+            "author": "Greg77",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "8 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Idéal pour les journées qui n'en finissent pas. Un coup de spray et je repars frais sans repasser chez moi. Indispensable maintenant.",
+            "helpful_up": 7,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_r20": {
+          "type": "review",
+          "settings": {
+            "author": "Nono",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 4,
+            "date": "5 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Très bon spray, fraîcheur immédiate et ça tient bien. J'aurais aimé un bouchon qui se clipse mieux pour le sac, j'ai un peu peur que ça s'ouvre tout seul. Mais le produit est top.",
+            "helpful_up": 2,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_r01",
+        "review_r02",
+        "review_r03",
+        "review_r04",
+        "review_r05",
+        "review_r06",
+        "review_r07",
+        "review_r08",
+        "review_r09",
+        "review_r10",
+        "review_r11",
+        "review_r12",
+        "review_r13",
+        "review_r14",
+        "review_r15",
+        "review_r16",
+        "review_r17",
+        "review_r18",
+        "review_r19",
+        "review_r20"
+      ],
+      "name": "Customer Reviews",
+      "settings": {
+        "container_width": "large",
+        "show_pagination": true,
+        "per_page": 5,
+        "two_columns": true,
+        "left_width": 50,
+        "column_gap": 48,
+        "sticky_heading": true,
+        "sticky_offset": 100,
+        "meta_width": 28,
+        "review_spacing": 28,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "heading": "Rejoins la bande de zguegs satisfaits.",
+        "heading_alignment": "left",
+        "heading_size": 56,
+        "heading_size_mobile": 34,
+        "heading_weight": "500",
+        "show_summary": true,
+        "summary_rating": 4.6,
+        "summary_count": "21",
+        "summary_caption": "de moyenne sur",
+        "summary_reviews_word": "avis",
+        "summary_text_size": 13,
+        "show_rating_filter": true,
+        "rating_filter_label": "Note",
+        "rating_filter_all": "Toutes les notes",
+        "stars_word": "étoiles",
+        "show_product_filter": true,
+        "product_filter_label": "Type de produit",
+        "product_filter_all": "Tous les produits",
+        "empty_text": "Aucune note pour les filtres sélectionnés",
+        "no_comment_text": "Cet acheteur n'a pas laissé de commentaire",
+        "show_date": true,
+        "show_reply_date": true,
+        "clamp_lines": 4,
+        "read_more_label": "Voir plus",
+        "read_less_label": "Voir moins",
+        "show_helpful": true,
+        "helpful_label": "Cet avis est-il utile ?",
+        "section_bg": "#ffffff",
+        "text_color": "#1a1a1a",
+        "muted_color": "#6b6b6b",
+        "divider_color": "#d7d7d7",
+        "star_color": "#0000c9",
+        "star_empty_color": "#c9c9c9",
+        "field_bg": "#ffffff",
+        "field_border": "#d9d9d9",
+        "field_radius": 0
+      }
+    },
+    "faq_zg": {
+      "type": "content-toggles",
+      "blocks": {
+        "faq_q1_zg": {
+          "type": "text",
+          "settings": {
+            "title": "C'est vraiment utile, un soin pour cette zone ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Ton déo est pensé pour les aisselles, ton gel douche pour le corps entier. L'entrejambe, elle, vit à pH 5,5, transpire plus et macère plus — et aucun des deux n'y répond. Refreshed® est formulé exactement pour ça. Une fois testé, tu te demanderas comment tu faisais avant (vrai retour client).</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_q2_zg": {
+          "type": "text",
+          "settings": {
+            "title": "Ça remplace la douche ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Non — et ce n'est pas le but. La douche nettoie le matin (idéalement avec Cleaned®). Refreshed® maintient la fraîcheur <strong>entre</strong> les douches : après le sport, au bureau, avant un rendez-vous. Deux pressions, dix secondes, réglé.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_q3_zg": {
+          "type": "text",
+          "settings": {
+            "title": "Ça pique ? Même après un rasage ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Non. Sans alcool, pH physiologique, avec centella et armoise pour apaiser. Testé sur peaux sensibles et zones fraîchement rasées : zéro picotement.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_q4_zg": {
+          "type": "text",
+          "settings": {
+            "title": "Combien de temps dure un flacon ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>100 ml ≈ 250 pulvérisations. À deux pressions par jour, compte 3 à 4 mois. Ramené à la journée, c'est moins cher qu'un café — et socialement plus rentable.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_q5_zg": {
+          "type": "text",
+          "settings": {
+            "title": "La livraison est discrète ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Colis neutre, sans aucune mention du contenu. Le facteur ne saura rien. Ta mère non plus.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_q6_zg": {
+          "type": "text",
+          "settings": {
+            "title": "Et si ça ne me convient pas ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Tu as 14 jours après réception pour changer d'avis : tu nous écris à contact@zgueg.fr, tu renvoies, on rembourse. Sans questionnaire de 12 pages.</p>",
+            "hide_block_if": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_q1_zg",
+        "faq_q2_zg",
+        "faq_q3_zg",
+        "faq_q4_zg",
+        "faq_q5_zg",
+        "faq_q6_zg"
+      ],
+      "name": "Content toggles",
+      "settings": {
+        "heading": "Des questions ? On y répond.",
+        "subheading": "Une équipe de vrais zguegs te répond du lundi au vendredi, 9h-18h : contact@zgueg.fr",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "Nous écrire",
+        "cta_url": "shopify://pages/contact",
+        "form_enable": false,
+        "form_title": "Contact form",
+        "style": "outline",
+        "open_first": true,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "trust_icons_zg": {
+      "type": "text-columns-icons",
+      "blocks": {
+        "trust_1_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "shipping-truck",
+            "crop": true,
+            "title": "Livraison gratuite",
+            "caption": "Expédiée depuis la France, en colis 100 % discret.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "trust_2_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "security-shield",
+            "crop": true,
+            "title": "Paiement sécurisé",
+            "caption": "Transactions chiffrées de bout en bout.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "trust_3_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "like-hand",
+            "crop": true,
+            "title": "14 jours pour changer d'avis",
+            "caption": "Retour simple, remboursement rapide. Zéro interrogatoire.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "trust_4_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "helpline",
+            "crop": true,
+            "title": "Des vrais humains",
+            "caption": "contact@zgueg.fr — on répond vite, et en français.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "trust_1_zg",
+        "trust_2_zg",
+        "trust_3_zg",
+        "trust_4_zg"
+      ],
+      "name": "Text columns with icons",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "style": "grid",
+        "layout": "grid-4 grid-portable-3 grid-lap-2 grid-palm-1",
+        "border_radius": 0,
+        "hide_borders": false,
+        "opacity_on_hover": false,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "product_link": {
+          "type": "product_link",
+          "settings": {
+            "button_label": "View product"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "title",
+        "product_link"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Recommended",
+        "subheading": "Complète ta <strong>routine</strong>",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "layout_desktop": "four-columns",
+        "layout_mobile": "grid-palm-2",
+        "style": "slider",
+        "layout_mobile_less_items": true,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
         "remove_bottom_margin": false
       }
     },
@@ -845,633 +2050,25 @@
         "padding_bottom": 60,
         "seo_h_tag": "h2"
       }
-    },
-    "comparison_table_bXEKM3": {
-      "type": "comparison-table",
-      "blocks": {
-        "row_MRNn6x": {
-          "type": "row",
-          "settings": {
-            "label": "pH physiologique (la zone intime vit à ≈ 5,5)",
-            "value_brand": "5,5",
-            "value_1": "8",
-            "value_2": "5,5",
-            "value_3": ""
-          }
-        },
-        "row_Lh8e4f": {
-          "type": "row",
-          "settings": {
-            "label": "Agit toute la journée, sans rinçage",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
-            "value_3": ""
-          }
-        },
-        "row_ZGsmegma": {
-          "type": "row",
-          "settings": {
-            "label": "Freine smegma & mauvaises bactéries au fil de la journée",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
-            "value_3": ""
-          }
-        },
-        "row_X3C9gH": {
-          "type": "row",
-          "settings": {
-            "label": "Neutralise les odeurs* (Zinc PCA)",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
-            "value_3": ""
-          }
-        },
-        "row_GFYk4G": {
-          "type": "row",
-          "settings": {
-            "label": "Postbiotiques rééquilibrants (Lactobacillus, Bifida)",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
-            "value_3": ""
-          }
-        },
-        "row_V8Jyah": {
-          "type": "row",
-          "settings": {
-            "label": "Actifs apaisants (centella, armoise, thé vert…)",
-            "value_brand": "4",
-            "value_1": "0",
-            "value_2": "1",
-            "value_3": ""
-          }
-        },
-        "row_dMdTM7": {
-          "type": "row",
-          "settings": {
-            "label": "Note Yuka (composition)",
-            "value_brand": "100/100",
-            "value_1": "~70/100",
-            "value_2": "~75/100",
-            "value_3": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_MRNn6x",
-        "row_Lh8e4f",
-        "row_ZGsmegma",
-        "row_X3C9gH",
-        "row_GFYk4G",
-        "row_V8Jyah",
-        "row_dMdTM7"
-      ],
-      "name": "Tableau comparatif",
-      "settings": {
-        "heading": "La flore intime nécessite un soin adapté.",
-        "subheading": "",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "heading_color": "#000000",
-        "section_heading_layout": "section-heading--center section-heading--two-rows",
-        "cta_label": "",
-        "cta_url": "",
-        "brand_logo": "shopify://shop_images/zgueg.svg",
-        "brand_logo_width": 120,
-        "brand_name": "zgueg",
-        "brand_tagline": "Spray Refreshed®",
-        "competitor_1": "Gel douche classique",
-        "competitor_2": "Gel intime du commerce",
-        "competitor_3": "",
-        "yes_no_icons": true,
-        "value_font": "comparison-table--mono",
-        "value_alignment": "center",
-        "footnote": "<p>*Comparé à la composition type des gels douche et gels intimes du commerce au moment de la publication.</p><p>*Neutralise les odeurs grâce au Zinc PCA.</p>",
-        "section_background": "",
-        "table_background": "#ffffff",
-        "text_color": "#1a1a1a",
-        "value_color": "#4f4f4f",
-        "line_color": "#e6e6e6",
-        "highlight_background": "#e8edfb",
-        "highlight_border": "#2545d3",
-        "highlight_text": "#2545d3",
-        "highlight_border_width": 1,
-        "border_radius": 0,
-        "cell_padding_y": 40,
-        "cell_padding_x": 24,
-        "first_col_width": 30,
-        "label_size": 16,
-        "header_size": 16,
-        "value_size": 15,
-        "footnote_size": 13,
-        "sticky_first_column": true,
-        "mobile_col_width": 140,
-        "gutter_decrease": true,
-        "seo_h_tag": "h2"
-      }
-    },
-    "customer_reviews_QkecMN": {
-      "type": "customer-reviews",
-      "blocks": {
-        "review_r01": {
-          "type": "review",
-          "settings": {
-            "author": "Théo",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "4 juillet 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Franchement bravo les gars 😂 Ça fait des mois que vos vidéos me font marrer, j'ai fini par craquer. Et en vrai le produit suit ! 2 pschitts en sortant de douche et je suis tranquille toute la journée. Content d'avoir testé.",
-            "helpful_up": 9,
-            "helpful_down": 0,
-            "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "4 juillet 2026",
-            "reply_text": "Ahah bienvenue Théo 😄 c'était un peu la pression de faire un produit à la hauteur des vidéos, content que ça suive. profite bien !"
-          }
-        },
-        "review_r02": {
-          "type": "review",
-          "settings": {
-            "author": "Antoine",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "2 juillet 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Pas évident d'écrire ce genre d'avis, mais je le fais quand même. Ma copine m'avait fait la remarque une ou deux fois et honnêtement ça me restait en tête, je n'étais jamais vraiment tranquille. Ça fait un mois maintenant et je n'y pense plus du tout. Ça paraît anodin mais ça change pas mal de choses au quotidien.",
-            "helpful_up": 23,
-            "helpful_down": 1,
-            "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "2 juillet 2026",
-            "reply_text": "Merci pour ce message Antoine, ça compte vraiment pour nous. C'est exactement pour cette tranquillité-là qu'on l'a fait 🙏"
-          }
-        },
-        "review_r03": {
-          "type": "review",
-          "settings": {
-            "author": "Sofiane",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "30 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Appliqué le matin après la douche, efficace jusqu'au soir. C'est exactement ce que je cherchais : quelque chose qui tient dans la durée. Rien à redire.",
-            "helpful_up": 5,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r04": {
-          "type": "review",
-          "settings": {
-            "author": "Marius",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 4,
-            "date": "28 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Efficace, aucune odeur de la journée, ça c'est clair. Je mets 4 uniquement parce que j'aurais aimé que ça sente un peu plus, là c'est vraiment neutre. Mais ça fait le job et ça ne pique pas.",
-            "helpful_up": 4,
-            "helpful_down": 1,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r21": {
-          "type": "review",
-          "settings": {
-            "author": "Florian D.",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 2,
-            "date": "1 juillet 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Commande passée il y a plus d'une semaine et toujours rien reçu, aucune nouvelle du suivi. Le produit a l'air bien d'après les avis mais là pour l'instant je m'impatiente un peu...",
-            "helpful_up": 1,
-            "helpful_down": 0,
-            "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "1 juillet 2026",
-            "reply_text": "Bonjour Florian, désolés pour l'attente, ça ne devrait pas se passer comme ça. Écrivez-nous à contact@zgueg.fr avec votre numéro de commande et on regarde votre suivi tout de suite pour vous débloquer ça 🙏"
-          }
-        },
-        "review_r05": {
-          "type": "review",
-          "settings": {
-            "author": "Kevin",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "26 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "ça marche très bien, merci à vous 🙂",
-            "helpful_up": 3,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r06": {
-          "type": "review",
-          "settings": {
-            "author": "Lucas",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "24 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Ça m'a enlevé un stress que je traînais depuis longtemps. Cette petite appréhension au moment où ça devient sérieux avec quelqu'un, la peur que ça sente pas bon et que ça casse tout... Là je suis simplement serein. J'aurais aimé trouver ça bien plus tôt.",
-            "helpful_up": 18,
-            "helpful_down": 0,
-            "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "24 juin 2026",
-            "reply_text": "Merci Lucas. On reçoit beaucoup de messages comme le tien et c'est précisément ce qui nous motive. Serein, c'est le mot 🙏"
-          }
-        },
-        "review_r07": {
-          "type": "review",
-          "settings": {
-            "author": "Ryan",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "22 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "jsuis tombé sur vos tiktok par hasard et jai scrollé genre 20 vidéos daffilée mdr vous etes vraiment pas comme les autres marques. du coup commandé pour voir et franchement le produit assure autant que le contenu 💪",
-            "helpful_up": 11,
-            "helpful_down": 0,
-            "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "22 juin 2026",
-            "reply_text": "20 vidéos d'affilée on prend 😂 merci Ryan, ravis que le produit tienne le niveau du contenu !"
-          }
-        },
-        "review_r08": {
-          "type": "review",
-          "settings": {
-            "author": "Julien",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "20 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "ça faisait un moment que je cherchais un truc qui tient sur la durée, parce que le matin ça va mais en milieu daprès-midi lodeur revenait, une douche ça protège pas toute la journée quoi. un pote men a parlé, testé sans trop y croire et en fait cest le premier truc qui me garde clean jusquau soir, un pschitt en sortie de douche et basta, je rachete direct",
-            "helpful_up": 7,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r09": {
-          "type": "review",
-          "settings": {
-            "author": "Dorian",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 4,
-            "date": "18 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Produit efficace, aucune irritation, satisfait. Le seul bémol c'est que la vaporisation est un peu large, il faut bien viser au début. Détail, mais je le signale. Sinon nickel.",
-            "helpful_up": 3,
-            "helpful_down": 1,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r10": {
-          "type": "review",
-          "settings": {
-            "author": "Nathan",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "16 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "",
-            "helpful_up": 0,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r11": {
-          "type": "review",
-          "settings": {
-            "author": "Enzo",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "14 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Bon alors moi j'étais pas le pire hein 😅 mais ma copine me lançait parfois des petites vannes et ça me vexait un peu quand même. Depuis que j'utilise ça : PLUS AUCUNE remarque, et elle m'a même demandé ce que c'était 😂 Validé des deux côtés.",
-            "helpful_up": 12,
-            "helpful_down": 0,
-            "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "14 juin 2026",
-            "reply_text": "Validé par madame c'est le vrai label qualité 😂 merci Enzo !"
-          }
-        },
-        "review_r12": {
-          "type": "review",
-          "settings": {
-            "author": "Adrien",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "12 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Je vous suis depuis quasiment le début, vos vidéos me font marrer, au départ j'ai commandé un peu pour soutenir. Sauf que le produit est vraiment bon en fait, donc je reste 😄 Continuez comme ça.",
-            "helpful_up": 8,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r13": {
-          "type": "review",
-          "settings": {
-            "author": "Mehdi",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 4,
-            "date": "10 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Bonjour, très bon produit, efficace et doux pour la peau. Je retire une étoile pour le prix, mais dans la mesure où deux pulvérisations suffisent, le flacon dure longtemps, donc au final ça reste correct. Je recommanderai.",
-            "helpful_up": 3,
-            "helpful_down": 1,
-            "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "10 juin 2026",
-            "reply_text": "Merci Mehdi ! Deux pulvés suffisent en effet donc ça tient, et les packs font baisser la note si tu repasses 😉"
-          }
-        },
-        "review_r14": {
-          "type": "review",
-          "settings": {
-            "author": "Quentin",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "8 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "",
-            "helpful_up": 0,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r15": {
-          "type": "review",
-          "settings": {
-            "author": "Anonyme",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 3,
-            "date": "6 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Le produit est correct, ça rafraîchit et sur la journée c'est mieux qu'avant. Après, je m'attendais peut-être à quelque chose d'un peu plus radical au vu des vidéos. C'est bien sans être miraculeux pour ma part. Ça dépend sans doute des peaux.",
-            "helpful_up": 5,
-            "helpful_down": 2,
-            "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "6 juin 2026",
-            "reply_text": "Merci pour ton retour honnête. L'effet est progressif et varie un peu d'une peau à l'autre — si tu veux on regarde ensemble ton utilisation pour l'optimiser, écris-nous à contact@zgueg.fr 🙏"
-          }
-        },
-        "review_r16": {
-          "type": "review",
-          "settings": {
-            "author": "Bastien",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "4 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "",
-            "helpful_up": 0,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r17": {
-          "type": "review",
-          "settings": {
-            "author": "Clément",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "2 juin 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Vu un reel, j'ai ri, j'ai commandé, j'ai adopté 😂 Voilà l'histoire. Plus sérieusement, ça tient vraiment la journée, je ne pensais pas. Top.",
-            "helpful_up": 9,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r18": {
-          "type": "review",
-          "settings": {
-            "author": "Manon (pour mon copain)",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "31 mai 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Commandé pour mon copain qui était un peu complexé avec ça et qui n'osait pas trop en parler. Il l'utilise tous les jours maintenant et il est clairement plus détendu. Apparemment c'était un bon cadeau 🙂",
-            "helpful_up": 5,
-            "helpful_down": 0,
-            "reply_enable": true,
-            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "31 mai 2026",
-            "reply_text": "Merci Manon, joli cadeau en effet 🙂 ravis qu'il soit plus tranquille !"
-          }
-        },
-        "review_r19": {
-          "type": "review",
-          "settings": {
-            "author": "Hugo",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 4,
-            "date": "29 mai 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Content du produit, il fait exactement ce qu'il annonce, frais toute la journée. Seul reproche : le bouchon ne tient pas très bien, le mien a sauté une fois dans le sac. Rien de grave, je recommande quand même.",
-            "helpful_up": 4,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        },
-        "review_r20": {
-          "type": "review",
-          "settings": {
-            "author": "Samir",
-            "verified": true,
-            "verified_label": "Client vérifié",
-            "rating": 5,
-            "date": "27 mai 2026",
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "text": "Enfin un truc qui règle le problème sur la durée, et pas seulement deux heures. Je l'applique le matin et je suis peinard jusqu'au soir. J'aurais clairement dû commander avant.",
-            "helpful_up": 7,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Zgueg",
-            "reply_date": "",
-            "reply_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "review_r01",
-        "review_r02",
-        "review_r03",
-        "review_r04",
-        "review_r21",
-        "review_r05",
-        "review_r06",
-        "review_r07",
-        "review_r08",
-        "review_r09",
-        "review_r10",
-        "review_r11",
-        "review_r12",
-        "review_r13",
-        "review_r14",
-        "review_r15",
-        "review_r16",
-        "review_r17",
-        "review_r18",
-        "review_r19",
-        "review_r20"
-      ],
-      "name": "Customer Reviews",
-      "settings": {
-        "container_width": "large",
-        "show_pagination": true,
-        "per_page": 5,
-        "two_columns": true,
-        "left_width": 50,
-        "column_gap": 48,
-        "sticky_heading": true,
-        "sticky_offset": 100,
-        "meta_width": 28,
-        "review_spacing": 28,
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "heading": "Laissez vos avis sur Refreshed®  :",
-        "heading_alignment": "left",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "show_summary": true,
-        "summary_rating": 4.6,
-        "summary_count": "21",
-        "summary_caption": "moyenne sur",
-        "summary_reviews_word": "avis",
-        "summary_text_size": 13,
-        "show_rating_filter": true,
-        "rating_filter_label": "Note",
-        "rating_filter_all": "Toutes les notes",
-        "stars_word": "étoiles",
-        "show_product_filter": true,
-        "product_filter_label": "Type de produit",
-        "product_filter_all": "Tous les produits",
-        "empty_text": "Aucune note pour les filtres sélectionnés",
-        "no_comment_text": "Cet acheteur n'a pas laissé de commentaire",
-        "show_date": true,
-        "show_reply_date": true,
-        "clamp_lines": 4,
-        "read_more_label": "Voir plus",
-        "read_less_label": "Voir moins",
-        "show_helpful": true,
-        "helpful_label": "Cet avis est-il utile ?",
-        "section_bg": "#ffffff",
-        "text_color": "#1a1a1a",
-        "muted_color": "#6b6b6b",
-        "divider_color": "#d7d7d7",
-        "star_color": "#1a1a1a",
-        "star_empty_color": "#c9c9c9",
-        "field_bg": "#ffffff",
-        "field_border": "#d9d9d9",
-        "field_radius": 8
-      }
     }
   },
   "order": [
     "enriched_hero_tq8Pwr",
     "main",
-    "product-recommendations",
-    "certifications_Tniktg",
+    "showcase_upsell_zg",
+    "marquee_zg",
+    "steps_zg",
     "rich_text_FmJFM4",
-    "rich_text_LRtXGt",
-    "instagram_shots_943TFC",
-    "ph_scale_4aedxP",
+    "certifications_Tniktg",
+    "study_results_zg",
     "comparison_table_bXEKM3",
-    "customer_reviews_QkecMN"
+    "rich_text_LRtXGt",
+    "duo_band_zg",
+    "customer_reviews_QkecMN",
+    "faq_zg",
+    "trust_icons_zg",
+    "product-recommendations",
+    "instagram_shots_943TFC",
+    "ph_scale_4aedxP"
   ]
 }

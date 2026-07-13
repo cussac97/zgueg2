@@ -17,15 +17,35 @@
         "95532ce8-d90b-4117-9996-ae0c49cd02eb": {
           "type": "content",
           "settings": {
-            "text": "Soldes d'été : -30% sur le pack Spray + Gel quotidien",
+            "text": "☀️ Soldes d'été : le duo Cleaned® + Refreshed® à -30% ☀️",
             "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
+            "open_newsletter": false,
+            "target": false
+          }
+        },
+        "announcement_viral_zg": {
+          "type": "content",
+          "settings": {
+            "text": "Viral : +3 millions de vues sur les réseaux !",
+            "link": "shopify://products/spray-reequilibrant-intime-pour-homme",
+            "open_newsletter": false,
+            "target": false
+          }
+        },
+        "announcement_livraison_zg": {
+          "type": "content",
+          "settings": {
+            "text": "🚚 Livraison gratuite, en colis 100% discret",
+            "link": "",
             "open_newsletter": false,
             "target": false
           }
         }
       },
       "block_order": [
-        "95532ce8-d90b-4117-9996-ae0c49cd02eb"
+        "95532ce8-d90b-4117-9996-ae0c49cd02eb",
+        "announcement_viral_zg",
+        "announcement_livraison_zg"
       ],
       "settings": {
         "visibility": "all",

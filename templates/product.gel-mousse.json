@@ -162,7 +162,7 @@
         "media_badge_HMcaAm": {
           "type": "media_badge",
           "settings": {
-            "badge_text": "",
+            "badge_text": "Viral : +3M de vues",
             "badge_link": "",
             "badge_position": "top left",
             "badge_offset_x": 16,
@@ -173,13 +173,13 @@
             "badge_opacity": 100,
             "badge_shadow": false,
             "badge_bg_color": "#ffffff",
-            "badge_text_color": "#1a1a1a",
-            "badge_border_color": "#1a1a1a",
+            "badge_text_color": "#0000c9",
+            "badge_border_color": "#0000c9",
             "badge_border_width": 1,
-            "badge_radius": 100,
+            "badge_radius": 0,
             "badge_padding_v": 7,
             "badge_padding_h": 14,
-            "badge_font_size": 13,
+            "badge_font_size": 12,
             "badge_font_weight": "700",
             "badge_text_transform": "uppercase"
           }
@@ -215,15 +215,38 @@
             "title_alignment": "center"
           }
         },
+        "zg_rating": {
+          "type": "ratingproduct",
+          "settings": {
+            "rating": 4.7,
+            "count_label": "20 avis vérifiés",
+            "alignment": "center",
+            "show_in_sticky": true,
+            "star_size": 16,
+            "star_color": "#0000c9",
+            "star_empty_color": "#c9c9c9",
+            "margin_top": 6,
+            "margin_bottom": 6
+          }
+        },
+        "text_zgsub": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Le nettoyage du matin qui tient jusqu'au soir : une noisette, 30 secondes, rincé.</strong></p>",
+            "text_size": "text-size--regular",
+            "text_style": "text-color--primary",
+            "text_color": "rgba(0,0,0,0)",
+            "text_transform": false
+          }
+        },
         "price": {
           "type": "price",
-          "disabled": true,
           "settings": {
             "content_alignment": "center",
             "badge_text": "",
-            "badge_bg_color": "#0000c9",
+            "badge_bg_color": "#f25a38",
             "badge_text_color": "#ffffff",
-            "badge_radius": 20,
+            "badge_radius": 0,
             "badge_font_size": 15,
             "badge_font": "theme"
           }
@@ -232,15 +255,21 @@
           "type": "description",
           "settings": {
             "content_alignment": "center",
-            "product_description_truncated": "full",
+            "product_description_truncated": "200",
             "collapsible": false,
             "heading": "Description"
+          }
+        },
+        "checklist_zg": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class='zg-checklist'><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Nettoie sans décaper</strong> : pH 5,5, exactement celui de la zone</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p>Élimine <strong>sueur, smegma et odeurs</strong> à la source</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Tensioactifs 100 % végétaux</strong> — mousse fine, rinçage net</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p>Ferments probiotiques : la flore est <strong>rééquilibrée à chaque lavage</strong></p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Apaise</strong> échauffements et démangeaisons (centella, armoise)</p></div><div class='zg-checklist__item'><svg viewBox='0 0 24 24' width='20' height='20' aria-hidden='true'><circle cx='12' cy='12' r='12' fill='#0000C9'/><path d='M7 12.5l3.2 3.2L17 9' stroke='#ffffff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg><p><strong>Une noisette par jour</strong> suffit — note Yuka 100/100</p></div><style>.zg-checklist{display:flex;flex-direction:column;gap:10px;margin:18px auto 22px;max-width:520px;text-align:left}.zg-checklist__item{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.45}.zg-checklist__item svg{flex:0 0 20px;margin-top:2px}.zg-checklist__item p{margin:0}</style></div>"
           }
         },
         "variant_bundler_6mBmkR": {
           "type": "variant_bundler",
           "settings": {
-            "heading": "Choisissez votre pack",
+            "heading": "Choisis et économise :",
             "heading_font": "theme",
             "heading_alignment": "center",
             "style": "minimal",
@@ -260,11 +289,11 @@
             "selected_border_color": "#0000c9",
             "selected_border_width": 0,
             "selected_bg_color": "#e8edfb",
-            "badge_text": "Soldes d'été : -30%",
+            "badge_text": "Économise 15,90 €",
             "badge_card": 2,
-            "badge_bg_color": "#0000c9",
+            "badge_bg_color": "#f25a38",
             "badge_text_color": "#ffffff",
-            "badge2_text": "-30%",
+            "badge2_text": "",
             "badge2_card": 3,
             "badge2_bg_color": "#0000c9",
             "badge2_text_color": "#ffffff",
@@ -286,17 +315,41 @@
             "product": "{{product}}"
           }
         },
+        "cross_sell_zg": {
+          "type": "cross_sell",
+          "settings": {
+            "heading": "Complète ton achat avec :",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "style": "outline",
+            "hide_block_if": false
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "button_font": "theme",
-            "show_quantity_selector": true,
+            "show_quantity_selector": false,
             "show_preorder": false,
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false,
             "show_price": true,
             "style": "outline",
             "color_text_buttons": "#0000c9"
+          }
+        },
+        "zg_reassurance": {
+          "type": "reassurance",
+          "settings": {
+            "item_1_icon": "lock",
+            "item_1_text": "Paiement sécurisé",
+            "item_2_icon": "truck",
+            "item_2_text": "Livraison gratuite",
+            "item_3_icon": "return",
+            "item_3_text": "14 jours pour changer d'avis",
+            "item_4_icon": "chat",
+            "item_4_text": "Support client 9h-18h",
+            "margin_top": 18,
+            "margin_bottom": 10
           }
         },
         "icons_Knqhhh": {
@@ -311,27 +364,6 @@
             "icon_1_label": "Noté 100/100 sur Yuka !",
             "icon_2_label": "",
             "icon_3_label": "",
-            "icon_4_label": "",
-            "icon_5_label": "",
-            "icon_6_label": "",
-            "hide_block_if": false
-          }
-        },
-        "icons_f8n6eM": {
-          "type": "icons",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "content_alignment": "center",
-            "layout": "horizontal",
-            "margin_top": 20,
-            "margin_bottom": 34,
-            "icon_1_image": "shopify://shop_images/Capture_d_ecran_2026-06-09_a_15.01.51.png",
-            "icon_1_label": "Paiement sécurisé",
-            "icon_2_image": "shopify://shop_images/Capture_d_ecran_2026-06-09_a_15.01.57.png",
-            "icon_2_label": "Livraison gratuite",
-            "icon_3_image": "shopify://shop_images/Capture_d_ecran_2026-06-09_a_15.02.03.png",
-            "icon_3_label": "Support client 9h-18h",
             "icon_4_label": "",
             "icon_5_label": "",
             "icon_6_label": "",
@@ -407,6 +439,24 @@
             "page": "",
             "hide_block_if": false
           }
+        },
+        "collapsible_tab_livraison": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Livraison & retours",
+            "content": "<p>Expédié depuis la France, en colis 100 % discret — aucune mention du contenu.</p><p>Tu as 14 jours après réception pour changer d'avis : un email à contact@zgueg.fr, un retour, remboursé. Sans interrogatoire.</p>",
+            "page": "",
+            "hide_block_if": false
+          }
+        },
+        "collapsible_tab_objection": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ça décape ? Ça pique ?",
+            "content": "<p>Non. C'est l'inverse d'un gel douche 3-en-1 : pH 5,5 aligné sur la zone, tensioactifs doux d'origine végétale (coco), et des apaisants — centella, armoise, Houttuynia — pour calmer les échauffements. Ça nettoie à fond, mais ça respecte.</p>",
+            "page": "",
+            "hide_block_if": false
+          }
         }
       },
       "block_order": [
@@ -414,18 +464,24 @@
         "media_badge_HMcaAm",
         "badges_6Ax9rj",
         "title",
+        "zg_rating",
+        "text_zgsub",
         "price",
         "description",
+        "checklist_zg",
         "variant_bundler_6mBmkR",
         "subscriptions_app_block_RRrMdt",
+        "cross_sell_zg",
         "buy_buttons",
+        "zg_reassurance",
         "icons_Knqhhh",
-        "icons_f8n6eM",
         "reassort_3B4kgy",
         "collapsible_tab_zXdGmR",
         "collapsible_tab_P4hk8m",
         "collapsible_tab_RKezaD",
-        "collapsible_tab_YyQ3H7"
+        "collapsible_tab_YyQ3H7",
+        "collapsible_tab_livraison",
+        "collapsible_tab_objection"
       ],
       "custom_css": [],
       "settings": {
@@ -448,50 +504,364 @@
         "enable_video_autoplay": false,
         "video_fit": true,
         "default_to_first_variant": true,
-        "sticky_add_to_cart": false,
+        "sticky_add_to_cart": true,
         "sticky_atc_variants": false,
-        "sticky_atc_style": "floating",
+        "sticky_atc_style": "wide",
         "sticky_bar_bgcolor": "#0000c9",
         "sticky_bar_txtcolor": "#ffffff"
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
+    "showcase_upsell_zg": {
+      "type": "showcase-the-products",
       "blocks": {
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "product_link": {
-          "type": "product_link",
+        "product_spray_zg": {
+          "type": "product",
           "settings": {
-            "button_label": "View product"
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "eyebrow": "Le protecteur de journée",
+            "name": "Refreshed® — Spray après-douche",
+            "tagline": "2 pressions, 16 h de fraîcheur. Sans rinçage.",
+            "details": "Utilisation | Quotidienne\nFonction | Fraîcheur longue durée\nFormat | 100 ml",
+            "price_override": "29,90 €",
+            "badge": "",
+            "button_label": "Découvrir",
+            "button_url": "",
+            "highlight": false
+          }
+        },
+        "product_duo_zg": {
+          "type": "product",
+          "settings": {
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "image": "shopify://shop_images/zguegboth_ba836848-06c2-4b78-8bb0-5be997a3a3da.png",
+            "eyebrow": "Le combo frais H24",
+            "name": "Le Duo Cleaned® + Refreshed®",
+            "tagline": "Le gel nettoie le matin, le spray protège la journée.",
+            "details": "Contenu | Gel 200 ml + Spray 100 ml\nÉconomie | 15,90 €\nNote Yuka | 100/100",
+            "price_override": "39,90 € au lieu de 55,80 €",
+            "badge": "-30%",
+            "button_label": "Je prends le duo",
+            "button_url": "/products/cleaned-%C2%AE-gel-mousse-nettoyant-quotidien?variant=57779179651420",
+            "highlight": true
           }
         }
       },
       "block_order": [
-        "price",
-        "title",
-        "product_link"
+        "product_spray_zg",
+        "product_duo_zg"
       ],
-      "disabled": true,
+      "name": "Showcase produits",
       "settings": {
-        "heading": "Recommended",
-        "subheading": "Complète ta <strong>routine</strong>",
-        "section_heading_size": "text-size--regular",
-        "section_heading_layout": "section-heading--left section-heading--one-row",
-        "layout_desktop": "four-columns",
-        "layout_mobile": "grid-palm-2",
-        "style": "slider",
-        "layout_mobile_less_items": true,
+        "heading": "Tu pourrais aussi apprécier",
+        "subheading": "",
+        "heading_size": 44,
+        "heading_size_mobile": 30,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "footnote": "",
+        "value_font": "showcase-products--mono",
+        "section_background": "",
+        "card_background": "#ffffff",
+        "media_background": "#f5f5f3",
+        "text_color": "#1a1a1a",
+        "muted_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#0000c9",
+        "highlight_text": "#0000c9",
+        "button_solid_bg": "#0000c9",
+        "button_solid_text": "rgba(0,0,0,0)",
+        "button_outline_color": "rgba(0,0,0,0)",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "card_gap": 24,
+        "card_padding": 28,
+        "media_ratio": "1 / 1",
+        "image_fit": "cover",
+        "image_scale": 70,
+        "image_padding": 0,
+        "name_size": 22,
+        "tagline_size": 15,
+        "detail_size": 13,
+        "price_size": 18,
+        "card_min_width": 320,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "seo_h_tag": "h2"
+      }
+    },
+    "marquee_zg": {
+      "type": "marquee",
+      "blocks": {
+        "marquee_text_1": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "Propre"
+          }
+        },
+        "marquee_img_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        },
+        "marquee_text_2": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "Frais"
+          }
+        },
+        "marquee_img_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        },
+        "marquee_text_3": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "Confiant"
+          }
+        },
+        "marquee_img_3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        },
+        "marquee_text_4": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "+3M de vues sur les réseaux"
+          }
+        },
+        "marquee_img_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": [
+        "marquee_text_1",
+        "marquee_img_1",
+        "marquee_text_2",
+        "marquee_img_2",
+        "marquee_text_3",
+        "marquee_img_3",
+        "marquee_text_4",
+        "marquee_img_4"
+      ],
+      "name": "Marquee",
+      "settings": {
+        "scroll_direction": "rtl",
+        "speed": 100,
+        "pause_on_hover": false,
+        "horizontal_space": "regular-x-2",
+        "text_size": "text-size--large",
+        "use_stefan_font": false,
+        "color_background_main": "#0000c9",
+        "color_text_main": "#ffffff",
+        "remove_top_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "steps_zg": {
+      "type": "text-columns-images",
+      "blocks": {
+        "step_1_zg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2_juin_2026_14_45_16.png",
+            "title": "Étape 1 — Une noisette",
+            "caption": "Sous la douche, une noisette de mousse dans la main. Pas besoin de plus.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "step_2_zg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/OFFCOURT_SOAPIMAGE3_750x_00f81d69-a949-4fc1-943e-1ba9b83a8521.webp",
+            "title": "Étape 2 — 30 secondes",
+            "caption": "Fais mousser sur les zones externes : la mousse fine déloge sueur, smegma et résidus sans décaper.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "step_3_zg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_13_21_40.png",
+            "title": "Étape 3 — Rince, c'est plié",
+            "caption": "Peau nette, apaisée, zéro tiraillement. Et les odeurs ne s'invitent pas dans l'après-midi.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "step_1_zg",
+        "step_2_zg",
+        "step_3_zg"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "heading": "Comment ça marche ?",
+        "subheading": "Un zgueg tout propre en 3 étapes ⬇️",
+        "section_heading_size": "text-size--large",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "text_alignment": "text-align--center",
+        "style": "grid",
+        "layout": "grid-3 grid-lap-2 grid-palm-1",
+        "image_aspect_ratio": "1",
+        "border_radius": 0,
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
         "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "rich_text_FmJFM4": {
+      "type": "rich-text",
+      "blocks": {
+        "image_emEfTD": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_height": 58
+          }
+        },
+        "title_UDcVcH": {
+          "type": "title",
+          "settings": {
+            "title": "On en avait marre de décaper nos parties intimes.",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 52,
+            "title_size_custom_mobile": 32,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_GKafAp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Un gel douche décape au lieu de nettoyer : il monte le pH, dessèche la peau et fragilise la flore. Résultat : la zone se défend mal, l'odeur revient dès la fin de journée et tu relaves — ce qui l'agresse encore plus. Le problème n'est pas ton hygiène, c'est le produit.</p>",
+            "text_size": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "image_emEfTD",
+        "title_UDcVcH",
+        "text_GKafAp"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_11_12_44.png",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "regular",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": false,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "color_hide_borders": false,
+        "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "rich_text_LRtXGt": {
+      "type": "rich-text",
+      "blocks": {
+        "image_kbTPya": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_height": 58
+          }
+        },
+        "title_aj3KDD": {
+          "type": "title",
+          "settings": {
+            "title": "Cleaned® nettoie (vraiment) ta flore",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 52,
+            "title_size_custom_mobile": 32,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_fqVCan": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Le gel moussant Cleaned® associe des tensioactifs 100 % végétaux à un pH physiologique : il déloge sueur, smegma et résidus sans agresser ni faire tirer la peau. Ses ferments postbiotiques (Lactobacillus, Bifida) rééquilibrent ta flore à chaque lavage pour limiter le retour des odeurs, pendant que l'armoise, la centella et le thé vert apaisent irritations et démangeaisons.</p>",
+            "text_size": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "image_kbTPya",
+        "title_aj3KDD",
+        "text_fqVCan"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_11_20_40.png",
+        "video_controls": false,
+        "image_position": "left",
+        "height": "regular",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": false,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "color_hide_borders": false,
+        "gutter_decrease": true,
+        "remove_margin": false,
         "remove_bottom_margin": false
       }
     },
@@ -631,7 +1001,6 @@
         "point_cfTEmc",
         "point_M88afP"
       ],
-      "disabled": true,
       "name": "Échelle de pH",
       "settings": {
         "heading": "Le pH change tout.",
@@ -680,194 +1049,66 @@
         "seo_h_tag": "h2"
       }
     },
-    "rich_text_FmJFM4": {
-      "type": "rich-text",
+    "study_results_zg": {
+      "type": "study-results",
       "blocks": {
-        "image_emEfTD": {
-          "type": "image",
-          "disabled": true,
+        "stat_1_zg": {
+          "type": "stat",
           "settings": {
-            "image_height": 58
+            "value": "5,5",
+            "label": "le pH exact de la formule — celui de ta zone (ton gel douche : 8,5)"
           }
         },
-        "title_UDcVcH": {
-          "type": "title",
+        "stat_2_zg": {
+          "type": "stat",
           "settings": {
-            "title": "On en avait marre de décaper nos parties intimes.",
-            "title_size": "heading-size--regular",
-            "title_weight": "400",
-            "title_size_custom": 52,
-            "title_size_custom_mobile": 32,
-            "seo_h_tag": "h2"
+            "value": "100/100",
+            "label": "la note de la composition sur Yuka"
           }
         },
-        "text_GKafAp": {
-          "type": "text",
+        "stat_3_zg": {
+          "type": "stat",
           "settings": {
-            "text": "<p>Un gel douche décape au lieu de nettoyer : il monte le pH, dessèche la peau et fragilise la flore. Résultat : la zone se défend mal, l'odeur revient dès la fin de journée et tu relaves = ça l'agresse encore plus. Le problème n'est pas l'hygiène, c'est le produit.</p>",
-            "text_size": "regular"
+            "value": "0",
+            "label": "savon, parfum de synthèse ou phtalate là-dedans"
+          }
+        },
+        "stat_4_zg": {
+          "type": "stat",
+          "settings": {
+            "value": "4,7/5",
+            "label": "la note moyenne de la bande de zguegs (20 avis vérifiés)"
           }
         }
       },
       "block_order": [
-        "image_emEfTD",
-        "title_UDcVcH",
-        "text_GKafAp"
+        "stat_1_zg",
+        "stat_2_zg",
+        "stat_3_zg",
+        "stat_4_zg"
       ],
-      "name": "t:sections-categories.presets.rich_text_with_image",
+      "name": "Résultats d'usage",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_11_12_44.png",
-        "video_controls": false,
-        "image_position": "right",
-        "height": "regular",
-        "content_vertical_position": "middle",
-        "image_crop": true,
-        "image_object_position": "auto",
-        "overlay_image_width": 160,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": false,
-        "text_alignment": "horizontal-center",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 24,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "rgba(0,0,0,0)",
-        "border_radius": 0,
-        "color_hide_borders": false,
-        "gutter_decrease": false,
-        "remove_margin": true,
-        "remove_bottom_margin": false
-      }
-    },
-    "rich_text_LRtXGt": {
-      "type": "rich-text",
-      "blocks": {
-        "image_kbTPya": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image_height": 58
-          }
-        },
-        "title_aj3KDD": {
-          "type": "title",
-          "settings": {
-            "title": "Cleaned® nettoie (vraiment)  ta flore",
-            "title_size": "heading-size--regular",
-            "title_weight": "400",
-            "title_size_custom": 52,
-            "title_size_custom_mobile": 32,
-            "seo_h_tag": "h2"
-          }
-        },
-        "text_fqVCan": {
-          "type": "text",
-          "settings": {
-            "text": "<p></p><p>Le gel moussant cleaned® associe des tensioactifs 100 % végétaux à un pH physiologique : il déloge sueur, smegma et résidus sans agresser ni faire tirer la peau. Ses ferments postbiotiques (Lactobacillus, Bifida) rééquilibrent ta flore à chaque lavage pour limiter le retour des odeurs, pendant que l'armoise, la centella et le thé vert apaisent irritations et démangeaisons.</p>",
-            "text_size": "regular"
-          }
-        }
-      },
-      "block_order": [
-        "image_kbTPya",
-        "title_aj3KDD",
-        "text_fqVCan"
-      ],
-      "name": "t:sections-categories.presets.rich_text_with_image",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_11_20_40.png",
-        "video_controls": false,
-        "image_position": "left",
-        "height": "regular",
-        "content_vertical_position": "middle",
-        "image_crop": true,
-        "image_object_position": "auto",
-        "overlay_image_width": 160,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": false,
-        "text_alignment": "horizontal-center",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 24,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "rgba(0,0,0,0)",
-        "border_radius": 0,
-        "color_hide_borders": false,
-        "gutter_decrease": true,
-        "remove_margin": false,
-        "remove_bottom_margin": false
-      }
-    },
-    "instagram_shots_943TFC": {
-      "type": "instagram-shots",
-      "blocks": {
-        "photo_hDeBQk": {
-          "type": "photo",
-          "settings": {
-            "ratio": "1:1",
-            "username": "michaelow",
-            "link": "",
-            "rotation": -4,
-            "offset_y": 24
-          }
-        },
-        "photo_hGXnx6": {
-          "type": "photo",
-          "settings": {
-            "ratio": "natural",
-            "username": "labrunette",
-            "link": "",
-            "rotation": 3,
-            "offset_y": 0
-          }
-        },
-        "photo_i8qhkr": {
-          "type": "photo",
-          "settings": {
-            "ratio": "natural",
-            "username": "marielou7",
-            "link": "",
-            "rotation": -2,
-            "offset_y": 44
-          }
-        },
-        "photo_r4iQFa": {
-          "type": "photo",
-          "settings": {
-            "ratio": "natural",
-            "username": "Lhistoiredeanne",
-            "link": "",
-            "rotation": 4,
-            "offset_y": 12
-          }
-        }
-      },
-      "block_order": [
-        "photo_hDeBQk",
-        "photo_hGXnx6",
-        "photo_i8qhkr",
-        "photo_r4iQFa"
-      ],
-      "disabled": true,
-      "name": "Instagram shots",
-      "settings": {
-        "heading": "On t'explique tout",
-        "heading_color": "#1a1a1a",
-        "background_color": "#f7f3ec",
-        "padding_top": 160,
-        "padding_bottom": 160,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "heading_spacing": 80,
-        "card_width": 245,
-        "card_min_width": 180,
-        "card_min_width_mobile": 150,
-        "gap_horizontal": 38,
-        "gap_vertical": 24,
-        "show_instagram_icon": true,
-        "tilt_images": true
+        "heading": "Les chiffres qui comptent",
+        "subheading": "Ce que Cleaned® change, concrètement",
+        "footnote": "",
+        "heading_size": 44,
+        "heading_size_mobile": 30,
+        "heading_weight": "400",
+        "subheading_size": 15,
+        "value_size": 44,
+        "label_size": 15,
+        "section_bg": "#ffffff",
+        "heading_color": "#0000c9",
+        "value_color": "#0000c9",
+        "text_color": "#1a1a1a",
+        "muted_color": "#4f4f4f",
+        "stripe_color": "#eef1fd",
+        "line_color": "#e6e6e6",
+        "row_padding": 18,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "seo_h_tag": "h2"
       }
     },
     "comparison_table_bXEKM3": {
@@ -985,6 +1226,75 @@
         "mobile_col_width": 140,
         "gutter_decrease": false,
         "seo_h_tag": "h2"
+      }
+    },
+    "duo_band_zg": {
+      "type": "rich-text",
+      "blocks": {
+        "duo_eyebrow_zg": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SE SIMPLIFIER LA VIE</strong></p>",
+            "text_size": "regular"
+          }
+        },
+        "duo_title_zg": {
+          "type": "title",
+          "settings": {
+            "title": "Et si t'étais frais H24 ?",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 52,
+            "title_size_custom_mobile": 32,
+            "seo_h_tag": "h2"
+          }
+        },
+        "duo_text_zg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cleaned® nettoie sous la douche. Refreshed® prend le relais jusqu'au soir. Le duo complet est à 39,90 € au lieu de 55,80 € — soit 15,90 € qui restent dans ta poche.</p>",
+            "text_size": "regular"
+          }
+        },
+        "duo_button_zg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Je prends le duo",
+            "link": "/products/cleaned-%C2%AE-gel-mousse-nettoyant-quotidien?variant=57779179651420",
+            "open_in_new_window": false,
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "duo_eyebrow_zg",
+        "duo_title_zg",
+        "duo_text_zg",
+        "duo_button_zg"
+      ],
+      "name": "t:sections-categories.presets.fullwidth_text_banner",
+      "settings": {
+        "video_controls": false,
+        "image_position": "top no-image",
+        "height": "regular",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "#0000c9",
+        "color_text_main": "#ffffff",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": false,
+        "remove_bottom_margin": false
       }
     },
     "customer_reviews_QkecMN": {
@@ -1415,15 +1725,15 @@
         "review_spacing": 28,
         "padding_top": 80,
         "padding_bottom": 80,
-        "heading": "Ils en pensent quoi les zguegs ?",
+        "heading": "Rejoins la bande de zguegs satisfaits.",
         "heading_alignment": "left",
         "heading_size": 52,
         "heading_size_mobile": 32,
         "heading_weight": "400",
         "show_summary": true,
-        "summary_rating": 4.8,
+        "summary_rating": 4.7,
         "summary_count": "20",
-        "summary_caption": "moyenne sur",
+        "summary_caption": "de moyenne sur",
         "summary_reviews_word": "avis",
         "summary_text_size": 13,
         "show_rating_filter": true,
@@ -1446,24 +1756,340 @@
         "text_color": "#1a1a1a",
         "muted_color": "#6b6b6b",
         "divider_color": "#d7d7d7",
-        "star_color": "#1a1a1a",
+        "star_color": "#0000c9",
         "star_empty_color": "#c9c9c9",
         "field_bg": "#ffffff",
         "field_border": "#d9d9d9",
-        "field_radius": 8
+        "field_radius": 0
+      }
+    },
+    "faq_zg": {
+      "type": "content-toggles",
+      "blocks": {
+        "faq_q1_zg": {
+          "type": "text",
+          "settings": {
+            "title": "En quoi c'est différent de mon gel douche ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Ton gel douche affiche un pH autour de 8,5 et des tensioactifs faits pour décaper — pas pour une zone qui vit à pH 5,5, avec sa flore propre. Résultat : il dessèche, ça gratte, et l'odeur revient plus vite. Cleaned® fait l'inverse : il nettoie à fond en respectant le pH et en nourrissant la flore.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_q2_zg": {
+          "type": "text",
+          "settings": {
+            "title": "Je l'utilise à quelle fréquence ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Une fois par jour sous la douche. Une noisette, tu fais mousser 30 secondes sur les zones externes, tu rinces. Les jours de sport, tu peux repasser une couche — la formule est assez douce pour ça.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_q3_zg": {
+          "type": "text",
+          "settings": {
+            "title": "Ça mousse vraiment ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Oui — une mousse fine et dense qui se rince net, sans film gras ni sensation de savon. Le flacon-pompe dose pile ce qu'il faut.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_q4_zg": {
+          "type": "text",
+          "settings": {
+            "title": "C'est OK pour les peaux sensibles ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>C'est même pensé pour : sans savon, sans parfum de synthèse, avec centella, armoise et Houttuynia pour apaiser. Note Yuka : 100/100.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_q5_zg": {
+          "type": "text",
+          "settings": {
+            "title": "La livraison est discrète ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Colis neutre, sans aucune mention du contenu. Le facteur ne saura rien. Ta mère non plus.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_q6_zg": {
+          "type": "text",
+          "settings": {
+            "title": "Et si ça ne me convient pas ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Tu as 14 jours après réception pour changer d'avis : tu nous écris à contact@zgueg.fr, tu renvoies, on rembourse. Sans questionnaire de 12 pages.</p>",
+            "hide_block_if": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_q1_zg",
+        "faq_q2_zg",
+        "faq_q3_zg",
+        "faq_q4_zg",
+        "faq_q5_zg",
+        "faq_q6_zg"
+      ],
+      "name": "Content toggles",
+      "settings": {
+        "heading": "Des questions ? On y répond.",
+        "subheading": "Une équipe de vrais zguegs te répond du lundi au vendredi, 9h-18h : contact@zgueg.fr",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "Nous écrire",
+        "cta_url": "shopify://pages/contact",
+        "form_enable": false,
+        "form_title": "Contact form",
+        "style": "outline",
+        "open_first": true,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "trust_icons_zg": {
+      "type": "text-columns-icons",
+      "blocks": {
+        "trust_1_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "shipping-truck",
+            "crop": true,
+            "title": "Livraison gratuite",
+            "caption": "Expédiée depuis la France, en colis 100 % discret.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "trust_2_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "security-shield",
+            "crop": true,
+            "title": "Paiement sécurisé",
+            "caption": "Transactions chiffrées de bout en bout.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "trust_3_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "like-hand",
+            "crop": true,
+            "title": "14 jours pour changer d'avis",
+            "caption": "Retour simple, remboursement rapide. Zéro interrogatoire.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "trust_4_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "helpline",
+            "crop": true,
+            "title": "Des vrais humains",
+            "caption": "contact@zgueg.fr — on répond vite, et en français.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "trust_1_zg",
+        "trust_2_zg",
+        "trust_3_zg",
+        "trust_4_zg"
+      ],
+      "name": "Text columns with icons",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "style": "grid",
+        "layout": "grid-4 grid-portable-3 grid-lap-2 grid-palm-1",
+        "border_radius": 0,
+        "hide_borders": false,
+        "opacity_on_hover": false,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "product_link": {
+          "type": "product_link",
+          "settings": {
+            "button_label": "View product"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "title",
+        "product_link"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Recommended",
+        "subheading": "Complète ta <strong>routine</strong>",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "layout_desktop": "four-columns",
+        "layout_mobile": "grid-palm-2",
+        "style": "slider",
+        "layout_mobile_less_items": true,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false
+      }
+    },
+    "instagram_shots_943TFC": {
+      "type": "instagram-shots",
+      "blocks": {
+        "photo_hDeBQk": {
+          "type": "photo",
+          "settings": {
+            "ratio": "1:1",
+            "username": "michaelow",
+            "link": "",
+            "rotation": -4,
+            "offset_y": 24
+          }
+        },
+        "photo_hGXnx6": {
+          "type": "photo",
+          "settings": {
+            "ratio": "natural",
+            "username": "labrunette",
+            "link": "",
+            "rotation": 3,
+            "offset_y": 0
+          }
+        },
+        "photo_i8qhkr": {
+          "type": "photo",
+          "settings": {
+            "ratio": "natural",
+            "username": "marielou7",
+            "link": "",
+            "rotation": -2,
+            "offset_y": 44
+          }
+        },
+        "photo_r4iQFa": {
+          "type": "photo",
+          "settings": {
+            "ratio": "natural",
+            "username": "Lhistoiredeanne",
+            "link": "",
+            "rotation": 4,
+            "offset_y": 12
+          }
+        }
+      },
+      "block_order": [
+        "photo_hDeBQk",
+        "photo_hGXnx6",
+        "photo_i8qhkr",
+        "photo_r4iQFa"
+      ],
+      "disabled": true,
+      "name": "Instagram shots",
+      "settings": {
+        "heading": "On t'explique tout",
+        "heading_color": "#1a1a1a",
+        "background_color": "#f7f3ec",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "heading_spacing": 80,
+        "card_width": 245,
+        "card_min_width": 180,
+        "card_min_width_mobile": 150,
+        "gap_horizontal": 38,
+        "gap_vertical": 24,
+        "show_instagram_icon": true,
+        "tilt_images": true
       }
     }
   },
   "order": [
     "enriched_hero_tq8Pwr",
     "main",
-    "product-recommendations",
-    "certifications_Tniktg",
-    "ph_scale_nxqzew",
+    "showcase_upsell_zg",
+    "marquee_zg",
+    "steps_zg",
     "rich_text_FmJFM4",
     "rich_text_LRtXGt",
-    "instagram_shots_943TFC",
+    "certifications_Tniktg",
+    "ph_scale_nxqzew",
+    "study_results_zg",
     "comparison_table_bXEKM3",
-    "customer_reviews_QkecMN"
+    "duo_band_zg",
+    "customer_reviews_QkecMN",
+    "faq_zg",
+    "trust_icons_zg",
+    "product-recommendations",
+    "instagram_shots_943TFC"
   ]
 }

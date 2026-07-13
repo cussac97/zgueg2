@@ -15,9 +15,20 @@
         "button_qQnETJ": {
           "type": "button",
           "settings": {
-            "label": "Découvrir nos produits",
-            "url": "#section-template--30285168968028__showcase_the_products_NFrmhk",
+            "label": "Je prends soin du mien",
+            "url": "/products/spray-reequilibrant-intime-pour-homme?variant=57776682959196",
             "style": "solid",
+            "bg_color": "#ffffff",
+            "text_color": "#0000c9",
+            "open_in_new_window": false
+          }
+        },
+        "button_zg2nd": {
+          "type": "button",
+          "settings": {
+            "label": "Découvrir la routine",
+            "url": "#section-template--30285168968028__showcase_the_products_NFrmhk",
+            "style": "outline",
             "bg_color": "#0000c9",
             "text_color": "#ffffff",
             "open_in_new_window": false
@@ -25,13 +36,14 @@
         }
       },
       "block_order": [
-        "button_qQnETJ"
+        "button_qQnETJ",
+        "button_zg2nd"
       ],
       "name": "Bannière hero",
       "settings": {
-        "eyebrow": "",
+        "eyebrow": "SOLDES D'ÉTÉ ☀️ JUSQU'À -30%",
         "title": "Plus d'hygiène, plus de confiance.",
-        "description": "",
+        "description": "Le duo Cleaned® + Refreshed® à 39,90 € au lieu de 55,80 € — 4,6/5 sur 41 avis, 14 jours pour changer d'avis.",
         "image": "shopify://shop_images/ChatGPT_Image_8_juil._2026_19_07_54.png",
         "image_mobile": "shopify://shop_images/ChatGPT_Image_24_juin_2026_16_29_01.png",
         "focal_point": "center center",
@@ -58,44 +70,61 @@
     "showcase_the_products_NFrmhk": {
       "type": "showcase-the-products",
       "blocks": {
-        "product_rhTXC8": {
-          "type": "product",
-          "settings": {
-            "product": "spray-reequilibrant-intime-pour-homme",
-            "eyebrow": "Best-seller",
-            "name": "Spray protecteur après-douche",
-            "tagline": "Soin fraîcheur + 16h d'efficacité.",
-            "details": "Utilisation | Quotidienne\nFonction | Fraicheur longue durée\nFormat | 100 ml\nNote Yuka | 100/100",
-            "price_override": "",
-            "badge": "Le plus vendu",
-            "button_label": "Acheter",
-            "button_url": "",
-            "highlight": true
-          }
-        },
         "product_zwtd9g": {
           "type": "product",
           "settings": {
             "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
-            "eyebrow": "Best-seller",
-            "name": "Gel intime quotidien",
-            "tagline": "Nettoyage quotidien en profondeur.",
+            "eyebrow": "Étape 1 — Sous la douche",
+            "name": "Cleaned® — Gel mousse intime",
+            "tagline": "Nettoie sans décaper. pH 5,5, celui de ta zone.",
             "details": "Utilisation | Quotidienne\nFonction | Nettoyant\nFormat | 200 ml\nNote Yuka | 100/100",
-            "price_override": "",
+            "price_override": "25,90 €",
             "badge": "",
             "button_label": "Acheter",
             "button_url": "",
             "highlight": false
           }
+        },
+        "product_rhTXC8": {
+          "type": "product",
+          "settings": {
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "eyebrow": "Étape 2 — Dans la journée",
+            "name": "Refreshed® — Spray après-douche",
+            "tagline": "2 pressions, 16 h de fraîcheur. Sans rinçage.",
+            "details": "Utilisation | Quotidienne\nFonction | Fraîcheur longue durée\nFormat | 100 ml\nNote Yuka | 100/100",
+            "price_override": "29,90 €",
+            "badge": "Le plus vendu",
+            "button_label": "Acheter",
+            "button_url": "",
+            "highlight": false
+          }
+        },
+        "product_duo_zg": {
+          "type": "product",
+          "settings": {
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "image": "shopify://shop_images/zguegboth_ba836848-06c2-4b78-8bb0-5be997a3a3da.png",
+            "eyebrow": "La routine complète",
+            "name": "Le Duo Cleaned® + Refreshed®",
+            "tagline": "Le gel nettoie le matin, le spray protège la journée.",
+            "details": "Contenu | Gel 200 ml + Spray 100 ml\nÉconomie | 16,10 €\nNote Yuka | 100/100",
+            "price_override": "39,90 € au lieu de 56 €",
+            "badge": "-30%",
+            "button_label": "Je prends le duo",
+            "button_url": "/products/spray-reequilibrant-intime-pour-homme?variant=57776682959196",
+            "highlight": true
+          }
         }
       },
       "block_order": [
+        "product_zwtd9g",
         "product_rhTXC8",
-        "product_zwtd9g"
+        "product_duo_zg"
       ],
       "name": "Showcase produits",
       "settings": {
-        "heading": "Nos best-sellers",
+        "heading": "Les produits qui vont changer ta vie (et celle de ton zgueg)",
         "subheading": "",
         "heading_size": 52,
         "heading_size_mobile": 32,
@@ -136,6 +165,86 @@
         "seo_h_tag": "h2"
       }
     },
+    "marquee_zg": {
+      "type": "marquee",
+      "blocks": {
+        "marquee_text_1": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "Propre"
+          }
+        },
+        "marquee_img_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        },
+        "marquee_text_2": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "Frais"
+          }
+        },
+        "marquee_img_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        },
+        "marquee_text_3": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "Confiant"
+          }
+        },
+        "marquee_img_3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        },
+        "marquee_text_4": {
+          "type": "text",
+          "settings": {
+            "marquee_text": "+3M de vues sur les réseaux"
+          }
+        },
+        "marquee_img_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/zguegstroke.svg",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": [
+        "marquee_text_1",
+        "marquee_img_1",
+        "marquee_text_2",
+        "marquee_img_2",
+        "marquee_text_3",
+        "marquee_img_3",
+        "marquee_text_4",
+        "marquee_img_4"
+      ],
+      "name": "Marquee",
+      "settings": {
+        "scroll_direction": "rtl",
+        "speed": 100,
+        "pause_on_hover": false,
+        "horizontal_space": "regular-x-2",
+        "text_size": "text-size--large",
+        "use_stefan_font": false,
+        "color_background_main": "#0000c9",
+        "color_text_main": "#ffffff",
+        "remove_top_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
     "slider_X9kAL9": {
       "type": "slider",
       "blocks": {
@@ -150,9 +259,9 @@
             "offset_y": 80,
             "hide_on_desk": false,
             "hide_on_mobile": false,
-            "offset_width_mobile": 45,
-            "offset_x_mobile": 10,
-            "offset_y_mobile": 80,
+            "offset_width_mobile": 55,
+            "offset_x_mobile": 15,
+            "offset_y_mobile": 150,
             "scroll_speed": 5,
             "rotation_start": 0,
             "rotation_end": -5
@@ -169,9 +278,9 @@
             "offset_y": 145,
             "hide_on_desk": false,
             "hide_on_mobile": false,
-            "offset_width_mobile": 50,
-            "offset_x_mobile": 45,
-            "offset_y_mobile": 150,
+            "offset_width_mobile": 55,
+            "offset_x_mobile": 30,
+            "offset_y_mobile": 110,
             "scroll_speed": 7,
             "rotation_start": 0,
             "rotation_end": 5
@@ -210,7 +319,7 @@
         "heading_yHJyNM": {
           "type": "heading",
           "settings": {
-            "text": "Vos parties intimes méritent (aussi) d'être en bonne santé !",
+            "text": "Tes parties intimes méritent (aussi) d'être en bonne santé.",
             "font_size": 50,
             "font_size_mobile": 26,
             "font_weight": "400",
@@ -263,7 +372,7 @@
         "text_zJRC4R": {
           "type": "text",
           "settings": {
-            "text": "<p>Zgueg a été conçu pour compléter votre routine bien-être en prenant soin de votre zone intime. Les produits classiquent ne respectent pas les besoins nécessaires à l'hydratation, le pH et les nutriments de la partie intime masculine. C'est pour cela que Zgueg est né. </p>",
+            "text": "<p>Zgueg complète ta routine bien-être en prenant soin de la zone que tout le monde oublie. Les produits classiques ne respectent ni son pH, ni son hydratation, ni ses besoins en nutriments. C'est exactement pour ça que Zgueg est né.</p>",
             "font_size": 16,
             "font_size_mobile": 14,
             "font_weight": "400",
@@ -284,7 +393,7 @@
         "button_YhzCgM": {
           "type": "button",
           "settings": {
-            "label": "Découvrir",
+            "label": "Voir les produits",
             "link": "shopify://collections/frontpage",
             "open_in_new_window": false,
             "button_style": "outline",
@@ -304,7 +413,6 @@
         "text_zJRC4R",
         "button_YhzCgM"
       ],
-      "disabled": true,
       "name": "Enriched hero",
       "settings": {
         "width": "full",
@@ -336,123 +444,31 @@
         "remove_spacing": true
       }
     },
-    "customer_reviews_c89ViU": {
-      "type": "customer-reviews",
-      "blocks": {
-        "review_JnBAQ3": {
-          "type": "review",
-          "settings": {
-            "author": "Mary H.",
-            "verified": true,
-            "verified_label": "Verified Buyer",
-            "rating": 4,
-            "date": "May 22, 2026",
-            "product": "",
-            "text": "Love all the products, but this one didn't do as well. I think the 5 pant is bigger than the 5 diaper, IMO. We struggled with some leakage, but once I got them on my daughter right they were fine. My biggest issue was through the night. They are not nearly as absorbent as the diapers. Many mornings we woke up to accidents. I switched back to the originals.",
-            "helpful_up": 0,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Chloe",
-            "reply_date": "May 21, 2026",
-            "reply_text": ""
-          }
-        },
-        "review_dPmihX": {
-          "type": "review",
-          "settings": {
-            "author": "Chandana M.",
-            "verified": true,
-            "verified_label": "Verified Buyer",
-            "rating": 3,
-            "date": "May 22, 2026",
-            "product": "",
-            "text": "Like the product but the stick is too fragile. It comes off when I'm taking it off the package. I would have liked the sticking part design to be better.",
-            "helpful_up": 0,
-            "helpful_down": 0,
-            "reply_enable": false,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Chloe",
-            "reply_date": "May 21, 2026",
-            "reply_text": ""
-          }
-        },
-        "review_WhmgKB": {
-          "type": "review",
-          "settings": {
-            "author": "Erin H.",
-            "verified": true,
-            "verified_label": "Verified Buyer",
-            "rating": 5,
-            "date": "May 21, 2026",
-            "product": "",
-            "text": "We have been loving it. It is so easy to change with the tabs on the side yet gives our 21 month old the practice she needs pulling them up and down for potty training.",
-            "helpful_up": 0,
-            "helpful_down": 0,
-            "reply_enable": true,
-            "reply_avatar_bg": "#1f49ff",
-            "reply_author": "Chloe",
-            "reply_date": "May 21, 2026",
-            "reply_text": "Thanks, Erin H.! We're thrilled the side tabs are making potty training smoother and giving her confident pull-up practice. Our mission is to make parents' lives easier."
-          }
-        }
-      },
-      "block_order": [
-        "review_JnBAQ3",
-        "review_dPmihX",
-        "review_WhmgKB"
-      ],
-      "disabled": true,
-      "name": "Customer Reviews",
+    "zg_calculator": {
+      "type": "zgueg-calculator",
       "settings": {
-        "container_width": "large",
-        "show_pagination": true,
-        "per_page": 5,
-        "two_columns": true,
-        "left_width": 38,
-        "column_gap": 48,
-        "sticky_heading": true,
-        "sticky_offset": 100,
-        "meta_width": 28,
-        "review_spacing": 28,
-        "padding_top": 128,
-        "padding_bottom": 60,
-        "heading": "Notre bande de zguegs en parlent. (ils adorent)",
-        "heading_alignment": "left",
-        "heading_size": 56,
-        "heading_size_mobile": 34,
-        "heading_weight": "500",
-        "show_summary": true,
-        "summary_rating": 4.2,
-        "summary_count": "1762",
-        "summary_caption": "based on",
-        "summary_reviews_word": "reviews",
-        "summary_text_size": 13,
-        "show_rating_filter": true,
-        "rating_filter_label": "Rating",
-        "rating_filter_all": "All ratings",
-        "stars_word": "stars",
-        "show_product_filter": true,
-        "product_filter_label": "Product",
-        "product_filter_all": "All products",
-        "empty_text": "No reviews match your filters.",
-        "no_comment_text": "Cet acheteur n'a pas laissé de commentaire",
-        "show_date": true,
-        "show_reply_date": true,
-        "clamp_lines": 4,
-        "read_more_label": "Read More",
-        "read_less_label": "Read Less",
-        "show_helpful": true,
-        "helpful_label": "Was This Review Helpful?",
-        "section_bg": "#ffffff",
+        "badge_text": "LE ZGUEG-CULATEUR",
+        "heading": "Pourquoi passer à la routine Zgueg ?",
+        "subheading": "La douche de secours du midi, c'est terminé.",
+        "label_top": "Combien de séances de sport",
+        "label_bottom": "par semaine ?",
+        "input_default": 3,
+        "multiplier": 13,
+        "result_prefix": "+",
+        "result_suffix": " h",
+        "result_before": "Avec Refreshed®, tu récupères",
+        "result_after": "de liberté par an — sans douche de secours !",
+        "footnote": "Base : 15 minutes par douche express évitée, 52 semaines par an. Oui, on a fait le calcul.",
+        "section_bg": "#eef1fd",
+        "accent_color": "#0000c9",
+        "badge_text_color": "#ffffff",
         "text_color": "#1a1a1a",
-        "muted_color": "#6b6b6b",
-        "divider_color": "#e6e6e6",
-        "star_color": "#1a1a1a",
-        "star_empty_color": "#c9c9c9",
-        "field_bg": "#ffffff",
-        "field_border": "#d9d9d9",
-        "field_radius": 8
+        "muted_color": "#4f4f4f",
+        "heading_size": 40,
+        "heading_size_mobile": 28,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "seo_h_tag": "h2"
       }
     },
     "certifications_DDdq8b": {
@@ -478,7 +494,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/364411ef4d5d0272c1b3e846515b1534269d72f5-83x83.avif",
-            "label": "Sans parfum\n\nLe choix du naturel : car on croit profondément que l'odeur d'une peau propre est la meilleure des odeurs.",
+            "label": "Sans parfum\n\nLe choix du naturel : on croit profondément que l'odeur d'une peau propre est la meilleure des odeurs.",
             "link": ""
           }
         },
@@ -486,7 +502,7 @@
           "type": "certification",
           "settings": {
             "icon": "shopify://shop_images/1499c3f4f728e1c3fe812506b9332ea9c5cfe1d9-80x80.avif",
-            "label": "100/100 sur Yuka\n\nC'est la note de nos produits sur la plateforme réputée Yuka !",
+            "label": "100/100 sur Yuka\n\nC'est la note de nos deux produits sur la plateforme indépendante Yuka.",
             "link": ""
           }
         }
@@ -497,7 +513,6 @@
         "certification_YJRYkt",
         "certification_GtJLgp"
       ],
-      "disabled": true,
       "name": "Certifications",
       "settings": {
         "container_width": "large",
@@ -514,7 +529,7 @@
         "heading_weight": "400",
         "heading_alignment": "left",
         "heading_alignment_mobile": "center",
-        "body": "<p>Zgueg a été créé par des hommes, pour les hommes. Car on sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt pour finir un rendez-vous comme il se doit. C'est pour cela que nous avons réfléchit pendant 2 ans au produit ultime, pour votre hygiène intime.</p>",
+        "body": "<p>Zgueg a été créé par des hommes, pour les hommes. On sait qu'il est parfois préoccupant de savoir si on est parfaitement prêt à finir un rendez-vous comme il se doit. C'est pour ça qu'on a réfléchi pendant 2 ans au produit ultime pour ton hygiène intime.</p>",
         "body_color": "#1a1a1a",
         "body_size": 16,
         "body_max_width": 640,
@@ -562,7 +577,7 @@
         "title_ih9K6A": {
           "type": "title",
           "settings": {
-            "title": "Le spray protecteur après-douche",
+            "title": "Refreshed® — le spray qui tient 16 h",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 0,
@@ -573,7 +588,7 @@
         "text_pzzdk3": {
           "type": "text",
           "settings": {
-            "text": "<p>Refreshed® a été pensé pour finir la routine intime parfaitement. Le Zinc PCA neutralise les bactéries responsables des odeurs intimes. Les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu. refreshed® Fait durer votre hygiène dans le temps.</p>",
+            "text": "<p>Refreshed® termine la routine intime parfaitement : le Zinc PCA neutralise les bactéries responsables des odeurs, les ferments probiotiques rééquilibrent la flore pour éviter leur retour. Sans rinçage, sans résidu — deux pressions en sortant de la douche, et t'es tranquille jusqu'au soir.</p>",
             "text_size": "regular"
           }
         },
@@ -600,7 +615,6 @@
         "button_FpdwFg",
         "text_N8H9Y7"
       ],
-      "disabled": true,
       "name": "t:sections-categories.presets.rich_text_with_image",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_24_juin_2026_16_29_01.png",
@@ -623,6 +637,763 @@
         "border_radius": 0,
         "color_hide_borders": false,
         "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "rich_text_EcNqNq": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9yxCzV": {
+          "type": "title",
+          "settings": {
+            "title": "Cleaned® — le gel qui lave sans décaper",
+            "title_size": "heading-size--regular",
+            "title_weight": "400",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_Vz8W6y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>cleaned® nettoie en profondeur avec des tensioactifs d'origine végétale, sans détruire le microbiome naturel qui protège ta zone intime. Les ferments probiotiques font le reste. Un gel douche classique n'a aucune idée de ce qu'il fait là en bas. cleaned® si.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_dXzPWN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Je shoppe cleaned®",
+            "link": "shopify://products/cleaned-®-gel-mousse-nettoyant-quotidien",
+            "open_in_new_window": false,
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "title_9yxCzV",
+        "text_Vz8W6y",
+        "button_dXzPWN"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_11_20_40.png",
+        "video_controls": false,
+        "image_position": "left",
+        "height": "regular",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 320,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": false,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": false,
+        "gutter_decrease": true,
+        "remove_margin": false,
+        "remove_bottom_margin": false
+      }
+    },
+    "comparison_table_rcciR8": {
+      "type": "comparison-table",
+      "blocks": {
+        "row_JzWMpf": {
+          "type": "row",
+          "settings": {
+            "label": "Surface utile* (plus grand = mieux)",
+            "value_brand": "60 cm²",
+            "value_1": "49 cm²",
+            "value_2": "58 cm²",
+            "value_3": ""
+          }
+        },
+        "row_pi6i66": {
+          "type": "row",
+          "settings": {
+            "label": "Enrichi en actifs naturels",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_kbQbwz": {
+          "type": "row",
+          "settings": {
+            "label": "Densité de la formule* (plus élevée = mieux)",
+            "value_brand": "78 g/m²",
+            "value_1": "52 g/m²",
+            "value_2": "59 g/m²",
+            "value_3": ""
+          }
+        },
+        "row_zKEtDC": {
+          "type": "row",
+          "settings": {
+            "label": "Testé dermatologiquement",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_KQapB7": {
+          "type": "row",
+          "settings": {
+            "label": "Fabriqué en France",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Non",
+            "value_3": ""
+          }
+        },
+        "row_MmMJ7C": {
+          "type": "row",
+          "settings": {
+            "label": "Sans parfum de synthèse",
+            "value_brand": "Oui",
+            "value_1": "Non",
+            "value_2": "Oui",
+            "value_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_JzWMpf",
+        "row_pi6i66",
+        "row_kbQbwz",
+        "row_zKEtDC",
+        "row_KQapB7",
+        "row_MmMJ7C"
+      ],
+      "name": "Tableau comparatif",
+      "settings": {
+        "heading": "Ton zgueg mérite bien mieux que ton gel douche 3-en-1.",
+        "subheading": "",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_weight": "400",
+        "heading_color": "rgba(0,0,0,0)",
+        "section_heading_layout": "section-heading--center section-heading--two-rows",
+        "cta_label": "",
+        "cta_url": "",
+        "brand_logo": "shopify://shop_images/zgueg.svg",
+        "brand_logo_width": 120,
+        "brand_name": "zgueg",
+        "brand_tagline": "Spray et Gel intime",
+        "competitor_1": "Gel douche classique",
+        "competitor_2": "Autre gel intime",
+        "competitor_3": "",
+        "yes_no_icons": true,
+        "value_font": "comparison-table--mono",
+        "value_alignment": "center",
+        "footnote": "<p>*Basé sur les sites, produits et emballages des marques concurrentes au moment de la publication.</p>",
+        "section_background": "",
+        "table_background": "#ffffff",
+        "text_color": "#1a1a1a",
+        "value_color": "#4f4f4f",
+        "line_color": "#e6e6e6",
+        "highlight_background": "#e8edfb",
+        "highlight_border": "#2545d3",
+        "highlight_text": "#2545d3",
+        "highlight_border_width": 2,
+        "border_radius": 0,
+        "cell_padding_y": 40,
+        "cell_padding_x": 24,
+        "first_col_width": 30,
+        "label_size": 16,
+        "header_size": 16,
+        "value_size": 15,
+        "footnote_size": 13,
+        "sticky_first_column": true,
+        "mobile_col_width": 140,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "customer_reviews_c89ViU": {
+      "type": "customer-reviews",
+      "blocks": {
+        "review_h01": {
+          "type": "review",
+          "settings": {
+            "author": "Kevin R.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "21 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Franchement sceptique au début, un gel spécial pour ça je trouvais ça un peu marketing. Bah j'avais tort. En fin de journée au boulot c'est plus du tout la même chose qu'avec mon gel douche normal, fini l'odeur de transpi et les démangeaisons. Je rachète.",
+            "helpful_up": 14,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Zgueg",
+            "reply_date": "21 mai 2026",
+            "reply_text": "Salut Kevin, content que t'aies tenté le coup malgré tout 😉 C'est exactement pour ça qu'on l'a fait. contact@zgueg.fr"
+          }
+        },
+        "review_h02": {
+          "type": "review",
+          "settings": {
+            "author": "Sofiane",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "22 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Je transpire vraiment beaucoup et c'est le seul truc qui tient sans que je doive repasser à la douche le midi. Fraîcheur immédiate et longue durée, validé.",
+            "helpful_up": 12,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_h03": {
+          "type": "review",
+          "settings": {
+            "author": "Romain",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "23 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "J'ai la peau hyper réactive, la plupart des savons me font des rougeurs en bas. Celui-là rien, nada, et en plus ça apaise. Premier produit que je garde.",
+            "helpful_up": 11,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_h04": {
+          "type": "review",
+          "settings": {
+            "author": "Camille (pour mon homme)",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "18 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Pris pour mon copain qui transpire énormément. Honnêtement ça a changé nos soirées, je vous laisse imaginer 😏 Il l'emporte partout maintenant.",
+            "helpful_up": 3,
+            "helpful_down": 1,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "18 mai 2026",
+            "reply_text": "Merci Camille 😄 Ravis que ça fasse l'unanimité à la maison. contact@zgueg.fr"
+          }
+        },
+        "review_h05": {
+          "type": "review",
+          "settings": {
+            "author": "le_breton29",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "10 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "ça fait des années que je cherchais un truc pour cette zone parce que le gel douche normal ça me desséchait et ça réglait pas le problème d'odeur, et là enfin un produit qui fait ce qu'il dit, si j'avais su j'aurais commencé bien avant",
+            "helpful_up": 6,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_h06": {
+          "type": "review",
+          "settings": {
+            "author": "Thomas L.",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "9 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Parfait avant un rdv. Un coup vite fait et t'es tranquille toute la soirée, l'esprit léger. Discret en plus, ça se voit pas dans la poche.",
+            "helpful_up": 7,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_h07": {
+          "type": "review",
+          "settings": {
+            "author": "Lucie (pour mon copain)",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "20 mai 2026",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "text": "Acheté pour mon mec qui osait pas trop aborder le sujet. Résultat il l'utilise tous les jours et c'est plus agréable pour tout le monde si vous voyez ce que je veux dire 😅 Validé.",
+            "helpful_up": 5,
+            "helpful_down": 0,
+            "reply_enable": false,
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "",
+            "reply_text": ""
+          }
+        },
+        "review_h08": {
+          "type": "review",
+          "settings": {
+            "author": "Karim",
+            "verified": true,
+            "verified_label": "Client vérifié",
+            "rating": 5,
+            "date": "17 mai 2026",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "text": "Je l'utilise en combo avec le gel, l'un nettoie le matin l'autre dépanne dans la journée. Le duo parfait, frais H24.",
+            "helpful_up": 3,
+            "helpful_down": 0,
+            "reply_enable": true,
+            "reply_avatar": "shopify://shop_images/zguegsvg.svg",
+            "reply_avatar_bg": "#1f49ff",
+            "reply_author": "Chloé",
+            "reply_date": "17 mai 2026",
+            "reply_text": "Merci Karim ! Le gel à la source + le spray en renfort, c'est exactement la routine idéale 🙌 contact@zgueg.fr"
+          }
+        }
+      },
+      "block_order": [
+        "review_h01",
+        "review_h02",
+        "review_h03",
+        "review_h04",
+        "review_h05",
+        "review_h06",
+        "review_h07",
+        "review_h08"
+      ],
+      "name": "Customer Reviews",
+      "settings": {
+        "container_width": "large",
+        "show_pagination": true,
+        "per_page": 5,
+        "two_columns": true,
+        "left_width": 38,
+        "column_gap": 48,
+        "sticky_heading": true,
+        "sticky_offset": 100,
+        "meta_width": 28,
+        "review_spacing": 28,
+        "padding_top": 128,
+        "padding_bottom": 60,
+        "heading": "Testé, validé, adopté.",
+        "heading_alignment": "left",
+        "heading_size": 56,
+        "heading_size_mobile": 34,
+        "heading_weight": "500",
+        "show_summary": true,
+        "summary_rating": 4.6,
+        "summary_count": "41",
+        "summary_caption": "de moyenne sur",
+        "summary_reviews_word": "avis",
+        "summary_text_size": 13,
+        "show_rating_filter": true,
+        "rating_filter_label": "Note",
+        "rating_filter_all": "Toutes les notes",
+        "stars_word": "étoiles",
+        "show_product_filter": true,
+        "product_filter_label": "Type de produit",
+        "product_filter_all": "Tous les produits",
+        "empty_text": "Aucune note pour les filtres sélectionnés",
+        "no_comment_text": "Cet acheteur n'a pas laissé de commentaire",
+        "show_date": true,
+        "show_reply_date": true,
+        "clamp_lines": 4,
+        "read_more_label": "Voir plus",
+        "read_less_label": "Voir moins",
+        "show_helpful": true,
+        "helpful_label": "Cet avis est-il utile ?",
+        "section_bg": "#ffffff",
+        "text_color": "#1a1a1a",
+        "muted_color": "#6b6b6b",
+        "divider_color": "#e6e6e6",
+        "star_color": "#0000c9",
+        "star_empty_color": "#c9c9c9",
+        "field_bg": "#ffffff",
+        "field_border": "#d9d9d9",
+        "field_radius": 0
+      }
+    },
+    "rich_text_9XNcQB": {
+      "type": "rich-text",
+      "blocks": {
+        "title_x7jGrL": {
+          "type": "title",
+          "settings": {
+            "title": "L'histoire de deux 🍆 qui ont créé Zgueg®",
+            "title_size": "heading-size--small",
+            "title_weight": "500",
+            "title_size_custom": 0,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_UYMML3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Hello ! Nous, c'est Ben et Julien </strong>👋</p><p>Deux amis de longue date.</p><p>Un soir, autour d'un verre, on s'est demandé comment arriver à un date avec cette vraie confiance d'être frais, propre, irréprochable jusque dans l'intime.</p><p>On s'est partagé nos astuces. Puis on a compris qu'aucune solution n'était vraiment pensée pour les hommes.</p><p>Alors pendant plus de deux ans, avec des pharmaciens et cosmétologues, on a travaillé sur une formule sérieuse, clean et efficace.</p><p>Parce que l'intime masculin méritait enfin mieux qu'un tabou.</p><p><strong>Zgueg® est né comme ça : d'une amitié, d'une conversation honnête, et de l'envie de créer le produit qu'on aurait aimé avoir.</strong></p>",
+            "text_size": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "title_x7jGrL",
+        "text_UYMML3"
+      ],
+      "name": "t:sections-categories.presets.rich_text_with_image",
+      "settings": {
+        "image": "shopify://shop_images/benetjulien.png",
+        "video_controls": false,
+        "image_position": "right",
+        "height": "regular",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "top",
+        "overlay_image_width": 320,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-left",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 24,
+        "color_background_main": "#f7f3ec",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#d9d9d9",
+        "border_radius": 0,
+        "color_hide_borders": true,
+        "gutter_decrease": false,
+        "remove_margin": true,
+        "remove_bottom_margin": false
+      }
+    },
+    "newsletter_zg": {
+      "type": "newsletter",
+      "settings": {
+        "title": "Un cadeau t'attend 🎁",
+        "text": "<p>-10 % sur ta première commande en t'inscrivant. Nos offres en avant-première, zéro spam — que du frais.</p>",
+        "is_fullwidth": false,
+        "color_background_main": "#e8edfb",
+        "color_text_main": "#1a1a1a",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_margin": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "trust_icons_zg": {
+      "type": "text-columns-icons",
+      "blocks": {
+        "trust_1_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "shipping-truck",
+            "crop": true,
+            "title": "Livraison gratuite",
+            "caption": "Expédiée depuis la France, en colis 100 % discret.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "trust_2_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "security-shield",
+            "crop": true,
+            "title": "Paiement sécurisé",
+            "caption": "Transactions chiffrées de bout en bout.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "trust_3_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "like-hand",
+            "crop": true,
+            "title": "14 jours pour changer d'avis",
+            "caption": "Retour simple, remboursement rapide. Zéro interrogatoire.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        },
+        "trust_4_zg": {
+          "type": "image",
+          "settings": {
+            "icon": "helpline",
+            "crop": true,
+            "title": "Des vrais humains",
+            "caption": "contact@zgueg.fr — on répond vite, et en français.",
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_icons_main": "#0000c9",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "trust_1_zg",
+        "trust_2_zg",
+        "trust_3_zg",
+        "trust_4_zg"
+      ],
+      "name": "Text columns with icons",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "style": "grid",
+        "layout": "grid-4 grid-portable-3 grid-lap-2 grid-palm-1",
+        "border_radius": 0,
+        "hide_borders": false,
+        "opacity_on_hover": false,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "faq_home_zg": {
+      "type": "content-toggles",
+      "blocks": {
+        "faq_h1_zg": {
+          "type": "text",
+          "settings": {
+            "title": "C'est vraiment utile, un soin pour cette zone ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Ton déo est pensé pour les aisselles, ton gel douche pour le corps entier. L'entrejambe, elle, vit à pH 5,5, transpire plus et macère plus — et aucun des deux n'y répond. Cleaned® nettoie le matin, Refreshed® protège la journée : c'est toute la routine Zgueg.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_h2_zg": {
+          "type": "text",
+          "settings": {
+            "title": "Ça pique ? Ça colle ? Ça décape ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Non, non et non. Sans alcool, sans savon, au pH physiologique de 5,5, avec centella et armoise pour apaiser. Le spray sèche en 10 secondes sans résidu, le gel se rince net sans tirailler. Note Yuka des deux formules : 100/100.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_h3_zg": {
+          "type": "text",
+          "settings": {
+            "title": "La livraison est discrète ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Colis neutre, sans aucune mention du contenu. Le facteur ne saura rien. Ta mère non plus.</p>",
+            "hide_block_if": false
+          }
+        },
+        "faq_h4_zg": {
+          "type": "text",
+          "settings": {
+            "title": "Et si ça ne me convient pas ?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Tu as 14 jours après réception pour changer d'avis : tu nous écris à contact@zgueg.fr, tu renvoies, on rembourse. Sans questionnaire de 12 pages.</p>",
+            "hide_block_if": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_h1_zg",
+        "faq_h2_zg",
+        "faq_h3_zg",
+        "faq_h4_zg"
+      ],
+      "name": "Content toggles",
+      "settings": {
+        "heading": "Des questions ? On y répond.",
+        "subheading": "Une équipe de vrais zguegs te répond du lundi au vendredi, 9h-18h.",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "Toutes les réponses",
+        "cta_url": "shopify://pages/faq",
+        "form_enable": false,
+        "form_title": "Contact form",
+        "style": "outline",
+        "open_first": true,
+        "section_background_color": "rgba(0,0,0,0)",
+        "section_background_gradient": "",
+        "section_heading_color": "rgba(0,0,0,0)",
+        "gutter_decrease": false,
+        "remove_bottom_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "instagram_shots_XXa4rz": {
+      "type": "instagram-shots",
+      "blocks": {
+        "photo_cYBFzw": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/734664350_18144331258474224_6367943887764334060_n.jpg",
+            "ratio": "natural",
+            "username": "zguegfr",
+            "link": "https://www.instagram.com/zguegfr/",
+            "rotation": -4,
+            "offset_y": 24
+          }
+        },
+        "photo_c4YW8f": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/731397105_2124619314783465_9222613973754406186_n.jpg",
+            "ratio": "natural",
+            "username": "zguegfr",
+            "link": "https://www.instagram.com/zguegfr/",
+            "rotation": 4,
+            "offset_y": 12
+          }
+        },
+        "photo_xLqz6m": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/729539972_903929108649516_3600706314502179396_n.jpg",
+            "ratio": "natural",
+            "username": "zguegfr",
+            "link": "https://www.instagram.com/zguegfr/",
+            "rotation": -2,
+            "offset_y": 44
+          }
+        },
+        "photo_zeFwLY": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/734872032_18145239259474224_3698200024824348827_n.jpg",
+            "ratio": "natural",
+            "username": "zguegfr",
+            "link": "https://www.instagram.com/zguegfr/",
+            "rotation": 3,
+            "offset_y": 20
+          }
+        }
+      },
+      "block_order": [
+        "photo_cYBFzw",
+        "photo_c4YW8f",
+        "photo_xLqz6m",
+        "photo_zeFwLY"
+      ],
+      "name": "Instagram shots",
+      "settings": {
+        "heading": "Suivez nous sur Instagram !",
+        "heading_color": "#1a1a1a",
+        "background_color": "#f9f4ec",
+        "padding_top": 120,
+        "padding_bottom": 120,
+        "margin_top": 0,
+        "margin_bottom": -60,
+        "heading_spacing": 62,
+        "card_width": 245,
+        "card_min_width": 205,
+        "card_min_width_mobile": 150,
+        "gap_horizontal": 38,
+        "gap_vertical": 22,
+        "show_instagram_icon": true,
+        "tilt_images": true
+      }
+    },
+    "rich_text_UKfy6N": {
+      "type": "rich-text",
+      "blocks": {
+        "title_Uhdr6e": {
+          "type": "title",
+          "settings": {
+            "title": "L'histoire de deux 🍆 qui ont créé Zgueg®",
+            "title_size": "heading-size--small",
+            "title_weight": "400",
+            "title_size_custom": 44,
+            "title_size_custom_mobile": 0,
+            "seo_h_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "title_Uhdr6e"
+      ],
+      "disabled": true,
+      "name": "t:sections-categories.presets.heading_text",
+      "settings": {
+        "video_controls": false,
+        "image_position": "top no-image",
+        "height": "small",
+        "content_vertical_position": "middle",
+        "image_crop": true,
+        "image_object_position": "auto",
+        "overlay_image_width": 160,
+        "overlay_image_width_mobile": 100,
+        "is_fullwidth": true,
+        "text_alignment": "horizontal-center",
+        "content_layout": "stacked",
+        "split_left_width": 50,
+        "spacing": 36,
+        "color_background_main": "#f7f3ec",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "rgba(0,0,0,0)",
+        "border_radius": 14,
+        "color_hide_borders": true,
+        "gutter_decrease": true,
         "remove_margin": true,
         "remove_bottom_margin": false
       }
@@ -786,284 +1557,6 @@
         "seo_h_tag": "h2"
       }
     },
-    "rich_text_EcNqNq": {
-      "type": "rich-text",
-      "blocks": {
-        "title_9yxCzV": {
-          "type": "title",
-          "settings": {
-            "title": "Le gel moussant quotidien",
-            "title_size": "heading-size--regular",
-            "title_weight": "400",
-            "title_size_custom": 0,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        },
-        "text_Vz8W6y": {
-          "type": "text",
-          "settings": {
-            "text": "<p>cleaned® nettoie en profondeur avec des tensioactifs d'origine végétale, sans détruire le microbiome naturel qui protège ta zone intime. Les ferments probiotiques font le reste. Un gel douche classique n'a aucune idée de ce qu'il fait là en bas. cleaned® si.</p>",
-            "text_size": "regular"
-          }
-        },
-        "button_dXzPWN": {
-          "type": "button",
-          "settings": {
-            "button_label": "Je shoppe cleaned®",
-            "link": "shopify://products/cleaned-®-gel-mousse-nettoyant-quotidien",
-            "open_in_new_window": false,
-            "button_style": "solid"
-          }
-        }
-      },
-      "block_order": [
-        "title_9yxCzV",
-        "text_Vz8W6y",
-        "button_dXzPWN"
-      ],
-      "disabled": true,
-      "name": "t:sections-categories.presets.rich_text_with_image",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_26_juin_2026_11_20_40.png",
-        "video_controls": false,
-        "image_position": "left",
-        "height": "regular",
-        "content_vertical_position": "middle",
-        "image_crop": true,
-        "image_object_position": "auto",
-        "overlay_image_width": 320,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": false,
-        "text_alignment": "horizontal-center",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 24,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "#d9d9d9",
-        "border_radius": 0,
-        "color_hide_borders": false,
-        "gutter_decrease": true,
-        "remove_margin": false,
-        "remove_bottom_margin": false
-      }
-    },
-    "rich_text_UKfy6N": {
-      "type": "rich-text",
-      "blocks": {
-        "title_Uhdr6e": {
-          "type": "title",
-          "settings": {
-            "title": "L'histoire de deux 🍆 qui ont créé Zgueg®",
-            "title_size": "heading-size--small",
-            "title_weight": "400",
-            "title_size_custom": 44,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "title_Uhdr6e"
-      ],
-      "disabled": true,
-      "name": "t:sections-categories.presets.heading_text",
-      "settings": {
-        "video_controls": false,
-        "image_position": "top no-image",
-        "height": "small",
-        "content_vertical_position": "middle",
-        "image_crop": true,
-        "image_object_position": "auto",
-        "overlay_image_width": 160,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
-        "text_alignment": "horizontal-center",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 36,
-        "color_background_main": "#f7f3ec",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "rgba(0,0,0,0)",
-        "border_radius": 14,
-        "color_hide_borders": true,
-        "gutter_decrease": true,
-        "remove_margin": true,
-        "remove_bottom_margin": false
-      }
-    },
-    "rich_text_9XNcQB": {
-      "type": "rich-text",
-      "blocks": {
-        "title_x7jGrL": {
-          "type": "title",
-          "settings": {
-            "title": "L'histoire de deux 🍆 qui ont créé Zgueg®",
-            "title_size": "heading-size--small",
-            "title_weight": "500",
-            "title_size_custom": 0,
-            "title_size_custom_mobile": 0,
-            "seo_h_tag": "h2"
-          }
-        },
-        "text_UYMML3": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Hello ! Nous, c’est Ben et Julien </strong>👋</p><p>Deux amis de longue date.</p><p>Un soir, autour d’un verre, on s’est demandé comment arriver à un date avec cette vraie confiance d’être frais, propre, irréprochable jusque dans l’intime.</p><p>On s’est partagé nos astuces. Puis on a compris qu’aucune solution n’était vraiment pensée pour les hommes.</p><p>Alors pendant plus de deux ans, avec des pharmaciens et cosmétologues, on a travaillé sur une formule sérieuse, clean et efficace.</p><p>Parce que l’intime masculin méritait enfin mieux qu’un tabou.</p><p><strong>Zgueg® est né comme ça : d’une amitié, d’une conversation honnête, et de l’envie de créer le produit qu’on aurait aimé avoir.</strong></p>",
-            "text_size": "regular"
-          }
-        }
-      },
-      "block_order": [
-        "title_x7jGrL",
-        "text_UYMML3"
-      ],
-      "disabled": true,
-      "name": "t:sections-categories.presets.rich_text_with_image",
-      "settings": {
-        "image": "shopify://shop_images/benetjulien.png",
-        "video_controls": false,
-        "image_position": "right",
-        "height": "regular",
-        "content_vertical_position": "middle",
-        "image_crop": true,
-        "image_object_position": "top",
-        "overlay_image_width": 320,
-        "overlay_image_width_mobile": 100,
-        "is_fullwidth": true,
-        "text_alignment": "horizontal-left",
-        "content_layout": "stacked",
-        "split_left_width": 50,
-        "spacing": 24,
-        "color_background_main": "#f7f3ec",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_borders_main": "#d9d9d9",
-        "border_radius": 0,
-        "color_hide_borders": true,
-        "gutter_decrease": false,
-        "remove_margin": true,
-        "remove_bottom_margin": false
-      }
-    },
-    "comparison_table_rcciR8": {
-      "type": "comparison-table",
-      "blocks": {
-        "row_JzWMpf": {
-          "type": "row",
-          "settings": {
-            "label": "Surface utile* (plus grand = mieux)",
-            "value_brand": "60 cm²",
-            "value_1": "49 cm²",
-            "value_2": "58 cm²",
-            "value_3": ""
-          }
-        },
-        "row_pi6i66": {
-          "type": "row",
-          "settings": {
-            "label": "Enrichi en actifs naturels",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
-            "value_3": ""
-          }
-        },
-        "row_kbQbwz": {
-          "type": "row",
-          "settings": {
-            "label": "Densité de la formule* (plus élevée = mieux)",
-            "value_brand": "78 g/m²",
-            "value_1": "52 g/m²",
-            "value_2": "59 g/m²",
-            "value_3": ""
-          }
-        },
-        "row_zKEtDC": {
-          "type": "row",
-          "settings": {
-            "label": "Testé dermatologiquement",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
-            "value_3": ""
-          }
-        },
-        "row_KQapB7": {
-          "type": "row",
-          "settings": {
-            "label": "Fabriqué en France",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Non",
-            "value_3": ""
-          }
-        },
-        "row_MmMJ7C": {
-          "type": "row",
-          "settings": {
-            "label": "Sans parfum de synthèse",
-            "value_brand": "Oui",
-            "value_1": "Non",
-            "value_2": "Oui",
-            "value_3": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_JzWMpf",
-        "row_pi6i66",
-        "row_kbQbwz",
-        "row_zKEtDC",
-        "row_KQapB7",
-        "row_MmMJ7C"
-      ],
-      "disabled": true,
-      "name": "Tableau comparatif",
-      "settings": {
-        "heading": "Votre zgueg mérite bien mieux que votre gel douche 3 en 1.",
-        "subheading": "",
-        "heading_size": 52,
-        "heading_size_mobile": 32,
-        "heading_weight": "400",
-        "heading_color": "rgba(0,0,0,0)",
-        "section_heading_layout": "section-heading--center section-heading--two-rows",
-        "cta_label": "",
-        "cta_url": "",
-        "brand_logo": "shopify://shop_images/zgueg.svg",
-        "brand_logo_width": 120,
-        "brand_name": "Votre marque",
-        "brand_tagline": "Spray et Gel intime",
-        "competitor_1": "Gel douche classique",
-        "competitor_2": "Autre gel intime",
-        "competitor_3": "",
-        "yes_no_icons": true,
-        "value_font": "comparison-table--mono",
-        "value_alignment": "center",
-        "footnote": "<p>*Basé sur les sites, produits et emballages des marques concurrentes au moment de la publication.</p>",
-        "section_background": "",
-        "table_background": "#ffffff",
-        "text_color": "#1a1a1a",
-        "value_color": "#4f4f4f",
-        "line_color": "#e6e6e6",
-        "highlight_background": "#e8edfb",
-        "highlight_border": "#2545d3",
-        "highlight_text": "#2545d3",
-        "highlight_border_width": 2,
-        "border_radius": 0,
-        "cell_padding_y": 40,
-        "cell_padding_x": 24,
-        "first_col_width": 30,
-        "label_size": 16,
-        "header_size": 16,
-        "value_size": 15,
-        "footnote_size": 13,
-        "sticky_first_column": true,
-        "mobile_col_width": 140,
-        "gutter_decrease": false,
-        "seo_h_tag": "h2"
-      }
-    },
     "ph_scale_pjWhrH": {
       "type": "ph-scale",
       "blocks": {
@@ -1149,96 +1642,28 @@
         "padding_bottom": 60,
         "seo_h_tag": "h2"
       }
-    },
-    "instagram_shots_XXa4rz": {
-      "type": "instagram-shots",
-      "blocks": {
-        "photo_cYBFzw": {
-          "type": "photo",
-          "settings": {
-            "image": "shopify://shop_images/734664350_18144331258474224_6367943887764334060_n.jpg",
-            "ratio": "natural",
-            "username": "zguegfr",
-            "link": "https://www.instagram.com/zguegfr/",
-            "rotation": -4,
-            "offset_y": 24
-          }
-        },
-        "photo_c4YW8f": {
-          "type": "photo",
-          "settings": {
-            "image": "shopify://shop_images/731397105_2124619314783465_9222613973754406186_n.jpg",
-            "ratio": "natural",
-            "username": "zguegfr",
-            "link": "https://www.instagram.com/zguegfr/",
-            "rotation": 4,
-            "offset_y": 12
-          }
-        },
-        "photo_xLqz6m": {
-          "type": "photo",
-          "settings": {
-            "image": "shopify://shop_images/729539972_903929108649516_3600706314502179396_n.jpg",
-            "ratio": "natural",
-            "username": "zguegfr",
-            "link": "https://www.instagram.com/zguegfr/",
-            "rotation": -2,
-            "offset_y": 44
-          }
-        },
-        "photo_zeFwLY": {
-          "type": "photo",
-          "settings": {
-            "image": "shopify://shop_images/734872032_18145239259474224_3698200024824348827_n.jpg",
-            "ratio": "natural",
-            "username": "zguegfr",
-            "link": "https://www.instagram.com/zguegfr/",
-            "rotation": 3,
-            "offset_y": 20
-          }
-        }
-      },
-      "block_order": [
-        "photo_cYBFzw",
-        "photo_c4YW8f",
-        "photo_xLqz6m",
-        "photo_zeFwLY"
-      ],
-      "name": "Instagram shots",
-      "settings": {
-        "heading": "Suivez nous sur Instagram !",
-        "heading_color": "#1a1a1a",
-        "background_color": "#f9f4ec",
-        "padding_top": 120,
-        "padding_bottom": 120,
-        "margin_top": 0,
-        "margin_bottom": -60,
-        "heading_spacing": 62,
-        "card_width": 245,
-        "card_min_width": 205,
-        "card_min_width_mobile": 150,
-        "gap_horizontal": 38,
-        "gap_vertical": 22,
-        "show_instagram_icon": true,
-        "tilt_images": true
-      }
     }
   },
   "order": [
     "hero_banner_4RL9MK",
     "showcase_the_products_NFrmhk",
+    "marquee_zg",
     "slider_X9kAL9",
     "enriched_hero_e4bhR9",
-    "customer_reviews_c89ViU",
+    "zg_calculator",
     "certifications_DDdq8b",
     "rich_text_3E9aKj",
+    "rich_text_EcNqNq",
+    "comparison_table_rcciR8",
+    "customer_reviews_c89ViU",
+    "rich_text_9XNcQB",
+    "newsletter_zg",
+    "trust_icons_zg",
+    "faq_home_zg",
+    "instagram_shots_XXa4rz",
+    "rich_text_UKfy6N",
     "ss_video_image_text_3_JLCMQb",
     "featured_collection_nUjFKx",
-    "rich_text_EcNqNq",
-    "rich_text_UKfy6N",
-    "rich_text_9XNcQB",
-    "comparison_table_rcciR8",
-    "ph_scale_pjWhrH",
-    "instagram_shots_XXa4rz"
+    "ph_scale_pjWhrH"
   ]
 }

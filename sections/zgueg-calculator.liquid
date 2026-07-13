@@ -1,0 +1,370 @@
+{%- liquid
+  assign sid = section.id
+-%}
+
+<div class="zgc" id="zgc-{{ sid }}">
+  <div class="zgc__container">
+    <div class="zgc__grid">
+      <div class="zgc__intro">
+        {%- if section.settings.badge_text != blank -%}
+          <span class="zgc__badge">{{ section.settings.badge_text }}</span>
+        {%- endif -%}
+        <{{ section.settings.seo_h_tag }} class="zgc__heading">{{ section.settings.heading }}</{{ section.settings.seo_h_tag }}>
+        {%- if section.settings.subheading != blank -%}
+          <p class="zgc__subheading">{{ section.settings.subheading }}</p>
+        {%- endif -%}
+      </div>
+
+      <div class="zgc__input-col">
+        {%- if section.settings.label_top != blank -%}
+          <p class="zgc__label">{{ section.settings.label_top }}</p>
+        {%- endif -%}
+        <input
+          class="zgc__input"
+          type="number"
+          inputmode="numeric"
+          min="0"
+          max="50"
+          step="1"
+          value="{{ section.settings.input_default }}"
+          aria-label="{{ section.settings.label_top | escape }} {{ section.settings.label_bottom | escape }}"
+        >
+        {%- if section.settings.label_bottom != blank -%}
+          <p class="zgc__label">{{ section.settings.label_bottom }}</p>
+        {%- endif -%}
+      </div>
+
+      <div class="zgc__equals" aria-hidden="true">=</div>
+
+      <div class="zgc__result-col">
+        {%- if section.settings.result_before != blank -%}
+          <p class="zgc__result-before">{{ section.settings.result_before }}</p>
+        {%- endif -%}
+        <div class="zgc__result-card">
+          <span class="zgc__result-value" data-zgc-output>&nbsp;</span>
+        </div>
+        {%- if section.settings.result_after != blank -%}
+          <p class="zgc__result-after">{{ section.settings.result_after }}</p>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- if section.settings.footnote != blank -%}
+      <p class="zgc__footnote">{{ section.settings.footnote }}</p>
+    {%- endif -%}
+  </div>
+</div>
+
+<style>
+  #zgc-{{ sid }} {
+    background-color: {{ section.settings.section_bg }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  #zgc-{{ sid }} .zgc__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #zgc-{{ sid }} .zgc__grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.9fr auto 1fr;
+    align-items: center;
+    gap: 48px;
+  }
+  #zgc-{{ sid }} .zgc__badge {
+    display: inline-block;
+    background-color: {{ section.settings.accent_color }};
+    color: {{ section.settings.badge_text_color }};
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    margin-bottom: 16px;
+  }
+  #zgc-{{ sid }} .zgc__heading {
+    margin: 0;
+    color: {{ section.settings.text_color }};
+    font-size: {{ section.settings.heading_size }}px;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+  #zgc-{{ sid }} .zgc__subheading {
+    margin: 12px 0 0;
+    color: {{ section.settings.muted_color }};
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  #zgc-{{ sid }} .zgc__input-col { text-align: center; }
+  #zgc-{{ sid }} .zgc__label {
+    margin: 6px 0;
+    color: {{ section.settings.text_color }};
+    font-size: 15px;
+    font-weight: 500;
+  }
+  #zgc-{{ sid }} .zgc__input {
+    width: 100%;
+    max-width: 240px;
+    margin: 8px auto;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: {{ section.settings.accent_color }};
+    background: #ffffff;
+    border: 1.5px solid {{ section.settings.accent_color }};
+    border-radius: 0;
+    -moz-appearance: textfield;
+  }
+  #zgc-{{ sid }} .zgc__input:focus { outline: 2px solid {{ section.settings.accent_color }}; outline-offset: 1px; }
+  #zgc-{{ sid }} .zgc__equals {
+    color: {{ section.settings.accent_color }};
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  #zgc-{{ sid }} .zgc__result-col { text-align: center; }
+  #zgc-{{ sid }} .zgc__result-before,
+  #zgc-{{ sid }} .zgc__result-after {
+    margin: 6px 0;
+    color: {{ section.settings.text_color }};
+    font-size: 15px;
+    font-weight: 500;
+  }
+  #zgc-{{ sid }} .zgc__result-card {
+    background: #ffffff;
+    border: 1.5px solid {{ section.settings.accent_color }};
+    padding: 18px 36px;
+    margin: 10px auto;
+    display: inline-block;
+    min-width: 200px;
+  }
+  #zgc-{{ sid }} .zgc__result-value {
+    color: {{ section.settings.accent_color }};
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  #zgc-{{ sid }} .zgc__footnote {
+    margin: 36px 0 0;
+    text-align: center;
+    color: {{ section.settings.muted_color }};
+    font-size: 13px;
+  }
+  @media (max-width: 989px) {
+    #zgc-{{ sid }} .zgc__grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      text-align: center;
+    }
+    #zgc-{{ sid }} .zgc__intro { text-align: center; }
+    #zgc-{{ sid }} .zgc__equals { text-align: center; font-size: 40px; }
+    #zgc-{{ sid }} .zgc__heading { font-size: {{ section.settings.heading_size_mobile }}px; }
+  }
+</style>
+
+<script>
+  (function () {
+    var root = document.getElementById('zgc-{{ sid }}');
+    if (!root) return;
+    var input = root.querySelector('.zgc__input');
+    var output = root.querySelector('[data-zgc-output]');
+    var multiplier = {{ section.settings.multiplier | default: 13 }};
+    var prefix = {{ section.settings.result_prefix | json }};
+    var suffix = {{ section.settings.result_suffix | json }};
+    function update() {
+      var v = parseFloat(input.value);
+      if (isNaN(v) || v < 0) v = 0;
+      if (v > 50) { v = 50; input.value = 50; }
+      var r = Math.round(v * multiplier);
+      output.textContent = prefix + r.toLocaleString('fr-FR') + suffix;
+    }
+    input.addEventListener('input', update);
+    update();
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Zgueg-culateur",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge",
+      "default": "LE ZGUEG-CULATEUR"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "Pourquoi passer à Refreshed® ?"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sous-titre",
+      "default": "La douche de secours du midi, c'est terminé."
+    },
+    {
+      "type": "header",
+      "content": "Champ de saisie"
+    },
+    {
+      "type": "text",
+      "id": "label_top",
+      "label": "Texte au-dessus du champ",
+      "default": "Combien de séances de sport"
+    },
+    {
+      "type": "text",
+      "id": "label_bottom",
+      "label": "Texte sous le champ",
+      "default": "par semaine ?"
+    },
+    {
+      "type": "range",
+      "id": "input_default",
+      "label": "Valeur par défaut",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Résultat"
+    },
+    {
+      "type": "range",
+      "id": "multiplier",
+      "label": "Multiplicateur",
+      "info": "Résultat = valeur saisie × multiplicateur",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "default": 13
+    },
+    {
+      "type": "text",
+      "id": "result_prefix",
+      "label": "Préfixe du résultat",
+      "default": "+"
+    },
+    {
+      "type": "text",
+      "id": "result_suffix",
+      "label": "Suffixe du résultat",
+      "default": " h"
+    },
+    {
+      "type": "text",
+      "id": "result_before",
+      "label": "Texte au-dessus du résultat",
+      "default": "Avec Refreshed®, tu récupères"
+    },
+    {
+      "type": "text",
+      "id": "result_after",
+      "label": "Texte sous le résultat",
+      "default": "de liberté par an — sans douche de secours !"
+    },
+    {
+      "type": "text",
+      "id": "footnote",
+      "label": "Note de bas de section",
+      "default": "Base : 15 minutes par douche express évitée, 52 semaines par an. Oui, on a fait le calcul."
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Fond de section",
+      "default": "#eef1fd"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Couleur d'accent",
+      "default": "#0000c9"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Texte du badge",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "label": "Couleur secondaire",
+      "default": "#4f4f4f"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Taille du titre",
+      "min": 20,
+      "max": 72,
+      "step": 2,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Taille du titre (mobile)",
+      "min": 18,
+      "max": 44,
+      "step": 2,
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Marge haute",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Marge basse",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 72
+    },
+    {
+      "type": "select",
+      "id": "seo_h_tag",
+      "label": "Balise SEO du titre",
+      "options": [
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "span", "label": "Span" }
+      ],
+      "default": "h2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Zgueg-culateur"
+    }
+  ]
+}
+{% endschema %}
