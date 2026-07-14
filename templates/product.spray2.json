@@ -423,7 +423,7 @@
         "enable_video_autoplay": false,
         "video_fit": true,
         "default_to_first_variant": true,
-        "sticky_add_to_cart": true,
+        "sticky_add_to_cart": false,
         "sticky_atc_variants": false,
         "sticky_atc_style": "wide",
         "sticky_bar_bgcolor": "#0000c9",
