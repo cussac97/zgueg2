@@ -139,6 +139,9 @@
         -%}
         <div class="{{ card_class }}" {{ block.shopify_attributes }}>
           <div class="showcase-products__media">
+            {%- if card_url != blank -%}
+              <a class="showcase-products__media-link" href="{{ card_url }}" aria-label="{{ card_name | escape }}">
+            {%- endif -%}
             {%- if block.settings.badge != blank -%}
               <span class="showcase-products__badge">{{ block.settings.badge | escape }}</span>
             {%- endif -%}
@@ -149,6 +152,9 @@
                 {{ 'product-1' | placeholder_svg_tag: 'showcase-products__placeholder-svg' }}
               </div>
             {%- endif -%}
+            {%- if card_url != blank -%}
+              </a>
+            {%- endif -%}
           </div>
 
           <div class="showcase-products__body">
@@ -157,7 +163,13 @@
                 <span class="showcase-products__eyebrow">{{ block.settings.eyebrow | escape }}</span>
               {%- endif -%}
               {%- if card_name != blank -%}
-                <span class="showcase-products__name">{{ card_name | escape }}</span>
+                <span class="showcase-products__name">
+                  {%- if card_url != blank -%}
+                    <a href="{{ card_url }}">{{ card_name | escape }}</a>
+                  {%- else -%}
+                    {{ card_name | escape }}
+                  {%- endif -%}
+                </span>
               {%- endif -%}
               {%- if block.settings.tagline != blank -%}
                 <p class="showcase-products__tagline">{{ block.settings.tagline | escape }}</p>
