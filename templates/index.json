@@ -68,7 +68,7 @@
             "details": "Utilisation | Quotidienne\nFonction | Fraicheur longue durée\nFormat | 100 ml\nNote Yuka | 100/100",
             "price_override": "",
             "badge": "Le plus vendu",
-            "button_label": "Acheter",
+            "button_label": "Voir le produit",
             "button_url": "",
             "highlight": true
           }
@@ -83,7 +83,7 @@
             "details": "Utilisation | Quotidienne\nFonction | Nettoyant\nFormat | 200 ml\nNote Yuka | 100/100",
             "price_override": "",
             "badge": "",
-            "button_label": "Acheter",
+            "button_label": "Voir le produit",
             "button_url": "",
             "highlight": false
           }
