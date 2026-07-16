@@ -349,6 +349,7 @@
         },
         "collapsible_tab_zXdGmR": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Bénéfices",
             "content": "<ul><li>Zéro odeur du matin au soir : la fraîcheur tient vraiment la journée</li><li>Effet frais immédiat, sans rinçage</li><li>Rééquilibre la flore pour empêcher les odeurs de revenir</li><li>Sans alcool : ça ne pique pas, même après le rasage</li><li>pH physiologique, respecte les muqueuses</li><li>Format nomade : poche, sac, vestiaire</li></ul>",
@@ -358,6 +359,7 @@
         },
         "collapsible_tab_P4hk8m": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Ingrédients",
             "content": "<ul><li>Ferments probiotiques (Lactobacillus, Bifida)</li><li>Eau d'armoise (Artemisia)</li><li>Centella asiatica</li><li>Houttuynia cordata</li><li>Thé vert (Camellia sinensis)</li><li>Glycérine végétale</li><li>Sans alcool, sans parfum de synthèse</li></ul>",
@@ -367,6 +369,7 @@
         },
         "collapsible_tab_RKezaD": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Pour qui ?",
             "content": "<p>Pour les mecs qui veulent être tranquilles du matin au soir : bureau, sport, déplacements, grosses chaleurs, rendez-vous. Convient à tous les types de peau. Usage externe uniquement.</p>",
@@ -376,6 +379,7 @@
         },
         "collapsible_tab_YyQ3H7": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Comment l'utiliser ?",
             "content": "<p>Deux pulvérisations sur les parties intimes externes en sortant de la douche : ça sèche en quelques secondes, sans rinçage ni résidu, et t'es tranquille jusqu'au soir. Journée caniculaire ou grosse séance de sport ? Remets un pschitt si tu veux — mais en temps normal, un seul geste le matin suffit. Pour une routine complète, combine-le avec le gel mousse nettoyant sous la douche.</p>",
@@ -940,6 +944,7 @@
         "row_V8Jyah",
         "row_dMdTM7"
       ],
+      "disabled": true,
       "name": "Tableau comparatif",
       "settings": {
         "heading": "La flore intime nécessite un soin adapté.",
@@ -1422,6 +1427,7 @@
         "review_r19",
         "review_r20"
       ],
+      "disabled": true,
       "name": "Customer Reviews",
       "settings": {
         "container_width": "large",
