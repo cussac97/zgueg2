@@ -791,7 +791,7 @@
         "title_9yxCzV": {
           "type": "title",
           "settings": {
-            "title": "Le gel moussant quotidien",
+            "title": "Le nettoyant moussant quotidien",
             "title_size": "heading-size--regular",
             "title_weight": "400",
             "title_size_custom": 0,
@@ -809,7 +809,7 @@
         "button_dXzPWN": {
           "type": "button",
           "settings": {
-            "button_label": "Je shoppe cleaned®",
+            "button_label": "Nettoyant Cleaned®",
             "link": "shopify://products/cleaned-®-gel-mousse-nettoyant-quotidien",
             "open_in_new_window": false,
             "button_style": "solid"
