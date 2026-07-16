@@ -283,6 +283,7 @@
         },
         "zg_reassurance": {
           "type": "reassurance",
+          "disabled": true,
           "settings": {
             "item_1_icon": "lock",
             "item_1_text": "Paiement sécurisé",
