@@ -60,11 +60,47 @@
     -%}
 
     {%- liquid
+      assign competitors_count = 0
+      if section.settings.competitor_1 != blank
+        assign competitors_count = competitors_count | plus: 1
+      endif
+      if section.settings.competitor_2 != blank
+        assign competitors_count = competitors_count | plus: 1
+      endif
+      if section.settings.competitor_3 != blank
+        assign competitors_count = competitors_count | plus: 1
+      endif
+
+      assign use_switcher = false
+      if section.settings.mobile_layout == 'switcher' and competitors_count > 1
+        assign use_switcher = true
+      endif
+
       assign table_classes = 'comparison-table ' | append: section.settings.value_font
       if section.settings.sticky_first_column
         assign table_classes = table_classes | append: ' comparison-table--sticky-first'
       endif
+      if use_switcher
+        assign table_classes = table_classes | append: ' comparison-table--switch'
+      endif
     -%}
+
+    {%- if use_switcher -%}
+      <div class="comparison-table__switcher">
+        <span class="comparison-table__switcher-label">{{ section.settings.switcher_label | default: 'Comparer à :' }}</span>
+        <div class="comparison-table__switcher-pills" role="group" aria-label="{{ section.settings.switcher_label | default: 'Comparer à :' | escape }}">
+          {%- if section.settings.competitor_1 != blank -%}
+            <button type="button" class="comparison-table__switch is-active" data-ct-switch="1" aria-pressed="true">{{ section.settings.competitor_1 | escape }}</button>
+          {%- endif -%}
+          {%- if section.settings.competitor_2 != blank -%}
+            <button type="button" class="comparison-table__switch" data-ct-switch="2" aria-pressed="false">{{ section.settings.competitor_2 | escape }}</button>
+          {%- endif -%}
+          {%- if section.settings.competitor_3 != blank -%}
+            <button type="button" class="comparison-table__switch" data-ct-switch="3" aria-pressed="false">{{ section.settings.competitor_3 | escape }}</button>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
 
     <div class="comparison-table__scroller">
       <table class="{{ table_classes }}">
@@ -88,13 +124,13 @@
               </div>
             </th>
             {%- if section.settings.competitor_1 != blank -%}
-              <th scope="col">{{ section.settings.competitor_1 | escape }}</th>
+              <th scope="col" data-ct-col="1" class="is-mobile-visible">{{ section.settings.competitor_1 | escape }}</th>
             {%- endif -%}
             {%- if section.settings.competitor_2 != blank -%}
-              <th scope="col">{{ section.settings.competitor_2 | escape }}</th>
+              <th scope="col" data-ct-col="2">{{ section.settings.competitor_2 | escape }}</th>
             {%- endif -%}
             {%- if section.settings.competitor_3 != blank -%}
-              <th scope="col">{{ section.settings.competitor_3 | escape }}</th>
+              <th scope="col" data-ct-col="3">{{ section.settings.competitor_3 | escape }}</th>
             {%- endif -%}
           </tr>
         </thead>
@@ -108,21 +144,21 @@
                 </span>
               </td>
               {%- if section.settings.competitor_1 != blank -%}
-                <td>
+                <td data-ct-col="1" class="is-mobile-visible">
                   <span class="comparison-table__value">
                     {%- render 'comparison-table-value', value: block.settings.value_1, icons: section.settings.yes_no_icons -%}
                   </span>
                 </td>
               {%- endif -%}
               {%- if section.settings.competitor_2 != blank -%}
-                <td>
+                <td data-ct-col="2">
                   <span class="comparison-table__value">
                     {%- render 'comparison-table-value', value: block.settings.value_2, icons: section.settings.yes_no_icons -%}
                   </span>
                 </td>
               {%- endif -%}
               {%- if section.settings.competitor_3 != blank -%}
-                <td>
+                <td data-ct-col="3">
                   <span class="comparison-table__value">
                     {%- render 'comparison-table-value', value: block.settings.value_3, icons: section.settings.yes_no_icons -%}
                   </span>
@@ -145,6 +181,30 @@
     link: section.settings.cta_url
   -%}
 </div>
+
+{%- if use_switcher -%}
+  <script>
+    (function () {
+      var root = document.getElementById('section-{{ section.id }}');
+      if (!root) return;
+      var buttons = root.querySelectorAll('[data-ct-switch]');
+      if (!buttons.length) return;
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var target = btn.getAttribute('data-ct-switch');
+          buttons.forEach(function (b) {
+            var active = b === btn;
+            b.classList.toggle('is-active', active);
+            b.setAttribute('aria-pressed', active ? 'true' : 'false');
+          });
+          root.querySelectorAll('[data-ct-col]').forEach(function (cell) {
+            cell.classList.toggle('is-mobile-visible', cell.getAttribute('data-ct-col') === target);
+          });
+        });
+      });
+    })();
+  </script>
+{%- endif -%}
 
 {% schema %}
 {
@@ -521,9 +581,28 @@
       "content": "Mobile"
     },
     {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Affichage sur mobile",
+      "info": "« Sélecteur » : la colonne de la marque reste visible et le visiteur choisit le concurrent affiché via des pastilles — aucun défilement horizontal. Nécessite au moins 2 concurrents.",
+      "options": [
+        { "value": "switcher", "label": "Sélecteur de concurrent (recommandé)" },
+        { "value": "scroll", "label": "Défilement horizontal (classique)" }
+      ],
+      "default": "switcher"
+    },
+    {
+      "type": "text",
+      "id": "switcher_label",
+      "label": "Libellé du sélecteur",
+      "default": "Comparer à :",
+      "visible_if": "{{ section.settings.mobile_layout == 'switcher' }}"
+    },
+    {
       "type": "checkbox",
       "id": "sticky_first_column",
       "label": "Figer la colonne des critères au défilement",
+      "info": "Utilisé uniquement avec l'affichage « Défilement horizontal ».",
       "default": true
     },
     {
