@@ -144,7 +144,7 @@
         "account_PGJ6YH": {
           "type": "account",
           "settings": {
-            "account_text": "Login",
+            "account_text": "Se connecter",
             "account_icon_desktop": true,
             "account_hide_mobile": true,
             "use_account_link_mobile": true
