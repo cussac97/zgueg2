@@ -71,6 +71,100 @@
   #cr-{{ uid }} .cr-star--full { fill: var(--cr-star); }
   #cr-{{ uid }} .cr-star--empty { color: var(--cr-star-empty); }
 
+  #cr-{{ uid }} .cr-scorecard {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 18px 30px;
+    max-width: 480px;
+    padding: 24px 26px;
+    background: {{ s.scorecard_bg | default: '#e8edfb' }};
+    border: {{ s.scorecard_border_width | default: 1 }}px solid {{ s.scorecard_border | default: '#0000c9' }};
+    border-radius: {{ s.scorecard_radius | default: 0 }}px;
+  }
+  #cr-{{ uid }} .cr-scorecard__head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+  }
+  #cr-{{ uid }} .cr-scorecard__score {
+    font-family: var(--font-stack-headings-primary);
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: {{ s.scorecard_accent | default: '#0000c9' }};
+  }
+  #cr-{{ uid }} .cr-scorecard__quality {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--cr-text);
+  }
+  #cr-{{ uid }} .cr-scorecard .cr-stars { gap: 3px; }
+  #cr-{{ uid }} .cr-scorecard .cr-star--full { fill: {{ s.scorecard_accent | default: '#0000c9' }}; }
+  #cr-{{ uid }} .cr-scorecard__count {
+    font-size: 13px;
+    color: var(--cr-muted);
+    font-family: var(--font-stack-body-secondary, monospace);
+  }
+  #cr-{{ uid }} .cr-scorecard__bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+  }
+  #cr-{{ uid }} .cr-scorecard__bar {
+    display: grid;
+    grid-template-columns: 62px 1fr 22px;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+  #cr-{{ uid }} .cr-scorecard__bar-label {
+    font-size: 13px;
+    color: var(--cr-text);
+    white-space: nowrap;
+  }
+  #cr-{{ uid }} .cr-scorecard__bar-track {
+    display: block;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  #cr-{{ uid }} .cr-scorecard__bar-fill {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: {{ s.scorecard_accent | default: '#0000c9' }};
+  }
+  #cr-{{ uid }} .cr-scorecard__bar-count {
+    font-size: 12px;
+    color: var(--cr-muted);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+  #cr-{{ uid }} .cr-scorecard__bar:hover .cr-scorecard__bar-label {
+    color: {{ s.scorecard_accent | default: '#0000c9' }};
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  @media (max-width: 560px) {
+    #cr-{{ uid }} .cr-scorecard {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: none;
+      padding: 20px;
+    }
+  }
+
   #cr-{{ uid }} .cr-filters {
     display: flex;
     flex-wrap: wrap;
@@ -280,15 +374,99 @@
         <h2 class="cr-heading">{{ s.heading }}</h2>
       {%- endif -%}
       {%- if s.show_summary -%}
-        <div class="cr-summary">
-          <span class="cr-stars" aria-label="{{ s.summary_rating }}/5">
-            {%- assign sr = s.summary_rating | round -%}
-            {%- for i in (1..5) -%}
-              {%- if i <= sr -%}{{ star_full }}{%- else -%}{{ star_empty }}{%- endif -%}
-            {%- endfor -%}
-          </span>
-          <span class="cr-summary__text">{{ s.summary_rating }}/5 {{ s.summary_caption | default: 'based on' }} {{ s.summary_count }} {{ s.summary_reviews_word | default: 'reviews' }}</span>
-        </div>
+        {%- if s.summary_style == 'line' -%}
+          <div class="cr-summary">
+            <span class="cr-stars" aria-label="{{ s.summary_rating }}/5">
+              {%- assign sr = s.summary_rating | round -%}
+              {%- for i in (1..5) -%}
+                {%- if i <= sr -%}{{ star_full }}{%- else -%}{{ star_empty }}{%- endif -%}
+              {%- endfor -%}
+            </span>
+            <span class="cr-summary__text">{{ s.summary_rating }}/5 {{ s.summary_caption | default: 'based on' }} {{ s.summary_count }} {{ s.summary_reviews_word | default: 'reviews' }}</span>
+          </div>
+        {%- else -%}
+          {%- liquid
+            assign count_5 = 0
+            assign count_4 = 0
+            assign count_3 = 0
+            assign count_2 = 0
+            assign count_1 = 0
+            for b in section.blocks
+              assign r = b.settings.rating | round
+              case r
+                when 5
+                  assign count_5 = count_5 | plus: 1
+                when 4
+                  assign count_4 = count_4 | plus: 1
+                when 3
+                  assign count_3 = count_3 | plus: 1
+                when 2
+                  assign count_2 = count_2 | plus: 1
+                when 1
+                  assign count_1 = count_1 | plus: 1
+              endcase
+            endfor
+            assign dist_total = count_5 | plus: count_4 | plus: count_3 | plus: count_2 | plus: count_1
+
+            assign sw_plural = s.stars_word | default: 'étoiles'
+            assign sw_last = sw_plural | slice: -1
+            if sw_last == 's'
+              assign sw_len = sw_plural.size | minus: 1
+              assign sw_singular = sw_plural | slice: 0, sw_len
+            else
+              assign sw_singular = sw_plural
+            endif
+          -%}
+          <div class="cr-scorecard">
+            <div class="cr-scorecard__head">
+              <span class="cr-scorecard__score">{{ s.summary_rating | replace: '.', ',' }}</span>
+              {%- if s.summary_quality_label != blank -%}
+                <span class="cr-scorecard__quality">{{ s.summary_quality_label | escape }}</span>
+              {%- endif -%}
+              <span class="cr-stars" aria-label="{{ s.summary_rating }}/5">
+                {%- assign sr = s.summary_rating | round -%}
+                {%- for i in (1..5) -%}
+                  {%- if i <= sr -%}{{ star_full }}{%- else -%}{{ star_empty }}{%- endif -%}
+                {%- endfor -%}
+              </span>
+              <span class="cr-scorecard__count">{{ s.summary_count }} {{ s.summary_reviews_word | default: 'reviews' }}</span>
+            </div>
+            <div class="cr-scorecard__bars">
+              {%- for level_rev in (1..5) -%}
+                {%- liquid
+                  assign level = 6 | minus: level_rev
+                  case level
+                    when 5
+                      assign level_count = count_5
+                    when 4
+                      assign level_count = count_4
+                    when 3
+                      assign level_count = count_3
+                    when 2
+                      assign level_count = count_2
+                    else
+                      assign level_count = count_1
+                  endcase
+                  if dist_total > 0
+                    assign level_pct = level_count | times: 100.0 | divided_by: dist_total | round
+                  else
+                    assign level_pct = 0
+                  endif
+                  if level == 1
+                    assign level_word = sw_singular
+                  else
+                    assign level_word = sw_plural
+                  endif
+                -%}
+                <button type="button" class="cr-scorecard__bar" data-cr-bar="{{ level }}" aria-label="{{ level }} {{ level_word }} : {{ level_count }}">
+                  <span class="cr-scorecard__bar-label">{{ level }} {{ level_word }}</span>
+                  <span class="cr-scorecard__bar-track"><span class="cr-scorecard__bar-fill" style="width: {{ level_pct }}%"></span></span>
+                  <span class="cr-scorecard__bar-count">{{ level_count }}</span>
+                </button>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
       {%- endif -%}
     </div>
 
@@ -409,6 +587,15 @@
     var root = document.getElementById('cr-{{ uid }}');
     if (!root || root.dataset.crInit) return;
     root.dataset.crInit = '1';
+
+    // Barres de la scorecard → filtre par note (si présent)
+    root.querySelectorAll('[data-cr-bar]').forEach(function (bar) {
+      bar.addEventListener('click', function () {
+        var value = bar.getAttribute('data-cr-bar');
+        var opt = root.querySelector('.cr-dropdown[data-cr-filter="rating"] .cr-dropdown__opt[data-cr-value="' + value + '"]');
+        if (opt) opt.click();
+      });
+    });
 
     // Read More clamp toggle
     root.querySelectorAll('[data-cr-item]').forEach(function (item) {
@@ -759,6 +946,67 @@
       "step": 1,
       "unit": "px",
       "default": 13
+    },
+    {
+      "type": "select",
+      "id": "summary_style",
+      "label": "Style du résumé",
+      "info": "La carte score affiche la note en grand avec la répartition par étoiles, calculée automatiquement à partir des avis de la section. Cliquer sur une barre filtre les avis par note.",
+      "options": [
+        { "value": "card", "label": "Carte score (type Trustpilot)" },
+        { "value": "line", "label": "Ligne simple" }
+      ],
+      "default": "card"
+    },
+    {
+      "type": "text",
+      "id": "summary_quality_label",
+      "label": "Qualificatif de la note",
+      "default": "Excellent",
+      "visible_if": "{{ section.settings.summary_style == 'card' }}"
+    },
+    {
+      "type": "color",
+      "id": "scorecard_bg",
+      "label": "Carte : fond",
+      "default": "#e8edfb",
+      "visible_if": "{{ section.settings.summary_style == 'card' }}"
+    },
+    {
+      "type": "color",
+      "id": "scorecard_border",
+      "label": "Carte : bordure",
+      "default": "#0000c9",
+      "visible_if": "{{ section.settings.summary_style == 'card' }}"
+    },
+    {
+      "type": "color",
+      "id": "scorecard_accent",
+      "label": "Carte : accent (note, étoiles, barres)",
+      "default": "#0000c9",
+      "visible_if": "{{ section.settings.summary_style == 'card' }}"
+    },
+    {
+      "type": "range",
+      "id": "scorecard_border_width",
+      "label": "Carte : épaisseur de bordure",
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "unit": "px",
+      "default": 1,
+      "visible_if": "{{ section.settings.summary_style == 'card' }}"
+    },
+    {
+      "type": "range",
+      "id": "scorecard_radius",
+      "label": "Carte : arrondi",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ section.settings.summary_style == 'card' }}"
     },
 
     {
