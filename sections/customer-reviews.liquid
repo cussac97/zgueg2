@@ -156,12 +156,24 @@
     text-decoration: underline;
     text-underline-offset: 2px;
   }
+  @media (max-width: 749px) {
+    #cr-{{ uid }} .cr-heading {
+      text-align: center;
+    }
+    #cr-{{ uid }} .cr-summary {
+      justify-content: center;
+    }
+  }
   @media (max-width: 560px) {
     #cr-{{ uid }} .cr-scorecard {
       grid-template-columns: 1fr;
       gap: 20px;
       max-width: none;
       padding: 20px;
+    }
+    #cr-{{ uid }} .cr-scorecard__head {
+      align-items: center;
+      text-align: center;
     }
   }
 
