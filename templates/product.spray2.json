@@ -382,6 +382,17 @@
             "page": "",
             "hide_block_if": false
           }
+        },
+        "product_promotion_PepQtn": {
+          "type": "product_promotion",
+          "settings": {
+            "heading": "Notre recommandation",
+            "product": "cleaned-®-gel-mousse-nettoyant-quotidien",
+            "show_price_free": false,
+            "text": "Pour un nettoyage intime quotidien respectueux de la flore",
+            "style": "outline",
+            "hide_block_if": false
+          }
         }
       },
       "block_order": [
@@ -400,7 +411,8 @@
         "collapsible_tab_zXdGmR",
         "collapsible_tab_P4hk8m",
         "collapsible_tab_RKezaD",
-        "collapsible_tab_YyQ3H7"
+        "collapsible_tab_YyQ3H7",
+        "product_promotion_PepQtn"
       ],
       "settings": {
         "gallery_layout": "two-cols scroll",
