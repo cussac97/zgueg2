@@ -372,6 +372,7 @@
         },
         "collapsible_tab_zXdGmR": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Bénéfices",
             "content": "<ul><li>Nettoie en profondeur sans agresser</li><li>Élimine sueur, smegma et odeurs à la source</li><li>Rééquilibre la flore intime à chaque lavage</li><li>Tensioactifs 100 % végétaux</li><li>pH bas, respecte les muqueuses</li><li>Sans savon, sans parfum agressif</li></ul>",
@@ -381,6 +382,7 @@
         },
         "collapsible_tab_P4hk8m": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Ingrédients",
             "content": "<ul><li>Tensioactifs végétaux doux (coco)</li><li>Ferments probiotiques (Lactobacillus, Bifida)</li><li>Eau d'armoise (Artemisia)</li><li>Centella asiatica</li><li>Houttuynia cordata</li><li>Thé vert (Camellia sinensis)</li><li>Glycérine végétale</li></ul>",
@@ -390,6 +392,7 @@
         },
         "collapsible_tab_RKezaD": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Pour qui ?",
             "content": "<p>Conçu pour l'hygiène intime masculine au quotidien. Convient à tous les types de peau. Usage externe uniquement.</p>",
@@ -399,6 +402,7 @@
         },
         "collapsible_tab_YyQ3H7": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Comment l'utiliser ?",
             "content": "<p>Sous la douche, applique une noisette de gel moussant sur les parties intimes externes, fais mousser quelques secondes puis rince abondamment. Une fois par jour suffit. Pour rester frais entre deux douches, enchaîne avec le spray rééquilibrant.</p>",
@@ -952,6 +956,7 @@
         "row_dMdTM7",
         "row_X3C9gH"
       ],
+      "disabled": true,
       "name": "Tableau comparatif",
       "settings": {
         "heading": "La concurrence ? Mon zgueg ouais.",
@@ -1413,6 +1418,7 @@
         "review_r19",
         "review_r20"
       ],
+      "disabled": true,
       "name": "Customer Reviews",
       "settings": {
         "container_width": "large",
