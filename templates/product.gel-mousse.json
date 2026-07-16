@@ -273,7 +273,6 @@
         },
         "subscriptions_app_block_RRrMdt": {
           "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
-          "disabled": true,
           "settings": {
             "widget_style": "toggle",
             "widget_style_card_selector": "dropdown",
@@ -348,8 +347,8 @@
             "heading_size": 17,
             "heading_font": "comerie",
             "reserved_percent": 82,
-            "subtext": "Victimes de leur succès, les produits Zgueg® sont en cours de réapprovisionnement. Commandez maintenant pour être livré le 29 juillet. Actuellement, {percent}% du nouveau stock est déjà réservé.",
-            "show_progress_bar": true,
+            "subtext": "Victimes de leur succès, les produits Zgueg® sont en cours de réapprovisionnement. Commandez maintenant pour être livré le 29 juillet.",
+            "show_progress_bar": false,
             "show_percent_label": true,
             "bar_height": 8,
             "bar_radius": 0,
@@ -406,6 +405,17 @@
             "page": "",
             "hide_block_if": false
           }
+        },
+        "product_promotion_hAY7xN": {
+          "type": "product_promotion",
+          "settings": {
+            "heading": "Notre recommandation",
+            "product": "spray-reequilibrant-intime-pour-homme",
+            "show_price_free": false,
+            "text": "Fraicheur immédiate et jusqu'à 16 heures d'efficacité.",
+            "style": "outline",
+            "hide_block_if": false
+          }
         }
       },
       "block_order": [
@@ -424,7 +434,8 @@
         "collapsible_tab_zXdGmR",
         "collapsible_tab_P4hk8m",
         "collapsible_tab_RKezaD",
-        "collapsible_tab_YyQ3H7"
+        "collapsible_tab_YyQ3H7",
+        "product_promotion_hAY7xN"
       ],
       "custom_css": [],
       "settings": {
@@ -980,6 +991,8 @@
         "header_size": 16,
         "value_size": 15,
         "footnote_size": 13,
+        "mobile_layout": "switcher",
+        "switcher_label": "Comparer à :",
         "sticky_first_column": true,
         "mobile_col_width": 140,
         "gutter_decrease": false,
@@ -1425,6 +1438,13 @@
         "summary_caption": "moyenne sur",
         "summary_reviews_word": "avis",
         "summary_text_size": 13,
+        "summary_style": "card",
+        "summary_quality_label": "Excellent",
+        "scorecard_bg": "#e8edfb",
+        "scorecard_border": "#0000c9",
+        "scorecard_accent": "#0000c9",
+        "scorecard_border_width": 1,
+        "scorecard_radius": 0,
         "show_rating_filter": true,
         "rating_filter_label": "Note",
         "rating_filter_all": "Toutes les notes",
