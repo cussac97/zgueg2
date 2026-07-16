@@ -137,6 +137,11 @@
   margin: 0;
 }
 
+/* Sélecteur de concurrent (mobile uniquement) */
+.comparison-table__switcher {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .comparison-table {
     table-layout: auto;
@@ -158,5 +163,90 @@
     inset-inline-start: 0;
     z-index: 2;
     background: var(--ct-table-bg, #ffffff);
+  }
+
+  /* ---- Mode « sélecteur » : tout tient dans l'écran, zéro défilement ---- */
+
+  .comparison-table__switcher {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .comparison-table__switcher-label {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ct-value-color, #4f4f4f);
+  }
+
+  .comparison-table__switcher-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .comparison-table__switch {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 8px 14px;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.2;
+    color: var(--ct-text, #1a1a1a);
+    background: var(--ct-table-bg, #ffffff);
+    border: 1px solid var(--ct-line, #e6e6e6);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .comparison-table__switch.is-active {
+    color: var(--ct-hl-color, #2545d3);
+    background: var(--ct-hl-bg, #e8edfb);
+    border-color: var(--ct-hl-border, #2545d3);
+    font-weight: 600;
+  }
+
+  .comparison-table--switch {
+    table-layout: fixed;
+  }
+
+  .comparison-table--switch [data-ct-col] {
+    display: none;
+  }
+
+  .comparison-table--switch [data-ct-col].is-mobile-visible {
+    display: table-cell;
+  }
+
+  .comparison-table--switch th,
+  .comparison-table--switch td {
+    min-width: 0;
+    padding: calc(var(--ct-pad-y, 40px) * 0.45) 10px;
+    overflow-wrap: break-word;
+  }
+
+  .comparison-table--switch .comparison-table__feature {
+    width: 42%;
+    min-width: 0;
+    font-size: calc(var(--ct-label-size, 16px) - 2px);
+  }
+
+  .comparison-table--switch thead th,
+  .comparison-table--switch thead td {
+    font-size: calc(var(--ct-header-size, 16px) - 2px);
+  }
+
+  /* Le sticky n'a plus de sens sans défilement horizontal */
+  .comparison-table--switch.comparison-table--sticky-first tr > *:first-child {
+    position: static;
+  }
+
+  .comparison-table--switch .comparison-table__brand img {
+    width: min(var(--ct-logo-w, 120px), 84px);
   }
 }
